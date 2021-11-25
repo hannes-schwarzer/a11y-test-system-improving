@@ -3,13 +3,24 @@ import classNames from "classnames";
 import "./KeyboardTestCases.css";
 
 export const KeyboardTestCases = () => {
-  const formClassHundredNine = classNames("disappearing-alert", "hidden");
-  const formClassHundredTen = classNames("lightbox", "close-button", "hidden");
-  const formClassHundredeighteen = classNames(
+  const keyboardClassHundredNine = classNames("disappearing-alert", "hidden");
+  const keyboardClassHundredTen = classNames(
+    "lightbox",
+    "close-button",
+    "hidden"
+  );
+  const keyboardClassHundredeighteen = classNames(
     "lightbox",
     "unescapable",
     "hidden"
   );
+  const keyboardClassHundredTwentyTwo = classNames("lightbox focus-far hidden");
+  const keyboardClassHundredTwentyThree = classNames(
+    "lightbox",
+    "not-focused",
+    "hidden"
+  );
+
   return (
     <>
       <h2>Keyboard Access</h2>
@@ -18,7 +29,7 @@ export const KeyboardTestCases = () => {
         testCategory={"keyboard"}
         testCaseNumber={109}
       >
-        <p className={formClassHundredNine}>
+        <p className={keyboardClassHundredNine}>
           You should complete this form in 20 minutes
         </p>
         <label>
@@ -33,7 +44,7 @@ export const KeyboardTestCases = () => {
         <a className={"open-lightbox-close-button"} href={"#"}>
           Open lightbox
         </a>
-        <div className={formClassHundredTen}>
+        <div className={keyboardClassHundredTen}>
           <span title={"Close lightbox"} className={"close-button"}>
             X
           </span>
@@ -175,7 +186,7 @@ export const KeyboardTestCases = () => {
         <a className={"open-lightbox-unescapable"} href={"#"}>
           Open lightbox
         </a>
-        <div className={formClassHundredeighteen}>
+        <div className={keyboardClassHundredeighteen}>
           <a title={"Close lightbox"} className={"close-button"} href={"#"}>
             X
           </a>
@@ -199,33 +210,99 @@ export const KeyboardTestCases = () => {
         testCategory={"keyboard"}
         testCaseNumber={119}
       >
-        <a></a>
+        <a className={"button"} href={"next.html"} role={"button"}>
+          Continue
+        </a>
       </TestCase>
       <TestCase
         testCaseTitle={"Tooltips don't receive keyboard focus"}
         testCategory={"keyboard"}
         testCaseNumber={120}
-      ></TestCase>
+      >
+        <label
+          className={"tooltips-not-focusable"}
+          htmlFor={"drivers-licence-no"}
+        >
+          Your driving licence number <span className={"tooltip-icon"}>?</span>{" "}
+          <span className={"tooltip-information"}>
+            Your driving licence number can be found in section 5 of your
+            driving licence photocard
+          </span>
+        </label>
+        <input id={"drivers-licence-no"} type={"text"} />
+      </TestCase>
       <TestCase
-        testCaseTitle={"Accesskey attribute used"}
+        testCaseTitle={"Accesskey attribute used for link"}
         testCategory={"keyboard"}
         testCaseNumber={121}
-      ></TestCase>
+      >
+        <a accessKey={"A"} href={"page.html"}>
+          A link with an accesskey attribute
+        </a>
+      </TestCase>
       <TestCase
         testCaseTitle={"Lightbox - focus is not moved immediately to lightbox"}
         testCategory={"keyboard"}
         testCaseNumber={122}
-      ></TestCase>
+      >
+        <a className={"open-lightbox-focus-far"} href={"#"}>
+          Open lightbox
+        </a>
+        <div className={keyboardClassHundredTwentyTwo}>
+          <span title={"Close lightbox"} className={"close-button"}>
+            X
+          </span>
+          <p>
+            This lightbox is placed at the end of the DOM so you'll have to tab
+            through other links to reach it. The Ministry of Justice website has{" "}
+            <a
+              href={
+                "http://www.justice.gov.uk/protecting-the-vulnerable/mental-capacity-act"
+              }
+              target={"_blank"}
+            >
+              information about mental capacity
+            </a>
+            .
+          </p>
+        </div>
+      </TestCase>
       <TestCase
         testCaseTitle={"Lightbox - focus is not retained within the lightbox"}
         testCategory={"keyboard"}
         testCaseNumber={123}
-      ></TestCase>
+      >
+        <a className={"open-lightbox-not-focused"} href={"#"}>
+          Open lightbox
+        </a>
+        <div className={keyboardClassHundredTwentyThree}>
+          <span title={"Close lightbox"} className={"close-button"}>
+            X
+          </span>
+          <p>
+            This lightbox doesn't retain the focus within itself. The Ministry
+            of Justice website has{" "}
+            <a
+              href={
+                "http://www.justice.gov.uk/protecting-the-vulnerable/mental-capacity-act"
+              }
+              target={"_blank"}
+            >
+              information about mental capacity
+            </a>
+            .
+          </p>
+        </div>
+      </TestCase>
       <TestCase
         testCaseTitle={"Fake button is not keyboard accessible"}
         testCategory={"keyboard"}
         testCaseNumber={124}
-      ></TestCase>
+      >
+        <div className={"button"} id={"webchat"}>
+          launch webchat
+        </div>
+      </TestCase>
     </>
   );
 };

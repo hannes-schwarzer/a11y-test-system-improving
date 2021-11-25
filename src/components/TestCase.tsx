@@ -5,17 +5,22 @@ type TestCaseProps = {
   testCaseTitle: string;
   testCategory: string;
   testCaseNumber: number;
+  guidelineViolation?: string;
 };
 export const TestCase: FC<TestCaseProps> = ({
   testCaseTitle,
   testCategory,
   testCaseNumber,
+  guidelineViolation,
   children,
 }) => {
   return (
     <div className="testCase" id={`test_${testCaseNumber}_${testCategory}`}>
-      <h3 className="testCase__Title">{testCaseTitle}</h3>
-      <div className="testCase__Content">{children}</div>
+      <h3 className="testCase__title">{testCaseTitle}</h3>
+      {guidelineViolation && (
+        <p className="testCase__guideline">{guidelineViolation}</p>
+      )}
+      <div className="testCase__content">{children}</div>
     </div>
   );
 };

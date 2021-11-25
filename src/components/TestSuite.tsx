@@ -16,6 +16,9 @@ import { ButtonTestCases } from "./ButtonTestCases/ButtonTestCases";
 import { FormsTestCases } from "./FormsTestCases/FormsTestCases";
 import { NavigationTestCases } from "./NavigationTestCases/NavigationTestCases";
 import { KeyboardTestCases } from "./KeyboardTestCases/KeyboardTestCases";
+import { FrameTestCases } from "./FrameTestCases/FrameTestCases";
+import { CssTestCases } from "./CssTestCases/CssTestCases";
+import { HtmlTestCases } from "./HtmlTestCases/HtmlTestCases";
 
 function TestSuite() {
   return (
@@ -44,6 +47,10 @@ function TestSuite() {
         {/*TODO Concertina doesn't function*/}
         {/*TODO Lightbox doesn't function*/}
         <KeyboardTestCases />
+        <FrameTestCases />
+        <CssTestCases />
+        {/*<center> is not supported in react*/}
+        <HtmlTestCases />
       </main>
     </>
   );
