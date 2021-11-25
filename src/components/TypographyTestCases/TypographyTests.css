@@ -1,0 +1,15 @@
+.line-height {
+    line-height: 90%;
+}
+.all-caps {
+    text-transform: uppercase;
+}
+.italic {
+    font-style: italic;
+}
+.small-text {
+    font-size: 8px;
+}
+.justify {
+    text-align: justify;
+}

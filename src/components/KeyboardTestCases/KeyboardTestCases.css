@@ -1,0 +1,103 @@
+.hidden {
+    display: none;
+}
+
+/* Hide for both screenreaders and browsers */
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    width: 400px;
+    top: 20%;
+    left: 50%;
+    margin-left: -200px;
+    background: white;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.lightbox .close-button {
+    float: right;
+    color: #000;
+    text-decoration: none;
+}
+
+.lightbox span.close-button {
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* Wrong focus order */
+.focus-order-broken a {
+    margin-left: 0.75em;
+}
+.focus-order-broken .first,
+.focus-order-broken .third {
+    float: left;
+}
+.focus-order-broken .second {
+    float: right;
+}
+
+/*113*/
+.no-outline,
+.no-outline:focus {
+    outline: none;
+    background: none;
+}
+
+/*115 Concertina */
+.concertina dt {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    border-top: 1px solid #bfc1c3;
+}
+.concertina dt:hover {
+    cursor: pointer;
+    cursor: hand;
+    background: #f8f8f8;
+}
+.concertina dt:before {
+    content: '>';
+    font-size: 0.7em;
+    margin-left: 1em;
+    margin-right: 0.4em;
+    position: relative;
+    top: -0.25em;
+}
+.concertina dt.expanded:before {
+    content: 'v';
+}
+
+/*117*/
+.dropdown-nav > ul > li > ul {
+    display: none;
+}
+.dropdown-nav > ul > li:hover > ul {
+    display: block;
+}
+
+/* 118 Lightbox */
+.lightbox {
+    position: fixed;
+    width: 400px;
+    top: 20%;
+    left: 50%;
+    margin-left: -200px;
+    background: white;
+    border: 3px solid black;
+    padding: 10px;
+}
+.lightbox .close-button {
+    float: right;
+    color: #000;
+    text-decoration: none;
+}
+.lightbox span.close-button {
+    cursor: pointer;
+    cursor: hand;
+}

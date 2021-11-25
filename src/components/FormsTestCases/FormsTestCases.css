@@ -1,0 +1,53 @@
+.errors-badly-identified .validation-summary {
+    padding: 1em;
+    border: 3px solid #df3034;
+    background: #fae1e1;
+}
+
+.errors-badly-identified label {
+    display: block;
+    margin: 1em 0 1em 0;
+}
+
+.errors-badly-identified label input {
+    display: block;
+}
+
+.errors-colour-only .has-errors {
+    background: #fae1e1;
+    border: 1px solid #df3034;
+}
+
+.required-format-not-given .error-message {
+    display: block;
+    color: #df3034;
+    margin: 0 0 0.3em 0;
+}
+
+/* Left aligned form labels */
+.too-much-whitespace {
+    overflow: hidden;
+}
+.too-much-whitespace label {
+    float: left;
+}
+.too-much-whitespace input {
+    float: right;
+}
+
+.error-poor-contrast .validation-summary {
+    color: #fff;
+}
+
+.error-poor-contrast .has-errors {
+    border: 1px solid #fae1e1;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-hint {
+    color: #6f777b;
+    margin: 0;
+}

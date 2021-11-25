@@ -1,0 +1,12 @@
+.constrained-box {
+    position: relative;
+    overflow: scroll;
+}
+.constrained {
+    width: 100em;
+    position: relative;
+}
+.constrained-extra {
+    float: right;
+    margin-right: -100%;
+}

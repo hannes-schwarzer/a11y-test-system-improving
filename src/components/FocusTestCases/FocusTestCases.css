@@ -1,0 +1,15 @@
+.not-visible-outline-link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+a:link {
+    color: blue;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.not-visible-outline-button {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 0.4em 2em;
+}
