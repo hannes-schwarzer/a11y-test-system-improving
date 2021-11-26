@@ -3,3 +3,12 @@
     margin: 15px;
     padding: 0 15px 30px 15px;
 }
+
+.testCase__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testCase__title a {
+    margin: 15px 0 15px 15px
+}

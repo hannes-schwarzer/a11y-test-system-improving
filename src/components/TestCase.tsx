@@ -5,22 +5,34 @@ type TestCaseProps = {
   testCaseTitle: string;
   testCategory: string;
   testCaseNumber: number;
-  guidelineViolation?: string;
+  guideline?: string;
+  linkToGuideline?: string;
+  linkToMoreDetails?: string;
 };
 export const TestCase: FC<TestCaseProps> = ({
   testCaseTitle,
   testCategory,
   testCaseNumber,
-  guidelineViolation,
+  guideline,
+  linkToGuideline,
+  linkToMoreDetails,
   children,
 }) => {
   return (
-    <div className="testCase" id={`test_${testCaseNumber}_${testCategory}`}>
-      <h3 className="testCase__title">{testCaseTitle}</h3>
-      {guidelineViolation && (
-        <p className="testCase__guideline">{guidelineViolation}</p>
-      )}
+    <article className="testCase" id={`test_${testCaseNumber}_${testCategory}`}>
+      <div className="testCase__title">
+        <h3>{testCaseTitle}</h3>
+        {linkToGuideline && guideline && (
+          <a
+            href={linkToGuideline}
+            target={"_parent"}
+            className={"testCase__link"}
+          >
+            Guideline violation: {guideline}
+          </a>
+        )}
+      </div>
       <div className="testCase__content">{children}</div>
-    </div>
+    </article>
   );
 };
