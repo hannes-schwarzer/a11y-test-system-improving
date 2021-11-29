@@ -1,4 +1,4 @@
-import { TestCase } from "../../TestCase";
+import { GuidelineError } from "../../GuidelineError";
 import classNames from "classnames";
 import "./FormsTestCases.css";
 
@@ -18,10 +18,10 @@ export const FormsTestCases = () => {
 
   return (
     <>
-      <TestCase
-        testCaseTitle={"Errors identified by colour only"}
-        testCategory={"forms"}
-        testCaseNumber={92}
+      <GuidelineError
+        title={"Errors identified by colour only"}
+        category={"forms"}
+        serial={92}
       >
         <form className={formClassNameNinetyTwo}>
           <div className={"validation-summary"} role={"alert"}>
@@ -43,13 +43,13 @@ export const FormsTestCases = () => {
             />
           </label>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={
+      </GuidelineError>
+      <GuidelineError
+        title={
           "Labels missing when they would look clumsy for some form controls"
         }
-        testCategory={"forms"}
-        testCaseNumber={93}
+        category={"forms"}
+        serial={93}
       >
         <form>
           <label htmlFor={"missing-labels-day"}>
@@ -61,13 +61,13 @@ export const FormsTestCases = () => {
             <input id={"missing-labels-year"} type={"text"} />
           </p>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={
+      </GuidelineError>
+      <GuidelineError
+        title={
           "Error messages - no suggestion for corrections given, e.g. required format"
         }
-        testCategory={"forms"}
-        testCaseNumber={94}
+        category={"forms"}
+        serial={94}
       >
         <form>
           <label className={"required-format-not-given"}>
@@ -81,11 +81,11 @@ export const FormsTestCases = () => {
             />
           </label>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Left aligned form labels with too much white space"}
-        testCategory={"forms"}
-        testCaseNumber={95}
+      </GuidelineError>
+      <GuidelineError
+        title={"Left aligned form labels with too much white space"}
+        category={"forms"}
+        serial={95}
       >
         <form>
           <p className={"too-much-whitespace"}>
@@ -93,11 +93,11 @@ export const FormsTestCases = () => {
             <input id={"input-too-far-away"} type={"text"} />
           </p>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Group of radio buttons not enclosed in a fieldset"}
-        testCategory={"forms"}
-        testCaseNumber={96}
+      </GuidelineError>
+      <GuidelineError
+        title={"Group of radio buttons not enclosed in a fieldset"}
+        category={"forms"}
+        serial={96}
       >
         <h4>Do you already have a personal user account?</h4>
         <label className={"block-label"} htmlFor={"radio-inline-1"}>
@@ -119,42 +119,38 @@ export const FormsTestCases = () => {
           />
           No
         </label>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Form element has no label"}
-        testCategory={"forms"}
-        testCaseNumber={97}
+      </GuidelineError>
+      <GuidelineError
+        title={"Form element has no label"}
+        category={"forms"}
+        serial={97}
       >
         <form>
           <input type={"text"} />
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Fieldset without a legend"}
-        testCategory={"forms"}
-        testCaseNumber={98}
+      </GuidelineError>
+      <GuidelineError
+        title={"Fieldset without a legend"}
+        category={"forms"}
+        serial={98}
       >
         <form>
           <fieldset>I am a fieldset without a legend</fieldset>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Empty legend"}
-        testCategory={"forms"}
-        testCaseNumber={99}
-      >
+      </GuidelineError>
+      <GuidelineError title={"Empty legend"} category={"forms"} serial={99}>
         <form>
           <fieldset>
             <legend></legend>
           </fieldset>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={
+      </GuidelineError>
+      <GuidelineError
+        title={
           "Label element with for= attribute but not matching id= attribute of form control"
         }
-        testCategory={"forms"}
-        testCaseNumber={100}
+        category={"forms"}
+        serial={100}
       >
         <form>
           <fieldset>
@@ -167,11 +163,11 @@ export const FormsTestCases = () => {
             />
           </fieldset>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Group of check boxes not enclosed in a fieldset"}
-        testCategory={"forms"}
-        testCaseNumber={101}
+      </GuidelineError>
+      <GuidelineError
+        title={"Group of check boxes not enclosed in a fieldset"}
+        category={"forms"}
+        serial={101}
       >
         <h4>Which types of waste do you transport regularly?</h4>
         <label className={"block-label"} htmlFor={"waste-type-1"}>
@@ -203,21 +199,21 @@ export const FormsTestCases = () => {
           />
           Farm or agricultural waste
         </label>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Empty label found"}
-        testCategory={"forms"}
-        testCaseNumber={102}
+      </GuidelineError>
+      <GuidelineError
+        title={"Empty label found"}
+        category={"forms"}
+        serial={102}
       >
         <form>
           <label htmlFor={"empty"}></label>
           <input id={"empty"} type={"text"} />
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Two unique labels, but identical for= attributes"}
-        testCategory={"forms"}
-        testCaseNumber={103}
+      </GuidelineError>
+      <GuidelineError
+        title={"Two unique labels, but identical for= attributes"}
+        category={"forms"}
+        serial={103}
       >
         <form>
           <label htmlFor={"two-labels-day"}>Date od issue</label>
@@ -230,11 +226,11 @@ export const FormsTestCases = () => {
             <input id={"two-labels-year"} type={"text"} />
           </p>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Errors identified with a poor colour contrast"}
-        testCategory={"forms"}
-        testCaseNumber={104}
+      </GuidelineError>
+      <GuidelineError
+        title={"Errors identified with a poor colour contrast"}
+        category={"forms"}
+        serial={104}
       >
         <form className={formClassNameHundredFour}>
           <div className={"validation-summary"} role={"alert"}>
@@ -257,11 +253,11 @@ export const FormsTestCases = () => {
             />
           </label>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Non-unique field label found"}
-        testCategory={"forms"}
-        testCaseNumber={105}
+      </GuidelineError>
+      <GuidelineError
+        title={"Non-unique field label found"}
+        category={"forms"}
+        serial={105}
       >
         <form>
           <label htmlFor={"x_3"}>
@@ -274,11 +270,11 @@ export const FormsTestCases = () => {
             <input id={"x_4"} name={"x_4"} type={"text"} />
           </label>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Missing labels in checkboxes"}
-        testCategory={"forms"}
-        testCaseNumber={106}
+      </GuidelineError>
+      <GuidelineError
+        title={"Missing labels in checkboxes"}
+        category={"forms"}
+        serial={106}
       >
         <form>
           <fieldset>
@@ -308,11 +304,11 @@ export const FormsTestCases = () => {
             />
           </fieldset>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Field hint not associated with input"}
-        testCategory={"forms"}
-        testCaseNumber={107}
+      </GuidelineError>
+      <GuidelineError
+        title={"Field hint not associated with input"}
+        category={"forms"}
+        serial={107}
       >
         <form>
           <label className={"form-label"} htmlFor={"ni-number"}>
@@ -323,11 +319,11 @@ export const FormsTestCases = () => {
           </p>
           <input className={"form-control"} id={"ni-number"} type={"text"} />
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Placeholder no label"}
-        testCategory={"forms"}
-        testCaseNumber={107}
+      </GuidelineError>
+      <GuidelineError
+        title={"Placeholder no label"}
+        category={"forms"}
+        serial={107}
       >
         <form>
           <input
@@ -338,11 +334,11 @@ export const FormsTestCases = () => {
           />
           <input className={"submit"} type={"submit"} value={"Search"} />
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Errors are not identified"}
-        testCategory={"forms"}
-        testCaseNumber={107}
+      </GuidelineError>
+      <GuidelineError
+        title={"Errors are not identified"}
+        category={"forms"}
+        serial={107}
       >
         <form className={formClassHundredSeven}>
           <div className={"validation-summary"} role={"alert"}>
@@ -361,11 +357,11 @@ export const FormsTestCases = () => {
             <input name={"date-of-birth"} type={"text"} />
           </label>
         </form>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Form control that changes context without warning"}
-        testCategory={"forms"}
-        testCaseNumber={107}
+      </GuidelineError>
+      <GuidelineError
+        title={"Form control that changes context without warning"}
+        category={"forms"}
+        serial={107}
       >
         <form>
           <label htmlFor={"language-selector"}>Select your language</label>
@@ -376,7 +372,7 @@ export const FormsTestCases = () => {
             <option value={"fr"}>Français</option>
           </select>
         </form>
-      </TestCase>
+      </GuidelineError>
     </>
   );
 };

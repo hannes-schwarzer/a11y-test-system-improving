@@ -1,13 +1,13 @@
-import { TestCase } from "../../TestCase";
+import { GuidelineError } from "../../GuidelineError";
 
 export const NavigationTestCases = () => {
   return (
     <>
       <h2>Navigation</h2>
-      <TestCase
-        testCaseTitle={"Inadequately-sized clickable targets found"}
-        testCategory={"navifation"}
-        testCaseNumber={108}
+      <GuidelineError
+        title={"Inadequately-sized clickable targets found"}
+        category={"navifation"}
+        serial={108}
       >
         <a href={"a.html"}>a</a>
         <a href={"b.html"}>b</a>
@@ -35,7 +35,7 @@ export const NavigationTestCases = () => {
         <a href={"x.html"}>x</a>
         <a href={"y.html"}>y</a>
         <a href={"z.html"}>z</a>
-      </TestCase>
+      </GuidelineError>
     </>
   );
 };

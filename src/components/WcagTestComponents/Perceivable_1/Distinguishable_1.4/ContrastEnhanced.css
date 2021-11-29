@@ -1,0 +1,20 @@
+.whiteBackground {
+    background: white;
+}
+
+.whiteForeground {
+    color: white;
+}
+
+p a:link { color: red }
+p a:visited { color: maroon }
+p a:active { color: fuchsia }
+
+.low-contrast-small-aaa {
+    font-size: 12px;
+    color: #9499a1;
+}
+.low-contrast-large-aaa {
+    font-size: 20px;
+    color: #878c8c;
+}

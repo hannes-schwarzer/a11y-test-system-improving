@@ -1,0 +1,30 @@
+.heading1{
+    font-family: Times, serif;
+    font-size:200%;
+    font-weight:bold;
+}
+
+.yell {
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+p.jim:before {	content: "Jim: " }
+p.mary:before { content: "Mary: " }
+q:before { content: open-quote }
+q:after  { content: close-quote }
+
+p.fact:before { content: "Fact: "; font-weight: bold; }
+p.opinion:before { content: "Opinion: "; font-weight: bold; }
+
+.h1-style{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
+}
+
+.fake-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.67em 0;
+}

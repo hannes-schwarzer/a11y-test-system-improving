@@ -1,4 +1,4 @@
-import { TestCase } from "../../TestCase";
+import { GuidelineError } from "../../GuidelineError";
 import classNames from "classnames";
 import "./KeyboardTestCases.css";
 
@@ -24,10 +24,10 @@ export const KeyboardTestCases = () => {
   return (
     <>
       <h2>Keyboard Access</h2>
-      <TestCase
-        testCaseTitle={"Alert shows for a short time"}
-        testCategory={"keyboard"}
-        testCaseNumber={109}
+      <GuidelineError
+        title={"Alert shows for a short time"}
+        category={"keyboard"}
+        serial={109}
       >
         <p className={keyboardClassHundredNine}>
           You should complete this form in 20 minutes
@@ -35,11 +35,11 @@ export const KeyboardTestCases = () => {
         <label>
           Name <input type={"text"} />
         </label>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Lightbox - close button doesn't receive focus"}
-        testCategory={"keyboard"}
-        testCaseNumber={110}
+      </GuidelineError>
+      <GuidelineError
+        title={"Lightbox - close button doesn't receive focus"}
+        category={"keyboard"}
+        serial={110}
       >
         <a className={"open-lightbox-close-button"} href={"#"}>
           Open lightbox
@@ -62,11 +62,11 @@ export const KeyboardTestCases = () => {
             .
           </p>
         </div>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Focus order in wrong order"}
-        testCategory={"keyboard"}
-        testCaseNumber={111}
+      </GuidelineError>
+      <GuidelineError
+        title={"Focus order in wrong order"}
+        category={"keyboard"}
+        serial={111}
       >
         <div className={"focus-order-broken"}>
           <a className={"first"} href={"#"}>
@@ -79,39 +79,39 @@ export const KeyboardTestCases = () => {
             Third link
           </a>
         </div>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Link with tabindex greater than 0"}
-        testCategory={"keyboard"}
-        testCaseNumber={112}
+      </GuidelineError>
+      <GuidelineError
+        title={"Link with tabindex greater than 0"}
+        category={"keyboard"}
+        serial={112}
       >
         <a href={"page.html"} tabIndex={5}>
           A link with a tabindex greater than 0
         </a>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Keyboard focus is not indicated visually"}
-        testCategory={"keyboard"}
-        testCaseNumber={113}
+      </GuidelineError>
+      <GuidelineError
+        title={"Keyboard focus is not indicated visually"}
+        category={"keyboard"}
+        serial={113}
       >
         <a className={"no-outline"} href={"link.html"}>
           Link with no focus style
         </a>
-      </TestCase>
-      <TestCase
-        testCaseTitle={
+      </GuidelineError>
+      <GuidelineError
+        title={
           "Keyboard focus assigned to a non focusable element using tabindex=0"
         }
-        testCategory={"keyboard"}
-        testCaseNumber={114}
+        category={"keyboard"}
+        serial={114}
       >
         <p tabIndex={0}>Some random text</p>
-      </TestCase>
+      </GuidelineError>
       {/*Concertina doesn't function*/}
-      <TestCase
-        testCaseTitle={"Concertina items don't get keyboard focus"}
-        testCategory={"keyboard"}
-        testCaseNumber={115}
+      <GuidelineError
+        title={"Concertina items don't get keyboard focus"}
+        category={"keyboard"}
+        serial={115}
       >
         <dl className={"concertina"}>
           <dt className={""}>Understanding user research</dt>
@@ -141,22 +141,20 @@ export const KeyboardTestCases = () => {
             </ul>
           </dd>
         </dl>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Keyboard trap"}
-        testCategory={"keyboard"}
-        testCaseNumber={116}
+      </GuidelineError>
+      <GuidelineError
+        title={"Keyboard trap"}
+        category={"keyboard"}
+        serial={116}
       >
         <a href={"/keyboard/trap"}>
           Example page that contains a keyboard trap
         </a>
-      </TestCase>
-      <TestCase
-        testCaseTitle={
-          "Dropdown navigation - only the top level items receive focus"
-        }
-        testCategory={"keyboard"}
-        testCaseNumber={117}
+      </GuidelineError>
+      <GuidelineError
+        title={"Dropdown navigation - only the top level items receive focus"}
+        category={"keyboard"}
+        serial={117}
       >
         <nav className={"dropdown-nav"} role={"navigation"}>
           <ul>
@@ -176,12 +174,12 @@ export const KeyboardTestCases = () => {
             </li>
           </ul>
         </nav>
-      </TestCase>
+      </GuidelineError>
       {/*Lightbox doesn't function*/}
-      <TestCase
-        testCaseTitle={"Lightbox - ESC key doesn't close the lightbox"}
-        testCategory={"keyboard"}
-        testCaseNumber={118}
+      <GuidelineError
+        title={"Lightbox - ESC key doesn't close the lightbox"}
+        category={"keyboard"}
+        serial={118}
       >
         <a className={"open-lightbox-unescapable"} href={"#"}>
           Open lightbox
@@ -204,20 +202,20 @@ export const KeyboardTestCases = () => {
             .
           </p>
         </div>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Link with a role=button does not work with space bar"}
-        testCategory={"keyboard"}
-        testCaseNumber={119}
+      </GuidelineError>
+      <GuidelineError
+        title={"Link with a role=button does not work with space bar"}
+        category={"keyboard"}
+        serial={119}
       >
         <a className={"button"} href={"next.html"} role={"button"}>
           Continue
         </a>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Tooltips don't receive keyboard focus"}
-        testCategory={"keyboard"}
-        testCaseNumber={120}
+      </GuidelineError>
+      <GuidelineError
+        title={"Tooltips don't receive keyboard focus"}
+        category={"keyboard"}
+        serial={120}
       >
         <label
           className={"tooltips-not-focusable"}
@@ -230,20 +228,20 @@ export const KeyboardTestCases = () => {
           </span>
         </label>
         <input id={"drivers-licence-no"} type={"text"} />
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Accesskey attribute used for link"}
-        testCategory={"keyboard"}
-        testCaseNumber={121}
+      </GuidelineError>
+      <GuidelineError
+        title={"Accesskey attribute used for link"}
+        category={"keyboard"}
+        serial={121}
       >
         <a accessKey={"A"} href={"page.html"}>
           A link with an accesskey attribute
         </a>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Lightbox - focus is not moved immediately to lightbox"}
-        testCategory={"keyboard"}
-        testCaseNumber={122}
+      </GuidelineError>
+      <GuidelineError
+        title={"Lightbox - focus is not moved immediately to lightbox"}
+        category={"keyboard"}
+        serial={122}
       >
         <a className={"open-lightbox-focus-far"} href={"#"}>
           Open lightbox
@@ -266,11 +264,11 @@ export const KeyboardTestCases = () => {
             .
           </p>
         </div>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Lightbox - focus is not retained within the lightbox"}
-        testCategory={"keyboard"}
-        testCaseNumber={123}
+      </GuidelineError>
+      <GuidelineError
+        title={"Lightbox - focus is not retained within the lightbox"}
+        category={"keyboard"}
+        serial={123}
       >
         <a className={"open-lightbox-not-focused"} href={"#"}>
           Open lightbox
@@ -293,16 +291,16 @@ export const KeyboardTestCases = () => {
             .
           </p>
         </div>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Fake button is not keyboard accessible"}
-        testCategory={"keyboard"}
-        testCaseNumber={124}
+      </GuidelineError>
+      <GuidelineError
+        title={"Fake button is not keyboard accessible"}
+        category={"keyboard"}
+        serial={124}
       >
         <div className={"button"} id={"webchat"}>
           launch webchat
         </div>
-      </TestCase>
+      </GuidelineError>
     </>
   );
 };

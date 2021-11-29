@@ -1,16 +1,14 @@
-import { TestCase } from "../../TestCase";
+import { GuidelineError } from "../../GuidelineError";
 import "./CssTestCases.css";
 
 export const CssTestCases = () => {
   return (
     <>
       <h2>CSS</h2>
-      <TestCase
-        testCaseTitle={
-          "Content is not readable and functional when text is increased"
-        }
-        testCategory={"css"}
-        testCaseNumber={127}
+      <GuidelineError
+        title={"Content is not readable and functional when text is increased"}
+        category={"css"}
+        serial={127}
       >
         <p className={"resize"}>
           This text becomes unreadable when you increase the text-size (Zoom
@@ -18,40 +16,40 @@ export const CssTestCases = () => {
           <a href={"https://www.mozilla.org/en-GB/firefox/desktop/"}>Firefox</a>
           .
         </p>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Non-decorative content inserted using CSS"}
-        testCategory={"css"}
-        testCaseNumber={128}
+      </GuidelineError>
+      <GuidelineError
+        title={"Non-decorative content inserted using CSS"}
+        category={"css"}
+        serial={128}
       >
         <p id={"css-generated-text"}>My favourite food is </p>
-      </TestCase>
-      <TestCase
-        testCaseTitle={
+      </GuidelineError>
+      <GuidelineError
+        title={
           "visibility:hidden used to visually hide content when it should be available to screenreader"
         }
-        testCategory={"css"}
-        testCaseNumber={129}
+        category={"css"}
+        serial={129}
       >
         <a href={"rugby.html"}>
           Read more <span style={{ visibility: "hidden" }}>about rugby</span>
         </a>
-      </TestCase>
-      <TestCase
-        testCaseTitle={
+      </GuidelineError>
+      <GuidelineError
+        title={
           "display:none used to visually hide content when it should be available to screenreader"
         }
-        testCategory={"css"}
-        testCaseNumber={130}
+        category={"css"}
+        serial={130}
       >
         <a href={"rugby.html"}>
           Read more <span style={{ display: "none" }}>about rugby</span>
         </a>
-      </TestCase>
-      <TestCase
-        testCaseTitle={"Page zoom - boxes that don't expand with the text"}
-        testCategory={"css"}
-        testCaseNumber={131}
+      </GuidelineError>
+      <GuidelineError
+        title={"Page zoom - boxes that don't expand with the text"}
+        category={"css"}
+        serial={131}
       >
         <div className={"wont-expand-box"}>
           The box below this example won't expand to fit the text contained
@@ -73,7 +71,7 @@ export const CssTestCases = () => {
             to book a visit.
           </p>
         </div>
-      </TestCase>
+      </GuidelineError>
     </>
   );
 };
