@@ -113,6 +113,24 @@ export const OnInput = () => {
           </p>
         </form>
       </GuidelineError>
+
+      <GuidelineError
+        title={"Form control that changes context without warning"}
+        category={"3.2.2 On Input"}
+        serial={4}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-input"}
+        guideline={"3.2.2"}
+      >
+        <form>
+          <label htmlFor={"language-selector"}>Select your language</label>
+          <select className={"language-selector"} id={"language-selector"}>
+            <option value={""}>Change your language</option>
+            <option value={"en"}>English</option>
+            <option value={"de"}>Deutsch</option>
+            <option value={"fr"}>Français</option>
+          </select>
+        </form>
+      </GuidelineError>
     </>
   );
 };

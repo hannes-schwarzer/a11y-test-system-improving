@@ -5,3 +5,25 @@
 .small-text {
     font-size: 8px;
 }
+
+/*6*/
+.resize {
+    font-size: 1.5em;
+    line-height: 24px;
+    max-height: 64px;
+    overflow: hidden;
+}
+
+/*7*/
+.wont-expand-box {
+    overflow: hidden;
+    height: 10em;
+}
+.wont-expand {
+    border: 1px solid #BFC1C3;
+    padding: 1em;
+    position: absolute;
+    width: 50%;
+    height: 4.2em;
+    overflow: hidden;
+}

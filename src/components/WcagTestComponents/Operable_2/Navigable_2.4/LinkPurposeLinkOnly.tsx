@@ -74,6 +74,21 @@ export const LinkPurposeLinkOnly = () => {
         </a>
         <a href="scores.html">Football Scoreboard</a>
       </GuidelineError>
+
+      <GuidelineError
+        title={"Link text does not make sense out of context"}
+        category={"links"}
+        serial={4}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
+        }
+        guideline={"2.4.9"}
+        level={Level.AAA}
+      >
+        <p>
+          To know more about me, visit my <a href={"page.html"}>page</a>.
+        </p>
+      </GuidelineError>
     </>
   );
 };

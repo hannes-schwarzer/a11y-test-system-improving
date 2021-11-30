@@ -1,0 +1,9 @@
+.required-format-not-given .error-message {
+    display: block;
+    color: #df3034;
+    margin: 0 0 0.3em 0;
+}
+
+.error-poor-contrast .has-errors {
+    border: 1px solid #fae1e1;
+}

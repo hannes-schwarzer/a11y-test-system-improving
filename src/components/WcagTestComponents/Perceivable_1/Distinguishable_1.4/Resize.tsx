@@ -170,6 +170,50 @@ export const Resize = () => {
           This is some tiny text, much too small for some people to read
         </p>
       </GuidelineError>
+
+      <GuidelineError
+        title={"Content is not readable and functional when text is increased"}
+        category={"1.4.4 Resize text"}
+        guideline={"1.4.4"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#resize-text"}
+        level={Level.AA}
+        serial={6}
+      >
+        <p className={"resize"}>
+          This text becomes unreadable when you increase the text-size (Zoom
+          text only) in{" "}
+          <a href={"https://www.mozilla.org/en-GB/firefox/desktop/"}>Firefox</a>
+          .
+        </p>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Page zoom - boxes that don't expand with the text"}
+        category={"css"}
+        serial={7}
+        guideline={"1.4.4"}
+      >
+        <div className={"wont-expand-box"}>
+          The box below this example won't expand to fit the text contained
+          within when zoomed in.
+          <p className={"wont-expand"}>
+            This service is for England and Wales only. You must contact
+            individual{" "}
+            <a
+              href={
+                "https://www.justice-ni.gov.uk/topics/prisons/prison-visits"
+              }
+            >
+              prisons in Northern Ireland
+            </a>{" "}
+            or{" "}
+            <a href={"http://www.sps.gov.uk/Corporate/Prisons/Prisons.aspx"}>
+              Scotland
+            </a>{" "}
+            to book a visit.
+          </p>
+        </div>
+      </GuidelineError>
     </>
   );
 };

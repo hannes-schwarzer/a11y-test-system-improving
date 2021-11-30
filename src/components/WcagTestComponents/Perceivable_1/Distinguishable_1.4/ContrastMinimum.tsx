@@ -1,7 +1,13 @@
 import { GuidelineError } from "../../../GuidelineError";
 import "./ContrastMinimum.css";
+import classNames from "classnames";
 
 export const ContrastMinimum = () => {
+  const badlyPoor = classNames(
+    "errors-badly-identified",
+    "error-poor-contrast"
+  );
+
   return (
     <>
       <GuidelineError
@@ -78,7 +84,7 @@ export const ContrastMinimum = () => {
         title={
           "Small text does not have a contrast ratio of at least 4.5:1 so does not meet AA"
         }
-        category={"color"}
+        category={"1.4.3 Contrast (Minimum)"}
         serial={4}
         guideline={"1.4.3"}
         linkToGuideline={
@@ -94,7 +100,7 @@ export const ContrastMinimum = () => {
         title={
           "Large text does not have a contrast ratio of at least 3:1 so does not meet AA"
         }
-        category={"color"}
+        category={"1.4.3 Contrast (Minimum)"}
         serial={5}
         guideline={"1.4.3"}
         linkToGuideline={
@@ -104,6 +110,35 @@ export const ContrastMinimum = () => {
         <p className={"low-contrast-large-aa"}>
           This large text does not have enough contrast with it's background
         </p>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Errors identified with a poor colour contrast"}
+        category={"forms"}
+        serial={6}
+      >
+        {/*"errors-badly-identified","error-poor-contrast"*/}
+        <form className={badlyPoor}>
+          <div className={"validation-summary"} role={"alert"}>
+            You need to fix the errors on this page before continuing.
+          </div>
+          <label>
+            Claimant's name
+            <input className={"has-errors"} name={"name"} type={"text"} />
+          </label>
+          <label>
+            Claimant's surname
+            <input name={"surname"} type={"text"} />
+          </label>
+          <label>
+            Claimant's date of birth
+            <input
+              className={"has-errors"}
+              name={"date-of-birth"}
+              type={"text"}
+            />
+          </label>
+        </form>
       </GuidelineError>
     </>
   );

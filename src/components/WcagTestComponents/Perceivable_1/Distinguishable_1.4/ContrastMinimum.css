@@ -19,3 +19,27 @@ p a:active { color: fuchsia }
     font-size: 20px;
     color: #878c8c;
 }
+
+.errors-badly-identified .validation-summary {
+    padding: 1em;
+    border: 3px solid #df3034;
+    background: #fae1e1;
+}
+
+.errors-badly-identified label {
+    display: block;
+    margin: 1em 0 1em 0;
+}
+
+.errors-badly-identified label input {
+    display: block;
+}
+
+.error-poor-contrast .validation-summary {
+    color: #fff;
+}
+
+.error-poor-contrast .has-errors {
+    border: 1px solid #fae1e1;
+}
+

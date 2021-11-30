@@ -1,0 +1,10 @@
+/* Left aligned form labels */
+.too-much-whitespace {
+    overflow: hidden;
+}
+.too-much-whitespace label {
+    float: left;
+}
+.too-much-whitespace input {
+    float: right;
+}

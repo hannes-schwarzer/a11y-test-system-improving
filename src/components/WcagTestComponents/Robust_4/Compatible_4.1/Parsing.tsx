@@ -34,6 +34,45 @@ export const Parsing = () => {
           <input type="submit" value="Submit" />
         </form>
       </GuidelineError>
+
+      <GuidelineError
+        title={"Two unique labels, but identical for= attributes"}
+        category={"4.1.1 Parsing"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#parsing"}
+        serial={2}
+        guideline={"4.1.1"}
+        linkToExplanation={
+          "https://stackoverflow.com/questions/59490259/wcag-2-0-level-aa-input-element-error-no-input-on-code"
+        }
+        level={Level.A}
+      >
+        <form>
+          <label htmlFor={"two-labels-day"}>Date of issue</label>
+          <p>
+            <label htmlFor={"two-labels-day"}>Day</label>
+            <input id={"two-labels-day"} type={"text"} />
+            <label htmlFor={"two-labels-month"}>Month</label>
+            <input id={"two-labels-month"} type={"text"} />
+            <label htmlFor={"two-labels-year"}>Year</label>
+            <input id={"two-labels-year"} type={"text"} />
+          </p>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Duplicate id"}
+        category={"4.1.1 Parsing"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#parsing"}
+        level={Level.A}
+        serial={132}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F77.html"}
+        explanation={
+          "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features."
+        }
+      >
+        <div id={"nav"}>global nav</div>
+        <div id={"nav"}>page nav</div>
+      </GuidelineError>
     </>
   );
 };

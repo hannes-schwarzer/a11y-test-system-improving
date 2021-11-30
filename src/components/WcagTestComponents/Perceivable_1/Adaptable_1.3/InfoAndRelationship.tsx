@@ -994,6 +994,320 @@ CIRCUIT COURT JUDGE BRANCH 3
           </tbody>
         </table>
       </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Labels missing when they would look clumsy for some form controls"
+        }
+        category={"1.3.1 Info and Relationships"}
+        serial={25}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        guideline={"1.3.1"}
+        level={Level.A}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <label htmlFor={"missing-labels-day"}>
+            Your child's date of birth
+          </label>
+          <p>
+            <input id={"missing-labels-day"} type={"text"} />
+            <input id={"missing-labels-month"} type={"text"} />
+            <input id={"missing-labels-year"} type={"text"} />
+          </p>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Group of radio buttons not enclosed in a fieldset"}
+        category={"1.3.1 Info and Relationships"}
+        serial={26}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        guideline={"1.3.1"}
+        level={Level.A}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/grouping/"}
+      >
+        <h4>Do you already have a personal user account?</h4>
+        <label className={"block-label"} htmlFor={"radio-inline-1"}>
+          <input
+            id={"radio-inline-1"}
+            name={"radio-inline-group"}
+            type={"radio"}
+            value={"Yes"}
+          />
+          Yes
+        </label>
+        <br />
+        <label className={"block-label"} htmlFor={"radio-inline-2"}>
+          <input
+            id={"radio-inline-2"}
+            name={"radio-inline-group"}
+            type={"radio"}
+            value={"No"}
+          />
+          No
+        </label>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Form element has no label"}
+        category={"1.3.1 Info and Relationships"}
+        serial={27}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        guideline={"1.3.1"}
+        level={Level.A}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <input type={"text"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Fieldset without a legend"}
+        category={"forms"}
+        guideline={"1.3.1"}
+        serial={28}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+        explanation={
+          "Form controls can be grouped by enclosing them within the fieldset element. All controls within a given fieldset are then related. The first element inside the fieldset must be a legend element, which provides a label or description for the group. Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
+        }
+      >
+        <form>
+          <fieldset>I am a fieldset without a legend</fieldset>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Empty legend"}
+        category={"1.3.1 Info and Relationships"}
+        serial={29}
+        guideline={"1.3.1"}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        level={Level.A}
+      >
+        <form>
+          <fieldset>
+            <legend></legend>
+          </fieldset>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Label element with for= attribute but not matching id= attribute of form control"
+        }
+        category={"1.3.1 Info and Relationships"}
+        serial={30}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
+        explanation={
+          "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
+        }
+        level={Level.A}
+        guideline={"1.3.1"}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+      >
+        <form>
+          <fieldset>
+            <legend>Non-matching for attribute</legend>
+            <label htmlFor={"not-matching-anything"}>form</label>
+            <input
+              id={"label-for-not-matching"}
+              type={"checkbox"}
+              value={"yes"}
+            />
+          </fieldset>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Group of check boxes not enclosed in a fieldset"}
+        category={"1.3.1 Info and Relationships"}
+        serial={31}
+        guideline={"1.3.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+      >
+        <h4>Which types of waste do you transport regularly?</h4>
+        <label className={"block-label"} htmlFor={"waste-type-1"}>
+          <input
+            id={"waste-type-1"}
+            name={"waste-types"}
+            type={"checkbox"}
+            value={"waste-animal"}
+          />
+          Waste from animal carcasses
+        </label>
+        <br />
+        <label className={"block-label"} htmlFor={"waste-type-2"}>
+          <input
+            id={"waste-type-2"}
+            name={"waste-types"}
+            type={"checkbox"}
+            value={"waste-mines"}
+          />
+          Waste from mines or quarries
+        </label>
+        <br />
+        <label className={"block-label"} htmlFor={"waste-type-3"}>
+          <input
+            id={"waste-type-3"}
+            name={"waste-types"}
+            type={"checkbox"}
+            value={"waste-farm-agricultural"}
+          />
+          Farm or agricultural waste
+        </label>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Empty label found"}
+        category={"1.3.1 Info and Relationships"}
+        serial={32}
+        guideline={"1.3.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <label htmlFor={"empty"}></label>
+          <input id={"empty"} type={"text"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Missing labels in checkboxes"}
+        category={"1.3.1 Info and Relationships"}
+        serial={33}
+        guideline={"1.3.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <fieldset>
+            <legend>What is your nationality?</legend>
+            <label>
+              British (including English, Scottish, Welsh and Northern Irish)
+            </label>
+            <input
+              id={"nationality_british"}
+              name={"nationality.british"}
+              type={"checkbox"}
+              value={"true"}
+            />
+            <label>Irish</label>
+            <input
+              id={"nationality_irish"}
+              name={"nationality.irish"}
+              type={"checkbox"}
+              value={"true"}
+            />
+            <label>Citizen of a different country</label>
+            <input
+              id={"nationality_hasOtherCountry"}
+              name={"nationality.hasOtherCountry"}
+              type={"checkbox"}
+              value={"true"}
+            />
+          </fieldset>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Placeholder no label"}
+        category={"1.3.1 Info and Relationships"}
+        serial={34}
+        guideline={"1.3.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        linkToExplanation={
+          "https://www.w3.org/WAI/tutorials/forms/instructions/"
+        }
+        explanation={
+          "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
+        }
+      >
+        <form>
+          <input
+            id={"search-main"}
+            name={"q"}
+            placeholder={"Search"}
+            type={"search"}
+          />
+          <input className={"submit"} type={"submit"} value={"Search"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Article element used to mark-up an element that's actually not an article element."
+        }
+        category={"html"}
+        serial={35}
+        guideline={"1.3.1"}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        level={Level.A}
+        linkToExplanation={
+          "https://www.w3.org/WAI/GL/wiki/Using_HTML5_article_element"
+        }
+      >
+        <article className={"not-article-content"}>
+          <h2 id={"parent-other"}>Elsewhere on GOV.UK</h2>
+          <nav aria-labelledby={"parent-other"} role={"navigation"}>
+            <ul>
+              <li>
+                <a href={"/somewhere"}>Some link somewhere</a>
+              </li>
+              <li>
+                <a href={"/somewhere-else"}>Some link somewhere else</a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Non-decorative content inserted using CSS"}
+        category={"1.3.1 Info and Relationships"}
+        guideline={"1.3.1"}
+        serial={36}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        level={Level.A}
+        linkToExplanation={
+          "https://www.w3.org/WAI/GL/2013/WD-WCAG20-TECHS-20130711/F87"
+        }
+      >
+        <p id={"css-generated-text"}>My favourite food is </p>
+      </GuidelineError>
     </>
   );
 };

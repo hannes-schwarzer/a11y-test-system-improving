@@ -1,7 +1,12 @@
-import { GuidelineError } from "../../../GuidelineError";
+import { GuidelineError, Level } from "../../../GuidelineError";
 import "./UseOfColor.css";
+import classNames from "classnames";
 
 export const UseOfColor = () => {
+  const badlyColor = classNames(
+    "errors-badly-identified",
+    "errors-colour-only"
+  );
   return (
     <>
       <GuidelineError
@@ -38,6 +43,78 @@ export const UseOfColor = () => {
           <li className={"safe"}>Shitake</li>
           <li className={"poisonous"}>Tylopilus</li>
         </ul>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Identifying links by colour alone"}
+        category={"1.4.1 Use of Color"}
+        serial={3}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F73.html"}
+        level={Level.A}
+        guideline={"1.4.1"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"}
+      >
+        <p>
+          <a href={"#"}>A normal Link</a>
+          <br />
+          Some text
+          <br />
+          <a className={"color-alone-link"} href={"#"}>
+            Link only identifiable by color alone
+          </a>
+        </p>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Link not clearly identifiable and distinguishable from surrounding text"
+        }
+        category={"links"}
+        guideline={"1.4.1"}
+        level={Level.A}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"}
+        explanation={
+          "A Web page includes a large number of links within the body text. The links are styled so that they do not have underlines and are very similar in color to the body text. This would be a failure because users would be unable to differentiate the links from the body text."
+        }
+        serial={4}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F73.html"}
+      >
+        <p className={"unobvious-link"}>
+          Find out more about{" "}
+          <a href={"https://www.bbc.co.uk/programmes/b006q2x0"}>Doctor Who</a>
+        </p>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Errors identified by colour only"}
+        category={"1.4.1 Use of Color"}
+        serial={92}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"}
+        guideline={"1.4.1"}
+        level={Level.A}
+      >
+        <form className={badlyColor}>
+          {" "}
+          {/*"errors-badly-identified","errors-colour-only"*/}
+          <div className={"validation-summary"} role={"alert"}>
+            You need to fix the errors on this page before continuing.
+          </div>
+          <label>
+            Passport number{" "}
+            <input className={"has-errors"} name={"name"} type={"text"} />
+          </label>
+          <label>
+            Name on passport <input name={"surname"} type={"text"} />
+          </label>
+          <label>
+            Date of expiry{" "}
+            <input
+              className={"has-errors"}
+              name={"date-of-birth"}
+              type={"text"}
+            />
+          </label>
+        </form>
       </GuidelineError>
     </>
   );

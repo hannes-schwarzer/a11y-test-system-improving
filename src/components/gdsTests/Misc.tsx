@@ -1,5 +1,6 @@
 import { GuidelineError, Level } from "../GuidelineError";
 import { Link } from "react-router-dom";
+import SPACER from "../../assets/spacer.gif";
 
 export const Misc = () => {
   return (
@@ -193,6 +194,164 @@ export const Misc = () => {
             </tr>
           </tbody>
         </table>
+      </GuidelineError>
+
+      {/*This one is still to be implemented*/}
+      <GuidelineError
+        title={"Links to a sound file, no transcript"}
+        category={"links"}
+        serial={74}
+      ></GuidelineError>
+
+      <GuidelineError
+        title={"Field hint not associated with input"}
+        category={"forms"}
+        serial={107}
+        linkToExplanation={
+          "https://www.deque.com/blog/accessible-forms-the-problem-with-placeholders/ https://www.smashingmagazine.com/2018/06/placeholder-attribute/"
+        }
+      >
+        <form>
+          <label className={"form-label"} htmlFor={"ni-number"}>
+            National Insurance number
+          </label>
+          <p className={"form-hint"}>
+            It'll be on your last payslip. For example, JH 21 90 0A.
+          </p>
+          <input className={"form-control"} id={"ni-number"} type={"text"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Inadequately-sized clickable targets found"}
+        category={"3.1 Readable"}
+        serial={1}
+        guideline={"3.1"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#readable"}
+      >
+        <a href={"a.html"}>a</a>
+        <a href={"b.html"}>b</a>
+        <a href={"c.html"}>c</a>
+        <a href={"d.html"}>d</a>
+        <a href={"e.html"}>e</a>
+        <a href={"f.html"}>f</a>
+        <a href={"g.html"}>g</a>
+        <a href={"h.html"}>h</a>
+        <a href={"i.html"}>i</a>
+        <a href={"j.html"}>j</a>
+        <a href={"k.html"}>k</a>
+        <a href={"l.html"}>l</a>
+        <a href={"m.html"}>m</a>
+        <a href={"n.html"}>n</a>
+        <a href={"o.html"}>o</a>
+        <a href={"p.html"}>p</a>
+        <a href={"q.html"}>q</a>
+        <a href={"r.html"}>r</a>
+        <a href={"s.html"}>s</a>
+        <a href={"t.html"}>t</a>
+        <a href={"u.html"}>u</a>
+        <a href={"v.html"}>v</a>
+        <a href={"w.html"}>w</a>
+        <a href={"x.html"}>x</a>
+        <a href={"y.html"}>y</a>
+        <a href={"z.html"}>z</a>
+      </GuidelineError>
+
+      <GuidelineError title={"Empty paragraph"} category={"html"} serial={134}>
+        <p></p>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Object not embedded accessibly - wmode parameter not set to window"
+        }
+        category={"html"}
+        serial={137}
+        linkToExplanation={
+          "https://github.com/alphagov/accessibility-tool-audit/issues/41"
+        }
+      >
+        <object data={"foo"}>
+          <param name={"wmode"} value={"transparent"} /> Alternative text
+        </object>
+      </GuidelineError>
+
+      {/*Not 1.1.1 Actually this seems to be valid*/}
+      <GuidelineError
+        title={"Spacer image found"}
+        category={"html"}
+        serial={138}
+      >
+        We are here. <img alt={""} height={1} src={SPACER} width={100} /> And
+        you are there.
+      </GuidelineError>
+
+      {/*This actuually seems valid so far as the usage of pre is concerned*/}
+      <GuidelineError
+        title={"PRE element without CODE element inside it"}
+        category={"html"}
+        serial={141}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F48.html"}
+      >
+        <pre>Your /\ (`/`|| _ + /--\,)\,|| (||`| goes here</pre>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Inline style adds colour"}
+        category={"html"}
+        serial={139}
+        linkToExplanation={
+          "https://bcourses.berkeley.edu/courses/1476601/pages/inline-styling"
+        }
+      >
+        <p style={{ color: "blue" }}>
+          The colour of this text is set using inline styles.
+        </p>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "visibility:hidden used to visually hide content when it should be available to screenreader"
+        }
+        category={"css"}
+        serial={129}
+        linkToExplanation={
+          "https://webaim.org/techniques/css/invisiblecontent/"
+        }
+      >
+        <a href={"rugby.html"}>
+          Read more <span style={{ visibility: "hidden" }}>about rugby</span>
+        </a>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "display:none used to visually hide content when it should be available to screenreader"
+        }
+        category={"css"}
+        serial={130}
+        linkToExplanation={
+          "https://webaim.org/techniques/css/invisiblecontent/"
+        }
+      >
+        <a href={"rugby.html"}>
+          Read more <span style={{ display: "none" }}>about rugby</span>
+        </a>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "iframe title attribute does not describe the content or purpose of the iframe"
+        }
+        category={"frame"}
+        serial={126}
+      >
+        <iframe
+          height={100}
+          src={"/demo-page"}
+          title={"Facebook"}
+          width={300}
+        ></iframe>
       </GuidelineError>
     </>
   );

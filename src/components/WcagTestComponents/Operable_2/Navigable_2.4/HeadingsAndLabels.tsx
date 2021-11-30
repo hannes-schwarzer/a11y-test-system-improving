@@ -36,6 +36,161 @@ export const HeadingsAndLabels = () => {
           reader.
         </p>
       </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Labels missing when they would look clumsy for some form controls"
+        }
+        category={"2.4.6 Headings and Labels"}
+        serial={2}
+        guideline={"2.4.6"}
+        level={Level.AA}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <label htmlFor={"missing-labels-day"}>
+            Your child's date of birth
+          </label>
+          <p>
+            <input id={"missing-labels-day"} type={"text"} />
+            <input id={"missing-labels-month"} type={"text"} />
+            <input id={"missing-labels-year"} type={"text"} />
+          </p>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Form element has no label"}
+        category={"2.4.6 Headings and Labels"}
+        serial={3}
+        guideline={"2.4.6"}
+        level={Level.AA}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <input type={"text"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Empty label found"}
+        category={"2.4.6 Headings and Labels"}
+        guideline={"2.4.6"}
+        serial={4}
+        level={Level.AA}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <label htmlFor={"empty"}></label>
+          <input id={"empty"} type={"text"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Non-unique field label found"}
+        category={"2.4.6 Headings and Labels"}
+        serial={5}
+        guideline={"2.4.6"}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
+        }
+        level={Level.AA}
+        explanation={
+          "This success criterion does not require headings or labels. This success criterion requires that if headings or labels are provided, they be descriptive."
+        }
+        linkToExplanation={
+          "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html"
+        }
+      >
+        <form>
+          <label htmlFor={"x_3"}>
+            Name
+            <input id={"x_3"} name={"x_3"} type={"text"} />
+          </label>
+          <br />
+          <label htmlFor={"x_4"}>
+            Name
+            <input id={"x_4"} name={"x_4"} type={"text"} />
+          </label>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Missing labels in checkboxes"}
+        category={"2.4.6 Headings and Labels"}
+        serial={6}
+        guideline={"2.4.6"}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
+        }
+        level={Level.AA}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <fieldset>
+            <legend>What is your nationality?</legend>
+            <label>
+              British (including English, Scottish, Welsh and Northern Irish)
+            </label>
+            <input
+              id={"nationality_british"}
+              name={"nationality.british"}
+              type={"checkbox"}
+              value={"true"}
+            />
+            <label>Irish</label>
+            <input
+              id={"nationality_irish"}
+              name={"nationality.irish"}
+              type={"checkbox"}
+              value={"true"}
+            />
+            <label>Citizen of a different country</label>
+            <input
+              id={"nationality_hasOtherCountry"}
+              name={"nationality.hasOtherCountry"}
+              type={"checkbox"}
+              value={"true"}
+            />
+          </fieldset>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Placeholder no label"}
+        category={"2.4.6 Headings and Labels"}
+        guideline={"2.4.6"}
+        serial={7}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
+        }
+        level={Level.AA}
+        linkToExplanation={
+          "https://www.w3.org/WAI/tutorials/forms/instructions/"
+        }
+        explanation={
+          "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
+        }
+      >
+        <form>
+          <input
+            id={"search-main"}
+            name={"q"}
+            placeholder={"Search"}
+            type={"search"}
+          />
+          <input className={"submit"} type={"submit"} value={"Search"} />
+        </form>
+      </GuidelineError>
     </>
   );
 };

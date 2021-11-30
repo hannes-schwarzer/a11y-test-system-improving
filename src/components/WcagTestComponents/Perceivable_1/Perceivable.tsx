@@ -11,12 +11,14 @@ import { VisualPresentation } from "./Distinguishable_1.4/VisualPresentation";
 import { Reflow } from "./Distinguishable_1.4/Reflow";
 import { NonTextContrast } from "./Distinguishable_1.4/NonTextContrast";
 import { TextSpacing } from "./Distinguishable_1.4/TextSpacing";
+import { MediaAlternativePrerecorded } from "./TimeBasedMedia_1.2/MediaAlternativePrerecorded";
 
 export const Perceivable = () => {
   return (
     <>
       <NonTextContent /> {/*1.1.1*/}
       <AudioVideoOnly /> {/*1.2.1*/}
+      <MediaAlternativePrerecorded /> {/*1.2.8*/}
       <InfoAndRelationship /> {/*1.3.1*/}
       <MeaningfulSequence /> {/*1.3.2*/}
       <UseOfColor /> {/*1.4.1*/}

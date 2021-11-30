@@ -1,13 +1,18 @@
-import { GuidelineError } from "../../GuidelineError";
+import { GuidelineError, Level } from "../../../GuidelineError";
 
-export const NavigationTestCases = () => {
+export const TargetSize = () => {
   return (
     <>
-      <h2>Navigation</h2>
       <GuidelineError
         title={"Inadequately-sized clickable targets found"}
-        category={"navifation"}
-        serial={108}
+        category={"2.5.5 Target Size"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#target-size"}
+        level={Level.AAA}
+        serial={1}
+        guideline={"2.5.5"}
+        linkToExplanation={
+          "https://dequeuniversity.com/resources/wcag2.1/2.5.5-target-size"
+        }
       >
         <a href={"a.html"}>a</a>
         <a href={"b.html"}>b</a>

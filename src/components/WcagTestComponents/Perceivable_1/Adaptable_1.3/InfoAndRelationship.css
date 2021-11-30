@@ -28,3 +28,12 @@ p.opinion:before { content: "Opinion: "; font-weight: bold; }
     font-weight: bold;
     margin: 0.67em 0;
 }
+
+.not-article-content h2 {
+    margin: 0.5em 0;
+}
+
+/*36*/
+#css-generated-text:after {
+    content: 'Pizza';
+}

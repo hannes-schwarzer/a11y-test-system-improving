@@ -5,6 +5,8 @@ import DECO from "../../../../assets/decoration.png";
 import SPACER from "../../../../assets/spacer.gif";
 import SUBMIT from "../../../../assets/submit.png";
 import SALE from "../../../../assets/sale.jpeg";
+import REDPANDA from "../../../../assets/220px-RedPandaFullBody.jpeg";
+import BAT from "../../../../assets/bat.jpeg";
 
 export const NonTextContent = () => {
   return (
@@ -375,6 +377,97 @@ export const NonTextContent = () => {
           does not include this information, only a partial "25% off sale"
         </p>
         <img alt={"25% off sale"} src={SALE} />
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Image link with no alternative text"}
+        category={"1.1.1 Non-text Content"}
+        serial={20}
+        guideline={"1.1.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+        }
+        linkToExplanation={
+          "https://www.w3.org/WAI/tutorials/images/functional/"
+        }
+      >
+        <a href={"http://www.bbc.co.uk/"}>
+          <img alt={""} src={BBC} />
+        </a>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Image link alt text repeats text in the link"}
+        category={"1.1.1 Non-text Content"}
+        serial={21}
+        linkToExplanation={
+          "https://dequeuniversity.com/rules/axe/3.0/image-redundant-alt"
+        }
+        guideline={"1.1.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+        }
+      >
+        <a href={"https://en.wikipedia.org/wiki/Red_panda"}>
+          <img alt={"Red Panda"} height={165} src={REDPANDA} width={220} /> Red
+          Panda
+        </a>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Link to a multimedia file, no transcript"}
+        category={"1.1.1 Non-text Content"}
+        serial={22}
+        linkToExplanation={
+          "https://www.w3.org/WAI/WCAG21/Techniques/general/G73.html"
+        }
+        guideline={"1.1.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+        }
+      >
+        <a href={"interview.mov"}>Watch the interview</a>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Link to an image, no text alternative"}
+        category={"1.1.1 Non-text Content"}
+        serial={23}
+        guideline={"1.1.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+        }
+      >
+        My favourite <a href={BAT}>bat</a>.
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Label element with for= attribute but not matching id= attribute of form control"
+        }
+        category={"1.1.1 Non-text Content"}
+        serial={24}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
+        explanation={
+          "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
+        }
+        guideline={"1.1.1"}
+      >
+        <form>
+          <fieldset>
+            <legend>Non-matching for attribute</legend>
+            <label htmlFor={"not-matching-anything"}>form</label>
+            <input
+              id={"label-for-not-matching"}
+              type={"checkbox"}
+              value={"yes"}
+            />
+          </fieldset>
+        </form>
       </GuidelineError>
     </>
   );

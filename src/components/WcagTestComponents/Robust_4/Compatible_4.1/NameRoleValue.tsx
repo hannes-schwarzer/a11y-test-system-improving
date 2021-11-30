@@ -236,6 +236,223 @@ export const NameRoleValue = () => {
         <h4></h4>
         <p>This paragraph is preceded by an empty h4</p>
       </GuidelineError>
+
+      <GuidelineError
+        title={"Link to #, invalid hypertext reference"}
+        category={"4.1.2 Name, Role, Value"}
+        serial={11}
+        guideline={"4.1.2"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        linkToExplanation={
+          "https://www.eqafy.com/component/content/article/49-blog/185-6-accessibility-fixes-for-university-and-college-websites.html?Itemid=293"
+        }
+      >
+        <a href={"#"}>Do something</a>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Labels missing when they would look clumsy for some form controls"
+        }
+        category={"4.1.2 Name, Role, Value"}
+        guideline={"4.1.2"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        serial={12}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <label htmlFor={"missing-labels-day"}>
+            Your child's date of birth
+          </label>
+          <p>
+            <input id={"missing-labels-day"} type={"text"} />
+            <input id={"missing-labels-month"} type={"text"} />
+            <input id={"missing-labels-year"} type={"text"} />
+          </p>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Form element has no label"}
+        category={"4.1.2 Name, Role, Value"}
+        serial={13}
+        guideline={"4.1.2"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <input type={"text"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={
+          "Label element with for= attribute but not matching id= attribute of form control"
+        }
+        category={"4.1.2 Name, Role, Value"}
+        serial={14}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
+        explanation={
+          "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
+        }
+        guideline={"4.1.2"}
+      >
+        <form>
+          <fieldset>
+            <legend>Non-matching for attribute</legend>
+            <label htmlFor={"not-matching-anything"}>form</label>
+            <input
+              id={"label-for-not-matching"}
+              type={"checkbox"}
+              value={"yes"}
+            />
+          </fieldset>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Empty label found"}
+        category={"4.1.2 Name, Role, Value"}
+        guideline={"4.1.2"}
+        serial={15}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <label htmlFor={"empty"}></label>
+          <input id={"empty"} type={"text"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Missing labels in checkboxes"}
+        category={"4.1.2 Name, Role, Value"}
+        serial={16}
+        guideline={"4.1.2"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <fieldset>
+            <legend>What is your nationality?</legend>
+            <label>
+              British (including English, Scottish, Welsh and Northern Irish)
+            </label>
+            <input
+              id={"nationality_british"}
+              name={"nationality.british"}
+              type={"checkbox"}
+              value={"true"}
+            />
+            <label>Irish</label>
+            <input
+              id={"nationality_irish"}
+              name={"nationality.irish"}
+              type={"checkbox"}
+              value={"true"}
+            />
+            <label>Citizen of a different country</label>
+            <input
+              id={"nationality_hasOtherCountry"}
+              name={"nationality.hasOtherCountry"}
+              type={"checkbox"}
+              value={"true"}
+            />
+          </fieldset>
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Placeholder no label"}
+        category={"4.1.2 Name, Role, Value"}
+        serial={17}
+        guideline={"4.1.2"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        linkToExplanation={
+          "https://www.w3.org/WAI/tutorials/forms/instructions/"
+        }
+        explanation={
+          "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
+        }
+      >
+        <form>
+          <input
+            id={"search-main"}
+            name={"q"}
+            placeholder={"Search"}
+            type={"search"}
+          />
+          <input className={"submit"} type={"submit"} value={"Search"} />
+        </form>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Invalid ARIA role names"}
+        category={"4.1.2 Name, Role, Value"}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        serial={18}
+        level={Level.A}
+        linkToExplanation={
+          "https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr"
+        }
+        guideline={"4.1.2"}
+      >
+        <div className={"header-context"} id={"global-breadcrumb"}>
+          <ol className={"group"} role={"breadcrumb"}>
+            <li>
+              <a href={"/"}>Home</a>
+            </li>
+            <li>
+              <a href={"/some-page"}>Some page</a>
+            </li>
+            <li>
+              <strong>
+                <a href={"/some-other-page"}>Some other page</a>
+              </strong>
+            </li>
+          </ol>
+        </div>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"iframe is missing a title attribute"}
+        category={"4.1.2 Name, Role, Value"}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        serial={18}
+        guideline={"4.1.2"}
+        level={Level.A}
+        linkToExplanation={
+          "https://equalizedigital.com/accessibility-checker/iframe-missing-title/"
+        }
+      >
+        <iframe height={100} src={"/demo-page"} width={300}></iframe>
+      </GuidelineError>
     </>
   );
 };

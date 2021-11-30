@@ -1,55 +1,21 @@
-import { GuidelineError } from "../../GuidelineError";
-import classNames from "classnames";
-import "./FormsTestCases.css";
+import { GuidelineError, Level } from "../../../GuidelineError";
+import "./LabelsAndInstructions.css";
 
-export const FormsTestCases = () => {
-  const formClassNameNinetyTwo = classNames(
-    "errors-badly-identified",
-    "errors-colour-only"
-  );
-  const formClassNameHundredFour = classNames(
-    "errors-badly-identified",
-    "error-poor-contrast"
-  );
-  const formClassHundredSeven = classNames(
-    "errors-badly-identified",
-    "errors-not-identified"
-  );
-
+export const LabelsAndInstructions = () => {
   return (
     <>
-      <GuidelineError
-        title={"Errors identified by colour only"}
-        category={"forms"}
-        serial={92}
-      >
-        <form className={formClassNameNinetyTwo}>
-          <div className={"validation-summary"} role={"alert"}>
-            You need to fix the errors on this page before continuing.
-          </div>
-          <label>
-            Passport number{" "}
-            <input className={"has-errors"} name={"name"} type={"text"} />
-          </label>
-          <label>
-            Name on passport <input name={"surname"} type={"text"} />
-          </label>
-          <label>
-            Date of expiry{" "}
-            <input
-              className={"has-errors"}
-              name={"date-of-birth"}
-              type={"text"}
-            />
-          </label>
-        </form>
-      </GuidelineError>
       <GuidelineError
         title={
           "Labels missing when they would look clumsy for some form controls"
         }
-        category={"forms"}
-        serial={93}
+        category={"3.3.2 Labels or Instructions"}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        guideline={"3.3.2"}
+        serial={1}
+        level={Level.A}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
       >
         <form>
           <label htmlFor={"missing-labels-day"}>
@@ -62,30 +28,16 @@ export const FormsTestCases = () => {
           </p>
         </form>
       </GuidelineError>
-      <GuidelineError
-        title={
-          "Error messages - no suggestion for corrections given, e.g. required format"
-        }
-        category={"forms"}
-        serial={94}
-      >
-        <form>
-          <label className={"required-format-not-given"}>
-            Phone number
-            <span className={"error-message"}>is not valid</span>
-            <input
-              className={"has-errors"}
-              pattern={"7[0-9]{9}"}
-              required={true}
-              type={"tel"}
-            />
-          </label>
-        </form>
-      </GuidelineError>
+
       <GuidelineError
         title={"Left aligned form labels with too much white space"}
-        category={"forms"}
-        serial={95}
+        category={"3.3.2 Labels or Instructions"}
+        serial={2}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        guideline={"3.3.2"}
+        level={Level.A}
       >
         <form>
           <p className={"too-much-whitespace"}>
@@ -94,10 +46,17 @@ export const FormsTestCases = () => {
           </p>
         </form>
       </GuidelineError>
+
       <GuidelineError
         title={"Group of radio buttons not enclosed in a fieldset"}
-        category={"forms"}
-        serial={96}
+        category={"3.3.2 Labels or Instructions"}
+        serial={3}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        guideline={"3.3.2"}
+        level={Level.A}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/grouping/"}
       >
         <h4>Do you already have a personal user account?</h4>
         <label className={"block-label"} htmlFor={"radio-inline-1"}>
@@ -120,37 +79,75 @@ export const FormsTestCases = () => {
           No
         </label>
       </GuidelineError>
+
       <GuidelineError
         title={"Form element has no label"}
-        category={"forms"}
-        serial={97}
+        category={"3.3.2 Labels or Instructions"}
+        serial={4}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        guideline={"3.3.2"}
+        level={Level.A}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
       >
         <form>
           <input type={"text"} />
         </form>
       </GuidelineError>
+
       <GuidelineError
         title={"Fieldset without a legend"}
         category={"forms"}
-        serial={98}
+        guideline={"3.3.2"}
+        serial={5}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+        explanation={
+          "Form controls can be grouped by enclosing them within the fieldset element. All controls within a given fieldset are then related. The first element inside the fieldset must be a legend element, which provides a label or description for the group. Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
+        }
       >
         <form>
           <fieldset>I am a fieldset without a legend</fieldset>
         </form>
       </GuidelineError>
-      <GuidelineError title={"Empty legend"} category={"forms"} serial={99}>
+
+      <GuidelineError
+        title={"Empty legend"}
+        category={"3.3.2 Labels or Instructions"}
+        serial={6}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        guideline={"3.3.2"}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+      >
         <form>
           <fieldset>
             <legend></legend>
           </fieldset>
         </form>
       </GuidelineError>
+
       <GuidelineError
         title={
           "Label element with for= attribute but not matching id= attribute of form control"
         }
-        category={"forms"}
-        serial={100}
+        category={"3.3.2 Labels or Instructions"}
+        serial={7}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
+        explanation={
+          "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
+        }
+        guideline={"3.3.2"}
       >
         <form>
           <fieldset>
@@ -164,10 +161,17 @@ export const FormsTestCases = () => {
           </fieldset>
         </form>
       </GuidelineError>
+
       <GuidelineError
         title={"Group of check boxes not enclosed in a fieldset"}
-        category={"forms"}
-        serial={101}
+        category={"3.3.2 Labels or Instructions"}
+        serial={8}
+        guideline={"3.3.2"}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
       >
         <h4>Which types of waste do you transport regularly?</h4>
         <label className={"block-label"} htmlFor={"waste-type-1"}>
@@ -200,23 +204,39 @@ export const FormsTestCases = () => {
           Farm or agricultural waste
         </label>
       </GuidelineError>
+
       <GuidelineError
         title={"Empty label found"}
-        category={"forms"}
-        serial={102}
+        category={"3.3.2 Labels or Instructions"}
+        guideline={"3.3.2"}
+        serial={9}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
       >
         <form>
           <label htmlFor={"empty"}></label>
           <input id={"empty"} type={"text"} />
         </form>
       </GuidelineError>
+
       <GuidelineError
         title={"Two unique labels, but identical for= attributes"}
-        category={"forms"}
-        serial={103}
+        category={"3.3.2 Labels or Instructions"}
+        serial={10}
+        guideline={"3.3.2"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        linkToExplanation={
+          "https://stackoverflow.com/questions/59490259/wcag-2-0-level-aa-input-element-error-no-input-on-code"
+        }
       >
         <form>
-          <label htmlFor={"two-labels-day"}>Date od issue</label>
+          <label htmlFor={"two-labels-day"}>Date of issue</label>
           <p>
             <label htmlFor={"two-labels-day"}>Day</label>
             <input id={"two-labels-day"} type={"text"} />
@@ -227,54 +247,17 @@ export const FormsTestCases = () => {
           </p>
         </form>
       </GuidelineError>
-      <GuidelineError
-        title={"Errors identified with a poor colour contrast"}
-        category={"forms"}
-        serial={104}
-      >
-        <form className={formClassNameHundredFour}>
-          <div className={"validation-summary"} role={"alert"}>
-            You need to fix the errors on this page before continuing.
-          </div>
-          <label>
-            Claimant's name
-            <input className={"has-errors"} name={"name"} type={"text"} />
-          </label>
-          <label>
-            Claimant's surname
-            <input name={"surname"} type={"text"} />
-          </label>
-          <label>
-            Claimant's date of birth
-            <input
-              className={"has-errors"}
-              name={"date-of-birth"}
-              type={"text"}
-            />
-          </label>
-        </form>
-      </GuidelineError>
-      <GuidelineError
-        title={"Non-unique field label found"}
-        category={"forms"}
-        serial={105}
-      >
-        <form>
-          <label htmlFor={"x_3"}>
-            Name
-            <input id={"x_3"} name={"x_3"} type={"text"} />
-          </label>
-          <br />
-          <label htmlFor={"x_4"}>
-            Name
-            <input id={"x_4"} name={"x_4"} type={"text"} />
-          </label>
-        </form>
-      </GuidelineError>
+
       <GuidelineError
         title={"Missing labels in checkboxes"}
-        category={"forms"}
-        serial={106}
+        category={"3.3.2 Labels or Instructions"}
+        serial={11}
+        guideline={"3.3.2"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
       >
         <form>
           <fieldset>
@@ -305,25 +288,22 @@ export const FormsTestCases = () => {
           </fieldset>
         </form>
       </GuidelineError>
-      <GuidelineError
-        title={"Field hint not associated with input"}
-        category={"forms"}
-        serial={107}
-      >
-        <form>
-          <label className={"form-label"} htmlFor={"ni-number"}>
-            National Insurance number
-          </label>
-          <p className={"form-hint"}>
-            It'll be on your last payslip. For example, JH 21 90 0A.
-          </p>
-          <input className={"form-control"} id={"ni-number"} type={"text"} />
-        </form>
-      </GuidelineError>
+
       <GuidelineError
         title={"Placeholder no label"}
-        category={"forms"}
-        serial={107}
+        category={"3.3.2 Labels or Instructions"}
+        serial={12}
+        guideline={"3.3.2"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        linkToExplanation={
+          "https://www.w3.org/WAI/tutorials/forms/instructions/"
+        }
+        explanation={
+          "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
+        }
       >
         <form>
           <input
@@ -333,44 +313,6 @@ export const FormsTestCases = () => {
             type={"search"}
           />
           <input className={"submit"} type={"submit"} value={"Search"} />
-        </form>
-      </GuidelineError>
-      <GuidelineError
-        title={"Errors are not identified"}
-        category={"forms"}
-        serial={107}
-      >
-        <form className={formClassHundredSeven}>
-          <div className={"validation-summary"} role={"alert"}>
-            You need to fix the errors on this page before continuing.
-          </div>
-          <label>
-            Name
-            <input name={"name"} type={"text"} />
-          </label>
-          <label>
-            Surname
-            <input name={"surname"} type={"text"} />
-          </label>
-          <label>
-            Date of birth
-            <input name={"date-of-birth"} type={"text"} />
-          </label>
-        </form>
-      </GuidelineError>
-      <GuidelineError
-        title={"Form control that changes context without warning"}
-        category={"forms"}
-        serial={107}
-      >
-        <form>
-          <label htmlFor={"language-selector"}>Select your language</label>
-          <select className={"language-selector"} id={"language-selector"}>
-            <option value={""}>Change your language</option>
-            <option value={"en"}>English</option>
-            <option value={"de"}>Deutsch</option>
-            <option value={"fr"}>Français</option>
-          </select>
         </form>
       </GuidelineError>
     </>

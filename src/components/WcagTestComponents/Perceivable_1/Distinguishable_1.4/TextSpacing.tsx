@@ -18,6 +18,21 @@ export const TextSpacing = () => {
           finished the previous one.
         </p>
       </GuidelineError>
+      <GuidelineError
+        title={"Links not separated by printable characters"}
+        category={"1.4.12 Text Spacing"}
+        serial={2}
+        guideline={"1.4.12"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#text-spacing"}
+        level={Level.AA}
+        linkToExplanation={
+          "https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html"
+        }
+      >
+        <a href={"a.html"}>Page A</a>
+        <a href={"b.html"}>Page B</a>
+        <a href={"c.html"}>Page C</a>
+      </GuidelineError>
     </>
   );
 };
