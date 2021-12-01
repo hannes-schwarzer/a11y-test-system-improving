@@ -1,5 +1,6 @@
 # a11y-test-system
 Test system for accessibility error detection and prevention.
+For each accessibility issue there is information about the violated WCAG guideline and in some cases additional information. 
 
 # How to start the system
 ```bash
