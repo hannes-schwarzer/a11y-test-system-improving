@@ -7,7 +7,7 @@ export const LabelInName = () => {
         title={
           "F96: Failure due to the accessible name not containing the visible label text"
         }
-        category={"2.5.3 Label in Name"}
+        successCriterion={"2.5.3 Label in Name"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"
@@ -29,7 +29,7 @@ export const LabelInName = () => {
         title={
           "F96: Failure due to the accessible name not containing the visible label text"
         }
-        category={"2.5.3 Label in Name"}
+        successCriterion={"2.5.3 Label in Name"}
         serial={2}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"
@@ -52,7 +52,7 @@ export const LabelInName = () => {
         title={
           "F96: Failure due to the accessible name not containing the visible label text"
         }
-        category={"2.5.3 Label in Name"}
+        successCriterion={"2.5.3 Label in Name"}
         serial={3}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"

@@ -7,7 +7,7 @@ export const Parsing = () => {
         title={
           "F77: Failure of Success Criterion 4.1.1 due to duplicate values of type ID"
         }
-        category={"4.1.1 Parsing"}
+        successCriterion={"4.1.1 Parsing"}
         serial={1}
         guideline={"4.1.1"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#parsing"}
@@ -37,7 +37,7 @@ export const Parsing = () => {
 
       <GuidelineError
         title={"Two unique labels, but identical for= attributes"}
-        category={"4.1.1 Parsing"}
+        successCriterion={"4.1.1 Parsing"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#parsing"}
         serial={2}
         guideline={"4.1.1"}
@@ -61,7 +61,7 @@ export const Parsing = () => {
 
       <GuidelineError
         title={"Duplicate id"}
-        category={"4.1.1 Parsing"}
+        successCriterion={"4.1.1 Parsing"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#parsing"}
         level={Level.A}
         serial={132}

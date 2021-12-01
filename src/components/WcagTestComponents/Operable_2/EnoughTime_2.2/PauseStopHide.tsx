@@ -21,7 +21,7 @@ export const PauseStopHide = () => {
         title={
           "F4: Failure of Success Criterion 2.2.2 due to using text-decoration:blink without a mechanism to stop it in less than five seconds"
         }
-        category={"2.2.2 Pause, Stop, Hide"}
+        successCriterion={"2.2.2 Pause, Stop, Hide"}
         serial={1}
         level={Level.A}
         guideline={"2.2.2"}
@@ -46,7 +46,7 @@ export const PauseStopHide = () => {
         title={
           "F50: Failure of Success Criterion 2.2.2 due to a script that causes a blink effect without a mechanism to stop the blinking at 5 seconds or less"
         }
-        category={"2.2.2 Pause, Stop, Hide"}
+        successCriterion={"2.2.2 Pause, Stop, Hide"}
         serial={2}
         level={Level.A}
         guideline={"2.2.2"}
@@ -66,7 +66,7 @@ export const PauseStopHide = () => {
 
       <GuidelineError
         title={"A distraction is present, an animated gif"}
-        category={"2.2.2 Pause, Stop, Hide"}
+        successCriterion={"2.2.2 Pause, Stop, Hide"}
         serial={3}
         guideline={"2.2.2"}
         linkToGuideline={

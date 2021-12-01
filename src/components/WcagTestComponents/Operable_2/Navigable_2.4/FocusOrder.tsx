@@ -1,4 +1,5 @@
 import { GuidelineError, Level } from "../../../GuidelineError";
+import "./FocusOrder.css";
 
 export const FocusOrder = () => {
   return (
@@ -7,7 +8,7 @@ export const FocusOrder = () => {
         title={
           "F44: Failure of Success Criterion 2.4.3 due to using tabindex to create a tab order that does not preserve meaning and operability"
         }
-        category={"2.4.3 Focus Order"}
+        successCriterion={"2.4.3 Focus Order"}
         serial={1}
         guideline={"2.4.3"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#focus-order"}
@@ -41,6 +42,41 @@ export const FocusOrder = () => {
             </a>
           </li>
         </ol>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Focus order in wrong order"}
+        successCriterion={"keyboard"}
+        serial={2}
+        guideline={"2.4.3"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#focus-order"}
+        level={Level.A}
+      >
+        <div className={"focus-order-broken"}>
+          <a className={"first"} href={"#"}>
+            First link
+          </a>
+          <a className={"second"} href={"#"}>
+            Second link
+          </a>
+          <a className={"third"} href={"#"}>
+            Third link
+          </a>
+        </div>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Link with tabindex greater than 0"}
+        successCriterion={"keyboard"}
+        serial={3}
+        linkToExplanation={"https://dequeuniversity.com/rules/axe/4.0/tabindex"}
+        guideline={"2.4.3"}
+        linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#focus-order"}
+        level={Level.A}
+      >
+        <a href={"page.html"} tabIndex={5}>
+          A link with a tabindex greater than 0
+        </a>
       </GuidelineError>
     </>
   );

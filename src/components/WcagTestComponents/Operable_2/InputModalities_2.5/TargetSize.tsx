@@ -5,7 +5,7 @@ export const TargetSize = () => {
     <>
       <GuidelineError
         title={"Inadequately-sized clickable targets found"}
-        category={"2.5.5 Target Size"}
+        successCriterion={"2.5.5 Target Size"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#target-size"}
         level={Level.AAA}
         serial={1}

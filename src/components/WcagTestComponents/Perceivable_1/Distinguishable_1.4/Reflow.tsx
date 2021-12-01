@@ -6,7 +6,7 @@ export const Reflow = () => {
       <GuidelineError
         title={"Wide page forces users to scroll horizontally"}
         serial={1}
-        category={"1.4.10 Reflow"}
+        successCriterion={"1.4.10 Reflow"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#reflow"}
         guideline={"1.4.10"}
         level={Level.AA}

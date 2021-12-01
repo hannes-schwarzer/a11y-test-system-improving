@@ -13,7 +13,7 @@ export const UseOfColor = () => {
         title={
           "F73: Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision"
         }
-        category={"1.4.1 Use of Color"}
+        successCriterion={"1.4.1 Use of Color"}
         serial={1}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"}
         guideline={"1.4.1"}
@@ -27,7 +27,7 @@ export const UseOfColor = () => {
 
       <GuidelineError
         title={"Color alone is used to convey content"}
-        category={"1.4.1 Use of Color"}
+        successCriterion={"1.4.1 Use of Color"}
         serial={2}
         guideline={"1.4.1"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"}
@@ -47,7 +47,7 @@ export const UseOfColor = () => {
 
       <GuidelineError
         title={"Identifying links by colour alone"}
-        category={"1.4.1 Use of Color"}
+        successCriterion={"1.4.1 Use of Color"}
         serial={3}
         linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F73.html"}
         level={Level.A}
@@ -69,7 +69,7 @@ export const UseOfColor = () => {
         title={
           "Link not clearly identifiable and distinguishable from surrounding text"
         }
-        category={"links"}
+        successCriterion={"links"}
         guideline={"1.4.1"}
         level={Level.A}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"}
@@ -87,7 +87,7 @@ export const UseOfColor = () => {
 
       <GuidelineError
         title={"Errors identified by colour only"}
-        category={"1.4.1 Use of Color"}
+        successCriterion={"1.4.1 Use of Color"}
         serial={92}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"}
         guideline={"1.4.1"}

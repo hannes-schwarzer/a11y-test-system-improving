@@ -7,7 +7,7 @@ export const ConsistentNavigation = () => {
         title={
           "F66: Failure of Success Criterion 3.2.3 due to presenting navigation links in a different relative order on different pages"
         }
-        category={"3.2.3 Consistent Navigation"}
+        successCriterion={"3.2.3 Consistent Navigation"}
         serial={1}
         guideline={"3.2.3"}
         linkToGuideline={

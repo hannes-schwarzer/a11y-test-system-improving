@@ -16,7 +16,7 @@ export const NonTextContent = () => {
         title={
           "F3: Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information"
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -31,7 +31,7 @@ export const NonTextContent = () => {
         title={
           "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={2}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -68,7 +68,7 @@ export const NonTextContent = () => {
         title={
           "F38: Failure of Success Criterion 1.1.1 due to not marking up decorative images in HTML in a way that allows assistive technology to ignore them\n"
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={3}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -94,7 +94,7 @@ export const NonTextContent = () => {
         title={
           'F39: Failure of Success Criterion 1.1.1 due to providing a text alternative that is not null (e.g., alt="spacer" or alt="image") for images that should be ignored by assistive technology'
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={4}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -116,7 +116,7 @@ export const NonTextContent = () => {
         title={
           'F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"'
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={5}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -133,7 +133,7 @@ export const NonTextContent = () => {
         title={
           "F71: Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text without providing a text alternative"
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={6}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -153,7 +153,7 @@ export const NonTextContent = () => {
         title={
           "F72: Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text alternative"
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={6}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -184,7 +184,7 @@ export const NonTextContent = () => {
       </GuidelineError>
       <GuidelineError
         title={"Image button has no alt attribute"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={7}
         level={Level.A}
         guideline={"1.1.1"}
@@ -196,7 +196,7 @@ export const NonTextContent = () => {
       </GuidelineError>
       <GuidelineError
         title={"Uninformative alt attribute value on image button"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={8}
         guideline={"1.1.1"}
         linkToGuideline={
@@ -209,7 +209,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Empty alt attribute on image button"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={9}
         guideline={"1.1.1"}
         linkToGuideline={
@@ -222,7 +222,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image has alt and title that are different"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={10}
         guideline={"1.1.1"}
         level={Level.A}
@@ -239,7 +239,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image with presentation role has non-empty alt"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={11}
         guideline={"1.1.1"}
         level={Level.A}
@@ -259,7 +259,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image with no alt attribute"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={12}
         guideline={"1.1.1"}
         level={Level.A}
@@ -275,7 +275,7 @@ export const NonTextContent = () => {
         title={
           "Background image that conveys information does not have a text alternative"
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={13}
         guideline={"1.1.1"}
         level={Level.A}
@@ -292,7 +292,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image has empty alt and non-empty title"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={14}
         guideline={"1.1.1"}
         level={Level.A}
@@ -306,7 +306,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image has no alt and non-empty title"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={15}
         guideline={"1.1.1"}
         level={Level.A}
@@ -320,7 +320,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image that conveys information has an empty alt attribute"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={16}
         guideline={"1.1.1"}
         level={Level.A}
@@ -334,7 +334,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image that conveys information has inappropriate alt text"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={17}
         guideline={"1.1.1"}
         level={Level.A}
@@ -348,7 +348,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image alt attribute contains image file name"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={18}
         guideline={"1.1.1"}
         level={Level.A}
@@ -362,7 +362,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image with partial text alternative"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={19}
         guideline={"1.1.1"}
         level={Level.A}
@@ -381,7 +381,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image link with no alternative text"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={20}
         guideline={"1.1.1"}
         level={Level.A}
@@ -399,7 +399,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Image link alt text repeats text in the link"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={21}
         linkToExplanation={
           "https://dequeuniversity.com/rules/axe/3.0/image-redundant-alt"
@@ -418,7 +418,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Link to a multimedia file, no transcript"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={22}
         linkToExplanation={
           "https://www.w3.org/WAI/WCAG21/Techniques/general/G73.html"
@@ -434,7 +434,7 @@ export const NonTextContent = () => {
 
       <GuidelineError
         title={"Link to an image, no text alternative"}
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={23}
         guideline={"1.1.1"}
         level={Level.A}
@@ -449,7 +449,7 @@ export const NonTextContent = () => {
         title={
           "Label element with for= attribute but not matching id= attribute of form control"
         }
-        category={"1.1.1 Non-text Content"}
+        successCriterion={"1.1.1 Non-text Content"}
         serial={24}
         linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
         explanation={

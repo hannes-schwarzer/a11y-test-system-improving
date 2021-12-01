@@ -1,0 +1,11 @@
+/* Wrong focus order */
+.focus-order-broken a {
+    margin-left: 0.75em;
+}
+.focus-order-broken .first,
+.focus-order-broken .third {
+    float: left;
+}
+.focus-order-broken .second {
+    float: right;
+}

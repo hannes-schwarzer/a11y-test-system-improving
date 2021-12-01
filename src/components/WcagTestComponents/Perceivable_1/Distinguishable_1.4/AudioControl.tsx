@@ -9,7 +9,7 @@ export const AudioControl = () => {
         title={
           "F93: Failure of Success Criterion 1.4.2 for absence of a way to pause or stop an HTML5 media element that autoplays"
         }
-        category={"1.4.2 Audio Control"}
+        successCriterion={"1.4.2 Audio Control"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#audio-control"

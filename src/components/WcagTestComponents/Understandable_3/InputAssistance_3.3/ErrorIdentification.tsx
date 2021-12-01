@@ -11,7 +11,7 @@ export const ErrorIdentification = () => {
     <>
       <GuidelineError
         title={"Errors are not identified"}
-        category={"forms"}
+        successCriterion={"forms"}
         serial={107}
       >
         {/*"errors-badly-identified","errors-not-identified"*/}

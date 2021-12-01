@@ -1,0 +1,6 @@
+/*3 - Keyboard focus is not indicated visually*/
+.no-outline,
+.no-outline:focus {
+    outline: none;
+    background: none;
+}

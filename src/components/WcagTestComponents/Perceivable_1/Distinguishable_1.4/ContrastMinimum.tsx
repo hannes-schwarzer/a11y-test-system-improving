@@ -15,7 +15,7 @@ export const ContrastMinimum = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.3 Contrast (Minimum)"}
+        successCriterion={"1.4.3 Contrast (Minimum)"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
@@ -37,7 +37,7 @@ export const ContrastMinimum = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.3 Contrast (Minimum)"}
+        successCriterion={"1.4.3 Contrast (Minimum)"}
         serial={2}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
@@ -60,7 +60,7 @@ export const ContrastMinimum = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.3 Contrast (Minimum)"}
+        successCriterion={"1.4.3 Contrast (Minimum)"}
         serial={3}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
@@ -84,7 +84,7 @@ export const ContrastMinimum = () => {
         title={
           "Small text does not have a contrast ratio of at least 4.5:1 so does not meet AA"
         }
-        category={"1.4.3 Contrast (Minimum)"}
+        successCriterion={"1.4.3 Contrast (Minimum)"}
         serial={4}
         guideline={"1.4.3"}
         linkToGuideline={
@@ -100,7 +100,7 @@ export const ContrastMinimum = () => {
         title={
           "Large text does not have a contrast ratio of at least 3:1 so does not meet AA"
         }
-        category={"1.4.3 Contrast (Minimum)"}
+        successCriterion={"1.4.3 Contrast (Minimum)"}
         serial={5}
         guideline={"1.4.3"}
         linkToGuideline={
@@ -114,7 +114,7 @@ export const ContrastMinimum = () => {
 
       <GuidelineError
         title={"Errors identified with a poor colour contrast"}
-        category={"forms"}
+        successCriterion={"forms"}
         serial={6}
       >
         {/*"errors-badly-identified","error-poor-contrast"*/}

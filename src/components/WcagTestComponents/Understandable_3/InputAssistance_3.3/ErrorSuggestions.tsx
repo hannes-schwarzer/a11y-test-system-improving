@@ -7,7 +7,7 @@ export const ErrorSuggestions = () => {
         title={
           "Error messages - no suggestion for corrections given, e.g. required format"
         }
-        category={"3.3.3 Error Suggestion"}
+        successCriterion={"3.3.3 Error Suggestion"}
         serial={94}
         guideline={"3.3.3"}
         linkToGuideline={

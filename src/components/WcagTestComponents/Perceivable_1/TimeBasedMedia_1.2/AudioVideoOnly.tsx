@@ -9,7 +9,7 @@ export const AudioVideoOnly = () => {
         title={
           "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
         }
-        category={"1.2.1 Audio-only and Video-only (Prerecorded)"}
+        successCriterion={"1.2.1 Audio-only and Video-only (Prerecorded)"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
@@ -45,7 +45,7 @@ export const AudioVideoOnly = () => {
 
       <GuidelineError
         title={"Embedded video file is missing text alternative"}
-        category={"1.2.1 Audio-only and Video-only (Prerecorded)"}
+        successCriterion={"1.2.1 Audio-only and Video-only (Prerecorded)"}
         serial={2}
         level={Level.A}
         guideline={"1.2.1"}
@@ -71,7 +71,7 @@ export const AudioVideoOnly = () => {
 
       <GuidelineError
         title={"Embedded audio file is missing text alternative"}
-        category={"1.2.1 Audio-only and Video-only (Prerecorded)"}
+        successCriterion={"1.2.1 Audio-only and Video-only (Prerecorded)"}
         serial={3}
         level={Level.A}
         guideline={"1.2.1"}

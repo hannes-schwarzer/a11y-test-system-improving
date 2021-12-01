@@ -7,7 +7,7 @@ export const PageTitled = () => {
     <>
       <GuidelineError
         title={"Empty page title"}
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={1}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}
@@ -21,7 +21,7 @@ export const PageTitled = () => {
 
       <GuidelineError
         title={"This page does not have a title element."}
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={2}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}
@@ -37,7 +37,7 @@ export const PageTitled = () => {
 
       <GuidelineError
         title={"This page has a title element that is empty."}
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={3}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}
@@ -55,7 +55,7 @@ export const PageTitled = () => {
         title={
           "This page does not have a title element. The title element in the content of the iframe does not function as the title for the entire page."
         }
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={4}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}
@@ -71,7 +71,7 @@ export const PageTitled = () => {
 
       <GuidelineError
         title={"This page has two title elements and the first is empty."}
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={4}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}
@@ -94,7 +94,7 @@ export const PageTitled = () => {
         title={
           "This page has a title element that only contains a separator character."
         }
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={4}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}
@@ -110,7 +110,7 @@ export const PageTitled = () => {
 
       <GuidelineError
         title={"Inappropriate page title"}
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={5}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}
@@ -124,7 +124,7 @@ export const PageTitled = () => {
 
       <GuidelineError
         title={"Empty page title"}
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={6}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}
@@ -137,7 +137,7 @@ export const PageTitled = () => {
       </GuidelineError>
       <GuidelineError
         title={"Missing page title"}
-        category={"2.4.2 Page Titled"}
+        successCriterion={"2.4.2 Page Titled"}
         serial={7}
         guideline={"2.4.2"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#page-titled"}

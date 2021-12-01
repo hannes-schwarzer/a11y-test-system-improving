@@ -1,10 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import GDSTestSuite from "./components/gdsTests/GDSTestSuite";
 import { Inappropriate } from "./components/WcagTestComponents/Operable_2/Navigable_2.4/Inappropriate";
 import { Empty } from "./components/WcagTestComponents/Operable_2/Navigable_2.4/Empty";
 import { Missing } from "./components/WcagTestComponents/Operable_2/Navigable_2.4/Missing";
 import { MissingHOne } from "./components/gdsTests/DemoPages/MissingHOne";
-import { KeyboardTrap } from "./components/gdsTests/KeyboardTestCases/KeyboardTrap";
+import { KeyboardTrap } from "./components/WcagTestComponents/Operable_2/KeyboardAccessible_2.1/KeyboardTrap";
 import { DemoPage } from "./components/gdsTests/DemoPages/DemoPage";
 import { Home } from "./components/Home";
 import { WCAGTestSuite } from "./components/WcagTestComponents/WCAGTestSuite";
@@ -13,6 +12,7 @@ import { Operable } from "./components/WcagTestComponents/Operable_2/Operable";
 import { Understandable } from "./components/WcagTestComponents/Understandable_3/Understandable";
 import { Robust } from "./components/WcagTestComponents/Robust_4/Robust";
 import { Header } from "./components/Header";
+import { Misc } from "./components/gdsTests/Misc";
 
 export const Router = () => {
   return (
@@ -20,7 +20,7 @@ export const Router = () => {
       <Header />
       <Routes>
         <Route path={"/"} element={<Home />} />
-        <Route path={"/gds"} element={<GDSTestSuite />} />
+        <Route path={"/misc"} element={<Misc />} />
         <Route path={"/wcag"} element={<WCAGTestSuite />} />
         <Route path={"/wcag/perceivable"} element={<Perceivable />} />
         <Route path={"/wcag/operable"} element={<Operable />} />

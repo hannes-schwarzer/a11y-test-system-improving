@@ -5,7 +5,7 @@ export const BypassBlocks = () => {
     <>
       <GuidelineError
         title={"iframe is missing a title attribute"}
-        category={"2.4.1 Bypass Blocks"}
+        successCriterion={"2.4.1 Bypass Blocks"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks"

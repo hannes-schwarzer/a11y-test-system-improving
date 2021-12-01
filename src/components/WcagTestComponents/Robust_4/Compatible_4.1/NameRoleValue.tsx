@@ -20,7 +20,7 @@ export const NameRoleValue = () => {
         title={
           "F59: Failure of Success Criterion 4.1.2 due to using script to make div or span a user interface control in HTML without providing a role for the control"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={1}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -52,7 +52,7 @@ export const NameRoleValue = () => {
         title={
           "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={2}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -81,7 +81,7 @@ export const NameRoleValue = () => {
         title={
           "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={3}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -109,7 +109,7 @@ export const NameRoleValue = () => {
         title={
           "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={4}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -131,7 +131,7 @@ export const NameRoleValue = () => {
         title={
           "F86: Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={5}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -153,7 +153,7 @@ export const NameRoleValue = () => {
         title={
           "F86: Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={6}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -176,7 +176,7 @@ export const NameRoleValue = () => {
         title={
           "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={7}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -198,7 +198,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Empty button"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={8}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -211,7 +211,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Empty H1"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={9}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -225,7 +225,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Empty heading"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={10}
         guideline={"4.1.2"}
         linkToGuideline={
@@ -239,7 +239,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Link to #, invalid hypertext reference"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={11}
         guideline={"4.1.2"}
         level={Level.A}
@@ -257,7 +257,7 @@ export const NameRoleValue = () => {
         title={
           "Labels missing when they would look clumsy for some form controls"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         guideline={"4.1.2"}
         level={Level.A}
         linkToGuideline={
@@ -280,7 +280,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Form element has no label"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={13}
         guideline={"4.1.2"}
         level={Level.A}
@@ -298,7 +298,7 @@ export const NameRoleValue = () => {
         title={
           "Label element with for= attribute but not matching id= attribute of form control"
         }
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={14}
         level={Level.A}
         linkToGuideline={
@@ -325,7 +325,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Empty label found"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         guideline={"4.1.2"}
         serial={15}
         level={Level.A}
@@ -342,7 +342,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Missing labels in checkboxes"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={16}
         guideline={"4.1.2"}
         level={Level.A}
@@ -383,7 +383,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Placeholder no label"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         serial={17}
         guideline={"4.1.2"}
         level={Level.A}
@@ -410,7 +410,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"Invalid ARIA role names"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
         }
@@ -440,7 +440,7 @@ export const NameRoleValue = () => {
 
       <GuidelineError
         title={"iframe is missing a title attribute"}
-        category={"4.1.2 Name, Role, Value"}
+        successCriterion={"4.1.2 Name, Role, Value"}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
         }
@@ -452,6 +452,24 @@ export const NameRoleValue = () => {
         }
       >
         <iframe height={100} src={"/demo-page"} width={300}></iframe>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Link with a role=button does not work with space bar"}
+        successCriterion={"Name, Role, Value"}
+        serial={19}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        guideline={"4.1.2"}
+        linkToExplanation={
+          "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
+        }
+      >
+        <a className={"button"} href={"next.html"} role={"button"}>
+          Continue
+        </a>
       </GuidelineError>
     </>
   );

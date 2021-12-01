@@ -10,7 +10,7 @@ export const ContrastEnhanced = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.6 Contrast (Enhanced)"}
+        successCriterion={"1.4.6 Contrast (Enhanced)"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
@@ -33,7 +33,7 @@ export const ContrastEnhanced = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.6 Contrast (Enhanced)"}
+        successCriterion={"1.4.6 Contrast (Enhanced)"}
         serial={2}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
@@ -57,7 +57,7 @@ export const ContrastEnhanced = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.6 Contrast (Enhanced)"}
+        successCriterion={"1.4.6 Contrast (Enhanced)"}
         serial={3}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
@@ -81,7 +81,7 @@ export const ContrastEnhanced = () => {
         title={
           "Small text does not have a contrast ratio of at least 7:1 so does not meet AAA"
         }
-        category={"1.4.6 Contrast (Enhanced)"}
+        successCriterion={"1.4.6 Contrast (Enhanced)"}
         serial={4}
         guideline={"1.4.6"}
         linkToGuideline={
@@ -98,7 +98,7 @@ export const ContrastEnhanced = () => {
         title={
           "Large text does not have a contrast ratio of at least 4.5:1 so does not meet AAA"
         }
-        category={"1.4.6 Contrast (Enhanced)"}
+        successCriterion={"1.4.6 Contrast (Enhanced)"}
         serial={5}
         guideline={"1.4.6"}
         linkToGuideline={

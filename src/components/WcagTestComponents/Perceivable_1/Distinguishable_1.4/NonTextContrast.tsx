@@ -9,7 +9,7 @@ export const NonTextContrast = () => {
           "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
           "removes or renders non-visible the visual focus indicator"
         }
-        category={"1.4.11 Non-text Contrast"}
+        successCriterion={"1.4.11 Non-text Contrast"}
         serial={1}
         explanation={
           "The focus indicator is turned off with CSS: The following CSS example will remove the default focus indicator, " +
@@ -34,7 +34,7 @@ export const NonTextContrast = () => {
           "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
           "removes or renders non-visible the visual focus indicator"
         }
-        category={"1.4.11 Non-text Contrast"}
+        successCriterion={"1.4.11 Non-text Contrast"}
         serial={2}
         explanation={
           "The outline of elements is visually similar to the focus indicator: The following CSS example will create an " +
@@ -63,7 +63,7 @@ export const NonTextContrast = () => {
           "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
           "removes or renders non-visible the visual focus indicator"
         }
-        category={"1.4.11 Non-text Contrast"}
+        successCriterion={"1.4.11 Non-text Contrast"}
         serial={3}
         explanation={
           "Elements have a border that occludes the focus indicator: The following CSS example creates a border around " +

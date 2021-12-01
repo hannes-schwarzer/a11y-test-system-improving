@@ -8,7 +8,7 @@ export const LinkPurposeInContext = () => {
         title={
           "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
         }
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={1}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -37,7 +37,7 @@ export const LinkPurposeInContext = () => {
         title={
           "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
         }
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={2}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -76,7 +76,7 @@ export const LinkPurposeInContext = () => {
         title={
           "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
         }
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={3}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -98,7 +98,7 @@ export const LinkPurposeInContext = () => {
 
       <GuidelineError
         title={"Link to javascript, invalid hypertext reference"}
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={4}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -111,7 +111,7 @@ export const LinkPurposeInContext = () => {
 
       <GuidelineError
         title={"Uninformative link text"}
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={4}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -129,7 +129,7 @@ export const LinkPurposeInContext = () => {
       </GuidelineError>
       <GuidelineError
         title={"Link text with identical title"}
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={5}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -150,7 +150,7 @@ export const LinkPurposeInContext = () => {
         title={
           "Link to PDF does not include information on file format and file size"
         }
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={6}
         linkToExplanation={
           "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html"
@@ -172,7 +172,7 @@ export const LinkPurposeInContext = () => {
 
       <GuidelineError
         title={"Blank link text"}
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={7}
         level={Level.A}
         guideline={"2.4.4"}
@@ -191,7 +191,7 @@ export const LinkPurposeInContext = () => {
 
       <GuidelineError
         title={"Links with the same text go to different pages"}
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={8}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -218,7 +218,7 @@ export const LinkPurposeInContext = () => {
 
       <GuidelineError
         title={"Adjacent links going to the same destination"}
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={9}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -234,7 +234,7 @@ export const LinkPurposeInContext = () => {
 
       <GuidelineError
         title={"Link contains only a full stop"}
-        category={"2.4.4 Link Purpose (In Context)"}
+        successCriterion={"2.4.4 Link Purpose (In Context)"}
         serial={10}
         guideline={"2.4.4"}
         linkToGuideline={
@@ -249,7 +249,7 @@ export const LinkPurposeInContext = () => {
 
       <GuidelineError
         title={"Non-specific link text"}
-        category={"links"}
+        successCriterion={"links"}
         serial={11}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"

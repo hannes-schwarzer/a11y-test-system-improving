@@ -5,7 +5,7 @@ export const ThreeFlashesOrBelowThroshold = () => {
     <>
       <GuidelineError
         title={"Flashing content doesn't have warning"}
-        category={"multimedia"}
+        successCriterion={"multimedia"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold"

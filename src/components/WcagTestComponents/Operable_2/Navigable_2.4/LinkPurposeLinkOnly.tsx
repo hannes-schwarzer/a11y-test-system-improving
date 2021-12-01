@@ -7,7 +7,7 @@ export const LinkPurposeLinkOnly = () => {
         title={
           "F84: Failure of Success Criterion 2.4.9 due to using a non-specific link such as 'click here' or 'more' without a mechanism to change the link text to specific text."
         }
-        category={"2.4.9 Link Purpose (Link Only)"}
+        successCriterion={"2.4.9 Link Purpose (Link Only)"}
         serial={1}
         guideline={"2.4.9"}
         linkToGuideline={
@@ -30,7 +30,7 @@ export const LinkPurposeLinkOnly = () => {
         title={
           "F84: Failure of Success Criterion 2.4.9 due to using a non-specific link such as 'click here' or 'more' without a mechanism to change the link text to specific text."
         }
-        category={"2.4.9 Link Purpose (Link Only)"}
+        successCriterion={"2.4.9 Link Purpose (Link Only)"}
         serial={2}
         guideline={"2.4.9"}
         linkToGuideline={
@@ -55,7 +55,7 @@ export const LinkPurposeLinkOnly = () => {
         title={
           "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
         }
-        category={"2.4.9 Link Purpose (Link Only)"}
+        successCriterion={"2.4.9 Link Purpose (Link Only)"}
         serial={3}
         guideline={"2.4.9"}
         linkToGuideline={
@@ -77,7 +77,7 @@ export const LinkPurposeLinkOnly = () => {
 
       <GuidelineError
         title={"Link text does not make sense out of context"}
-        category={"links"}
+        successCriterion={"links"}
         serial={4}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"

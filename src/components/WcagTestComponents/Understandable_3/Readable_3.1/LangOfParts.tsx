@@ -5,7 +5,7 @@ export const LangOfParts = () => {
     <>
       <GuidelineError
         title={"Text language changed without required change in direction"}
-        category={"3.1.2 Language of Parts"}
+        successCriterion={"3.1.2 Language of Parts"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -17,7 +17,7 @@ export const LangOfParts = () => {
       </GuidelineError>
       <GuidelineError
         title={"lang attribute not used to identify change of language"}
-        category={"3.1.2 Language of Parts"}
+        successCriterion={"3.1.2 Language of Parts"}
         serial={2}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -32,7 +32,7 @@ export const LangOfParts = () => {
       </GuidelineError>
       <GuidelineError
         title={"Text language is in the wrong direction"}
-        category={"3.1.2 Language of Parts"}
+        successCriterion={"3.1.2 Language of Parts"}
         serial={3}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -47,7 +47,7 @@ export const LangOfParts = () => {
 
       <GuidelineError
         title={"html element has an invalid value in the lang attribute"}
-        category={"language"}
+        successCriterion={"language"}
         serial={4}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -64,7 +64,7 @@ export const LangOfParts = () => {
         title={
           "lang attribute used to identify change of language, but with invalid value"
         }
-        category={"language"}
+        successCriterion={"language"}
         serial={5}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -80,7 +80,7 @@ export const LangOfParts = () => {
 
       <GuidelineError
         title={"html element has lang attribute set to wrong language"}
-        category={"language"}
+        successCriterion={"language"}
         serial={6}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -95,7 +95,7 @@ export const LangOfParts = () => {
         title={
           "lang attribute used to identify change of language, but with wrong language"
         }
-        category={"language"}
+        successCriterion={"language"}
         serial={7}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"

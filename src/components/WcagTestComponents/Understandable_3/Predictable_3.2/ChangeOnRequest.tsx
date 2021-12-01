@@ -5,7 +5,7 @@ export const ChangeOnRequest = () => {
     <>
       <GuidelineError
         title={"Link launches new window with no warning"}
-        category={"3.2.5 Change on Request"}
+        successCriterion={"3.2.5 Change on Request"}
         serial={71}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#change-on-request"

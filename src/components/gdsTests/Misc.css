@@ -5,3 +5,33 @@
 .form-label {
     display: block;
 }
+
+/* Hide for both screenreaders and browsers */
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* 118 Lightbox */
+.lightbox {
+    position: fixed;
+    width: 400px;
+    top: 20%;
+    left: 50%;
+    margin-left: -200px;
+    background: white;
+    border: 3px solid black;
+    padding: 10px;
+}
+.lightbox .close-button {
+    float: right;
+    color: #000;
+    text-decoration: none;
+}
+.lightbox span.close-button {
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+

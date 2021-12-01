@@ -9,7 +9,7 @@ export enum Level {
 
 type TestCaseProps = {
   title: string;
-  category: string;
+  successCriterion: string;
   serial: number;
   guideline?: string;
   linkToGuideline?: string;
@@ -19,7 +19,7 @@ type TestCaseProps = {
 };
 export const GuidelineError: FC<TestCaseProps> = ({
   title,
-  category,
+  successCriterion,
   serial,
   guideline,
   linkToGuideline,
@@ -29,7 +29,7 @@ export const GuidelineError: FC<TestCaseProps> = ({
   children,
 }) => {
   return (
-    <article className="testCase" id={`test_${serial}_${category}`}>
+    <article className="testCase" id={`test_${serial}_${successCriterion}`}>
       <div className="testCase__title">
         <h3>{title}</h3>
         {linkToGuideline && guideline && (

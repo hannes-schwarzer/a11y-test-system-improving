@@ -6,7 +6,7 @@ export const ReadingLevel = () => {
       <GuidelineError
         title={"Plain language is not used"}
         serial={1}
-        category={"3.1.5 Reading Level"}
+        successCriterion={"3.1.5 Reading Level"}
         guideline={"3.1.5"}
         level={Level.AAA}
         linkToGuideline={

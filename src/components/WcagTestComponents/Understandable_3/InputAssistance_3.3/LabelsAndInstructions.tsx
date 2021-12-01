@@ -8,7 +8,7 @@ export const LabelsAndInstructions = () => {
         title={
           "Labels missing when they would look clumsy for some form controls"
         }
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
         }
@@ -31,7 +31,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Left aligned form labels with too much white space"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={2}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -49,7 +49,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Group of radio buttons not enclosed in a fieldset"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={3}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -82,7 +82,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Form element has no label"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={4}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -98,7 +98,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Fieldset without a legend"}
-        category={"forms"}
+        successCriterion={"forms"}
         guideline={"3.3.2"}
         serial={5}
         level={Level.A}
@@ -117,7 +117,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Empty legend"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={6}
         level={Level.A}
         linkToGuideline={
@@ -137,7 +137,7 @@ export const LabelsAndInstructions = () => {
         title={
           "Label element with for= attribute but not matching id= attribute of form control"
         }
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={7}
         level={Level.A}
         linkToGuideline={
@@ -164,7 +164,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Group of check boxes not enclosed in a fieldset"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={8}
         guideline={"3.3.2"}
         linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
@@ -207,7 +207,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Empty label found"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         guideline={"3.3.2"}
         serial={9}
         level={Level.A}
@@ -224,7 +224,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Two unique labels, but identical for= attributes"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={10}
         guideline={"3.3.2"}
         level={Level.A}
@@ -250,7 +250,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Missing labels in checkboxes"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={11}
         guideline={"3.3.2"}
         level={Level.A}
@@ -291,7 +291,7 @@ export const LabelsAndInstructions = () => {
 
       <GuidelineError
         title={"Placeholder no label"}
-        category={"3.3.2 Labels or Instructions"}
+        successCriterion={"3.3.2 Labels or Instructions"}
         serial={12}
         guideline={"3.3.2"}
         level={Level.A}

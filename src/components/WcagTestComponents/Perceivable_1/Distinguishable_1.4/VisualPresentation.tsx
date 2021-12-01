@@ -10,7 +10,7 @@ export const VisualPresentation = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.8 Visual Presentation"}
+        successCriterion={"1.4.8 Visual Presentation"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
@@ -33,7 +33,7 @@ export const VisualPresentation = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.8 Visual Presentation"}
+        successCriterion={"1.4.8 Visual Presentation"}
         serial={2}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
@@ -57,7 +57,7 @@ export const VisualPresentation = () => {
           "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
           "specifying background colors or vice versa"
         }
-        category={"1.4.8 Visual Presentation"}
+        successCriterion={"1.4.8 Visual Presentation"}
         serial={3}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
@@ -80,7 +80,7 @@ export const VisualPresentation = () => {
         title={
           "F88: Failure of Success Criterion 1.4.8 due to using text that is justified (aligned to both the left and the right margins)"
         }
-        category={"1.4.8 Visual Presentation"}
+        successCriterion={"1.4.8 Visual Presentation"}
         serial={4}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
@@ -109,7 +109,7 @@ export const VisualPresentation = () => {
 
       <GuidelineError
         title={"All caps text found"}
-        category={"typography"}
+        successCriterion={"typography"}
         serial={5}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
@@ -133,7 +133,7 @@ export const VisualPresentation = () => {
       </GuidelineError>
       <GuidelineError
         title={"Italics used on long sections of text"}
-        category={"1.4.8 Visual Presentation"}
+        successCriterion={"1.4.8 Visual Presentation"}
         serial={6}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
@@ -154,7 +154,7 @@ export const VisualPresentation = () => {
       </GuidelineError>
       <GuidelineError
         title={"Justified text found"}
-        category={"typography"}
+        successCriterion={"typography"}
         serial={7}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"

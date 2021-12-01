@@ -7,7 +7,7 @@ export const ConsistentIdentification = () => {
         title={
           "F31: Failure of Success Criterion 3.2.4 due to using two different labels for the same function on different Web pages within a set of Web pages"
         }
-        category={"3.2.4 Consistent Identification"}
+        successCriterion={"3.2.4 Consistent Identification"}
         serial={1}
         guideline={"3.2.4"}
         linkToGuideline={

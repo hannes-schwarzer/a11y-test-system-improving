@@ -5,7 +5,7 @@ export const TextSpacing = () => {
     <>
       <GuidelineError
         title={"Inadequate line height used"}
-        category={"1.4.12 Text Spacing"}
+        successCriterion={"1.4.12 Text Spacing"}
         serial={1}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#text-spacing"}
         guideline={"1.4.12"}
@@ -20,7 +20,7 @@ export const TextSpacing = () => {
       </GuidelineError>
       <GuidelineError
         title={"Links not separated by printable characters"}
-        category={"1.4.12 Text Spacing"}
+        successCriterion={"1.4.12 Text Spacing"}
         serial={2}
         guideline={"1.4.12"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#text-spacing"}

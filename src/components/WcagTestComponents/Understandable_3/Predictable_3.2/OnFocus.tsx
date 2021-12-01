@@ -1,5 +1,6 @@
 import { GuidelineError, Level } from "../../../GuidelineError";
 import LINK from "../../../../assets/link.png";
+import "./OnFocus.css";
 
 export const OnFocus = () => {
   return (
@@ -8,7 +9,7 @@ export const OnFocus = () => {
         title={
           "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
         }
-        category={"3.2.1 On Focus"}
+        successCriterion={"3.2.1 On Focus"}
         serial={1}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-focus"}
         guideline={"3.2.1"}
@@ -37,7 +38,7 @@ export const OnFocus = () => {
         title={
           "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
         }
-        category={"3.2.1 On Focus"}
+        successCriterion={"3.2.1 On Focus"}
         serial={2}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-focus"}
         guideline={"3.2.1"}
@@ -61,6 +62,20 @@ export const OnFocus = () => {
           href="Page.html"
         >
           <img src={LINK} />
+        </a>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Keyboard focus is not indicated visually"}
+        successCriterion={"keyboard"}
+        serial={3}
+        guideline={"3.2.1"}
+        linkToExplanation={
+          "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
+        }
+      >
+        <a className={"no-outline"} href={"link.html"}>
+          Link with no focus style
         </a>
       </GuidelineError>
     </>

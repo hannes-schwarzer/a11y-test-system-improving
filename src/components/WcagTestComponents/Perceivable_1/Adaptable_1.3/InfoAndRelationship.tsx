@@ -11,7 +11,7 @@ export const InfoAndRelationship = () => {
         title={
           "F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={1}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -64,7 +64,7 @@ export const InfoAndRelationship = () => {
         title={
           "F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={2}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -96,7 +96,7 @@ range of people with disabilities,        wide variety of assistive technologies
         title={
           "F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to format tables in plain text content"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={3}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -129,7 +129,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
         title={
           "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={4}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -171,7 +171,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
         title={
           "F43: Failure of Success Criterion 1.3.1 due to using structural markup in a way that does not represent relationships in the content"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={5}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -257,7 +257,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
         title={
           "F46: Failure of Success Criterion 1.3.1 due to using th elements, layout tables"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={6}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -293,7 +293,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
         title={
           "F48: Failure of Success Criterion 1.3.1 due to using the pre element to markup tabular information"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={7}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -344,7 +344,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         title={
           "F87: Failure of Success Criterion 1.3.1 due to inserting non-decorative content by using :before and :after pseudo-elements and the 'content' property in CSS"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={8}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -384,7 +384,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         title={
           "F90: Failure of Success Criterion 1.3.1 for incorrectly associating table headers and content via the headers and id attributes"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={9}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -450,7 +450,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         title={
           "F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={10}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -506,7 +506,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         title={
           "F92: Failure of Success Criterion 1.3.1 due to the use of role presentation on content which conveys semantic information"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={11}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -539,7 +539,7 @@ CIRCUIT COURT JUDGE BRANCH 3
       </GuidelineError>
       <GuidelineError
         title={"Implicit heading"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={12}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -554,7 +554,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Text formatting used instead of an actual heading"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={13}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -571,7 +571,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Li element with no parent"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={14}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -584,7 +584,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"List not marked up as a list"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={15}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -604,7 +604,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"DT or DD elements that are not contained within a DL element"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={16}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -618,7 +618,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Improperly nested lists"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={17}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -635,7 +635,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table with column headers and double row headers"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={18}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -677,7 +677,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table has no scope attributes"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={19}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -713,7 +713,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table nested within table header"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={18}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -760,7 +760,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table nested within table"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={19}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -807,7 +807,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table has no table headings"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={20}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -844,7 +844,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table with inconsistent numbers of columns in rows"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={21}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -903,7 +903,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table that only has TH elements in it"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={22}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -926,7 +926,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table is missing a caption"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={23}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -960,7 +960,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Table has an empty table header"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={24}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -999,7 +999,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         title={
           "Labels missing when they would look clumsy for some form controls"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={25}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -1022,7 +1022,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Group of radio buttons not enclosed in a fieldset"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={26}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -1055,7 +1055,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Form element has no label"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={27}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -1071,7 +1071,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Fieldset without a legend"}
-        category={"forms"}
+        successCriterion={"forms"}
         guideline={"1.3.1"}
         serial={28}
         level={Level.A}
@@ -1090,7 +1090,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Empty legend"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={29}
         guideline={"1.3.1"}
         linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
@@ -1110,7 +1110,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         title={
           "Label element with for= attribute but not matching id= attribute of form control"
         }
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={30}
         linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
         explanation={
@@ -1137,7 +1137,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Group of check boxes not enclosed in a fieldset"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={31}
         guideline={"1.3.1"}
         level={Level.A}
@@ -1180,7 +1180,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Empty label found"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={32}
         guideline={"1.3.1"}
         level={Level.A}
@@ -1197,7 +1197,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Missing labels in checkboxes"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={33}
         guideline={"1.3.1"}
         level={Level.A}
@@ -1238,7 +1238,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Placeholder no label"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         serial={34}
         guideline={"1.3.1"}
         level={Level.A}
@@ -1267,7 +1267,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         title={
           "Article element used to mark-up an element that's actually not an article element."
         }
-        category={"html"}
+        successCriterion={"html"}
         serial={35}
         guideline={"1.3.1"}
         linkToGuideline={
@@ -1295,7 +1295,7 @@ CIRCUIT COURT JUDGE BRANCH 3
 
       <GuidelineError
         title={"Non-decorative content inserted using CSS"}
-        category={"1.3.1 Info and Relationships"}
+        successCriterion={"1.3.1 Info and Relationships"}
         guideline={"1.3.1"}
         serial={36}
         linkToGuideline={
@@ -1307,6 +1307,24 @@ CIRCUIT COURT JUDGE BRANCH 3
         }
       >
         <p id={"css-generated-text"}>My favourite food is </p>
+      </GuidelineError>
+
+      <GuidelineError
+        title={"Link with a role=button does not work with space bar"}
+        successCriterion={"1.3.1 Info and Relationships"}
+        serial={37}
+        guideline={"1.3.1"}
+        level={Level.A}
+        linkToGuideline={
+          "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+        }
+        linkToExplanation={
+          "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
+        }
+      >
+        <a className={"button"} href={"next.html"} role={"button"}>
+          Continue
+        </a>
       </GuidelineError>
     </>
   );

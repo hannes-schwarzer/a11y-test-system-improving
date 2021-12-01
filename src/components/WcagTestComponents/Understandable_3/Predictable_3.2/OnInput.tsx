@@ -11,7 +11,7 @@ export const OnInput = () => {
         title={
           "F36: Failure of Success Criterion 3.2.2 due to automatically submitting a form and given a value"
         }
-        category={"3.2.2 On Input"}
+        successCriterion={"3.2.2 On Input"}
         serial={1}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-input"}
         guideline={"3.2.2"}
@@ -42,7 +42,7 @@ export const OnInput = () => {
         title={
           "F36: Failure of Success Criterion 3.2.2 due to automatically submitting a form and given a value"
         }
-        category={"3.2.2 On Input"}
+        successCriterion={"3.2.2 On Input"}
         serial={2}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-input"}
         guideline={"3.2.2"}
@@ -74,7 +74,7 @@ export const OnInput = () => {
         title={
           "F37: Failure of Success Criterion 3.2.2 due to launching a new window without prior warning when the selection of a radio button, check box or select list is changed"
         }
-        category={"3.2.2 On Input"}
+        successCriterion={"3.2.2 On Input"}
         serial={3}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-input"}
         guideline={"3.2.2"}
@@ -116,7 +116,7 @@ export const OnInput = () => {
 
       <GuidelineError
         title={"Form control that changes context without warning"}
-        category={"3.2.2 On Input"}
+        successCriterion={"3.2.2 On Input"}
         serial={4}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-input"}
         guideline={"3.2.2"}

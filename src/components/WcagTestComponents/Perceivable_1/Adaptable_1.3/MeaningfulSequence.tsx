@@ -8,7 +8,7 @@ export const MeaningfulSequence = () => {
         title={
           "F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to format tables in plain text content"
         }
-        category={"1.3.2 Meaningful Sequence"}
+        successCriterion={"1.3.2 Meaningful Sequence"}
         serial={1}
         guideline={"1.3.2"}
         linkToGuideline={
@@ -41,7 +41,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
         title={
           "F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content"
         }
-        category={"1.3.2 Meaningful Sequence"}
+        successCriterion={"1.3.2 Meaningful Sequence"}
         serial={2}
         guideline={"1.3.2"}
         linkToGuideline={
@@ -72,7 +72,7 @@ range of people with disabilities,        wide variety of assistive technologies
         title={
           "F32: Failure of Success Criterion 1.3.2 due to using white space characters to control spacing within a word"
         }
-        category={"1.3.2 Meaningful Sequence"}
+        successCriterion={"1.3.2 Meaningful Sequence"}
         serial={3}
         guideline={"1.3.2"}
         linkToGuideline={
@@ -143,7 +143,7 @@ range of people with disabilities,        wide variety of assistive technologies
         title={
           "F49: Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not make sense when linearized"
         }
-        category={"1.3.2 Meaningful Sequence"}
+        successCriterion={"1.3.2 Meaningful Sequence"}
         serial={4}
         guideline={"1.3.2"}
         linkToGuideline={
@@ -261,7 +261,7 @@ range of people with disabilities,        wide variety of assistive technologies
         title={
           "F1: Failure of Success Criterion 1.3.2 due to changing the meaning of content by positioning information with CSS"
         }
-        category={"1.3.2 Meaningful Sequence"}
+        successCriterion={"1.3.2 Meaningful Sequence"}
         serial={5}
         guideline={"1.3.2"}
         linkToGuideline={
@@ -302,7 +302,7 @@ range of people with disabilities,        wide variety of assistive technologies
       <GuidelineError
         title={"Content identified by location"}
         serial={6}
-        category={"1.3.2 Meaningful Sequence"}
+        successCriterion={"1.3.2 Meaningful Sequence"}
         guideline={"1.3.2"}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
@@ -321,7 +321,7 @@ range of people with disabilities,        wide variety of assistive technologies
       <GuidelineError
         title={"Table used for layout"}
         serial={7}
-        category={"1.3.2 Meaningful Sequence"}
+        successCriterion={"1.3.2 Meaningful Sequence"}
         guideline={"1.3.2"}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"

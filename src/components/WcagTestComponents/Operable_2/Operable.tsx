@@ -8,14 +8,20 @@ import { FocusVisible } from "./Navigable_2.4/FocusVisible";
 import { LinkPurposeLinkOnly } from "./Navigable_2.4/LinkPurposeLinkOnly";
 import { PageTitled } from "./Navigable_2.4/PageTitled";
 import { HeadingsAndLabels } from "./Navigable_2.4/HeadingsAndLabels";
+import { NoKeyboardTrap } from "./KeyboardAccessible_2.1/NoKeyboardTrap";
+import { CharacterKeyShortcuts } from "./KeyboardAccessible_2.1/CharacterKeyShortcuts";
+import { ThreeFlashesOrBelowThroshold } from "./SeizuresAndPhysical_2.3/ThreeFlashesOrBelowThroshold";
 
 export const Operable = () => {
   return (
     <>
       <Keyboard /> {/*2.1.1*/}
+      <NoKeyboardTrap /> {/*2.1.2*/}
+      <CharacterKeyShortcuts /> {/*2.1.4*/}
       <TimingAdjustable /> {/*2.2.1*/}
       <PauseStopHide /> {/*2.2.2*/}
       <Interruptions /> {/*2.2.4*/}
+      <ThreeFlashesOrBelowThroshold /> {/*2.3.1*/}
       <PageTitled /> {/*2.4.2*/}
       <FocusOrder /> {/*2.4.3*/}
       <LinkPurposeInContext /> {/*2.4.4*/}

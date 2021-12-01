@@ -9,7 +9,7 @@ export const Resize = () => {
         title={
           "F69: Failure of Success Criterion 1.4.4 when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured"
         }
-        category={"1.4.4 Resize text"}
+        successCriterion={"1.4.4 Resize text"}
         serial={1}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#resize-text"}
         guideline={"1.4.4"}
@@ -41,7 +41,7 @@ export const Resize = () => {
         title={
           "F69: Failure of Success Criterion 1.4.4 when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured"
         }
-        category={"1.4.4 Resize text"}
+        successCriterion={"1.4.4 Resize text"}
         serial={2}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#resize-text"}
         guideline={"1.4.4"}
@@ -73,7 +73,7 @@ export const Resize = () => {
           "F80: Failure of Success Criterion 1.4.4 when text-based form controls do not resize when visually rendered " +
           "text is resized up to 200%"
         }
-        category={"1.4.4 Resize text"}
+        successCriterion={"1.4.4 Resize text"}
         serial={3}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#resize-text"}
         guideline={"1.4.4"}
@@ -144,7 +144,7 @@ export const Resize = () => {
         title={
           "F94: Failure of Success Criterion 1.4.4 due to text sized in viewport units"
         }
-        category={"1.4.4 Resize text"}
+        successCriterion={"1.4.4 Resize text"}
         serial={4}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#resize-text"}
         guideline={"1.4.4"}
@@ -159,7 +159,7 @@ export const Resize = () => {
       </GuidelineError>
       <GuidelineError
         title={"Very small text found"}
-        category={"typography"}
+        successCriterion={"typography"}
         serial={5}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#resize-text"}
         guideline={"1.4.4"}
@@ -173,7 +173,7 @@ export const Resize = () => {
 
       <GuidelineError
         title={"Content is not readable and functional when text is increased"}
-        category={"1.4.4 Resize text"}
+        successCriterion={"1.4.4 Resize text"}
         guideline={"1.4.4"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#resize-text"}
         level={Level.AA}
@@ -189,7 +189,7 @@ export const Resize = () => {
 
       <GuidelineError
         title={"Page zoom - boxes that don't expand with the text"}
-        category={"css"}
+        successCriterion={"css"}
         serial={7}
         guideline={"1.4.4"}
       >

@@ -6,7 +6,7 @@ export const HeadingsAndLabels = () => {
       {/*2.4.6 & 2.4.10*/}
       <GuidelineError
         title={"Headings not structured in a hierarchical manner"}
-        category={"2.4.6 Headings and Labels"}
+        successCriterion={"2.4.6 Headings and Labels"}
         serial={1}
         linkToGuideline={
           "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
@@ -41,7 +41,7 @@ export const HeadingsAndLabels = () => {
         title={
           "Labels missing when they would look clumsy for some form controls"
         }
-        category={"2.4.6 Headings and Labels"}
+        successCriterion={"2.4.6 Headings and Labels"}
         serial={2}
         guideline={"2.4.6"}
         level={Level.AA}
@@ -64,7 +64,7 @@ export const HeadingsAndLabels = () => {
 
       <GuidelineError
         title={"Form element has no label"}
-        category={"2.4.6 Headings and Labels"}
+        successCriterion={"2.4.6 Headings and Labels"}
         serial={3}
         guideline={"2.4.6"}
         level={Level.AA}
@@ -80,7 +80,7 @@ export const HeadingsAndLabels = () => {
 
       <GuidelineError
         title={"Empty label found"}
-        category={"2.4.6 Headings and Labels"}
+        successCriterion={"2.4.6 Headings and Labels"}
         guideline={"2.4.6"}
         serial={4}
         level={Level.AA}
@@ -97,7 +97,7 @@ export const HeadingsAndLabels = () => {
 
       <GuidelineError
         title={"Non-unique field label found"}
-        category={"2.4.6 Headings and Labels"}
+        successCriterion={"2.4.6 Headings and Labels"}
         serial={5}
         guideline={"2.4.6"}
         linkToGuideline={
@@ -126,7 +126,7 @@ export const HeadingsAndLabels = () => {
 
       <GuidelineError
         title={"Missing labels in checkboxes"}
-        category={"2.4.6 Headings and Labels"}
+        successCriterion={"2.4.6 Headings and Labels"}
         serial={6}
         guideline={"2.4.6"}
         linkToGuideline={
@@ -167,7 +167,7 @@ export const HeadingsAndLabels = () => {
 
       <GuidelineError
         title={"Placeholder no label"}
-        category={"2.4.6 Headings and Labels"}
+        successCriterion={"2.4.6 Headings and Labels"}
         guideline={"2.4.6"}
         serial={7}
         linkToGuideline={

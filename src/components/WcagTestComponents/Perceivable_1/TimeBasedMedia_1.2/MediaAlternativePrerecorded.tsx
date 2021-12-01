@@ -5,7 +5,7 @@ export const MediaAlternativePrerecorded = () => {
     <>
       <GuidelineError
         title={"Link to a multimedia file, no transcript"}
-        category={"links"}
+        successCriterion={"links"}
         serial={85}
         linkToExplanation={"https://webaim.org/techniques/captions/"}
         linkToGuideline={
