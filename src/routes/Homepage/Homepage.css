@@ -1,0 +1,15 @@
+.section__heading {
+  margin: 15px;
+}
+.section__content{
+  margin: 15px;
+}
+
+.middle-section {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.main-content {
+  display: flex;
+}

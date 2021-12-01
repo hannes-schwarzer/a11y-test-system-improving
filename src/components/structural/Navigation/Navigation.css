@@ -1,0 +1,24 @@
+.sidebar{
+    float: left;
+    height: 100vh;
+}
+
+.nav {
+    background: #303030;
+}
+.nav__item-wrapper {
+    color: whitesmoke;
+    margin: 0 15px 15px 15px;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 15px 15px 15px 0;
+}
+
+.nav__container{
+margin-right: 15px;
+}
+
+.nav__link{
+    color: whitesmoke;
+    margin-top: 5px;
+}
