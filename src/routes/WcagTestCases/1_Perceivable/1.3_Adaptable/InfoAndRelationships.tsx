@@ -1342,6 +1342,32 @@ CIRCUIT COURT JUDGE BRANCH 3
             Continue
           </a>
         </GuidelineError>
+        <GuidelineError
+          title={
+            "ul and ol must only directly contain li, script or template elements"
+          }
+          successCriterion={"Info and Relationships"}
+          guideline={"1.3.1"}
+          serial={38}
+          level={Level.A}
+          linkToGuideline={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          linkToExplanation={
+            "https://dequeuniversity.com/rules/axe/4.3/list?application=AxeChrome"
+          }
+        >
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ul>
+              Incorrect sublist
+              <li>Subitem 1</li>
+              <li>Subitem 2</li>
+            </ul>
+            <li>Item 3</li>
+          </ul>
+        </GuidelineError>
       </Frame>
     </>
   );
