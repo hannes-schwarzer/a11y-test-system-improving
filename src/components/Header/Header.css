@@ -1,0 +1,12 @@
+.global-header {
+    display: flex;
+    background: #303030;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+.main-heading{
+    font-size: 3em;
+    margin: 0 0 0 15px;
+}
+

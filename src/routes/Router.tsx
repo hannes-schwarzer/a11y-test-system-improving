@@ -1,56 +1,56 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Inappropriate } from "../components/WcagTestCases/2_Operable/2.4_Navigable/Inappropriate";
-import { Empty } from "../components/WcagTestCases/2_Operable/2.4_Navigable/Empty";
-import { Missing } from "../components/WcagTestCases/2_Operable/2.4_Navigable/Missing";
-import { MissingHOne } from "../components/WcagTestCases/DemoPages/MissingHOne";
-import { KeyboardTrap } from "../components/WcagTestCases/2_Operable/2.1_KeyboardAccessible/KeyboardTrap";
-import { DemoPage } from "../components/WcagTestCases/DemoPages/DemoPage";
+import { Inappropriate } from "./WcagTestCases/2_Operable/2.4_Navigable/Inappropriate";
+import { Empty } from "./WcagTestCases/2_Operable/2.4_Navigable/Empty";
+import { Missing } from "./WcagTestCases/2_Operable/2.4_Navigable/Missing";
+import { MissingHOne } from "./WcagTestCases/DemoPages/MissingHOne";
+import { KeyboardTrap } from "./WcagTestCases/2_Operable/2.1_KeyboardAccessible/KeyboardTrap";
+import { DemoPage } from "./WcagTestCases/DemoPages/DemoPage";
 import { Homepage } from "./Homepage/Homepage";
 import { Misc } from "./Misc/Misc";
-import { NonTextContent } from "../components/WcagTestCases/1_Perceivable/1.1_TextAlternatives/NonTextContent";
-import { AudioOnlyVideoOnlyPrerecorded } from "../components/WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded";
-import { MediaAlternativePrerecorded } from "../components/WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/MediaAlternativePrerecorded";
-import { InfoAndRelationships } from "../components/WcagTestCases/1_Perceivable/1.3_Adaptable/InfoAndRelationships";
-import { MeaningfulSequence } from "../components/WcagTestCases/1_Perceivable/1.3_Adaptable/MeaningfulSequence";
-import { UseOfColor } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/UseOfColor";
-import { AudioControl } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/AudioControl";
-import { ContrastMinimum } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/ContrastMinimum";
-import { ResizeText } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/ResizeText";
-import { ContrastEnhanced } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/ContrastEnhanced";
-import { VisualPresentation } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/VisualPresentation";
-import { Reflow } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/Reflow";
-import { NonTextContrast } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/NonTextContrast";
-import { TextSpacing } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/TextSpacing";
-import { ContentOnHoverOrFocus } from "../components/WcagTestCases/1_Perceivable/1.4_Distinguishable/ContentOnHoverOrFocus";
-import { Keyboard } from "../components/WcagTestCases/2_Operable/2.1_KeyboardAccessible/Keyboard";
-import { NoKeyboardTrap } from "../components/WcagTestCases/2_Operable/2.1_KeyboardAccessible/NoKeyboardTrap";
-import { CharacterKeyShortcuts } from "../components/WcagTestCases/2_Operable/2.1_KeyboardAccessible/CharacterKeyShortcuts";
-import { TimingAdjustable } from "../components/WcagTestCases/2_Operable/2.2_EnoughTime/TimingAdjustable";
-import { PauseStopHide } from "../components/WcagTestCases/2_Operable/2.2_EnoughTime/PauseStopHide";
-import { Interruptions } from "../components/WcagTestCases/2_Operable/2.2_EnoughTime/Interruptions";
-import { ThreeFlashesOrBelowThroshold } from "../components/WcagTestCases/2_Operable/2.3_SeizuresAndPhysical/ThreeFlashesOrBelowThroshold";
-import { BypassBlocks } from "../components/WcagTestCases/2_Operable/2.4_Navigable/BypassBlocks";
-import { PageTitled } from "../components/WcagTestCases/2_Operable/2.4_Navigable/PageTitled";
-import { FocusOrder } from "../components/WcagTestCases/2_Operable/2.4_Navigable/FocusOrder";
-import { LinkPurposeInContext } from "../components/WcagTestCases/2_Operable/2.4_Navigable/LinkPurposeInContext";
-import { HeadingsAndLabels } from "../components/WcagTestCases/2_Operable/2.4_Navigable/HeadingsAndLabels";
-import { FocusVisible } from "../components/WcagTestCases/2_Operable/2.4_Navigable/FocusVisible";
-import { LinkPurposeLinkOnly } from "../components/WcagTestCases/2_Operable/2.4_Navigable/LinkPurposeLinkOnly";
-import { LabelInName } from "../components/WcagTestCases/2_Operable/2.5_InputModalities/LabelInName";
-import { TargetSize } from "../components/WcagTestCases/2_Operable/2.5_InputModalities/TargetSize";
-import { LangOfParts } from "../components/WcagTestCases/3_Understandable/3.1_Readable/LangOfParts";
-import { LangOfPage } from "../components/WcagTestCases/3_Understandable/3.1_Readable/LangOfPage";
-import { ReadingLevel } from "../components/WcagTestCases/3_Understandable/3.1_Readable/ReadingLevel";
-import { OnFocus } from "../components/WcagTestCases/3_Understandable/3.2_Predictable/OnFocus";
-import { OnInput } from "../components/WcagTestCases/3_Understandable/3.2_Predictable/OnInput";
-import { ConsistentNavigation } from "../components/WcagTestCases/3_Understandable/3.2_Predictable/ConsistentNavigation";
-import { ConsistentIdentification } from "../components/WcagTestCases/3_Understandable/3.2_Predictable/ConsistentIdentification";
-import { ChangeOnRequest } from "../components/WcagTestCases/3_Understandable/3.2_Predictable/ChangeOnRequest";
-import { ErrorIdentification } from "../components/WcagTestCases/3_Understandable/3.3_InputAssistance/ErrorIdentification";
-import { LabelsOrInstructions } from "../components/WcagTestCases/3_Understandable/3.3_InputAssistance/LabelsOrInstructions";
-import { ErrorSuggestions } from "../components/WcagTestCases/3_Understandable/3.3_InputAssistance/ErrorSuggestions";
-import { Parsing } from "../components/WcagTestCases/4_Robust/Compatible_4.1/Parsing";
-import { NameRoleValue } from "../components/WcagTestCases/4_Robust/Compatible_4.1/NameRoleValue";
+import { NonTextContent } from "./WcagTestCases/1_Perceivable/1.1_TextAlternatives/NonTextContent";
+import { AudioOnlyVideoOnlyPrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded";
+import { MediaAlternativePrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/MediaAlternativePrerecorded";
+import { InfoAndRelationships } from "./WcagTestCases/1_Perceivable/1.3_Adaptable/InfoAndRelationships";
+import { MeaningfulSequence } from "./WcagTestCases/1_Perceivable/1.3_Adaptable/MeaningfulSequence";
+import { UseOfColor } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/UseOfColor";
+import { AudioControl } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/AudioControl";
+import { ContrastMinimum } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/ContrastMinimum";
+import { ResizeText } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/ResizeText";
+import { ContrastEnhanced } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/ContrastEnhanced";
+import { VisualPresentation } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/VisualPresentation";
+import { Reflow } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/Reflow";
+import { NonTextContrast } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/NonTextContrast";
+import { TextSpacing } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/TextSpacing";
+import { ContentOnHoverOrFocus } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/ContentOnHoverOrFocus";
+import { Keyboard } from "./WcagTestCases/2_Operable/2.1_KeyboardAccessible/Keyboard";
+import { NoKeyboardTrap } from "./WcagTestCases/2_Operable/2.1_KeyboardAccessible/NoKeyboardTrap";
+import { CharacterKeyShortcuts } from "./WcagTestCases/2_Operable/2.1_KeyboardAccessible/CharacterKeyShortcuts";
+import { TimingAdjustable } from "./WcagTestCases/2_Operable/2.2_EnoughTime/TimingAdjustable";
+import { PauseStopHide } from "./WcagTestCases/2_Operable/2.2_EnoughTime/PauseStopHide";
+import { Interruptions } from "./WcagTestCases/2_Operable/2.2_EnoughTime/Interruptions";
+import { ThreeFlashesOrBelowThroshold } from "./WcagTestCases/2_Operable/2.3_SeizuresAndPhysical/ThreeFlashesOrBelowThroshold";
+import { BypassBlocks } from "./WcagTestCases/2_Operable/2.4_Navigable/BypassBlocks";
+import { PageTitled } from "./WcagTestCases/2_Operable/2.4_Navigable/PageTitled";
+import { FocusOrder } from "./WcagTestCases/2_Operable/2.4_Navigable/FocusOrder";
+import { LinkPurposeInContext } from "./WcagTestCases/2_Operable/2.4_Navigable/LinkPurposeInContext";
+import { HeadingsAndLabels } from "./WcagTestCases/2_Operable/2.4_Navigable/HeadingsAndLabels";
+import { FocusVisible } from "./WcagTestCases/2_Operable/2.4_Navigable/FocusVisible";
+import { LinkPurposeLinkOnly } from "./WcagTestCases/2_Operable/2.4_Navigable/LinkPurposeLinkOnly";
+import { LabelInName } from "./WcagTestCases/2_Operable/2.5_InputModalities/LabelInName";
+import { TargetSize } from "./WcagTestCases/2_Operable/2.5_InputModalities/TargetSize";
+import { LangOfParts } from "./WcagTestCases/3_Understandable/3.1_Readable/LangOfParts";
+import { LangOfPage } from "./WcagTestCases/3_Understandable/3.1_Readable/LangOfPage";
+import { ReadingLevel } from "./WcagTestCases/3_Understandable/3.1_Readable/ReadingLevel";
+import { OnFocus } from "./WcagTestCases/3_Understandable/3.2_Predictable/OnFocus";
+import { OnInput } from "./WcagTestCases/3_Understandable/3.2_Predictable/OnInput";
+import { ConsistentNavigation } from "./WcagTestCases/3_Understandable/3.2_Predictable/ConsistentNavigation";
+import { ConsistentIdentification } from "./WcagTestCases/3_Understandable/3.2_Predictable/ConsistentIdentification";
+import { ChangeOnRequest } from "./WcagTestCases/3_Understandable/3.2_Predictable/ChangeOnRequest";
+import { ErrorIdentification } from "./WcagTestCases/3_Understandable/3.3_InputAssistance/ErrorIdentification";
+import { LabelsOrInstructions } from "./WcagTestCases/3_Understandable/3.3_InputAssistance/LabelsOrInstructions";
+import { ErrorSuggestions } from "./WcagTestCases/3_Understandable/3.3_InputAssistance/ErrorSuggestions";
+import { Parsing } from "./WcagTestCases/4_Robust/Compatible_4.1/Parsing";
+import { NameRoleValue } from "./WcagTestCases/4_Robust/Compatible_4.1/NameRoleValue";
 
 export const Router = () => {
   return (
@@ -68,15 +68,19 @@ export const Router = () => {
         />
         <Route
           path={"/wcag/audio-only-and-video-only-prerecorded"}
-          element={<AudioOnlyVideoOnlyPrerecorded />}
-        />
-        <Route
-          path={"/wcag/info-and-relationships"}
-          element={<InfoAndRelationships />}
+          element={
+            <AudioOnlyVideoOnlyPrerecorded
+              pageTitle={"1.2.1 Audio-only and Video-only (Prerecorded)"}
+            />
+          }
         />
         <Route
           path={"/wcag/media-alternative-prerecorded"}
           element={<MediaAlternativePrerecorded />}
+        />
+        <Route
+          path={"/wcag/info-and-relationships"}
+          element={<InfoAndRelationships />}
         />
         <Route
           path={"/wcag/meaningful-sequence"}

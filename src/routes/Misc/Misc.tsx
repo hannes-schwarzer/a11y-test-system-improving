@@ -1,7 +1,7 @@
 import {
   GuidelineError,
   Level,
-} from "../../components/structural/GuidelineError/GuidelineError";
+} from "../../components/GuidelineError/GuidelineError";
 import { Link } from "react-router-dom";
 import SPACER from "../../assets/spacer.gif";
 import classNames from "classnames";

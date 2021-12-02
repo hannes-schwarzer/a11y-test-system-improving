@@ -1,0 +1,11 @@
+.main__content{
+    margin: 15px;
+}
+
+.main__heading{
+    margin-top: 0;
+}
+
+.main__wrapper{
+    display: flex;
+}
