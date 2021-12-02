@@ -5,11 +5,11 @@
 .whiteForeground {
     color: white;
 }
-
+/*
 p a:link { color: red }
 p a:visited { color: maroon }
 p a:active { color: fuchsia }
-
+*/
 .all-caps {
     text-transform: uppercase;
 }

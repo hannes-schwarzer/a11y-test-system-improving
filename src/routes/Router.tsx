@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Inappropriate } from "./WcagTestCases/2_Operable/2.4_Navigable/Inappropriate";
-import { Empty } from "./WcagTestCases/2_Operable/2.4_Navigable/Empty";
-import { Missing } from "./WcagTestCases/2_Operable/2.4_Navigable/Missing";
-import { MissingHOne } from "./WcagTestCases/DemoPages/MissingHOne";
-import { KeyboardTrap } from "./WcagTestCases/2_Operable/2.1_KeyboardAccessible/KeyboardTrap";
-import { DemoPage } from "./WcagTestCases/DemoPages/DemoPage";
+import { Inappropriate } from "./WcagTestCases/DetailPages/Inappropriate";
+import { Empty } from "./WcagTestCases/DetailPages/Empty";
+import { Missing } from "./WcagTestCases/DetailPages/Missing";
+import { MissingHOne } from "./WcagTestCases/DetailPages/MissingHOne";
+import { KeyboardTrap } from "./WcagTestCases/DetailPages/KeyboardTrap";
+import { DemoPage } from "./WcagTestCases/DetailPages/DemoPage";
 import { Homepage } from "./Homepage/Homepage";
 import { Misc } from "./Misc/Misc";
 import { NonTextContent } from "./WcagTestCases/1_Perceivable/1.1_TextAlternatives/NonTextContent";
@@ -76,97 +76,215 @@ export const Router = () => {
         />
         <Route
           path={"/wcag/media-alternative-prerecorded"}
-          element={<MediaAlternativePrerecorded />}
+          element={
+            <MediaAlternativePrerecorded
+              pageTitle={"1.2.8 Media Alternative (Prerecorded)"}
+            />
+          }
         />
         <Route
           path={"/wcag/info-and-relationships"}
-          element={<InfoAndRelationships />}
+          element={
+            <InfoAndRelationships pageTitle={"1.3.1 Info and Relationships"} />
+          }
         />
         <Route
           path={"/wcag/meaningful-sequence"}
-          element={<MeaningfulSequence />}
+          element={
+            <MeaningfulSequence pageTitle={"1.3.2 Meaningful Sequence"} />
+          }
         />
-        <Route path={"/wcag/use-of-color"} element={<UseOfColor />} />
-        <Route path={"/wcag/audio-control"} element={<AudioControl />} />
-        <Route path={"/wcag/contrast-minimum"} element={<ContrastMinimum />} />
-        <Route path={"/wcag/resize-text"} element={<ResizeText />} />
+        <Route
+          path={"/wcag/use-of-color"}
+          element={<UseOfColor pageTitle={"1.4.1 Use of Color"} />}
+        />
+        <Route
+          path={"/wcag/audio-control"}
+          element={<AudioControl pageTitle={"1.4.2 Audio Control"} />}
+        />
+        <Route
+          path={"/wcag/contrast-minimum"}
+          element={<ContrastMinimum pageTitle={"1.4.3 Contrast (Minimum)"} />}
+        />
+        <Route
+          path={"/wcag/resize-text"}
+          element={<ResizeText pageTitle={"1.4.4 ResizeText text"} />}
+        />
         <Route
           path={"/wcag/contrast-enhanced"}
-          element={<ContrastEnhanced />}
+          element={<ContrastEnhanced pageTitle={"1.4.6 Contrast (Enhanced)"} />}
         />
         <Route
           path={"/wcag/visual-presentation"}
-          element={<VisualPresentation />}
+          element={
+            <VisualPresentation pageTitle={"1.4.8 Visual Presentation"} />
+          }
         />
-        <Route path={"/wcag/reflow"} element={<Reflow />} />
-        <Route path={"/wcag/non-text-contrast"} element={<NonTextContrast />} />
-        <Route path={"/wcag/text-spacing"} element={<TextSpacing />} />
+        <Route
+          path={"/wcag/reflow"}
+          element={<Reflow pageTitle={"1.4.10 Reflow"} />}
+        />
+        <Route
+          path={"/wcag/non-text-contrast"}
+          element={<NonTextContrast pageTitle={"1.4.11 Non-text Contrast"} />}
+        />
+        <Route
+          path={"/wcag/text-spacing"}
+          element={<TextSpacing pageTitle={"1.4.12 Text Spacing"} />}
+        />
         <Route
           path={"/wcag/content-on-hover-or-focus"}
-          element={<ContentOnHoverOrFocus />}
+          element={
+            <ContentOnHoverOrFocus
+              pageTitle={"1.4.13 Content on Hover or Focus"}
+            />
+          }
         />
         {/*Operable*/}
-        <Route path={"/wcag/keyboard"} element={<Keyboard />} />
-        <Route path={"/wcag/no-keyboard-trap"} element={<NoKeyboardTrap />} />
+        <Route
+          path={"/wcag/keyboard"}
+          element={<Keyboard pageTitle={"2.1.1 Keyboard"} />}
+        />
+        <Route
+          path={"/wcag/no-keyboard-trap"}
+          element={<NoKeyboardTrap pageTitle={"2.1.2 No Keyboard Trap"} />}
+        />
         <Route
           path={"/wcag/character-key-shortcuts"}
-          element={<CharacterKeyShortcuts />}
+          element={
+            <CharacterKeyShortcuts
+              pageTitle={"2.1.4 Character Key Shortcuts"}
+            />
+          }
         />
         <Route
           path={"/wcag/timing-adjustable"}
-          element={<TimingAdjustable />}
+          element={<TimingAdjustable pageTitle={"2.2.1 Timing Adjustable"} />}
         />
-        <Route path={"/wcag/pause-stop-hide"} element={<PauseStopHide />} />
-        <Route path={"/wcag/interruptions"} element={<Interruptions />} />
+        <Route
+          path={"/wcag/pause-stop-hide"}
+          element={<PauseStopHide pageTitle={"2.2.2 Pause, Stop, Hide"} />}
+        />
+        <Route
+          path={"/wcag/interruptions"}
+          element={<Interruptions pageTitle={"2.2.4 Interruptions"} />}
+        />
         <Route
           path={"/wcag/three-flashes-or-below-threshold"}
-          element={<ThreeFlashesOrBelowThroshold />}
+          element={
+            <ThreeFlashesOrBelowThroshold
+              pageTitle={"2.3.1 Three Flashes or Below Threshold"}
+            />
+          }
         />
-        <Route path={"/wcag/bypass-blocks"} element={<BypassBlocks />} />
-        <Route path={"/wcag/page-titled"} element={<PageTitled />} />
-        <Route path={"/wcag/focus-order"} element={<FocusOrder />} />
+        <Route
+          path={"/wcag/bypass-blocks"}
+          element={<BypassBlocks pageTitle={"2.4.1 Bypass Blocks"} />}
+        />
+        <Route
+          path={"/wcag/page-titled"}
+          element={<PageTitled pageTitle={"2.4.2 Page Titled"} />}
+        />
+        <Route
+          path={"/wcag/focus-order"}
+          element={<FocusOrder pageTitle={"2.4.3 Focus Order"} />}
+        />
         <Route
           path={"/wcag/link-purpose-in-context"}
-          element={<LinkPurposeInContext />}
+          element={
+            <LinkPurposeInContext
+              pageTitle={"2.4.4 Link Purpose (In Context)"}
+            />
+          }
         />
         <Route
           path={"/wcag/headings-and-labels"}
-          element={<HeadingsAndLabels />}
+          element={
+            <HeadingsAndLabels pageTitle={"2.4.6 Headings and Labels"} />
+          }
         />
-        <Route path={"/wcag/focus-visible"} element={<FocusVisible />} />
+        <Route
+          path={"/wcag/focus-visible"}
+          element={<FocusVisible pageTitle={"2.4.7 Focus Visible"} />}
+        />
         <Route
           path={"/wcag/link-purpose-link-only"}
-          element={<LinkPurposeLinkOnly />}
+          element={
+            <LinkPurposeLinkOnly pageTitle={"2.4.9 Link Purpose (Link Only)"} />
+          }
         />
-        <Route path={"/wcag/label-in-name"} element={<LabelInName />} />
-        <Route path={"/wcag/target-size"} element={<TargetSize />} />
+        <Route
+          path={"/wcag/label-in-name"}
+          element={<LabelInName pageTitle={"2.5.3 Label in Name"} />}
+        />
+        <Route
+          path={"/wcag/target-size"}
+          element={<TargetSize pageTitle={"2.5.5 Target Size"} />}
+        />
         {/*Understandable*/}
-        <Route path={"/wcag/language-of-page"} element={<LangOfPage />} />
-        <Route path={"/wcag/language-of-parts"} element={<LangOfParts />} />
-        <Route path={"/wcag/reading-level"} element={<ReadingLevel />} />
-        <Route path={"/wcag/on-focus"} element={<OnFocus />} />
-        <Route path={"/wcag/on-input"} element={<OnInput />} />
+        <Route
+          path={"/wcag/language-of-page"}
+          element={<LangOfPage pageTitle={"3.1.1 Language of Page"} />}
+        />
+        <Route
+          path={"/wcag/language-of-parts"}
+          element={<LangOfParts pageTitle={"3.1.2 Language of Parts"} />}
+        />
+        <Route
+          path={"/wcag/reading-level"}
+          element={<ReadingLevel pageTitle={"3.1.5 Reading Level"} />}
+        />
+        <Route
+          path={"/wcag/on-focus"}
+          element={<OnFocus pageTitle={"3.2.1 On Focus"} />}
+        />
+        <Route
+          path={"/wcag/on-input"}
+          element={<OnInput pageTitle={"3.2.2 On Input"} />}
+        />
         <Route
           path={"/wcag/consistent-navigation"}
-          element={<ConsistentNavigation />}
+          element={
+            <ConsistentNavigation pageTitle={"3.2.3 Consistent Navigation"} />
+          }
         />
         <Route
           path={"/wcag/consistent-identification"}
-          element={<ConsistentIdentification />}
+          element={
+            <ConsistentIdentification
+              pageTitle={"3.2.4 Consistent Identification"}
+            />
+          }
         />
-        <Route path={"/wcag/change-on-request"} element={<ChangeOnRequest />} />
+        <Route
+          path={"/wcag/change-on-request"}
+          element={<ChangeOnRequest pageTitle={"3.2.5 Change on Request"} />}
+        />
         <Route
           path={"/wcag/error-identification"}
-          element={<ErrorIdentification />}
+          element={
+            <ErrorIdentification pageTitle={"3.3.1 Error Identification"} />
+          }
         />
         <Route
           path={"/wcag/labels-or-instructions"}
-          element={<LabelsOrInstructions />}
+          element={
+            <LabelsOrInstructions pageTitle={"3.3.2 Labels or Instructions"} />
+          }
         />
-        <Route path={"/wcag/error-suggestion"} element={<ErrorSuggestions />} />
+        <Route
+          path={"/wcag/error-suggestion"}
+          element={<ErrorSuggestions pageTitle={"3.3.3 Error Suggestion"} />}
+        />
         {/*Robust*/}
-        <Route path={"/wcag/parsing"} element={<Parsing />} />
-        <Route path={"/wcag/name-role-value"} element={<NameRoleValue />} />
+        <Route
+          path={"/wcag/parsing"}
+          element={<Parsing pageTitle={"4.1.1 Parsing"} />}
+        />
+        <Route
+          path={"/wcag/name-role-value"}
+          element={<NameRoleValue pageTitle={"4.1.2 Name, Role, Value"} />}
+        />
         {/*Misc & Detail pages*/}
         <Route path={"/page-title/inappropriate"} element={<Inappropriate />} />
         <Route path={"/page-title/empty"} element={<Empty />} />

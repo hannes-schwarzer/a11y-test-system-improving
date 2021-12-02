@@ -316,12 +316,12 @@ export const Navigation = () => {
               <li>Compatible</li>
               <ul>
                 <li>
-                  <Link className={"nav__link"} to={"wcag/parsing"}>
+                  <Link className={"nav__link"} to={"/wcag/parsing"}>
                     Parsing
                   </Link>{" "}
                 </li>
                 <li>
-                  <Link className={"nav__link"} to={"wcag/name-role-value"}>
+                  <Link className={"nav__link"} to={"/wcag/name-role-value"}>
                     Name, Role, Value
                   </Link>{" "}
                 </li>

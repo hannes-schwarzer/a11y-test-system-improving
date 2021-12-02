@@ -2,13 +2,13 @@ import { FC } from "react";
 import { Header } from "../Header/Header";
 import { Navigation } from "../Navigation/Navigation";
 
-import "./Backbone.css";
+import "./Frame.css";
 
 type BackboneProps = {
   pageTitle: string;
 };
 
-export const Backbone: FC<BackboneProps> = ({ pageTitle, children }) => {
+export const Frame: FC<BackboneProps> = ({ pageTitle, children }) => {
   return (
     <>
       <Header pageTitle={pageTitle} />

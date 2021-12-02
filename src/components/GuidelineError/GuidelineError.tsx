@@ -30,16 +30,23 @@ export const GuidelineError: FC<TestCaseProps> = ({
 }) => {
   return (
     <article className="testCase" id={`test_${serial}_${successCriterion}`}>
-      <div className="testCase__title">
-        <h3>{title}</h3>
-        {linkToGuideline && guideline && (
+      <div className="testCase__description">
+        <div className={"description__titleLine"}>
+          <h3 className={"description__title"}>{title}</h3>
+          <p className={"description__level"}>Level: {level}</p>
           <a
+            className={"testCase__link"}
             href={linkToGuideline}
             target={"_parent"}
-            className={"testCase__link"}
           >
-            Guideline violation: {guideline}
+            {guideline} {successCriterion}
           </a>
+        </div>
+        {explanation && <p>{explanation}</p>}
+        {linkToExplanation && (
+          <p className={"description__explanationLink"}>
+            <a href={linkToExplanation}>Link to explanation</a>
+          </p>
         )}
       </div>
       <div className="testCase__content">{children}</div>

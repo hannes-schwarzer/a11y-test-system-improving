@@ -5,6 +5,8 @@
 
 .nav {
     background: #303030;
+    width: 245px;
+
 }
 .nav__item-wrapper {
     color: whitesmoke;

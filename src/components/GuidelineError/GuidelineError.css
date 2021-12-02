@@ -1,14 +1,31 @@
 .testCase {
-    border: 1px solid #bfc1c3;
-    margin: 15px;
-    padding: 0 15px 30px 15px;
+    border: 1px solid #000000;
+    padding: 0 15px 15px 15px;
+    margin-bottom: 5px;
 }
 
-.testCase__title {
+.testCase__description {
+    border-bottom: 1px dashed #303030;
+    margin-bottom: 15px;
+}
+
+.description__titleLine{
     display: flex;
     justify-content: space-between;
 }
 
-.testCase__title a {
-    margin: 15px 0 15px 15px
+.description__title{
+    margin: 15px 15px 0 0;
+}
+
+.description__level{
+    margin: 15px 0 0 0;
+}
+
+.testCase__link {
+    margin: 15px 0 0 15px
+}
+
+.description__explanationLink{
+text-align: right;
 }

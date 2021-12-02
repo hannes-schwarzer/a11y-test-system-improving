@@ -2,7 +2,7 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 a:link {
-    color: blue;
+/*    color: blue;*/
 }
 a:-webkit-any-link {
     cursor: pointer;
