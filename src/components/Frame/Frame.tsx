@@ -4,11 +4,11 @@ import { Navigation } from "../Navigation/Navigation";
 
 import "./Frame.css";
 
-type BackboneProps = {
+type FrameProps = {
   pageTitle: string;
 };
 
-export const Frame: FC<BackboneProps> = ({ pageTitle, children }) => {
+export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
   return (
     <>
       <Header pageTitle={pageTitle} />
