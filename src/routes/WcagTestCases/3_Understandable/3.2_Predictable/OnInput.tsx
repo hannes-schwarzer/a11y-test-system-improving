@@ -10,6 +10,10 @@ export const OnInput = (props: Props) => {
     window.open(`http://download.${event.target.value}/`);
   };
 
+  const changeContext = (event: any) => {
+    document.documentElement.lang = event.target.value;
+  };
+
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
@@ -132,8 +136,12 @@ export const OnInput = (props: Props) => {
           }
           successCriterionNumber={"3.2.2"}
         >
-          <form>
-            <label htmlFor={"language-selector"}>Select your language</label>
+          <form
+            onChange={(event: any) => {
+              changeContext(event);
+            }}
+          >
+            <label htmlFor={"language-selector"}>Select your language </label>
             <select className={"language-selector"} id={"language-selector"}>
               <option value={""}>Change your language</option>
               <option value={"en"}>English</option>
