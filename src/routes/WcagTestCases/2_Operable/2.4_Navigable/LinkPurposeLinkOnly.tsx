@@ -16,7 +16,7 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           title={
             "F84: Failure of Success Criterion 2.4.9 due to using a non-specific link such as 'click here' or 'more' without a mechanism to change the link text to specific text."
           }
-          successCriterionInWords={"2.4.9 Link Purpose (Link Only)"}
+          successCriterionInWords={"Link Purpose (Link Only)"}
           serial={1}
           successCriterionNumber={"2.4.9"}
           linkToSuccessCriterion={
@@ -39,7 +39,7 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           title={
             "F84: Failure of Success Criterion 2.4.9 due to using a non-specific link such as 'click here' or 'more' without a mechanism to change the link text to specific text."
           }
-          successCriterionInWords={"2.4.9 Link Purpose (Link Only)"}
+          successCriterionInWords={"Link Purpose (Link Only)"}
           serial={2}
           successCriterionNumber={"2.4.9"}
           linkToSuccessCriterion={
@@ -64,7 +64,7 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           title={
             "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
           }
-          successCriterionInWords={"2.4.9 Link Purpose (Link Only)"}
+          successCriterionInWords={"Link Purpose (Link Only)"}
           serial={3}
           successCriterionNumber={"2.4.9"}
           linkToSuccessCriterion={
@@ -86,7 +86,7 @@ export const LinkPurposeLinkOnly = (props: Props) => {
 
         <GuidelineError
           title={"Link text does not make sense out of context"}
-          successCriterionInWords={"links"}
+          successCriterionInWords={"Link Purpose (Link Only)"}
           serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"

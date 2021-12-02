@@ -14,7 +14,7 @@ export const TargetSize = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Inadequately-sized clickable targets found"}
-          successCriterionInWords={"2.5.5 Target Size"}
+          successCriterionInWords={"Target Size"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#target-size"
           }

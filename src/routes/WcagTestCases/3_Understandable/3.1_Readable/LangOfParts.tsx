@@ -14,7 +14,7 @@ export const LangOfParts = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Text language changed without required change in direction"}
-          successCriterionInWords={"3.1.2 Language of Parts"}
+          successCriterionInWords={"Language of Parts"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -26,7 +26,7 @@ export const LangOfParts = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"lang attribute not used to identify change of language"}
-          successCriterionInWords={"3.1.2 Language of Parts"}
+          successCriterionInWords={"Language of Parts"}
           serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -41,7 +41,7 @@ export const LangOfParts = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Text language is in the wrong direction"}
-          successCriterionInWords={"3.1.2 Language of Parts"}
+          successCriterionInWords={"Language of Parts"}
           serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -56,7 +56,7 @@ export const LangOfParts = (props: Props) => {
 
         <GuidelineError
           title={"html element has an invalid value in the lang attribute"}
-          successCriterionInWords={"language"}
+          successCriterionInWords={"Language of Parts"}
           serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -73,7 +73,7 @@ export const LangOfParts = (props: Props) => {
           title={
             "lang attribute used to identify change of language, but with invalid value"
           }
-          successCriterionInWords={"language"}
+          successCriterionInWords={"Language of Parts"}
           serial={5}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -89,7 +89,7 @@ export const LangOfParts = (props: Props) => {
 
         <GuidelineError
           title={"html element has lang attribute set to wrong language"}
-          successCriterionInWords={"language"}
+          successCriterionInWords={"Language of Parts"}
           serial={6}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
@@ -106,7 +106,7 @@ export const LangOfParts = (props: Props) => {
           title={
             "lang attribute used to identify change of language, but with wrong language"
           }
-          successCriterionInWords={"language"}
+          successCriterionInWords={"Language of Parts"}
           serial={7}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"

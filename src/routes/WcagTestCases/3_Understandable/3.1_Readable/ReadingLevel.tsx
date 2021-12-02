@@ -15,7 +15,7 @@ export const ReadingLevel = (props: Props) => {
         <GuidelineError
           title={"Plain language is not used"}
           serial={1}
-          successCriterionInWords={"3.1.5 Reading Level"}
+          successCriterionInWords={"Reading Level"}
           successCriterionNumber={"3.1.5"}
           level={Level.AAA}
           linkToSuccessCriterion={

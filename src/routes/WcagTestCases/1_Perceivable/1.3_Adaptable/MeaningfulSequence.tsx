@@ -17,7 +17,7 @@ export const MeaningfulSequence = (props: Props) => {
           title={
             "F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to format tables in plain text content"
           }
-          successCriterionInWords={"1.3.2 Meaningful Sequence"}
+          successCriterionInWords={"Meaningful Sequence"}
           serial={1}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
@@ -51,7 +51,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           title={
             "F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content"
           }
-          successCriterionInWords={"1.3.2 Meaningful Sequence"}
+          successCriterionInWords={"Meaningful Sequence"}
           serial={2}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
@@ -83,7 +83,7 @@ range of people with disabilities,        wide variety of assistive technologies
           title={
             "F32: Failure of Success Criterion 1.3.2 due to using white space characters to control spacing within a word"
           }
-          successCriterionInWords={"1.3.2 Meaningful Sequence"}
+          successCriterionInWords={"Meaningful Sequence"}
           serial={3}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
@@ -157,7 +157,7 @@ range of people with disabilities,        wide variety of assistive technologies
           title={
             "F49: Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not make sense when linearized"
           }
-          successCriterionInWords={"1.3.2 Meaningful Sequence"}
+          successCriterionInWords={"Meaningful Sequence"}
           serial={4}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
@@ -276,7 +276,7 @@ range of people with disabilities,        wide variety of assistive technologies
           title={
             "F1: Failure of Success Criterion 1.3.2 due to changing the meaning of content by positioning information with CSS"
           }
-          successCriterionInWords={"1.3.2 Meaningful Sequence"}
+          successCriterionInWords={"Meaningful Sequence"}
           serial={5}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
@@ -318,7 +318,7 @@ range of people with disabilities,        wide variety of assistive technologies
         <GuidelineError
           title={"Content identified by location"}
           serial={6}
-          successCriterionInWords={"1.3.2 Meaningful Sequence"}
+          successCriterionInWords={"Meaningful Sequence"}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
@@ -337,7 +337,7 @@ range of people with disabilities,        wide variety of assistive technologies
         <GuidelineError
           title={"Table used for layout"}
           serial={7}
-          successCriterionInWords={"1.3.2 Meaningful Sequence"}
+          successCriterionInWords={"Meaningful Sequence"}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"

@@ -15,7 +15,7 @@ export const HeadingsAndLabels = (props: Props) => {
         {/*2.4.6 & 2.4.10*/}
         <GuidelineError
           title={"Headings not structured in a hierarchical manner"}
-          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"Headings and Labels"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
@@ -51,7 +51,7 @@ export const HeadingsAndLabels = (props: Props) => {
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
-          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"Headings and Labels"}
           serial={2}
           successCriterionNumber={"2.4.6"}
           level={Level.AA}
@@ -74,7 +74,7 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Form element has no label"}
-          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"Headings and Labels"}
           serial={3}
           successCriterionNumber={"2.4.6"}
           level={Level.AA}
@@ -90,7 +90,7 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Empty label found"}
-          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
           serial={4}
           level={Level.AA}
@@ -107,7 +107,7 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Non-unique field label found"}
-          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"Headings and Labels"}
           serial={5}
           successCriterionNumber={"2.4.6"}
           linkToSuccessCriterion={
@@ -136,7 +136,7 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Missing labels in checkboxes"}
-          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"Headings and Labels"}
           serial={6}
           successCriterionNumber={"2.4.6"}
           linkToSuccessCriterion={
@@ -177,7 +177,7 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Placeholder no label"}
-          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
           serial={7}
           linkToSuccessCriterion={

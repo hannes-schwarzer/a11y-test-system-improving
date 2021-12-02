@@ -16,7 +16,7 @@ export const Parsing = (props: Props) => {
           title={
             "F77: Failure of Success Criterion 4.1.1 due to duplicate values of type ID"
           }
-          successCriterionInWords={"4.1.1 Parsing"}
+          successCriterionInWords={"Parsing"}
           serial={1}
           successCriterionNumber={"4.1.1"}
           linkToSuccessCriterion={
@@ -48,7 +48,7 @@ export const Parsing = (props: Props) => {
 
         <GuidelineError
           title={"Two unique labels, but identical for= attributes"}
-          successCriterionInWords={"4.1.1 Parsing"}
+          successCriterionInWords={"Parsing"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#parsing"
           }

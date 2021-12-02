@@ -17,7 +17,7 @@ export const FocusOrder = (props: Props) => {
           title={
             "F44: Failure of Success Criterion 2.4.3 due to using tabindex to create a tab order that does not preserve meaning and operability"
           }
-          successCriterionInWords={"2.4.3 Focus Order"}
+          successCriterionInWords={"Focus Order"}
           serial={1}
           successCriterionNumber={"2.4.3"}
           linkToSuccessCriterion={
@@ -57,7 +57,7 @@ export const FocusOrder = (props: Props) => {
 
         <GuidelineError
           title={"Focus order in wrong order"}
-          successCriterionInWords={"keyboard"}
+          successCriterionInWords={"Focus Order"}
           serial={2}
           successCriterionNumber={"2.4.3"}
           linkToSuccessCriterion={
@@ -80,7 +80,7 @@ export const FocusOrder = (props: Props) => {
 
         <GuidelineError
           title={"Link with tabindex greater than 0"}
-          successCriterionInWords={"keyboard"}
+          successCriterionInWords={"Focus Order"}
           serial={3}
           linkToExplanation={
             "https://dequeuniversity.com/rules/axe/4.0/tabindex"

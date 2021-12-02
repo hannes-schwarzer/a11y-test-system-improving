@@ -16,7 +16,7 @@ export const TimingAdjustable = (props: Props) => {
           title={
             "F40: Failure of Success Criterion 2.2.1 and 2.2.4 due to using meta redirect with a time limit"
           }
-          successCriterionInWords={"2.2.1 Timing Adjustable"}
+          successCriterionInWords={"Timing Adjustable"}
           serial={1}
           explanation={""}
           linkToExplanation={
@@ -47,7 +47,7 @@ export const TimingAdjustable = (props: Props) => {
           title={
             "F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to using meta refresh to reload the page"
           }
-          successCriterionInWords={"2.2.1 Timing Adjustable"}
+          successCriterionInWords={"Timing Adjustable"}
           serial={2}
           explanation={
             "This is a deprecated example that changes the user's page at regular intervals. Content developers should " +

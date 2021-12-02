@@ -16,7 +16,7 @@ export const Interruptions = (props: Props) => {
           title={
             "F40: Failure of Success Criterion 2.2.1 and 2.2.4 due to using meta redirect with a time limit"
           }
-          successCriterionInWords={"2.2.4 Interruptions"}
+          successCriterionInWords={"Interruptions"}
           serial={1}
           explanation={
             "The page below is a failure because it will redirect to the URI http://www.example.com/newpage after a time limit of 5 seconds."
@@ -49,7 +49,7 @@ export const Interruptions = (props: Props) => {
           title={
             "F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to using meta refresh to reload the page"
           }
-          successCriterionInWords={"2.2.4 Interruptions"}
+          successCriterionInWords={"Interruptions"}
           serial={1}
           explanation={
             'This is a deprecated example that changes the user\'s page at regular intervals. Content developers should not use this technique to simulate "push" technology. Developers cannot predict how much time a user will require to read a page; premature refresh can disorient users. Content developers should avoid periodic refresh and allow users to choose when they want the latest information. (The number in the content attribute is the refresh interval in seconds.)'

@@ -16,7 +16,7 @@ export const LangOfPage = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"html element has an empty lang attribute"}
-          successCriterionInWords={"3.1.1 Language of Page"}
+          successCriterionInWords={"Language of Page"}
           serial={1}
           level={Level.A}
           successCriterionNumber={"3.1.1"}

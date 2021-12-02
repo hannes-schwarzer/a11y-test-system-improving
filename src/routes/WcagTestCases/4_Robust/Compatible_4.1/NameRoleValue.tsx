@@ -29,7 +29,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F59: Failure of Success Criterion 4.1.2 due to using script to make div or span a user interface control in HTML without providing a role for the control"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={1}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -61,7 +61,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={2}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -90,7 +90,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={3}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -118,7 +118,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={4}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -140,7 +140,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F86: Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={5}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -162,7 +162,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F86: Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={6}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -185,7 +185,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={7}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -207,7 +207,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Empty button"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={8}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -220,7 +220,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Empty H1"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={9}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -234,7 +234,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Empty heading"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={10}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -248,7 +248,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Link to #, invalid hypertext reference"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={11}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
@@ -266,7 +266,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -289,7 +289,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Form element has no label"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={13}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
@@ -307,7 +307,7 @@ export const NameRoleValue = (props: Props) => {
           title={
             "Label element with for= attribute but not matching id= attribute of form control"
           }
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={14}
           level={Level.A}
           linkToSuccessCriterion={
@@ -334,7 +334,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Empty label found"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           successCriterionNumber={"4.1.2"}
           serial={15}
           level={Level.A}
@@ -351,7 +351,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Missing labels in checkboxes"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={16}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
@@ -392,7 +392,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Placeholder no label"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={17}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
@@ -419,7 +419,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Invalid ARIA role names"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
@@ -449,7 +449,7 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"iframe is missing a title attribute"}
-          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }

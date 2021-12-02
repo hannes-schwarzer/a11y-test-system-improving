@@ -24,7 +24,7 @@ export const ContrastMinimum = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"Contrast (Minimum)"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
@@ -47,7 +47,7 @@ export const ContrastMinimum = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"Contrast (Minimum)"}
           serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
@@ -71,7 +71,7 @@ export const ContrastMinimum = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"Contrast (Minimum)"}
           serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
@@ -96,7 +96,7 @@ export const ContrastMinimum = (props: Props) => {
           title={
             "Small text does not have a contrast ratio of at least 4.5:1 so does not meet AA"
           }
-          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"Contrast (Minimum)"}
           serial={4}
           successCriterionNumber={"1.4.3"}
           linkToSuccessCriterion={
@@ -113,7 +113,7 @@ export const ContrastMinimum = (props: Props) => {
           title={
             "Large text does not have a contrast ratio of at least 3:1 so does not meet AA"
           }
-          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"Contrast (Minimum)"}
           serial={5}
           successCriterionNumber={"1.4.3"}
           linkToSuccessCriterion={
@@ -128,7 +128,7 @@ export const ContrastMinimum = (props: Props) => {
 
         <GuidelineError
           title={"Errors identified with a poor colour contrast"}
-          successCriterionInWords={"forms"}
+          successCriterionInWords={"Contrast (Minimum)"}
           serial={6}
           level={Level.AA}
           successCriterionNumber={"1.4.3"}

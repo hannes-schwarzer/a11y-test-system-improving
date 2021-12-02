@@ -16,7 +16,7 @@ export const Reflow = (props: Props) => {
         <GuidelineError
           title={"Wide page forces users to scroll horizontally"}
           serial={1}
-          successCriterionInWords={"1.4.10 Reflow"}
+          successCriterionInWords={"Reflow"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#reflow"
           }

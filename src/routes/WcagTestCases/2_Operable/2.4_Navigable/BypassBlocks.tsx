@@ -14,7 +14,7 @@ export const BypassBlocks = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"iframe is missing a title attribute"}
-          successCriterionInWords={"2.4.1 Bypass Blocks"}
+          successCriterionInWords={"Bypass Blocks"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks"

@@ -18,7 +18,7 @@ export const FocusVisible = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterionInWords={"2.4.7 Focus Visible"}
+          successCriterionInWords={"Focus Visible"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
@@ -49,7 +49,7 @@ export const FocusVisible = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterionInWords={"2.4.7 Focus Visible"}
+          successCriterionInWords={"Focus Visible"}
           serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
@@ -83,7 +83,7 @@ export const FocusVisible = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterionInWords={"2.4.7 Focus Visible"}
+          successCriterionInWords={"Focus Visible"}
           serial={3}
           explanation={
             "The focus indicator is turned off with CSS: The following CSS example will remove the default focus indicator, " +
@@ -108,7 +108,7 @@ export const FocusVisible = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterionInWords={"2.4.7 Focus Visible"}
+          successCriterionInWords={"Focus Visible"}
           serial={4}
           explanation={
             "The outline of elements is visually similar to the focus indicator: The following CSS example will create an " +
@@ -137,7 +137,7 @@ export const FocusVisible = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterionInWords={"2.4.7 Focus Visible"}
+          successCriterionInWords={"Focus Visible"}
           serial={5}
           explanation={
             "Elements have a border that occludes the focus indicator: The following CSS example creates a border around " +
@@ -163,7 +163,7 @@ export const FocusVisible = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Focus not visible"}
-          successCriterionInWords={"2.4.7 Focus Visible"}
+          successCriterionInWords={"Focus Visible"}
           serial={6}
           level={Level.AA}
           successCriterionNumber={"2.4.7"}
@@ -181,7 +181,7 @@ export const FocusVisible = (props: Props) => {
 
         <GuidelineError
           title={"Keyboard focus is not indicated visually"}
-          successCriterionInWords={"keyboard"}
+          successCriterionInWords={"Focus Visible"}
           serial={7}
           successCriterionNumber={"2.4.7"}
           level={Level.AA}

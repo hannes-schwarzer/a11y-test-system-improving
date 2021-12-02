@@ -15,7 +15,7 @@ export const PageTitled = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Empty page title"}
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={1}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -31,7 +31,7 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"This page does not have a title element."}
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={2}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -49,7 +49,7 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"This page has a title element that is empty."}
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={3}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -69,7 +69,7 @@ export const PageTitled = (props: Props) => {
           title={
             "This page does not have a title element. The title element in the content of the iframe does not function as the title for the entire page."
           }
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={4}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -87,7 +87,7 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"This page has two title elements and the first is empty."}
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={4}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -112,7 +112,7 @@ export const PageTitled = (props: Props) => {
           title={
             "This page has a title element that only contains a separator character."
           }
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={4}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -130,7 +130,7 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"Inappropriate page title"}
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={5}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -146,7 +146,7 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"Empty page title"}
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={6}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -161,7 +161,7 @@ export const PageTitled = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Missing page title"}
-          successCriterionInWords={"2.4.2 Page Titled"}
+          successCriterionInWords={"Page Titled"}
           serial={7}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={

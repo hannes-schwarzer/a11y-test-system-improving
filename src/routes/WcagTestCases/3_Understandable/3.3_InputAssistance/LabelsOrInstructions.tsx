@@ -17,7 +17,7 @@ export const LabelsOrInstructions = (props: Props) => {
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
           }
@@ -40,7 +40,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Left aligned form labels with too much white space"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -58,7 +58,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Group of radio buttons not enclosed in a fieldset"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -91,7 +91,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Form element has no label"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -107,7 +107,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Fieldset without a legend"}
-          successCriterionInWords={"forms"}
+          successCriterionInWords={"Labels or Instructions"}
           successCriterionNumber={"3.3.2"}
           serial={5}
           level={Level.A}
@@ -126,7 +126,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Empty legend"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={6}
           level={Level.A}
           linkToSuccessCriterion={
@@ -146,7 +146,7 @@ export const LabelsOrInstructions = (props: Props) => {
           title={
             "Label element with for= attribute but not matching id= attribute of form control"
           }
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={7}
           level={Level.A}
           linkToSuccessCriterion={
@@ -173,7 +173,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Group of check boxes not enclosed in a fieldset"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={8}
           successCriterionNumber={"3.3.2"}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
@@ -216,7 +216,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Empty label found"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           successCriterionNumber={"3.3.2"}
           serial={9}
           level={Level.A}
@@ -233,7 +233,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Two unique labels, but identical for= attributes"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={10}
           successCriterionNumber={"3.3.2"}
           level={Level.A}
@@ -259,7 +259,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Missing labels in checkboxes"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={11}
           successCriterionNumber={"3.3.2"}
           level={Level.A}
@@ -300,7 +300,7 @@ export const LabelsOrInstructions = (props: Props) => {
 
         <GuidelineError
           title={"Placeholder no label"}
-          successCriterionInWords={"3.3.2 Labels or Instructions"}
+          successCriterionInWords={"Labels or Instructions"}
           serial={12}
           successCriterionNumber={"3.3.2"}
           level={Level.A}

@@ -14,7 +14,7 @@ export const ThreeFlashesOrBelowThroshold = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Flashing content doesn't have warning"}
-          successCriterionInWords={"multimedia"}
+          successCriterionInWords={"Three Flashes or Below Threshold"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold"

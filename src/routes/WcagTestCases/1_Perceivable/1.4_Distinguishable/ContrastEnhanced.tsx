@@ -19,7 +19,7 @@ export const ContrastEnhanced = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"Contrast (Enhanced)"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
@@ -42,7 +42,7 @@ export const ContrastEnhanced = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"Contrast (Enhanced)"}
           serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
@@ -66,7 +66,7 @@ export const ContrastEnhanced = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"Contrast (Enhanced)"}
           serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
@@ -90,7 +90,7 @@ export const ContrastEnhanced = (props: Props) => {
           title={
             "Small text does not have a contrast ratio of at least 7:1 so does not meet AAA"
           }
-          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"Contrast (Enhanced)"}
           serial={4}
           successCriterionNumber={"1.4.6"}
           linkToSuccessCriterion={
@@ -107,7 +107,7 @@ export const ContrastEnhanced = (props: Props) => {
           title={
             "Large text does not have a contrast ratio of at least 4.5:1 so does not meet AAA"
           }
-          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"Contrast (Enhanced)"}
           serial={5}
           successCriterionNumber={"1.4.6"}
           linkToSuccessCriterion={

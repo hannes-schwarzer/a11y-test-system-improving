@@ -51,7 +51,7 @@ export const Keyboard = (props: Props) => {
             "F54: Failure of Success Criterion 2.1.1 due to using only pointing-device-specific event " +
             "handlers (including gesture) for a function"
           }
-          successCriterionInWords={"2.1.1 Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
@@ -81,7 +81,7 @@ export const Keyboard = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterionInWords={"2.1.1 Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
@@ -112,7 +112,7 @@ export const Keyboard = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterionInWords={"2.1.1 Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
@@ -145,7 +145,7 @@ export const Keyboard = (props: Props) => {
           title={
             "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
           }
-          successCriterionInWords={"2.1.1 Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
@@ -173,7 +173,7 @@ export const Keyboard = (props: Props) => {
           title={
             "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
           }
-          successCriterionInWords={"2.1.1 Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={5}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
@@ -217,7 +217,7 @@ export const Keyboard = (props: Props) => {
 
         <GuidelineError
           title={"Dropdown navigation - only the top level items receive focus"}
-          successCriterionInWords={"2.1.1 Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={7}
           successCriterionNumber={"2.1.1"}
           level={Level.A}
@@ -247,7 +247,7 @@ export const Keyboard = (props: Props) => {
 
         <GuidelineError
           title={"Link with a role=button does not work with space bar"}
-          successCriterionInWords={"2.1.1 Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={8}
           level={Level.A}
           linkToSuccessCriterion={

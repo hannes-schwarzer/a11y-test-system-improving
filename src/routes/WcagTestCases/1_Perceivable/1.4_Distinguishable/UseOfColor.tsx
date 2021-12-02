@@ -22,7 +22,7 @@ export const UseOfColor = (props: Props) => {
           title={
             "F73: Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision"
           }
-          successCriterionInWords={"1.4.1 Use of Color"}
+          successCriterionInWords={"Use of Color"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"
@@ -39,7 +39,7 @@ export const UseOfColor = (props: Props) => {
 
         <GuidelineError
           title={"Color alone is used to convey content"}
-          successCriterionInWords={"1.4.1 Use of Color"}
+          successCriterionInWords={"Use of Color"}
           serial={2}
           level={Level.A}
           successCriterionNumber={"1.4.1"}
@@ -62,7 +62,7 @@ export const UseOfColor = (props: Props) => {
 
         <GuidelineError
           title={"Identifying links by colour alone"}
-          successCriterionInWords={"1.4.1 Use of Color"}
+          successCriterionInWords={"Use of Color"}
           serial={3}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F73.html"}
           level={Level.A}
@@ -86,7 +86,7 @@ export const UseOfColor = (props: Props) => {
           title={
             "Link not clearly identifiable and distinguishable from surrounding text"
           }
-          successCriterionInWords={"links"}
+          successCriterionInWords={"Use of Color"}
           successCriterionNumber={"1.4.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -106,7 +106,7 @@ export const UseOfColor = (props: Props) => {
 
         <GuidelineError
           title={"Errors identified by colour only"}
-          successCriterionInWords={"1.4.1 Use of Color"}
+          successCriterionInWords={"Use of Color"}
           serial={92}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"

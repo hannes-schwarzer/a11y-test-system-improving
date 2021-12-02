@@ -14,7 +14,7 @@ export const NoKeyboardTrap = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Keyboard trap"}
-          successCriterionInWords={"keyboard"}
+          successCriterionInWords={"No Keyboard Trap"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap"

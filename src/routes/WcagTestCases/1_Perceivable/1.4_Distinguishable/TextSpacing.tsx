@@ -14,7 +14,7 @@ export const TextSpacing = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Inadequate line height used"}
-          successCriterionInWords={"1.4.12 Text Spacing"}
+          successCriterionInWords={"Text Spacing"}
           serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#text-spacing"
@@ -31,7 +31,7 @@ export const TextSpacing = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Links not separated by printable characters"}
-          successCriterionInWords={"1.4.12 Text Spacing"}
+          successCriterionInWords={"Text Spacing"}
           serial={2}
           successCriterionNumber={"1.4.12"}
           linkToSuccessCriterion={

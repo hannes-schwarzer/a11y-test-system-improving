@@ -14,7 +14,7 @@ export const CharacterKeyShortcuts = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Accesskey attribute used for link"}
-          successCriterionInWords={"keyboard"}
+          successCriterionInWords={"Character Key Shortcuts"}
           serial={1}
           successCriterionNumber={"2.1.4"}
           linkToSuccessCriterion={
