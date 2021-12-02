@@ -19,6 +19,34 @@ export const Duplicates = () => {
         <div id={"nav"}>global nav</div>
         <div id={"nav"}>page nav</div>
       </TestCase>
+
+      <TestCase
+        title={"Empty h1"}
+        successCriterionInWords={"Name, Role, Value"}
+        successCriterionNumber={"4.1.2"}
+        linkToSuccessCriterion={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        level={Level.A}
+      >
+        <h1></h1>
+        <p>This paragraph is preceded by an empty h1</p>
+      </TestCase>
+
+      <TestCase
+        title={"Form element has no label"}
+        successCriterionInWords={"Name, Role, Value"}
+        successCriterionNumber={"4.1.2"}
+        level={Level.A}
+        linkToSuccessCriterion={
+          "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
+        }
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <input type={"text"} />
+        </form>
+      </TestCase>
     </>
   );
 };

@@ -208,19 +208,6 @@ export const NameRoleValue = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Empty H1"}
-          successCriterionInWords={"Name, Role, Value"}
-          successCriterionNumber={"4.1.2"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
-          }
-          level={Level.A}
-        >
-          <h1></h1>
-          <p>Here is an empty h1</p>
-        </TestCase>
-
-        <TestCase
           title={"Empty heading"}
           successCriterionInWords={"Name, Role, Value"}
           successCriterionNumber={"4.1.2"}
@@ -269,21 +256,6 @@ export const NameRoleValue = (props: Props) => {
               <input id={"missing-labels-month"} type={"text"} />
               <input id={"missing-labels-year"} type={"text"} />
             </p>
-          </form>
-        </TestCase>
-
-        <TestCase
-          title={"Form element has no label"}
-          successCriterionInWords={"Name, Role, Value"}
-          successCriterionNumber={"4.1.2"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
-          }
-          linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
-        >
-          <form>
-            <input type={"text"} />
           </form>
         </TestCase>
 
