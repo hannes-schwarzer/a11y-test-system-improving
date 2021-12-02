@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./Reflow.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,9 +10,8 @@ export const Reflow = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Wide page forces users to scroll horizontally"}
-          serial={1}
           successCriterionInWords={"Reflow"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#reflow"
@@ -37,7 +33,7 @@ export const Reflow = (props: Props) => {
               This is some text you have to horizontally scroll to read.
             </p>
           </div>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

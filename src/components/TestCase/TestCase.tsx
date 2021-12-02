@@ -1,4 +1,4 @@
-import "./GuidelineError.css";
+import "./TestCase.css";
 import { FC } from "react";
 
 export enum Level {
@@ -9,7 +9,6 @@ export enum Level {
 
 type TestCaseProps = {
   title: string;
-  serial: number;
   level: Level;
   successCriterionInWords: string;
   successCriterionNumber: string;
@@ -17,10 +16,9 @@ type TestCaseProps = {
   explanation?: string;
   linkToExplanation?: string;
 };
-export const GuidelineError: FC<TestCaseProps> = ({
+export const TestCase: FC<TestCaseProps> = ({
   title,
   successCriterionInWords,
-  serial,
   successCriterionNumber,
   linkToSuccessCriterion,
   linkToExplanation,
@@ -29,10 +27,7 @@ export const GuidelineError: FC<TestCaseProps> = ({
   children,
 }) => {
   return (
-    <article
-      className="testCase"
-      id={`test_${serial}_${successCriterionInWords}`}
-    >
+    <article className="testCase">
       <div className="testCase__description">
         <div className={"description__titleLine"}>
           <h3 className={"description__title"}>{title}</h3>

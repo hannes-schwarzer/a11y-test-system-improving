@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import classNames from "classnames";
 import "./ErrorIdentification.css";
 import { Frame } from "../../../../components/Frame/Frame";
@@ -18,10 +15,9 @@ export const ErrorIdentification = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Errors are not identified"}
           successCriterionInWords={"Error Identification"}
-          serial={1}
           level={Level.A}
           successCriterionNumber={"3.3.1"}
           linkToSuccessCriterion={
@@ -46,7 +42,7 @@ export const ErrorIdentification = (props: Props) => {
               <input name={"date-of-birth"} type={"text"} />
             </label>
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

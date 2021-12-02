@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -16,12 +13,11 @@ export const OnInput = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F36: Failure of Success Criterion 3.2.2 due to automatically submitting a form and given a value"
           }
           successCriterionInWords={"On Input"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#on-input"
           }
@@ -48,13 +44,12 @@ export const OnInput = (props: Props) => {
             />
             <input type="submit" value="Submit" id={"formSubmitButton1"} />
           </form>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F36: Failure of Success Criterion 3.2.2 due to automatically submitting a form and given a value"
           }
           successCriterionInWords={"On Input"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#on-input"
           }
@@ -82,13 +77,12 @@ export const OnInput = (props: Props) => {
             </select>
             <input type="submit" value="Submit" id={"formSubmitButton2"} />
           </form>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F37: Failure of Success Criterion 3.2.2 due to launching a new window without prior warning when the selection of a radio button, check box or select list is changed"
           }
           successCriterionInWords={"On Input"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#on-input"
           }
@@ -127,12 +121,11 @@ export const OnInput = (props: Props) => {
               </label>
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Form control that changes context without warning"}
           successCriterionInWords={"On Input"}
-          serial={4}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#on-input"
@@ -148,7 +141,7 @@ export const OnInput = (props: Props) => {
               <option value={"fr"}>Français</option>
             </select>
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

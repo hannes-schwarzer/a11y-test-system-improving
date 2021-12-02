@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./ContentOnHoverOrFocus.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,10 +10,9 @@ export const ContentOnHoverOrFocus = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Tooltips don't receive keyboard focus"}
           successCriterionInWords={"Content on Hover or Focus"}
-          serial={120}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html"
           }
@@ -38,7 +34,7 @@ export const ContentOnHoverOrFocus = (props: Props) => {
             </span>
           </label>
           <input id={"drivers-licence-no"} type={"text"} />
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

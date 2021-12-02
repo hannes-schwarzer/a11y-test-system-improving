@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,10 +9,9 @@ export const CharacterKeyShortcuts = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Accesskey attribute used for link"}
           successCriterionInWords={"Character Key Shortcuts"}
-          serial={1}
           successCriterionNumber={"2.1.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#character-key-shortcuts"
@@ -25,7 +21,7 @@ export const CharacterKeyShortcuts = (props: Props) => {
           <a accessKey={"A"} href={"page.html"}>
             A link with an accesskey attribute
           </a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

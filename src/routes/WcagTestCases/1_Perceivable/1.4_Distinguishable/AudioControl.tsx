@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 // @ts-ignore
 import JEFFBOB from "../../../../assets/jeffbob.mp3";
 import { Frame } from "../../../../components/Frame/Frame";
@@ -14,12 +11,11 @@ export const AudioControl = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F93: Failure of Success Criterion 1.4.2 for absence of a way to pause or stop an HTML5 media element that autoplays"
           }
           successCriterionInWords={"Audio Control"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-control"
           }
@@ -30,7 +26,7 @@ export const AudioControl = (props: Props) => {
           level={Level.A}
         >
           <audio src={JEFFBOB} autoPlay loop></audio>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

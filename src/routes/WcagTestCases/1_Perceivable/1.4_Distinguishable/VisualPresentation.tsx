@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./VisualPresentation.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,14 +10,13 @@ export const VisualPresentation = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           level={Level.AAA}
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Visual Presentation"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
@@ -35,15 +31,14 @@ export const VisualPresentation = (props: Props) => {
           }
         >
           <p className={"whiteBackground"}>My background is white.</p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           level={Level.AAA}
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Visual Presentation"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
@@ -58,16 +53,15 @@ export const VisualPresentation = (props: Props) => {
           }
         >
           <p className={"whiteForeground"}>My foreground is white.</p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           level={Level.AAA}
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Visual Presentation"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
@@ -84,13 +78,12 @@ export const VisualPresentation = (props: Props) => {
           <p>
             ... document body... <a href="foo.htm">Foo</a>
           </p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F88: Failure of Success Criterion 1.4.8 due to using text that is justified (aligned to both the left and the right margins)"
           }
           successCriterionInWords={"Visual Presentation"}
-          serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
@@ -114,12 +107,11 @@ export const VisualPresentation = (props: Props) => {
             commodo justo. Nulla facilisi. Phasellus nulla lacus, tempor quis,
             tincidunt ac, rutrum et, mauris.
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"All caps text found"}
           successCriterionInWords={"Visual Presentation"}
-          serial={5}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
@@ -139,11 +131,10 @@ export const VisualPresentation = (props: Props) => {
             S." because it interprets the uppercase "US" as being an acronym for
             "United States".
           </p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={"Italics used on long sections of text"}
           successCriterionInWords={"Visual Presentation"}
-          serial={6}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
@@ -160,11 +151,10 @@ export const VisualPresentation = (props: Props) => {
             lean over making it hard for dyslexic users to make out the words.
             When the text size is small, the text is even more illegible.
           </p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={"Justified text found"}
           successCriterionInWords={"Visual Presentation"}
-          serial={7}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
@@ -178,7 +168,7 @@ export const VisualPresentation = (props: Props) => {
             cause words to be spaced closely together thus making it difficult
             to determine where a word starts and ends.
           </p>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

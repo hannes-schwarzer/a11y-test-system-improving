@@ -1,7 +1,4 @@
-import {
-  Level,
-  GuidelineError,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { Level, TestCase } from "../../../../components/TestCase/TestCase";
 import "./ResizeText.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,13 +10,12 @@ export const ResizeText = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           level={Level.AA}
           title={
             "F69: Failure of Success Criterion 1.4.4 when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured"
           }
           successCriterionInWords={"Resize Text"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
@@ -48,14 +44,13 @@ export const ResizeText = (props: Props) => {
             Now is the time for all good men to come to the aid of their
             country.
           </p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           level={Level.AA}
           title={
             "F69: Failure of Success Criterion 1.4.4 when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured"
           }
           successCriterionInWords={"Resize Text"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
@@ -83,15 +78,14 @@ export const ResizeText = (props: Props) => {
             Now is the time for all good men to come to the aid of their
             country.
           </p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           level={Level.AA}
           title={
             "F80: Failure of Success Criterion 1.4.4 when text-based form controls do not resize when visually rendered " +
             "text is resized up to 200%"
           }
           successCriterionInWords={"Resize Text"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
@@ -157,14 +151,13 @@ export const ResizeText = (props: Props) => {
             value="Submit"
             id="Submit"
           />
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           level={Level.AA}
           title={
             "F94: Failure of Success Criterion 1.4.4 due to text sized in viewport units"
           }
           successCriterionInWords={"Resize Text"}
-          serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
@@ -177,11 +170,10 @@ export const ResizeText = (props: Props) => {
           }
         >
           <p className="callout">Text that scales by viewport units</p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={"Very small text found"}
           successCriterionInWords={"Resize Text"}
-          serial={5}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
@@ -192,9 +184,9 @@ export const ResizeText = (props: Props) => {
           <p className={"small-text"}>
             This is some tiny text, much too small for some people to read
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Content is not readable and functional when text is increased"
           }
@@ -204,7 +196,6 @@ export const ResizeText = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
           level={Level.AA}
-          serial={6}
         >
           <p className={"resize"}>
             This text becomes unreadable when you increase the text-size (Zoom
@@ -214,12 +205,11 @@ export const ResizeText = (props: Props) => {
             </a>
             .
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Page zoom - boxes that don't expand with the text"}
           successCriterionInWords={"Resize Text"}
-          serial={7}
           successCriterionNumber={"1.4.4"}
           level={Level.AA}
           linkToSuccessCriterion={
@@ -246,7 +236,7 @@ export const ResizeText = (props: Props) => {
               to book a visit.
             </p>
           </div>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../components/TestCase/TestCase";
 // import { Link } from "react-router-dom";
 // import SPACER from "../../assets/spacer.gif";
 // import classNames from "classnames";
@@ -31,9 +28,8 @@ export const Misc = () => {
 
   return (
     <>
-      <GuidelineError
+      <TestCase
         title={"First instance of abbreviation not expanded"}
-        serial={1}
         successCriterionInWords={"3.1.4 Abbreviations"}
         successCriterionNumber={"3.1.4"}
         linkToSuccessCriterion={
@@ -46,23 +42,23 @@ export const Misc = () => {
       >
         <abbr>GDS</abbr> is part of the Cabinet Office. Our job is digital
         transformation of government.
-      </GuidelineError>
+      </TestCase>
       {/*2.4.10?*/}
-      {/*    <GuidelineError
+      {/*    <TestCase
         title={"Content is not in correct reading order in source code"}
-        serial={3}
+        
         successCriterion={"content"}
       >
         <h4>3-Step Skin Care</h4>
         <div style={{ float: "right", width: "33%" }}>Moisturise</div>
         <div style={{ float: "right", width: "33%" }}>Exfoliate</div>
         <div style={{ float: "right", width: "33%" }}>Cleanse</div>
-      </GuidelineError>
-      <GuidelineError
+      </TestCase>
+      <TestCase
         title={
           "Unorganised content: Content is not organised into well-defined groups or chunks, using headings, lists, and other visual mechanisms"
         }
-        serial={4}
+        
         successCriterion={"content"}
       >
         <p>
@@ -160,18 +156,18 @@ export const Misc = () => {
           of significant criticism from MPs and the Speaker of the House of
           Commons.[9]
         </p>
-      </GuidelineError>
-      <GuidelineError
+      </TestCase>
+      <TestCase
         title={"Marquee element found"}
         successCriterion={"typography"}
-        serial={17}
+        
       >
         {" "}
-      </GuidelineError>
-      <GuidelineError
+      </TestCase>
+      <TestCase
         title={"Long lines of text"}
         successCriterion={"typography"}
-        serial={18}
+        
       >
         <p>
           For people with some reading or vision disabilities, long lines of
@@ -180,22 +176,22 @@ export const Misc = () => {
           makes it easier for them to continue on to the next line in a block.
           Lines should not exceed 80 characters
         </p>
-      </GuidelineError>
+      </TestCase>
 */}
       {/*1.3.1 || 2.4.6 || 2.4.10*/}
-      {/*      <GuidelineError
+      {/*      <TestCase
         title={"Missing h1"}
         successCriterion={"headings"}
-        serial={36}
+        
       >
         <Link to={"/headings/missingh1"}>Example page with no H1</Link>
-      </GuidelineError>
+      </TestCase>
 */}
       {/*1.3.1 || No Error?*/}
-      {/*      <GuidelineError
+      {/*      <TestCase
         title={"Table with some empty cells"}
         successCriterion={"tables"}
-        serial={53}
+        
       >
         <table>
           <caption>Bills before Parliament 2016-17</caption>
@@ -224,19 +220,19 @@ export const Misc = () => {
             </tr>
           </tbody>
         </table>
-      </GuidelineError>
+      </TestCase>
 */}
       {/*This one is still to be implemented*/}
-      {/*      <GuidelineError
+      {/*      <TestCase
         title={"Links to a sound file, no transcript"}
         successCriterion={"links"}
-        serial={74}
-      ></GuidelineError>
+        
+      ></TestCase>
 
-      <GuidelineError
+      <TestCase
         title={"Field hint not associated with input"}
         successCriterion={"forms"}
-        serial={107}
+        
         linkToExplanation={
           "https://www.deque.com/blog/accessible-forms-the-problem-with-placeholders/ https://www.smashingmagazine.com/2018/06/placeholder-attribute/"
         }
@@ -250,12 +246,12 @@ export const Misc = () => {
           </p>
           <input className={"form-control"} id={"ni-number"} type={"text"} />
         </form>
-      </GuidelineError>
+      </TestCase>
 
-      <GuidelineError
+      <TestCase
         title={"Inadequately-sized clickable targets found"}
         successCriterion={"3.1 Readable"}
-        serial={1}
+        
         guideline={"3.1"}
         linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#readable"}
       >
@@ -285,22 +281,22 @@ export const Misc = () => {
         <a href={"x.html"}>x</a>
         <a href={"y.html"}>y</a>
         <a href={"z.html"}>z</a>
-      </GuidelineError>
+      </TestCase>
 
-      <GuidelineError
+      <TestCase
         title={"Empty paragraph"}
         successCriterion={"html"}
-        serial={134}
+        
       >
         <p></p>
-      </GuidelineError>
+      </TestCase>
 
-      <GuidelineError
+      <TestCase
         title={
           "Object not embedded accessibly - wmode parameter not set to window"
         }
         successCriterion={"html"}
-        serial={137}
+        
         linkToExplanation={
           "https://github.com/alphagov/accessibility-tool-audit/issues/41"
         }
@@ -308,32 +304,32 @@ export const Misc = () => {
         <object data={"foo"}>
           <param name={"wmode"} value={"transparent"} /> Alternative text
         </object>
-      </GuidelineError>
+      </TestCase>
 */}
       {/*Not 1.1.1 Actually this seems to be valid*/}
-      {/*      <GuidelineError
+      {/*      <TestCase
         title={"Spacer image found"}
         successCriterion={"html"}
-        serial={138}
+        
       >
         We are here. <img alt={""} height={1} src={SPACER} width={100} /> And
         you are there.
-      </GuidelineError>
+      </TestCase>
 */}
       {/*This actuually seems valid so far as the usage of pre is concerned*/}
-      {/*      <GuidelineError
+      {/*      <TestCase
         title={"PRE element without CODE element inside it"}
         successCriterion={"html"}
-        serial={141}
+        
         linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F48.html"}
       >
         <pre>Your /\ (`/`|| _ + /--\,)\,|| (||`| goes here</pre>
-      </GuidelineError>
+      </TestCase>
 
-      <GuidelineError
+      <TestCase
         title={"Inline style adds colour"}
         successCriterion={"html"}
-        serial={139}
+        
         linkToExplanation={
           "https://bcourses.berkeley.edu/courses/1476601/pages/inline-styling"
         }
@@ -341,14 +337,14 @@ export const Misc = () => {
         <p style={{ color: "blue" }}>
           The colour of this text is set using inline styles.
         </p>
-      </GuidelineError>
+      </TestCase>
 
-      <GuidelineError
+      <TestCase
         title={
           "visibility:hidden used to visually hide content when it should be available to screenreader"
         }
         successCriterion={"css"}
-        serial={129}
+        
         linkToExplanation={
           "https://webaim.org/techniques/css/invisiblecontent/"
         }
@@ -356,14 +352,14 @@ export const Misc = () => {
         <a href={"rugby.html"}>
           Read more <span style={{ visibility: "hidden" }}>about rugby</span>
         </a>
-      </GuidelineError>
+      </TestCase>
 
-      <GuidelineError
+      <TestCase
         title={
           "display:none used to visually hide content when it should be available to screenreader"
         }
         successCriterion={"css"}
-        serial={130}
+        
         linkToExplanation={
           "https://webaim.org/techniques/css/invisiblecontent/"
         }
@@ -371,14 +367,14 @@ export const Misc = () => {
         <a href={"rugby.html"}>
           Read more <span style={{ display: "none" }}>about rugby</span>
         </a>
-      </GuidelineError>
+      </TestCase>
 
-      <GuidelineError
+      <TestCase
         title={
           "iframe title attribute does not describe the content or purpose of the iframe"
         }
         successCriterion={"frame"}
-        serial={126}
+        
       >
         <iframe
           height={100}
@@ -386,13 +382,13 @@ export const Misc = () => {
           title={"Facebook"}
           width={300}
         ></iframe>
-      </GuidelineError>
+      </TestCase>
 */}
       {/*2.2.1*/}
-      {/*      <GuidelineError
+      {/*      <TestCase
         title={"Alert shows for a short time"}
         successCriterion={"keyboard"}
-        serial={109}
+        
       >
         <p className={keyboardClassHundredNine}>
           You should complete this form in 20 minutes
@@ -400,27 +396,27 @@ export const Misc = () => {
         <label>
           Name <input type={"text"} />
         </label>
-      </GuidelineError>
+      </TestCase>
 */}
       {/*2.1.1 && 2.1.3*/}
-      {/*      <GuidelineError
+      {/*      <TestCase
         title={
           "Keyboard focus assigned to a non focusable element using tabindex=0"
         }
         successCriterion={"maybeValid"}
-        serial={114}
+        
         linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/SCR29.html"}
       >
         <p tabIndex={0}>Some random text</p>
-      </GuidelineError>
+      </TestCase>
 */}
       {/*Lightbox with not functioning Escape button -
       2.1.3 Keyboard (No Exception) Level AAA ??*/}
       {/*
-      <GuidelineError
+      <TestCase
         title={"Lightbox - ESC key doesn't close the lightbox"}
         successCriterion={"keyboard"}
-        serial={118}
+        
       >
         <a
           className={"open-lightbox-unescapable"}
@@ -458,12 +454,12 @@ export const Misc = () => {
             .
           </p>
         </div>
-      </GuidelineError>
+      </TestCase>
 
-      <GuidelineError
+      <TestCase
         title={"Lightbox - focus is not moved immediately to lightbox"}
         successCriterion={"keyboard"}
-        serial={122}
+        
       >
         <a className={"open-lightbox-focus-far"} href={"#"}>
           Open lightbox
@@ -486,11 +482,11 @@ export const Misc = () => {
             .
           </p>
         </div>
-      </GuidelineError>
-      <GuidelineError
+      </TestCase>
+      <TestCase
         title={"Lightbox - focus is not retained within the lightbox"}
         successCriterion={"keyboard"}
-        serial={123}
+        
       >
         <a className={"open-lightbox-not-focused"} href={"#"}>
           Open lightbox
@@ -513,7 +509,7 @@ export const Misc = () => {
             .
           </p>
         </div>
-      </GuidelineError>
+      </TestCase>
 */}
     </>
   );

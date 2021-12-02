@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import LINK from "../../../../assets/link.png";
 import "./FocusVisible.css";
 import { Frame } from "../../../../components/Frame/Frame";
@@ -14,12 +11,11 @@ export const FocusVisible = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
           successCriterionInWords={"Focus Visible"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
@@ -43,14 +39,13 @@ export const FocusVisible = (props: Props) => {
               document!.getElementById("keayboard__blur-error-first")!.blur();
             }}
           />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
           successCriterionInWords={"Focus Visible"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
@@ -76,15 +71,14 @@ export const FocusVisible = (props: Props) => {
           >
             <img src={LINK} />
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
           successCriterionInWords={"Focus Visible"}
-          serial={3}
           explanation={
             "The focus indicator is turned off with CSS: The following CSS example will remove the default focus indicator, " +
             "which fails the requirement to provide a visible focus indicator."
@@ -101,15 +95,14 @@ export const FocusVisible = (props: Props) => {
           <a href={"somepage.html"} className={"nontextconstrast__no-focus"}>
             Link to some page
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
           successCriterionInWords={"Focus Visible"}
-          serial={4}
           explanation={
             "The outline of elements is visually similar to the focus indicator: The following CSS example will create an " +
             "outline around links that looks the same as the focus indicator. This makes it impossible for users to " +
@@ -130,15 +123,14 @@ export const FocusVisible = (props: Props) => {
           >
             Link to some page
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
           successCriterionInWords={"Focus Visible"}
-          serial={5}
           explanation={
             "Elements have a border that occludes the focus indicator: The following CSS example creates a border around " +
             "links that does not have enough contrast for the focus indicator to be seen when drawn on top of it. In " +
@@ -160,11 +152,10 @@ export const FocusVisible = (props: Props) => {
           >
             Link to some page
           </a>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={"Focus not visible"}
           successCriterionInWords={"Focus Visible"}
-          serial={6}
           level={Level.AA}
           successCriterionNumber={"2.4.7"}
           linkToSuccessCriterion={
@@ -177,12 +168,11 @@ export const FocusVisible = (props: Props) => {
           but this button
           <button className={"not-visible-outline-button"}>Search</button>
           doesn't.
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Keyboard focus is not indicated visually"}
           successCriterionInWords={"Focus Visible"}
-          serial={7}
           successCriterionNumber={"2.4.7"}
           level={Level.AA}
           linkToSuccessCriterion={
@@ -195,7 +185,7 @@ export const FocusVisible = (props: Props) => {
           <a className={"no-outline"} href={"link.html"}>
             Link with no focus style
           </a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

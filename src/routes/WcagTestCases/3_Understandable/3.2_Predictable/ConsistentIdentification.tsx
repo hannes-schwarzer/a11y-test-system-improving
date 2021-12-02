@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,12 +9,11 @@ export const ConsistentIdentification = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F31: Failure of Success Criterion 3.2.4 due to using two different labels for the same function on different Web pages within a set of Web pages"
           }
           successCriterionInWords={"Consistent Identification"}
-          serial={1}
           successCriterionNumber={"3.2.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification"
@@ -44,7 +40,7 @@ export const ConsistentIdentification = (props: Props) => {
             </label>
             <input type="submit" value="Find" />
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

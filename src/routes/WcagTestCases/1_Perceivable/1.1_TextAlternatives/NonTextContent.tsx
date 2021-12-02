@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./NonTextContent.css";
 import BBC from "../../../../assets/bbc-blocks-dark.png";
 import DECO from "../../../../assets/decoration.png";
@@ -20,12 +17,11 @@ export const NonTextContent = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F3: Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -38,14 +34,13 @@ export const NonTextContent = (props: Props) => {
           <p id="bestinterest">
             Where else would you find a better interest rate?
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -56,14 +51,13 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <img src={BBC} alt={""} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -74,14 +68,13 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <img src={BBC} alt={"spacer"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -92,14 +85,13 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <img src={BBC} alt={"picture 1"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={5}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -110,14 +102,13 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <img src={BBC} alt={"Oct.jpg"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F38: Failure of Success Criterion 1.1.1 due to not marking up decorative images in HTML in a way that allows assistive technology to ignore them\n"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -128,13 +119,12 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <img height={"60px"} src={DECO} width={"180px"} />
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             'F39: Failure of Success Criterion 1.1.1 due to providing a text alternative that is not null (e.g., alt="spacer" or alt="image") for images that should be ignored by assistive technology'
           }
           successCriterionInWords={"Non-text Content"}
-          serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -151,13 +141,12 @@ export const NonTextContent = (props: Props) => {
             alternative text "spacer" is announced by screen readers and
             displayed in some alternate color schemes.
           </p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             'F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"'
           }
           successCriterionInWords={"Non-text Content"}
-          serial={5}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -168,13 +157,12 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <img src={BBC} alt={"Oct.jpg"} />
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F71: Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text without providing a text alternative"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={6}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -189,13 +177,12 @@ export const NonTextContent = (props: Props) => {
             not provided.
           </p>
           <p>&#x03F2;&#x043E;&#x03BF;&#x006B;</p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F72: Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text alternative"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={6}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
@@ -222,11 +209,10 @@ export const NonTextContent = (props: Props) => {
       Flash frequency (Hz)
           `}
           </pre>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={"Image button has no alt attribute"}
           successCriterionInWords={"Non-text Content"}
-          serial={7}
           level={Level.A}
           successCriterionNumber={"1.1.1"}
           linkToSuccessCriterion={
@@ -234,11 +220,10 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <input src={SUBMIT} type={"image"} />
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={"Uninformative alt attribute value on image button"}
           successCriterionInWords={"Non-text Content"}
-          serial={8}
           successCriterionNumber={"1.1.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -246,12 +231,11 @@ export const NonTextContent = (props: Props) => {
           level={Level.A}
         >
           <input alt={"click"} src={SUBMIT} type={"image"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty alt attribute on image button"}
           successCriterionInWords={"Non-text Content"}
-          serial={9}
           successCriterionNumber={"1.1.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
@@ -259,12 +243,11 @@ export const NonTextContent = (props: Props) => {
           level={Level.A}
         >
           <input alt={""} src={SUBMIT} type={"image"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image has alt and title that are different"}
           successCriterionInWords={"Non-text Content"}
-          serial={10}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           explanation={
@@ -276,12 +259,11 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
         >
           <img alt={"BBC"} src={BBC} title={"BBC homepage"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image with presentation role has non-empty alt"}
           successCriterionInWords={"Non-text Content"}
-          serial={11}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -296,12 +278,11 @@ export const NonTextContent = (props: Props) => {
             src={DECO}
             width={"368"}
           />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image with no alt attribute"}
           successCriterionInWords={"Non-text Content"}
-          serial={12}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -310,14 +291,13 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
         >
           <img src={BBC} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Background image that conveys information does not have a text alternative"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={13}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -329,12 +309,11 @@ export const NonTextContent = (props: Props) => {
             Taking too much of your pension money in early retirement could mean
             you don't have enough for later.
           </div>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image has empty alt and non-empty title"}
           successCriterionInWords={"Non-text Content"}
-          serial={14}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -343,12 +322,11 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
         >
           <img src={BBC} alt={""} title={"BBC"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image has no alt and non-empty title"}
           successCriterionInWords={"Non-text Content"}
-          serial={15}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -357,12 +335,11 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
         >
           <img src={BBC} title={"BBC"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image that conveys information has an empty alt attribute"}
           successCriterionInWords={"Non-text Content"}
-          serial={16}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -371,12 +348,11 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
         >
           <img src={BBC} alt={""} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image that conveys information has inappropriate alt text"}
           successCriterionInWords={"Non-text Content"}
-          serial={17}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -385,12 +361,11 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
         >
           <img src={BBC} alt={"Twitter"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image alt attribute contains image file name"}
           successCriterionInWords={"Non-text Content"}
-          serial={18}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -399,12 +374,11 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
         >
           <img src={BBC} alt={"bbc-blocks-dark.png"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image with partial text alternative"}
           successCriterionInWords={"Non-text Content"}
-          serial={19}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -416,12 +390,11 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <img alt={"25% off sale"} src={SALE} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image link with no alternative text"}
           successCriterionInWords={"Non-text Content"}
-          serial={20}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -434,12 +407,11 @@ export const NonTextContent = (props: Props) => {
           <a href={"http://www.bbc.co.uk/"}>
             <img alt={""} src={BBC} />
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Image link alt text repeats text in the link"}
           successCriterionInWords={"Non-text Content"}
-          serial={21}
           linkToExplanation={
             "https://dequeuniversity.com/rules/axe/3.0/image-redundant-alt"
           }
@@ -453,12 +425,11 @@ export const NonTextContent = (props: Props) => {
             <img alt={"Red Panda"} height={165} src={REDPANDA} width={220} />{" "}
             Red Panda
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link to a multimedia file, no transcript"}
           successCriterionInWords={"Non-text Content"}
-          serial={22}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/general/G73.html"
           }
@@ -469,12 +440,11 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <a href={"interview.mov"}>Watch the interview</a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link to an image, no text alternative"}
           successCriterionInWords={"Non-text Content"}
-          serial={23}
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -482,14 +452,13 @@ export const NonTextContent = (props: Props) => {
           }
         >
           My favourite <a href={BAT}>bat</a>.
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Label element with for= attribute but not matching id= attribute of form control"
           }
           successCriterionInWords={"Non-text Content"}
-          serial={24}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
           explanation={
             "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
@@ -511,7 +480,7 @@ export const NonTextContent = (props: Props) => {
               />
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

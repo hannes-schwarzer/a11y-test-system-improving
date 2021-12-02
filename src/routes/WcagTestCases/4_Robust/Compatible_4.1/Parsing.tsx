@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,12 +9,11 @@ export const Parsing = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F77: Failure of Success Criterion 4.1.1 due to duplicate values of type ID"
           }
           successCriterionInWords={"Parsing"}
-          serial={1}
           successCriterionNumber={"4.1.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#parsing"
@@ -44,15 +40,14 @@ export const Parsing = (props: Props) => {
             </label>
             <input type="submit" value="Submit" />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Two unique labels, but identical for= attributes"}
           successCriterionInWords={"Parsing"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#parsing"
           }
-          serial={2}
           successCriterionNumber={"4.1.1"}
           linkToExplanation={
             "https://stackoverflow.com/questions/59490259/wcag-2-0-level-aa-input-element-error-no-input-on-code"
@@ -70,9 +65,9 @@ export const Parsing = (props: Props) => {
               <input id={"two-labels-year"} type={"text"} />
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Duplicate id"}
           successCriterionInWords={"Parsing"}
           successCriterionNumber={"4.1.1"}
@@ -80,7 +75,6 @@ export const Parsing = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#parsing"
           }
           level={Level.A}
-          serial={132}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F77.html"}
           explanation={
             "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features."
@@ -88,7 +82,7 @@ export const Parsing = (props: Props) => {
         >
           <div id={"nav"}>global nav</div>
           <div id={"nav"}>page nav</div>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

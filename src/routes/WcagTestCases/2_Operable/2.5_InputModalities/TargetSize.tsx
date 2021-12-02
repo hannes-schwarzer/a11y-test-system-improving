@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,14 +9,13 @@ export const TargetSize = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Inadequately-sized clickable targets found"}
           successCriterionInWords={"Target Size"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#target-size"
           }
           level={Level.AAA}
-          serial={1}
           successCriterionNumber={"2.5.5"}
           linkToExplanation={
             "https://dequeuniversity.com/resources/wcag2.1/2.5.5-target-size"
@@ -51,7 +47,7 @@ export const TargetSize = (props: Props) => {
           <a href={"x.html"}>x</a>
           <a href={"y.html"}>y</a>
           <a href={"z.html"}>z</a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

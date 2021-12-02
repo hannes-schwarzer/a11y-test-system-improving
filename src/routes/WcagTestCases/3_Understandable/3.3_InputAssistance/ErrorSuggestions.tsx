@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./ErrorSuggestions.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,12 +10,11 @@ export const ErrorSuggestions = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "Error messages - no suggestion for corrections given, e.g. required format"
           }
           successCriterionInWords={"Error Suggestion"}
-          serial={94}
           successCriterionNumber={"3.3.3"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion"
@@ -37,7 +33,7 @@ export const ErrorSuggestions = (props: Props) => {
               />
             </label>
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

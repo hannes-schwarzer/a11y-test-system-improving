@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./InfoAndRelationships.css";
 import CHAPTER from "../../../../assets/chapter.png";
 import GO from "../../../../assets/go.png";
@@ -15,66 +12,85 @@ export const InfoAndRelationships = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={1}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={
+            "Using CSS to style the p element to look like a heading: The author intended to make a heading but didn't want the look of the default HTML heading. So they used CSS to style the P element to look like a heading and they called it a heading. But they failed to use the proper HTML heading element. Therefore, the Assisitive Technology could not distinguish it as a heading."
+          }
         >
-          <h4>
-            Example 1: Using CSS to style the p element to look like a heading
-          </h4>
           <p>
-            The author intended to make a heading but didn't want the look of
-            the default HTML heading. So they used CSS to style the P element to
-            look like a heading and they called it a heading. But they failed to
-            use the proper HTML heading element. Therefore, the Assisitive
-            Technology could not distinguish it as a heading.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
           </p>
           <p className="heading1">Introduction</p>
           <p>
-            This introduction provides detailed information about how to use
-            this ........
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
           </p>
-          <h4>
-            Example 2: Images of text used as headings where the images are not
-            marked up with heading tags
-          </h4>
-          <p>
-            This is a failure because at a minimum the img element should be
-            enclosed within a header element. A better solution would be to
-            eliminate the image and to enclose the text within a header element
-            which has been styled using CSS.
-          </p>
+        </TestCase>
+
+        <TestCase
+          title={
+            "F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+          explanation={
+            "Images of text used as headings where the images are not marked up with heading tags: This is a failure because at a minimum the img element should be enclosed within a header element. A better solution would be to eliminate the image and to enclose the text within a header element which has been styled using CSS."
+          }
+        >
           <img src={CHAPTER} alt="Chapter One" />
-          <h4>
-            Example 3: Using CSS to visually emphasize a phrase or word without
-            conveying that emphasis semantically
-          </h4>
           <p>
-            The following example fails because the information conveyed by
-            using the CSS font-weight property to change to a bold font is not
-            conveyed through semantic markup or stated explicitly in the text.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
           </p>
+        </TestCase>
+
+        <TestCase
+          title={
+            "F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+          explanation={
+            "Using CSS to visually emphasize a phrase or word without conveying that emphasis semantically: The following example fails because the information conveyed by using the CSS font-weight property to change to a bold font is not conveyed through semantic markup or stated explicitly in the text."
+          }
+        >
           <p>
             "I said, <span className="yell">no</span>, not before dinner!", was
             the exasperated response when Timmy asked his mother for the fourth
             time for an ice cream cone.
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={2}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -100,14 +116,13 @@ information and applications accessible.  people to access Web content using
 range of people with disabilities,        wide variety of assistive technologies.
             `}
           </pre>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to format tables in plain text content"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={3}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -134,144 +149,154 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
                          brownie         ice cream
           `}
           </pre>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={4}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={
+            "Scripting a span element: Scripted event handling is added to a span element so that it functions as a link when clicked with a mouse. Assistive technology does not recognize this element as a link."
+          }
         >
-          <div>
-            <h4>Example 1: Scripting a span element</h4>
-            <p>
-              Scripted event handling is added to a span element so that it
-              functions as a link when clicked with a mouse. Assistive
-              technology does not recognize this element as a link.
-            </p>
-            <span
-              onClick={() => {
-                document.location.href = "newpage.html";
-              }}
-            >
-              Fake link
-            </span>
-          </div>
-          <div>
-            <h4>Example 2: Scripting an img element</h4>
-            <p>
-              Scripted event handling is added to an img element so that it
-              functions as a link when clicked with a mouse. Assistive
-              technology does not recognize this element as a link.
-            </p>
-            <img
-              src={GO}
-              alt="go to the new page"
-              onClick={() => {
-                document.location.href = "newpage.html";
-              }}
-            />
-          </div>
-        </GuidelineError>
-        <GuidelineError
+          <span
+            onClick={() => {
+              document.location.href = "newpage.html";
+            }}
+          >
+            Fake link
+          </span>
+        </TestCase>
+
+        <TestCase
+          title={
+            "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+          explanation={
+            "Scripting an img element: Scripted event handling is added to an img element so that it functions as a link when clicked with a mouse. Assistive technology does not recognize this element as a link."
+          }
+        >
+          <img
+            src={GO}
+            alt="go to the new page"
+            onClick={() => {
+              document.location.href = "newpage.html";
+            }}
+          />
+        </TestCase>
+
+        <TestCase
           title={
             "F43: Failure of Success Criterion 1.3.1 due to using structural markup in a way that does not represent relationships in the content"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={5}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={
+            "A heading used only for visual effect: In this example, a heading element is used to display an address in a large, bold font. The address does not identify a new section of the document, however, so it should not be marked as a heading."
+          }
         >
           <div>
-            <h4>Example 1: A heading used only for visual effect</h4>
-            <p>
-              In this example, a heading element is used to display an address
-              in a large, bold font. The address does not identify a new section
-              of the document, however, so it should not be marked as a heading.
-            </p>
-
             <p>Interested in learning more? Write to us at</p>
             <h4>3333 Third Avenue, Suite 300 · New York City</h4>
-
             <p>
               And we'll send you the complete informational packet absolutely
               Free!
             </p>
           </div>
+        </TestCase>
 
-          <div>
-            <h4>Example 2: Using heading elements for presentational effect</h4>
+        <TestCase
+          title={
+            "F43: Failure of Success Criterion 1.3.1 due to using structural markup in a way that does not represent relationships in the content"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+          explanation={
+            "Using heading elements for presentational effect: In this example, heading markup is used in two different ways: to convey document structure and to create visual effects. The h1 and h2 elements are used appropriately to mark the beginning of the document as a whole and the beginning of the abstract. However, the h3 and h4 elements between the title and the abstract are used only for visual effect — to control the fonts used to display the authors' names and the date."
+          }
+        >
+          <h1>Study on the Use of Heading Elements in Web Pages</h1>
+          <h3>Joe Jones and Mary Smith</h3>
+          <h4>March 14, 2006</h4>
+          <h2>Abstract</h2>
+          <p>A study was conducted in early 2006 ..</p>
+        </TestCase>
+
+        <TestCase
+          title={
+            "F43: Failure of Success Criterion 1.3.1 due to using structural markup in a way that does not represent relationships in the content"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+          explanation={
+            "Using blockquote elements to provide additional indentation: The following example uses blockquote for text that is not a quotation to give it prominence by indenting it when displayed in graphical browsers."
+          }
+        >
+          <p>
+            After extensive study of the company Web site, the task force
+            identified the following common problem.
+          </p>
+          <blockquote>
             <p>
-              In this example, heading markup is used in two different ways: to
-              convey document structure and to create visual effects. The h1 and
-              h2 elements are used appropriately to mark the beginning of the
-              document as a whole and the beginning of the abstract. However,
-              the h3 and h4 elements between the title and the abstract are used
-              only for visual effect — to control the fonts used to display the
-              authors' names and the date.
+              The use of markup for presentational effects made Web pages
+              confusing to screen reader users.
             </p>
+          </blockquote>
+          <p>
+            The committee lists particular examples of the problems introduced
+            by this practice below.
+          </p>
+        </TestCase>
 
-            <h1>Study on the Use of Heading Elements in Web Pages</h1>
-            <h3>Joe Jones and Mary Smith</h3>
-            <h4>March 14, 2006</h4>
-            <h2>Abstract</h2>
-            <p>A study was conducted in early 2006 ..</p>
-          </div>
+        <TestCase
+          title={
+            "F43: Failure of Success Criterion 1.3.1 due to using structural markup in a way that does not represent relationships in the content"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+          explanation={
+            "Using the fieldset and legend elements to give a border to text: "
+          }
+        >
+          <fieldset>
+            <legend>Bargain Corner</legend>
+            <p>Buy today, and save 20%</p>
+          </fieldset>
+        </TestCase>
 
-          <div>
-            <h4>
-              Example 3: Using blockquote elements to provide additional
-              indentation
-            </h4>
-            <p>
-              The following example uses blockquote for text that is not a
-              quotation to give it prominence by indenting it when displayed in
-              graphical browsers.
-            </p>
-
-            <p>
-              After extensive study of the company Web site, the task force
-              identified the following common problem.
-            </p>
-            <blockquote>
-              <p>
-                The use of markup for presentational effects made Web pages
-                confusing to screen reader users.
-              </p>
-            </blockquote>
-            <p>
-              The committee lists particular examples of the problems introduced
-              by this practice below.
-            </p>
-          </div>
-
-          <div>
-            <h4>
-              Example 4: Using the fieldset and legend elements to give a border
-              to text
-            </h4>
-            <fieldset>
-              <legend>Bargain Corner</legend>
-              <p>Buy today, and save 20%</p>
-            </fieldset>
-          </div>
-        </GuidelineError>
-
-        <GuidelineError
+        <TestCase
           title={
             "F46: Failure of Success Criterion 1.3.1 due to using th elements, layout tables"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={6}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -302,38 +327,45 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
               <td colSpan={3}>footer</td>
             </tr>
           </table>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+
+        <TestCase
           title={
             "F48: Failure of Success Criterion 1.3.1 due to using the pre element to markup tabular information"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={7}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={"This is a schedule formatted with tabs between columns"}
         >
-          <div>
-            <h4>Example 1: A schedule formatted with tabs between columns</h4>
-            <pre>
-              {`
+          <pre>
+            {`
 \tMonday\tTuesday\tWednesday\tThursday\tFriday
 8:00-
 9:00\tMeet with Sam\t\t\t\t
 9:00-
 10:00\t\t\tDr. Williams\tSam again\tLeave for San Antonio
           `}
-            </pre>
-          </div>
+          </pre>
+        </TestCase>
 
-          <div>
-            <h4>
-              Example 2: Election results displayed using preformatted text
-            </h4>
-            <pre>
-              {`
+        <TestCase
+          title={
+            "F48: Failure of Success Criterion 1.3.1 due to using the pre element to markup tabular information"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+          explanation={"Election results displayed using preformatted text"}
+        >
+          <pre>
+            {`
 CIRCUIT COURT JUDGE BRANCH 3
                                                   W
                                                    R
@@ -353,57 +385,56 @@ CIRCUIT COURT JUDGE BRANCH 3
 0007 TOWN OF BURKE WDS 1-4                80     300       0
 0008 TOWN OF CHRISTIANA WDS 1-2           22      50       0
             `}
-            </pre>
-          </div>
-        </GuidelineError>
+          </pre>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F87: Failure of Success Criterion 1.3.1 due to inserting non-decorative content by using :before and :after pseudo-elements and the 'content' property in CSS"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={8}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={
+            "In the following example, :before and :after are used to indicate speaker changes and to insert quotation marks in a screenplay."
+          }
         >
-          <div>
-            <h4>Example 1</h4>
-            <p>
-              In the following example, :before and :after are used to indicate
-              speaker changes and to insert quotation marks in a screenplay.
-            </p>
+          <p className="jim">
+            <q>Do you think he's going to make it?</q>
+          </p>
+          <p className="mary">
+            <q>It's not looking good.</q>
+          </p>
+        </TestCase>
 
-            <p className="jim">
-              <q>Do you think he's going to make it?</q>
-            </p>
-            <p className="mary">
-              <q>It's not looking good.</q>
-            </p>
-          </div>
+        <TestCase
+          title={
+            "F87: Failure of Success Criterion 1.3.1 due to inserting non-decorative content by using :before and :after pseudo-elements and the 'content' property in CSS"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+          explanation={
+            "In this example, :before is used to differentiate facts from opinions."
+          }
+        >
+          <p className="fact">
+            The defendant was at the scene of the crime when it occurred.
+          </p>
+          <p className="opinion">The defendant committed the crime.</p>
+        </TestCase>
 
-          <div>
-            <h4>Example 2</h4>
-            <p>
-              In this example, :before is used to differentiate facts from
-              opinions.
-            </p>
-
-            <p className="fact">
-              The defendant was at the scene of the crime when it occurred.
-            </p>
-            <p className="opinion">The defendant committed the crime.</p>
-          </div>
-        </GuidelineError>
-
-        <GuidelineError
+        <TestCase
           title={
             "F90: Failure of Success Criterion 1.3.1 for incorrectly associating table headers and content via the headers and id attributes"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={9}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -464,27 +495,22 @@ CIRCUIT COURT JUDGE BRANCH 3
               <td headers="e ef">15%</td> {/* should be "p pf"*/}
             </tr>
           </table>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+
+        <TestCase
           title={
             "F91: Failure of Success Criterion 1.3.1 for not correctly marking up table headers"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={10}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={
+            "Headers not marked up appropriately: This table does not use th (or other appropriate header markup) for headers. Instead, it uses td elements for all cells. Navigating cell by cell, screen readers will often fail to read the header cells associated with content."
+          }
         >
-          <h4>Example 1: Headers not marked up appropriately</h4>
-          <p>
-            This table does not use th (or other appropriate header markup) for
-            headers. Instead, it uses td elements for all cells. Navigating cell
-            by cell, screen readers will often fail to read the header cells
-            associated with content.
-          </p>
-
           <table>
             <tr>
               <td>Name</td>
@@ -521,27 +547,22 @@ CIRCUIT COURT JUDGE BRANCH 3
               <td>14</td>
             </tr>
           </table>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+
+        <TestCase
           title={
             "F92: Failure of Success Criterion 1.3.1 due to the use of role presentation on content which conveys semantic information"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={11}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={
+            "In this example, tabular data is marked up with role=presentation. Though design layout tables can be marked up in such a way, data tables need to retain their semantic information and should therefore not be marked up with role=presentation."
+          }
         >
-          <h4>Example 1</h4>
-          <p>
-            In this example, tabular data is marked up with role=presentation.
-            Though design layout tables can be marked up in such a way, data
-            tables need to retain their semantic information and should
-            therefore not be marked up with role=presentation.
-          </p>
-
           <table role="presentation">
             <caption>Fruits and their colors</caption>
             <tr>
@@ -557,11 +578,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               <td>orange</td>
             </tr>
           </table>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+
+        <TestCase
           title={"Implicit heading"}
           successCriterionInWords={"Info and Relationships"}
-          serial={12}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -571,12 +592,11 @@ CIRCUIT COURT JUDGE BRANCH 3
           <div className={"h1-style"}>
             This is a div which is being styled to look like an h1
           </div>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Text formatting used instead of an actual heading"}
           successCriterionInWords={"Info and Relationships"}
-          serial={13}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -588,12 +608,11 @@ CIRCUIT COURT JUDGE BRANCH 3
             This paragraph is preceded by a div that is styled to look like a
             heading
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Li element with no parent"}
           successCriterionInWords={"Info and Relationships"}
-          serial={14}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -601,12 +620,11 @@ CIRCUIT COURT JUDGE BRANCH 3
           level={Level.A}
         >
           <li>no parent</li>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"List not marked up as a list"}
           successCriterionInWords={"Info and Relationships"}
-          serial={15}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -621,12 +639,11 @@ CIRCUIT COURT JUDGE BRANCH 3
           <br />
           * fake list object 4
           <br />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"DT or DD elements that are not contained within a DL element"}
           successCriterionInWords={"Info and Relationships"}
-          serial={16}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -635,12 +652,11 @@ CIRCUIT COURT JUDGE BRANCH 3
         >
           <dt>html</dt>
           <dd>a markup language for describing web documents</dd>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Improperly nested lists"}
           successCriterionInWords={"Info and Relationships"}
-          serial={17}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -652,12 +668,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               <li>improperly nested</li>
             </ul>
           </ul>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table with column headers and double row headers"}
           successCriterionInWords={"Info and Relationships"}
-          serial={18}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -696,12 +711,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table has no scope attributes"}
           successCriterionInWords={"Info and Relationships"}
-          serial={19}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -734,12 +748,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table nested within table header"}
           successCriterionInWords={"Info and Relationships"}
-          serial={18}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -783,12 +796,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table nested within table"}
           successCriterionInWords={"Info and Relationships"}
-          serial={19}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -830,12 +842,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table has no table headings"}
           successCriterionInWords={"Info and Relationships"}
-          serial={20}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -867,12 +878,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table with inconsistent numbers of columns in rows"}
           successCriterionInWords={"Info and Relationships"}
-          serial={21}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -926,12 +936,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table that only has TH elements in it"}
           successCriterionInWords={"Info and Relationships"}
-          serial={22}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -949,12 +958,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </thead>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table is missing a caption"}
           successCriterionInWords={"Info and Relationships"}
-          serial={23}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -983,12 +991,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table has an empty table header"}
           successCriterionInWords={"Info and Relationships"}
-          serial={24}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -1020,14 +1027,13 @@ CIRCUIT COURT JUDGE BRANCH 3
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={25}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -1045,12 +1051,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               <input id={"missing-labels-year"} type={"text"} />
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Group of radio buttons not enclosed in a fieldset"}
           successCriterionInWords={"Info and Relationships"}
-          serial={26}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -1078,12 +1083,11 @@ CIRCUIT COURT JUDGE BRANCH 3
             />
             No
           </label>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Form element has no label"}
           successCriterionInWords={"Info and Relationships"}
-          serial={27}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -1094,13 +1098,12 @@ CIRCUIT COURT JUDGE BRANCH 3
           <form>
             <input type={"text"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Fieldset without a legend"}
           successCriterionInWords={"forms"}
           successCriterionNumber={"1.3.1"}
-          serial={28}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -1113,12 +1116,11 @@ CIRCUIT COURT JUDGE BRANCH 3
           <form>
             <fieldset>I am a fieldset without a legend</fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty legend"}
           successCriterionInWords={"Info and Relationships"}
-          serial={29}
           successCriterionNumber={"1.3.1"}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
           linkToSuccessCriterion={
@@ -1131,14 +1133,13 @@ CIRCUIT COURT JUDGE BRANCH 3
               <legend></legend>
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Label element with for= attribute but not matching id= attribute of form control"
           }
           successCriterionInWords={"Info and Relationships"}
-          serial={30}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
           explanation={
             "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
@@ -1160,12 +1161,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               />
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Group of check boxes not enclosed in a fieldset"}
           successCriterionInWords={"Info and Relationships"}
-          serial={31}
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -1203,12 +1203,11 @@ CIRCUIT COURT JUDGE BRANCH 3
             />
             Farm or agricultural waste
           </label>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty label found"}
           successCriterionInWords={"Info and Relationships"}
-          serial={32}
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -1220,12 +1219,11 @@ CIRCUIT COURT JUDGE BRANCH 3
             <label htmlFor={"empty"}></label>
             <input id={"empty"} type={"text"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Missing labels in checkboxes"}
           successCriterionInWords={"Info and Relationships"}
-          serial={33}
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -1261,12 +1259,11 @@ CIRCUIT COURT JUDGE BRANCH 3
               />
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Placeholder no label"}
           successCriterionInWords={"Info and Relationships"}
-          serial={34}
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -1288,14 +1285,13 @@ CIRCUIT COURT JUDGE BRANCH 3
             />
             <input className={"submit"} type={"submit"} value={"Search"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Article element used to mark-up an element that's actually not an article element."
           }
           successCriterionInWords={"html"}
-          serial={35}
           successCriterionNumber={"1.3.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -1318,13 +1314,12 @@ CIRCUIT COURT JUDGE BRANCH 3
               </ul>
             </nav>
           </article>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Non-decorative content inserted using CSS"}
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
-          serial={36}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
@@ -1334,12 +1329,11 @@ CIRCUIT COURT JUDGE BRANCH 3
           }
         >
           <p id={"css-generated-text"}>My favourite food is </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link with a role=button does not work with space bar"}
           successCriterionInWords={"Info and Relationships"}
-          serial={37}
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -1352,14 +1346,13 @@ CIRCUIT COURT JUDGE BRANCH 3
           <a className={"button"} href={"next.html"} role={"button"}>
             Continue
           </a>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "ul and ol must only directly contain li, script or template elements"
           }
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
-          serial={38}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
@@ -1378,7 +1371,7 @@ CIRCUIT COURT JUDGE BRANCH 3
             </ul>
             <li>Item 3</li>
           </ul>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

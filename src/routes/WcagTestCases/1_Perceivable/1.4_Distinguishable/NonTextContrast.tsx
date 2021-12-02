@@ -1,7 +1,4 @@
-import {
-  Level,
-  GuidelineError,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { Level, TestCase } from "../../../../components/TestCase/TestCase";
 import "./NonTextContrast.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,13 +10,12 @@ export const NonTextContrast = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
           successCriterionInWords={"Non-text Contrast"}
-          serial={1}
           explanation={
             "The focus indicator is turned off with CSS: The following CSS example will remove the default focus indicator, " +
             "which fails the requirement to provide a visible focus indicator."
@@ -36,15 +32,14 @@ export const NonTextContrast = (props: Props) => {
           <a href={"somepage.html"} className={"nontextconstrast__no-focus"}>
             Link to some page
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
           successCriterionInWords={"Non-text Contrast"}
-          serial={2}
           explanation={
             "The outline of elements is visually similar to the focus indicator: The following CSS example will create an " +
             "outline around links that looks the same as the focus indicator. This makes it impossible for users to " +
@@ -65,15 +60,14 @@ export const NonTextContrast = (props: Props) => {
           >
             Link to some page
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
           successCriterionInWords={"Non-text Contrast"}
-          serial={3}
           explanation={
             "Elements have a border that occludes the focus indicator: The following CSS example creates a border around " +
             "links that does not have enough contrast for the focus indicator to be seen when drawn on top of it. In " +
@@ -95,7 +89,7 @@ export const NonTextContrast = (props: Props) => {
           >
             Link to some page
           </a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./UseOfColor.css";
 import classNames from "classnames";
 import { Frame } from "../../../../components/Frame/Frame";
@@ -18,12 +15,11 @@ export const UseOfColor = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F73: Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision"
           }
           successCriterionInWords={"Use of Color"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"
           }
@@ -35,12 +31,11 @@ export const UseOfColor = (props: Props) => {
             <a href="rain_in_spain.htm">rain in spain</a> there are many
             resources.
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Color alone is used to convey content"}
           successCriterionInWords={"Use of Color"}
-          serial={2}
           level={Level.A}
           successCriterionNumber={"1.4.1"}
           linkToSuccessCriterion={
@@ -58,12 +53,11 @@ export const UseOfColor = (props: Props) => {
             <li className={"safe"}>Shitake</li>
             <li className={"poisonous"}>Tylopilus</li>
           </ul>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Identifying links by colour alone"}
           successCriterionInWords={"Use of Color"}
-          serial={3}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F73.html"}
           level={Level.A}
           successCriterionNumber={"1.4.1"}
@@ -80,9 +74,9 @@ export const UseOfColor = (props: Props) => {
               Link only identifiable by color alone
             </a>
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Link not clearly identifiable and distinguishable from surrounding text"
           }
@@ -95,19 +89,17 @@ export const UseOfColor = (props: Props) => {
           explanation={
             "A Web page includes a large number of links within the body text. The links are styled so that they do not have underlines and are very similar in color to the body text. This would be a failure because users would be unable to differentiate the links from the body text."
           }
-          serial={4}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F73.html"}
         >
           <p className={"unobvious-link"}>
             Find out more about{" "}
             <a href={"https://www.bbc.co.uk/programmes/b006q2x0"}>Doctor Who</a>
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Errors identified by colour only"}
           successCriterionInWords={"Use of Color"}
-          serial={92}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"
           }
@@ -136,7 +128,7 @@ export const UseOfColor = (props: Props) => {
               />
             </label>
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

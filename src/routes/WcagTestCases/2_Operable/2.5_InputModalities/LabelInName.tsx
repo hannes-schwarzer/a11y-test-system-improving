@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,12 +9,11 @@ export const LabelInName = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F96: Failure due to the accessible name not containing the visible label text"
           }
           successCriterionInWords={"Label in Name"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"
           }
@@ -33,13 +29,12 @@ export const LabelInName = (props: Props) => {
           <button id="sitesearch" aria-label="Find in this site">
             Go
           </button>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F96: Failure due to the accessible name not containing the visible label text"
           }
           successCriterionInWords={"Label in Name"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"
           }
@@ -56,13 +51,12 @@ export const LabelInName = (props: Props) => {
             Download <span className="accessibly-hidden">gizmo</span>{" "}
             specification
           </a>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F96: Failure due to the accessible name not containing the visible label text"
           }
           successCriterionInWords={"Label in Name"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"
           }
@@ -77,7 +71,7 @@ export const LabelInName = (props: Props) => {
         >
           <div id="hidden-label">Find in this site</div>
           <input type="submit" aria-labelledby="hidden-label" value="search" />
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

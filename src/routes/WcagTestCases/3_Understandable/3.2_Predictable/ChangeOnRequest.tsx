@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,10 +9,9 @@ export const ChangeOnRequest = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Link launches new window with no warning"}
           successCriterionInWords={"Change on Request"}
-          serial={71}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#change-on-request"
           }
@@ -29,7 +25,7 @@ export const ChangeOnRequest = (props: Props) => {
           <a href={"https://twitter.com/"} target={"_blank"}>
             Twitter
           </a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

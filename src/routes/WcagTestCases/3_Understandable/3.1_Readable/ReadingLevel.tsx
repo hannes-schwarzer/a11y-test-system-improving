@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,9 +9,8 @@ export const ReadingLevel = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Plain language is not used"}
-          serial={1}
           successCriterionInWords={"Reading Level"}
           successCriterionNumber={"3.1.5"}
           level={Level.AAA}
@@ -39,7 +35,7 @@ export const ReadingLevel = (props: Props) => {
           serious deterioration of health. Up to 10 percent of the funds for
           this program can be used to support Special Projects of National
           Significance.
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

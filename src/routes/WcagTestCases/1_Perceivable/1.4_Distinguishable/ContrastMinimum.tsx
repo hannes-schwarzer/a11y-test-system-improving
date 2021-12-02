@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./ContrastMinimum.css";
 import classNames from "classnames";
 import { Frame } from "../../../../components/Frame/Frame";
@@ -19,13 +16,12 @@ export const ContrastMinimum = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Contrast (Minimum)"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
@@ -41,14 +37,13 @@ export const ContrastMinimum = (props: Props) => {
           level={Level.AA}
         >
           <p className={"whiteBackground"}>My background is white.</p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Contrast (Minimum)"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
@@ -64,15 +59,14 @@ export const ContrastMinimum = (props: Props) => {
           level={Level.AA}
         >
           <p className={"whiteForeground"}>My foreground is white.</p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Contrast (Minimum)"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
@@ -90,14 +84,13 @@ export const ContrastMinimum = (props: Props) => {
           <p>
             ... document body... <a href="foo.htm">Foo</a>
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Small text does not have a contrast ratio of at least 4.5:1 so does not meet AA"
           }
           successCriterionInWords={"Contrast (Minimum)"}
-          serial={4}
           successCriterionNumber={"1.4.3"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
@@ -107,14 +100,13 @@ export const ContrastMinimum = (props: Props) => {
           <p className={"low-contrast-small-aa"}>
             This small text does not have enough contrast with it's background
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Large text does not have a contrast ratio of at least 3:1 so does not meet AA"
           }
           successCriterionInWords={"Contrast (Minimum)"}
-          serial={5}
           successCriterionNumber={"1.4.3"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
@@ -124,12 +116,11 @@ export const ContrastMinimum = (props: Props) => {
           <p className={"low-contrast-large-aa"}>
             This large text does not have enough contrast with it's background
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Errors identified with a poor colour contrast"}
           successCriterionInWords={"Contrast (Minimum)"}
-          serial={6}
           level={Level.AA}
           successCriterionNumber={"1.4.3"}
           linkToSuccessCriterion={
@@ -158,7 +149,7 @@ export const ContrastMinimum = (props: Props) => {
               />
             </label>
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

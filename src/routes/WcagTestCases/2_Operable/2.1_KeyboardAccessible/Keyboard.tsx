@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import LINK from "../../../../assets/link.png";
 import GO from "../../../../assets/go.png";
 import "./Keyboard.css";
@@ -46,13 +43,12 @@ export const Keyboard = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F54: Failure of Success Criterion 2.1.1 due to using only pointing-device-specific event " +
             "handlers (including gesture) for a function"
           }
           successCriterionInWords={"Keyboard"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
@@ -75,14 +71,13 @@ export const Keyboard = (props: Props) => {
               alt="Go to next page"
             />
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
           successCriterionInWords={"Keyboard"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
@@ -106,14 +101,13 @@ export const Keyboard = (props: Props) => {
               document!.getElementById("keayboard__blur-error-first")!.blur();
             }}
           />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
           successCriterionInWords={"Keyboard"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
@@ -139,14 +133,13 @@ export const Keyboard = (props: Props) => {
           >
             <img src={LINK} />
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
           }
           successCriterionInWords={"Keyboard"}
-          serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
@@ -167,14 +160,13 @@ export const Keyboard = (props: Props) => {
           >
             Fake link
           </span>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
           }
           successCriterionInWords={"Keyboard"}
-          serial={5}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
@@ -195,12 +187,11 @@ export const Keyboard = (props: Props) => {
               document.location.href = "newpage.html";
             }}
           />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Keyboard focus is not indicated visually"}
           successCriterionInWords={"keyboard"}
-          serial={6}
           successCriterionNumber={"2.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -213,12 +204,11 @@ export const Keyboard = (props: Props) => {
           <a className={"no-outline"} href={"link.html"}>
             Link with no focus style
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Dropdown navigation - only the top level items receive focus"}
           successCriterionInWords={"Keyboard"}
-          serial={7}
           successCriterionNumber={"2.1.1"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -243,12 +233,11 @@ export const Keyboard = (props: Props) => {
               </li>
             </ul>
           </nav>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link with a role=button does not work with space bar"}
           successCriterionInWords={"Keyboard"}
-          serial={8}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
@@ -261,12 +250,11 @@ export const Keyboard = (props: Props) => {
           <a className={"button"} href={"next.html"} role={"button"}>
             Continue
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Fake button is not keyboard accessible"}
           successCriterionInWords={"Keyboard"}
-          serial={9}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
@@ -282,12 +270,11 @@ export const Keyboard = (props: Props) => {
           >
             launch webchat
           </div>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Lightbox - close button doesn't receive focus"}
           successCriterionInWords={"Keyboard"}
-          serial={10}
           successCriterionNumber={"2.1.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
@@ -329,12 +316,11 @@ export const Keyboard = (props: Props) => {
               .
             </p>
           </div>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Concertina items don't get keyboard focus"}
           successCriterionInWords={"keyboard"}
-          serial={11}
           successCriterionNumber={"2.1.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
@@ -388,7 +374,7 @@ export const Keyboard = (props: Props) => {
               </ul>
             </dd>
           </dl>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

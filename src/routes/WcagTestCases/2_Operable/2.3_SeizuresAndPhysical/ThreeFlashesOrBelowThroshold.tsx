@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,10 +9,9 @@ export const ThreeFlashesOrBelowThroshold = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Flashing content doesn't have warning"}
           successCriterionInWords={"Three Flashes or Below Threshold"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold"
           }
@@ -31,7 +27,7 @@ export const ThreeFlashesOrBelowThroshold = (props: Props) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

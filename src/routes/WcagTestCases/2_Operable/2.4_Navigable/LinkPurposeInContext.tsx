@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import REDPANDA from "../../../../assets/220px-RedPandaFullBody.jpeg";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,12 +10,11 @@ export const LinkPurposeInContext = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
           }
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={1}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -41,13 +37,12 @@ export const LinkPurposeInContext = (props: Props) => {
           <p>
             <a href="ff.html">Read More...</a>
           </p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
           }
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={2}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -79,14 +74,13 @@ export const LinkPurposeInContext = (props: Props) => {
               </td>
             </tr>
           </table>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
           }
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={3}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -103,12 +97,11 @@ export const LinkPurposeInContext = (props: Props) => {
             <img src="football.gif" alt="" />
           </a>
           <a href="scores.html">Football Scoreboard</a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link to javascript, invalid hypertext reference"}
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={4}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -116,12 +109,11 @@ export const LinkPurposeInContext = (props: Props) => {
           level={Level.A}
         >
           <a href={"javascript:alert('Hello World!')"}>Press me!</a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Uninformative link text"}
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={4}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -135,11 +127,10 @@ export const LinkPurposeInContext = (props: Props) => {
             surrounding seas and surrounding land masses.
           </p>
           <a href={"https://en.wikipedia.org/wiki/Polar_bear"}>Read more</a>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={"Link text with identical title"}
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={5}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -153,14 +144,13 @@ export const LinkPurposeInContext = (props: Props) => {
           <a href={"http://www.google.com/"} title={"Google"}>
             Google
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Link to PDF does not include information on file format and file size"
           }
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={6}
           linkToExplanation={
             "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html"
           }
@@ -177,12 +167,11 @@ export const LinkPurposeInContext = (props: Props) => {
           >
             Dyslexia style guide
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Blank link text"}
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={7}
           level={Level.A}
           successCriterionNumber={"2.4.4"}
           explanation={
@@ -196,12 +185,11 @@ export const LinkPurposeInContext = (props: Props) => {
           }
         >
           <a href={"http://www.google.com"}></a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Links with the same text go to different pages"}
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={8}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -223,12 +211,11 @@ export const LinkPurposeInContext = (props: Props) => {
           are predatory carnivores and it's the females that perform most of the
           hunting at night; the majority of the prey being antelope, zebra and
           wildebeest.
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Adjacent links going to the same destination"}
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={9}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -239,12 +226,11 @@ export const LinkPurposeInContext = (props: Props) => {
             <img alt={"Red Panda"} height={165} src={REDPANDA} width={220} />
           </a>
           <a href={"https://en.wikipedia.org/wiki/Red_panda"}>Red Panda</a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link contains only a full stop"}
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={10}
           successCriterionNumber={"2.4.4"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
@@ -254,12 +240,11 @@ export const LinkPurposeInContext = (props: Props) => {
           <p>
             Visit the GOV.UK website <a href={"https://www.gov.uk/"}>.</a>
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Non-specific link text"}
           successCriterionInWords={"Link Purpose (In Context)"}
-          serial={11}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
@@ -268,7 +253,7 @@ export const LinkPurposeInContext = (props: Props) => {
         >
           <a href={"rockies.html"}>Click here</a> for more information on the
           Rocky Mountains.
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

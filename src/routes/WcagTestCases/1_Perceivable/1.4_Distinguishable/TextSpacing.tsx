@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,10 +9,9 @@ export const TextSpacing = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Inadequate line height used"}
           successCriterionInWords={"Text Spacing"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#text-spacing"
           }
@@ -28,11 +24,10 @@ export const TextSpacing = (props: Props) => {
             between 1.5 to 2 allows them to start a new line more easily once
             they have finished the previous one.
           </p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={"Links not separated by printable characters"}
           successCriterionInWords={"Text Spacing"}
-          serial={2}
           successCriterionNumber={"1.4.12"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#text-spacing"
@@ -45,7 +40,7 @@ export const TextSpacing = (props: Props) => {
           <a href={"a.html"}>Page A</a>
           <a href={"b.html"}>Page B</a>
           <a href={"c.html"}>Page C</a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

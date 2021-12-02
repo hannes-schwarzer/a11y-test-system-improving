@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import BBC from "../../../../assets/bbc-blocks-dark.png";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,12 +10,11 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
           successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
           }
@@ -29,14 +25,13 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           }
         >
           <img src={BBC} alt={""} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
           successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
           }
@@ -47,14 +42,13 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           }
         >
           <img src={BBC} alt={"spacer"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
           successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
           }
@@ -65,14 +59,13 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           }
         >
           <img src={BBC} alt={"picture 1"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
           successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
           }
@@ -83,12 +76,11 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           }
         >
           <img src={BBC} alt={"Oct.jpg"} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Embedded video file is missing text alternative"}
           successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
-          serial={2}
           level={Level.A}
           successCriterionNumber={"1.2.1"}
           linkToSuccessCriterion={
@@ -109,12 +101,11 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
               type={'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'}
             />
           </video>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Embedded audio file is missing text alternative"}
           successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
-          serial={3}
           level={Level.A}
           successCriterionNumber={"1.2.1"}
           linkToSuccessCriterion={
@@ -127,7 +118,7 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
               "https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-OGG-File.ogg"
             }
           ></audio>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

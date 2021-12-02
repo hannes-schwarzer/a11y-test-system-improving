@@ -1,8 +1,5 @@
 import { Frame } from "../../components/Frame/Frame";
-import {
-  GuidelineError,
-  Level,
-} from "../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../components/TestCase/TestCase";
 import BBC from "../../assets/bbc-blocks-dark.png";
 
 interface Props {
@@ -22,7 +19,7 @@ export const Homepage = (homepageProps: Props) => {
           and a link for further information.
         </p>
 
-        <GuidelineError
+        <TestCase
           title={
             'F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"'
           }
@@ -34,12 +31,11 @@ export const Homepage = (homepageProps: Props) => {
           explanation={
             "In the code example below, the person using a screen reader would not know the purpose of the image."
           }
-          serial={1}
           successCriterionInWords={"Non-text Content"}
           level={Level.A}
         >
           <img src={BBC} />
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

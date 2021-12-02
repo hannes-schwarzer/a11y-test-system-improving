@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./FocusOrder.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,12 +10,11 @@ export const FocusOrder = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F44: Failure of Success Criterion 2.4.3 due to using tabindex to create a tab order that does not preserve meaning and operability"
           }
           successCriterionInWords={"Focus Order"}
-          serial={1}
           successCriterionNumber={"2.4.3"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-order"
@@ -53,12 +49,11 @@ export const FocusOrder = (props: Props) => {
               </a>
             </li>
           </ol>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Focus order in wrong order"}
           successCriterionInWords={"Focus Order"}
-          serial={2}
           successCriterionNumber={"2.4.3"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-order"
@@ -76,12 +71,11 @@ export const FocusOrder = (props: Props) => {
               Third link
             </a>
           </div>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link with tabindex greater than 0"}
           successCriterionInWords={"Focus Order"}
-          serial={3}
           linkToExplanation={
             "https://dequeuniversity.com/rules/axe/4.0/tabindex"
           }
@@ -94,7 +88,7 @@ export const FocusOrder = (props: Props) => {
           <a href={"page.html"} tabIndex={5}>
             A link with a tabindex greater than 0
           </a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

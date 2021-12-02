@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./ContrastEnhanced.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,14 +10,13 @@ export const ContrastEnhanced = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           level={Level.AAA}
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Contrast (Enhanced)"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
@@ -35,15 +31,14 @@ export const ContrastEnhanced = (props: Props) => {
           }
         >
           <p className={"whiteBackground"}>My background is white.</p>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           level={Level.AAA}
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Contrast (Enhanced)"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
@@ -58,16 +53,15 @@ export const ContrastEnhanced = (props: Props) => {
           }
         >
           <p className={"whiteForeground"}>My foreground is white.</p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           level={Level.AAA}
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
           successCriterionInWords={"Contrast (Enhanced)"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
@@ -84,14 +78,13 @@ export const ContrastEnhanced = (props: Props) => {
           <p>
             ... document body... <a href="foo.htm">Foo</a>
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Small text does not have a contrast ratio of at least 7:1 so does not meet AAA"
           }
           successCriterionInWords={"Contrast (Enhanced)"}
-          serial={4}
           successCriterionNumber={"1.4.6"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
@@ -101,14 +94,13 @@ export const ContrastEnhanced = (props: Props) => {
           <p className={"low-contrast-small-aaa"}>
             This small text does not have enough contrast with it's background
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Large text does not have a contrast ratio of at least 4.5:1 so does not meet AAA"
           }
           successCriterionInWords={"Contrast (Enhanced)"}
-          serial={5}
           successCriterionNumber={"1.4.6"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
@@ -118,7 +110,7 @@ export const ContrastEnhanced = (props: Props) => {
           <p className={"low-contrast-large-aaa"}>
             This large text does not have enough contrast with it's background
           </p>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -14,10 +11,9 @@ export const LangOfPage = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"html element has an empty lang attribute"}
           successCriterionInWords={"Language of Page"}
-          serial={1}
           level={Level.A}
           successCriterionNumber={"3.1.1"}
           linkToSuccessCriterion={
@@ -28,7 +24,7 @@ export const LangOfPage = (props: Props) => {
             Placeholder and Reminder: This page has an empty lang attribute:
             "html lang"
           </p>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

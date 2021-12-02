@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,12 +9,11 @@ export const LinkPurposeLinkOnly = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F84: Failure of Success Criterion 2.4.9 due to using a non-specific link such as 'click here' or 'more' without a mechanism to change the link text to specific text."
           }
           successCriterionInWords={"Link Purpose (Link Only)"}
-          serial={1}
           successCriterionNumber={"2.4.9"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
@@ -34,13 +30,12 @@ export const LinkPurposeLinkOnly = (props: Props) => {
         >
           <a href="file110.htm">Click here</a> for more information on the Rocky
           Mountains.
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+        <TestCase
           title={
             "F84: Failure of Success Criterion 2.4.9 due to using a non-specific link such as 'click here' or 'more' without a mechanism to change the link text to specific text."
           }
           successCriterionInWords={"Link Purpose (Link Only)"}
-          serial={2}
           successCriterionNumber={"2.4.9"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
@@ -58,14 +53,13 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           <h2>News headlines</h2>
           The middle east peace meetings have yielded fruitful dialogue.
           <a href="r4300.htm">read more</a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
           }
           successCriterionInWords={"Link Purpose (Link Only)"}
-          serial={3}
           successCriterionNumber={"2.4.9"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
@@ -82,12 +76,11 @@ export const LinkPurposeLinkOnly = (props: Props) => {
             <img src="football.gif" alt="" />
           </a>
           <a href="scores.html">Football Scoreboard</a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link text does not make sense out of context"}
           successCriterionInWords={"Link Purpose (Link Only)"}
-          serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
           }
@@ -97,7 +90,7 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           <p>
             To know more about me, visit my <a href={"page.html"}>page</a>.
           </p>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

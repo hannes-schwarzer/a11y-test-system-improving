@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./MeaningfulSequence.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,12 +10,11 @@ export const MeaningfulSequence = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to format tables in plain text content"
           }
           successCriterionInWords={"Meaningful Sequence"}
-          serial={1}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
@@ -45,14 +41,13 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
                          brownie         ice cream
           `}
           </pre>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white space characters to create multiple columns in plain text content"
           }
           successCriterionInWords={"Meaningful Sequence"}
-          serial={2}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
@@ -78,233 +73,221 @@ information and applications accessible.  people to access Web content using
 range of people with disabilities,        wide variety of assistive technologies.
             `}
           </pre>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+
+        <TestCase
           title={
             "F32: Failure of Success Criterion 1.3.2 due to using white space characters to control spacing within a word"
           }
           successCriterionInWords={"Meaningful Sequence"}
-          serial={3}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
           }
           level={Level.A}
+          explanation={
+            'Failure due to adding white space in the middle of a word: This example has white spaces within a word to space out the letters in a heading. Screen readers may read each letter individually instead of the word "Welcome."'
+          }
         >
-          <div>
-            <h4>
-              Example 1: Failure due to adding white space in the middle of a
-              word
-            </h4>
-            <p>
-              This example has white spaces within a word to space out the
-              letters in a heading. Screen readers may read each letter
-              individually instead of the word "Welcome."
-            </p>
-            <h1>W e l c o m e</h1>
-            <p>
-              {`&nbsp;`} can also be used to add white space, producing similar
-              failures:
-            </p>
-            <h1>H&nbsp;E&nbsp;L&nbsp;L&nbsp;O</h1>
-          </div>
-          <div>
-            <h4>
-              Example 2: White space in the middle of a word changing its
-              meaning
-            </h4>
-            <p>
-              In Japanese, Han characters (Kanji) may have multiple readings
-              that mean very different things. In this example, the word is read
-              incorrectly because screen readers may not recognize these
-              characters as a word because of the white space between the
-              characters. The characters mean "Tokyo," but screen readers say
-              "Higashi Kyo".
-            </p>
-            <h1>東　京</h1>
-          </div>
-          <div>
-            <h4>
-              Example 3: Using line break characters to format vertical text
-            </h4>
-            <p>
-              In the row header cell of a data table containing Japanese text,
-              authors often create vertical text by using line break characters.
-              However screen readers are not able to read the words in vertical
-              text correctly because the line breaks occur within the word. In
-              the following example, "東京都"(Tokyo-to) will be read "Higashi
-              Kyo Miyako".
-            </p>
+          <h1>W e l c o m e</h1>
+        </TestCase>
 
-            <table>
-              <caption>表1.　都道府県別一覧表</caption>
-              <tr>
-                <td></td>
-                <th scope="col">（見出しセル 1.）</th>
-                <th scope="col">（見出しセル 2.）</th>
-              </tr>
-              <tr>
-                <th scope="row">
-                  東<br />京<br />都
-                </th>
-                <td>（データセル 1.）</td>
-                <td>（データセル 2.）</td>
-              </tr>
-            </table>
-          </div>
-        </GuidelineError>
-        <GuidelineError
+        <TestCase
+          title={
+            "F32: Failure of Success Criterion 1.3.2 due to using white space characters to control spacing within a word"
+          }
+          successCriterionInWords={"Meaningful Sequence"}
+          successCriterionNumber={"1.3.2"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
+          }
+          level={Level.A}
+          explanation={
+            'Failure due to adding white space in the middle of a word: This example has white spaces within a word to space out the letters in a heading. Screen readers may read each letter individually instead of the word "Welcome."'
+          }
+        >
+          <p>
+            {`&nbsp;`} can also be used to add white space, producing similar
+            failures:
+          </p>
+          <h1>H&nbsp;E&nbsp;L&nbsp;L&nbsp;O</h1>
+        </TestCase>
+
+        <TestCase
+          title={
+            "F32: Failure of Success Criterion 1.3.2 due to using white space characters to control spacing within a word"
+          }
+          successCriterionInWords={"Meaningful Sequence"}
+          successCriterionNumber={"1.3.2"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
+          }
+          level={Level.A}
+          explanation={
+            'White space in the middle of a word changing its meaning: In Japanese, Han characters (Kanji) may have multiple readings that mean very different things. In this example, the word is read incorrectly because screen readers may not recognize these characters as a word because of the white space between the characters. The characters mean "Tokyo," but screen readers say "Higashi Kyo".'
+          }
+        >
+          <h1>東　京</h1>
+        </TestCase>
+
+        <TestCase
+          title={
+            "F32: Failure of Success Criterion 1.3.2 due to using white space characters to control spacing within a word"
+          }
+          successCriterionInWords={"Meaningful Sequence"}
+          successCriterionNumber={"1.3.2"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
+          }
+          level={Level.A}
+          explanation={
+            'Using line break characters to format vertical text: In the row header cell of a data table containing Japanese text, authors often create vertical text by using line break characters. However screen readers are not able to read the words in vertical text correctly because the line breaks occur within the word. In the following example, "東京都"(Tokyo-to) will be read "Higashi Kyo Miyako".'
+          }
+        >
+          <table>
+            <caption>表1.　都道府県別一覧表</caption>
+            <tr>
+              <td></td>
+              <th scope="col">（見出しセル 1.）</th>
+              <th scope="col">（見出しセル 2.）</th>
+            </tr>
+            <tr>
+              <th scope="row">
+                東<br />京<br />都
+              </th>
+              <td>（データセル 1.）</td>
+              <td>（データセル 2.）</td>
+            </tr>
+          </table>
+        </TestCase>
+
+        <TestCase
           title={
             "F49: Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not make sense when linearized"
           }
           successCriterionInWords={"Meaningful Sequence"}
-          serial={4}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
           }
           level={Level.A}
+          explanation={
+            "A layout table that does not linearize correctly: An advertisement makes clever use of visual positioning, but changes meaning when linearized."
+          }
         >
-          <div>
-            <h4>Example 1: A layout table that does not linearize correctly</h4>
-            <p>
-              An advertisement makes clever use of visual positioning, but
-              changes meaning when linearized.
-            </p>
+          <table>
+            <tr>
+              <td>
+                <img src="logo.gif" alt="XYZ mountaineering" />
+              </td>
+              <td rowSpan={2} valign="bottom">
+                top!
+              </td>
+            </tr>
+            <tr>
+              <td>XYZ gets you to the</td>
+            </tr>
+          </table>
+        </TestCase>
 
-            <table>
-              <tr>
-                <td>
-                  <img src="logo.gif" alt="XYZ mountaineering" />
-                </td>
-                <td rowSpan={2} valign="bottom">
-                  top!
-                </td>
-              </tr>
-              <tr>
-                <td>XYZ gets you to the</td>
-              </tr>
-            </table>
-          </div>
+        <TestCase
+          title={
+            "F49: Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not make sense when linearized"
+          }
+          successCriterionInWords={"Meaningful Sequence"}
+          successCriterionNumber={"1.3.2"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
+          }
+          level={Level.A}
+          explanation={
+            "A layout table that separates a meaningful sequence when linearized: A layout table is used to position the elements of the page. The links in the navigation bar are split into different cells in the leftmost column. Because the navigation bar links are interleaved with the content describing the image, screen readers cannot present the content in a meaningful sequence corresponding to the sequence presented visually."
+          }
+        >
+          <table>
+            <tr>
+              <td>
+                <a href="#">Link 1</a>
+              </td>
+              <td rowSpan={20}>
+                <img src="img.png" alt="Museum Picture" />
+              </td>
+              <td rowSpan={6}>
+                <img src="placard.png" alt="Placard text" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 2</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 3</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 4</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 5</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 6</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 7</a>
+              </td>
+              <td rowSpan={2}>
+                <h2>Image Heading</h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 8</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 9</a>
+              </td>
+              <td rowSpan={12}>Description of the image</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#">Link 10</a>
+              </td>
+            </tr>
+            ...
+            <tr>
+              <td>
+                <a href="#">Link 20</a>
+              </td>
+            </tr>
+          </table>
+        </TestCase>
 
-          <div>
-            <h4>
-              Example 2: A layout table that separates a meaningful sequence
-              when linearized
-            </h4>
-            <p>
-              A layout table is used to position the elements of the page. The
-              links in the navigation bar are split into different cells in the
-              leftmost column. Because the navigation bar links are interleaved
-              with the content describing the image, screen readers cannot
-              present the content in a meaningful sequence corresponding to the
-              sequence presented visually.
-            </p>
-
-            <table>
-              <tr>
-                <td>
-                  <a href="#">Link 1</a>
-                </td>
-                <td rowSpan={20}>
-                  <img src="img.png" alt="Museum Picture" />
-                </td>
-                <td rowSpan={6}>
-                  <img src="placard.png" alt="Placard text" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 2</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 3</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 4</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 5</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 6</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 7</a>
-                </td>
-                <td rowSpan={2}>
-                  <h2>Image Heading</h2>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 8</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 9</a>
-                </td>
-                <td rowSpan={12}>Description of the image</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Link 10</a>
-                </td>
-              </tr>
-              ...
-              <tr>
-                <td>
-                  <a href="#">Link 20</a>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </GuidelineError>
-
-        <GuidelineError
+        <TestCase
           title={
             "F1: Failure of Success Criterion 1.3.2 due to changing the meaning of content by positioning information with CSS"
           }
           successCriterionInWords={"Meaningful Sequence"}
-          serial={5}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
           }
           level={Level.A}
+          explanation={
+            'The following example demonstrates how CSS has been improperly used to create a set of columns. In addition, the text appears visually in the browser in a different order than in the markup. Since appropriate structural elements have not been used, when style sheets are not applied, all of the text appears in one line in the source order, "Products Locations Telephones Computers Portable MP3 Players Wisconsin Idaho."'
+          }
         >
-          <p>
-            The following example demonstrates how CSS has been improperly used
-            to create a set of columns. In addition, the text appears visually
-            in the browser in a different order than in the markup.
-          </p>
-          <p>
-            In this example a class is defined for each object that is being
-            positioned. When style sheets are applied, the text appears in two
-            columns. Elements of class "menu1" (Products) and "menu2"
-            (Locations) appear as column headings. "Telephones, Computers, and
-            Portable MP3 Players" are listed under Products and "Idaho" and
-            "Wisconsin" are listed under Locations (note the different order for
-            Idaho and Wisconsin in the source code order).
-          </p>
-          <p>
-            Since appropriate structural elements have not been used, when style
-            sheets are not applied, all of the text appears in one line in the
-            source order, "Products Locations Telephones Computers Portable MP3
-            Players Wisconsin Idaho."
-          </p>
-
           <div className="box">
             <span className="menu1">Products</span>
             <span className="menu2">Locations</span>
@@ -314,10 +297,10 @@ range of people with disabilities,        wide variety of assistive technologies
             <span className="item5">Wisconsin</span>
             <span className="item4">Idaho</span>
           </div>
-        </GuidelineError>
-        <GuidelineError
+        </TestCase>
+
+        <TestCase
           title={"Content identified by location"}
-          serial={6}
           successCriterionInWords={"Meaningful Sequence"}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
@@ -332,11 +315,10 @@ range of people with disabilities,        wide variety of assistive technologies
           <a href="sheeran.html" style={{ float: "left" }}>
             Ed Sheeran
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Table used for layout"}
-          serial={7}
           successCriterionInWords={"Meaningful Sequence"}
           successCriterionNumber={"1.3.2"}
           linkToSuccessCriterion={
@@ -371,7 +353,7 @@ range of people with disabilities,        wide variety of assistive technologies
               </tr>
             </tbody>
           </table>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

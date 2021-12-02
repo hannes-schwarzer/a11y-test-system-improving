@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import LINK from "../../../../assets/link.png";
 import "./OnFocus.css";
 import { Frame } from "../../../../components/Frame/Frame";
@@ -14,12 +11,11 @@ export const OnFocus = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
           successCriterionInWords={"On Focus"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#on-focus"
           }
@@ -43,14 +39,13 @@ export const OnFocus = (props: Props) => {
               document!.getElementById("keayboard__blur-error-first")!.blur();
             }}
           />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
           successCriterionInWords={"On Focus"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#on-focus"
           }
@@ -76,15 +71,14 @@ export const OnFocus = (props: Props) => {
           >
             <img src={LINK} />
           </a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Keyboard focus is not indicated visually"}
           successCriterionInWords={"On Focus"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#on-focus"
           }
-          serial={3}
           successCriterionNumber={"3.2.1"}
           level={Level.A}
           linkToExplanation={
@@ -94,7 +88,7 @@ export const OnFocus = (props: Props) => {
           <a className={"no-outline"} href={"link.html"}>
             Link with no focus style
           </a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

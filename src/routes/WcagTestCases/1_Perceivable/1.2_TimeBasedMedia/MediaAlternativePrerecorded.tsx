@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,10 +9,9 @@ export const MediaAlternativePrerecorded = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Link to a multimedia file, no transcript"}
           successCriterionInWords={"Media Alternative (Prerecorded)"}
-          serial={85}
           linkToExplanation={"https://webaim.org/techniques/captions/"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#media-alternative-prerecorded"
@@ -24,7 +20,7 @@ export const MediaAlternativePrerecorded = (props: Props) => {
           level={Level.AAA}
         >
           <a href={"interview.mov"}>Watch the interview</a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

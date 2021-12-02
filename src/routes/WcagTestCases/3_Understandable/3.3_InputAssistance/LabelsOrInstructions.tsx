@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import "./LabelsOrInstructions.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -13,7 +10,7 @@ export const LabelsOrInstructions = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
@@ -22,7 +19,6 @@ export const LabelsOrInstructions = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
           }
           successCriterionNumber={"3.3.2"}
-          serial={1}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
         >
@@ -36,12 +32,11 @@ export const LabelsOrInstructions = (props: Props) => {
               <input id={"missing-labels-year"} type={"text"} />
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Left aligned form labels with too much white space"}
           successCriterionInWords={"Labels or Instructions"}
-          serial={2}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
           }
@@ -54,12 +49,11 @@ export const LabelsOrInstructions = (props: Props) => {
               <input id={"input-too-far-away"} type={"text"} />
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Group of radio buttons not enclosed in a fieldset"}
           successCriterionInWords={"Labels or Instructions"}
-          serial={3}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
           }
@@ -87,12 +81,11 @@ export const LabelsOrInstructions = (props: Props) => {
             />
             No
           </label>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Form element has no label"}
           successCriterionInWords={"Labels or Instructions"}
-          serial={4}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
           }
@@ -103,13 +96,12 @@ export const LabelsOrInstructions = (props: Props) => {
           <form>
             <input type={"text"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Fieldset without a legend"}
           successCriterionInWords={"Labels or Instructions"}
           successCriterionNumber={"3.3.2"}
-          serial={5}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -122,12 +114,11 @@ export const LabelsOrInstructions = (props: Props) => {
           <form>
             <fieldset>I am a fieldset without a legend</fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty legend"}
           successCriterionInWords={"Labels or Instructions"}
-          serial={6}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -140,14 +131,13 @@ export const LabelsOrInstructions = (props: Props) => {
               <legend></legend>
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Label element with for= attribute but not matching id= attribute of form control"
           }
           successCriterionInWords={"Labels or Instructions"}
-          serial={7}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -169,12 +159,11 @@ export const LabelsOrInstructions = (props: Props) => {
               />
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Group of check boxes not enclosed in a fieldset"}
           successCriterionInWords={"Labels or Instructions"}
-          serial={8}
           successCriterionNumber={"3.3.2"}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
           level={Level.A}
@@ -212,13 +201,12 @@ export const LabelsOrInstructions = (props: Props) => {
             />
             Farm or agricultural waste
           </label>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty label found"}
           successCriterionInWords={"Labels or Instructions"}
           successCriterionNumber={"3.3.2"}
-          serial={9}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
@@ -229,12 +217,11 @@ export const LabelsOrInstructions = (props: Props) => {
             <label htmlFor={"empty"}></label>
             <input id={"empty"} type={"text"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Two unique labels, but identical for= attributes"}
           successCriterionInWords={"Labels or Instructions"}
-          serial={10}
           successCriterionNumber={"3.3.2"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -255,12 +242,11 @@ export const LabelsOrInstructions = (props: Props) => {
               <input id={"two-labels-year"} type={"text"} />
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Missing labels in checkboxes"}
           successCriterionInWords={"Labels or Instructions"}
-          serial={11}
           successCriterionNumber={"3.3.2"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -296,12 +282,11 @@ export const LabelsOrInstructions = (props: Props) => {
               />
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Placeholder no label"}
           successCriterionInWords={"Labels or Instructions"}
-          serial={12}
           successCriterionNumber={"3.3.2"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -323,7 +308,7 @@ export const LabelsOrInstructions = (props: Props) => {
             />
             <input className={"submit"} type={"submit"} value={"Search"} />
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

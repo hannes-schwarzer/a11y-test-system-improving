@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import CHECKED from "../../../../assets/checkbox-checked.svg";
 import UNCHECKED from "../../../../assets/checkbox-unchecked.svg";
 import { Frame } from "../../../../components/Frame/Frame";
@@ -25,12 +22,11 @@ export const NameRoleValue = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F59: Failure of Success Criterion 4.1.2 due to using script to make div or span a user interface control in HTML without providing a role for the control"
           }
           successCriterionInWords={"Name, Role, Value"}
-          serial={1}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -55,14 +51,13 @@ export const NameRoleValue = (props: Props) => {
               Include Signature
             </span>
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
           successCriterionInWords={"Name, Role, Value"}
-          serial={2}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -84,14 +79,13 @@ export const NameRoleValue = (props: Props) => {
             <br />
             I have a cat <input type="checkbox" name="pet" value="cat" />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
           successCriterionInWords={"Name, Role, Value"}
-          serial={3}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -112,14 +106,13 @@ export const NameRoleValue = (props: Props) => {
               <input type="text" name="lastname" />
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
           successCriterionInWords={"Name, Role, Value"}
-          serial={4}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -134,14 +127,13 @@ export const NameRoleValue = (props: Props) => {
         >
           <input type="text" value="Type your search here" />
           <input type="submit" value="Search" />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F86: Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number"
           }
           successCriterionInWords={"Name, Role, Value"}
-          serial={5}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -156,14 +148,13 @@ export const NameRoleValue = (props: Props) => {
         >
           Phone number: (<input type="text" size={3} />){" "}
           <input type="text" size={3} />-<input type="text" size={4} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F86: Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number"
           }
           successCriterionInWords={"Name, Role, Value"}
-          serial={6}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -179,14 +170,13 @@ export const NameRoleValue = (props: Props) => {
           <label htmlFor="area">Phone number:</label>
           (<input id="area" type="text" size={3} />){" "}
           <input type="text" size={3} />-<input type="text" size={4} />
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
           }
           successCriterionInWords={"Name, Role, Value"}
-          serial={7}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -203,12 +193,11 @@ export const NameRoleValue = (props: Props) => {
             <img src="football.gif" alt="" />
           </a>
           <a href="scores.html">Football Scoreboard</a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty button"}
           successCriterionInWords={"Name, Role, Value"}
-          serial={8}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -216,12 +205,11 @@ export const NameRoleValue = (props: Props) => {
           level={Level.A}
         >
           <button></button>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty H1"}
           successCriterionInWords={"Name, Role, Value"}
-          serial={9}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -230,12 +218,11 @@ export const NameRoleValue = (props: Props) => {
         >
           <h1></h1>
           <p>Here is an empty h1</p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty heading"}
           successCriterionInWords={"Name, Role, Value"}
-          serial={10}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -244,12 +231,11 @@ export const NameRoleValue = (props: Props) => {
         >
           <h4></h4>
           <p>This paragraph is preceded by an empty h4</p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link to #, invalid hypertext reference"}
           successCriterionInWords={"Name, Role, Value"}
-          serial={11}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -260,9 +246,9 @@ export const NameRoleValue = (props: Props) => {
           }
         >
           <a href={"#"}>Do something</a>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
@@ -272,7 +258,6 @@ export const NameRoleValue = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
-          serial={12}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
         >
           <form>
@@ -285,12 +270,11 @@ export const NameRoleValue = (props: Props) => {
               <input id={"missing-labels-year"} type={"text"} />
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Form element has no label"}
           successCriterionInWords={"Name, Role, Value"}
-          serial={13}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -301,14 +285,13 @@ export const NameRoleValue = (props: Props) => {
           <form>
             <input type={"text"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Label element with for= attribute but not matching id= attribute of form control"
           }
           successCriterionInWords={"Name, Role, Value"}
-          serial={14}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -330,13 +313,12 @@ export const NameRoleValue = (props: Props) => {
               />
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty label found"}
           successCriterionInWords={"Name, Role, Value"}
           successCriterionNumber={"4.1.2"}
-          serial={15}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -347,12 +329,11 @@ export const NameRoleValue = (props: Props) => {
             <label htmlFor={"empty"}></label>
             <input id={"empty"} type={"text"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Missing labels in checkboxes"}
           successCriterionInWords={"Name, Role, Value"}
-          serial={16}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -388,12 +369,11 @@ export const NameRoleValue = (props: Props) => {
               />
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Placeholder no label"}
           successCriterionInWords={"Name, Role, Value"}
-          serial={17}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -415,15 +395,14 @@ export const NameRoleValue = (props: Props) => {
             />
             <input className={"submit"} type={"submit"} value={"Search"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Invalid ARIA role names"}
           successCriterionInWords={"Name, Role, Value"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
-          serial={18}
           level={Level.A}
           linkToExplanation={
             "https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr"
@@ -445,15 +424,14 @@ export const NameRoleValue = (props: Props) => {
               </li>
             </ol>
           </div>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"iframe is missing a title attribute"}
           successCriterionInWords={"Name, Role, Value"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
-          serial={18}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
           linkToExplanation={
@@ -461,12 +439,11 @@ export const NameRoleValue = (props: Props) => {
           }
         >
           <iframe height={100} src={"/demo-page"} width={300}></iframe>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Link with a role=button does not work with space bar"}
           successCriterionInWords={"Name, Role, Value"}
-          serial={19}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
@@ -479,7 +456,7 @@ export const NameRoleValue = (props: Props) => {
           <a className={"button"} href={"next.html"} role={"button"}>
             Continue
           </a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

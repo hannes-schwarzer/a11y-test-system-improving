@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import TREE from "../../../../assets/animated-tree.gif";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -26,12 +23,11 @@ export const PauseStopHide = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={
             "F4: Failure of Success Criterion 2.2.2 due to using text-decoration:blink without a mechanism to stop it in less than five seconds"
           }
           successCriterionInWords={"Pause, Stop, Hide"}
-          serial={1}
           level={Level.A}
           successCriterionNumber={"2.2.2"}
           linkToSuccessCriterion={
@@ -49,14 +45,13 @@ export const PauseStopHide = (props: Props) => {
             My Great Product{" "}
             <span style={{ textDecoration: "blink" }}>Sale! $44,995!</span>
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "F50: Failure of Success Criterion 2.2.2 due to a script that causes a blink effect without a mechanism to stop the blinking at 5 seconds or less"
           }
           successCriterionInWords={"Pause, Stop, Hide"}
-          serial={2}
           level={Level.A}
           successCriterionNumber={"2.2.2"}
           linkToSuccessCriterion={
@@ -71,12 +66,11 @@ export const PauseStopHide = (props: Props) => {
         >
           <script type="text/javascript">show();</script>
           <span id="blink1">This content will blink</span>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"A distraction is present, an animated gif"}
           successCriterionInWords={"Pause, Stop, Hide"}
-          serial={3}
           successCriterionNumber={"2.2.2"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide"
@@ -94,7 +88,7 @@ export const PauseStopHide = (props: Props) => {
             src={TREE}
             width={157}
           />
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

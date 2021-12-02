@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,10 +9,9 @@ export const NoKeyboardTrap = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"Keyboard trap"}
           successCriterionInWords={"No Keyboard Trap"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap"
           }
@@ -25,7 +21,7 @@ export const NoKeyboardTrap = (props: Props) => {
           <a href={"/keyboard/trap"}>
             Example page that contains a keyboard trap
           </a>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -13,10 +10,9 @@ export const HeadingsAndLabels = (props: Props) => {
     <>
       <Frame pageTitle={props.pageTitle}>
         {/*2.4.6 & 2.4.10*/}
-        <GuidelineError
+        <TestCase
           title={"Headings not structured in a hierarchical manner"}
           successCriterionInWords={"Headings and Labels"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
@@ -45,14 +41,13 @@ export const HeadingsAndLabels = (props: Props) => {
             and navigate for people using assistive technologies such as screen
             reader.
           </p>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
           successCriterionInWords={"Headings and Labels"}
-          serial={2}
           successCriterionNumber={"2.4.6"}
           level={Level.AA}
           linkToSuccessCriterion={
@@ -70,12 +65,11 @@ export const HeadingsAndLabels = (props: Props) => {
               <input id={"missing-labels-year"} type={"text"} />
             </p>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Form element has no label"}
           successCriterionInWords={"Headings and Labels"}
-          serial={3}
           successCriterionNumber={"2.4.6"}
           level={Level.AA}
           linkToSuccessCriterion={
@@ -86,13 +80,12 @@ export const HeadingsAndLabels = (props: Props) => {
           <form>
             <input type={"text"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Empty label found"}
           successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
-          serial={4}
           level={Level.AA}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
@@ -103,12 +96,11 @@ export const HeadingsAndLabels = (props: Props) => {
             <label htmlFor={"empty"}></label>
             <input id={"empty"} type={"text"} />
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Non-unique field label found"}
           successCriterionInWords={"Headings and Labels"}
-          serial={5}
           successCriterionNumber={"2.4.6"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
@@ -132,12 +124,11 @@ export const HeadingsAndLabels = (props: Props) => {
               <input id={"x_4"} name={"x_4"} type={"text"} />
             </label>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Missing labels in checkboxes"}
           successCriterionInWords={"Headings and Labels"}
-          serial={6}
           successCriterionNumber={"2.4.6"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
@@ -173,13 +164,12 @@ export const HeadingsAndLabels = (props: Props) => {
               />
             </fieldset>
           </form>
-        </GuidelineError>
+        </TestCase>
 
-        <GuidelineError
+        <TestCase
           title={"Placeholder no label"}
           successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
-          serial={7}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
@@ -200,7 +190,7 @@ export const HeadingsAndLabels = (props: Props) => {
             />
             <input className={"submit"} type={"submit"} value={"Search"} />
           </form>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );

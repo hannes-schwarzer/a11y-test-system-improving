@@ -1,7 +1,4 @@
-import {
-  GuidelineError,
-  Level,
-} from "../../../../components/GuidelineError/GuidelineError";
+import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -12,10 +9,9 @@ export const BypassBlocks = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <GuidelineError
+        <TestCase
           title={"iframe is missing a title attribute"}
           successCriterionInWords={"Bypass Blocks"}
-          serial={1}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks"
           }
@@ -26,7 +22,7 @@ export const BypassBlocks = (props: Props) => {
           level={Level.A}
         >
           <iframe height={100} src={"/demo-page"} width={300}></iframe>
-        </GuidelineError>
+        </TestCase>
       </Frame>
     </>
   );
