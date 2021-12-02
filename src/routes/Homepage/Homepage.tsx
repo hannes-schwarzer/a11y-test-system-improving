@@ -15,10 +15,11 @@ export const Homepage = (homepageProps: Props) => {
       <Frame pageTitle={homepageProps.pageTitle}>
         <p>This is the current look of all test cases.</p>
         <p>
-          Above the dashed line in the top row it shows the title, the guideline
-          level and the actual success criterion. If available beneath the top
-          row there is an explanation to the violation and a link for further
-          information.
+          Each test case is surrounded by a solid border. Inside the area is
+          devided into two parts. Above the dashed line in the top row it shows
+          the title, the guideline level and the actual success criterion. If
+          available beneath the top row there is an explanation to the violation
+          and a link for further information.
         </p>
 
         <GuidelineError

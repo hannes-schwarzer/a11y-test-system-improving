@@ -16,8 +16,8 @@ export const Header = (headerProps: HeaderProps) => {
             src={ALLYUP}
             alt={"Ally up logo"}
             className="header__logo"
-            height={"100px"}
-            width={"auto"}
+            height={"auto"}
+            width={"100px"}
           />
         </Link>
         <h1 className={"main-heading"}>{headerProps.pageTitle}</h1>
