@@ -47,6 +47,21 @@ export const Duplicates = () => {
           <input type={"text"} />
         </form>
       </TestCase>
+
+      <TestCase
+        title={"Form element has no label"}
+        successCriterionInWords={"Labels or Instructions"}
+        linkToSuccessCriterion={
+          "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
+        }
+        successCriterionNumber={"3.3.2"}
+        level={Level.A}
+        linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+      >
+        <form>
+          <input type={"text"} />
+        </form>
+      </TestCase>
     </>
   );
 };

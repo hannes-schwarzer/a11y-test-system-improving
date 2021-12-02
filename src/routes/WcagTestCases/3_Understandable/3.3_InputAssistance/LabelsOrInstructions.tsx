@@ -21,13 +21,12 @@ export const LabelsOrInstructions = (props: Props) => {
           successCriterionNumber={"3.3.2"}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          explanation={"Only one input has an associated label."}
         >
           <form>
-            <label htmlFor={"missing-labels-day"}>
-              Your child's date of birth
-            </label>
+            <label htmlFor={"label-day"}>Your child's date of birth</label>
             <p>
-              <input id={"missing-labels-day"} type={"text"} />
+              <input id={"label-day"} type={"text"} />
               <input id={"missing-labels-month"} type={"text"} />
               <input id={"missing-labels-year"} type={"text"} />
             </p>
@@ -42,6 +41,9 @@ export const LabelsOrInstructions = (props: Props) => {
           }
           successCriterionNumber={"3.3.2"}
           level={Level.A}
+          explanation={
+            "Label and input are programatically associated but visually too far away from each other."
+          }
         >
           <form>
             <p className={"too-much-whitespace"}>
@@ -81,21 +83,6 @@ export const LabelsOrInstructions = (props: Props) => {
             />
             No
           </label>
-        </TestCase>
-
-        <TestCase
-          title={"Form element has no label"}
-          successCriterionInWords={"Labels or Instructions"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
-          }
-          successCriterionNumber={"3.3.2"}
-          level={Level.A}
-          linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
-        >
-          <form>
-            <input type={"text"} />
-          </form>
         </TestCase>
 
         <TestCase
