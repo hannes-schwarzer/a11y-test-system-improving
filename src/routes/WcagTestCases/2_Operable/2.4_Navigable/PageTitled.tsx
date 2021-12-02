@@ -15,10 +15,10 @@ export const PageTitled = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Empty page title"}
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={1}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}
@@ -31,10 +31,10 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"This page does not have a title element."}
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={2}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}
@@ -49,10 +49,10 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"This page has a title element that is empty."}
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={3}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}
@@ -69,10 +69,10 @@ export const PageTitled = (props: Props) => {
           title={
             "This page does not have a title element. The title element in the content of the iframe does not function as the title for the entire page."
           }
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={4}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}
@@ -87,10 +87,10 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"This page has two title elements and the first is empty."}
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={4}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}
@@ -112,10 +112,10 @@ export const PageTitled = (props: Props) => {
           title={
             "This page has a title element that only contains a separator character."
           }
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={4}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}
@@ -130,10 +130,10 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"Inappropriate page title"}
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={5}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}
@@ -146,10 +146,10 @@ export const PageTitled = (props: Props) => {
 
         <GuidelineError
           title={"Empty page title"}
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={6}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}
@@ -161,10 +161,10 @@ export const PageTitled = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Missing page title"}
-          successCriterion={"2.4.2 Page Titled"}
+          successCriterionInWords={"2.4.2 Page Titled"}
           serial={7}
-          guideline={"2.4.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
           }
           level={Level.A}

@@ -19,12 +19,12 @@ export const VisualPresentation = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.8 Visual Presentation"}
+          successCriterionInWords={"1.4.8 Visual Presentation"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
-          guideline={"1.4.8"}
+          successCriterionNumber={"1.4.8"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -42,12 +42,12 @@ export const VisualPresentation = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.8 Visual Presentation"}
+          successCriterionInWords={"1.4.8 Visual Presentation"}
           serial={2}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
-          guideline={"1.4.8"}
+          successCriterionNumber={"1.4.8"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -66,12 +66,12 @@ export const VisualPresentation = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.8 Visual Presentation"}
+          successCriterionInWords={"1.4.8 Visual Presentation"}
           serial={3}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
-          guideline={"1.4.8"}
+          successCriterionNumber={"1.4.8"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -89,12 +89,12 @@ export const VisualPresentation = (props: Props) => {
           title={
             "F88: Failure of Success Criterion 1.4.8 due to using text that is justified (aligned to both the left and the right margins)"
           }
-          successCriterion={"1.4.8 Visual Presentation"}
+          successCriterionInWords={"1.4.8 Visual Presentation"}
           serial={4}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
-          guideline={"1.4.8"}
+          successCriterionNumber={"1.4.8"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F88.html"
           }
@@ -118,12 +118,12 @@ export const VisualPresentation = (props: Props) => {
 
         <GuidelineError
           title={"All caps text found"}
-          successCriterion={"typography"}
+          successCriterionInWords={"typography"}
           serial={5}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
-          guideline={"1.4.8"}
+          successCriterionNumber={"1.4.8"}
           level={Level.AAA}
           linkToExplanation={
             "https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Capitalization"
@@ -142,12 +142,12 @@ export const VisualPresentation = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Italics used on long sections of text"}
-          successCriterion={"1.4.8 Visual Presentation"}
+          successCriterionInWords={"1.4.8 Visual Presentation"}
           serial={6}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
-          guideline={"1.4.8"}
+          successCriterionNumber={"1.4.8"}
           level={Level.AAA}
           linkToExplanation={
             "https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Capitalization"
@@ -163,12 +163,12 @@ export const VisualPresentation = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Justified text found"}
-          successCriterion={"typography"}
+          successCriterionInWords={"typography"}
           serial={7}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
           }
-          guideline={"1.4.8"}
+          successCriterionNumber={"1.4.8"}
           level={Level.AAA}
         >
           <p className={"justify"}>

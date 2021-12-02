@@ -14,13 +14,13 @@ export const MediaAlternativePrerecorded = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Link to a multimedia file, no transcript"}
-          successCriterion={"Media Alternative (Prerecorded)"}
+          successCriterionInWords={"Media Alternative (Prerecorded)"}
           serial={85}
           linkToExplanation={"https://webaim.org/techniques/captions/"}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#media-alternative-prerecorded"
           }
-          guideline={"1.2.8"}
+          successCriterionNumber={"1.2.8"}
           level={Level.AAA}
         >
           <a href={"interview.mov"}>Watch the interview</a>

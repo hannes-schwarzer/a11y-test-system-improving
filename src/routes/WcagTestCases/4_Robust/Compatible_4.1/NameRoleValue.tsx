@@ -29,10 +29,10 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F59: Failure of Success Criterion 4.1.2 due to using script to make div or span a user interface control in HTML without providing a role for the control"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={1}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           explanation={
@@ -61,10 +61,10 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={2}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           explanation={
@@ -90,10 +90,10 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={3}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           explanation={
@@ -118,10 +118,10 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F68: Failure of Success Criterion 4.1.2 due to a user interface control not having a programmatically determined name"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={4}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           explanation={
@@ -140,10 +140,10 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F86: Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={5}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           explanation={
@@ -162,10 +162,10 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F86: Failure of Success Criterion 4.1.2 due to not providing names for each part of a multi-part form field, such as a US telephone number"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={6}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           explanation={
@@ -185,10 +185,10 @@ export const NameRoleValue = (props: Props) => {
           title={
             "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={7}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           explanation={
@@ -207,10 +207,10 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Empty button"}
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={8}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           level={Level.A}
@@ -220,10 +220,10 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Empty H1"}
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={9}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           level={Level.A}
@@ -234,10 +234,10 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Empty heading"}
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={10}
-          guideline={"4.1.2"}
-          linkToGuideline={
+          successCriterionNumber={"4.1.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           level={Level.A}
@@ -248,11 +248,11 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Link to #, invalid hypertext reference"}
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={11}
-          guideline={"4.1.2"}
+          successCriterionNumber={"4.1.2"}
           level={Level.A}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={
@@ -266,10 +266,10 @@ export const NameRoleValue = (props: Props) => {
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
-          guideline={"4.1.2"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionNumber={"4.1.2"}
           level={Level.A}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           serial={12}
@@ -289,11 +289,11 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Form element has no label"}
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={13}
-          guideline={"4.1.2"}
+          successCriterionNumber={"4.1.2"}
           level={Level.A}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
@@ -307,17 +307,17 @@ export const NameRoleValue = (props: Props) => {
           title={
             "Label element with for= attribute but not matching id= attribute of form control"
           }
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={14}
           level={Level.A}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
           explanation={
             "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
           }
-          guideline={"4.1.2"}
+          successCriterionNumber={"4.1.2"}
         >
           <form>
             <fieldset>
@@ -334,11 +334,11 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Empty label found"}
-          successCriterion={"4.1.2 Name, Role, Value"}
-          guideline={"4.1.2"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          successCriterionNumber={"4.1.2"}
           serial={15}
           level={Level.A}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
@@ -351,11 +351,11 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Missing labels in checkboxes"}
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={16}
-          guideline={"4.1.2"}
+          successCriterionNumber={"4.1.2"}
           level={Level.A}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
@@ -392,11 +392,11 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Placeholder no label"}
-          successCriterion={"4.1.2 Name, Role, Value"}
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
           serial={17}
-          guideline={"4.1.2"}
+          successCriterionNumber={"4.1.2"}
           level={Level.A}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={
@@ -419,8 +419,8 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Invalid ARIA role names"}
-          successCriterion={"4.1.2 Name, Role, Value"}
-          linkToGuideline={
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           serial={18}
@@ -428,7 +428,7 @@ export const NameRoleValue = (props: Props) => {
           linkToExplanation={
             "https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr"
           }
-          guideline={"4.1.2"}
+          successCriterionNumber={"4.1.2"}
         >
           <div className={"header-context"} id={"global-breadcrumb"}>
             <ol className={"group"} role={"breadcrumb"}>
@@ -449,12 +449,12 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"iframe is missing a title attribute"}
-          successCriterion={"4.1.2 Name, Role, Value"}
-          linkToGuideline={
+          successCriterionInWords={"4.1.2 Name, Role, Value"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           serial={18}
-          guideline={"4.1.2"}
+          successCriterionNumber={"4.1.2"}
           level={Level.A}
           linkToExplanation={
             "https://equalizedigital.com/accessibility-checker/iframe-missing-title/"
@@ -465,13 +465,13 @@ export const NameRoleValue = (props: Props) => {
 
         <GuidelineError
           title={"Link with a role=button does not work with space bar"}
-          successCriterion={"Name, Role, Value"}
+          successCriterionInWords={"Name, Role, Value"}
           serial={19}
           level={Level.A}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
-          guideline={"4.1.2"}
+          successCriterionNumber={"4.1.2"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }

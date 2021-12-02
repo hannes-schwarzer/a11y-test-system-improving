@@ -18,12 +18,12 @@ export const FocusVisible = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterion={"2.4.7 Focus Visible"}
+          successCriterionInWords={"2.4.7 Focus Visible"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
-          guideline={"2.4.7"}
+          successCriterionNumber={"2.4.7"}
           level={Level.AA}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
@@ -49,12 +49,12 @@ export const FocusVisible = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterion={"2.4.7 Focus Visible"}
+          successCriterionInWords={"2.4.7 Focus Visible"}
           serial={2}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
-          guideline={"2.4.7"}
+          successCriterionNumber={"2.4.7"}
           level={Level.AA}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
@@ -83,7 +83,7 @@ export const FocusVisible = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterion={"2.4.7 Focus Visible"}
+          successCriterionInWords={"2.4.7 Focus Visible"}
           serial={3}
           explanation={
             "The focus indicator is turned off with CSS: The following CSS example will remove the default focus indicator, " +
@@ -93,8 +93,8 @@ export const FocusVisible = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F78.html"
           }
-          guideline={"2.4.7"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.7"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
         >
@@ -108,7 +108,7 @@ export const FocusVisible = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterion={"2.4.7 Focus Visible"}
+          successCriterionInWords={"2.4.7 Focus Visible"}
           serial={4}
           explanation={
             "The outline of elements is visually similar to the focus indicator: The following CSS example will create an " +
@@ -119,8 +119,8 @@ export const FocusVisible = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F78.html"
           }
-          guideline={"2.4.7"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.7"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
         >
@@ -137,7 +137,7 @@ export const FocusVisible = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterion={"2.4.7 Focus Visible"}
+          successCriterionInWords={"2.4.7 Focus Visible"}
           serial={5}
           explanation={
             "Elements have a border that occludes the focus indicator: The following CSS example creates a border around " +
@@ -149,8 +149,8 @@ export const FocusVisible = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F78.html"
           }
-          guideline={"2.4.7"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.7"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
         >
@@ -163,11 +163,11 @@ export const FocusVisible = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Focus not visible"}
-          successCriterion={"2.4.7 Focus Visible"}
+          successCriterionInWords={"2.4.7 Focus Visible"}
           serial={6}
           level={Level.AA}
-          guideline={"2.4.7"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.7"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
         >
@@ -181,9 +181,13 @@ export const FocusVisible = (props: Props) => {
 
         <GuidelineError
           title={"Keyboard focus is not indicated visually"}
-          successCriterion={"keyboard"}
+          successCriterionInWords={"keyboard"}
           serial={7}
-          guideline={"2.4.7"}
+          successCriterionNumber={"2.4.7"}
+          level={Level.AA}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
+          }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
           }

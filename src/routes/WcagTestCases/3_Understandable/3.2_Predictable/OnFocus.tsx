@@ -18,10 +18,12 @@ export const OnFocus = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterion={"3.2.1 On Focus"}
+          successCriterionInWords={"3.2.1 On Focus"}
           serial={1}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-focus"}
-          guideline={"3.2.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#on-focus"
+          }
+          successCriterionNumber={"3.2.1"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
@@ -47,10 +49,12 @@ export const OnFocus = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterion={"3.2.1 On Focus"}
+          successCriterionInWords={"3.2.1 On Focus"}
           serial={2}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#on-focus"}
-          guideline={"3.2.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#on-focus"
+          }
+          successCriterionNumber={"3.2.1"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
@@ -76,9 +80,13 @@ export const OnFocus = (props: Props) => {
 
         <GuidelineError
           title={"Keyboard focus is not indicated visually"}
-          successCriterion={"keyboard"}
+          successCriterionInWords={"keyboard"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#on-focus"
+          }
           serial={3}
-          guideline={"3.2.1"}
+          successCriterionNumber={"3.2.1"}
+          level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
           }

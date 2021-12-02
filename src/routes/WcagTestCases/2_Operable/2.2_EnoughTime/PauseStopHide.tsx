@@ -30,11 +30,11 @@ export const PauseStopHide = (props: Props) => {
           title={
             "F4: Failure of Success Criterion 2.2.2 due to using text-decoration:blink without a mechanism to stop it in less than five seconds"
           }
-          successCriterion={"2.2.2 Pause, Stop, Hide"}
+          successCriterionInWords={"2.2.2 Pause, Stop, Hide"}
           serial={1}
           level={Level.A}
-          guideline={"2.2.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.2.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide"
           }
           linkToExplanation={
@@ -55,11 +55,11 @@ export const PauseStopHide = (props: Props) => {
           title={
             "F50: Failure of Success Criterion 2.2.2 due to a script that causes a blink effect without a mechanism to stop the blinking at 5 seconds or less"
           }
-          successCriterion={"2.2.2 Pause, Stop, Hide"}
+          successCriterionInWords={"2.2.2 Pause, Stop, Hide"}
           serial={2}
           level={Level.A}
-          guideline={"2.2.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.2.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide"
           }
           linkToExplanation={
@@ -75,10 +75,10 @@ export const PauseStopHide = (props: Props) => {
 
         <GuidelineError
           title={"A distraction is present, an animated gif"}
-          successCriterion={"2.2.2 Pause, Stop, Hide"}
+          successCriterionInWords={"2.2.2 Pause, Stop, Hide"}
           serial={3}
-          guideline={"2.2.2"}
-          linkToGuideline={
+          successCriterionNumber={"2.2.2"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide"
           }
           linkToExplanation={

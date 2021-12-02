@@ -16,16 +16,16 @@ export const TimingAdjustable = (props: Props) => {
           title={
             "F40: Failure of Success Criterion 2.2.1 and 2.2.4 due to using meta redirect with a time limit"
           }
-          successCriterion={"2.2.1 Timing Adjustable"}
+          successCriterionInWords={"2.2.1 Timing Adjustable"}
           serial={1}
           explanation={""}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F40.html"
           }
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable"
           }
-          guideline={"2.1.1"}
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
         >
           {/*      <head>
@@ -47,7 +47,7 @@ export const TimingAdjustable = (props: Props) => {
           title={
             "F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to using meta refresh to reload the page"
           }
-          successCriterion={"2.2.1 Timing Adjustable"}
+          successCriterionInWords={"2.2.1 Timing Adjustable"}
           serial={2}
           explanation={
             "This is a deprecated example that changes the user's page at regular intervals. Content developers should " +
@@ -59,10 +59,10 @@ export const TimingAdjustable = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F41.html"
           }
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable"
           }
-          guideline={"2.1.1"}
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
         >
           {/*       <head>

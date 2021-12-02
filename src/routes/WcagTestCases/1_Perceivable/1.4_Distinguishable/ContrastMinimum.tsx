@@ -1,4 +1,7 @@
-import { GuidelineError } from "../../../../components/GuidelineError/GuidelineError";
+import {
+  GuidelineError,
+  Level,
+} from "../../../../components/GuidelineError/GuidelineError";
 import "./ContrastMinimum.css";
 import classNames from "classnames";
 import { Frame } from "../../../../components/Frame/Frame";
@@ -21,12 +24,12 @@ export const ContrastMinimum = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
-          guideline={"1.4.3"}
+          successCriterionNumber={"1.4.3"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -35,6 +38,7 @@ export const ContrastMinimum = (props: Props) => {
             "CSS stylesheet, however the foreground color is not defined. Therefore, the example fails the Success " +
             "Criterion."
           }
+          level={Level.AA}
         >
           <p className={"whiteBackground"}>My background is white.</p>
         </GuidelineError>
@@ -43,12 +47,12 @@ export const ContrastMinimum = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
           serial={2}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
-          guideline={"1.4.3"}
+          successCriterionNumber={"1.4.3"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -57,6 +61,7 @@ export const ContrastMinimum = (props: Props) => {
             " on the CSS stylesheet, however the background color is not defined. Therefore, the example fails the Success " +
             "Criterion."
           }
+          level={Level.AA}
         >
           <p className={"whiteForeground"}>My foreground is white.</p>
         </GuidelineError>
@@ -66,12 +71,13 @@ export const ContrastMinimum = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
           serial={3}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
-          guideline={"1.4.3"}
+          successCriterionNumber={"1.4.3"}
+          level={Level.AA}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -90,12 +96,13 @@ export const ContrastMinimum = (props: Props) => {
           title={
             "Small text does not have a contrast ratio of at least 4.5:1 so does not meet AA"
           }
-          successCriterion={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
           serial={4}
-          guideline={"1.4.3"}
-          linkToGuideline={
+          successCriterionNumber={"1.4.3"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
+          level={Level.AA}
         >
           <p className={"low-contrast-small-aa"}>
             This small text does not have enough contrast with it's background
@@ -106,12 +113,13 @@ export const ContrastMinimum = (props: Props) => {
           title={
             "Large text does not have a contrast ratio of at least 3:1 so does not meet AA"
           }
-          successCriterion={"1.4.3 Contrast (Minimum)"}
+          successCriterionInWords={"1.4.3 Contrast (Minimum)"}
           serial={5}
-          guideline={"1.4.3"}
-          linkToGuideline={
+          successCriterionNumber={"1.4.3"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
+          level={Level.AA}
         >
           <p className={"low-contrast-large-aa"}>
             This large text does not have enough contrast with it's background
@@ -120,8 +128,13 @@ export const ContrastMinimum = (props: Props) => {
 
         <GuidelineError
           title={"Errors identified with a poor colour contrast"}
-          successCriterion={"forms"}
+          successCriterionInWords={"forms"}
           serial={6}
+          level={Level.AA}
+          successCriterionNumber={"1.4.3"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
+          }
         >
           {/*"errors-badly-identified","error-poor-contrast"*/}
           <form className={badlyPoor}>

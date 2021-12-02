@@ -17,47 +17,81 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           title={
             "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
           }
-          successCriterion={"1.2.1 Audio-only and Video-only (Prerecorded)"}
+          successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
           }
-          guideline={"1.2.1"}
+          successCriterionNumber={"1.2.1"}
+          level={Level.A}
+          explanation={
+            'empty placeholder "": empty placeholder "" that is put into the \'text alternative\' location on images or pictures.'
+          }
         >
-          <h4>empty placeholder ""</h4>
-          <p>
-            empty placeholder "" that is put into the 'text alternative'
-            location on images or pictures.
-          </p>
           <img src={BBC} alt={""} />
-          <h4>placeholder text such as "spacer"</h4>
-          <p>
-            placeholder text such as "spacer" or "image" or "picture" etc that
-            are put into the 'text alternative' location on images or pictures.
-          </p>
+        </GuidelineError>
+
+        <GuidelineError
+          title={
+            "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
+          }
+          successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
+          serial={1}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
+          }
+          successCriterionNumber={"1.2.1"}
+          level={Level.A}
+          explanation={
+            'placeholder text such as "spacer": placeholder text such as "spacer" or "image" or "picture" etc that are put into the \'text alternative\' location on images or pictures.'
+          }
+        >
           <img src={BBC} alt={"spacer"} />
-          <h4>programming references</h4>
-          <p>
-            programming references that do not convey the information or
-            function of the non-text content such as "picture 1", "picture 2" or
-            "0001", "0002" or "Intro#1", "Intro#2".
-          </p>
+        </GuidelineError>
+
+        <GuidelineError
+          title={
+            "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
+          }
+          successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
+          serial={1}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
+          }
+          successCriterionNumber={"1.2.1"}
+          level={Level.A}
+          explanation={
+            'programming references: programming references that do not convey the information or function of the non-text content such as "picture 1", "picture 2" or "0001", "0002" or "Intro#1", "Intro#2".'
+          }
+        >
           <img src={BBC} alt={"picture 1"} />
-          <h4>filenames</h4>
-          <p>
-            filenames that are not valid text alternatives in their own right
-            such as "Oct.jpg" or "Chart.jpg" or "sales\\oct\\top3.jpg"
-          </p>
+        </GuidelineError>
+
+        <GuidelineError
+          title={
+            "F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
+          }
+          successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
+          serial={1}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
+          }
+          successCriterionNumber={"1.2.1"}
+          level={Level.A}
+          explanation={
+            'filenames: filenames that are not valid text alternatives in their own right such as "Oct.jpg" or "Chart.jpg" or "sales\\\\oct\\\\top3.jpg"'
+          }
+        >
           <img src={BBC} alt={"Oct.jpg"} />
         </GuidelineError>
 
         <GuidelineError
           title={"Embedded video file is missing text alternative"}
-          successCriterion={"1.2.1 Audio-only and Video-only (Prerecorded)"}
+          successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
           serial={2}
           level={Level.A}
-          guideline={"1.2.1"}
-          linkToGuideline={
+          successCriterionNumber={"1.2.1"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
           }
         >
@@ -79,11 +113,11 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
 
         <GuidelineError
           title={"Embedded audio file is missing text alternative"}
-          successCriterion={"1.2.1 Audio-only and Video-only (Prerecorded)"}
+          successCriterionInWords={"Audio-only and Video-only (Prerecorded)"}
           serial={3}
           level={Level.A}
-          guideline={"1.2.1"}
-          linkToGuideline={
+          successCriterionNumber={"1.2.1"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
           }
         >

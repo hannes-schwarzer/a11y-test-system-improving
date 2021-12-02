@@ -17,10 +17,10 @@ export const LinkPurposeInContext = (props: Props) => {
           title={
             "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
           }
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={1}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           explanation={
@@ -46,10 +46,10 @@ export const LinkPurposeInContext = (props: Props) => {
           title={
             "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
           }
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={2}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           explanation={
@@ -85,10 +85,10 @@ export const LinkPurposeInContext = (props: Props) => {
           title={
             "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
           }
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={3}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           explanation={
@@ -107,10 +107,10 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <GuidelineError
           title={"Link to javascript, invalid hypertext reference"}
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={4}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
@@ -120,10 +120,10 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <GuidelineError
           title={"Uninformative link text"}
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={4}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
@@ -138,10 +138,10 @@ export const LinkPurposeInContext = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Link text with identical title"}
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={5}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
@@ -159,13 +159,13 @@ export const LinkPurposeInContext = (props: Props) => {
           title={
             "Link to PDF does not include information on file format and file size"
           }
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={6}
           linkToExplanation={
             "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html"
           }
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
@@ -181,17 +181,17 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <GuidelineError
           title={"Blank link text"}
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={7}
           level={Level.A}
-          guideline={"2.4.4"}
+          successCriterionNumber={"2.4.4"}
           explanation={
             "The objective of this technique is to describe the purpose of a link in the text of the link. The description lets a user distinguish this link from links in the Web page that lead to other destinations and helps the user determine whether to follow the link. The URI of the destination is generally not sufficiently descriptive."
           }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/general/G91.html"
           }
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
         >
@@ -200,10 +200,10 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <GuidelineError
           title={"Links with the same text go to different pages"}
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={8}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
@@ -227,10 +227,10 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <GuidelineError
           title={"Adjacent links going to the same destination"}
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={9}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
@@ -243,10 +243,10 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <GuidelineError
           title={"Link contains only a full stop"}
-          successCriterion={"2.4.4 Link Purpose (In Context)"}
+          successCriterionInWords={"2.4.4 Link Purpose (In Context)"}
           serial={10}
-          guideline={"2.4.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
@@ -258,12 +258,12 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <GuidelineError
           title={"Non-specific link text"}
-          successCriterion={"links"}
+          successCriterionInWords={"links"}
           serial={11}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
-          guideline={"2.4.4"}
+          successCriterionNumber={"2.4.4"}
           level={Level.A}
         >
           <a href={"rockies.html"}>Click here</a> for more information on the

@@ -15,14 +15,14 @@ export const ContentOnHoverOrFocus = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Tooltips don't receive keyboard focus"}
-          successCriterion={"Content on Hover or Focus"}
+          successCriterionInWords={"Content on Hover or Focus"}
           serial={120}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html"
           }
-          guideline={"1.4.13"}
+          successCriterionNumber={"1.4.13"}
           level={Level.AA}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#content-on-hover-or-focus"
           }
         >

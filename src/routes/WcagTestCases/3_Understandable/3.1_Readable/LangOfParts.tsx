@@ -14,24 +14,24 @@ export const LangOfParts = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Text language changed without required change in direction"}
-          successCriterion={"3.1.2 Language of Parts"}
+          successCriterionInWords={"3.1.2 Language of Parts"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
           }
-          guideline={"3.1.2"}
+          successCriterionNumber={"3.1.2"}
           level={Level.AA}
         >
           <p lang={"ar"}>الإعفاء الإلكتروني من التأشيرة</p>
         </GuidelineError>
         <GuidelineError
           title={"lang attribute not used to identify change of language"}
-          successCriterion={"3.1.2 Language of Parts"}
+          successCriterionInWords={"3.1.2 Language of Parts"}
           serial={2}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
           }
-          guideline={"3.1.2"}
+          successCriterionNumber={"3.1.2"}
           level={Level.AA}
         >
           <p>
@@ -41,12 +41,12 @@ export const LangOfParts = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Text language is in the wrong direction"}
-          successCriterion={"3.1.2 Language of Parts"}
+          successCriterionInWords={"3.1.2 Language of Parts"}
           serial={3}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
           }
-          guideline={"3.1.2"}
+          successCriterionNumber={"3.1.2"}
           level={Level.AA}
         >
           <p dir={"rtl"} lang={"en"}>
@@ -56,12 +56,12 @@ export const LangOfParts = (props: Props) => {
 
         <GuidelineError
           title={"html element has an invalid value in the lang attribute"}
-          successCriterion={"language"}
+          successCriterionInWords={"language"}
           serial={4}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
           }
-          guideline={"3.1.2"}
+          successCriterionNumber={"3.1.2"}
           level={Level.AA}
         >
           <p lang={"foobar"}>
@@ -73,12 +73,12 @@ export const LangOfParts = (props: Props) => {
           title={
             "lang attribute used to identify change of language, but with invalid value"
           }
-          successCriterion={"language"}
+          successCriterionInWords={"language"}
           serial={5}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
           }
-          guideline={"3.1.2"}
+          successCriterionNumber={"3.1.2"}
           level={Level.AA}
         >
           <p>
@@ -89,12 +89,12 @@ export const LangOfParts = (props: Props) => {
 
         <GuidelineError
           title={"html element has lang attribute set to wrong language"}
-          successCriterion={"language"}
+          successCriterionInWords={"language"}
           serial={6}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
           }
-          guideline={"3.1.2"}
+          successCriterionNumber={"3.1.2"}
           level={Level.AA}
         >
           <p lang={"fr"}>
@@ -106,12 +106,12 @@ export const LangOfParts = (props: Props) => {
           title={
             "lang attribute used to identify change of language, but with wrong language"
           }
-          successCriterion={"language"}
+          successCriterionInWords={"language"}
           serial={7}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts"
           }
-          guideline={"3.1.2"}
+          successCriterionNumber={"3.1.2"}
           level={Level.AA}
         >
           <p>

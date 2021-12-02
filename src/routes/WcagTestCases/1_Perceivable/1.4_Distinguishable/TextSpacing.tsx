@@ -14,12 +14,12 @@ export const TextSpacing = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Inadequate line height used"}
-          successCriterion={"1.4.12 Text Spacing"}
+          successCriterionInWords={"1.4.12 Text Spacing"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#text-spacing"
           }
-          guideline={"1.4.12"}
+          successCriterionNumber={"1.4.12"}
           level={Level.AA}
         >
           <p className={"line-height"}>
@@ -31,10 +31,10 @@ export const TextSpacing = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Links not separated by printable characters"}
-          successCriterion={"1.4.12 Text Spacing"}
+          successCriterionInWords={"1.4.12 Text Spacing"}
           serial={2}
-          guideline={"1.4.12"}
-          linkToGuideline={
+          successCriterionNumber={"1.4.12"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#text-spacing"
           }
           level={Level.AA}

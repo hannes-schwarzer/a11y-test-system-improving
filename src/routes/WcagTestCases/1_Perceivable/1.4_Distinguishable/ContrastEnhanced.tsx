@@ -19,12 +19,12 @@ export const ContrastEnhanced = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
-          guideline={"1.4.6"}
+          successCriterionNumber={"1.4.6"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -42,12 +42,12 @@ export const ContrastEnhanced = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
           serial={2}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
-          guideline={"1.4.6"}
+          successCriterionNumber={"1.4.6"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -66,12 +66,12 @@ export const ContrastEnhanced = (props: Props) => {
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
             "specifying background colors or vice versa"
           }
-          successCriterion={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
           serial={3}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
-          guideline={"1.4.6"}
+          successCriterionNumber={"1.4.6"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
           }
@@ -90,10 +90,10 @@ export const ContrastEnhanced = (props: Props) => {
           title={
             "Small text does not have a contrast ratio of at least 7:1 so does not meet AAA"
           }
-          successCriterion={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
           serial={4}
-          guideline={"1.4.6"}
-          linkToGuideline={
+          successCriterionNumber={"1.4.6"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
           level={Level.AAA}
@@ -107,10 +107,10 @@ export const ContrastEnhanced = (props: Props) => {
           title={
             "Large text does not have a contrast ratio of at least 4.5:1 so does not meet AAA"
           }
-          successCriterion={"1.4.6 Contrast (Enhanced)"}
+          successCriterionInWords={"1.4.6 Contrast (Enhanced)"}
           serial={5}
-          guideline={"1.4.6"}
-          linkToGuideline={
+          successCriterionNumber={"1.4.6"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
           level={Level.AAA}

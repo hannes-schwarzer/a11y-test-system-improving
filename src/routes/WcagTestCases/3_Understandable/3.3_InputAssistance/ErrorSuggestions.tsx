@@ -17,10 +17,10 @@ export const ErrorSuggestions = (props: Props) => {
           title={
             "Error messages - no suggestion for corrections given, e.g. required format"
           }
-          successCriterion={"3.3.3 Error Suggestion"}
+          successCriterionInWords={"3.3.3 Error Suggestion"}
           serial={94}
-          guideline={"3.3.3"}
-          linkToGuideline={
+          successCriterionNumber={"3.3.3"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion"
           }
           level={Level.AA}

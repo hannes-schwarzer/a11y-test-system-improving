@@ -20,11 +20,11 @@ export const ErrorIdentification = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Errors are not identified"}
-          successCriterion={"Error Identification"}
+          successCriterionInWords={"Error Identification"}
           serial={1}
           level={Level.A}
-          guideline={"3.3.1"}
-          linkToGuideline={
+          successCriterionNumber={"3.3.1"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#error-identification"
           }
         >

@@ -16,9 +16,11 @@ export const Reflow = (props: Props) => {
         <GuidelineError
           title={"Wide page forces users to scroll horizontally"}
           serial={1}
-          successCriterion={"1.4.10 Reflow"}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#reflow"}
-          guideline={"1.4.10"}
+          successCriterionInWords={"1.4.10 Reflow"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#reflow"
+          }
+          successCriterionNumber={"1.4.10"}
           level={Level.AA}
           explanation={
             "@@ Using fixed sized containers and fixed position content (CSS)"

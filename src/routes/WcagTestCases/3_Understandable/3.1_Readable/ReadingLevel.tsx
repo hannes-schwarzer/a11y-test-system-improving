@@ -15,10 +15,10 @@ export const ReadingLevel = (props: Props) => {
         <GuidelineError
           title={"Plain language is not used"}
           serial={1}
-          successCriterion={"3.1.5 Reading Level"}
-          guideline={"3.1.5"}
+          successCriterionInWords={"3.1.5 Reading Level"}
+          successCriterionNumber={"3.1.5"}
           level={Level.AAA}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#reading-level"
           }
           linkToExplanation={

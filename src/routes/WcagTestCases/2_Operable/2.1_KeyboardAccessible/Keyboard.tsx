@@ -51,10 +51,12 @@ export const Keyboard = (props: Props) => {
             "F54: Failure of Success Criterion 2.1.1 due to using only pointing-device-specific event " +
             "handlers (including gesture) for a function"
           }
-          successCriterion={"2.1.1 Keyboard"}
+          successCriterionInWords={"2.1.1 Keyboard"}
           serial={1}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
-          guideline={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F54.html"
@@ -79,10 +81,12 @@ export const Keyboard = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterion={"2.1.1 Keyboard"}
+          successCriterionInWords={"2.1.1 Keyboard"}
           serial={2}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
-          guideline={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
@@ -108,10 +112,12 @@ export const Keyboard = (props: Props) => {
           title={
             "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received"
           }
-          successCriterion={"2.1.1 Keyboard"}
+          successCriterionInWords={"2.1.1 Keyboard"}
           serial={3}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
-          guideline={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
@@ -139,10 +145,12 @@ export const Keyboard = (props: Props) => {
           title={
             "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
           }
-          successCriterion={"2.1.1 Keyboard"}
+          successCriterionInWords={"2.1.1 Keyboard"}
           serial={4}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
-          guideline={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
@@ -165,10 +173,12 @@ export const Keyboard = (props: Props) => {
           title={
             "F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when emulating links"
           }
-          successCriterion={"2.1.1 Keyboard"}
+          successCriterionInWords={"2.1.1 Keyboard"}
           serial={5}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
-          guideline={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
@@ -189,9 +199,13 @@ export const Keyboard = (props: Props) => {
 
         <GuidelineError
           title={"Keyboard focus is not indicated visually"}
-          successCriterion={"keyboard"}
+          successCriterionInWords={"keyboard"}
           serial={6}
-          guideline={"2.1.1"}
+          successCriterionNumber={"2.1.1"}
+          level={Level.A}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
           }
@@ -203,11 +217,13 @@ export const Keyboard = (props: Props) => {
 
         <GuidelineError
           title={"Dropdown navigation - only the top level items receive focus"}
-          successCriterion={"2.1.1 Keyboard"}
+          successCriterionInWords={"2.1.1 Keyboard"}
           serial={7}
-          guideline={"2.1.1"}
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
         >
           <nav className={"dropdown-nav"} role={"navigation"}>
             <ul>
@@ -231,11 +247,13 @@ export const Keyboard = (props: Props) => {
 
         <GuidelineError
           title={"Link with a role=button does not work with space bar"}
-          successCriterion={"2.1.1 Keyboard"}
+          successCriterionInWords={"2.1.1 Keyboard"}
           serial={8}
           level={Level.A}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
-          guideline={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
+          successCriterionNumber={"2.1.1"}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
@@ -247,9 +265,12 @@ export const Keyboard = (props: Props) => {
 
         <GuidelineError
           title={"Fake button is not keyboard accessible"}
-          successCriterion={"Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={9}
-          guideline={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
+          successCriterionNumber={"2.1.1"}
           level={Level.A}
         >
           <div
@@ -265,10 +286,12 @@ export const Keyboard = (props: Props) => {
 
         <GuidelineError
           title={"Lightbox - close button doesn't receive focus"}
-          successCriterion={"Keyboard"}
+          successCriterionInWords={"Keyboard"}
           serial={10}
-          guideline={"2.1.1"}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
+          successCriterionNumber={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
           level={Level.A}
         >
           <a
@@ -310,10 +333,12 @@ export const Keyboard = (props: Props) => {
 
         <GuidelineError
           title={"Concertina items don't get keyboard focus"}
-          successCriterion={"keyboard"}
+          successCriterionInWords={"keyboard"}
           serial={11}
-          guideline={"2.1.1"}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#keyboard"}
+          successCriterionNumber={"2.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
+          }
           level={Level.A}
         >
           <dl className={"concertina"}>

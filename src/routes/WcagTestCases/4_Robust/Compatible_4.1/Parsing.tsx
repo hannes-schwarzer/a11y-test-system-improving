@@ -16,10 +16,12 @@ export const Parsing = (props: Props) => {
           title={
             "F77: Failure of Success Criterion 4.1.1 due to duplicate values of type ID"
           }
-          successCriterion={"4.1.1 Parsing"}
+          successCriterionInWords={"4.1.1 Parsing"}
           serial={1}
-          guideline={"4.1.1"}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#parsing"}
+          successCriterionNumber={"4.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#parsing"
+          }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F77.html"
           }
@@ -46,10 +48,12 @@ export const Parsing = (props: Props) => {
 
         <GuidelineError
           title={"Two unique labels, but identical for= attributes"}
-          successCriterion={"4.1.1 Parsing"}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#parsing"}
+          successCriterionInWords={"4.1.1 Parsing"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#parsing"
+          }
           serial={2}
-          guideline={"4.1.1"}
+          successCriterionNumber={"4.1.1"}
           linkToExplanation={
             "https://stackoverflow.com/questions/59490259/wcag-2-0-level-aa-input-element-error-no-input-on-code"
           }
@@ -70,8 +74,11 @@ export const Parsing = (props: Props) => {
 
         <GuidelineError
           title={"Duplicate id"}
-          successCriterion={"4.1.1 Parsing"}
-          linkToGuideline={"https://www.w3.org/WAI/WCAG21/quickref/#parsing"}
+          successCriterionInWords={"Parsing"}
+          successCriterionNumber={"4.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#parsing"
+          }
           level={Level.A}
           serial={132}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F77.html"}

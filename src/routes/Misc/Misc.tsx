@@ -2,41 +2,41 @@ import {
   GuidelineError,
   Level,
 } from "../../components/GuidelineError/GuidelineError";
-import { Link } from "react-router-dom";
-import SPACER from "../../assets/spacer.gif";
-import classNames from "classnames";
-import { useState } from "react";
+// import { Link } from "react-router-dom";
+// import SPACER from "../../assets/spacer.gif";
+// import classNames from "classnames";
+// import { useState } from "react";
 
 export const Misc = () => {
-  const keyboardClassHundredNine = classNames("disappearing-alert", "hidden");
-
-  /*Unescapable lightbox*/
-  const lightboxUnescapableHidden = classNames(
-    "lightbox",
-    "unescapable",
-    "hidden"
-  );
-  const lightboxUnescapable = classNames("lightbox", "unescapable");
-  const [visibilityUnescapable, setVisibilityUnescapable] = useState(
-    lightboxUnescapableHidden
-  );
-
-  /*last two lightboxes*/
-  const keyboardClassHundredTwentyTwo = classNames("lightbox focus-far hidden");
-  const keyboardClassHundredTwentyThree = classNames(
-    "lightbox",
-    "not-focused",
-    "hidden"
-  );
+  // const keyboardClassHundredNine = classNames("disappearing-alert", "hidden");
+  //
+  // /*Unescapable lightbox*/
+  // const lightboxUnescapableHidden = classNames(
+  //   "lightbox",
+  //   "unescapable",
+  //   "hidden"
+  // );
+  // const lightboxUnescapable = classNames("lightbox", "unescapable");
+  // const [visibilityUnescapable, setVisibilityUnescapable] = useState(
+  //   lightboxUnescapableHidden
+  // );
+  //
+  // /*last two lightboxes*/
+  // const keyboardClassHundredTwentyTwo = classNames("lightbox focus-far hidden");
+  // const keyboardClassHundredTwentyThree = classNames(
+  //   "lightbox",
+  //   "not-focused",
+  //   "hidden"
+  // );
 
   return (
     <>
       <GuidelineError
         title={"First instance of abbreviation not expanded"}
         serial={1}
-        successCriterion={"3.1.4 Abbreviations"}
-        guideline={"3.1.4"}
-        linkToGuideline={
+        successCriterionInWords={"3.1.4 Abbreviations"}
+        successCriterionNumber={"3.1.4"}
+        linkToSuccessCriterion={
           "https://www.w3.org/WAI/WCAG21/quickref/#abbreviations"
         }
         level={Level.AAA}
@@ -48,7 +48,7 @@ export const Misc = () => {
         transformation of government.
       </GuidelineError>
       {/*2.4.10?*/}
-      <GuidelineError
+      {/*    <GuidelineError
         title={"Content is not in correct reading order in source code"}
         serial={3}
         successCriterion={"content"}
@@ -181,18 +181,18 @@ export const Misc = () => {
           Lines should not exceed 80 characters
         </p>
       </GuidelineError>
-
+*/}
       {/*1.3.1 || 2.4.6 || 2.4.10*/}
-      <GuidelineError
+      {/*      <GuidelineError
         title={"Missing h1"}
         successCriterion={"headings"}
         serial={36}
       >
         <Link to={"/headings/missingh1"}>Example page with no H1</Link>
       </GuidelineError>
-
+*/}
       {/*1.3.1 || No Error?*/}
-      <GuidelineError
+      {/*      <GuidelineError
         title={"Table with some empty cells"}
         successCriterion={"tables"}
         serial={53}
@@ -225,9 +225,9 @@ export const Misc = () => {
           </tbody>
         </table>
       </GuidelineError>
-
+*/}
       {/*This one is still to be implemented*/}
-      <GuidelineError
+      {/*      <GuidelineError
         title={"Links to a sound file, no transcript"}
         successCriterion={"links"}
         serial={74}
@@ -309,9 +309,9 @@ export const Misc = () => {
           <param name={"wmode"} value={"transparent"} /> Alternative text
         </object>
       </GuidelineError>
-
+*/}
       {/*Not 1.1.1 Actually this seems to be valid*/}
-      <GuidelineError
+      {/*      <GuidelineError
         title={"Spacer image found"}
         successCriterion={"html"}
         serial={138}
@@ -319,9 +319,9 @@ export const Misc = () => {
         We are here. <img alt={""} height={1} src={SPACER} width={100} /> And
         you are there.
       </GuidelineError>
-
+*/}
       {/*This actuually seems valid so far as the usage of pre is concerned*/}
-      <GuidelineError
+      {/*      <GuidelineError
         title={"PRE element without CODE element inside it"}
         successCriterion={"html"}
         serial={141}
@@ -387,9 +387,9 @@ export const Misc = () => {
           width={300}
         ></iframe>
       </GuidelineError>
-
+*/}
       {/*2.2.1*/}
-      <GuidelineError
+      {/*      <GuidelineError
         title={"Alert shows for a short time"}
         successCriterion={"keyboard"}
         serial={109}
@@ -401,9 +401,9 @@ export const Misc = () => {
           Name <input type={"text"} />
         </label>
       </GuidelineError>
-
+*/}
       {/*2.1.1 && 2.1.3*/}
-      <GuidelineError
+      {/*      <GuidelineError
         title={
           "Keyboard focus assigned to a non focusable element using tabindex=0"
         }
@@ -413,9 +413,10 @@ export const Misc = () => {
       >
         <p tabIndex={0}>Some random text</p>
       </GuidelineError>
-
+*/}
       {/*Lightbox with not functioning Escape button -
       2.1.3 Keyboard (No Exception) Level AAA ??*/}
+      {/*
       <GuidelineError
         title={"Lightbox - ESC key doesn't close the lightbox"}
         successCriterion={"keyboard"}
@@ -513,6 +514,7 @@ export const Misc = () => {
           </p>
         </div>
       </GuidelineError>
+*/}
     </>
   );
 };

@@ -18,7 +18,7 @@ export const NonTextContrast = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterion={"1.4.11 Non-text Contrast"}
+          successCriterionInWords={"1.4.11 Non-text Contrast"}
           serial={1}
           explanation={
             "The focus indicator is turned off with CSS: The following CSS example will remove the default focus indicator, " +
@@ -28,8 +28,8 @@ export const NonTextContrast = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F78.html"
           }
-          guideline={"1.4.11"}
-          linkToGuideline={
+          successCriterionNumber={"1.4.11"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
           }
         >
@@ -43,7 +43,7 @@ export const NonTextContrast = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterion={"1.4.11 Non-text Contrast"}
+          successCriterionInWords={"1.4.11 Non-text Contrast"}
           serial={2}
           explanation={
             "The outline of elements is visually similar to the focus indicator: The following CSS example will create an " +
@@ -54,8 +54,8 @@ export const NonTextContrast = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F78.html"
           }
-          guideline={"1.4.11"}
-          linkToGuideline={
+          successCriterionNumber={"1.4.11"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
           }
         >
@@ -72,7 +72,7 @@ export const NonTextContrast = (props: Props) => {
             "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
             "removes or renders non-visible the visual focus indicator"
           }
-          successCriterion={"1.4.11 Non-text Contrast"}
+          successCriterionInWords={"1.4.11 Non-text Contrast"}
           serial={3}
           explanation={
             "Elements have a border that occludes the focus indicator: The following CSS example creates a border around " +
@@ -84,8 +84,8 @@ export const NonTextContrast = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F78.html"
           }
-          guideline={"1.4.11"}
-          linkToGuideline={
+          successCriterionNumber={"1.4.11"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
           }
         >

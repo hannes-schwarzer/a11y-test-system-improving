@@ -14,12 +14,12 @@ export const ChangeOnRequest = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Link launches new window with no warning"}
-          successCriterion={"3.2.5 Change on Request"}
+          successCriterionInWords={"3.2.5 Change on Request"}
           serial={71}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#change-on-request"
           }
-          guideline={"3.2.5"}
+          successCriterionNumber={"3.2.5"}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/G201.html"}
           explanation={

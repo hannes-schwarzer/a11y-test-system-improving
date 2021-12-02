@@ -15,12 +15,12 @@ export const HeadingsAndLabels = (props: Props) => {
         {/*2.4.6 & 2.4.10*/}
         <GuidelineError
           title={"Headings not structured in a hierarchical manner"}
-          successCriterion={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"2.4.6 Headings and Labels"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
-          guideline={"2.4.6"}
+          successCriterionNumber={"2.4.6"}
           level={Level.AA}
         >
           <h3>Heading h3</h3>
@@ -51,11 +51,11 @@ export const HeadingsAndLabels = (props: Props) => {
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
-          successCriterion={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"2.4.6 Headings and Labels"}
           serial={2}
-          guideline={"2.4.6"}
+          successCriterionNumber={"2.4.6"}
           level={Level.AA}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
@@ -74,11 +74,11 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Form element has no label"}
-          successCriterion={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"2.4.6 Headings and Labels"}
           serial={3}
-          guideline={"2.4.6"}
+          successCriterionNumber={"2.4.6"}
           level={Level.AA}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
@@ -90,11 +90,11 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Empty label found"}
-          successCriterion={"2.4.6 Headings and Labels"}
-          guideline={"2.4.6"}
+          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionNumber={"2.4.6"}
           serial={4}
           level={Level.AA}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
@@ -107,10 +107,10 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Non-unique field label found"}
-          successCriterion={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"2.4.6 Headings and Labels"}
           serial={5}
-          guideline={"2.4.6"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.6"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           level={Level.AA}
@@ -136,10 +136,10 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Missing labels in checkboxes"}
-          successCriterion={"2.4.6 Headings and Labels"}
+          successCriterionInWords={"2.4.6 Headings and Labels"}
           serial={6}
-          guideline={"2.4.6"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.6"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           level={Level.AA}
@@ -177,10 +177,10 @@ export const HeadingsAndLabels = (props: Props) => {
 
         <GuidelineError
           title={"Placeholder no label"}
-          successCriterion={"2.4.6 Headings and Labels"}
-          guideline={"2.4.6"}
+          successCriterionInWords={"2.4.6 Headings and Labels"}
+          successCriterionNumber={"2.4.6"}
           serial={7}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           level={Level.AA}

@@ -16,10 +16,10 @@ export const ConsistentNavigation = (props: Props) => {
           title={
             "F66: Failure of Success Criterion 3.2.3 due to presenting navigation links in a different relative order on different pages"
           }
-          successCriterion={"3.2.3 Consistent Navigation"}
+          successCriterionInWords={"3.2.3 Consistent Navigation"}
           serial={1}
-          guideline={"3.2.3"}
-          linkToGuideline={
+          successCriterionNumber={"3.2.3"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation"
           }
           level={Level.AA}

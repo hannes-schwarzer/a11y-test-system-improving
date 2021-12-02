@@ -17,10 +17,10 @@ export const FocusOrder = (props: Props) => {
           title={
             "F44: Failure of Success Criterion 2.4.3 due to using tabindex to create a tab order that does not preserve meaning and operability"
           }
-          successCriterion={"2.4.3 Focus Order"}
+          successCriterionInWords={"2.4.3 Focus Order"}
           serial={1}
-          guideline={"2.4.3"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.3"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-order"
           }
           linkToExplanation={
@@ -57,10 +57,10 @@ export const FocusOrder = (props: Props) => {
 
         <GuidelineError
           title={"Focus order in wrong order"}
-          successCriterion={"keyboard"}
+          successCriterionInWords={"keyboard"}
           serial={2}
-          guideline={"2.4.3"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.3"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-order"
           }
           level={Level.A}
@@ -80,13 +80,13 @@ export const FocusOrder = (props: Props) => {
 
         <GuidelineError
           title={"Link with tabindex greater than 0"}
-          successCriterion={"keyboard"}
+          successCriterionInWords={"keyboard"}
           serial={3}
           linkToExplanation={
             "https://dequeuniversity.com/rules/axe/4.0/tabindex"
           }
-          guideline={"2.4.3"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.3"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-order"
           }
           level={Level.A}

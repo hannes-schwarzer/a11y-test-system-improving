@@ -16,10 +16,10 @@ export const ConsistentIdentification = (props: Props) => {
           title={
             "F31: Failure of Success Criterion 3.2.4 due to using two different labels for the same function on different Web pages within a set of Web pages"
           }
-          successCriterion={"3.2.4 Consistent Identification"}
+          successCriterionInWords={"3.2.4 Consistent Identification"}
           serial={1}
-          guideline={"3.2.4"}
-          linkToGuideline={
+          successCriterionNumber={"3.2.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification"
           }
           explanation={

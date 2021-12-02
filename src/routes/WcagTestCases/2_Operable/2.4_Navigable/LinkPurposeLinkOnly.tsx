@@ -16,10 +16,10 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           title={
             "F84: Failure of Success Criterion 2.4.9 due to using a non-specific link such as 'click here' or 'more' without a mechanism to change the link text to specific text."
           }
-          successCriterion={"2.4.9 Link Purpose (Link Only)"}
+          successCriterionInWords={"2.4.9 Link Purpose (Link Only)"}
           serial={1}
-          guideline={"2.4.9"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.9"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
           }
           linkToExplanation={
@@ -39,10 +39,10 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           title={
             "F84: Failure of Success Criterion 2.4.9 due to using a non-specific link such as 'click here' or 'more' without a mechanism to change the link text to specific text."
           }
-          successCriterion={"2.4.9 Link Purpose (Link Only)"}
+          successCriterionInWords={"2.4.9 Link Purpose (Link Only)"}
           serial={2}
-          guideline={"2.4.9"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.9"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
           }
           linkToExplanation={
@@ -64,10 +64,10 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           title={
             "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
           }
-          successCriterion={"2.4.9 Link Purpose (Link Only)"}
+          successCriterionInWords={"2.4.9 Link Purpose (Link Only)"}
           serial={3}
-          guideline={"2.4.9"}
-          linkToGuideline={
+          successCriterionNumber={"2.4.9"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
           }
           linkToExplanation={
@@ -86,12 +86,12 @@ export const LinkPurposeLinkOnly = (props: Props) => {
 
         <GuidelineError
           title={"Link text does not make sense out of context"}
-          successCriterion={"links"}
+          successCriterionInWords={"links"}
           serial={4}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only"
           }
-          guideline={"2.4.9"}
+          successCriterionNumber={"2.4.9"}
           level={Level.AAA}
         >
           <p>

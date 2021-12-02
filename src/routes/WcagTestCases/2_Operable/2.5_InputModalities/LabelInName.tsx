@@ -16,12 +16,12 @@ export const LabelInName = (props: Props) => {
           title={
             "F96: Failure due to the accessible name not containing the visible label text"
           }
-          successCriterion={"2.5.3 Label in Name"}
+          successCriterionInWords={"2.5.3 Label in Name"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"
           }
-          guideline={"2.5.3"}
+          successCriterionNumber={"2.5.3"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F96.html"
@@ -38,12 +38,12 @@ export const LabelInName = (props: Props) => {
           title={
             "F96: Failure due to the accessible name not containing the visible label text"
           }
-          successCriterion={"2.5.3 Label in Name"}
+          successCriterionInWords={"2.5.3 Label in Name"}
           serial={2}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"
           }
-          guideline={"2.5.3"}
+          successCriterionNumber={"2.5.3"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F96.html"
@@ -61,12 +61,12 @@ export const LabelInName = (props: Props) => {
           title={
             "F96: Failure due to the accessible name not containing the visible label text"
           }
-          successCriterion={"2.5.3 Label in Name"}
+          successCriterionInWords={"2.5.3 Label in Name"}
           serial={3}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#label-in-name"
           }
-          guideline={"2.5.3"}
+          successCriterionNumber={"2.5.3"}
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F96.html"

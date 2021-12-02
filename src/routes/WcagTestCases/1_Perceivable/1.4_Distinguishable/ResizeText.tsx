@@ -18,12 +18,12 @@ export const ResizeText = (props: Props) => {
           title={
             "F69: Failure of Success Criterion 1.4.4 when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured"
           }
-          successCriterion={"1.4.4 ResizeText text"}
+          successCriterionInWords={"1.4.4 ResizeText text"}
           serial={1}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
-          guideline={"1.4.4"}
+          successCriterionNumber={"1.4.4"}
           explanation={
             "The font size is set in a scalable way, but the container is set to a fixed pixel size. A gray " +
             "border shows the boundaries of the text container. When the text is resized, it spills out of its container, " +
@@ -54,12 +54,12 @@ export const ResizeText = (props: Props) => {
           title={
             "F69: Failure of Success Criterion 1.4.4 when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured"
           }
-          successCriterion={"1.4.4 ResizeText text"}
+          successCriterionInWords={"1.4.4 ResizeText text"}
           serial={2}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
-          guideline={"1.4.4"}
+          successCriterionNumber={"1.4.4"}
           explanation={
             "The font size is set in a scalable way, but the container is set to a fixed pixel size. A gray border " +
             "shows the boundaries of the text container. The container is set to clip the text, so it is truncated."
@@ -90,12 +90,12 @@ export const ResizeText = (props: Props) => {
             "F80: Failure of Success Criterion 1.4.4 when text-based form controls do not resize when visually rendered " +
             "text is resized up to 200%"
           }
-          successCriterion={"1.4.4 ResizeText text"}
+          successCriterionInWords={"1.4.4 ResizeText text"}
           serial={3}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
-          guideline={"1.4.4"}
+          successCriterionNumber={"1.4.4"}
           explanation={
             "A Contact Form: A Contact Us form has some introductory information and then form controls for " +
             "users to enter their first name, last name, telephone number and email address. The heading, introductory text " +
@@ -163,12 +163,12 @@ export const ResizeText = (props: Props) => {
           title={
             "F94: Failure of Success Criterion 1.4.4 due to text sized in viewport units"
           }
-          successCriterion={"1.4.4 ResizeText text"}
+          successCriterionInWords={"1.4.4 ResizeText text"}
           serial={4}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
-          guideline={"1.4.4"}
+          successCriterionNumber={"1.4.4"}
           explanation={
             "The following CSS and HTML snippet uses VW units to size the text."
           }
@@ -180,12 +180,12 @@ export const ResizeText = (props: Props) => {
         </GuidelineError>
         <GuidelineError
           title={"Very small text found"}
-          successCriterion={"typography"}
+          successCriterionInWords={"typography"}
           serial={5}
-          linkToGuideline={
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
-          guideline={"1.4.4"}
+          successCriterionNumber={"1.4.4"}
           level={Level.AA}
           linkToExplanation={"https://accessibility.psu.edu/fontsizehtml/"}
         >
@@ -198,9 +198,9 @@ export const ResizeText = (props: Props) => {
           title={
             "Content is not readable and functional when text is increased"
           }
-          successCriterion={"1.4.4 ResizeText text"}
-          guideline={"1.4.4"}
-          linkToGuideline={
+          successCriterionInWords={"1.4.4 ResizeText text"}
+          successCriterionNumber={"1.4.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
           level={Level.AA}
@@ -218,9 +218,13 @@ export const ResizeText = (props: Props) => {
 
         <GuidelineError
           title={"Page zoom - boxes that don't expand with the text"}
-          successCriterion={"css"}
+          successCriterionInWords={"css"}
           serial={7}
-          guideline={"1.4.4"}
+          successCriterionNumber={"1.4.4"}
+          level={Level.AA}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
+          }
         >
           <div className={"wont-expand-box"}>
             The box below this example won't expand to fit the text contained

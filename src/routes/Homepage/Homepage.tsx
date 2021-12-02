@@ -26,8 +26,8 @@ export const Homepage = (homepageProps: Props) => {
           title={
             'F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"'
           }
-          guideline={"1.1.1"}
-          linkToGuideline={
+          successCriterionNumber={"1.1.1"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F65.html"}
@@ -35,7 +35,7 @@ export const Homepage = (homepageProps: Props) => {
             "In the code example below, the person using a screen reader would not know the purpose of the image."
           }
           serial={1}
-          successCriterion={"Non-text Content"}
+          successCriterionInWords={"Non-text Content"}
           level={Level.A}
         >
           <img src={BBC} />

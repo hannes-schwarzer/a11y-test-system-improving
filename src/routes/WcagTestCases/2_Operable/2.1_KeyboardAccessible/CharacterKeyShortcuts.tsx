@@ -14,10 +14,10 @@ export const CharacterKeyShortcuts = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <GuidelineError
           title={"Accesskey attribute used for link"}
-          successCriterion={"keyboard"}
+          successCriterionInWords={"keyboard"}
           serial={1}
-          guideline={"2.1.4"}
-          linkToGuideline={
+          successCriterionNumber={"2.1.4"}
+          linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#character-key-shortcuts"
           }
           level={Level.A}
