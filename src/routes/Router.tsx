@@ -51,6 +51,7 @@ import { LabelsOrInstructions } from "./WcagTestCases/3_Understandable/3.3_Input
 import { ErrorSuggestions } from "./WcagTestCases/3_Understandable/3.3_InputAssistance/ErrorSuggestions";
 import { Parsing } from "./WcagTestCases/4_Robust/Compatible_4.1/Parsing";
 import { NameRoleValue } from "./WcagTestCases/4_Robust/Compatible_4.1/NameRoleValue";
+import { SomePage } from "./WcagTestCases/DetailPages/SomePage";
 
 export const Router = () => {
   return (
@@ -293,6 +294,7 @@ export const Router = () => {
         <Route path={"/keyboard/trap"} element={<KeyboardTrap />} />
         <Route path={"/demo-page"} element={<DemoPage />} />
         <Route path={"/misc"} element={<Misc />} />
+        <Route path={"/some-page"} element={<SomePage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -35,6 +35,9 @@ export const OnFocus = (props: Props) => {
           <input
             id={"keayboard__blur-error-first"}
             type="submit"
+            onClick={() => {
+              alert("Test!");
+            }}
             onFocus={() => {
               document!.getElementById("keayboard__blur-error-first")!.blur();
             }}
@@ -85,7 +88,7 @@ export const OnFocus = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
           }
         >
-          <a className={"no-outline"} href={"link.html"}>
+          <a className={"no-outline"} href={"/some-page"}>
             Link with no focus style
           </a>
         </TestCase>
