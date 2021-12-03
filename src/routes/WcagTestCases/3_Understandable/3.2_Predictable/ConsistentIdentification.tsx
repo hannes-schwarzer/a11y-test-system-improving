@@ -26,20 +26,26 @@ export const ConsistentIdentification = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F31.html"
           }
         >
-          <form>
-            <label>
-              Name:
-              <input type="text" name="name" />
-            </label>
-            <input type="submit" value="Search" />
-          </form>
-          <form>
-            <label>
-              Name:
-              <input type="text" name="name" />
-            </label>
-            <input type="submit" value="Find" />
-          </form>
+          <div>
+            <h4>Form on first page</h4>
+            <form>
+              <label>
+                Name:
+                <input type="text" name="name" />
+              </label>
+              <input type="submit" value="Search" />
+            </form>
+          </div>
+          <div>
+            <h4>Form on second page</h4>
+            <form>
+              <label>
+                Name:
+                <input type="text" name="name" />
+              </label>
+              <input type="submit" value="Find" />
+            </form>
+          </div>
         </TestCase>
       </Frame>
     </>
