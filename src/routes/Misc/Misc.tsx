@@ -180,7 +180,7 @@ export const Misc = () => {
 */}
       {/*1.3.1 || 2.4.6 || 2.4.10*/}
       {/*      <TestCase
-        title={"OnlySeparaterInTitle h1"}
+        title={"Missing h1"}
         successCriterion={"headings"}
         
       >

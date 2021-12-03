@@ -304,7 +304,7 @@ export const NameRoleValue = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"OnlySeparaterInTitle labels in checkboxes"}
+          title={"Missing labels in checkboxes"}
           successCriterionInWords={"Name, Role, Value"}
           successCriterionNumber={"4.1.2"}
           level={Level.A}

@@ -18,28 +18,30 @@ export const HeadingsAndLabels = (props: Props) => {
           }
           successCriterionNumber={"2.4.6"}
           level={Level.AA}
+          explanation={
+            "Pages should be structured in a hierarchical manner, generally with one 1st degree headings (h1) being the most important (usually page titles or main content heading), then 2nd degree headings (h2 - usually major section headings), down to 3rd degree headings (sub-sections of the h2), and so on. Technically, lower degree headings should be contained within headings of the next highest degree (i.e., one should not ski heading levels, such as from an h2 to an h4, going down the document). This is an example where heading levels have been skipped and are not in a logical order, which makes the page difficult to understand and navigate for people using assistive technologies such as screen reader."
+          }
         >
           <h3>Heading h3</h3>
           <p>
-            Pages should be structured in a hierarchical manner, generally with
-            one 1st degree headings (h1) being the most important (usually page
-            titles or main content heading), then 2nd degree headings (h2 -
-            usually major section headings), down to 3rd degree headings
-            (sub-sections of the h2), and so on.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
           </p>
           <h5>Heading h5</h5>
           <p>
-            Technically, lower degree headings should be contained within
-            headings of the next highest degree (i.e., one should not skip
-            heading levels, such as from an h2 to an h4, going down the
-            document).
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
           </p>
           <h4>Heading h4</h4>
           <p>
-            This is an example where heading levels have been skipped and are
-            not in a logical order, which makes the page difficult to understand
-            and navigate for people using assistive technologies such as screen
-            reader.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
           </p>
         </TestCase>
 
@@ -83,7 +85,7 @@ export const HeadingsAndLabels = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"EmptyPageTitle label found"}
+          title={"Empty label found"}
           successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
           level={Level.AA}
@@ -127,7 +129,7 @@ export const HeadingsAndLabels = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"OnlySeparaterInTitle labels in checkboxes"}
+          title={"Missing/ not connected labels in checkboxes"}
           successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
           linkToSuccessCriterion={
@@ -135,6 +137,9 @@ export const HeadingsAndLabels = (props: Props) => {
           }
           level={Level.AA}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          explanation={
+            "Labels are present but not connected to the inputs/ checkboxes."
+          }
         >
           <form>
             <fieldset>
@@ -167,7 +172,7 @@ export const HeadingsAndLabels = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Placeholder no label"}
+          title={"Usage of placeholder but no label available"}
           successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
           linkToSuccessCriterion={

@@ -232,7 +232,7 @@ export const LabelsOrInstructions = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"OnlySeparaterInTitle labels in checkboxes"}
+          title={"Missing labels in checkboxes"}
           successCriterionInWords={"Labels or Instructions"}
           successCriterionNumber={"3.3.2"}
           level={Level.A}

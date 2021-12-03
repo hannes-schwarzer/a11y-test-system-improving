@@ -1222,7 +1222,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"OnlySeparaterInTitle labels in checkboxes"}
+          title={"Missing labels in checkboxes"}
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
           level={Level.A}

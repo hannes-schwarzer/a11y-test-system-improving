@@ -1,5 +1,5 @@
 export const MissingHOne = () => {
-  document.documentElement.title = "OnlySeparaterInTitle h1";
+  document.documentElement.title = "Missing h1";
   document.documentElement.lang = "en";
   return (
     <>
