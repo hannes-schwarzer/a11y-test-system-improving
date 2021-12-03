@@ -83,7 +83,7 @@ export const HeadingsAndLabels = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Empty label found"}
+          title={"EmptyPageTitle label found"}
           successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
           level={Level.AA}
@@ -127,7 +127,7 @@ export const HeadingsAndLabels = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Missing labels in checkboxes"}
+          title={"OnlySeparaterInTitle labels in checkboxes"}
           successCriterionInWords={"Headings and Labels"}
           successCriterionNumber={"2.4.6"}
           linkToSuccessCriterion={

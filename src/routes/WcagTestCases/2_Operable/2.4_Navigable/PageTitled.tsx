@@ -22,11 +22,14 @@ export const PageTitled = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F25.html"
           }
         >
-          Placeholder and Reminder: This page has an empty page title
+          <p>
+            For this test you need to visit the following page:{" "}
+            <Link to={"/page-title/empty-title"}>Link to empty page title</Link>
+          </p>
         </TestCase>
 
         <TestCase
-          title={"This page does not have a title element."}
+          title={"No page title"}
           successCriterionInWords={"Page Titled"}
           successCriterionNumber={"2.4.2"}
           linkToSuccessCriterion={
@@ -37,45 +40,10 @@ export const PageTitled = (props: Props) => {
             "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
           }
         >
-          <html>
-            <h1>this page has no title</h1>
-          </html>
-        </TestCase>
-
-        <TestCase
-          title={"This page has a title element that is empty."}
-          successCriterionInWords={"Page Titled"}
-          successCriterionNumber={"2.4.2"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
-          }
-          level={Level.A}
-          linkToExplanation={
-            "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
-          }
-        >
-          <html>
-            <title></title>
-          </html>
-        </TestCase>
-
-        <TestCase
-          title={
-            "This page does not have a title element. The title element in the content of the iframe does not function as the title for the entire page."
-          }
-          successCriterionInWords={"Page Titled"}
-          successCriterionNumber={"2.4.2"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
-          }
-          level={Level.A}
-          linkToExplanation={
-            "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
-          }
-        >
-          <html>
-            <iframe src="/test-assets/sc2-4-2-title-page-with-title.html"></iframe>
-          </html>
+          <p>
+            For this test you need to visit the following page:{" "}
+            <Link to={"/page-title/no-title"}>Link to page with no title</Link>
+          </p>
         </TestCase>
 
         <TestCase
@@ -90,14 +58,12 @@ export const PageTitled = (props: Props) => {
             "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
           }
         >
-          <html>
-            <head>
-              <title></title>
-            </head>
-            <body>
-              <title>Title of the page.</title>
-            </body>
-          </html>
+          <p>
+            For this test you need to visit the following page:{" "}
+            <Link to={"/page-title/two-titles"}>
+              Link to page with two titles
+            </Link>
+          </p>
         </TestCase>
 
         <TestCase
@@ -114,9 +80,12 @@ export const PageTitled = (props: Props) => {
             "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
           }
         >
-          <html>
-            <title> </title>
-          </html>
+          <p>
+            For this test you need to visit the following page:{" "}
+            <Link to={"/page-title/only-separater-in-title"}>
+              Link to page with only separater in title
+            </Link>
+          </p>
         </TestCase>
 
         <TestCase
@@ -131,36 +100,12 @@ export const PageTitled = (props: Props) => {
             "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
           }
         >
-          <Link to={"/page-title/inappropriate"}>Inappropriate page title</Link>
-        </TestCase>
-
-        <TestCase
-          title={"Empty page title"}
-          successCriterionInWords={"Page Titled"}
-          successCriterionNumber={"2.4.2"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
-          }
-          level={Level.A}
-          linkToExplanation={
-            "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
-          }
-        >
-          <Link to={"/page-title/empty"}>Empty page title</Link>
-        </TestCase>
-        <TestCase
-          title={"Missing page title"}
-          successCriterionInWords={"Page Titled"}
-          successCriterionNumber={"2.4.2"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
-          }
-          level={Level.A}
-          linkToExplanation={
-            "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
-          }
-        >
-          <Link to={"/page-title/missing"}>Missing page title</Link>
+          <p>
+            For this test you need to visit the following page:{" "}
+            <Link to={"/page-title/inappropriate-page-title"}>
+              Link to page with inappropriate page title
+            </Link>
+          </p>
         </TestCase>
       </Frame>
     </>

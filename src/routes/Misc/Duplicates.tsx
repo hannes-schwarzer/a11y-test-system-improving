@@ -21,7 +21,7 @@ export const Duplicates = () => {
       </TestCase>
 
       <TestCase
-        title={"Empty h1"}
+        title={"EmptyPageTitle h1"}
         successCriterionInWords={"Name, Role, Value"}
         successCriterionNumber={"4.1.2"}
         linkToSuccessCriterion={
@@ -61,6 +61,23 @@ export const Duplicates = () => {
         <form>
           <input type={"text"} />
         </form>
+      </TestCase>
+
+      <TestCase
+        title={"This page has a title element that is empty."}
+        successCriterionInWords={"Page Titled"}
+        successCriterionNumber={"2.4.2"}
+        linkToSuccessCriterion={
+          "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
+        }
+        level={Level.A}
+        linkToExplanation={
+          "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
+        }
+      >
+        <html>
+          <title></title>
+        </html>
       </TestCase>
     </>
   );

@@ -234,7 +234,7 @@ export const NonTextContent = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Empty alt attribute on image button"}
+          title={"EmptyPageTitle alt attribute on image button"}
           successCriterionInWords={"Non-text Content"}
           successCriterionNumber={"1.1.1"}
           linkToSuccessCriterion={

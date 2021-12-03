@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Inappropriate } from "./WcagTestCases/DetailPages/Inappropriate";
-import { Empty } from "./WcagTestCases/DetailPages/Empty";
-import { Missing } from "./WcagTestCases/DetailPages/Missing";
+import { Inappropriate } from "./WcagTestCases/DetailPages/Navigable_Detail/Inappropriate";
+import { EmptyPageTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/EmptyPageTitle";
+import { OnlySeparaterInTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/OnlySeparaterInTitle";
 import { MissingHOne } from "./WcagTestCases/DetailPages/MissingHOne";
 import { KeyboardTrap } from "./WcagTestCases/DetailPages/KeyboardTrap";
 import { DemoPage } from "./WcagTestCases/DetailPages/DemoPage";
@@ -52,6 +52,8 @@ import { ErrorSuggestions } from "./WcagTestCases/3_Understandable/3.3_InputAssi
 import { Parsing } from "./WcagTestCases/4_Robust/Compatible_4.1/Parsing";
 import { NameRoleValue } from "./WcagTestCases/4_Robust/Compatible_4.1/NameRoleValue";
 import { SomePage } from "./WcagTestCases/DetailPages/SomePage";
+import { NoPageTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/NoPageTitle";
+import { TwoPageTitles } from "./WcagTestCases/DetailPages/Navigable_Detail/TwoPageTitles";
 
 export const Router = () => {
   return (
@@ -287,9 +289,17 @@ export const Router = () => {
           element={<NameRoleValue pageTitle={"4.1.2 Name, Role, Value"} />}
         />
         {/*Misc & Detail pages*/}
-        <Route path={"/page-title/inappropriate"} element={<Inappropriate />} />
-        <Route path={"/page-title/empty"} element={<Empty />} />
-        <Route path={"/page-title/missing"} element={<Missing />} />
+        <Route
+          path={"/page-title/inappropriate-page-title"}
+          element={<Inappropriate />}
+        />
+        <Route path={"/page-title/empty-title"} element={<EmptyPageTitle />} />
+        <Route path={"/page-title/no-title"} element={<NoPageTitle />} />
+        <Route path={"/page-title/two-titles"} element={<TwoPageTitles />} />
+        <Route
+          path={"/page-title/only-separater-in-title"}
+          element={<OnlySeparaterInTitle />}
+        />
         <Route path={"/headings/missingh1"} element={<MissingHOne />} />
         <Route path={"/keyboard/trap"} element={<KeyboardTrap />} />
         <Route path={"/demo-page"} element={<DemoPage />} />

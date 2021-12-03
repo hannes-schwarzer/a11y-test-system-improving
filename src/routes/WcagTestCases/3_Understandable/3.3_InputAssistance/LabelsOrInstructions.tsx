@@ -104,7 +104,7 @@ export const LabelsOrInstructions = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Empty legend"}
+          title={"EmptyPageTitle legend"}
           successCriterionInWords={"Labels or Instructions"}
           level={Level.A}
           linkToSuccessCriterion={
@@ -191,7 +191,7 @@ export const LabelsOrInstructions = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Empty label found"}
+          title={"EmptyPageTitle label found"}
           successCriterionInWords={"Labels or Instructions"}
           successCriterionNumber={"3.3.2"}
           level={Level.A}
@@ -232,7 +232,7 @@ export const LabelsOrInstructions = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Missing labels in checkboxes"}
+          title={"OnlySeparaterInTitle labels in checkboxes"}
           successCriterionInWords={"Labels or Instructions"}
           successCriterionNumber={"3.3.2"}
           level={Level.A}

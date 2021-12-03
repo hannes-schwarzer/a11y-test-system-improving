@@ -1119,7 +1119,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"Empty legend"}
+          title={"EmptyPageTitle legend"}
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
@@ -1206,7 +1206,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"Empty label found"}
+          title={"EmptyPageTitle label found"}
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
           level={Level.A}
@@ -1222,7 +1222,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"Missing labels in checkboxes"}
+          title={"OnlySeparaterInTitle labels in checkboxes"}
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
           level={Level.A}

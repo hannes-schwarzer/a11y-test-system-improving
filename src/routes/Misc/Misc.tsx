@@ -180,7 +180,7 @@ export const Misc = () => {
 */}
       {/*1.3.1 || 2.4.6 || 2.4.10*/}
       {/*      <TestCase
-        title={"Missing h1"}
+        title={"OnlySeparaterInTitle h1"}
         successCriterion={"headings"}
         
       >
@@ -284,7 +284,7 @@ export const Misc = () => {
       </TestCase>
 
       <TestCase
-        title={"Empty paragraph"}
+        title={"EmptyPageTitle paragraph"}
         successCriterion={"html"}
         
       >
@@ -511,6 +511,24 @@ export const Misc = () => {
         </div>
       </TestCase>
 */}
+      <TestCase
+        title={
+          "This page does not have a title element. The title element in the content of the iframe does not function as the title for the entire page."
+        }
+        successCriterionInWords={"Page Titled"}
+        successCriterionNumber={"2.4.2"}
+        linkToSuccessCriterion={
+          "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
+        }
+        level={Level.A}
+        linkToExplanation={
+          "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
+        }
+      >
+        <html>
+          <iframe src="/test-assets/sc2-4-2-title-page-with-title.html"></iframe>
+        </html>
+      </TestCase>
     </>
   );
 };
