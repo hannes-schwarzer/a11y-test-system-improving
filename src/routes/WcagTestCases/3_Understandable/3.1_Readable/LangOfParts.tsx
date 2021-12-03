@@ -20,6 +20,7 @@ export const LangOfParts = (props: Props) => {
         >
           <p lang={"ar"}>الإعفاء الإلكتروني من التأشيرة</p>
         </TestCase>
+
         <TestCase
           title={"lang attribute not used to identify change of language"}
           successCriterionInWords={"Language of Parts"}
@@ -34,6 +35,7 @@ export const LangOfParts = (props: Props) => {
             plaisante!"
           </p>
         </TestCase>
+
         <TestCase
           title={"Text language is in the wrong direction"}
           successCriterionInWords={"Language of Parts"}
@@ -95,7 +97,7 @@ export const LangOfParts = (props: Props) => {
 
         <TestCase
           title={
-            "lang attribute used to identify change of language, but with wrong language"
+            "lang attribute used to identify change of language, but with wrong language: spanish instead of french"
           }
           successCriterionInWords={"Language of Parts"}
           linkToSuccessCriterion={
