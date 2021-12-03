@@ -26,26 +26,30 @@ export const ConsistentNavigation = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F66.html"
           }
         >
-          Page 1 Menu
-          <nav id="menu">
-            <a href="Brazil.htm">Brazil</a>
-            <br />
-            <a href="Canada.htm">Canada</a>
-            <br />
-            <a href="Germany.htm">Germany</a>
-            <br />
-            <a href="Poland.htm">Poland</a>
-          </nav>
-          Page 2 Menu
-          <nav id="menu">
-            <a href="Canada.htm">Canada</a>
-            <br />
-            <a href="Brazil.htm">Brazil</a>
-            <br />
-            <a href="Germany.htm">Germany</a>
-            <br />
-            <a href="Poland.htm">Poland</a>
-          </nav>
+          <div>
+            <h4>Page 1 Menu</h4>
+            <nav id="menu">
+              <a href="Brazil.htm">Brazil</a>
+              <br />
+              <a href="Canada.htm">Canada</a>
+              <br />
+              <a href="Germany.htm">Germany</a>
+              <br />
+              <a href="Poland.htm">Poland</a>
+            </nav>
+          </div>
+          <div>
+            <h4>Page 2 Menu</h4>
+            <nav id="menu">
+              <a href="Canada.htm">Canada</a>
+              <br />
+              <a href="Brazil.htm">Brazil</a>
+              <br />
+              <a href="Germany.htm">Germany</a>
+              <br />
+              <a href="Poland.htm">Poland</a>
+            </nav>
+          </div>
         </TestCase>
       </Frame>
     </>
