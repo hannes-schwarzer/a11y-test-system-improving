@@ -1,5 +1,7 @@
 import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
+import { Link } from "react-router-dom";
+import "./LabelInName.css";
 
 interface Props {
   pageTitle: string;
@@ -30,6 +32,7 @@ export const LabelInName = (props: Props) => {
             Go
           </button>
         </TestCase>
+
         <TestCase
           title={
             "F96: Failure due to the accessible name not containing the visible label text"
@@ -47,11 +50,12 @@ export const LabelInName = (props: Props) => {
             'Invisible link text disrupts visible label text string in accessible name: A download link reads "Download specification" but there is invisible link text so that the accessible name of that link is "Download gizmo specification". While the visible label text is contained in the accessible name, there is no string match which may prevent the link from being activated by speech input.'
           }
         >
-          <a href="#">
+          <Link to={"/some-page"}>
             Download <span className="accessibly-hidden">gizmo</span>{" "}
             specification
-          </a>
+          </Link>
         </TestCase>
+
         <TestCase
           title={
             "F96: Failure due to the accessible name not containing the visible label text"
