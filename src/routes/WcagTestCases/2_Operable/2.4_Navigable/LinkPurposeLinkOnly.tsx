@@ -23,9 +23,7 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           }
           level={Level.AAA}
           explanation={
-            'This failure describes a common condition where links such as "click here" or "more" are used as anchor elements where you need to have the surrounding text to understand their purpose and where there isn\'t any mechanism to make the destination clear by itself, such as a button to expand the link text.\n' +
-            "\n" +
-            'Many blind people who use screen readers call up a dialog box that has a list of links from the page. They use this list of links to decide where they will go. But if many of the links in that list simply say "click here" or "more" they will be unable to use this feature in their screen reader, which is a core navigation strategy. That\'s why it\'s a failure of 2.4.9 to not provide any way of allowing them to know the destination from the link text alone. It is also true for people who tab through links. If all they hear as they tab through the document is "click here, click here, click here etc." they will become confused.'
+            'This failure describes a common condition where links such as "click here" or "more" are used as anchor elements where you need to have the surrounding text to understand their purpose and where there isn\'t any mechanism to make the destination clear by itself, such as a button to expand the link text. Many blind people who use screen readers call up a dialog box that has a list of links from the page. They use this list of links to decide where they will go. But if many of the links in that list simply say "click here" or "more" they will be unable to use this feature in their screen reader, which is a core navigation strategy. That\'s why it\'s a failure of 2.4.9 to not provide any way of allowing them to know the destination from the link text alone. It is also true for people who tab through links. If all they hear as they tab through the document is "click here, click here, click here etc." they will become confused.'
           }
         >
           <a href="file110.htm">Click here</a> for more information on the Rocky
@@ -45,14 +43,12 @@ export const LinkPurposeLinkOnly = (props: Props) => {
           }
           level={Level.AAA}
           explanation={
-            'This failure describes a common condition where links such as "click here" or "more" are used as anchor elements where you need to have the surrounding text to understand their purpose and where there isn\'t any mechanism to make the destination clear by itself, such as a button to expand the link text.\n' +
-            "\n" +
-            'Many blind people who use screen readers call up a dialog box that has a list of links from the page. They use this list of links to decide where they will go. But if many of the links in that list simply say "click here" or "more" they will be unable to use this feature in their screen reader, which is a core navigation strategy. That\'s why it\'s a failure of 2.4.9 to not provide any way of allowing them to know the destination from the link text alone. It is also true for people who tab through links. If all they hear as they tab through the document is "click here, click here, click here etc." they will become confused.'
+            'This failure describes a common condition where links such as "click here" or "more" are used as anchor elements where you need to have the surrounding text to understand their purpose and where there isn\'t any mechanism to make the destination clear by itself, such as a button to expand the link text. Many blind people who use screen readers call up a dialog box that has a list of links from the page. They use this list of links to decide where they will go. But if many of the links in that list simply say "click here" or "more" they will be unable to use this feature in their screen reader, which is a core navigation strategy. That\'s why it\'s a failure of 2.4.9 to not provide any way of allowing them to know the destination from the link text alone. It is also true for people who tab through links. If all they hear as they tab through the document is "click here, click here, click here etc." they will become confused.'
           }
         >
           <h2>News headlines</h2>
-          The middle east peace meetings have yielded fruitful dialogue.
-          <a href="r4300.htm">read more</a>
+          The middle east peace meetings have yielded fruitful dialogue.{" "}
+          <a href="r4300.htm">Read more</a>
         </TestCase>
 
         <TestCase
