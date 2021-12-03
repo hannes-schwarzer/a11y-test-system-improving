@@ -1,6 +1,7 @@
 import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import REDPANDA from "../../../../assets/220px-RedPandaFullBody.jpeg";
 import { Frame } from "../../../../components/Frame/Frame";
+import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -33,11 +34,11 @@ export const LinkPurposeInContext = (props: Props) => {
             A British businessman has racked up 2 million flyer miles and plans
             to travel on the world's first commercial tourism flights to space.
           </p>
-
           <p>
-            <a href="ff.html">Read More...</a>
+            <Link to={"/some-page"}>Read More...</Link>
           </p>
         </TestCase>
+
         <TestCase
           title={
             "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
