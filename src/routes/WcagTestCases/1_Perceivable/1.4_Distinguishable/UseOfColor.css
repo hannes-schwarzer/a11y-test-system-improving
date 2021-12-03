@@ -1,4 +1,4 @@
-p a:link {text-decoration: none}
+/*p a:link {text-decoration: none}
 p a:visited {text-decoration: none}
 p a:active {text-decoration: none}
 p a:hover {text-decoration: underline; color: red;}
@@ -19,7 +19,7 @@ p.unobvious-link a{
     text-decoration: none;
     color: #000000;
 }
-
+*/
 /*the following needs sortng and cleaning*/
 .errors-badly-identified .validation-summary {
     padding: 1em;

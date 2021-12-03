@@ -19,11 +19,11 @@ export const LangOfPage = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#language-of-page"
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/html/H57.html"
+          }
         >
-          <p>
-            Placeholder and Reminder: This page has an empty lang attribute:
-            "html lang"
-          </p>
+          <p>This page has an empty lang attribute: "html lang".</p>
         </TestCase>
       </Frame>
     </>
