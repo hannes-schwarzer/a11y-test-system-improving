@@ -33,5 +33,9 @@
     cursor: hand;
 }
 
-
+.no-outline,
+.no-outline:focus {
+    outline: none;
+    background: none;
+}
 

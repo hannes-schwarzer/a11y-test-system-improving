@@ -67,7 +67,7 @@ export const FocusVisible = (props: Props) => {
             onFocus={() => {
               document!.getElementById("keayboard__blur-error-second")!.blur();
             }}
-            href="Page.html"
+            href="/some-page"
           >
             <img src={LINK} />
           </a>
@@ -92,8 +92,8 @@ export const FocusVisible = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
         >
-          <a href={"somepage.html"} className={"nontextconstrast__no-focus"}>
-            Link to some page
+          <a href={"/some-page"} className={"focus-visibility__no-focus"}>
+            Link to some page with no visible focus
           </a>
         </TestCase>
 
@@ -154,7 +154,7 @@ export const FocusVisible = (props: Props) => {
           </a>
         </TestCase>
         <TestCase
-          title={"Focus not visible"}
+          title={"Focus not visible: Removed by css style"}
           successCriterionInWords={"Focus Visible"}
           level={Level.AA}
           successCriterionNumber={"2.4.7"}
@@ -164,27 +164,10 @@ export const FocusVisible = (props: Props) => {
         >
           <a className={"not-visible-outline-link"} href={"#"}>
             This link has visible focus
-          </a>
-          but this button
-          <button className={"not-visible-outline-button"}>Search</button>
+          </a>{" "}
+          but this button{" "}
+          <button className={"not-visible-outline-button"}>Search</button>{" "}
           doesn't.
-        </TestCase>
-
-        <TestCase
-          title={"Keyboard focus is not indicated visually"}
-          successCriterionInWords={"Focus Visible"}
-          successCriterionNumber={"2.4.7"}
-          level={Level.AA}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
-          }
-          linkToExplanation={
-            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
-          }
-        >
-          <a className={"no-outline"} href={"link.html"}>
-            Link with no focus style
-          </a>
         </TestCase>
       </Frame>
     </>

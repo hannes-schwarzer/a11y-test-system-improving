@@ -529,6 +529,23 @@ export const Misc = () => {
           <iframe src="/test-assets/sc2-4-2-title-page-with-title.html"></iframe>
         </html>
       </TestCase>
+
+      <TestCase
+        title={"Keyboard focus is not indicated visually"}
+        successCriterionInWords={"Focus Visible"}
+        successCriterionNumber={"2.4.7"}
+        level={Level.AA}
+        linkToSuccessCriterion={
+          "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
+        }
+        linkToExplanation={
+          "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
+        }
+      >
+        <a className={"no-outline"} href={"link.html"}>
+          Link with no focus style
+        </a>
+      </TestCase>
     </>
   );
 };
