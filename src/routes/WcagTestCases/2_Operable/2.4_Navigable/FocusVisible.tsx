@@ -93,7 +93,7 @@ export const FocusVisible = (props: Props) => {
           }
         >
           <a href={"/some-page"} className={"focus-visibility__no-focus"}>
-            Link to some page with no visible focus
+            Link with no visible focus to some page
           </a>
         </TestCase>
 
