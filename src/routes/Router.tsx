@@ -3,7 +3,7 @@ import { Inappropriate } from "./WcagTestCases/DetailPages/Navigable_Detail/Inap
 import { EmptyPageTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/EmptyPageTitle";
 import { OnlySeparaterInTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/OnlySeparaterInTitle";
 import { MissingHOne } from "./WcagTestCases/DetailPages/MissingHOne";
-import { KeyboardTrap } from "./WcagTestCases/DetailPages/KeyboardTrap";
+import { KeyboardTrap } from "./WcagTestCases/DetailPages/KeyboardAccessible/KeyboardTrap";
 import { Homepage } from "./Homepage/Homepage";
 import { Misc } from "./Misc/Misc";
 import { NonTextContent } from "./WcagTestCases/1_Perceivable/1.1_TextAlternatives/NonTextContent";

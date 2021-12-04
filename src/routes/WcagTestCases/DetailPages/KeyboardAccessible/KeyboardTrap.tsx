@@ -12,7 +12,10 @@ export const KeyboardTrap = () => {
       <ul>
         <li>
           <a
-            className={"trap"}
+            onKeyDown={(event) => {
+              event.preventDefault();
+              window.open("https://en.wikipedia.org/wiki/Booby_trap");
+            }}
             href={"https://en.wikipedia.org/wiki/Booby_trap"}
           >
             trap

@@ -1,5 +1,6 @@
 import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
+import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -18,9 +19,9 @@ export const NoKeyboardTrap = (props: Props) => {
           successCriterionNumber={"2.1.2"}
           level={Level.A}
         >
-          <a href={"/keyboard/trap"}>
+          <Link to={"/keyboard/trap"}>
             Example page that contains a keyboard trap
-          </a>
+          </Link>
         </TestCase>
       </Frame>
     </>
