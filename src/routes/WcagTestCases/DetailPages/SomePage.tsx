@@ -3,7 +3,7 @@ export const SomePage = () => {
     <>
       <h1>Hello and welcome on SomePage!</h1>
       <p>
-        This is a random page for tests without more content than waht you
+        This is a random page for tests without any more content than what you
         already read.
       </p>
     </>

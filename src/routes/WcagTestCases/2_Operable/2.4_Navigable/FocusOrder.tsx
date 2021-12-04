@@ -11,6 +11,26 @@ export const FocusOrder = (props: Props) => {
     <>
       <Frame pageTitle={props.pageTitle}>
         <TestCase
+          title={"Link with tabindex greater than 0"}
+          successCriterionInWords={"Focus Order"}
+          linkToExplanation={
+            "https://dequeuniversity.com/rules/axe/4.0/tabindex"
+          }
+          successCriterionNumber={"2.4.3"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#focus-order"
+          }
+          level={Level.A}
+          explanation={
+            "Using tabindex with a value greater than 0 can create as many problems as it solves. It creates an unexpected tab order, which makes the page less intuitive and can give the appearance of skipping certain elements entirely."
+          }
+        >
+          <a href={"/some-page"} tabIndex={5}>
+            A link with a tabindex greater than 0
+          </a>
+        </TestCase>
+
+        <TestCase
           title={
             "F44: Failure of Success Criterion 2.4.3 due to using tabindex to create a tab order that does not preserve meaning and operability"
           }
@@ -59,35 +79,21 @@ export const FocusOrder = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-order"
           }
           level={Level.A}
+          explanation={
+            "Here CSS is used to visually rearrange the order of the links. Because of this it clashes with the element order of the HTML tree. This produces a counter intuitive order when tabbed through."
+          }
         >
           <div className={"focus-order-broken"}>
-            <a className={"first"} href={"#"}>
+            <a className={"first"} href={"/some-page"}>
               First link
             </a>
-            <a className={"second"} href={"#"}>
+            <a className={"second"} href={"/some-page"}>
               Second link
             </a>
-            <a className={"third"} href={"#"}>
+            <a className={"third"} href={"/some-page"}>
               Third link
             </a>
           </div>
-        </TestCase>
-
-        <TestCase
-          title={"Link with tabindex greater than 0"}
-          successCriterionInWords={"Focus Order"}
-          linkToExplanation={
-            "https://dequeuniversity.com/rules/axe/4.0/tabindex"
-          }
-          successCriterionNumber={"2.4.3"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#focus-order"
-          }
-          level={Level.A}
-        >
-          <a href={"page.html"} tabIndex={5}>
-            A link with a tabindex greater than 0
-          </a>
         </TestCase>
       </Frame>
     </>
