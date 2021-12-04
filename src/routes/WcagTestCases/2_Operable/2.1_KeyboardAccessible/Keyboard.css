@@ -1,20 +1,20 @@
-/*6 - Keyboard focus is not indicated visually*/
-.no-outline,
-.no-outline:focus {
+/*Keyboard focus is not indicated visually*/
+.keyboard__no-outline,
+.keyboard__no-outline:focus {
     outline: none;
     background: none;
 }
 
-/*7*/
-.dropdown-nav > ul > li > ul {
+/*Dropdown navigation - only the top level items receive focus*/
+.keyboard__dropdown-nav > ul > li > ul {
     display: none;
 }
-.dropdown-nav > ul > li:hover > ul {
+.keyboard__dropdown-nav > ul > li:hover > ul {
     display: block;
 }
 
 /*8 & 9*/
-.button {
+.keyboard__button {
     display: inline-block;
     padding: 10px 20px;
     color: #fff;
@@ -23,11 +23,12 @@
     text-decoration: none;
     cursor: pointer;
 }
-
-/* Lightbox */
-.hidden {
+/*Lightbox and Concertina*/
+.keyboard__hidden {
     display: none;
 }
+
+/*Lightbox - close button doesn't receive focus*/
 .lightbox {
     position: fixed;
     width: 400px;
@@ -45,29 +46,24 @@
 }
 .lightbox span.close-button {
     cursor: pointer;
-    cursor: hand;
 }
 
 
-/*11 Concertina */
-.concertina dt {
+/*Concertina items don't get keyboard focus*/
+.keyboard__concertina dt {
     padding-top: 14px;
     padding-bottom: 12px;
     border-top: 1px solid #bfc1c3;
 }
-.concertina dt:hover {
+.keyboard__concertina dt:hover {
     cursor: pointer;
-    cursor: hand;
     background: #f8f8f8;
 }
-.concertina dt:before {
+.keyboard__concertina dt:before {
     content: '>';
     font-size: 0.7em;
     margin-left: 1em;
     margin-right: 0.4em;
     position: relative;
     top: -0.25em;
-}
-.concertina dt.expanded:before {
-    content: 'v';
 }

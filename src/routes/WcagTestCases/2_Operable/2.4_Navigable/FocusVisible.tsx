@@ -33,10 +33,10 @@ export const FocusVisible = (props: Props) => {
           }
         >
           <input
-            id={"keayboard__blur-error-first"}
+            id={"keyboard__blur-error-first"}
             type="submit"
             onFocus={() => {
-              document!.getElementById("keayboard__blur-error-first")!.blur();
+              document!.getElementById("keyboard__blur-error-first")!.blur();
             }}
           />
         </TestCase>
@@ -63,9 +63,9 @@ export const FocusVisible = (props: Props) => {
           }
         >
           <a
-            id={"keayboard__blur-error-second"}
+            id={"keyboard__blur-error-second"}
             onFocus={() => {
-              document!.getElementById("keayboard__blur-error-second")!.blur();
+              document!.getElementById("keyboard__blur-error-second")!.blur();
             }}
             href="/some-page"
           >

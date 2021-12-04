@@ -1,6 +1,7 @@
 import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import LINK from "../../../../assets/link.png";
 import GO from "../../../../assets/go.png";
+import NEXTPAGE from "../../../../assets/Next-Page-PNG-Image.png";
 import "./Keyboard.css";
 import classNames from "classnames";
 import { useState } from "react";
@@ -12,32 +13,36 @@ interface Props {
 
 export const Keyboard = (props: Props) => {
   const nextPage = () => {
-    //dummy shell function
+    alert("Next Page would be opened.");
   };
 
-  /*10*/
-  const hiddenDiv = classNames("lightbox", "close-button", "hidden");
-  const unhiddenDiv = classNames("lightbox", "close-button");
+  /*Lightbox - close button doesn't receive focus*/
+  const hiddenDiv = classNames("lightbox", "close-button", "keyboard__hidden");
+  const visibleDiv = classNames("lightbox", "close-button");
   const [visibility, setVisibility] = useState(hiddenDiv);
 
-  /*11 - concertina*/
-  const [visibilityElemOne, setVisibilityElemOne] = useState("hidden");
-  const [visibilityElemTwo, setVisibilityElemTwo] = useState("hidden");
-  const [visibilityElemThree, setVisibilityElemThree] = useState("hidden");
+  /*Concertina items don't get keyboard focus*/
+  const [visibilityElemOne, setVisibilityElemOne] =
+    useState("keyboard__hidden");
+  const [visibilityElemTwo, setVisibilityElemTwo] =
+    useState("keyboard__hidden");
+  const [visibilityElemThree, setVisibilityElemThree] =
+    useState("keyboard__hidden");
+
   const toggleElemOne = () => {
-    if (visibilityElemOne === "hidden") {
+    if (visibilityElemOne === "keyboard__hidden") {
       setVisibilityElemOne("expanded");
-    } else setVisibilityElemOne("hidden");
+    } else setVisibilityElemOne("keyboard__hidden");
   };
   const toggleElemTwo = () => {
-    if (visibilityElemTwo === "hidden") {
+    if (visibilityElemTwo === "keyboard__hidden") {
       setVisibilityElemTwo("expanded");
-    } else setVisibilityElemTwo("hidden");
+    } else setVisibilityElemTwo("keyboard__hidden");
   };
   const toggleElemThree = () => {
-    if (visibilityElemThree === "hidden") {
+    if (visibilityElemThree === "keyboard__hidden") {
       setVisibilityElemThree("expanded");
-    } else setVisibilityElemThree("hidden");
+    } else setVisibilityElemThree("keyboard__hidden");
   };
 
   return (
@@ -67,7 +72,7 @@ export const Keyboard = (props: Props) => {
               onMouseDown={() => {
                 nextPage();
               }}
-              src="nextarrow.gif"
+              src={NEXTPAGE}
               alt="Go to next page"
             />
           </p>
@@ -95,10 +100,13 @@ export const Keyboard = (props: Props) => {
           }
         >
           <input
-            id={"keayboard__blur-error-first"}
+            id={"keyboard__blur-error-first"}
             type="submit"
             onFocus={() => {
-              document!.getElementById("keayboard__blur-error-first")!.blur();
+              document!.getElementById("keyboard__blur-error-first")!.blur();
+            }}
+            onClick={() => {
+              alert("Clicked");
             }}
           />
         </TestCase>
@@ -117,7 +125,7 @@ export const Keyboard = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
           }
           explanation={
-            "Content that normally receives focus when the content is accessed by keyboard may have this " +
+            "Image button: Content that normally receives focus when the content is accessed by keyboard may have this " +
             "focus removed by scripting. This is sometimes done when designer considers the system focus indicator to be " +
             "unsightly. However, the system focus indicator is an important part of accessibility for keyboard users. " +
             "In addition, this practice removes focus from the content entirely, which means that the content can only be " +
@@ -125,11 +133,11 @@ export const Keyboard = (props: Props) => {
           }
         >
           <a
-            id={"keayboard__blur-error-second"}
+            id={"keyboard__blur-error-second"}
             onFocus={() => {
-              document!.getElementById("keayboard__blur-error-second")!.blur();
+              document!.getElementById("keyboard__blur-error-second")!.blur();
             }}
-            href="Page.html"
+            href="/some-page"
           >
             <img src={LINK} />
           </a>
@@ -155,7 +163,7 @@ export const Keyboard = (props: Props) => {
         >
           <span
             onClick={() => {
-              document.location.href = "newpage.html";
+              document.location.href = "/some-page";
             }}
           >
             Fake link
@@ -184,7 +192,7 @@ export const Keyboard = (props: Props) => {
             src={GO}
             alt="go to the new page"
             onClick={() => {
-              document.location.href = "newpage.html";
+              document.location.href = "/some-page";
             }}
           />
         </TestCase>
@@ -200,8 +208,11 @@ export const Keyboard = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
           }
+          explanation={
+            "CSS style sets outline and background to none on focus."
+          }
         >
-          <a className={"no-outline"} href={"link.html"}>
+          <a className={"keyboard__no-outline"} href={"/some-page"}>
             Link with no focus style
           </a>
         </TestCase>
@@ -215,19 +226,19 @@ export const Keyboard = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
         >
-          <nav className={"dropdown-nav"} role={"navigation"}>
+          <nav className={"keyboard__dropdown-nav"} role={"navigation"}>
             <ul>
               <li>
                 <a href={"https://www.gov.uk/browse/benefits"}>Benefits</a>
                 <ul>
                   <li>
-                    <a href={"#"}>Benefits entitlement</a>
+                    <a href={"/some-page"}>Benefits entitlement</a>
                   </li>
                   <li>
-                    <a href={"#"}>Benefits for families</a>
+                    <a href={"/some-page"}>Benefits for families</a>
                   </li>
                   <li>
-                    <a href={"#"}>Carers and disability benefits</a>
+                    <a href={"/some-page"}>Carers and disability benefits</a>
                   </li>
                 </ul>
               </li>
@@ -246,8 +257,9 @@ export const Keyboard = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
+          explanation={"Only reacts on enter."}
         >
-          <a className={"button"} href={"next.html"} role={"button"}>
+          <a className={"keyboard__button"} href={"/some-page"} role={"button"}>
             Continue
           </a>
         </TestCase>
@@ -260,6 +272,9 @@ export const Keyboard = (props: Props) => {
           }
           successCriterionNumber={"2.1.1"}
           level={Level.A}
+          explanation={
+            "The following is no button but a div that is styled like a button."
+          }
         >
           <div
             className={"button"}
@@ -282,11 +297,10 @@ export const Keyboard = (props: Props) => {
           level={Level.A}
         >
           <a
-            className={"open-lightbox-close-button"}
             href={"#"}
             onClick={(event) => {
               event.preventDefault();
-              setVisibility(unhiddenDiv);
+              setVisibility(visibleDiv);
             }}
           >
             Open lightbox
@@ -326,8 +340,11 @@ export const Keyboard = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
           level={Level.A}
+          explanation={
+            "There is a lot of information hidden from users who only access this section with their keyboard because this concertina only expands on mouse click."
+          }
         >
-          <dl className={"concertina"}>
+          <dl className={"keyboard__concertina"}>
             <dt
               onClick={() => {
                 toggleElemOne();
@@ -335,7 +352,7 @@ export const Keyboard = (props: Props) => {
             >
               Understanding user research
             </dt>
-            <dd className={visibilityElemOne} id={"concertina-elem-1"}>
+            <dd className={visibilityElemOne}>
               <ul>
                 <li>How user research improves service design</li>
                 <li>Start by learning user needs</li>
@@ -349,7 +366,7 @@ export const Keyboard = (props: Props) => {
             >
               Preparing for user research
             </dt>
-            <dd className={visibilityElemTwo} id={"concertina-elem-2"}>
+            <dd className={visibilityElemTwo}>
               <ul>
                 <li>Plan user research for your service</li>
                 <li>Plan a round of user research</li>
@@ -367,7 +384,7 @@ export const Keyboard = (props: Props) => {
             >
               Analysing and sharing findings
             </dt>
-            <dd className={visibilityElemThree} id={"concertina-elem-3"}>
+            <dd className={visibilityElemThree}>
               <ul>
                 <li>Sharing user research findings</li>
                 <li>Analyse a research session</li>

@@ -148,7 +148,7 @@ export const Navigation = () => {
                   <ul>
                     <li>
                       <Link className={"nav__link"} to={"/wcag/keyboard"}>
-                        Keayboard
+                        Keyboard
                       </Link>
                     </li>
                     <li>
