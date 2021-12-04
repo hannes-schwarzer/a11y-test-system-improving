@@ -1,5 +1,6 @@
 import { Level, TestCase } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
+import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -26,20 +27,12 @@ export const Interruptions = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F40.html"
           }
         >
-          {/*      <head>
-          <title>Do not use this!</title>
-          <meta
-            http-equiv="refresh"
-            content="5; url=http://www.example.com/newpage"
-          />
-        </head>
-        <body>
           <p>
-            If your browser supports Refresh, you'll be transported to our{" "}
-            <a href="http://www.example.com/newpage">new site</a> in 5 seconds,
-            otherwise, select the link manually.
+            For this test you need to visit the following page:{" "}
+            <Link to={"/timing-adjustable/redirect-to-other-page"}>
+              Link to page that redirects after 5 seconds
+            </Link>
           </p>
-        </body> */}
         </TestCase>
         <TestCase
           title={
@@ -58,11 +51,12 @@ export const Interruptions = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F41.html"
           }
         >
-          {/*       <head>
-          <title>HTML Techniques for WCAG 2.0</title>
-          <meta http-equiv="refresh" content="60" />
-        </head>
-        <body>...</body> */}
+          <p>
+            For this test you need to visit the following page:{" "}
+            <Link to={"/timing-adjustable/refreshing-page"}>
+              Link to page that refreshes after 5 seconds
+            </Link>
+          </p>
         </TestCase>
       </Frame>
     </>
