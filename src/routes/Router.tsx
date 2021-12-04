@@ -4,7 +4,6 @@ import { EmptyPageTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/Emp
 import { OnlySeparaterInTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/OnlySeparaterInTitle";
 import { MissingHOne } from "./WcagTestCases/DetailPages/MissingHOne";
 import { KeyboardTrap } from "./WcagTestCases/DetailPages/KeyboardTrap";
-import { DemoPage } from "./WcagTestCases/DetailPages/DemoPage";
 import { Homepage } from "./Homepage/Homepage";
 import { Misc } from "./Misc/Misc";
 import { NonTextContent } from "./WcagTestCases/1_Perceivable/1.1_TextAlternatives/NonTextContent";
@@ -54,6 +53,8 @@ import { NameRoleValue } from "./WcagTestCases/4_Robust/Compatible_4.1/NameRoleV
 import { SomePage } from "./WcagTestCases/DetailPages/SomePage";
 import { NoPageTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/NoPageTitle";
 import { TwoPageTitles } from "./WcagTestCases/DetailPages/Navigable_Detail/TwoPageTitles";
+import { RedirectingPage } from "./WcagTestCases/DetailPages/EnoughTime_Detail/RedirectingPage";
+import { RefreshingPage } from "./WcagTestCases/DetailPages/EnoughTime_Detail/RefreshingPage";
 
 export const Router = () => {
   return (
@@ -302,9 +303,16 @@ export const Router = () => {
         />
         <Route path={"/headings/missingh1"} element={<MissingHOne />} />
         <Route path={"/keyboard/trap"} element={<KeyboardTrap />} />
-        <Route path={"/demo-page"} element={<DemoPage />} />
         <Route path={"/misc"} element={<Misc />} />
         <Route path={"/some-page"} element={<SomePage />} />
+        <Route
+          path={"/timing-adjustable/redirect-to-other-page"}
+          element={<RedirectingPage />}
+        />
+        <Route
+          path={"/timing-adjustable/refreshing-page"}
+          element={<RefreshingPage />}
+        />
       </Routes>
     </BrowserRouter>
   );

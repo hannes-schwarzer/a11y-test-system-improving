@@ -410,7 +410,7 @@ export const NameRoleValue = (props: Props) => {
             "https://equalizedigital.com/accessibility-checker/iframe-missing-title/"
           }
         >
-          <iframe height={100} src={"/demo-page"} width={300}></iframe>
+          <iframe height={100} src={"/some-page"} width={300}></iframe>
         </TestCase>
 
         <TestCase

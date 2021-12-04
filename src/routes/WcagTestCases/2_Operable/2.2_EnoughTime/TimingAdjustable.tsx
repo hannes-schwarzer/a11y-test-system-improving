@@ -1,5 +1,6 @@
 import { Level, TestCase } from "../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../components/Frame/Frame";
+import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -14,7 +15,9 @@ export const TimingAdjustable = (props: Props) => {
             "F40: Failure of Success Criterion 2.2.1 and 2.2.4 due to using meta redirect with a time limit"
           }
           successCriterionInWords={"Timing Adjustable"}
-          explanation={""}
+          explanation={
+            "meta http-equiv of {time-out}; url=... is often used to automatically redirect users. When this occurs after a time delay, it is an unexpected change of context that may interrupt the user. It is acceptable to use the meta element to create a redirect when the time-out is set to zero, since the redirect is instant and will not be perceived as a change of context. However, it is preferable to use server-side methods to accomplish this."
+          }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F40.html"
           }
@@ -24,20 +27,12 @@ export const TimingAdjustable = (props: Props) => {
           successCriterionNumber={"2.1.1"}
           level={Level.A}
         >
-          {/*      <head>
-          <title>Do not use this!</title>
-          <meta
-            http-equiv="refresh"
-            content="5; url=http://www.example.com/newpage"
-          />
-        </head>
-        <body>
           <p>
-            If your browser supports Refresh, you'll be transported to our{" "}
-            <a href="http://www.example.com/newpage">new site</a> in 5 seconds,
-            otherwise, select the link manually.
+            For this test you need to visit the following page:{" "}
+            <Link to={"/timing-adjustable/redirect-to-other-page"}>
+              Link to page that redirects after 5 seconds
+            </Link>
           </p>
-        </body> */}
         </TestCase>
         <TestCase
           title={
@@ -60,11 +55,12 @@ export const TimingAdjustable = (props: Props) => {
           successCriterionNumber={"2.1.1"}
           level={Level.A}
         >
-          {/*       <head>
-          <title>HTML Techniques for WCAG 2.0</title>
-          <meta http-equiv="refresh" content="60" />
-        </head>
-        <body>...</body> */}
+          <p>
+            For this test you need to visit the following page:{" "}
+            <Link to={"/timing-adjustable/refreshing-page"}>
+              Link to page that refreshes after 5 seconds
+            </Link>
+          </p>
         </TestCase>
       </Frame>
     </>
