@@ -79,6 +79,33 @@ export const Duplicates = () => {
           <title></title>
         </html>
       </TestCase>
+
+              <TestCase
+          level={Level.AAA}
+          title={
+            "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
+            "specifying background colors or vice versa"
+          }
+          successCriterionInWords={"Visual Presentation"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation"
+          }
+          successCriterionNumber={"1.4.8"}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
+          }
+          explanation={
+            "Specifying foreground color of link text with CSS: In the example below the link text (foreground) color is " +
+            "defined. However, the background color is not defined. Therefore, the example fails the " +
+            "Success Criterion."
+          }
+        >
+          <p>
+            ... document body... <a href="foo.htm">Foo</a>
+          </p>
+        </TestCase>
+
+
       */}
     </>
   );

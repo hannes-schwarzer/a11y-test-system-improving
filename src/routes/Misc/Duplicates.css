@@ -1,0 +1,5 @@
+/*F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due...
+p a:link { color: red }
+p a:visited { color: maroon }
+p a:active { color: fuchsia }
+*/

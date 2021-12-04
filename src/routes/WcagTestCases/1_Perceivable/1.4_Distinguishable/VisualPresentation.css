@@ -1,23 +1,19 @@
-.whiteBackground {
+.visual-presentation__whiteBackground {
     background: white;
 }
 
-.whiteForeground {
+.visual-presentation__whiteForeground {
     color: white;
 }
-/*
-p a:link { color: red }
-p a:visited { color: maroon }
-p a:active { color: fuchsia }
-*/
-.all-caps {
+
+.visual-presentation__all-caps {
     text-transform: uppercase;
 }
 
-.italic {
+.visual-presentation__italic {
     font-style: italic;
 }
 
-.justify {
+.visual-presentation__justified-text{
     text-align: justify;
 }
