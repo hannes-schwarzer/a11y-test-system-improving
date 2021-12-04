@@ -130,16 +130,18 @@ export const NonTextContent = (props: Props) => {
           }
           successCriterionNumber={"1.1.1"}
           level={Level.A}
+          explanation={
+            'An image is used to create a blank space between content, where the spacing itself is not meaningful to the content. The image has an alt text value of "spacer". This image fails the Success Criterion because the text alternative does not serve an equivalent purpose. The image is meant to be ignored but its alternative text "spacer" is announced by screen readers and displayed in some alternate color schemes.'
+          }
         >
           <p>
-            An image is used to create a blank space between content, where the
-            spacing itself is not meaningful to the content.
-            <img alt="spacer" height={"1px"} src={SPACER} width={"180px"} /> The
-            image has an alt text value of "spacer". This image fails the
-            Success Criterion because the text alternative does not serve an
-            equivalent purpose. The image is meant to be ignored but its
-            alternative text "spacer" is announced by screen readers and
-            displayed in some alternate color schemes.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+            <img alt="spacer" height={"1px"} src={SPACER} width={"180px"} />
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
           </p>
         </TestCase>
         <TestCase
@@ -168,14 +170,10 @@ export const NonTextContent = (props: Props) => {
           }
           successCriterionNumber={"1.1.1"}
           level={Level.A}
+          explanation={
+            'The following example, will look like the English word "cook" when rendered in browsers with appropriate font support. In this case, the characters are implemented with character entities, but the word will still not be processed meaningfully, and a text alternative is not provided.'
+          }
         >
-          <p>
-            The following example, will look like the English word "cook" when
-            rendered in browsers with appropriate font support. In this case,
-            the characters are implemented with character entities, but the word
-            will still not be processed meaningfully, and a text alternative is
-            not provided.
-          </p>
           <p>&#x03F2;&#x043E;&#x03BF;&#x006B;</p>
         </TestCase>
         <TestCase
@@ -218,6 +216,9 @@ export const NonTextContent = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
         >
           <input src={SUBMIT} type={"image"} />
         </TestCase>
@@ -229,18 +230,22 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           level={Level.A}
+          explanation={"It is unclear if this is a description or a command."}
         >
           <input alt={"click"} src={SUBMIT} type={"image"} />
         </TestCase>
 
         <TestCase
-          title={"EmptyPageTitle alt attribute on image button"}
+          title={"Empty alt attribute on image button"}
           successCriterionInWords={"Non-text Content"}
           successCriterionNumber={"1.1.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           level={Level.A}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
         >
           <input alt={""} src={SUBMIT} type={"image"} />
         </TestCase>
@@ -270,6 +275,9 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "If the image serve only as decoration it doesn't need an alt."
+          }
         >
           <img
             alt={"Decorative line clipart"}
@@ -289,6 +297,9 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
         >
           <img src={BBC} />
         </TestCase>
@@ -304,6 +315,9 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
         >
           <div className={"warning-icon"}>
             Taking too much of your pension money in early retirement could mean
@@ -320,6 +334,9 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "If a tool tip is needed for sighted users, then both a TITLE and ALT attribute with the same information can be used to ensure that the same information is delivered to both audiences."
+          }
         >
           <img src={BBC} alt={""} title={"BBC"} />
         </TestCase>
@@ -333,6 +350,9 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "If a tool tip is needed for sighted users, then both a TITLE and ALT attribute with the same information can be used to ensure that the same information is delivered to both audiences."
+          }
         >
           <img src={BBC} title={"BBC"} />
         </TestCase>
@@ -346,6 +366,9 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
         >
           <img src={BBC} alt={""} />
         </TestCase>
@@ -359,6 +382,9 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute must convey the same information the image does."
+          }
         >
           <img src={BBC} alt={"Twitter"} />
         </TestCase>
@@ -372,6 +398,9 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute must convey the same information the image does."
+          }
         >
           <img src={BBC} alt={"bbc-blocks-dark.png"} />
         </TestCase>
@@ -403,6 +432,9 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/tutorials/images/functional/"
           }
+          explanation={
+            "Visually impaired users would not know the purpose of this link image."
+          }
         >
           <a href={"http://www.bbc.co.uk/"}>
             <img alt={""} src={BBC} />
@@ -419,6 +451,9 @@ export const NonTextContent = (props: Props) => {
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          explanation={
+            "For images used as navigational elements to trigger functions such as printing, uploading or saving, the ALT text should describe the destination or function, not the image."
           }
         >
           <a href={"https://en.wikipedia.org/wiki/Red_panda"}>

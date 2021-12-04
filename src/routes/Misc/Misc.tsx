@@ -521,6 +521,7 @@ export const Misc = () => {
           "https://www.w3.org/WAI/WCAG21/quickref/#page-titled"
         }
         level={Level.A}
+        explanation={""}
         linkToExplanation={
           "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
         }
@@ -535,6 +536,7 @@ export const Misc = () => {
         successCriterionInWords={"Focus Visible"}
         successCriterionNumber={"2.4.7"}
         level={Level.AA}
+        explanation={""}
         linkToSuccessCriterion={
           "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
         }

@@ -1,24 +1,30 @@
 import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 import TREE from "../../../../assets/animated-tree.gif";
 import { Frame } from "../../../../components/Frame/Frame";
+import "./PauseStopHide.css";
+import { useEffect, useState } from "react";
 
 interface Props {
   pageTitle: string;
 }
 
 export const PauseStopHide = (props: Props) => {
-  const show = () => {
-    if (document.getElementById) {
-      document.getElementById("blink1")!.style.visibility = "visible";
-    }
-    setTimeout(hide, 450);
-  };
+  const [visibility, setVisibility] = useState("visible");
 
-  function hide() {
-    if (document.getElementById)
-      document.getElementById("blink1")!.style.visibility = "hidden";
-    setTimeout(show, 450);
-  }
+  useEffect(() => {
+    const hide = () => {
+      setVisibility("hidden");
+      setTimeout(show, 450);
+    };
+    const show = () => {
+      setVisibility("visible");
+      if (document.getElementById("blink1")) {
+        document.getElementById("blink1")!.style.visibility = visibility;
+      }
+      setTimeout(() => hide(), 450);
+    };
+    show();
+  });
 
   return (
     <>
@@ -38,12 +44,17 @@ export const PauseStopHide = (props: Props) => {
           }
           explanation={
             "A product list page uses the text-decoration:blink style on an element to draw attention to sale prices. " +
-            "This fails the Success Criterion because users cannot control the blink."
+            "This fails the Success Criterion because users cannot control the blink. NOTE: text-decoration: blink is deprecated in most browsers."
           }
         >
           <p>
             My Great Product{" "}
-            <span style={{ textDecoration: "blink" }}>Sale! $44,995!</span>
+            <span
+              className={"blinking-sale"}
+              style={{ textDecoration: "blink" }}
+            >
+              Sale! $44,95!
+            </span>
           </p>
         </TestCase>
 
@@ -61,10 +72,9 @@ export const PauseStopHide = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F50.html"
           }
           explanation={
-            "The following example uses script to blink content, but the blink continues indefinitely rather than stopping after five seconds."
+            "The following example uses JavaScript to blink content, but the blink continues indefinitely rather than stopping after five seconds."
           }
         >
-          <script type="text/javascript">show();</script>
           <span id="blink1">This content will blink</span>
         </TestCase>
 
@@ -79,6 +89,9 @@ export const PauseStopHide = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html"
           }
           level={Level.A}
+          explanation={
+            "Content that moves or auto-updates can be a barrier to anyone who has trouble reading stationary text quickly as well as anyone who has trouble tracking moving objects. It can also cause problems for screen readers."
+          }
         >
           <img
             alt={

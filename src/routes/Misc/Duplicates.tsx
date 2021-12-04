@@ -1,9 +1,9 @@
-import { Level, TestCase } from "../../components/TestCase/TestCase";
+//import { Level, TestCase } from "../../components/TestCase/TestCase";
 
 export const Duplicates = () => {
   return (
     <>
-      <TestCase
+      {/*}      <TestCase
         title={"Duplicate id"}
         successCriterionInWords={"Parsing"}
         successCriterionNumber={"4.1.1"}
@@ -79,6 +79,7 @@ export const Duplicates = () => {
           <title></title>
         </html>
       </TestCase>
+      */}
     </>
   );
 };

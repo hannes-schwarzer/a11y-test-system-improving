@@ -43,7 +43,9 @@ export const TestCase: FC<TestCaseProps> = ({
         {explanation && <p>{explanation}</p>}
         {linkToExplanation && (
           <p className={"description__explanationLink"}>
-            <a href={linkToExplanation}>Link to explanation</a>
+            <a href={linkToExplanation}>
+              Link to explanation of: {explanation?.substring(0, 10)}...
+            </a>
           </p>
         )}
       </div>
