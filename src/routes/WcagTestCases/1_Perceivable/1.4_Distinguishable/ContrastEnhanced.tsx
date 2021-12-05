@@ -30,8 +30,11 @@ export const ContrastEnhanced = (props: Props) => {
             "Criterion."
           }
         >
-          <p className={"whiteBackground"}>My background is white.</p>
+          <p className={"contrast-enhanced__whiteBackground"}>
+            My background is white.
+          </p>
         </TestCase>
+
         <TestCase
           level={Level.AAA}
           title={
@@ -52,31 +55,8 @@ export const ContrastEnhanced = (props: Props) => {
             "Criterion."
           }
         >
-          <p className={"whiteForeground"}>My foreground is white.</p>
-        </TestCase>
-
-        <TestCase
-          level={Level.AAA}
-          title={
-            "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
-            "specifying background colors or vice versa"
-          }
-          successCriterionInWords={"Contrast (Enhanced)"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
-          }
-          successCriterionNumber={"1.4.6"}
-          linkToExplanation={
-            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
-          }
-          explanation={
-            "Specifying foreground color of link text with CSS: In the example below the link text (foreground) color is " +
-            "defined. However, the background color is not defined. Therefore, the example fails the " +
-            "Success Criterion."
-          }
-        >
-          <p>
-            ... document body... <a href="foo.htm">Foo</a>
+          <p className={"contrast-enhanced__whiteForeground"}>
+            My foreground is white.
           </p>
         </TestCase>
 
@@ -90,8 +70,11 @@ export const ContrastEnhanced = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
           level={Level.AAA}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/general/G17.html"
+          }
         >
-          <p className={"low-contrast-small-aaa"}>
+          <p className={"contrast-enhanced__low-contrast-small-aaa"}>
             This small text does not have enough contrast with it's background
           </p>
         </TestCase>
@@ -106,8 +89,11 @@ export const ContrastEnhanced = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced"
           }
           level={Level.AAA}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/general/G17.html"
+          }
         >
-          <p className={"low-contrast-large-aaa"}>
+          <p className={"contrast-enhanced__low-contrast-large-aaa"}>
             This large text does not have enough contrast with it's background
           </p>
         </TestCase>
