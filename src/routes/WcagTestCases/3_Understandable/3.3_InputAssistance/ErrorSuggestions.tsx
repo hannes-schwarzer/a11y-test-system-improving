@@ -22,11 +22,13 @@ export const ErrorSuggestions = (props: Props) => {
           level={Level.AA}
         >
           <form>
-            <label className={"required-format-not-given"}>
+            <label className={"error-suggestion__required-format-not-given"}>
               Phone number
-              <span className={"error-message"}>is not valid</span>
+              <span className={"error-suggestion__error-message"}>
+                is not valid
+              </span>
               <input
-                className={"has-errors"}
+                className={"error-suggestion__has-errors"}
                 pattern={"7[0-9]{9}"}
                 required={true}
                 type={"tel"}
