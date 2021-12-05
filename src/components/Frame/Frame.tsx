@@ -15,7 +15,7 @@ export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
       <div className={"main__wrapper"}>
         <Navigation />
         <main className={"main__content"}>
-          <section className={"middle-section"}>
+          <section>
             <h2 className={"main__heading"}>{pageTitle}</h2>
             {children}
           </section>
