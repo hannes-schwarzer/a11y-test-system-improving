@@ -112,7 +112,7 @@ export const Router = () => {
         />
         <Route
           path={"/wcag/resize-text"}
-          element={<ResizeText pageTitle={"1.4.4 ResizeText text"} />}
+          element={<ResizeText pageTitle={"1.4.4 Resize text"} />}
         />
         <Route
           path={"/wcag/contrast-enhanced"}

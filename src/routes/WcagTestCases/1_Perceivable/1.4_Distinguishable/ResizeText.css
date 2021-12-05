@@ -1,25 +1,58 @@
-.callout {
+/*F69: Failure of Success Criterion 1.4.4 when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured*/
+.resize-text__unscalable-container{
+    font-size: 100%;
+    width: 100px;
+    height: 80px;
+    border: thin solid gray;
+}
+
+/*F69: Failure of Success Criterion 1.4.4 when resizing visually rendered text up to 200 percent causes the text, image or controls to be clipped, truncated or obscured*/
+.resize-text__clipping-unscalable-container{
+    font-size: 100%;
+    width: 100px;
+    height: 80px;
+    border: thin solid gray;
+    overflow: hidden;
+}
+
+/*F80: Failure of Success Criterion 1.4.4 when text-based form controls do not resize when visually rendered text is resized up to 200%*/
+.resize-text__form-heading{
+    font-size: 2em;
+}
+.resize-text__form-paragraph{
+    font-size: 1em;
+}
+.resize-text__form-label{
+    font-size: 1em;
+}
+.resize-text__form-input{
+    font-size: 12pt;
+}
+
+/*F94: Failure of Success Criterion 1.4.4 due to text sized in viewport units*/
+.resize-text__callout {
     font-size:1vw;
 }
 
-.small-text {
+/*Very small text found*/
+.resize-text__small-text {
     font-size: 8px;
 }
 
-/*6*/
-.resize {
+/*Content is not readable and functional when text-size is increased*/
+.resize-text__resize {
     font-size: 1.5em;
     line-height: 24px;
     max-height: 64px;
     overflow: hidden;
 }
 
-/*7*/
-.wont-expand-box {
+/*Page zoom - boxes that don't expand with the text*/
+.resize-text__wont-expand-box {
     overflow: hidden;
     height: 10em;
 }
-.wont-expand {
+.resize-text__wont-expand {
     border: 1px solid #BFC1C3;
     padding: 1em;
     position: absolute;
