@@ -1,6 +1,7 @@
 import { TestCase, Level } from "../../../../components/TestCase/TestCase";
-import "./MeaningfulSequence.css";
 import { Frame } from "../../../../components/Frame/Frame";
+import MOUNTAINEERING from "../../../../assets/mountaineering.jpg";
+import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -20,11 +21,13 @@ export const MeaningfulSequence = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
           }
           level={Level.A}
+          explanation={
+            "The following example incorrectly uses white space to format a Menu as a visual table. This visually conveyed meaning is lost if a screen reader is used."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F34.html"
+          }
         >
-          <p>
-            The following example incorrectly uses white space to format a Menu
-            as a visual table.
-          </p>
           <pre>
             {`
 Menu
@@ -53,11 +56,13 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
           }
           level={Level.A}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F33.html"
+          }
+          explanation={
+            "The following example incorrectly uses white space characters to format a paragraph into a two column format. If this table was to be interpreted and spoken by a screen reader it would speak the following lines: 'Web Content Accessibility Guidelines including blindness and low vision,...'"
+          }
         >
-          <p>
-            The following example incorrectly uses white space characters to
-            format a paragraph into a two column format.
-          </p>
           <pre>
             {`
 Web Content Accessibility Guidelines      including blindness and low vision, 
@@ -88,6 +93,9 @@ range of people with disabilities,        wide variety of assistive technologies
           explanation={
             'Failure due to adding white space in the middle of a word: This example has white spaces within a word to space out the letters in a heading. Screen readers may read each letter individually instead of the word "Welcome."'
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F32.html"
+          }
         >
           <h1>W e l c o m e</h1>
         </TestCase>
@@ -104,6 +112,9 @@ range of people with disabilities,        wide variety of assistive technologies
           level={Level.A}
           explanation={
             'Failure due to adding white space in the middle of a word: This example has white spaces within a word to space out the letters in a heading. Screen readers may read each letter individually instead of the word "Welcome."'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F32.html"
           }
         >
           <p>
@@ -124,7 +135,10 @@ range of people with disabilities,        wide variety of assistive technologies
           }
           level={Level.A}
           explanation={
-            'White space in the middle of a word changing its meaning: In Japanese, Han characters (Kanji) may have multiple readings that mean very different things. In this example, the word is read incorrectly because screen readers may not recognize these characters as a word because of the white space between the characters. The characters mean "Tokyo," but screen readers say "Higashi Kyo".'
+            'Failure due to adding white space in the middle of a word changing its meaning: In Japanese, Han characters (Kanji) may have multiple readings that mean very different things. In this example, the word is read incorrectly because screen readers may not recognize these characters as a word because of the white space between the characters. The characters mean "Tokyo," but screen readers say "Higashi Kyo".'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F32.html"
           }
         >
           <h1>東　京</h1>
@@ -141,7 +155,10 @@ range of people with disabilities,        wide variety of assistive technologies
           }
           level={Level.A}
           explanation={
-            'Using line break characters to format vertical text: In the row header cell of a data table containing Japanese text, authors often create vertical text by using line break characters. However screen readers are not able to read the words in vertical text correctly because the line breaks occur within the word. In the following example, "東京都"(Tokyo-to) will be read "Higashi Kyo Miyako".'
+            'Failure due to using line break characters to format vertical text: In the row header cell of a data table containing Japanese text, authors often create vertical text by using line break characters. However screen readers are not able to read the words in vertical text correctly because the line breaks occur within the word. In the following example, "東京都"(Tokyo-to) will be read "Higashi Kyo Miyako".'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F32.html"
           }
         >
           <table>
@@ -174,20 +191,35 @@ range of people with disabilities,        wide variety of assistive technologies
           explanation={
             "A layout table that does not linearize correctly: An advertisement makes clever use of visual positioning, but changes meaning when linearized."
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F49.html"
+          }
         >
           <table>
             <tr>
               <td>
-                <img src="logo.gif" alt="XYZ mountaineering" />
+                <img
+                  src={MOUNTAINEERING}
+                  height={"250px"}
+                  width={"auto"}
+                  alt="Mountain Hiking Club mountaineering"
+                />
               </td>
               <td rowSpan={2} valign="bottom">
                 top!
               </td>
             </tr>
             <tr>
-              <td>XYZ gets you to the</td>
+              <td>Mountain Hiking Club gets you to the</td>
             </tr>
           </table>
+          <p>
+            The reading order from this example would be:
+            <ol>
+              <li>Mountain Hiking Club mountaineering top!</li>
+              <li>Mountain Hiking Club gets you to the</li>
+            </ol>
+          </p>
         </TestCase>
 
         <TestCase
@@ -202,6 +234,9 @@ range of people with disabilities,        wide variety of assistive technologies
           level={Level.A}
           explanation={
             "A layout table that separates a meaningful sequence when linearized: A layout table is used to position the elements of the page. The links in the navigation bar are split into different cells in the leftmost column. Because the navigation bar links are interleaved with the content describing the image, screen readers cannot present the content in a meaningful sequence corresponding to the sequence presented visually."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F49.html"
           }
         >
           <table>
@@ -288,15 +323,14 @@ range of people with disabilities,        wide variety of assistive technologies
             'The following example demonstrates how CSS has been improperly used to create a set of columns. In addition, the text appears visually in the browser in a different order than in the markup. Since appropriate structural elements have not been used, when style sheets are not applied, all of the text appears in one line in the source order, "Products Locations Telephones Computers Portable MP3 Players Wisconsin Idaho."'
           }
         >
-          <div className="box">
-            <span className="menu1">Products</span>
-            <span className="menu2">Locations</span>
-            <span className="item1">Telephones</span>
-            <span className="item2">Computers</span>
-            <span className="item3">Portable MP3 Players</span>
-            <span className="item5">Wisconsin</span>
-            <span className="item4">Idaho</span>
-          </div>
+          <p>
+            For this test you need to visit the following page:{" "}
+            <Link
+              to={"/meaningful-sequence/changed-meaning-through-formatting"}
+            >
+              Link to page with changed content meaning
+            </Link>
+          </p>
         </TestCase>
 
         <TestCase
@@ -307,6 +341,12 @@ range of people with disabilities,        wide variety of assistive technologies
             "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
           }
           level={Level.A}
+          explanation={
+            "The objective of this technique is to show how identifying content only by its shape or location makes content difficult to understand and operate. When only visual identification or location is used, users with visual disabilities may find it difficult to locate content since they cannot see the screen or may perceive only a small portion of the screen at one time. Also, location of content can vary if page layout varies due to variations in font, window, or screen size."
+          }
+          linkToExplanation={
+            "https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F14"
+          }
         >
           <p>The artist on the right won the Album of the year</p>
           <a href="swift.html" style={{ float: "right" }}>
@@ -315,44 +355,6 @@ range of people with disabilities,        wide variety of assistive technologies
           <a href="sheeran.html" style={{ float: "left" }}>
             Ed Sheeran
           </a>
-        </TestCase>
-
-        <TestCase
-          title={"Table used for layout"}
-          successCriterionInWords={"Meaningful Sequence"}
-          successCriterionNumber={"1.3.2"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
-          }
-          level={Level.A}
-          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F49.html"}
-        >
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <ul>
-                    <li>
-                      <a href={"home.html"}>HOME</a>
-                    </li>
-                    <li>
-                      <a href={"about-us.html"}>About us</a>
-                    </li>
-                    <li>
-                      <a href={"products.html"}>Our products</a>
-                    </li>
-                  </ul>
-                </td>
-                <td>
-                  <h2>Welcome to our homepage</h2>
-                  <p>
-                    Here you can find out who we are, what we do and why you
-                    should buy our products.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </TestCase>
       </Frame>
     </>

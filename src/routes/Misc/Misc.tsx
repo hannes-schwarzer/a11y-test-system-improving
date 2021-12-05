@@ -548,6 +548,44 @@ export const Misc = () => {
           Link with no focus style
         </a>
       </TestCase>
+
+      <TestCase
+        title={"Table used for layout"}
+        successCriterionInWords={"Meaningful Sequence"}
+        successCriterionNumber={"1.3.2"}
+        linkToSuccessCriterion={
+          "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
+        }
+        level={Level.A}
+        linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F49.html"}
+      >
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    <a href={"home.html"}>HOME</a>
+                  </li>
+                  <li>
+                    <a href={"about-us.html"}>About us</a>
+                  </li>
+                  <li>
+                    <a href={"products.html"}>Our products</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <h2>Welcome to our homepage</h2>
+                <p>
+                  Here you can find out who we are, what we do and why you
+                  should buy our products.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </TestCase>
     </>
   );
 };

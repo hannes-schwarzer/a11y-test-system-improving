@@ -55,6 +55,7 @@ import { NoPageTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/NoPage
 import { TwoPageTitles } from "./WcagTestCases/DetailPages/Navigable_Detail/TwoPageTitles";
 import { RedirectingPage } from "./WcagTestCases/DetailPages/EnoughTime_Detail/RedirectingPage";
 import { RefreshingPage } from "./WcagTestCases/DetailPages/EnoughTime_Detail/RefreshingPage";
+import { ChangedMeaningThroughFormatting } from "./WcagTestCases/DetailPages/Adaptable/ChangedMeaningThroughFormatting";
 
 export const Router = () => {
   return (
@@ -305,6 +306,10 @@ export const Router = () => {
         <Route path={"/keyboard/trap"} element={<KeyboardTrap />} />
         <Route path={"/misc"} element={<Misc />} />
         <Route path={"/some-page"} element={<SomePage />} />
+        <Route
+          path={"/meaningful-sequence/changed-meaning-through-formatting"}
+          element={<ChangedMeaningThroughFormatting />}
+        />
         <Route
           path={"/timing-adjustable/redirect-to-other-page"}
           element={<RedirectingPage />}

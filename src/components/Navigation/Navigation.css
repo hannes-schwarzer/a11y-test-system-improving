@@ -6,10 +6,9 @@
 .nav {
     background: #303030;
     width: 245px;
-
+    color: whitesmoke;
 }
 .nav__item-wrapper {
-    color: whitesmoke;
     margin: 0 15px 15px 15px;
     list-style-type: none;
     justify-content: space-between;
@@ -19,6 +18,7 @@
 
 
 .nav__link{
+    background: #303030;
     color: whitesmoke;
     margin-top: 5px;
 }

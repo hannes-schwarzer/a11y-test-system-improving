@@ -11,7 +11,7 @@ export const Header = (headerProps: HeaderProps) => {
   document.documentElement.lang = "en";
   return (
     <>
-      <header className={"global-header"} id={"globalHeader"} role={"banner"}>
+      <header className={"global-header"} role={"banner"}>
         <Link to="/">
           <img
             src={ALLYUP}
