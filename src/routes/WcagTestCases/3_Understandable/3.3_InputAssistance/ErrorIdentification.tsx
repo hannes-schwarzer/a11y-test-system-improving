@@ -1,5 +1,4 @@
 import { TestCase, Level } from "../../../../components/TestCase/TestCase";
-import classNames from "classnames";
 import "./ErrorIdentification.css";
 import { Frame } from "../../../../components/Frame/Frame";
 
@@ -8,10 +7,6 @@ interface Props {
 }
 
 export const ErrorIdentification = (props: Props) => {
-  const formClassHundredSeven = classNames(
-    "errors-badly-identified",
-    "errors-not-identified"
-  );
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
@@ -23,10 +18,15 @@ export const ErrorIdentification = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#error-identification"
           }
+          explanation={
+            "If an input error is automatically detected, the item that is in error should be identified and the error should be described to the user in text. But this isn't the case here."
+          }
         >
-          {/*"errors-badly-identified","errors-not-identified"*/}
-          <form className={formClassHundredSeven}>
-            <div className={"validation-summary"} role={"alert"}>
+          <form className={"error-identification__errors-badly-identified"}>
+            <div
+              className={"error-identification__validation-summary"}
+              role={"alert"}
+            >
               You need to fix the errors on this page before continuing.
             </div>
             <label>

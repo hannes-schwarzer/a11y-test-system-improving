@@ -1,18 +1,15 @@
-.contrast-minimum__errors-badly-identified .contrast-minimum__validation-summary {
+.error-identification__errors-badly-identified .error-identification__validation-summary {
     padding: 1em;
     border: 3px solid #df3034;
     background: #fae1e1;
 }
 
-.contrast-minimum__errors-badly-identified label {
+.error-identification__errors-badly-identified label {
     display: block;
     margin: 1em 0 1em 0;
 }
 
-.contrast-minimum__errors-badly-identified label input {
+.error-identification__errors-badly-identified label input {
     display: block;
 }
 
-.contrast-minimum__error-poor-contrast .contrast-minimum__validation-summary {
-    color: #fff;
-}
