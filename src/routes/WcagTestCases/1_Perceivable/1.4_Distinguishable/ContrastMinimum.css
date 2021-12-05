@@ -6,13 +6,6 @@
     color: white;
 }
 
-/*
-p a:link { color: red }
-p a:visited { color: maroon }
-p a:active { color: fuchsia }
-
-
- */
 .contrast-minimum__low-contrast-small-aa {
     font-size: 12px;
     color: #757980;
@@ -29,20 +22,18 @@ p a:active { color: fuchsia }
     background: #fae1e1;
 }
 
+/*Errors identified with a poor colour contrast*/
 .contrast-minimum__errors-badly-identified label {
     display: block;
     margin: 1em 0 1em 0;
 }
-
 .contrast-minimum__errors-badly-identified label input {
     display: block;
 }
-
-.contrast-minimum__error-poor-contrast .contrast-minimum__validation-summary {
-    color: #fff;
+.contrast-minimum__validation-summary {
+    color: #ffffff;
 }
-
-.contrast-minimum__error-poor-contrast .has-errors {
+.contrast-minimum__has-errors {
     border: 1px solid #fae1e1;
 }
 

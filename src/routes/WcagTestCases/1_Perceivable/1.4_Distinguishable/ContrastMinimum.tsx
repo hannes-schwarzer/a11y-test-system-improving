@@ -9,8 +9,8 @@ interface Props {
 
 export const ContrastMinimum = (props: Props) => {
   const badlyPoor = classNames(
-    "errors-badly-identified",
-    "error-poor-contrast"
+    "contrast-minimum__errors-badly-identified",
+    "contrast-minimum__error-poor-contrast"
   );
 
   return (
@@ -36,8 +36,11 @@ export const ContrastMinimum = (props: Props) => {
           }
           level={Level.AA}
         >
-          <p className={"whiteBackground"}>My background is white.</p>
+          <p className={"contrast-minimum__whiteBackground"}>
+            My background is white.
+          </p>
         </TestCase>
+
         <TestCase
           title={
             "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
@@ -58,37 +61,14 @@ export const ContrastMinimum = (props: Props) => {
           }
           level={Level.AA}
         >
-          <p className={"whiteForeground"}>My foreground is white.</p>
-        </TestCase>
-
-        <TestCase
-          title={
-            "F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without " +
-            "specifying background colors or vice versa"
-          }
-          successCriterionInWords={"Contrast (Minimum)"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
-          }
-          successCriterionNumber={"1.4.3"}
-          level={Level.AA}
-          linkToExplanation={
-            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F24.html"
-          }
-          explanation={
-            "Specifying foreground color of link text with CSS: In the example below the link text (foreground) color is " +
-            "defined. However, the background color is not defined. Therefore, the example fails the " +
-            "Success Criterion."
-          }
-        >
-          <p>
-            ... document body... <a href="foo.htm">Foo</a>
+          <p className={"contrast-minimum__whiteForeground"}>
+            My foreground is white.
           </p>
         </TestCase>
 
         <TestCase
           title={
-            "Small text does not have a contrast ratio of at least 4.5:1 so does not meet AA"
+            "Small text does not have a contrast ratio of at least 4.5:1 so does not meet 1.4.3 Contrast (Minimum) (AA)"
           }
           successCriterionInWords={"Contrast (Minimum)"}
           successCriterionNumber={"1.4.3"}
@@ -104,7 +84,7 @@ export const ContrastMinimum = (props: Props) => {
 
         <TestCase
           title={
-            "Large text does not have a contrast ratio of at least 3:1 so does not meet AA"
+            "Large text does not have a contrast ratio of at least 3:1 so does not meet 1.4.3 Contrast (Minimum) (AA)"
           }
           successCriterionInWords={"Contrast (Minimum)"}
           successCriterionNumber={"1.4.3"}
@@ -119,22 +99,32 @@ export const ContrastMinimum = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Errors identified with a poor colour contrast"}
+          title={"Errors identified with a poor color contrast"}
           successCriterionInWords={"Contrast (Minimum)"}
           level={Level.AA}
           successCriterionNumber={"1.4.3"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
+          explanation={
+            "Because of the poor color contrast the error message is hard to read and the marked input fields are hardly recognizable."
+          }
         >
           {/*"errors-badly-identified","error-poor-contrast"*/}
           <form className={badlyPoor}>
-            <div className={"validation-summary"} role={"alert"}>
+            <div
+              className={"contrast-minimum__validation-summary"}
+              role={"alert"}
+            >
               You need to fix the errors on this page before continuing.
             </div>
             <label>
               Claimant's name
-              <input className={"has-errors"} name={"name"} type={"text"} />
+              <input
+                className={"contrast-minimum__has-errors"}
+                name={"name"}
+                type={"text"}
+              />
             </label>
             <label>
               Claimant's surname
@@ -143,7 +133,7 @@ export const ContrastMinimum = (props: Props) => {
             <label>
               Claimant's date of birth
               <input
-                className={"has-errors"}
+                className={"contrast-minimum__has-errors"}
                 name={"date-of-birth"}
                 type={"text"}
               />
