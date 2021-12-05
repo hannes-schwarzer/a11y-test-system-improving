@@ -1,68 +1,41 @@
-/*p a:link {text-decoration: none}
-p a:visited {text-decoration: none}
-p a:active {text-decoration: none}
-p a:hover {text-decoration: underline; color: red;}
-
-.poisonous {
+/*Color alone is used to convey content*/
+.use-of-color__poisonous {
     color: red;
 }
-.safe {
+.use-of-color__safe {
     color: green;
 }
 
-a.color-alone-link {
+/*F73: Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision*/
+.use-of-color__color-alone-link {
     text-decoration: none;
     color: #005ea5;
 }
 
-p.unobvious-link a{
+/*Link not clearly identifiable and distinguishable from surrounding text*/
+.use-of-color__unobvious-link a{
     text-decoration: none;
     color: #000000;
 }
-*/
-/*the following needs sortng and cleaning*/
-.errors-badly-identified .validation-summary {
+
+/*Errors identified by colour only*/
+.use-of-color__errors-badly-identified .use-of-color__validation-summary {
     padding: 1em;
     border: 3px solid #df3034;
     background: #fae1e1;
 }
 
-.errors-badly-identified label {
+.use-of-color__errors-badly-identified label {
     display: block;
     margin: 1em 0 1em 0;
 }
 
-.errors-badly-identified label input {
+.use-of-color__errors-badly-identified label input {
     display: block;
 }
 
-.errors-colour-only .has-errors {
+.use-of-color__errors-colour-only .use-of-color__has-errors {
     background: #fae1e1;
     border: 1px solid #df3034;
-}
-
-.required-format-not-given .error-message {
-    display: block;
-    color: #df3034;
-    margin: 0 0 0.3em 0;
-}
-
-/* Left aligned form labels */
-.too-much-whitespace {
-    overflow: hidden;
-}
-.too-much-whitespace label {
-    float: left;
-}
-.too-much-whitespace input {
-    float: right;
-}
-
-.error-poor-contrast .validation-summary {
-    color: #fff;
-}
-
-.error-poor-contrast .has-errors {
-    border: 1px solid #fae1e1;
 }
 

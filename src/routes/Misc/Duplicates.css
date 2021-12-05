@@ -3,3 +3,8 @@ p a:link { color: red }
 p a:visited { color: maroon }
 p a:active { color: fuchsia }
 */
+
+.use-of-color__no-decoration:link {text-decoration: none}
+.use-of-color__no-decoration:visited {text-decoration: none}
+.use-of-color__no-decoration:active {text-decoration: none}
+.use-of-color__no-decoration:hover {text-decoration: underline; color: red;}

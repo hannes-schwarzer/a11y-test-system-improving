@@ -105,6 +105,31 @@ export const Duplicates = () => {
           </p>
         </TestCase>
 
+<TestCase
+          title={
+            "F73: Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision"
+          }
+          successCriterionInWords={"Use of Color"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#use-of-color"
+          }
+          successCriterionNumber={"1.4.1"}
+          level={Level.A}
+          explanation={
+            "Links miss the underline and are only identifiable by their blue color."
+          }
+        >
+          <p>
+            To find out more about the{" "}
+            <a
+              className={"use-of-color__no-decoration"}
+              href="rain_in_spain.html"
+            >
+              rain in spain
+            </a>{" "}
+            there are many resources.
+          </p>
+        </TestCase>
 
       */}
     </>
