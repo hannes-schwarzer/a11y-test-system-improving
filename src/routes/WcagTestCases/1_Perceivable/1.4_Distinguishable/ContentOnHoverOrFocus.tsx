@@ -25,7 +25,7 @@ export const ContentOnHoverOrFocus = (props: Props) => {
           <label className={"cohof__block-form"} htmlFor={"drivers-licence-no"}>
             Your driving licence number{" "}
             <span className={"cohof__tooltip-icon"}>?</span>{" "}
-            <span className={"tooltip-information"}>
+            <span className={"cohof__tooltip-information"}>
               Your driving licence number can be found in section 5 of your
               driving licence photocard
             </span>

@@ -14,11 +14,11 @@
     text-align: center;
 }
 
-.cohof__tooltip-icon:hover + .tooltip-information {
+.cohof__tooltip-icon:hover + .cohof__tooltip-information {
     display: block;
 }
 
-.tooltip-information {
+.cohof__tooltip-information {
     display: none;
     position: absolute;
     width: 12em;
@@ -29,7 +29,7 @@
     margin-left: 6.4em;
 }
 
-.tooltip-information:after, .tooltip-information:before {
+.cohof__tooltip-information:after, .cohof__tooltip-information:before {
     top: 100%;
     left: 50%;
     border: solid transparent;
@@ -40,14 +40,14 @@
     pointer-events: none;
 }
 
-.tooltip-information:after {
+.cohof__tooltip-information:after {
     border-color: rgba(111, 119, 123, 0);
     border-top-color: #6F777B;
     border-width: 10px;
     margin-left: -10px;
 }
 
-.tooltip-information:before {
+.cohof__tooltip-information:before {
     border-color: rgba(0, 0, 0, 0);
     border-top-color: #6F777B;
     border-width: 11px;
