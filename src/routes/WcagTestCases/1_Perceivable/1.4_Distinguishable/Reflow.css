@@ -1,12 +1,12 @@
-.constrained-box {
+.reflow__constrained-box {
     position: relative;
     overflow: scroll;
 }
-.constrained {
+.reflow__constrained {
     width: 100em;
     position: relative;
 }
-.constrained-extra {
+.reflow__constrained-extra {
     float: right;
     margin-right: -100%;
 }
