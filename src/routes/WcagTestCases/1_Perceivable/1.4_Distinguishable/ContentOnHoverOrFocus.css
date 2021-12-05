@@ -1,16 +1,12 @@
-/*120*/
-
-.tooltips-not-focusable {
+.cohof__block-form {
     display: block;
     margin-bottom: 1em;
-    /* Tooltip arrow */
 }
 
-.tooltips-not-focusable .tooltip-icon {
+.cohof__tooltip-icon {
     cursor: pointer;
-    cursor: hand;
     background: #6F777B;
-    color: #fff;
+    color: #ffffff;
     border-radius: 1em;
     width: 1.5em;
     height: 1.5em;
@@ -18,11 +14,11 @@
     text-align: center;
 }
 
-.tooltips-not-focusable .tooltip-icon:hover + .tooltip-information {
+.cohof__tooltip-icon:hover + .tooltip-information {
     display: block;
 }
 
-.tooltips-not-focusable .tooltip-information {
+.tooltip-information {
     display: none;
     position: absolute;
     width: 12em;
@@ -33,7 +29,7 @@
     margin-left: 6.4em;
 }
 
-.tooltips-not-focusable .tooltip-information:after, .tooltips-not-focusable .tooltip-information:before {
+.tooltip-information:after, .tooltip-information:before {
     top: 100%;
     left: 50%;
     border: solid transparent;
@@ -44,14 +40,14 @@
     pointer-events: none;
 }
 
-.tooltips-not-focusable .tooltip-information:after {
+.tooltip-information:after {
     border-color: rgba(111, 119, 123, 0);
     border-top-color: #6F777B;
     border-width: 10px;
     margin-left: -10px;
 }
 
-.tooltips-not-focusable .tooltip-information:before {
+.tooltip-information:before {
     border-color: rgba(0, 0, 0, 0);
     border-top-color: #6F777B;
     border-width: 11px;

@@ -22,12 +22,9 @@ export const ContentOnHoverOrFocus = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#content-on-hover-or-focus"
           }
         >
-          <label
-            className={"tooltips-not-focusable"}
-            htmlFor={"drivers-licence-no"}
-          >
+          <label className={"cohof__block-form"} htmlFor={"drivers-licence-no"}>
             Your driving licence number{" "}
-            <span className={"tooltip-icon"}>?</span>{" "}
+            <span className={"cohof__tooltip-icon"}>?</span>{" "}
             <span className={"tooltip-information"}>
               Your driving licence number can be found in section 5 of your
               driving licence photocard
