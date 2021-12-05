@@ -24,7 +24,13 @@ export const AudioControl = (props: Props) => {
           }
           successCriterionNumber={"1.4.2"}
           level={Level.A}
+          explanation={
+            "This failure occurs when an audio or video element with an audio track contains the autoplay attribute and does not contain the muted attribute, and no controls or commands have been provided to pause or stop the media resource. If the media element is shorter than 3 seconds, the failure does not occur. If the user agent provides user preferences to override autoplay behavior, the failure does not occur. "
+          }
         >
+          <p>
+            By visiting this site an audio file is started to play in a loop.
+          </p>
           <audio src={JEFFBOB} autoPlay loop></audio>
         </TestCase>
       </Frame>
