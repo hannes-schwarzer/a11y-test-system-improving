@@ -1,11 +1,11 @@
-.nontextconstrast__no-focus:focus {
+.non-text-constrast__no-focus:focus {
     outline: none;
 }
 
-.nontextconstrast__constant-dotted-focus {
+.non-text-constrast__constant-dotted-focus {
     outline: thin dotted black
 }
 
-.nontextconstrast__constant-medium-focus {
+.non-text-constrast__constant-medium-focus {
     border: medium solid black
 }

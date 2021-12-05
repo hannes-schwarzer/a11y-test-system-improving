@@ -1,6 +1,6 @@
 import { Level, TestCase } from "../../../../components/TestCase/TestCase";
-import "./NonTextContrast.css";
 import { Frame } from "../../../../components/Frame/Frame";
+import "./NonTextContrast.css";
 
 interface Props {
   pageTitle: string;
@@ -29,7 +29,7 @@ export const NonTextContrast = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
           }
         >
-          <a href={"somepage.html"} className={"nontextconstrast__no-focus"}>
+          <a href={"/some-page"} className={"non-text-constrast__no-focus"}>
             Link to some page
           </a>
         </TestCase>
@@ -55,8 +55,8 @@ export const NonTextContrast = (props: Props) => {
           }
         >
           <a
-            href={"somepage.html"}
-            className={"nontextconstrast__constant-dotted-focus"}
+            href={"/some-page"}
+            className={"non-text-constrast__constant-dotted-focus"}
           >
             Link to some page
           </a>
@@ -84,8 +84,8 @@ export const NonTextContrast = (props: Props) => {
           }
         >
           <a
-            href={"somepage.html"}
-            className={"nontextconstrast__constant-medium-focus"}
+            href={"/some-page"}
+            className={"non-text-constrast__constant-medium-focus"}
           >
             Link to some page
           </a>
