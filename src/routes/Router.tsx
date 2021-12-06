@@ -5,7 +5,6 @@ import { OnlySeparaterInTitle } from "./WcagTestCases/DetailPages/Navigable_Deta
 import { MissingHOne } from "./WcagTestCases/DetailPages/MissingHOne";
 import { KeyboardTrap } from "./WcagTestCases/DetailPages/KeyboardAccessible/KeyboardTrap";
 import { Homepage } from "./Homepage/Homepage";
-import { Misc } from "./Misc/Misc";
 import { NonTextContent } from "./WcagTestCases/1_Perceivable/1.1_TextAlternatives/NonTextContent";
 import { AudioOnlyVideoOnlyPrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded";
 import { MediaAlternativePrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/MediaAlternativePrerecorded";
@@ -304,7 +303,6 @@ export const Router = () => {
         />
         <Route path={"/headings/missingh1"} element={<MissingHOne />} />
         <Route path={"/keyboard/trap"} element={<KeyboardTrap />} />
-        <Route path={"/misc"} element={<Misc />} />
         <Route path={"/some-page"} element={<SomePage />} />
         <Route
           path={"/meaningful-sequence/changed-meaning-through-formatting"}
