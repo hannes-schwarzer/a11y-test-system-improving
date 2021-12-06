@@ -326,7 +326,9 @@ range of people with disabilities,        wide variety of assistive technologies
           <p>
             For this test you need to visit the following page:{" "}
             <Link
-              to={"/meaningful-sequence/changed-meaning-through-formatting"}
+              to={
+                "/wcag/perceivable/adaptable/meaningful-sequence/changed-meaning-through-formatting"
+              }
             >
               Link to page with changed content meaning
             </Link>

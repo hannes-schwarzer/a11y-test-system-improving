@@ -19,7 +19,7 @@ export const NoKeyboardTrap = (props: Props) => {
           successCriterionNumber={"2.1.2"}
           level={Level.A}
         >
-          <Link to={"/keyboard/trap"}>
+          <Link to={"/wcag/operable/keyboard-accessible/no-keyboard-trap/trap"}>
             Example page that contains a keyboard trap
           </Link>
         </TestCase>

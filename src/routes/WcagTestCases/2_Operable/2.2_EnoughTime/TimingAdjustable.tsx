@@ -29,7 +29,11 @@ export const TimingAdjustable = (props: Props) => {
         >
           <p>
             For this test you need to visit the following page:{" "}
-            <Link to={"/timing-adjustable/redirect-to-other-page"}>
+            <Link
+              to={
+                "/wcag/operable/enough-time/timing-adjustable/redirect-to-other-page"
+              }
+            >
               Link to page that redirects after 5 seconds
             </Link>
           </p>
@@ -57,7 +61,11 @@ export const TimingAdjustable = (props: Props) => {
         >
           <p>
             For this test you need to visit the following page:{" "}
-            <Link to={"/timing-adjustable/refreshing-page"}>
+            <Link
+              to={
+                "/wcag/operable/enough-time/timing-adjustable/refreshing-page"
+              }
+            >
               Link to page that refreshes after 5 seconds
             </Link>
           </p>

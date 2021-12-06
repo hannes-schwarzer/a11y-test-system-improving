@@ -24,7 +24,9 @@ export const PageTitled = (props: Props) => {
         >
           <p>
             For this test you need to visit the following page:{" "}
-            <Link to={"/page-title/empty-title"}>Link to empty page title</Link>
+            <Link to={"/wcag/operable/navigable/page-titled/empty-title"}>
+              Link to empty page title
+            </Link>
           </p>
         </TestCase>
 
@@ -42,7 +44,9 @@ export const PageTitled = (props: Props) => {
         >
           <p>
             For this test you need to visit the following page:{" "}
-            <Link to={"/page-title/no-title"}>Link to page with no title</Link>
+            <Link to={"/wcag/operable/navigable/page-titled/no-page-title"}>
+              Link to page with no title
+            </Link>
           </p>
         </TestCase>
 
@@ -60,7 +64,7 @@ export const PageTitled = (props: Props) => {
         >
           <p>
             For this test you need to visit the following page:{" "}
-            <Link to={"/page-title/two-titles"}>
+            <Link to={"/wcag/operable/navigable/page-titled/two-page-titles"}>
               Link to page with two titles
             </Link>
           </p>
@@ -82,7 +86,11 @@ export const PageTitled = (props: Props) => {
         >
           <p>
             For this test you need to visit the following page:{" "}
-            <Link to={"/page-title/only-separater-in-title"}>
+            <Link
+              to={
+                "/wcag/operable/navigable/page-titled/only-separater-in-title"
+              }
+            >
               Link to page with only separater in title
             </Link>
           </p>
@@ -102,7 +110,11 @@ export const PageTitled = (props: Props) => {
         >
           <p>
             For this test you need to visit the following page:{" "}
-            <Link to={"/page-title/inappropriate-page-title"}>
+            <Link
+              to={
+                "/wcag/operable/navigable/page-titled/inappropriate-page-title"
+              }
+            >
               Link to page with inappropriate page title
             </Link>
           </p>

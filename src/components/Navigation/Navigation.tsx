@@ -19,7 +19,12 @@ export const Navigation = () => {
                   Text Alternatives
                   <ul>
                     <li>
-                      <Link className="nav__link" to={"/wcag/non-text-content"}>
+                      <Link
+                        className="nav__link"
+                        to={
+                          "/wcag/perceivable/text-alternatives/non-text-content"
+                        }
+                      >
                         Non-text Content
                       </Link>
                     </li>
@@ -31,7 +36,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className="nav__link"
-                        to={"/wcag/audio-only-and-video-only-prerecorded"}
+                        to={
+                          "/wcag/perceivable/time-based-media/audio-only-and-video-only-prerecorded"
+                        }
                       >
                         Audio-only and Video-only (Prerecorded)
                       </Link>
@@ -39,7 +46,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className="nav__link"
-                        to={"/wcag/media-alternative-prerecorded"}
+                        to={
+                          "/wcag/perceivable/time-based-media/media-alternative-prerecorded"
+                        }
                       >
                         Media Alternative (Prerecorded)
                       </Link>
@@ -52,7 +61,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className="nav__link"
-                        to={"/wcag/info-and-relationships"}
+                        to={
+                          "/wcag/perceivable/adaptable/info-and-relationships"
+                        }
                       >
                         Info and Relationships
                       </Link>
@@ -61,7 +72,7 @@ export const Navigation = () => {
                       {" "}
                       <Link
                         className="nav__link"
-                        to={"/wcag/meaningful-sequence"}
+                        to={"/wcag/perceivable/adaptable/meaningful-sequence"}
                       >
                         Meaningful Sequence
                       </Link>
@@ -72,32 +83,45 @@ export const Navigation = () => {
                   Distinguishable
                   <ul>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/use-of-color"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/perceivable/distinguishable/use-of-color"}
+                      >
                         Use of Color
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/audio-control"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/perceivable/distinguishable/audio-control"}
+                      >
                         Audio Control
                       </Link>
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/contrast-minimum"}
+                        to={
+                          "/wcag/perceivable/distinguishable/contrast-minimum"
+                        }
                       >
                         Contrast (Minimum)
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/resize-text"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/perceivable/distinguishable/resize-text"}
+                      >
                         Resize Text
                       </Link>
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/contrast-enhanced"}
+                        to={
+                          "/wcag/perceivable/distinguishable/contrast-enhanced"
+                        }
                       >
                         Contrast (Enhanced)
                       </Link>
@@ -105,33 +129,45 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/visual-presentation"}
+                        to={
+                          "/wcag/perceivable/distinguishable/visual-presentation"
+                        }
                       >
                         Visual Presentation
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/reflow"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/perceivable/distinguishable/reflow"}
+                      >
                         Reflow
                       </Link>
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/non-text-contrast"}
+                        to={
+                          "/wcag/perceivable/distinguishable/non-text-contrast"
+                        }
                       >
                         Non-text Contrast
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/text-spacing"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/perceivable/distinguishable/text-spacing"}
+                      >
                         Text Spacing
                       </Link>
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/content-on-hover-or-focus"}
+                        to={
+                          "/wcag/perceivable/distinguishable/content-on-hover-or-focus"
+                        }
                       >
                         Content on Hover or Focus
                       </Link>
@@ -147,14 +183,19 @@ export const Navigation = () => {
                   Keyboard Accessible
                   <ul>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/keyboard"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/operable/keyboard-accessible/keyboard"}
+                      >
                         Keyboard
                       </Link>
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/no-keyboard-trap"}
+                        to={
+                          "/wcag/operable/keyboard-accessible/no-keyboard-trap"
+                        }
                       >
                         No Keyboard Trap
                       </Link>
@@ -162,7 +203,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/character-key-shortcuts"}
+                        to={
+                          "/wcag/operable/keyboard-accessible/character-key-shortcuts"
+                        }
                       >
                         Character Key Shortcuts
                       </Link>
@@ -175,7 +218,7 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/timing-adjustable"}
+                        to={"/wcag/operable/enough-time/timing-adjustable"}
                       >
                         Timing Adjustable
                       </Link>
@@ -183,13 +226,16 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/pause-stop-hide"}
+                        to={"/wcag/operable/enough-time/pause-stop-hide"}
                       >
                         Pause, Stop, Hide
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/interruptions"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/operable/enough-time/interruptions"}
+                      >
                         Interruptions
                       </Link>
                     </li>
@@ -201,7 +247,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/three-flashes-or-below-threshold"}
+                        to={
+                          "/wcag/operable/seizures-and-physical-reactions/three-flashes-or-below-threshold"
+                        }
                       >
                         Three Flashes or Below Threshold
                       </Link>
@@ -212,24 +260,33 @@ export const Navigation = () => {
                   Navigable
                   <ul>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/bypass-blocks"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/operable/navigable/bypass-blocks"}
+                      >
                         Bypass Blocks
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/page-titled"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/operable/navigable/page-titled"}
+                      >
                         Page Titled
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/focus-order"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/operable/navigable/focus-order"}
+                      >
                         Focus Order
                       </Link>
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/link-purpose-in-context"}
+                        to={"/wcag/operable/navigable/link-purpose-in-context"}
                       >
                         Link Purpose (In Context)
                       </Link>
@@ -237,20 +294,23 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/headings-and-labels"}
+                        to={"/wcag/operable/navigable/headings-and-labels"}
                       >
-                        Heading and Labels
+                        Headings and Labels
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/focus-visible"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/operable/navigable/focus-visible"}
+                      >
                         Focus Visible
                       </Link>
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/link-purpose-link-only"}
+                        to={"/wcag/operable/navigable/link-purpose-link-only"}
                       >
                         Link Purpose (Link Only)
                       </Link>
@@ -261,12 +321,18 @@ export const Navigation = () => {
                   Input Modalities
                   <ul>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/label-in-name"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/operable/input-modalities/label-in-name"}
+                      >
                         Label in Name
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/target-size"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/operable/input-modalities/target-size"}
+                      >
                         Target Size
                       </Link>
                     </li>
@@ -283,7 +349,7 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/language-of-page"}
+                        to={"/wcag/understandable/readable/language-of-page"}
                       >
                         Language of Page
                       </Link>
@@ -291,13 +357,16 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/language-of-parts"}
+                        to={"/wcag/understandable/readable/language-of-parts"}
                       >
                         Language of Parts
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/reading-level"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/understandable/readable/reading-level"}
+                      >
                         Reading Level
                       </Link>
                     </li>
@@ -307,19 +376,27 @@ export const Navigation = () => {
                   Predictable
                   <ul>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/on-focus"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/understandable/predictable/on-focus"}
+                      >
                         On Focus
                       </Link>
                     </li>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/on-input"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/understandable/predictable/on-input"}
+                      >
                         On Input
                       </Link>
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/consistent-navigation"}
+                        to={
+                          "/wcag/understandable/predictable/consistent-navigation"
+                        }
                       >
                         Consistent Navigation
                       </Link>
@@ -327,7 +404,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/consistent-identification"}
+                        to={
+                          "/wcag/understandable/predictable/consistent-identification"
+                        }
                       >
                         Consistent Identification
                       </Link>
@@ -335,7 +414,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/change-on-request"}
+                        to={
+                          "/wcag/understandable/predictable/change-on-request"
+                        }
                       >
                         Change on Request
                       </Link>
@@ -348,7 +429,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/error-identification"}
+                        to={
+                          "/wcag/understandable/input-assistance/error-identification"
+                        }
                       >
                         Error Identification
                       </Link>
@@ -356,7 +439,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/labels-or-instructions"}
+                        to={
+                          "/wcag/understandable/input-assistance/labels-or-instructions"
+                        }
                       >
                         Labels or Instructions
                       </Link>
@@ -364,7 +449,9 @@ export const Navigation = () => {
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/error-suggestion"}
+                        to={
+                          "/wcag/understandable/input-assistance/error-suggestion"
+                        }
                       >
                         Error Suggestion
                       </Link>
@@ -380,14 +467,17 @@ export const Navigation = () => {
                   Compatible
                   <ul>
                     <li>
-                      <Link className={"nav__link"} to={"/wcag/parsing"}>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/robust/compatible/parsing"}
+                      >
                         Parsing
                       </Link>{" "}
                     </li>
                     <li>
                       <Link
                         className={"nav__link"}
-                        to={"/wcag/name-role-value"}
+                        to={"/wcag/robust/compatible/name-role-value"}
                       >
                         Name, Role, Value
                       </Link>{" "}
