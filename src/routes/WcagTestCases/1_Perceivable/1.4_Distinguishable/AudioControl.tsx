@@ -1,6 +1,6 @@
 import { TestCase, Level } from "../../../../components/TestCase/TestCase";
 // @ts-ignore
-import JEFFBOB from "../../../../assets/jeffbob.mp3";
+import ROAR from "../../../../assets/t-rex-roar.mp3";
 import { Frame } from "../../../../components/Frame/Frame";
 
 interface Props {
@@ -31,7 +31,7 @@ export const AudioControl = (props: Props) => {
           <p>
             By visiting this site an audio file is started to play in a loop.
           </p>
-          <audio src={JEFFBOB} autoPlay loop></audio>
+          <audio src={ROAR} autoPlay loop></audio>
         </TestCase>
       </Frame>
     </>
