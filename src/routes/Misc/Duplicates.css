@@ -1,9 +1,3 @@
-/*F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due...
-p a:link { color: red }
-p a:visited { color: maroon }
-p a:active { color: fuchsia }
-*/
-
 /*F87: Failure of Success Criterion 1.3.1 due to inserting non-decorative*/
 .use-of-color__no-decoration:link {text-decoration: none}
 .use-of-color__no-decoration:visited {text-decoration: none}
@@ -26,7 +20,7 @@ p a:active { color: fuchsia }
 }
 
 .ntc__warning-icon {
-    background-image: url("../../../../assets/important.png");
+    background-image: url("../../assets/bbc-blocks-dark.png");
     background-size: 34px 34px;
     background-repeat: no-repeat;
     background-position: 0 4px;
