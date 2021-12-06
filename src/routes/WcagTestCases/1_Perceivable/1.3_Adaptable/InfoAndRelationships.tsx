@@ -14,7 +14,7 @@ export const InfoAndRelationships = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <TestCase
           title={
-            "F2: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text"
+            "Implicit heading: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text"
           }
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
@@ -25,6 +25,9 @@ export const InfoAndRelationships = (props: Props) => {
           explanation={
             "Using CSS to style the p element to look like a heading: The author intended to make a heading but didn't want the look of the default HTML heading. So they used CSS to style the P element to look like a heading and they called it a heading. But they failed to use the proper HTML heading element. Therefore, the Assisitive Technology could not distinguish it as a heading."
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F2.html"
+          }
         >
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -33,11 +36,33 @@ export const InfoAndRelationships = (props: Props) => {
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </p>
-          <p className="heading1">Introduction</p>
+          <p className="iar__paragraph-as-heading">Introduction</p>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
+          </p>
+        </TestCase>
+
+        <TestCase
+          title={
+            "Implicit heading: Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          successCriterionNumber={"1.3.1"}
+          level={Level.A}
+          explanation={"This is a div which is being styled to look like an h1"}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F2.html"
+          }
+        >
+          <div className={"iar__div-as-heading"}>Looks like Page Heading</div>
+          <p>
+            This paragraph is preceded by a div that is styled to look like a
+            heading
           </p>
         </TestCase>
 
@@ -53,6 +78,9 @@ export const InfoAndRelationships = (props: Props) => {
           level={Level.A}
           explanation={
             "Images of text used as headings where the images are not marked up with heading tags: This is a failure because at a minimum the img element should be enclosed within a header element. A better solution would be to eliminate the image and to enclose the text within a header element which has been styled using CSS."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F2.html"
           }
         >
           <img src={CHAPTER} alt="Chapter One" />
@@ -78,11 +106,14 @@ export const InfoAndRelationships = (props: Props) => {
           explanation={
             "Using CSS to visually emphasize a phrase or word without conveying that emphasis semantically: The following example fails because the information conveyed by using the CSS font-weight property to change to a bold font is not conveyed through semantic markup or stated explicitly in the text."
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F2.html"
+          }
         >
           <p>
-            "I said, <span className="yell">no</span>, not before dinner!", was
-            the exasperated response when Timmy asked his mother for the fourth
-            time for an ice cream cone.
+            "I said, <span className="iar__yell">no</span>, not before dinner!",
+            was the exasperated response when Timmy asked his mother for the
+            fourth time for an ice cream cone.
           </p>
         </TestCase>
 
@@ -96,11 +127,13 @@ export const InfoAndRelationships = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={
+            "The following example incorrectly uses white space characters to format a paragraph into a two column format."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F33.html"
+          }
         >
-          <p>
-            The following example incorrectly uses white space characters to
-            format a paragraph into a two column format.
-          </p>
           <pre>
             {`
 Web Content Accessibility Guidelines      including blindness and low vision, 
@@ -128,11 +161,13 @@ range of people with disabilities,        wide variety of assistive technologies
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          explanation={
+            "The following example incorrectly uses white space to format a Menu as a visual table."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F34.html"
+          }
         >
-          <p>
-            The following example incorrectly uses white space to format a Menu
-            as a visual table.
-          </p>
           <pre>
             {`
 Menu
@@ -164,10 +199,13 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           explanation={
             "Scripting a span element: Scripted event handling is added to a span element so that it functions as a link when clicked with a mouse. Assistive technology does not recognize this element as a link."
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
+          }
         >
           <span
             onClick={() => {
-              document.location.href = "newpage.html";
+              document.location.href = "/some-page";
             }}
           >
             Fake link
@@ -186,6 +224,9 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           level={Level.A}
           explanation={
             "Scripting an img element: Scripted event handling is added to an img element so that it functions as a link when clicked with a mouse. Assistive technology does not recognize this element as a link."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
         >
           <img
@@ -209,6 +250,9 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           level={Level.A}
           explanation={
             "A heading used only for visual effect: In this example, a heading element is used to display an address in a large, bold font. The address does not identify a new section of the document, however, so it should not be marked as a heading."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F43.html"
           }
         >
           <div>
@@ -234,6 +278,9 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           explanation={
             "Using heading elements for presentational effect: In this example, heading markup is used in two different ways: to convey document structure and to create visual effects. The h1 and h2 elements are used appropriately to mark the beginning of the document as a whole and the beginning of the abstract. However, the h3 and h4 elements between the title and the abstract are used only for visual effect — to control the fonts used to display the authors' names and the date."
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F43.html"
+          }
         >
           <h1>Study on the Use of Heading Elements in Web Pages</h1>
           <h3>Joe Jones and Mary Smith</h3>
@@ -254,6 +301,9 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           level={Level.A}
           explanation={
             "Using blockquote elements to provide additional indentation: The following example uses blockquote for text that is not a quotation to give it prominence by indenting it when displayed in graphical browsers."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F43.html"
           }
         >
           <p>
@@ -285,6 +335,9 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           explanation={
             "Using the fieldset and legend elements to give a border to text: "
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F43.html"
+          }
         >
           <fieldset>
             <legend>Bargain Corner</legend>
@@ -302,25 +355,26 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F46.html"
+          }
+          explanation={
+            "Here is a simple example that uses a table to layout content in a three column format."
+          }
         >
-          <p>
-            Here is a simple example that uses a table to layout content in a
-            three column format.
-          </p>
-
           <table summary="layout table">
             <tr>
               <th colSpan={3}>Page Title</th>
             </tr>
             <tr>
               <td>
-                <div>navigation content</div>
+                <div>Navigation content</div>
               </td>
               <td>
-                <div>main content</div>
+                <div>Main content</div>
               </td>
               <td>
-                <div>right sidebar content</div>
+                <div>Right sidebar content</div>
               </td>
             </tr>
             <tr>
@@ -340,6 +394,9 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           }
           level={Level.A}
           explanation={"This is a schedule formatted with tabs between columns"}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F48.html"
+          }
         >
           <pre>
             {`
@@ -362,7 +419,12 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
-          explanation={"Election results displayed using preformatted text"}
+          explanation={
+            "Preformatted text is used to display election results in a tabular manner."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F48.html"
+          }
         >
           <pre>
             {`
@@ -399,35 +461,13 @@ CIRCUIT COURT JUDGE BRANCH 3
           }
           level={Level.A}
           explanation={
-            "In the following example, :before and :after are used to indicate speaker changes and to insert quotation marks in a screenplay."
-          }
-        >
-          <p className="jim">
-            <q>Do you think he's going to make it?</q>
-          </p>
-          <p className="mary">
-            <q>It's not looking good.</q>
-          </p>
-        </TestCase>
-
-        <TestCase
-          title={
-            "F87: Failure of Success Criterion 1.3.1 due to inserting non-decorative content by using :before and :after pseudo-elements and the 'content' property in CSS"
-          }
-          successCriterionInWords={"Info and Relationships"}
-          successCriterionNumber={"1.3.1"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          level={Level.A}
-          explanation={
             "In this example, :before is used to differentiate facts from opinions."
           }
         >
-          <p className="fact">
+          <p className="iar__fact">
             The defendant was at the scene of the crime when it occurred.
           </p>
-          <p className="opinion">The defendant committed the crime.</p>
+          <p className="iar__opinion">The defendant committed the crime.</p>
         </TestCase>
 
         <TestCase
@@ -440,18 +480,13 @@ CIRCUIT COURT JUDGE BRANCH 3
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F90.html"
+          }
+          explanation={
+            "Table content not correctly associated to nested headers: In this example, nested headers are used, but the content cells are incorrectly associated via the id and headers attributes. All cells reference top level header 'Exams' (id=\"e\") - this isn't correct for the last three columns which should reference header 'Projects'. Also, the referencing of the second level column headers has been accidentally swapped even though in this example this makes no difference as the contents (1, 2, Final) are repeated."
+          }
         >
-          <h4>Table content not correctly associated to nested headers</h4>
-          <p>
-            In this example, nested headers are used, but the content cells are
-            incorrectly associated via the id and headers attributes. All cells
-            reference top level header 'Exams' (id="e") - this isn't correct for
-            the last three columns which should reference header 'Projects'.
-            Also, the referencing of the second level column headers has been
-            accidentally swapped even though in this example this makes no
-            difference as the contents (1, 2, Final) are repeated.
-          </p>
-
           <table>
             <tr>
               <th rowSpan={2} id="h">
@@ -486,8 +521,7 @@ CIRCUIT COURT JUDGE BRANCH 3
             </tr>
             <tr>
               <td headers="h">15%</td>
-              <td headers="e p1">15%</td>
-              {/* should be "e e1"*/}
+              <td headers="e p1">15%</td> {/* should be "e e1"*/}
               <td headers="e p2">15%</td> {/* should be "e e2"*/}
               <td headers="e pf">20%</td> {/* should be "e ef"*/}
               <td headers="e e1">10%</td> {/* should be "p p1"*/}
@@ -509,6 +543,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           level={Level.A}
           explanation={
             "Headers not marked up appropriately: This table does not use th (or other appropriate header markup) for headers. Instead, it uses td elements for all cells. Navigating cell by cell, screen readers will often fail to read the header cells associated with content."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F91.html"
           }
         >
           <table>
@@ -562,6 +599,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "In this example, tabular data is marked up with role=presentation. Though design layout tables can be marked up in such a way, data tables need to retain their semantic information and should therefore not be marked up with role=presentation."
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F92.html"
+          }
         >
           <table role="presentation">
             <caption>Fruits and their colors</caption>
@@ -581,36 +621,6 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"Implicit heading"}
-          successCriterionInWords={"Info and Relationships"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          successCriterionNumber={"1.3.1"}
-          level={Level.A}
-        >
-          <div className={"h1-style"}>
-            This is a div which is being styled to look like an h1
-          </div>
-        </TestCase>
-
-        <TestCase
-          title={"Text formatting used instead of an actual heading"}
-          successCriterionInWords={"Info and Relationships"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          successCriterionNumber={"1.3.1"}
-          level={Level.A}
-        >
-          <div className={"fake-heading"}>Fake Heading</div>
-          <p>
-            This paragraph is preceded by a div that is styled to look like a
-            heading
-          </p>
-        </TestCase>
-
-        <TestCase
           title={"Li element with no parent"}
           successCriterionInWords={"Info and Relationships"}
           linkToSuccessCriterion={
@@ -618,6 +628,12 @@ CIRCUIT COURT JUDGE BRANCH 3
           }
           successCriterionNumber={"1.3.1"}
           level={Level.A}
+          linkToExplanation={
+            "https://accessibilityinsights.io/info-examples/web/listitem/"
+          }
+          explanation={
+            "In a properly structured list, all list items ( <li> elements) are contained within a <ul> or <ol> element. When an assistive technology encounters a list that’s poorly structured, it might respond in an unexpected way. As a result, people who use assistive technologies might find it difficult to interpret the list."
+          }
         >
           <li>no parent</li>
         </TestCase>
@@ -630,6 +646,10 @@ CIRCUIT COURT JUDGE BRANCH 3
           }
           successCriterionNumber={"1.3.1"}
           level={Level.A}
+          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H48.html"}
+          explanation={
+            "When markup is used that visually formats items as a list but does not indicate the list relationship, users may have difficulty in navigating the information. An example of such visual formatting is including asterisks in the content at the beginning of each list item and using <br> elements to separate the list items."
+          }
         >
           * fake list object 1
           <br />
@@ -649,19 +669,29 @@ CIRCUIT COURT JUDGE BRANCH 3
           }
           successCriterionNumber={"1.3.1"}
           level={Level.A}
+          linkToExplanation={"https://dequeuniversity.com/rules/axe/4.1/dlitem"}
+          explanation={
+            "A definition list item must be wrapped in parent dl elements, otherwise it will be invalid. A definition list must follow a specific hierarchy. A list is defined using the dl element. What follows are alternating sets of dt and dd elements, starting with the dt element. dt elements define a term while dd elements denote a term's description. Each set of dt elements must have a corresponding set of dd elements. Only dt and dd elements are allowed in definition list. If this hierarchy is not followed, the list will be invalid."
+          }
         >
           <dt>html</dt>
           <dd>a markup language for describing web documents</dd>
         </TestCase>
 
         <TestCase
-          title={"Improperly nested lists"}
+          title={
+            "Improperly nested lists: ul and ol must only directly contain li, script or template elements"
+          }
           successCriterionInWords={"Info and Relationships"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           successCriterionNumber={"1.3.1"}
           level={Level.A}
+          linkToExplanation={"https://dequeuniversity.com/rules/axe/3.5/list"}
+          explanation={
+            "Screen readers have a specific way of announcing lists. This feature makes lists clearer to understand, but will only work if lists are properly structured. When content elements other than list items are contained within a set of list elements, screen readers cannot inform the listener that they are listening to items within the list. For a list to be valid, it must have both parent elements (a set of ul elements or a set of ol elements) and child elements (declared inside of these tags using the li element), and any other content elements are invalid. Although some non-content elements such as script, template, style, meta, link, map, area, and datalist are permitted within lists, content elements other than li are not permitted."
+          }
         >
           <ul>
             <ul>
@@ -680,6 +710,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/tutorials/tables/irregular/"
+          }
+          explanation={
+            "To make sure that such header cells that span multiple rows are correctly associated with all the cells in those rows, the rows must be grouped. To define row groups wrap the corresponding rows in <tbody> elements (table body). Additionally, the scope attribute of header cells spanning rows has to be set to rowgroup. If a header spans multiple header rows, wrap the rows in a <thead> element instead of a <tbody> element. Use a <tfoot> element if a header spans multiple rows in the footer area of a table."
           }
         >
           <table>
@@ -724,6 +757,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           linkToExplanation={
             "https://www.w3.org/WAI/tutorials/tables/irregular/"
           }
+          explanation={
+            "For example, a header cell that spans three columns should be associated with corresponding data cells in the column group. This can be done by setting the scope attribute of the header cell to the value colgroup. The same principle applies to header cells spanning multiple rows. In this case, they are associated with by using the value rowgroup in the scope attribute."
+          }
         >
           <table>
             <caption>Opening times</caption>
@@ -760,6 +796,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           level={Level.A}
           linkToExplanation={
             "https://www.w3.org/WAI/tutorials/tables/irregular/"
+          }
+          explanation={
+            "A table is nested within another table. Here withing a header cell."
           }
         >
           <table>
@@ -807,6 +846,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/tables/"}
+          explanation={
+            "A table is nested within another table. Here withing a body cell."
+          }
         >
           <table>
             <tbody>
@@ -845,42 +887,6 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"Table has no table headings"}
-          successCriterionInWords={"Info and Relationships"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          successCriterionNumber={"1.3.1"}
-          level={Level.A}
-          linkToExplanation={
-            "https://www.w3.org/WAI/tutorials/tables/one-header/"
-          }
-        >
-          <table>
-            <caption>Shelly's Daughters</caption>
-            <thead>
-              <tr>
-                <td>Name</td>
-                <td>Age</td>
-                <td>Birthday</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Jackie</td>
-                <td>5</td>
-                <td>April 5</td>
-              </tr>
-              <tr>
-                <td>Beth</td>
-                <td>8</td>
-                <td>January 14</td>
-              </tr>
-            </tbody>
-          </table>
-        </TestCase>
-
-        <TestCase
           title={"Table with inconsistent numbers of columns in rows"}
           successCriterionInWords={"Info and Relationships"}
           linkToSuccessCriterion={
@@ -889,6 +895,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/tables/"}
+          explanation={
+            "Data tables are used to organize data with a logical relationship in grids. Accessible tables need HTML markup that indicates header cells and data cells and defines their relationship. Assistive technologies use this information to provide context to users. If the structure is broken or irregular, tables can be very confusing."
+          }
         >
           <table>
             <caption>Requester information</caption>
@@ -947,6 +956,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/tables/"}
+          explanation={
+            "Header cells must be marked up with <th>, and data cells with <td> to make tables accessible. For more complex tables, explicit associations may be needed using scope, id, and headers attributes."
+          }
         >
           <table>
             <thead>
@@ -968,7 +980,12 @@ CIRCUIT COURT JUDGE BRANCH 3
           }
           successCriterionNumber={"1.3.1"}
           level={Level.A}
-          linkToExplanation={"https://www.w3.org/WAI/tutorials/tables/"}
+          linkToExplanation={
+            "https://www.w3.org/WAI/tutorials/tables/caption-summary/"
+          }
+          explanation={
+            "A caption functions like a heading for a table. Most screen readers announce the content of captions. Captions help users to find a table and understand what it’s about and decide if they want to read it. If the user uses “Tables Mode”, captions are the primary mechanism to identify tables. The caption is provided by the <caption> element."
+          }
         >
           <table>
             <thead>
@@ -1004,6 +1021,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           linkToExplanation={
             "https://equalizedigital.com/accessibility-checker/empty-missing-table-header/"
           }
+          explanation={
+            "A table header helps establish a relationship between table cells across rows or columns and to explain what the data is in each individual cell. Sighted people can rather quickly scan across rows and columns in a table and find the information that they want. For a blind or visually impaired person who is using assistive technology to read the table to them, it can be very challenging to interpret and understand how different data points in the various cells connect to one another."
+          }
         >
           <table>
             <caption>Shelly's Daughters</caption>
@@ -1030,6 +1050,43 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
+          title={"Form element has no label"}
+          successCriterionInWords={"Info and Relationships"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          successCriterionNumber={"1.3.1"}
+          level={Level.A}
+          linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          explanation={
+            "Provide labels to identify all form controls, including text fields, checkboxes, radio buttons, and drop-down menus. In most cases, this is done by using the <label> element. Labels need to describe the purpose of the form control."
+          }
+        >
+          <form>
+            <input type={"text"} />
+          </form>
+        </TestCase>
+
+        <TestCase
+          title={"Empty label found"}
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          level={Level.A}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          explanation={
+            "Provide labels to identify all form controls, including text fields, checkboxes, radio buttons, and drop-down menus. In most cases, this is done by using the <label> element. Labels need to describe the purpose of the form control."
+          }
+        >
+          <form>
+            <label htmlFor={"empty"}></label>
+            <input id={"empty"} type={"text"} />
+          </form>
+        </TestCase>
+
+        <TestCase
           title={
             "Labels missing when they would look clumsy for some form controls"
           }
@@ -1040,6 +1097,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          explanation={
+            "Provide labels to identify all form controls, including text fields, checkboxes, radio buttons, and drop-down menus. In most cases, this is done by using the <label> element. Labels need to describe the purpose of the form control."
+          }
         >
           <form>
             <label htmlFor={"missing-labels-day"}>
@@ -1062,6 +1122,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/grouping/"}
+          explanation={
+            "Grouping related form controls makes forms more understandable for all users, as related controls are easier to identify. It also makes it easier for people to focus on smaller and more manageable groups rather than try to grasp the entire form at once. Grouping needs to be carried out visually and in the code, for example, by using the <fieldset> and <legend> elements to associate related form controls."
+          }
         >
           <h4>Do you already have a personal user account?</h4>
           <label className={"block-label"} htmlFor={"radio-inline-1"}>
@@ -1086,84 +1149,6 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"Form element has no label"}
-          successCriterionInWords={"Info and Relationships"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          successCriterionNumber={"1.3.1"}
-          level={Level.A}
-          linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
-        >
-          <form>
-            <input type={"text"} />
-          </form>
-        </TestCase>
-
-        <TestCase
-          title={"Fieldset without a legend"}
-          successCriterionInWords={"forms"}
-          successCriterionNumber={"1.3.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
-          explanation={
-            "Form controls can be grouped by enclosing them within the fieldset element. All controls within a given fieldset are then related. The first element inside the fieldset must be a legend element, which provides a label or description for the group. Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
-          }
-        >
-          <form>
-            <fieldset>I am a fieldset without a legend</fieldset>
-          </form>
-        </TestCase>
-
-        <TestCase
-          title={"EmptyPageTitle legend"}
-          successCriterionInWords={"Info and Relationships"}
-          successCriterionNumber={"1.3.1"}
-          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          level={Level.A}
-        >
-          <form>
-            <fieldset>
-              <legend></legend>
-            </fieldset>
-          </form>
-        </TestCase>
-
-        <TestCase
-          title={
-            "Label element with for= attribute but not matching id= attribute of form control"
-          }
-          successCriterionInWords={"Info and Relationships"}
-          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
-          explanation={
-            "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
-          }
-          level={Level.A}
-          successCriterionNumber={"1.3.1"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-        >
-          <form>
-            <fieldset>
-              <legend>Non-matching for attribute</legend>
-              <label htmlFor={"not-matching-anything"}>form</label>
-              <input
-                id={"label-for-not-matching"}
-                type={"checkbox"}
-                value={"yes"}
-              />
-            </fieldset>
-          </form>
-        </TestCase>
-
-        <TestCase
           title={"Group of check boxes not enclosed in a fieldset"}
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
@@ -1171,7 +1156,10 @@ CIRCUIT COURT JUDGE BRANCH 3
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
-          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+          linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/grouping/"}
+          explanation={
+            "Grouping related form controls makes forms more understandable for all users, as related controls are easier to identify. It also makes it easier for people to focus on smaller and more manageable groups rather than try to grasp the entire form at once. Grouping needs to be carried out visually and in the code, for example, by using the <fieldset> and <legend> elements to associate related form controls."
+          }
         >
           <h4>Which types of waste do you transport regularly?</h4>
           <label className={"block-label"} htmlFor={"waste-type-1"}>
@@ -1206,18 +1194,73 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"EmptyPageTitle label found"}
-          successCriterionInWords={"Info and Relationships"}
+          title={"Fieldset without a legend"}
+          successCriterionInWords={"forms"}
           successCriterionNumber={"1.3.1"}
           level={Level.A}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
-          linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+          explanation={
+            "Form controls can be grouped by enclosing them within the fieldset element. All controls within a given fieldset are then related. The first element inside the fieldset must be a legend element, which provides a label or description for the group. Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
+          }
         >
           <form>
-            <label htmlFor={"empty"}></label>
-            <input id={"empty"} type={"text"} />
+            <fieldset>I am a fieldset without a legend</fieldset>
+          </form>
+        </TestCase>
+
+        <TestCase
+          title={"Empty legend and fieldset"}
+          successCriterionInWords={"Info and Relationships"}
+          successCriterionNumber={"1.3.1"}
+          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+          explanation={
+            "Hard to judge if this is rather a semantic or a syntactic failure."
+          }
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+          level={Level.A}
+        >
+          <p>
+            <a href="https://www.w3.org/TR/WCAG20-TECHS/F70.html">
+              Link to failure description of 4.1.1
+            </a>
+          </p>
+          <form>
+            <fieldset>
+              <legend></legend>
+            </fieldset>
+          </form>
+        </TestCase>
+
+        <TestCase
+          title={
+            "Label element with for= attribute but not matching id= attribute of form control"
+          }
+          successCriterionInWords={"Info and Relationships"}
+          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
+          explanation={
+            "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
+          }
+          level={Level.A}
+          successCriterionNumber={"1.3.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
+          }
+        >
+          <form>
+            <fieldset>
+              <legend>Non-matching for attribute</legend>
+              <label htmlFor={"not-matching-anything"}>form</label>
+              <input
+                id={"label-for-not-matching"}
+                type={"checkbox"}
+                value={"yes"}
+              />
+            </fieldset>
           </form>
         </TestCase>
 
@@ -1300,6 +1343,9 @@ CIRCUIT COURT JUDGE BRANCH 3
           linkToExplanation={
             "https://www.w3.org/WAI/GL/wiki/Using_HTML5_article_element"
           }
+          explanation={
+            "The <article> element is self-contained as it is used to outline a self-contained composition that can be spread around the Web if required for example for syndication purposes."
+          }
         >
           <article className={"not-article-content"}>
             <h2 id={"parent-other"}>Elsewhere on GOV.UK</h2>
@@ -1317,21 +1363,6 @@ CIRCUIT COURT JUDGE BRANCH 3
         </TestCase>
 
         <TestCase
-          title={"Non-decorative content inserted using CSS"}
-          successCriterionInWords={"Info and Relationships"}
-          successCriterionNumber={"1.3.1"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          level={Level.A}
-          linkToExplanation={
-            "https://www.w3.org/WAI/GL/2013/WD-WCAG20-TECHS-20130711/F87"
-          }
-        >
-          <p id={"css-generated-text"}>My favourite food is </p>
-        </TestCase>
-
-        <TestCase
           title={"Link with a role=button does not work with space bar"}
           successCriterionInWords={"Info and Relationships"}
           successCriterionNumber={"1.3.1"}
@@ -1342,35 +1373,11 @@ CIRCUIT COURT JUDGE BRANCH 3
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
+          explanation={"Only reacts on enter."}
         >
-          <a className={"button"} href={"next.html"} role={"button"}>
+          <a className={"iar__button"} href={"/some-page"} role={"button"}>
             Continue
           </a>
-        </TestCase>
-        <TestCase
-          title={
-            "ul and ol must only directly contain li, script or template elements"
-          }
-          successCriterionInWords={"Info and Relationships"}
-          successCriterionNumber={"1.3.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
-          }
-          linkToExplanation={
-            "https://dequeuniversity.com/rules/axe/4.3/list?application=AxeChrome"
-          }
-        >
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <ul>
-              Incorrect sublist
-              <li>Subitem 1</li>
-              <li>Subitem 2</li>
-            </ul>
-            <li>Item 3</li>
-          </ul>
         </TestCase>
       </Frame>
     </>

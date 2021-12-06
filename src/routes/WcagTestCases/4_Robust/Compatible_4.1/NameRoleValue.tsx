@@ -196,7 +196,7 @@ export const NameRoleValue = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"EmptyPageTitle button"}
+          title={"Empty button"}
           successCriterionInWords={"Name, Role, Value"}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -208,7 +208,7 @@ export const NameRoleValue = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"EmptyPageTitle heading"}
+          title={"Empty heading"}
           successCriterionInWords={"Name, Role, Value"}
           successCriterionNumber={"4.1.2"}
           linkToSuccessCriterion={
@@ -288,7 +288,7 @@ export const NameRoleValue = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"EmptyPageTitle label found"}
+          title={"Empty label found"}
           successCriterionInWords={"Name, Role, Value"}
           successCriterionNumber={"4.1.2"}
           level={Level.A}
