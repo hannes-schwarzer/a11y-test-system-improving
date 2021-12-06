@@ -481,7 +481,7 @@ export const NonTextContent = (props: Props) => {
           successCriterionInWords={"Non-text Content"}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
           explanation={
-            "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
+            "the label element must be used to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
           }
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
