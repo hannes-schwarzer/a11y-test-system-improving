@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import ALLYUP from "../../assets/AllyUp.png";
 import "./Header.css";
 
 interface HeaderProps {
@@ -12,15 +10,10 @@ export const Header = (headerProps: HeaderProps) => {
   return (
     <>
       <header className={"global-header"} role={"banner"}>
-        <Link to="/">
-          <img
-            src={ALLYUP}
-            alt={"Ally up logo"}
-            className="header__logo"
-            height={"auto"}
-            width={"100px"}
-          />
-        </Link>
+        <div id={"logo"}>
+          <span id={"logo__top"}>a11y</span>
+          <span id={"logo__bottom"}>up</span>
+        </div>
         <h1 className={"main-heading"}>{headerProps.pageTitle}</h1>
       </header>
     </>

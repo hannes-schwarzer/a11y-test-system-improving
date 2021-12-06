@@ -1,7 +1,7 @@
 .global-header {
     display: flex;
-    background: #303030;
-    color: whitesmoke;
+    background: #EEEEEE;
+    color: #255172;
     padding: 15px;
 }
 
@@ -9,3 +9,29 @@
     margin: 0 0 0 130px;
 }
 
+#logo {
+    display: flex;
+    flex-direction: column;
+    background: #EEEEEE;
+    width:auto;
+    height: auto;
+}
+
+#logo__top {
+    color: #2e638c;
+    margin-top: -0.15em;
+    margin-bottom: -0.1em;
+    margin-left: 0.07em;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:2.5em;
+}
+
+#logo__bottom {
+    color: #255172;
+    margin-top: -0.3em;
+    margin-bottom: -0.15em;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:4.5em;
+}

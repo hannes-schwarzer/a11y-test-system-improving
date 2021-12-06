@@ -86,6 +86,24 @@ export const Navigation = () => {
                         Sensory Characteristics
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        className="nav__link"
+                        to={"/wcag/perceivable/adaptable/orientation"}
+                      >
+                        Orientation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="nav__link"
+                        to={
+                          "/wcag/perceivable/adaptable/identify-input-purpose"
+                        }
+                      >
+                        Identify Input Purpose
+                      </Link>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -123,6 +141,14 @@ export const Navigation = () => {
                         to={"/wcag/perceivable/distinguishable/resize-text"}
                       >
                         Resize Text
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/perceivable/distinguishable/images-of-text"}
+                      >
+                        Images of Text
                       </Link>
                     </li>
                     <li>
@@ -489,6 +515,14 @@ export const Navigation = () => {
                         to={"/wcag/robust/compatible/name-role-value"}
                       >
                         Name, Role, Value
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={"nav__link"}
+                        to={"/wcag/robust/compatible/status-messages"}
+                      >
+                        Status Messages
                       </Link>
                     </li>
                   </ul>

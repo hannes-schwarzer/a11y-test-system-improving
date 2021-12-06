@@ -4,9 +4,9 @@
 }
 
 .nav {
-    background: #303030;
+    background: #EEEEEE;
     width: 245px;
-    color: whitesmoke;
+    color: #005A9C;
 }
 .nav__item-wrapper {
     margin: 0 15px 15px 15px;
@@ -15,10 +15,10 @@
     padding: 15px 0px 15px 0;
 }
 
-
-
 .nav__link{
-    background: #303030;
-    color: whitesmoke;
+    background: #EEEEEE;
+    color: #005A9C;
     margin-top: 5px;
 }
+
+
