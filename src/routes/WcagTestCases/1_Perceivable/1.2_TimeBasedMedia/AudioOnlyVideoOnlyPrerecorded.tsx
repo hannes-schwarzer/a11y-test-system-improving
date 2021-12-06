@@ -21,7 +21,10 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           successCriterionNumber={"1.2.1"}
           level={Level.A}
           explanation={
-            'empty placeholder "": empty placeholder "" that is put into the \'text alternative\' location on images or pictures.'
+            "empty placeholder \"\" that is put into the 'text alternative' location on images or pictures."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
         >
           <img src={BBC} alt={""} />
@@ -38,7 +41,10 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           successCriterionNumber={"1.2.1"}
           level={Level.A}
           explanation={
-            'placeholder text such as "spacer": placeholder text such as "spacer" or "image" or "picture" etc that are put into the \'text alternative\' location on images or pictures.'
+            'placeholder text such as "spacer" or "image" or "picture" etc that are put into the \'text alternative\' location on images or pictures.'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
         >
           <img src={BBC} alt={"spacer"} />
@@ -55,7 +61,10 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           successCriterionNumber={"1.2.1"}
           level={Level.A}
           explanation={
-            'programming references: programming references that do not convey the information or function of the non-text content such as "picture 1", "picture 2" or "0001", "0002" or "Intro#1", "Intro#2".'
+            'programming references that do not convey the information or function of the non-text content such as "picture 1", "picture 2" or "0001", "0002" or "Intro#1", "Intro#2".'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
         >
           <img src={BBC} alt={"picture 1"} />
@@ -72,7 +81,10 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           successCriterionNumber={"1.2.1"}
           level={Level.A}
           explanation={
-            'filenames: filenames that are not valid text alternatives in their own right such as "Oct.jpg" or "Chart.jpg" or "sales\\\\oct\\\\top3.jpg"'
+            'filenames that are not valid text alternatives in their own right such as "Oct.jpg" or "Chart.jpg" or "sales\\\\oct\\\\top3.jpg"'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
         >
           <img src={BBC} alt={"Oct.jpg"} />
@@ -85,6 +97,12 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           successCriterionNumber={"1.2.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
+          }
+          explanation={
+            "In a video-only presentation, information is presented in a variety of ways including animation, text or graphics, the setting and background, the actions and expressions of people, animals, etc. In order to present the same information in accessible form, this technique involves creating a document that tells the same story and presents the same information as the prerecorded video-only content."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/general/G159.html"
           }
         >
           <video controls={true}>
@@ -111,13 +129,22 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded"
           }
+          explanation={
+            "In an audio-only presentation, information is presented in a variety of ways including dialogue and sounds (both natural and artificial). In order to present the same information in accessible form, this technique involves creating a document that tells the same story and presents the same information as the prerecorded audio-only content."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/general/G158.html"
+          }
         >
           <audio
             controls={true}
             src={
               "https://www.learningcontainer.com/wp-content/uploads/2020/02/Sample-OGG-File.ogg"
             }
-          ></audio>
+          >
+            Your browser does not support the
+            <code>audio</code> element.
+          </audio>
         </TestCase>
       </Frame>
     </>
