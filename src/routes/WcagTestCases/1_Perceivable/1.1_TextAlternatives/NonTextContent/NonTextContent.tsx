@@ -1,13 +1,13 @@
-import { TestCase, Level } from "../../../../components/TestCase/TestCase";
+import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
 import "./NonTextContent.css";
-import BBC from "../../../../assets/bbc-blocks-dark.png";
-import DECO from "../../../../assets/decoration.png";
-import SPACER from "../../../../assets/spacer.gif";
-import SUBMIT from "../../../../assets/submit.png";
-import SALE from "../../../../assets/sale.jpeg";
-import REDPANDA from "../../../../assets/220px-RedPandaFullBody.jpeg";
-import BAT from "../../../../assets/bat.jpeg";
-import { Frame } from "../../../../components/Frame/Frame";
+import BBC from "../../../../../assets/bbc-blocks-dark.png";
+import DECO from "../../../../../assets/decoration.png";
+import SPACER from "../../../../../assets/spacer.gif";
+import SUBMIT from "../../../../../assets/submit.png";
+import SALE from "../../../../../assets/sale.jpeg";
+import REDPANDA from "../../../../../assets/220px-RedPandaFullBody.jpeg";
+import BAT from "../../../../../assets/bat.jpeg";
+import { Frame } from "../../../../../components/Frame/Frame";
 
 interface Props {
   pageTitle: string;

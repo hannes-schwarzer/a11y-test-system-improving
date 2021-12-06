@@ -4,9 +4,9 @@ import { EmptyPageTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/Emp
 import { OnlySeparaterInTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/OnlySeparaterInTitle";
 import { KeyboardTrap } from "./WcagTestCases/DetailPages/KeyboardAccessible/KeyboardTrap";
 import { Homepage } from "./Homepage/Homepage";
-import { NonTextContent } from "./WcagTestCases/1_Perceivable/1.1_TextAlternatives/NonTextContent";
-import { AudioOnlyVideoOnlyPrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded";
-import { MediaAlternativePrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/MediaAlternativePrerecorded";
+import { NonTextContent } from "./WcagTestCases/1_Perceivable/1.1_TextAlternatives/NonTextContent/NonTextContent";
+import { AudioOnlyVideoOnlyPrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded/AudioOnlyVideoOnlyPrerecorded";
+import { MediaAlternativePrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/MediaAlternativePrerecorded/MediaAlternativePrerecorded";
 import { InfoAndRelationships } from "./WcagTestCases/1_Perceivable/1.3_Adaptable/InfoAndRelationships";
 import { MeaningfulSequence } from "./WcagTestCases/1_Perceivable/1.3_Adaptable/MeaningfulSequence";
 import { UseOfColor } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/UseOfColor";
@@ -54,6 +54,7 @@ import { TwoPageTitles } from "./WcagTestCases/DetailPages/Navigable_Detail/TwoP
 import { RedirectingPage } from "./WcagTestCases/DetailPages/EnoughTime_Detail/RedirectingPage";
 import { RefreshingPage } from "./WcagTestCases/DetailPages/EnoughTime_Detail/RefreshingPage";
 import { ChangedMeaningThroughFormatting } from "./WcagTestCases/DetailPages/Adaptable/ChangedMeaningThroughFormatting";
+import { SensoryCharacteristics } from "./WcagTestCases/1_Perceivable/1.3_Adaptable/SensoryCharacteristics";
 
 export const Router = () => {
   return (
@@ -99,6 +100,14 @@ export const Router = () => {
           path={"/wcag/perceivable/adaptable/meaningful-sequence"}
           element={
             <MeaningfulSequence pageTitle={"1.3.2 Meaningful Sequence"} />
+          }
+        />
+        <Route
+          path={"/wcag/perceivable/adaptable/sensory-characteristics"}
+          element={
+            <SensoryCharacteristics
+              pageTitle={"1.3.3 Sensory Characteristics"}
+            />
           }
         />
         <Route

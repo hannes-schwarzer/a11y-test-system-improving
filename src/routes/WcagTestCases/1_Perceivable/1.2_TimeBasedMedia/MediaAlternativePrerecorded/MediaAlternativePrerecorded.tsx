@@ -1,5 +1,5 @@
-import { TestCase, Level } from "../../../../components/TestCase/TestCase";
-import { Frame } from "../../../../components/Frame/Frame";
+import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
+import { Frame } from "../../../../../components/Frame/Frame";
 
 interface Props {
   pageTitle: string;

@@ -69,12 +69,21 @@ export const Navigation = () => {
                       </Link>
                     </li>
                     <li>
-                      {" "}
                       <Link
                         className="nav__link"
                         to={"/wcag/perceivable/adaptable/meaningful-sequence"}
                       >
                         Meaningful Sequence
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="nav__link"
+                        to={
+                          "/wcag/perceivable/adaptable/sensory-characteristics"
+                        }
+                      >
+                        Sensory Characteristics
                       </Link>
                     </li>
                   </ul>
@@ -472,7 +481,7 @@ export const Navigation = () => {
                         to={"/wcag/robust/compatible/parsing"}
                       >
                         Parsing
-                      </Link>{" "}
+                      </Link>
                     </li>
                     <li>
                       <Link
@@ -480,7 +489,7 @@ export const Navigation = () => {
                         to={"/wcag/robust/compatible/name-role-value"}
                       >
                         Name, Role, Value
-                      </Link>{" "}
+                      </Link>
                     </li>
                   </ul>
                 </li>

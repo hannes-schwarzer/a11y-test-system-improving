@@ -334,30 +334,6 @@ range of people with disabilities,        wide variety of assistive technologies
             </Link>
           </p>
         </TestCase>
-
-        <TestCase
-          title={"Content identified by location"}
-          successCriterionInWords={"Meaningful Sequence"}
-          successCriterionNumber={"1.3.2"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence"
-          }
-          level={Level.A}
-          explanation={
-            "The objective of this technique is to show how identifying content only by its shape or location makes content difficult to understand and operate. When only visual identification or location is used, users with visual disabilities may find it difficult to locate content since they cannot see the screen or may perceive only a small portion of the screen at one time. Also, location of content can vary if page layout varies due to variations in font, window, or screen size."
-          }
-          linkToExplanation={
-            "https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F14"
-          }
-        >
-          <p>The artist on the right won the Album of the year</p>
-          <a href="swift.html" style={{ float: "right" }}>
-            Tailor Swift
-          </a>
-          <a href="sheeran.html" style={{ float: "left" }}>
-            Ed Sheeran
-          </a>
-        </TestCase>
       </Frame>
     </>
   );

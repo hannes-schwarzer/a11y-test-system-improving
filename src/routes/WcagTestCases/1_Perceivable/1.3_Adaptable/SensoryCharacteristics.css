@@ -1,0 +1,11 @@
+.sc__big-button{
+    height: 60px;
+    width: 120px;
+    margin-right: 25px;
+}
+
+.sc__small-button{
+    height: 55px;
+    width: 115px;
+    margin-left: 25px;
+}
