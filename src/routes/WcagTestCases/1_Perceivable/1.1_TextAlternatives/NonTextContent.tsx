@@ -30,8 +30,11 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "CSS is used to include the image, which is important and not just for decoration."
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F3.html"
+          }
         >
-          <p id="bestinterest">
+          <p id="ntc__bestinterest">
             Where else would you find a better interest rate?
           </p>
         </TestCase>
@@ -47,10 +50,51 @@ export const NonTextContent = (props: Props) => {
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           explanation={
-            'empty placeholder "": empty placeholder "" that is put into the "text alternative" location on images or pictures.'
+            "empty placeholder \"\" that is put into the 'text alternative' location on images or pictures."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
         >
           <img src={BBC} alt={""} />
+        </TestCase>
+
+        <TestCase
+          title={"Empty alt attribute on image button (<input>)"}
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          level={Level.A}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
+          }
+        >
+          <input alt={""} src={SUBMIT} type={"image"} />
+        </TestCase>
+
+        <TestCase
+          title={"Image link with no alternative text"}
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          level={Level.A}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/tutorials/images/functional/"
+          }
+          explanation={
+            "Visually impaired users would not know the purpose of this link image."
+          }
+        >
+          <a href={"http://www.bbc.co.uk/"}>
+            <img alt={""} src={BBC} />
+          </a>
         </TestCase>
 
         <TestCase
@@ -64,7 +108,10 @@ export const NonTextContent = (props: Props) => {
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           explanation={
-            'placeholder text such as "spacer": placeholder text such as "spacer" or "image" or "picture" etc that are put into the \'text alternative\' location on images or pictures.'
+            'placeholder text such as "spacer" or "image" or "picture" etc that are put into the \'text alternative\' location on images or pictures.'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
         >
           <img src={BBC} alt={"spacer"} />
@@ -81,7 +128,10 @@ export const NonTextContent = (props: Props) => {
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           explanation={
-            'programming references: programming references that do not convey the information or function of the non-text content such as "picture 1", "picture 2" or "0001", "0002" or "Intro#1", "Intro#2".'
+            'programming references that do not convey the information or function of the non-text content such as "picture 1", "picture 2" or "0001", "0002" or "Intro#1", "Intro#2".'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
         >
           <img src={BBC} alt={"picture 1"} />
@@ -98,10 +148,13 @@ export const NonTextContent = (props: Props) => {
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           explanation={
-            'filenames: filenames that are not valid text alternatives in their own right such as "Oct.jpg" or "Chart.jpg" or "sales\\\\oct\\\\top3.jpg"'
+            'filenames that are not valid text alternatives in their own right such as "Oct.jpg" or "Chart.jpg" or "sales\\\\oct\\\\top3.jpg"'
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
         >
-          <img src={BBC} alt={"Oct.jpg"} />
+          <img src={BBC} alt={"bbc-blocks-dark.png"} />
         </TestCase>
 
         <TestCase
@@ -117,9 +170,13 @@ export const NonTextContent = (props: Props) => {
           explanation={
             'This describes a failure condition for text alternatives for images that should be ignored by assistive technology (AT). If an image has the attribute role="presentation", it will be ignored by AT. However, if it does not have role="presentation", and if there is no alt attribute at all assistive technologies are not able to ignore the image. For decorative images which need to be ignored by AT, either role="presentation" must be used or the alt attribute must be provided and have a null value (i.e., alt="") to avoid a failure of this Success Criterion.'
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F38.html"
+          }
         >
           <img height={"60px"} src={DECO} width={"180px"} />
         </TestCase>
+
         <TestCase
           title={
             'F39: Failure of Success Criterion 1.1.1 due to providing a text alternative that is not null (e.g., alt="spacer" or alt="image") for images that should be ignored by assistive technology'
@@ -133,6 +190,9 @@ export const NonTextContent = (props: Props) => {
           explanation={
             'An image is used to create a blank space between content, where the spacing itself is not meaningful to the content. The image has an alt text value of "spacer". This image fails the Success Criterion because the text alternative does not serve an equivalent purpose. The image is meant to be ignored but its alternative text "spacer" is announced by screen readers and displayed in some alternate color schemes.'
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F39.html"
+          }
         >
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -144,9 +204,10 @@ export const NonTextContent = (props: Props) => {
             erat, sed diam voluptua.
           </p>
         </TestCase>
+
         <TestCase
           title={
-            'F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"'
+            'F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image" (<img>)'
           }
           successCriterionInWords={"Non-text Content"}
           linkToSuccessCriterion={
@@ -157,9 +218,65 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "Because of the missing text alternative in the code example below, the person using a screen reader would not know the purpose of the image."
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F65.html"
+          }
         >
-          <img src={BBC} alt={"Oct.jpg"} />
+          <img src={BBC} />
         </TestCase>
+
+        <TestCase
+          title={"Image <input> has no alt attribute"}
+          successCriterionInWords={"Non-text Content"}
+          level={Level.A}
+          successCriterionNumber={"1.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
+          linkToExplanation={
+            "https://equalizedigital.com/accessibility-checker/missing-alternative-text/"
+          }
+        >
+          <input src={SUBMIT} type={"image"} />
+        </TestCase>
+
+        <TestCase
+          title={"Uninformative alt attribute value on image button (<input>)"}
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          level={Level.A}
+          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute must convey the same information the image does."
+          }
+        >
+          <input alt={"click"} src={SUBMIT} type={"image"} />
+        </TestCase>
+
+        <TestCase
+          title={
+            "Image (<img>) that conveys information has inappropriate alt text"
+          }
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          level={Level.A}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute must convey the same information the image does."
+          }
+        >
+          <img src={BBC} alt={"Twitter"} />
+        </TestCase>
+
         <TestCase
           title={
             "F71: Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text without providing a text alternative"
@@ -173,9 +290,13 @@ export const NonTextContent = (props: Props) => {
           explanation={
             'The following example, will look like the English word "cook" when rendered in browsers with appropriate font support. In this case, the characters are implemented with character entities, but the word will still not be processed meaningfully, and a text alternative is not provided.'
           }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F71.html"
+          }
         >
           <p>&#x03F2;&#x043E;&#x03BF;&#x006B;</p>
         </TestCase>
+
         <TestCase
           title={
             "F72: Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text alternative"
@@ -188,6 +309,9 @@ export const NonTextContent = (props: Props) => {
           level={Level.A}
           explanation={
             "The following ASCII art chart lacks a text alternative and therefore does not meet Success Criterion 1.1.1."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F72.html"
           }
         >
           <pre>
@@ -207,47 +331,6 @@ export const NonTextContent = (props: Props) => {
       Flash frequency (Hz)
           `}
           </pre>
-        </TestCase>
-        <TestCase
-          title={"Image button has no alt attribute"}
-          successCriterionInWords={"Non-text Content"}
-          level={Level.A}
-          successCriterionNumber={"1.1.1"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          explanation={
-            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
-          }
-        >
-          <input src={SUBMIT} type={"image"} />
-        </TestCase>
-        <TestCase
-          title={"Uninformative alt attribute value on image button"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          level={Level.A}
-          explanation={"It is unclear if this is a description or a command."}
-        >
-          <input alt={"click"} src={SUBMIT} type={"image"} />
-        </TestCase>
-
-        <TestCase
-          title={"Empty alt attribute on image button"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          level={Level.A}
-          explanation={
-            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
-          }
-        >
-          <input alt={""} src={SUBMIT} type={"image"} />
         </TestCase>
 
         <TestCase
@@ -276,7 +359,7 @@ export const NonTextContent = (props: Props) => {
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
           explanation={
-            "If the image serve only as decoration it doesn't need an alt."
+            "If the image only serves as decoration it doesn't need an alt."
           }
         >
           <img
@@ -286,43 +369,6 @@ export const NonTextContent = (props: Props) => {
             src={DECO}
             width={"368"}
           />
-        </TestCase>
-
-        <TestCase
-          title={"Image with no alt attribute"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
-          explanation={
-            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
-          }
-        >
-          <img src={BBC} />
-        </TestCase>
-
-        <TestCase
-          title={
-            "Background image that conveys information does not have a text alternative"
-          }
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
-          explanation={
-            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
-          }
-        >
-          <div className={"warning-icon"}>
-            Taking too much of your pension money in early retirement could mean
-            you don't have enough for later.
-          </div>
         </TestCase>
 
         <TestCase
@@ -358,54 +404,6 @@ export const NonTextContent = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Image that conveys information has an empty alt attribute"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
-          explanation={
-            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
-          }
-        >
-          <img src={BBC} alt={""} />
-        </TestCase>
-
-        <TestCase
-          title={"Image that conveys information has inappropriate alt text"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
-          explanation={
-            "The alt attribute must convey the same information the image does."
-          }
-        >
-          <img src={BBC} alt={"Twitter"} />
-        </TestCase>
-
-        <TestCase
-          title={"Image alt attribute contains image file name"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
-          explanation={
-            "The alt attribute must convey the same information the image does."
-          }
-        >
-          <img src={BBC} alt={"bbc-blocks-dark.png"} />
-        </TestCase>
-
-        <TestCase
           title={"Image with partial text alternative"}
           successCriterionInWords={"Non-text Content"}
           successCriterionNumber={"1.1.1"}
@@ -419,26 +417,6 @@ export const NonTextContent = (props: Props) => {
           }
         >
           <img alt={"25% off sale"} src={SALE} />
-        </TestCase>
-
-        <TestCase
-          title={"Image link with no alternative text"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          linkToExplanation={
-            "https://www.w3.org/WAI/tutorials/images/functional/"
-          }
-          explanation={
-            "Visually impaired users would not know the purpose of this link image."
-          }
-        >
-          <a href={"http://www.bbc.co.uk/"}>
-            <img alt={""} src={BBC} />
-          </a>
         </TestCase>
 
         <TestCase
@@ -473,6 +451,9 @@ export const NonTextContent = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
+          explanation={
+            "It is necessary to provide a way to link to remote long descriptions in technologies that do not have a long description feature built directly into them (e.g., longdesc)"
+          }
         >
           <a href={"interview.mov"}>Watch the interview</a>
         </TestCase>
@@ -485,6 +466,10 @@ export const NonTextContent = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
+          explanation={
+            "When an image is the only content of a link, the text alternative for the image describes the unique function of the link."
+          }
+          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H30.html"}
         >
           My favourite <a href={BAT}>bat</a>.
         </TestCase>

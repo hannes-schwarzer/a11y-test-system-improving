@@ -1,4 +1,4 @@
-p#bestinterest {
+#ntc__bestinterest {
     background-image: url("../../../../assets/important.png");
     background-size: 34px 34px;
     background-repeat: no-repeat;
@@ -9,13 +9,3 @@ p#bestinterest {
     width: 30em;
 }
 
-.warning-icon {
-    background-image: url("../../../../assets/important.png");
-    background-size: 34px 34px;
-    background-repeat: no-repeat;
-    background-position: 0 4px;
-    min-height: 40px;
-    padding-left: 40px;
-    font-weight: bold;
-    width: 30em;
-}

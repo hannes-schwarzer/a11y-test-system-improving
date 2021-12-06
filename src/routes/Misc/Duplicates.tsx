@@ -251,6 +251,75 @@ export const Duplicates = () => {
         >
           <p id={"css-generated-text"}>My favourite food is </p>
         </TestCase>
+
+                <TestCase
+          title={"Image with no alt attribute"}
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          level={Level.A}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
+        >
+          <img src={BBC} />
+        </TestCase>
+
+                <TestCase
+          title={
+            "Background image that conveys information does not have a text alternative"
+          }
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          level={Level.A}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
+        >
+          <div className={"warning-icon"}>
+            Taking too much of your pension money in early retirement could mean
+            you don't have enough for later.
+          </div>
+        </TestCase>
+
+                <TestCase
+          title={"Image that conveys information has an empty alt attribute"}
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          level={Level.A}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
+        >
+          <img src={BBC} alt={""} />
+        </TestCase>
+
+                <TestCase
+            title={"Image alt attribute contains image file name"}
+            successCriterionInWords={"Non-text Content"}
+            successCriterionNumber={"1.1.1"}
+            level={Level.A}
+            linkToSuccessCriterion={
+              "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+            }
+            linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+            explanation={
+              "The alt attribute must convey the same information the image does."
+            }
+        >
+          <img src={BBC} alt={"bbc-blocks-dark.png"} />
+        </TestCase>
       */}
     </>
   );
