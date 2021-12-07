@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { Header } from "../Header/Header";
 import { Navigation } from "../Navigation/Navigation";
 
@@ -9,6 +9,10 @@ type FrameProps = {
 };
 
 export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
+  const [numberOfTestCases, setNumberOfTestCases] = useState(0);
+  useEffect(() => {
+    setNumberOfTestCases(document.getElementsByClassName("testCase").length);
+  });
   return (
     <>
       <Header pageTitle={pageTitle} />
@@ -16,7 +20,9 @@ export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
         <Navigation />
         <main className={"main__content"}>
           <section>
-            <h2 className={"main__heading"}>{pageTitle}</h2>
+            <h2 className={"main__heading"}>
+              Number of Test Cases: {numberOfTestCases}
+            </h2>
             {children}
           </section>
         </main>
