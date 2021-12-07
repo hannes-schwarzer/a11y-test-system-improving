@@ -12,7 +12,7 @@ export const Navigation = () => {
                 Home
               </Link>
             </li>
-            <li>
+            <li className={"nav__principle"}>
               Perceivable
               <ul>
                 <li>
@@ -211,7 +211,7 @@ export const Navigation = () => {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className={"nav__principle"}>
               Operable
               <ul>
                 <li>
@@ -375,7 +375,7 @@ export const Navigation = () => {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className={"nav__principle"}>
               Understandable
               <ul>
                 <li>
@@ -495,7 +495,7 @@ export const Navigation = () => {
                 </li>
               </ul>
             </li>
-            <li>
+            <li className={"nav__principle"}>
               Robust
               <ul>
                 <li>

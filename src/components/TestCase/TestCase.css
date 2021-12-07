@@ -16,14 +16,22 @@
 
 .description__title{
     margin: 15px 15px 0 0;
+    background: white;
+    color: #255172;
 }
 
 .description__level{
     margin: 15px 0 0 0;
+    background: white;
+    color: #255172;
 }
 
 .testCase__link {
     margin: 15px 0 0 15px
+}
+
+.description__explanation{
+    color: #255172;
 }
 
 .description__explanationLink{

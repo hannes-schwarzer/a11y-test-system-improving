@@ -12,7 +12,6 @@
 #logo {
     display: flex;
     flex-direction: column;
-    background: #EEEEEE;
     width:auto;
     height: auto;
 }
@@ -28,7 +27,6 @@
 }
 
 #logo__bottom {
-    color: #255172;
     margin-top: -0.3em;
     margin-bottom: -0.15em;
     text-transform:uppercase;

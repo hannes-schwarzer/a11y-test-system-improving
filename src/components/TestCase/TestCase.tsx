@@ -40,7 +40,9 @@ export const TestCase: FC<TestCaseProps> = ({
             {successCriterionNumber} {successCriterionInWords}
           </a>
         </div>
-        {explanation && <p>{explanation}</p>}
+        {explanation && (
+          <p className={"description__explanation"}>{explanation}</p>
+        )}
         {linkToExplanation && (
           <p className={"description__explanationLink"}>
             <a href={linkToExplanation}>
