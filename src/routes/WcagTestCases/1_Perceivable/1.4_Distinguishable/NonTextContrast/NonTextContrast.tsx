@@ -90,6 +90,27 @@ export const NonTextContrast = (props: Props) => {
             Link to some page
           </a>
         </TestCase>
+
+        <TestCase
+          title={"Button with low contrast to background"}
+          successCriterionInWords={"Non-text Contrast"}
+          explanation={
+            "This button (and several others) appears on the quick reference of the WCAG. It succeeds the text contrast criterium with a constrast of 6.15 but fails the non-text contrast with a contrast of 1.31"
+          }
+          level={Level.AA}
+          successCriterionNumber={"1.4.11"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
+          }
+          linkToExplanation={"https://www.aditus.io/button-contrast-checker/"}
+        >
+          <button
+            type={"button"}
+            className={"non-text-constrast__low-contrast-button"}
+          >
+            Show About & How to Use
+          </button>
+        </TestCase>
       </Frame>
     </>
   );
