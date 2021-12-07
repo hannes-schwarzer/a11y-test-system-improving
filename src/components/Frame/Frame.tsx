@@ -10,9 +10,11 @@ type FrameProps = {
 
 export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
   const [numberOfTestCases, setNumberOfTestCases] = useState(0);
+
   useEffect(() => {
     setNumberOfTestCases(document.getElementsByClassName("testCase").length);
-  });
+  }, [setNumberOfTestCases]);
+
   return (
     <>
       <Header pageTitle={pageTitle} />
