@@ -26,6 +26,10 @@ export const TestCase: FC<TestCaseProps> = ({
   level,
   children,
 }) => {
+  const linkToExplanationName = linkToExplanation!.substring(
+    linkToExplanation!.length,
+    linkToExplanation!.length - 10
+  );
   return (
     <article className="testCase">
       <div className="testCase__description">
@@ -46,7 +50,7 @@ export const TestCase: FC<TestCaseProps> = ({
         {linkToExplanation && (
           <p className={"description__explanationLink"}>
             <a href={linkToExplanation}>
-              Link to explanation of: {explanation?.substring(0, 10)}...
+              Further infos on error: ..{linkToExplanationName}
             </a>
           </p>
         )}
