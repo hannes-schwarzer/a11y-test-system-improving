@@ -4,7 +4,7 @@ import "./Navigation.css";
 export const Navigation = () => {
   return (
     <>
-      <aside className={"sidebar"}>
+      <aside>
         <nav className="nav">
           <ul className="nav__item-wrapper">
             <li>

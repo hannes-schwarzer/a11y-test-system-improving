@@ -1,23 +1,18 @@
-.sidebar{
-    float: left;
-    height: 100vh;
-}
-
 .nav {
     background: #EEEEEE;
     width: 245px;
-    color: #005A9C;
+    color: #255172;
 }
 .nav__item-wrapper {
     margin: 0 15px 15px 15px;
     list-style-type: none;
     justify-content: space-between;
-    padding: 15px 0px 15px 0;
+    padding: 15px 0 15px 0;
 }
 
 .nav__link{
     background: #EEEEEE;
-    color: #005A9C;
+    color: #255172;
     margin-top: 5px;
 }
 

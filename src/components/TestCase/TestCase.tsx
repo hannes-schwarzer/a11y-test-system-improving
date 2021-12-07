@@ -26,15 +26,18 @@ export const TestCase: FC<TestCaseProps> = ({
   level,
   children,
 }) => {
-  const linkToExplanationName = linkToExplanation!.substring(
-    linkToExplanation!.length,
-    linkToExplanation!.length - 10
-  );
+  let linkToExplanationName;
+  if (linkToExplanation) {
+    linkToExplanationName = linkToExplanation!.substring(
+      linkToExplanation!.length,
+      linkToExplanation!.length - 10
+    );
+  }
   return (
     <article className="testCase">
       <div className="testCase__description">
         <div className={"description__titleLine"}>
-          <h3 className={"description__title"}>{title}</h3>
+          <h2 className={"description__title"}>{title}</h2>
           <p className={"description__level"}>Level: {level}</p>
           <a
             className={"testCase__link"}

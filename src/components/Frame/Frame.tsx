@@ -22,9 +22,8 @@ export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
         <Navigation />
         <main className={"main__content"}>
           <section>
-            <h2 className={"main__heading"}>
-              Number of Test Cases: {numberOfTestCases}
-            </h2>
+            <h1 className={"main__heading"}>{pageTitle}</h1>
+            <p>Number of Test Cases: {numberOfTestCases}</p>
             {children}
           </section>
         </main>
