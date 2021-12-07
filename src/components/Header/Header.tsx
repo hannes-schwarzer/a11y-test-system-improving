@@ -1,12 +1,15 @@
 import "./Header.css";
+import { useEffect } from "react";
 
 interface HeaderProps {
   pageTitle: string;
 }
 
 export const Header = (headerProps: HeaderProps) => {
-  document.title = headerProps.pageTitle;
-  document.documentElement.lang = "en";
+  useEffect(() => {
+    document.title = headerProps.pageTitle;
+    document.documentElement.lang = "en";
+  });
   return (
     <>
       <header className={"global-header"} role={"banner"}>
