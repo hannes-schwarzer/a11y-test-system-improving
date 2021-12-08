@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { Header } from "../Header/Header";
+import { Banner } from "../Banner/Banner";
 import { Navigation } from "../Navigation/Navigation";
 
 import "./Frame.css";
@@ -17,13 +17,15 @@ export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
 
   return (
     <>
-      <Header pageTitle={pageTitle} />
+      <Banner pageTitle={pageTitle} />
       <div className={"main__wrapper"}>
         <Navigation />
         <main className={"main__content"}>
           <section>
-            <h1 className={"main__heading"}>{pageTitle}</h1>
-            <p>Number of Test Cases: {numberOfTestCases}</p>
+            <header>
+              <h1 className={"main__heading"}>{pageTitle}</h1>
+              <p>Number of Test Cases: {numberOfTestCases}</p>
+            </header>
             {children}
           </section>
         </main>
