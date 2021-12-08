@@ -26,6 +26,34 @@ export const BypassBlocks = (props: Props) => {
         >
           <iframe width="100%" height="400" src={"/some-page"}></iframe>
         </TestCase>
+        <TestCase
+          title={"Second main role present"}
+          successCriterionNumber={"2.4.1"}
+          level={Level.A}
+          successCriterionInWords={"Bypass Blocks"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks"
+          }
+          explanation={
+            'The <main> element has an implicit landmark role of "main" that represents the central topic of the document. This provides a non-obtrusive alternative for a “skip to main content” link. It is possible, but not desirable, to have more than one element with a "main" role'
+          }
+        >
+          <div role={"main"}>
+            <h3>Important Notice</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+              dolor sit amet.
+            </p>
+          </div>
+        </TestCase>
       </Frame>
     </>
   );
