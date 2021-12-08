@@ -2,7 +2,7 @@ import "./ChangedMeaningThroughFormatting.css";
 import { useEffect } from "react";
 export const ChangedMeaningThroughFormatting = () => {
   useEffect(() => {
-    document.title = "Changed content meaning";
+    document.title = "Changed meaning through formatting";
   });
 
   return (
