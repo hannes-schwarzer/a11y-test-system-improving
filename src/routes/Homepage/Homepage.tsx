@@ -1,6 +1,7 @@
 import { Frame } from "../../components/Frame/Frame";
 import { TestCase, Level } from "../../components/TestCase/TestCase";
 import BBC from "../../assets/bbc-blocks-dark.png";
+import "./Homepage.css";
 
 interface Props {
   pageTitle: string;
@@ -10,8 +11,10 @@ export const Homepage = (homepageProps: Props) => {
   return (
     <>
       <Frame pageTitle={homepageProps.pageTitle}>
-        <p>This is the current look of all test cases.</p>
-        <p>
+        <p className={"homepage__intro"}>
+          This is the current look of all test cases.
+        </p>
+        <p className={"homepage__intro"}>
           Each test case is surrounded by a solid border. Inside the area is
           devided into two parts. Above the dashed line in the top row it shows
           the title, the guideline level and the actual success criterion. If

@@ -10,3 +10,7 @@
 .main__wrapper{
     display: flex;
 }
+
+.main__case-count{
+    line-height: 1.5;
+}

@@ -24,7 +24,9 @@ export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
           <section>
             <header>
               <h1 className={"main__heading"}>{pageTitle}</h1>
-              <p>Number of Test Cases: {numberOfTestCases}</p>
+              <p className={"main__case-count"}>
+                Number of Test Cases: {numberOfTestCases}
+              </p>
             </header>
             {children}
           </section>

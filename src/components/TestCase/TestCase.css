@@ -9,7 +9,7 @@
     margin-bottom: 15px;
 }
 
-.description__titleLine{
+.description__title-line{
     display: flex;
     justify-content: space-between;
 }
@@ -24,16 +24,21 @@
     margin: 15px 0 0 0;
     background: white;
     color: #255172;
+    line-height: 1.5;
 }
 
 .testCase__link {
-    margin: 15px 0 0 15px
+    margin: 15px 0 0 15px;
+    line-height: 1.5;
 }
 
 .description__explanation{
     color: #255172;
+    line-height: 1.5;
 }
 
-.description__explanationLink{
+.description__explanation-link{
     text-align: right;
+    line-height: 1.5;
+
 }

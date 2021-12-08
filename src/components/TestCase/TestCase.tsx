@@ -36,7 +36,7 @@ export const TestCase: FC<TestCaseProps> = ({
   return (
     <article className="testCase">
       <div className="testCase__description">
-        <div className={"description__titleLine"}>
+        <div className={"description__title-line"}>
           <h2 className={"description__title"}>{title}</h2>
           <p className={"description__level"}>Level: {level}</p>
           <a
@@ -51,7 +51,7 @@ export const TestCase: FC<TestCaseProps> = ({
           <p className={"description__explanation"}>{explanation}</p>
         )}
         {linkToExplanation && (
-          <p className={"description__explanationLink"}>
+          <p className={"description__explanation-link"}>
             <a href={linkToExplanation}>
               Further infos on error: ..{linkToExplanationName}
             </a>
