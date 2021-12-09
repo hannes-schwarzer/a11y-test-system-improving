@@ -1,24 +1,16 @@
 .nav {
     background: #EEEEEE;
-    width: 245px;
     color: #255172;
 }
+
 .nav__item-wrapper {
+    width: 245px;
     margin: 0 15px 15px 15px;
     list-style-type: none;
     justify-content: space-between;
-    padding: 15px 0 15px 0;
+    padding: 5px 0 15px 0;
 }
 
-.nav__link{
-    background: #EEEEEE;
-    color: #255172;
-    margin-top: 5px;
-}
 
-.nav__principle{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+
+

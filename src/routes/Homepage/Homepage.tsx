@@ -7,10 +7,10 @@ interface Props {
   pageTitle: string;
 }
 
-export const Homepage = (homepageProps: Props) => {
+export const Homepage = (props: Props) => {
   return (
     <>
-      <Frame pageTitle={homepageProps.pageTitle}>
+      <Frame pageTitle={props.pageTitle}>
         <p className={"homepage__intro"}>
           This is the current look of all test cases.
         </p>

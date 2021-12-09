@@ -1,0 +1,19 @@
+.nav__principle{
+    background: #EEEEEE;
+    color: #255172;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.nav__link{
+    background: #EEEEEE;
+    color: #255172;
+    margin-left: 5px;
+    line-height: 1.5;
+}
+
+.detail-page{
+    background: #EEEEEE;
+    color: #255172;
+    line-height: 1.5;
+}
