@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 export const Inappropriate = () => {
-  useEffect(() => {
-    document.title = "tbd: Insert Page Title";
-  });
   return (
     <>
+      <Helmet>
+        <title>tbd: Insert Page Title</title>
+      </Helmet>
       <p>This page has an inappropriate page title.</p>
     </>
   );

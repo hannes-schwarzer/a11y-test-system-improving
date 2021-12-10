@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet";
+
 export const RedirectingPage = () => {
-  document.title = "Do not use this!";
   return (
     <>
+      <Helmet>
+        <title>Redirecting Page</title>
+      </Helmet>
       <head>
         <meta
           http-equiv="refresh"

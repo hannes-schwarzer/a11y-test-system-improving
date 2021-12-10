@@ -1,12 +1,11 @@
 import "./ChangedMeaningThroughFormatting.css";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 export const ChangedMeaningThroughFormatting = () => {
-  useEffect(() => {
-    document.title = "Changed meaning through formatting";
-  });
-
   return (
     <>
+      <Helmet>
+        <title>Changed meaning through formatting</title>
+      </Helmet>
       <div className="cmtf__box">
         <span className="cmtf__menu1">Products</span>
         <span className="cmtf__menu2">Locations</span>

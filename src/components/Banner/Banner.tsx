@@ -1,13 +1,8 @@
 import "./Banner.css";
 import { useEffect } from "react";
 
-interface HeaderProps {
-  pageTitle: string;
-}
-
-export const Banner = (headerProps: HeaderProps) => {
+export const Banner = () => {
   useEffect(() => {
-    document.title = headerProps.pageTitle;
     document.documentElement.lang = "en";
   });
   return (

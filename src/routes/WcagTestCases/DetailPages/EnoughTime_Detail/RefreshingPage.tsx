@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet";
+
 export const RefreshingPage = () => {
-  document.title = "Refreshing Page";
   return (
     <>
+      <Helmet>
+        <title>Refreshing Page</title>
+      </Helmet>
       <head>
         <meta http-equiv="refresh" content="5" />
       </head>

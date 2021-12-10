@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import { Banner } from "../Banner/Banner";
 import { Navigation } from "../Navigation/Navigation";
+import { Helmet } from "react-helmet";
 
 import "./Frame.css";
 
@@ -17,7 +18,10 @@ export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
 
   return (
     <>
-      <Banner pageTitle={pageTitle} />
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
+      <Banner />
       <div className={"main__wrapper"}>
         <Navigation />
         <main className={"main__content"} id={"main"}>
