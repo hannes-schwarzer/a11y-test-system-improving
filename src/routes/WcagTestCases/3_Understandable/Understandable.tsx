@@ -8,7 +8,7 @@ export const Understandable = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <p>TODO: Overview over number ov test cases</p>
+        <p>TODO: Overview over number of test cases</p>
       </Frame>
     </>
   );
