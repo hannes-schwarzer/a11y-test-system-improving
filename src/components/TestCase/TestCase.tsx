@@ -44,7 +44,7 @@ export const TestCase: FC<TestCaseProps> = ({
             href={linkToSuccessCriterion}
             target={"_parent"}
           >
-            {successCriterionNumber} {successCriterionInWords}
+            Quickref.: {successCriterionNumber} {successCriterionInWords}
           </a>
         </div>
         {explanation && (

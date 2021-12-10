@@ -1,5 +1,6 @@
 .testCase {
     border: 1px solid #000000;
+    border-radius: 15px;
     padding: 0 15px 15px 15px;
     margin-bottom: 5px;
 }
