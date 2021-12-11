@@ -1,11 +1,17 @@
 import { Level, TestCase } from "../../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../../components/Frame/Frame";
+import { useEffect } from "react";
 
 interface Props {
   pageTitle: string;
 }
 
 export const BypassBlocks = (props: Props) => {
+  useEffect(() => {
+    if (document.getElementById("skip-to-main")) {
+      document.getElementById("skip-to-main")!.remove();
+    }
+  });
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
@@ -71,7 +77,10 @@ export const BypassBlocks = (props: Props) => {
             "The objective of this technique is to provide a mechanism to bypass blocks of material that are repeated on multiple Web pages by skipping directly to the main content of the Web page. The first interactive item in the Web page is a link to the beginning of the main content. Activating the link sets focus beyond the other content to the main content. This technique is most useful when a Web page has one main content area, rather than a set of content areas that are equally important, and when there are not multiple navigation sections on the page."
           }
         >
-          <p>There is no means to skip to main content on this page.</p>
+          <p>
+            There is no means to skip to main content on this page, because the
+            corresponding navigation element has been deleted.
+          </p>
         </TestCase>
       </Frame>
     </>
