@@ -1,13 +1,20 @@
 .testCase {
     border: 1px solid #000000;
-    border-radius: 15px;
-    padding: 0 15px 15px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     margin-bottom: 5px;
 }
 
 .testCase__description {
     border-bottom: 1px dashed #303030;
-    margin-bottom: 15px;
+    background-color: #EEEEEE;
+    padding: 0 15px 15px 15px;
+    background-clip: border-box;
+    color: #255172;
+}
+
+.testCase__content {
+    padding: 15px;
 }
 
 .description__title-line{
@@ -17,13 +24,11 @@
 
 .description__title{
     margin: 15px 15px 0 0;
-    background: white;
     color: #255172;
 }
 
 .description__level{
     margin: 15px 0 0 0;
-    background: white;
     color: #255172;
     line-height: 1.5;
 }
@@ -41,5 +46,4 @@
 .description__explanation-link{
     text-align: right;
     line-height: 1.5;
-
 }
