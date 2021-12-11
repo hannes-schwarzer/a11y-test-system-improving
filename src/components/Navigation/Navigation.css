@@ -11,6 +11,19 @@
     padding: 5px 0 15px 0;
 }
 
+#skip-to-main{
+    position: absolute;
+    margin-left: 15px;
+    width:0;
+    overflow:hidden;
+}
 
+#skip-to-main:focus, .skip-to-main:active{
+    overflow: visible;
+    width: auto;
+    height: auto;
+    background-color: #EEEEEE;
+    color: #255172;
+}
 
 
