@@ -1,8 +1,7 @@
 .testCase {
     border: 1px solid #000000;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     margin-bottom: 5px;
+    border-radius: 5px 5px 15px 15px;
 }
 
 .testCase__description {
@@ -11,6 +10,8 @@
     padding: 0 15px 15px 15px;
     background-clip: border-box;
     color: #255172;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .testCase__content {
