@@ -62,6 +62,19 @@ import { Perceivable } from "./WcagTestCases/1_Perceivable/Perceivable";
 import { Operable } from "./WcagTestCases/2_Operable/Operable";
 import { Understandable } from "./WcagTestCases/3_Understandable/Understandable";
 import { Robust } from "./WcagTestCases/4_Robust/Robust";
+import { TextAlternatives } from "./WcagTestCases/1_Perceivable/1.1_TextAlternatives/TextAlternatives";
+import { TimeBasedMedia } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/TimeBasedMedia";
+import { Adaptable } from "./WcagTestCases/1_Perceivable/1.3_Adaptable/Adaptable";
+import { Distinguishable } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/Distinguishable";
+import { KeyboardAccessible } from "./WcagTestCases/2_Operable/2.1_KeyboardAccessible/KeyboardAccessible";
+import { EnoughTime } from "./WcagTestCases/2_Operable/2.2_EnoughTime/EnoughTime";
+import { SeizuresAndPhysicalReactions } from "./WcagTestCases/2_Operable/2.3_SeizuresAndPhysical/SeizuresAndPhysicalReactions";
+import { Navigable } from "./WcagTestCases/2_Operable/2.4_Navigable/Navigable";
+import { InputModalities } from "./WcagTestCases/2_Operable/2.5_InputModalities/InputModalities";
+import { Readable } from "./WcagTestCases/3_Understandable/3.1_Readable/Readable";
+import { Predictable } from "./WcagTestCases/3_Understandable/3.2_Predictable/Predictable";
+import { InputAssistance } from "./WcagTestCases/3_Understandable/3.3_InputAssistance/InputAssistance";
+import { Compatible } from "./WcagTestCases/4_Robust/Compatible_4.1/Compatible";
 
 export interface Route {
   className: string;
@@ -80,8 +93,14 @@ export const componentRoutes: Route[] = [
   {
     className: "nav__principle",
     path: "/wcag/perceivable",
-    name: "Perceivable",
-    component: <Perceivable pageTitle="Perceivable" />,
+    name: "1. Perceivable",
+    component: <Perceivable pageTitle="1. Perceivable" />,
+  },
+  {
+    className: "nav__guideline",
+    path: "/wcag/perceivable/text-alternatives",
+    name: "1.1 Text Alternatives",
+    component: <TextAlternatives pageTitle="1.1 Text Alternatives" />,
   },
   {
     className: "nav__link",
@@ -90,8 +109,14 @@ export const componentRoutes: Route[] = [
     component: <NonTextContent pageTitle="1.1.1 Non-text Content" />,
   },
   {
+    className: "nav__guideline",
+    path: "/wcag/perceivable/time-based-media",
+    name: "1.2 Time-based Media",
+    component: <TimeBasedMedia pageTitle="1.2 Time-based Media" />,
+  },
+  {
     className: "nav__link",
-    path: "/wcag/perceivable/text-alternatives/audio-only-and-video-only-prerecorded",
+    path: "/wcag/perceivable/time-based-media/audio-only-and-video-only-prerecorded",
     name: "1.2.1 Audio-only and Video-only (Prerecorded)",
     component: (
       <AudioOnlyVideoOnlyPrerecorded pageTitle="1.2.1 Audio-only and Video-only (Prerecorded)" />
@@ -104,6 +129,12 @@ export const componentRoutes: Route[] = [
     component: (
       <MediaAlternativePrerecorded pageTitle="1.2.8 Media Alternative (Prerecorded)" />
     ),
+  },
+  {
+    className: "nav__guideline",
+    path: "/wcag/perceivable/adaptable",
+    name: "1.3 Adaptable",
+    component: <Adaptable pageTitle="1.3 Adaptable" />,
   },
   {
     className: "nav__link",
@@ -140,6 +171,12 @@ export const componentRoutes: Route[] = [
     component: (
       <IdentifyInputPurpose pageTitle="1.3.5 Identify Input Purpose" />
     ),
+  },
+  {
+    className: "nav__guideline",
+    path: "/wcag/perceivable/distinguishable",
+    name: "1.4 Distinguishable",
+    component: <Distinguishable pageTitle="1.4 Distinguishable" />,
   },
   {
     className: "nav__link",
@@ -212,8 +249,14 @@ export const componentRoutes: Route[] = [
   {
     className: "nav__principle",
     path: "/wcag/operable",
-    name: "Operable",
-    component: <Operable pageTitle="Operable" />,
+    name: "2. Operable",
+    component: <Operable pageTitle="2. Operable" />,
+  },
+  {
+    className: "nav__guideline",
+    path: "/wcag/operable/keyboard-accessible",
+    name: "2.1 Keyboard Accessible",
+    component: <KeyboardAccessible pageTitle="2.1 Keyboard Accessible" />,
   },
   {
     className: "nav__link",
@@ -236,6 +279,12 @@ export const componentRoutes: Route[] = [
     ),
   },
   {
+    className: "nav__guideline",
+    path: "/wcag/operable/enough-time",
+    name: "2.2 Enough Time",
+    component: <EnoughTime pageTitle="2.2 Enough Time" />,
+  },
+  {
     className: "nav__link",
     path: "/wcag/operable/enough-time/timing-adjustable",
     name: "2.2.1 Timing Adjustable",
@@ -254,12 +303,26 @@ export const componentRoutes: Route[] = [
     component: <Interruptions pageTitle="2.2.4 Interruptions" />,
   },
   {
+    className: "nav__guideline",
+    path: "/wcag/operable/seizures-and-physical-reactions",
+    name: "2.3 Seizures and Physical Reactions",
+    component: (
+      <SeizuresAndPhysicalReactions pageTitle="2.3 Seizures and Physical Reactions" />
+    ),
+  },
+  {
     className: "nav__link",
     path: "/wcag/operable/seizures-and-physical-reactions/three-flashes-or-below-threshold",
     name: "2.3.1 Three Flashes or Below Threshold",
     component: (
       <ThreeFlashesOrBelowThreshold pageTitle="2.3.1 Three Flashes or Below Threshold" />
     ),
+  },
+  {
+    className: "nav__guideline",
+    path: "/wcag/operable/navigable",
+    name: "2.4 Navigable",
+    component: <Navigable pageTitle="2.4 Navigable" />,
   },
   {
     className: "nav__link",
@@ -308,6 +371,12 @@ export const componentRoutes: Route[] = [
     ),
   },
   {
+    className: "nav__guideline",
+    path: "/wcag/operable/input-modalities",
+    name: "2.5 Input Modalities",
+    component: <InputModalities pageTitle="2.5 Input Modalities" />,
+  },
+  {
     className: "nav__link",
     path: "/wcag/operable/input-modalities/label-in-name",
     name: "2.5.3 Label in Name",
@@ -322,8 +391,14 @@ export const componentRoutes: Route[] = [
   {
     className: "nav__principle",
     path: "/wcag/understandable",
-    name: "Understandable",
-    component: <Understandable pageTitle="Understandable" />,
+    name: "3. Understandable",
+    component: <Understandable pageTitle="3. Understandable" />,
+  },
+  {
+    className: "nav__guideline",
+    path: "/wcag/understandable/readable",
+    name: "3.1 Readable",
+    component: <Readable pageTitle="3.1 Readable" />,
   },
   {
     className: "nav__link",
@@ -342,6 +417,12 @@ export const componentRoutes: Route[] = [
     path: "/wcag/understandable/readable/reading-level",
     name: "3.1.5 Reading Level",
     component: <ReadingLevel pageTitle="3.1.5 Reading Level" />,
+  },
+  {
+    className: "nav__guideline",
+    path: "/wcag/understandable/predictable",
+    name: "3.2 Predictable",
+    component: <Predictable pageTitle="3.2 Predictable" />,
   },
   {
     className: "nav__link",
@@ -376,6 +457,12 @@ export const componentRoutes: Route[] = [
     component: <ChangeOnRequest pageTitle="3.2.5 Change on Request" />,
   },
   {
+    className: "nav__guideline",
+    path: "/wcag/understandable/input-assistance",
+    name: "3.3 Input Assistance",
+    component: <InputAssistance pageTitle="3.3 Input Assistance" />,
+  },
+  {
     className: "nav__link",
     path: "/wcag/understandable/input-assistance/error-identification",
     name: "3.3.1 Error Identification",
@@ -398,8 +485,14 @@ export const componentRoutes: Route[] = [
   {
     className: "nav__principle",
     path: "/wcag/robust",
-    name: "Robust",
-    component: <Robust pageTitle="Robust" />,
+    name: "4. Robust",
+    component: <Robust pageTitle="4. Robust" />,
+  },
+  {
+    className: "nav__guideline",
+    path: "/wcag/robust/compatible",
+    name: "4.1 Compatible",
+    component: <Compatible pageTitle="4.1 Compatible" />,
   },
   {
     className: "nav__link",

@@ -2,14 +2,24 @@
     background: #EEEEEE;
     color: #255172;
     margin-top: 15px;
-    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.nav__guideline{
+    background: #EEEEEE;
+    color: #255172;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 1.5;
+    display: block;
 }
 
 .nav__link{
     background: #EEEEEE;
     color: #255172;
-    margin-left: 5px;
+    margin-left: 10px;
     line-height: 1.5;
+    display: block;
 }
 
 .detail-page{
