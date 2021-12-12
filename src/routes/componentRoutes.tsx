@@ -85,7 +85,7 @@ export interface Route {
 
 export const componentRoutes: Route[] = [
   {
-    className: "nav__principle",
+    className: "nav__homepage",
     path: "/",
     name: "A11Y TEST SYSTEM",
     component: <Homepage pageTitle="A11Y TEST SYSTEM" />,

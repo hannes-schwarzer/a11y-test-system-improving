@@ -5,6 +5,13 @@
     line-height: 1.5;
 }
 
+.nav__homepage{
+    background: #EEEEEE;
+    color: #255172;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
 .nav__guideline{
     background: #EEEEEE;
     color: #255172;

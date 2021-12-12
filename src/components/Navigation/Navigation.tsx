@@ -7,7 +7,7 @@ import { KeyboardEvent } from "react";
 export const Navigation = () => {
   const pathsToTestCases = componentRoutes.map(
     ({ className, path, name }, key) => {
-      if (className === "nav__link") {
+      if (className === "nav__link" || className === "nav__homepage") {
         return (
           <NavLink className={className} path={path} name={name} key={key} />
         );
