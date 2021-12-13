@@ -29,6 +29,7 @@ export const Orientation = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#orientation"
           }
+          id={"1.3.4_1"}
         >
           {/*TODO: Implement this feature*/}
           <p>This page locks the display orientation in portait.</p>

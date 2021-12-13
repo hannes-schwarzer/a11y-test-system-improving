@@ -24,6 +24,7 @@ export const SensoryCharacteristics = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F14"
           }
+          id={"1.3.3_1"}
         >
           <p>The artist on the right won the Album of the year</p>
           <a href="swift.html" style={{ float: "right" }}>
@@ -48,6 +49,7 @@ export const SensoryCharacteristics = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/F14"
           }
+          id={"1.3.3_2"}
         >
           <p>Press the big button</p>
           <button

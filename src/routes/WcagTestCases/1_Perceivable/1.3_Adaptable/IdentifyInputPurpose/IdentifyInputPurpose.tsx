@@ -25,6 +25,7 @@ export const IdentifyInputPurpose = (props: Props) => {
           explanation={
             "Incorrect attribute An online form used to collect the user's name and birthday which uses incorrect autocomplete attributes. The correct attribute value for the first control is name and for the second control the made-up attribute value birthday was used instead of bday for this example."
           }
+          id={"1.3.5_1"}
         >
           <h2>Your details:</h2>
           <label htmlFor="name1">Name:</label>

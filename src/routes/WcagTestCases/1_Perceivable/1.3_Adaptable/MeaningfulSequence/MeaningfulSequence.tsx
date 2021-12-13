@@ -27,6 +27,7 @@ export const MeaningfulSequence = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F34.html"
           }
+          id={"1.3.2_1"}
         >
           <pre>
             {`
@@ -62,6 +63,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           explanation={
             "The following example incorrectly uses white space characters to format a paragraph into a two column format. If this table was to be interpreted and spoken by a screen reader it would speak the following lines: 'Web Content Accessibility Guidelines including blindness and low vision,...'"
           }
+          id={"1.3.2_2"}
         >
           <pre>
             {`
@@ -96,6 +98,7 @@ range of people with disabilities,        wide variety of assistive technologies
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F32.html"
           }
+          id={"1.3.2_3"}
         >
           <h1>W e l c o m e</h1>
         </TestCase>
@@ -116,6 +119,7 @@ range of people with disabilities,        wide variety of assistive technologies
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F32.html"
           }
+          id={"1.3.2_4"}
         >
           <p>
             {`&nbsp;`} can also be used to add white space, producing similar
@@ -140,6 +144,7 @@ range of people with disabilities,        wide variety of assistive technologies
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F32.html"
           }
+          id={"1.3.2_5"}
         >
           <h1>東　京</h1>
         </TestCase>
@@ -160,6 +165,7 @@ range of people with disabilities,        wide variety of assistive technologies
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F32.html"
           }
+          id={"1.3.2_6"}
         >
           <table>
             <caption>表1.　都道府県別一覧表</caption>
@@ -194,6 +200,7 @@ range of people with disabilities,        wide variety of assistive technologies
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F49.html"
           }
+          id={"1.3.2_7"}
         >
           <table>
             <tr>
@@ -238,6 +245,7 @@ range of people with disabilities,        wide variety of assistive technologies
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F49.html"
           }
+          id={"1.3.2_8"}
         >
           <table>
             <tr>
@@ -322,6 +330,7 @@ range of people with disabilities,        wide variety of assistive technologies
           explanation={
             'The following example demonstrates how CSS has been improperly used to create a set of columns. In addition, the text appears visually in the browser in a different order than in the markup. Since appropriate structural elements have not been used, when style sheets are not applied, all of the text appears in one line in the source order, "Products Locations Telephones Computers Portable MP3 Players Wisconsin Idaho."'
           }
+          id={"1.3.2_9"}
         >
           <p>
             For this test you need to visit the following page:{" "}

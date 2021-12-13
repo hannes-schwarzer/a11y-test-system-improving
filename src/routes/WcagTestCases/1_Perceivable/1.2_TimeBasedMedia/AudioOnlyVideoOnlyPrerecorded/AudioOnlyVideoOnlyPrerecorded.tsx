@@ -26,6 +26,7 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
+          id={"1.2.1_1"}
         >
           <img src={BBC} alt={""} />
         </TestCase>
@@ -46,6 +47,7 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
+          id={"1.2.1_2"}
         >
           <img src={BBC} alt={"spacer"} />
         </TestCase>
@@ -66,6 +68,7 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
+          id={"1.2.1_3"}
         >
           <img src={BBC} alt={"picture 1"} />
         </TestCase>
@@ -86,6 +89,7 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
+          id={"1.2.1_4"}
         >
           <img src={BBC} alt={"Oct.jpg"} />
         </TestCase>
@@ -104,6 +108,7 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/general/G159.html"
           }
+          id={"1.2.1_5"}
         >
           <video controls={true}>
             <source
@@ -135,6 +140,7 @@ export const AudioOnlyVideoOnlyPrerecorded = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/general/G158.html"
           }
+          id={"1.2.1_6"}
         >
           <audio
             controls={true}

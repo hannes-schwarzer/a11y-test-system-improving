@@ -28,6 +28,7 @@ export const InfoAndRelationships = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F2.html"
           }
+          id={"1.3.1_1"}
         >
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -58,6 +59,7 @@ export const InfoAndRelationships = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F2.html"
           }
+          id={"1.3.1_2"}
         >
           <div className={"iar__div-as-heading"}>Looks like Page Heading</div>
           <p>
@@ -82,6 +84,7 @@ export const InfoAndRelationships = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F2.html"
           }
+          id={"1.3.1_3"}
         >
           <img src={CHAPTER} alt="Chapter One" />
           <p>
@@ -109,6 +112,7 @@ export const InfoAndRelationships = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F2.html"
           }
+          id={"1.3.1_4"}
         >
           <p>
             "I said, <span className="iar__yell">no</span>, not before dinner!",
@@ -133,6 +137,7 @@ export const InfoAndRelationships = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F33.html"
           }
+          id={"1.3.1_5"}
         >
           <pre>
             {`
@@ -167,6 +172,7 @@ range of people with disabilities,        wide variety of assistive technologies
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F34.html"
           }
+          id={"1.3.1_6"}
         >
           <pre>
             {`
@@ -202,6 +208,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
+          id={"1.3.1_7"}
         >
           <span
             onClick={() => {
@@ -228,6 +235,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
+          id={"1.3.1_8"}
         >
           <img
             src={GO}
@@ -254,6 +262,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F43.html"
           }
+          id={"1.3.1_9"}
         >
           <div>
             <p>Interested in learning more? Write to us at</p>
@@ -281,6 +290,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F43.html"
           }
+          id={"1.3.1_10"}
         >
           <h1>Study on the Use of Heading Elements in Web Pages</h1>
           <h3>Joe Jones and Mary Smith</h3>
@@ -305,6 +315,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F43.html"
           }
+          id={"1.3.1_11"}
         >
           <p>
             After extensive study of the company Web site, the task force
@@ -338,6 +349,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F43.html"
           }
+          id={"1.3.1_12"}
         >
           <fieldset>
             <legend>Bargain Corner</legend>
@@ -361,6 +373,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           explanation={
             "Here is a simple example that uses a table to layout content in a three column format."
           }
+          id={"1.3.1_13"}
         >
           <table summary="layout table">
             <tr>
@@ -397,6 +410,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F48.html"
           }
+          id={"1.3.1_14"}
         >
           <pre>
             {`
@@ -425,6 +439,7 @@ Tuesday   Pancakes       vegetable soup  Caesar salad
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F48.html"
           }
+          id={"1.3.1_15"}
         >
           <pre>
             {`
@@ -463,6 +478,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "In this example, :before is used to differentiate facts from opinions."
           }
+          id={"1.3.1_16"}
         >
           <p className="iar__fact">
             The defendant was at the scene of the crime when it occurred.
@@ -486,6 +502,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Table content not correctly associated to nested headers: In this example, nested headers are used, but the content cells are incorrectly associated via the id and headers attributes. All cells reference top level header 'Exams' (id=\"e\") - this isn't correct for the last three columns which should reference header 'Projects'. Also, the referencing of the second level column headers has been accidentally swapped even though in this example this makes no difference as the contents (1, 2, Final) are repeated."
           }
+          id={"1.3.1_17"}
         >
           <table>
             <tr>
@@ -547,6 +564,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F91.html"
           }
+          id={"1.3.1_18"}
         >
           <table>
             <tr>
@@ -602,6 +620,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F92.html"
           }
+          id={"1.3.1_19"}
         >
           <table role="presentation">
             <caption>Fruits and their colors</caption>
@@ -634,6 +653,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "In a properly structured list, all list items ( <li> elements) are contained within a <ul> or <ol> element. When an assistive technology encounters a list that’s poorly structured, it might respond in an unexpected way. As a result, people who use assistive technologies might find it difficult to interpret the list."
           }
+          id={"1.3.1_20"}
         >
           <li>no parent</li>
         </TestCase>
@@ -650,6 +670,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "When markup is used that visually formats items as a list but does not indicate the list relationship, users may have difficulty in navigating the information. An example of such visual formatting is including asterisks in the content at the beginning of each list item and using <br> elements to separate the list items."
           }
+          id={"1.3.1_21"}
         >
           * fake list object 1
           <br />
@@ -673,6 +694,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "A definition list item must be wrapped in parent dl elements, otherwise it will be invalid. A definition list must follow a specific hierarchy. A list is defined using the dl element. What follows are alternating sets of dt and dd elements, starting with the dt element. dt elements define a term while dd elements denote a term's description. Each set of dt elements must have a corresponding set of dd elements. Only dt and dd elements are allowed in definition list. If this hierarchy is not followed, the list will be invalid."
           }
+          id={"1.3.1_22"}
         >
           <dt>html</dt>
           <dd>a markup language for describing web documents</dd>
@@ -692,6 +714,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Screen readers have a specific way of announcing lists. This feature makes lists clearer to understand, but will only work if lists are properly structured. When content elements other than list items are contained within a set of list elements, screen readers cannot inform the listener that they are listening to items within the list. For a list to be valid, it must have both parent elements (a set of ul elements or a set of ol elements) and child elements (declared inside of these tags using the li element), and any other content elements are invalid. Although some non-content elements such as script, template, style, meta, link, map, area, and datalist are permitted within lists, content elements other than li are not permitted."
           }
+          id={"1.3.1_23"}
         >
           <ul>
             <ul>
@@ -714,6 +737,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "To make sure that such header cells that span multiple rows are correctly associated with all the cells in those rows, the rows must be grouped. To define row groups wrap the corresponding rows in <tbody> elements (table body). Additionally, the scope attribute of header cells spanning rows has to be set to rowgroup. If a header spans multiple header rows, wrap the rows in a <thead> element instead of a <tbody> element. Use a <tfoot> element if a header spans multiple rows in the footer area of a table."
           }
+          id={"1.3.1_24"}
         >
           <table>
             <caption>Road Traffic at Junctions</caption>
@@ -760,6 +784,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "For example, a header cell that spans three columns should be associated with corresponding data cells in the column group. This can be done by setting the scope attribute of the header cell to the value colgroup. The same principle applies to header cells spanning multiple rows. In this case, they are associated with by using the value rowgroup in the scope attribute."
           }
+          id={"1.3.1_25"}
         >
           <table>
             <caption>Opening times</caption>
@@ -800,6 +825,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "A table is nested within another table. Here withing a header cell."
           }
+          id={"1.3.1_26"}
         >
           <table>
             <tbody>
@@ -849,6 +875,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "A table is nested within another table. Here withing a body cell."
           }
+          id={"1.3.1_27"}
         >
           <table>
             <tbody>
@@ -898,6 +925,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Data tables are used to organize data with a logical relationship in grids. Accessible tables need HTML markup that indicates header cells and data cells and defines their relationship. Assistive technologies use this information to provide context to users. If the structure is broken or irregular, tables can be very confusing."
           }
+          id={"1.3.1_28"}
         >
           <table>
             <caption>Requester information</caption>
@@ -959,6 +987,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Header cells must be marked up with <th>, and data cells with <td> to make tables accessible. For more complex tables, explicit associations may be needed using scope, id, and headers attributes."
           }
+          id={"1.3.1_29"}
         >
           <table>
             <thead>
@@ -986,6 +1015,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "A caption functions like a heading for a table. Most screen readers announce the content of captions. Captions help users to find a table and understand what it’s about and decide if they want to read it. If the user uses “Tables Mode”, captions are the primary mechanism to identify tables. The caption is provided by the <caption> element."
           }
+          id={"1.3.1_30"}
         >
           <table>
             <thead>
@@ -1024,6 +1054,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "A table header helps establish a relationship between table cells across rows or columns and to explain what the data is in each individual cell. Sighted people can rather quickly scan across rows and columns in a table and find the information that they want. For a blind or visually impaired person who is using assistive technology to read the table to them, it can be very challenging to interpret and understand how different data points in the various cells connect to one another."
           }
+          id={"1.3.1_31"}
         >
           <table>
             <caption>Shelly's Daughters</caption>
@@ -1061,6 +1092,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Provide labels to identify all form controls, including text fields, checkboxes, radio buttons, and drop-down menus. In most cases, this is done by using the <label> element. Labels need to describe the purpose of the form control."
           }
+          id={"1.3.1_32"}
         >
           <form>
             <input type={"text"} />
@@ -1079,6 +1111,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Provide labels to identify all form controls, including text fields, checkboxes, radio buttons, and drop-down menus. In most cases, this is done by using the <label> element. Labels need to describe the purpose of the form control."
           }
+          id={"1.3.1_33"}
         >
           <form>
             <label htmlFor={"empty"}></label>
@@ -1100,6 +1133,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Provide labels to identify all form controls, including text fields, checkboxes, radio buttons, and drop-down menus. In most cases, this is done by using the <label> element. Labels need to describe the purpose of the form control."
           }
+          id={"1.3.1_34"}
         >
           <form>
             <label htmlFor={"missing-labels-day"}>
@@ -1125,6 +1159,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Grouping related form controls makes forms more understandable for all users, as related controls are easier to identify. It also makes it easier for people to focus on smaller and more manageable groups rather than try to grasp the entire form at once. Grouping needs to be carried out visually and in the code, for example, by using the <fieldset> and <legend> elements to associate related form controls."
           }
+          id={"1.3.1_35"}
         >
           <h4>Do you already have a personal user account?</h4>
           <label className={"block-label"} htmlFor={"radio-inline-1"}>
@@ -1160,6 +1195,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Grouping related form controls makes forms more understandable for all users, as related controls are easier to identify. It also makes it easier for people to focus on smaller and more manageable groups rather than try to grasp the entire form at once. Grouping needs to be carried out visually and in the code, for example, by using the <fieldset> and <legend> elements to associate related form controls."
           }
+          id={"1.3.1_36"}
         >
           <h4>Which types of waste do you transport regularly?</h4>
           <label className={"block-label"} htmlFor={"waste-type-1"}>
@@ -1205,6 +1241,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "Form controls can be grouped by enclosing them within the fieldset element. All controls within a given fieldset are then related. The first element inside the fieldset must be a legend element, which provides a label or description for the group. Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
           }
+          id={"1.3.1_37"}
         >
           <form>
             <fieldset>I am a fieldset without a legend</fieldset>
@@ -1223,6 +1260,7 @@ CIRCUIT COURT JUDGE BRANCH 3
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           level={Level.A}
+          id={"1.3.1_38"}
         >
           <p>
             <a href="https://www.w3.org/TR/WCAG20-TECHS/F70.html">
@@ -1250,6 +1288,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
+          id={"1.3.1_39"}
         >
           <form>
             <fieldset>
@@ -1273,6 +1312,7 @@ CIRCUIT COURT JUDGE BRANCH 3
             "https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"1.3.1_40"}
         >
           <form>
             <fieldset>
@@ -1318,6 +1358,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
           }
+          id={"1.3.1_41"}
         >
           <form>
             <input
@@ -1346,6 +1387,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           explanation={
             "The <article> element is self-contained as it is used to outline a self-contained composition that can be spread around the Web if required for example for syndication purposes."
           }
+          id={"1.3.1_42"}
         >
           <article className={"not-article-content"}>
             <h2 id={"parent-other"}>Elsewhere on GOV.UK</h2>
@@ -1374,6 +1416,7 @@ CIRCUIT COURT JUDGE BRANCH 3
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
           explanation={"Only reacts on enter."}
+          id={"1.3.1_43"}
         >
           <a className={"iar__button"} href={"/some-page"} role={"button"}>
             Continue
