@@ -21,6 +21,7 @@ export const ContentOnHoverOrFocus = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#content-on-hover-or-focus"
           }
+          id={"1.4.13_1"}
         >
           <label className={"cohof__block-form"} htmlFor={"drivers-licence-no"}>
             Your driving licence number{" "}

@@ -29,6 +29,7 @@ export const ContrastEnhanced = (props: Props) => {
             "CSS stylesheet, however the foreground color is not defined. Therefore, the example fails the Success " +
             "Criterion."
           }
+          id={"1.4.6_1"}
         >
           <p className={"contrast-enhanced__whiteBackground"}>
             My background is white.
@@ -54,6 +55,7 @@ export const ContrastEnhanced = (props: Props) => {
             " on the CSS stylesheet, however the background color is not defined. Therefore, the example fails the Success " +
             "Criterion."
           }
+          id={"1.4.6_1"}
         >
           <p className={"contrast-enhanced__whiteForeground"}>
             My foreground is white.
@@ -73,6 +75,7 @@ export const ContrastEnhanced = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/general/G17.html"
           }
+          id={"1.4.6_1"}
         >
           <p className={"contrast-enhanced__low-contrast-small-aaa"}>
             This small text does not have enough contrast with it's background
@@ -92,6 +95,7 @@ export const ContrastEnhanced = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/general/G17.html"
           }
+          id={"1.4.6_1"}
         >
           <p className={"contrast-enhanced__low-contrast-large-aaa"}>
             This large text does not have enough contrast with it's background
