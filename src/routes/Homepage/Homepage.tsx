@@ -1,6 +1,6 @@
 import { Frame } from "../../components/Frame/Frame";
 import { TestCase, Level } from "../../components/TestCase/TestCase";
-import BBC from "../../assets/bbc-blocks-dark.png";
+import W3C from "../../assets/w3c.svg";
 import "./Homepage.css";
 
 interface Props {
@@ -15,29 +15,40 @@ export const Homepage = (props: Props) => {
           This is the current look of all test cases.
         </p>
         <p className={"homepage__intro"}>
-          Each test case is surrounded by a solid border. Inside the area is
-          devided into two parts. Above the dashed line in the top row it shows
-          the title, the guideline level and the actual success criterion. If
-          available beneath the top row there is an explanation to the violation
-          and a link for further information.
+          Each test case is surrounded by a solid border. The area inside is
+          devided into two parts:
+          <ul>
+            <li>
+              Above the dashed line in the top row it shows the title, the
+              guideline level and the actual success criterion.{" "}
+            </li>
+            <li>
+              If available beneath the top row there is an explanation to the
+              violation and a link for further information.
+            </li>
+          </ul>
         </p>
 
         <TestCase
           title={
-            'F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"'
+            "Test case title that hints at the success criteria violation: e.g. 'Missing alt attribute on img element.'"
           }
           successCriterionNumber={"1.1.1"}
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
-          linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F65.html"}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/html/H37.html"
+          }
           explanation={
-            "In the code example below, the person using a screen reader would not know the purpose of the image."
+            "Because this is the homepage that includes all structural elements of this test system, there shouldn't be any violation present. The image link beneath sports a sufficient alt attribute. The purpose of this page is to test if there is an unintended error inside one of the structural elements and to show case its design."
           }
           successCriterionInWords={"Non-text Content"}
           level={Level.A}
         >
-          <img src={BBC} />
+          <a href={"https://w3.org/"}>
+            <img src={W3C} alt={"W3C"} />
+          </a>
         </TestCase>
       </Frame>
     </>

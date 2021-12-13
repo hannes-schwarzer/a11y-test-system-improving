@@ -28,14 +28,14 @@ export const Navigation = () => {
 
   return (
     <>
-      <Link
-        to={"#main"}
-        id={"skip-to-main"}
-        onKeyDown={(event) => focusOnMain(event)}
-      >
-        Skip to main content
-      </Link>
-      <nav className="nav">
+      <nav className="nav" role={"navigation"}>
+        <Link
+          to={"#main"}
+          id={"skip-to-main"}
+          onKeyDown={(event) => focusOnMain(event)}
+        >
+          Skip to main content
+        </Link>
         <ul className="nav__item-wrapper">{pathsToTestCases}</ul>
       </nav>
     </>
