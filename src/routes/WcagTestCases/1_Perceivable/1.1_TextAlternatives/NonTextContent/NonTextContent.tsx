@@ -33,6 +33,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F3.html"
           }
+          id={"1.1.1_1"}
         >
           <p id="ntc__bestinterest">
             Where else would you find a better interest rate?
@@ -55,26 +56,9 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
+          id={"1.1.1_2"}
         >
           <img src={BBC} alt={""} />
-        </TestCase>
-
-        <TestCase
-          title={"Empty alt attribute on image button (<input>)"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          level={Level.A}
-          explanation={
-            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
-          }
-          linkToExplanation={
-            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
-          }
-        >
-          <input alt={""} src={SUBMIT} type={"image"} />
         </TestCase>
 
         <TestCase
@@ -91,6 +75,7 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "Visually impaired users would not know the purpose of this link image."
           }
+          id={"1.1.1_3"}
         >
           <a href={"http://www.bbc.co.uk/"}>
             <img alt={""} src={BBC} />
@@ -113,6 +98,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
+          id={"1.1.1_4"}
         >
           <img src={BBC} alt={"spacer"} />
         </TestCase>
@@ -133,6 +119,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
+          id={"1.1.1_5"}
         >
           <img src={BBC} alt={"picture 1"} />
         </TestCase>
@@ -153,6 +140,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
           }
+          id={"1.1.1_6"}
         >
           <img src={BBC} alt={"bbc-blocks-dark.png"} />
         </TestCase>
@@ -173,6 +161,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F38.html"
           }
+          id={"1.1.1_7"}
         >
           <img height={"60px"} src={DECO} width={"180px"} />
         </TestCase>
@@ -193,6 +182,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F39.html"
           }
+          id={"1.1.1_8"}
         >
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -221,6 +211,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F65.html"
           }
+          id={"1.1.1_9"}
         >
           <img src={BBC} />
         </TestCase>
@@ -239,6 +230,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://equalizedigital.com/accessibility-checker/missing-alternative-text/"
           }
+          id={"1.1.1_10"}
         >
           <input src={SUBMIT} type={"image"} />
         </TestCase>
@@ -255,6 +247,7 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "The alt attribute must convey the same information the image does."
           }
+          id={"1.1.1_11"}
         >
           <input alt={"click"} src={SUBMIT} type={"image"} />
         </TestCase>
@@ -273,6 +266,7 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "The alt attribute must convey the same information the image does."
           }
+          id={"1.1.1_12"}
         >
           <img src={BBC} alt={"Twitter"} />
         </TestCase>
@@ -293,6 +287,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F71.html"
           }
+          id={"1.1.1_13"}
         >
           <p>&#x03F2;&#x043E;&#x03BF;&#x006B;</p>
         </TestCase>
@@ -313,6 +308,7 @@ export const NonTextContent = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F72.html"
           }
+          id={"1.1.1_14"}
         >
           <pre>
             {`
@@ -345,6 +341,7 @@ export const NonTextContent = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          id={"1.1.1_15"}
         >
           <img alt={"BBC"} src={BBC} title={"BBC homepage"} />
         </TestCase>
@@ -361,6 +358,7 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "If the image only serves as decoration it doesn't need an alt."
           }
+          id={"1.1.1_16"}
         >
           <img
             alt={"Decorative line clipart"}
@@ -383,24 +381,9 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "If a tool tip is needed for sighted users, then both a TITLE and ALT attribute with the same information can be used to ensure that the same information is delivered to both audiences."
           }
+          id={"1.1.1_17"}
         >
           <img src={BBC} alt={""} title={"BBC"} />
-        </TestCase>
-
-        <TestCase
-          title={"Image has no alt and non-empty title"}
-          successCriterionInWords={"Non-text Content"}
-          successCriterionNumber={"1.1.1"}
-          level={Level.A}
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
-          }
-          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
-          explanation={
-            "If a tool tip is needed for sighted users, then both a TITLE and ALT attribute with the same information can be used to ensure that the same information is delivered to both audiences."
-          }
-        >
-          <img src={BBC} title={"BBC"} />
         </TestCase>
 
         <TestCase
@@ -415,6 +398,7 @@ export const NonTextContent = (props: Props) => {
           explanation={
             'The image below contains a lot of information, such as which departments the sale is on. The text alternative in the alt attribute does not include this information, only a partial "25% off sale"'
           }
+          id={"1.1.1_18"}
         >
           <img alt={"25% off sale"} src={SALE} />
         </TestCase>
@@ -433,6 +417,7 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "For images used as navigational elements to trigger functions such as printing, uploading or saving, the ALT text should describe the destination or function, not the image."
           }
+          id={"1.1.1_19"}
         >
           <a href={"https://en.wikipedia.org/wiki/Red_panda"}>
             <img alt={"Red Panda"} height={165} src={REDPANDA} width={220} />{" "}
@@ -454,6 +439,7 @@ export const NonTextContent = (props: Props) => {
           explanation={
             "It is necessary to provide a way to link to remote long descriptions in technologies that do not have a long description feature built directly into them (e.g., longdesc)"
           }
+          id={"1.1.1_20"}
         >
           <a href={"interview.mov"}>Watch the interview</a>
         </TestCase>
@@ -470,6 +456,7 @@ export const NonTextContent = (props: Props) => {
             "When an image is the only content of a link, the text alternative for the image describes the unique function of the link."
           }
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H30.html"}
+          id={"1.1.1_21"}
         >
           My favourite <a href={BAT}>bat</a>.
         </TestCase>
@@ -488,6 +475,7 @@ export const NonTextContent = (props: Props) => {
           }
           successCriterionNumber={"1.1.1"}
           level={Level.A}
+          id={"1.1.1_22"}
         >
           <form>
             <fieldset>
@@ -500,6 +488,40 @@ export const NonTextContent = (props: Props) => {
               />
             </fieldset>
           </form>
+        </TestCase>
+        <TestCase
+          title={"Empty alt attribute on image button (<input>)"}
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          level={Level.A}
+          explanation={
+            "The alt attribute is necessary for visually impaired people to know the contained info of the image."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/failures/F30.html"
+          }
+          id={"1.1.1_23"}
+        >
+          <input alt={""} src={SUBMIT} type={"image"} />
+        </TestCase>
+        <TestCase
+          title={"Image has no alt and non-empty title"}
+          successCriterionInWords={"Non-text Content"}
+          successCriterionNumber={"1.1.1"}
+          level={Level.A}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#non-text-content"
+          }
+          linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
+          explanation={
+            "If a tool tip is needed for sighted users, then both a TITLE and ALT attribute with the same information can be used to ensure that the same information is delivered to both audiences."
+          }
+          id={"1.1.1_24"}
+        >
+          <img src={BBC} title={"BBC"} />
         </TestCase>
       </Frame>
     </>
