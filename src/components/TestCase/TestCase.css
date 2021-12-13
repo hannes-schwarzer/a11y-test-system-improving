@@ -45,7 +45,11 @@
 }
 
 .description__explanation-link{
-    text-align: right;
     line-height: 1.5;
+}
+
+.description__bottom-line{
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }

@@ -15,6 +15,7 @@ type TestCaseProps = {
   linkToSuccessCriterion: string;
   explanation?: string;
   linkToExplanation?: string;
+  id?: string;
 };
 export const TestCase: FC<TestCaseProps> = ({
   title,
@@ -24,6 +25,7 @@ export const TestCase: FC<TestCaseProps> = ({
   linkToExplanation,
   explanation,
   level,
+  id,
   children,
 }) => {
   let linkToExplanationName;
@@ -50,13 +52,16 @@ export const TestCase: FC<TestCaseProps> = ({
         {explanation && (
           <p className={"description__explanation"}>{explanation}</p>
         )}
-        {linkToExplanation && (
-          <p className={"description__explanation-link"}>
-            <a href={linkToExplanation}>
-              Further error explanantion: ..{linkToExplanationName}
-            </a>
-          </p>
-        )}
+        <p className={"description__bottom-line"}>
+          {id && <span>ID: {id}</span>}
+          {linkToExplanation && (
+            <span className={"description__explanation-link"}>
+              <a href={linkToExplanation}>
+                Further error explanantion: ..{linkToExplanationName}
+              </a>
+            </span>
+          )}
+        </p>
       </div>
       <div className="testCase__content">{children}</div>
     </article>

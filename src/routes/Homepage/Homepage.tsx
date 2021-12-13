@@ -48,6 +48,7 @@ export const Homepage = (props: Props) => {
           }
           successCriterionInWords={"Non-text Content"}
           level={Level.A}
+          id={"Example test case"}
         >
           <a href={"https://w3.org/"}>
             <img src={W3C} alt={"W3C"} />
