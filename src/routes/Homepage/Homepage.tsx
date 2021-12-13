@@ -20,11 +20,14 @@ export const Homepage = (props: Props) => {
           <ul>
             <li>
               Above the dashed line in the top row it shows the title, the
-              guideline level and the actual success criterion.{" "}
+              guideline level and the name of and link to the concerning success
+              criteria. If available beneath the top row there is an explanation
+              to the violation and a link for further information.
             </li>
             <li>
-              If available beneath the top row there is an explanation to the
-              violation and a link for further information.
+              Beneath the dashed line is the actual test case. Inside this area
+              there is only content and styling relevant to this success
+              criteria violation.
             </li>
           </ul>
         </p>

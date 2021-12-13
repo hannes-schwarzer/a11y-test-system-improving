@@ -47,4 +47,5 @@
 .description__explanation-link{
     text-align: right;
     line-height: 1.5;
+    margin-bottom: 0;
 }
