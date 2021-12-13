@@ -83,7 +83,7 @@ export interface Route {
   component: JSX.Element;
 }
 
-export const componentRoutes: Route[] = [
+export const routes: Route[] = [
   {
     className: "nav__homepage",
     path: "/",

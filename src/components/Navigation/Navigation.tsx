@@ -1,24 +1,26 @@
-import { componentRoutes } from "../../routes/componentRoutes";
+import { routes } from "../../routes/routes";
 import { NavLink } from "./NavLink";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
 import { KeyboardEvent } from "react";
 
 export const Navigation = () => {
-  const pathsToTestCases = componentRoutes.map(
-    ({ className, path, name }, key) => {
-      if (className === "nav__link" || className === "nav__homepage") {
-        return (
-          <NavLink className={className} path={path} name={name} key={key} />
-        );
-      } else
-        return (
-          <li className={className} key={key}>
-            {name}
-          </li>
-        );
-    }
-  );
+  const pathsToTestCases = routes.map(({ className, path, name }, key) => {
+    if (
+      className === "nav__link" ||
+      className === "nav__homepage" ||
+      className === "detail-page"
+    ) {
+      return (
+        <NavLink className={className} path={path} name={name} key={key} />
+      );
+    } else
+      return (
+        <li className={className} key={key}>
+          {name}
+        </li>
+      );
+  });
 
   const focusOnMain = (event: KeyboardEvent<HTMLAnchorElement>) => {
     if (event.key === "Enter") {

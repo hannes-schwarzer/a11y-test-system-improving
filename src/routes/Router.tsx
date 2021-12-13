@@ -1,11 +1,15 @@
 import { BrowserRouter, Routes } from "react-router-dom";
 import { Route } from "react-router";
-import { componentRoutes } from "./componentRoutes";
+import { routes } from "./routes";
 
 export const Router = () => {
-  const routeComponents = componentRoutes.map(
+  const routeComponents = routes.map(
     ({ path, name, component, className }, key) => {
-      if (className === "nav__link" || className === "nav__homepage") {
+      if (
+        className === "nav__link" ||
+        className === "nav__homepage" ||
+        className === "detail-page"
+      ) {
         return <Route path={path} key={key} element={component} />;
       } else return null;
     }
