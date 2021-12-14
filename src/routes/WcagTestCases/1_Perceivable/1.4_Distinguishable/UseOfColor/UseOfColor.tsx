@@ -26,6 +26,10 @@ export const UseOfColor = (props: Props) => {
           explanation={
             "Color is used as the only visual means of conveying information and distinguishing a visual element."
           }
+          id={"1.4.1_1"}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/general/G14.html"
+          }
         >
           <p>
             The green mushrooms listed here are OK to eat. The red mushrooms
@@ -54,6 +58,7 @@ export const UseOfColor = (props: Props) => {
           explanation={
             "Links miss the underline and are only identifiable by their blue color."
           }
+          id={"1.4.1_2"}
         >
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -82,6 +87,7 @@ export const UseOfColor = (props: Props) => {
             "A web page includes a large number of links within the body text. The links are styled so that they do not have underlines and are very similar in color to the body text. This would be a failure because users would be unable to differentiate the links from the body text."
           }
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/F73.html"}
+          id={"1.4.1_3"}
         >
           <p className={"use-of-color__unobvious-link"}>
             Find out more about{" "}
@@ -103,6 +109,7 @@ export const UseOfColor = (props: Props) => {
           explanation={
             "The objective of this technique is to describe the failure that occurs when a required field or an error field is marked with color differences only, without an alternate way to identify the required field or error field. This can cause problems for people who are blind or colorblind, because they may not be able to perceive the color differences that indicate which field is required or which field is causing an error."
           }
+          id={"1.4.1_4"}
         >
           {/*use-of-color__errors-badly-identified; use-of-color__errors-colour-only*/}
           <form className={badlyColor}>

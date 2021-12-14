@@ -21,6 +21,7 @@ export const Reflow = (props: Props) => {
           explanation={
             "Failure due to using fixed sized containers and fixed position content (CSS): When sites are constructed to require horizontal scrolling in order to navigate or read content at a normal size of 100% using standard screen sizes, additional problems can arise for users with low vision or mobility impairments."
           }
+          id={"1.4.10_1"}
         >
           <div className={"reflow__constrained-box"}>
             <p className={"reflow__constrained"}>

@@ -21,6 +21,9 @@ export const ContentOnHoverOrFocus = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#content-on-hover-or-focus"
           }
+          explanation={
+            "Tooltips convey further information. But here they are inaccessible the people who use keyboard control only."
+          }
           id={"1.4.13_1"}
         >
           <label className={"cohof__block-form"} htmlFor={"drivers-licence-no"}>

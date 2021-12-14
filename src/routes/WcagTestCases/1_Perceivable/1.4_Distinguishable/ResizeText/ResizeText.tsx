@@ -24,6 +24,7 @@ export const ResizeText = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F69.html"
           }
+          id={"1.4.4_1"}
         >
           <div className={"resize-text__wont-expand-box"}>
             The box below this example won't expand to fit the text contained
@@ -65,6 +66,7 @@ export const ResizeText = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F69.html"
           }
+          id={"1.4.4_2"}
         >
           <div className={"resize-text__unscalable-container"}>
             Now is the time for all good men to come to the aid of their
@@ -93,6 +95,7 @@ export const ResizeText = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F69.html"
           }
+          id={"1.4.4_3"}
         >
           <div className={"resize-text__clipping-unscalable-container"}>
             Now is the time for all good men to come to the aid of their
@@ -123,6 +126,7 @@ export const ResizeText = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F80.html"
           }
+          id={"1.4.4_4"}
         >
           <h1 className={"resize-text__form-heading"}>Contact Us</h1>
           <p className={"resize-text__form-paragraph"}>
@@ -194,6 +198,7 @@ export const ResizeText = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F94.html"
           }
+          id={"1.4.4_5"}
         >
           <p className="resize-text__callout">
             Text that scales by viewport units
@@ -212,6 +217,7 @@ export const ResizeText = (props: Props) => {
           explanation={
             "For traditional computer monitors, a size of 12pt (=16px) for body is generally recommended for body text (depending on audience)."
           }
+          id={"1.4.4_6"}
         >
           <p className={"resize-text__small-text"}>
             This is some tiny text, much too small for some people to read
@@ -228,6 +234,7 @@ export const ResizeText = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
           }
           level={Level.AA}
+          id={"1.4.4_7"}
         >
           <p className={"resize-text__resize"}>
             This text becomes unreadable when you increase the text-size (Zoom

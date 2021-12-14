@@ -24,6 +24,7 @@ export const TextSpacing = (props: Props) => {
           explanation={
             "Many people with cognitive disabilities have trouble tracking lines of text when a block of text is single spaced. Providing spacing between 1.5 to 2 allows them to start a new line more easily once they have finished the previous one."
           }
+          id={"1.4.12_1"}
         >
           <p className={"line-height"}>
             Many people with cognitive disabilities have trouble tracking lines
@@ -46,6 +47,7 @@ export const TextSpacing = (props: Props) => {
           explanation={
             "The three separate links are not distinguishable as such."
           }
+          id={"1.4.12_2"}
         >
           <a href={"a.html"}>Page A</a>
           <a href={"b.html"}>Page B</a>

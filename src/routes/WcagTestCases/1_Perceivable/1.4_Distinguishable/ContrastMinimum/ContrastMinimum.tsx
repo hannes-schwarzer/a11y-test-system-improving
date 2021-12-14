@@ -35,6 +35,7 @@ export const ContrastMinimum = (props: Props) => {
             "Criterion."
           }
           level={Level.AA}
+          id={"1.4.3_1"}
         >
           <p className={"contrast-minimum__whiteBackground"}>
             My background is white.
@@ -60,6 +61,7 @@ export const ContrastMinimum = (props: Props) => {
             "Criterion."
           }
           level={Level.AA}
+          id={"1.4.3_2"}
         >
           <p className={"contrast-minimum__whiteForeground"}>
             My foreground is white.
@@ -76,6 +78,7 @@ export const ContrastMinimum = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
           level={Level.AA}
+          id={"1.4.3_3"}
         >
           <p className={"low-contrast-small-aa"}>
             This small text does not have enough contrast with it's background
@@ -92,6 +95,7 @@ export const ContrastMinimum = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum"
           }
           level={Level.AA}
+          id={"1.4.3_4"}
         >
           <p className={"low-contrast-large-aa"}>
             This large text does not have enough contrast with it's background
@@ -109,6 +113,7 @@ export const ContrastMinimum = (props: Props) => {
           explanation={
             "Because of the poor color contrast the error message is hard to read and the marked input fields are hardly recognizable."
           }
+          id={"1.4.3_5"}
         >
           {/*"errors-badly-identified","error-poor-contrast"*/}
           <form className={badlyPoor}>

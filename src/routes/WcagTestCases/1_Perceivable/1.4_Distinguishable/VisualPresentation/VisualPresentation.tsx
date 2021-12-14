@@ -29,6 +29,7 @@ export const VisualPresentation = (props: Props) => {
             "CSS stylesheet, however the foreground color is not defined. Therefore, the example fails the Success " +
             "Criterion."
           }
+          id={"1.4.8_1"}
         >
           <p className={"visual-presentation__whiteBackground"}>
             My background is white.
@@ -54,6 +55,7 @@ export const VisualPresentation = (props: Props) => {
             " on the CSS stylesheet, however the background color is not defined. Therefore, the example fails the Success " +
             "Criterion."
           }
+          id={"1.4.8_2"}
         >
           <p className={"visual-presentation__whiteForeground"}>
             My foreground is white.
@@ -76,6 +78,7 @@ export const VisualPresentation = (props: Props) => {
           explanation={
             "When text is justified to both margins it may add additional spaces between words which may be difficult for users with visual or cognitive impairments to read. Full text justification can also cause words to be spaced closely together thus making it difficult to determine where a word starts and ends."
           }
+          id={"1.4.8_3"}
         >
           <p className={"visual-presentation__justified-text"}>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum
@@ -103,6 +106,7 @@ export const VisualPresentation = (props: Props) => {
           explanation={
             'Typing sentences or phrases IN ALL CAPITALS is rarely a good idea. It may make sense under some circumstances, but only rarely. Lengthy segments of capitalized content are more difficult to read. In some cases, a screen reader may interpret ALL CAPITAL text as being an acronym and may read it as letters rather than words. For example, a screen reader may read the uppercase text CONTACT US as "Contact U. S." because it interprets the uppercase "US" as being an acronym for "United States".'
           }
+          id={"1.4.8_4"}
         >
           <p className={"visual-presentation__all-caps"}>
             Text in all capital letters is more difficult to read for most
@@ -125,6 +129,7 @@ export const VisualPresentation = (props: Props) => {
           explanation={
             "Italics are sometimes used to highlight text. But you shouldn't use italicized text because they make letters hard to read. The letters have a jagged line compared to non-italic fonts. The letters also lean over making it hard for dyslexic users to make out the words. When the text size is small, the text is even more illegible."
           }
+          id={"1.4.8_5"}
         >
           <p className={"visual-presentation__italic"}>
             Italics are sometimes used to highlight text. But you shouldn't use

@@ -27,6 +27,7 @@ export const ImagesOfText = (props: Props) => {
           explanation={
             "The following banners look identical, but one is made by using CSS and the other is an image file. If possible the first type should be used."
           }
+          id={"1.4.5_1"}
         >
           <p>This banner is composed with CSS</p>
           <div id="banner">

@@ -28,6 +28,7 @@ export const NonTextContrast = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
           }
+          id={"1.4.11_1"}
         >
           <a href={"/some-page"} className={"non-text-constrast__no-focus"}>
             Link to some page
@@ -53,6 +54,7 @@ export const NonTextContrast = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
           }
+          id={"1.4.11_2"}
         >
           <a
             href={"/some-page"}
@@ -82,6 +84,7 @@ export const NonTextContrast = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
           }
+          id={"1.4.11_3"}
         >
           <a
             href={"/some-page"}
@@ -103,6 +106,7 @@ export const NonTextContrast = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast"
           }
           linkToExplanation={"https://www.aditus.io/button-contrast-checker/"}
+          id={"1.4.11_4"}
         >
           <button
             type={"button"}
