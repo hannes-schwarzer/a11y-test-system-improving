@@ -23,6 +23,7 @@ export const CharacterKeyShortcuts = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=214#character-key-shortcuts"
           }
+          id={"2.1.4_1"}
         >
           <a accessKey={"A"} href={"/some-page"}>
             A link with the accesskey attribute A

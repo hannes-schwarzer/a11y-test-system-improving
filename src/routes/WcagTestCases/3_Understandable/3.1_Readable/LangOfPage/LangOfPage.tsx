@@ -24,6 +24,7 @@ export const LangOfPage = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/html/H57.html"
           }
+          id={"3.1.1_1"}
         >
           <p>This page has an empty lang attribute: "html lang".</p>
         </TestCase>

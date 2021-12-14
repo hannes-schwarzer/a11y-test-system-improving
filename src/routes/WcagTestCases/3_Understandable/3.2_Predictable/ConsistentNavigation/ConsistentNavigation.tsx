@@ -25,6 +25,7 @@ export const ConsistentNavigation = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F66.html"
           }
+          id={"3.2.3_1"}
         >
           <div>
             <h4>Page 1 Menu</h4>

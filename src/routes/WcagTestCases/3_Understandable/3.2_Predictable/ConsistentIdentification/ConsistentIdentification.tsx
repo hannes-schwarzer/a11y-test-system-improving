@@ -25,6 +25,7 @@ export const ConsistentIdentification = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F31.html"
           }
+          id={"3.2.4_1"}
         >
           <div>
             <h4>Form on first page</h4>

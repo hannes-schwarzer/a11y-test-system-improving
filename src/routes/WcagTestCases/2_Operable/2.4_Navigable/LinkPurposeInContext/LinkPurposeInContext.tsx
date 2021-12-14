@@ -29,6 +29,7 @@ export const LinkPurposeInContext = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F63.html"
           }
+          id={"2.4.4_1"}
         >
           <p>
             A British businessman has racked up 2 million flyer miles and plans
@@ -57,6 +58,7 @@ export const LinkPurposeInContext = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F63.html"
           }
+          id={"2.4.4_2"}
         >
           <table>
             <tr>
@@ -93,6 +95,7 @@ export const LinkPurposeInContext = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F89.html"
           }
+          id={"2.4.4_3"}
         >
           <a href="scores.html">
             <img src="football.gif" alt="" />
@@ -108,6 +111,7 @@ export const LinkPurposeInContext = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
+          id={"2.4.4_4"}
         >
           <a href={"javascript:alert('Hello World!')"}>Press me!</a>
         </TestCase>
@@ -120,6 +124,7 @@ export const LinkPurposeInContext = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
+          id={"2.4.4_5"}
         >
           <h4>Polar bear</h4>
           <p>
@@ -141,6 +146,7 @@ export const LinkPurposeInContext = (props: Props) => {
           explanation={
             "The objective of this technique is to demonstrate how to use a title attribute on an anchor element to provide additional text describing a link. The title attribute is used to provide additional information to help clarify or further describe the purpose of a link. If the supplementary information provided through the title attribute is something the user should know before following the link, such as a warning, then it should be provided in the link text rather than in the title attribute."
           }
+          id={"2.4.4_6"}
         >
           <a href={"http://www.google.com/"} title={"Google"}>
             Google
@@ -160,6 +166,7 @@ export const LinkPurposeInContext = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
+          id={"2.4.4_7"}
         >
           <a
             href={
@@ -184,6 +191,7 @@ export const LinkPurposeInContext = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
+          id={"2.4.4_7"}
         >
           <a href={"http://www.google.com"}></a>
         </TestCase>
@@ -196,6 +204,7 @@ export const LinkPurposeInContext = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
+          id={"2.4.4_8"}
         >
           <a href={"https://en.wikipedia.org/wiki/Lion"}>Lions</a> are the only
           truly social cats, with related females living together in prides
@@ -222,6 +231,7 @@ export const LinkPurposeInContext = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
+          id={"2.4.4_9"}
         >
           <a href={"https://en.wikipedia.org/wiki/Red_panda"}>
             <img alt={"Red Panda"} height={165} src={REDPANDA} width={220} />
@@ -237,6 +247,7 @@ export const LinkPurposeInContext = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           level={Level.A}
+          id={"2.4.4_10"}
         >
           <p>
             Visit the GOV.UK website <a href={"https://www.gov.uk/"}>.</a>
@@ -251,6 +262,7 @@ export const LinkPurposeInContext = (props: Props) => {
           }
           successCriterionNumber={"2.4.4"}
           level={Level.A}
+          id={"2.4.4_11"}
         >
           <a href={"rockies.html"}>Click here</a> for more information on the
           Rocky Mountains.

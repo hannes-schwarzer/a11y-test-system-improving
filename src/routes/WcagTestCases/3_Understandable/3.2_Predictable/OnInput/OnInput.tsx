@@ -33,6 +33,7 @@ export const OnInput = (props: Props) => {
             "This failure example submits a form when the user leaves the last field of a three-field telephone number form. The form will submit if the user leaves the field after editing it, even navigating backwards in the tab order. Developers should not use this method to submit a form, and should instead use a submit button, or rely on the form's default behavior of submitting when the user hits enter in a text field."
           }
           level={Level.A}
+          id={"3.2.2_1"}
         >
           <form method="get">
             <input type="text" name="text1" size={3} maxLength={3} /> -
@@ -49,6 +50,7 @@ export const OnInput = (props: Props) => {
             <input type="submit" value="Submit" id={"formSubmitButton1"} />
           </form>
         </TestCase>
+
         <TestCase
           title={
             "F36: Failure of Success Criterion 3.2.2 due to automatically submitting a form and given a value"
@@ -65,6 +67,7 @@ export const OnInput = (props: Props) => {
             "This is a example that submits a form when the user selects an option from the menu when there is no warning of this behavior in advance. The form will submit as soon as an item from the menu is selected. A user using a keyboard will not be able to navigate past the first item in the menu. Blind users and users with hand tremors can easily make a mistake on which item on the dropdown menu to choose and they are taken to the wrong destination before they can correct it."
           }
           level={Level.A}
+          id={"3.2.2_2"}
         >
           <form method="get">
             <input type="text" name="text1" />
@@ -82,6 +85,7 @@ export const OnInput = (props: Props) => {
             <input type="submit" value="Submit" id={"formSubmitButton2"} />
           </form>
         </TestCase>
+
         <TestCase
           title={
             "F37: Failure of Success Criterion 3.2.2 due to launching a new window without prior warning when the selection of a radio button, check box or select list is changed"
@@ -98,6 +102,7 @@ export const OnInput = (props: Props) => {
             "The example below fails the Success Criterion because it processes the form when a radio button is changed instead of using a submit button."
           }
           level={Level.A}
+          id={"3.2.2_3"}
         >
           <form name="mirror_form" id="mirror_form" action="" method="get">
             <p>Please select a mirror download site:</p>
@@ -135,6 +140,7 @@ export const OnInput = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#on-input"
           }
           successCriterionNumber={"3.2.2"}
+          id={"3.2.2_4"}
         >
           <form
             onChange={(event: any) => {

@@ -31,6 +31,7 @@ export const StatusMessages = (props: Props) => {
           explanation={
             'This demonstrates a failure of Status Messages, where messages about search results are returned without being surfaced via the aria status role. After a user presses a Search button, the page content does a mock search for words that rhyme with "orange". None are returned, which results in a change to content: the message "0 results returned". This text is not given an appropriate role for a status message, and so a screen reader will not announce "Zero results returned" unless a user manually navigates to it.'
           }
+          id={"4.1.3_1"}
         >
           <div role={"search"}>
             <label htmlFor={"mockinput"}>
@@ -56,6 +57,7 @@ export const StatusMessages = (props: Props) => {
             0 results returned
           </p>
         </TestCase>
+
         <TestCase
           title={
             'Using role="alert" or aria-live="assertive" on content which is not important and time-sensitive'
@@ -72,6 +74,7 @@ export const StatusMessages = (props: Props) => {
           explanation={
             "The alert role can be used to tell the user an element has been dynamically updated. Screen readers will instantly start reading out the updated content when the role is added. The element <ul> doesn’t accept this kind of role"
           }
+          id={"4.1.3_2"}
         >
           <ul role={"alert"}>
             <li>Element 1</li>

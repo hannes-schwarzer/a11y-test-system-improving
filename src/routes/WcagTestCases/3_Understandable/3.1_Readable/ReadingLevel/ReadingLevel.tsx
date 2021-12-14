@@ -23,6 +23,7 @@ export const ReadingLevel = (props: Props) => {
           explanation={
             "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available."
           }
+          id={"3.1.5_1"}
         >
           Title I of the CARE Act creates a program of formula and supplemental
           competitive grants to help metropolitan areas with 2,000 or more

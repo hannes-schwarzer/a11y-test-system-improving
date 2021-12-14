@@ -24,6 +24,7 @@ export const FocusOrder = (props: Props) => {
           explanation={
             "Using tabindex with a value greater than 0 can create as many problems as it solves. It creates an unexpected tab order, which makes the page less intuitive and can give the appearance of skipping certain elements entirely."
           }
+          id={"2.4.3_1"}
         >
           <a href={"/some-page"} tabIndex={5}>
             A link with a tabindex greater than 0
@@ -46,6 +47,7 @@ export const FocusOrder = (props: Props) => {
           explanation={
             "The following example incorrectly uses tabindex to specify an alternative tab order: If this list is navigated by the tab key, the list is navigated in the order Homepage, chapter 3, chapter 2, chapter 1, which does not follow the sequence in the content."
           }
+          id={"2.4.3_2"}
         >
           <ol>
             <li>
@@ -82,6 +84,7 @@ export const FocusOrder = (props: Props) => {
           explanation={
             "Here CSS is used to visually rearrange the order of the links. Because of this it clashes with the element order of the HTML tree. This produces a counter intuitive order when tabbed through."
           }
+          id={"2.4.3_3"}
         >
           <div className={"focus-order-broken"}>
             <a className={"first"} href={"/some-page"}>

@@ -31,6 +31,7 @@ export const OnFocus = (props: Props) => {
             "In addition, this practice removes focus from the content entirely, which means that the content can only be " +
             "operated by a pointing device such as a mouse."
           }
+          id={"3.2.1_1"}
         >
           <input
             id={"keyboard__blur-error-first"}
@@ -64,6 +65,7 @@ export const OnFocus = (props: Props) => {
             "In addition, this practice removes focus from the content entirely, which means that the content can only be " +
             "operated by a pointing device such as a mouse."
           }
+          id={"3.2.1_2"}
         >
           <a
             id={"keyboard__blur-error-second"}
@@ -87,6 +89,7 @@ export const OnFocus = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
           }
+          id={"3.2.1_3"}
         >
           <a className={"no-outline"} href={"/some-page"}>
             Link with no focus style

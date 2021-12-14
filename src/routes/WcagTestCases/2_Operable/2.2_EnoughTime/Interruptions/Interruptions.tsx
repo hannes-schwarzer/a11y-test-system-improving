@@ -26,6 +26,7 @@ export const Interruptions = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F40.html"
           }
+          id={"2.2.4_1"}
         >
           <p>
             For this test you need to visit the following page:{" "}
@@ -54,6 +55,7 @@ export const Interruptions = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F41.html"
           }
+          id={"2.2.4_2"}
         >
           <p>
             For this test you need to visit the following page:{" "}

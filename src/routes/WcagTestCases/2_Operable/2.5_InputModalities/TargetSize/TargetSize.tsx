@@ -1,5 +1,5 @@
-import { TestCase, Level } from "../../../../components/TestCase/TestCase";
-import { Frame } from "../../../../components/Frame/Frame";
+import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
+import { Frame } from "../../../../../components/Frame/Frame";
 
 interface Props {
   pageTitle: string;
@@ -20,6 +20,7 @@ export const TargetSize = (props: Props) => {
           linkToExplanation={
             "https://dequeuniversity.com/resources/wcag2.1/2.5.5-target-size"
           }
+          id={"2.5.5_1"}
         >
           <a href={"a.html"}>a</a>
           <a href={"b.html"}>b</a>

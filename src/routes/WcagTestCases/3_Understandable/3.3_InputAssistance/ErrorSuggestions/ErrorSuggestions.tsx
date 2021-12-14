@@ -20,6 +20,7 @@ export const ErrorSuggestions = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion"
           }
           level={Level.AA}
+          id={"3.3.3_1"}
         >
           <form>
             <label className={"error-suggestion__required-format-not-given"}>

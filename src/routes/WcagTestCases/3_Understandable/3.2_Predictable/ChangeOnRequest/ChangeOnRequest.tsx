@@ -21,6 +21,7 @@ export const ChangeOnRequest = (props: Props) => {
           explanation={
             'The objective of this technique is to provide a warning before automatically opening a new window or tab. Opening new windows automatically when a link is activated can be disorienting for people who have difficulty perceiving visual content, and for some people with cognitive disabilities, if they are not warned in advance. Providing a warning allows the user to decide it they want to leave the current window, and the warning will help them find their way back, if they do decide they would like to go to the new window. It will help them understand that the "back" button will not work and that they have to return to the last window they had open, in order to find their previous location.'
           }
+          id={"3.2.5_1"}
         >
           <a href={"https://twitter.com/"} target={"_blank"}>
             Twitter

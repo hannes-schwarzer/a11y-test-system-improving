@@ -31,6 +31,7 @@ export const FocusVisible = (props: Props) => {
             "In addition, this practice removes focus from the content entirely, which means that the content can only be " +
             "operated by a pointing device such as a mouse."
           }
+          id={"2.4.7_1"}
         >
           <input
             id={"keyboard__blur-error-first"}
@@ -61,6 +62,7 @@ export const FocusVisible = (props: Props) => {
             "In addition, this practice removes focus from the content entirely, which means that the content can only be " +
             "operated by a pointing device such as a mouse."
           }
+          id={"2.4.7_2"}
         >
           <a
             id={"keyboard__blur-error-second"}
@@ -91,6 +93,7 @@ export const FocusVisible = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
+          id={"2.4.7_3"}
         >
           <a href={"/some-page"} className={"focus-visibility__no-focus"}>
             Link with no visible focus to some page
@@ -116,6 +119,7 @@ export const FocusVisible = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
+          id={"2.4.7_4"}
         >
           <a
             href={"somepage.html"}
@@ -145,6 +149,7 @@ export const FocusVisible = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
+          id={"2.4.7_5"}
         >
           <a
             href={"somepage.html"}
@@ -161,6 +166,7 @@ export const FocusVisible = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#focus-visible"
           }
+          id={"2.4.7_6"}
         >
           <a className={"not-visible-outline-link"} href={"#"}>
             This link has visible focus

@@ -24,8 +24,9 @@ export const TimingAdjustable = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable"
           }
-          successCriterionNumber={"2.1.1"}
+          successCriterionNumber={"2.2.1"}
           level={Level.A}
+          id={"2.2.1_1"}
         >
           <p>
             For this test you need to visit the following page:{" "}
@@ -56,8 +57,9 @@ export const TimingAdjustable = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable"
           }
-          successCriterionNumber={"2.1.1"}
+          successCriterionNumber={"2.2.1"}
           level={Level.A}
+          id={"2.2.1_2"}
         >
           <p>
             For this test you need to visit the following page:{" "}

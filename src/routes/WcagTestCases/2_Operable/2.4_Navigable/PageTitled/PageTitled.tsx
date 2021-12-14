@@ -21,6 +21,7 @@ export const PageTitled = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F25.html"
           }
+          id={"2.4.2_1"}
         >
           <p>
             For this test you need to visit the following page:{" "}
@@ -41,6 +42,7 @@ export const PageTitled = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
           }
+          id={"2.4.2_2"}
         >
           <p>
             For this test you need to visit the following page:{" "}
@@ -61,6 +63,7 @@ export const PageTitled = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
           }
+          id={"2.4.2_3"}
         >
           <p>
             For this test you need to visit the following page:{" "}
@@ -83,6 +86,7 @@ export const PageTitled = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
           }
+          id={"2.4.2_4"}
         >
           <p>
             For this test you need to visit the following page:{" "}
@@ -107,6 +111,7 @@ export const PageTitled = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/"
           }
+          id={"2.4.2_5"}
         >
           <p>
             For this test you need to visit the following page:{" "}

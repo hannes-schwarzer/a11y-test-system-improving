@@ -21,6 +21,7 @@ export const HeadingsAndLabels = (props: Props) => {
           explanation={
             "Pages should be structured in a hierarchical manner, generally with one 1st degree headings (h1) being the most important (usually page titles or main content heading), then 2nd degree headings (h2 - usually major section headings), down to 3rd degree headings (sub-sections of the h2), and so on. Technically, lower degree headings should be contained within headings of the next highest degree (i.e., one should not ski heading levels, such as from an h2 to an h4, going down the document). This is an example where heading levels have been skipped and are not in a logical order, which makes the page difficult to understand and navigate for people using assistive technologies such as screen reader."
           }
+          id={"2.4.6_1"}
         >
           <h3>Heading h3</h3>
           <p>
@@ -56,6 +57,7 @@ export const HeadingsAndLabels = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"2.4.6_2"}
         >
           <form>
             <label htmlFor={"missing-labels-day"}>
@@ -78,6 +80,7 @@ export const HeadingsAndLabels = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"2.4.6_3"}
         >
           <form>
             <input type={"text"} />
@@ -93,6 +96,7 @@ export const HeadingsAndLabels = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"2.4.6_4"}
         >
           <form>
             <label htmlFor={"empty"}></label>
@@ -114,6 +118,7 @@ export const HeadingsAndLabels = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html"
           }
+          id={"2.4.6_5"}
         >
           <form>
             <label htmlFor={"x_3"}>
@@ -140,6 +145,7 @@ export const HeadingsAndLabels = (props: Props) => {
           explanation={
             "Labels are present but not connected to the inputs/ checkboxes."
           }
+          id={"2.4.6_6"}
         >
           <form>
             <fieldset>
@@ -185,6 +191,7 @@ export const HeadingsAndLabels = (props: Props) => {
           explanation={
             "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
           }
+          id={"2.4.6_7"}
         >
           <form>
             <input

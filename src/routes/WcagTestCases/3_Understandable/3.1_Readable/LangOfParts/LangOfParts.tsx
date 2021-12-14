@@ -17,6 +17,7 @@ export const LangOfParts = (props: Props) => {
           }
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
+          id={"3.1.2_1"}
         >
           <p lang={"ar"}>الإعفاء الإلكتروني من التأشيرة</p>
         </TestCase>
@@ -29,6 +30,7 @@ export const LangOfParts = (props: Props) => {
           }
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
+          id={"3.1.2_2"}
         >
           <p>
             Mother, he's asking you to go. He's saying, "Allons, Madame
@@ -44,6 +46,7 @@ export const LangOfParts = (props: Props) => {
           }
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
+          id={"3.1.2_3"}
         >
           <p dir={"rtl"} lang={"en"}>
             Electronic visa waiver
@@ -58,6 +61,7 @@ export const LangOfParts = (props: Props) => {
           }
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
+          id={"3.1.2_4"}
         >
           <p lang={"foobar"}>
             This paragraph has a lang attribute set to an invalid value
@@ -74,6 +78,7 @@ export const LangOfParts = (props: Props) => {
           }
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
+          id={"3.1.2_5"}
         >
           <p>
             Mother, he's asking you to go. He's saying,{" "}
@@ -89,6 +94,7 @@ export const LangOfParts = (props: Props) => {
           }
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
+          id={"3.1.2_6"}
         >
           <p lang={"fr"}>
             This is in english but the lang is nominally french.
@@ -105,6 +111,7 @@ export const LangOfParts = (props: Props) => {
           }
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
+          id={"3.1.2_7"}
         >
           <p>
             Mother, he's asking you to go. He's saying,{" "}

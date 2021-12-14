@@ -66,6 +66,7 @@ export const Keyboard = (props: Props) => {
             "The following example is of an image that responds to a mouse click to go to another page. " +
             "This is a failure because the keyboard cannot be used to move to the next page."
           }
+          id={"2.1.1_1"}
         >
           <p>
             <img
@@ -98,6 +99,7 @@ export const Keyboard = (props: Props) => {
             "In addition, this practice removes focus from the content entirely, which means that the content can only be " +
             "operated by a pointing device such as a mouse."
           }
+          id={"2.1.1_2"}
         >
           <input
             id={"keyboard__blur-error-first"}
@@ -131,6 +133,7 @@ export const Keyboard = (props: Props) => {
             "In addition, this practice removes focus from the content entirely, which means that the content can only be " +
             "operated by a pointing device such as a mouse."
           }
+          id={"2.1.1_3"}
         >
           <a
             id={"keyboard__blur-error-second"}
@@ -160,6 +163,7 @@ export const Keyboard = (props: Props) => {
             "Scripting a span element: Scripted event handling is added to a span element so that it functions " +
             "as a link when clicked with a mouse. Assistive technology does not recognize this element as a link."
           }
+          id={"2.1.1_4"}
         >
           <span
             onClick={() => {
@@ -187,6 +191,7 @@ export const Keyboard = (props: Props) => {
             "Scripting an img element: Scripted event handling is added to an img element so that it functions as a link when clicked " +
             "with a mouse. Assistive technology does not recognize this element as a link."
           }
+          id={"2.1.1_5"}
         >
           <img
             src={GO}
@@ -211,6 +216,7 @@ export const Keyboard = (props: Props) => {
           explanation={
             "CSS style sets outline and background to none on focus."
           }
+          id={"2.1.1_6"}
         >
           <a className={"keyboard__no-outline"} href={"/some-page"}>
             Link with no focus style
@@ -225,6 +231,7 @@ export const Keyboard = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
+          id={"2.1.1_7"}
         >
           <nav className={"keyboard__dropdown-nav"} role={"navigation"}>
             <ul>
@@ -258,6 +265,7 @@ export const Keyboard = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
           explanation={"Only reacts on enter."}
+          id={"2.1.1_8"}
         >
           <a className={"keyboard__button"} href={"/some-page"} role={"button"}>
             Continue
@@ -275,6 +283,7 @@ export const Keyboard = (props: Props) => {
           explanation={
             "The following is no button but a div that is styled like a button."
           }
+          id={"2.1.1_9"}
         >
           <div
             className={"button"}
@@ -295,6 +304,7 @@ export const Keyboard = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#keyboard"
           }
           level={Level.A}
+          id={"2.1.1_10"}
         >
           <a
             href={"#"}
@@ -343,6 +353,7 @@ export const Keyboard = (props: Props) => {
           explanation={
             "There is a lot of information hidden from users who only access this section with their keyboard because this concertina only expands on mouse click."
           }
+          id={"2.1.1_11"}
         >
           <dl className={"keyboard__concertina"}>
             <dt

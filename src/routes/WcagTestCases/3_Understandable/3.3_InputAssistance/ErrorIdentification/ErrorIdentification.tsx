@@ -21,6 +21,7 @@ export const ErrorIdentification = (props: Props) => {
           explanation={
             "If an input error is automatically detected, the item that is in error should be identified and the error should be described to the user in text. But this isn't the case here."
           }
+          id={"3.3.1_1"}
         >
           <form className={"error-identification__errors-badly-identified"}>
             <div

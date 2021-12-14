@@ -46,6 +46,7 @@ export const PauseStopHide = (props: Props) => {
             "A product list page uses the text-decoration:blink style on an element to draw attention to sale prices. " +
             "This fails the Success Criterion because users cannot control the blink. NOTE: text-decoration: blink is deprecated in most browsers."
           }
+          id={"2.2.2_1"}
         >
           <p>
             My Great Product{" "}
@@ -74,6 +75,7 @@ export const PauseStopHide = (props: Props) => {
           explanation={
             "The following example uses JavaScript to blink content, but the blink continues indefinitely rather than stopping after five seconds."
           }
+          id={"2.2.2_2"}
         >
           <span id="blink1">This content will blink</span>
         </TestCase>
@@ -92,6 +94,7 @@ export const PauseStopHide = (props: Props) => {
           explanation={
             "Content that moves or auto-updates can be a barrier to anyone who has trouble reading stationary text quickly as well as anyone who has trouble tracking moving objects. It can also cause problems for screen readers."
           }
+          id={"2.2.2_3"}
         >
           <img
             alt={

@@ -17,6 +17,13 @@ export const ThreeFlashesOrBelowThreshold = (props: Props) => {
           }
           successCriterionNumber={"2.3.1"}
           level={Level.A}
+          id={"2.3.1_1"}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/general/G19.html"
+          }
+          explanation={
+            "The objective of this technique is to avoid flashing at rates that are known to cause seizures if the flashes are bright and large enough. Since some users may be using screen enlargers, this technique limits the flashing of any size content to no more than three flashes in any 1-second period."
+          }
         >
           <iframe
             width="560"

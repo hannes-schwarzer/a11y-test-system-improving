@@ -1,6 +1,6 @@
 import { ChangedMeaningThroughFormatting } from "./WcagTestCases/DetailPages/Adaptable/ChangedMeaningThroughFormatting";
 import { Homepage } from "./Homepage/Homepage";
-import { TargetSize } from "./WcagTestCases/2_Operable/2.5_InputModalities/TargetSize";
+import { TargetSize } from "./WcagTestCases/2_Operable/2.5_InputModalities/TargetSize/TargetSize";
 import { FocusVisible } from "./WcagTestCases/2_Operable/2.4_Navigable/FocusVisible/FocusVisible";
 import { LangOfPage } from "./WcagTestCases/3_Understandable/3.1_Readable/LangOfPage/LangOfPage";
 import { LinkPurposeLinkOnly } from "./WcagTestCases/2_Operable/2.4_Navigable/LinkPurposeLinkOnly/LinkPurposeLinkOnly";
@@ -43,7 +43,7 @@ import { MediaAlternativePrerecorded } from "./WcagTestCases/1_Perceivable/1.2_T
 import { Inappropriate } from "./WcagTestCases/DetailPages/Navigable_Detail/Inappropriate";
 import { ImagesOfText } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/ImagesOfText/ImagesOfText";
 import { BypassBlocks } from "./WcagTestCases/2_Operable/2.4_Navigable/BypassBlocks/BypassBlocks";
-import { LabelInName } from "./WcagTestCases/2_Operable/2.5_InputModalities/LabelInName";
+import { LabelInName } from "./WcagTestCases/2_Operable/2.5_InputModalities/LabelInName/LabelInName";
 import { ReadingLevel } from "./WcagTestCases/3_Understandable/3.1_Readable/ReadingLevel/ReadingLevel";
 import { Parsing } from "./WcagTestCases/4_Robust/Compatible_4.1/Parsing/Parsing";
 import { Keyboard } from "./WcagTestCases/2_Operable/2.1_KeyboardAccessible/Keyboard/Keyboard";

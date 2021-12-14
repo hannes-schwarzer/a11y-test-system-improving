@@ -22,6 +22,7 @@ export const LabelsOrInstructions = (props: Props) => {
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
           explanation={"Only one input has an associated label."}
+          id={"3.3.2_1"}
         >
           <form>
             <label htmlFor={"label-day"}>Your child's date of birth</label>
@@ -44,6 +45,7 @@ export const LabelsOrInstructions = (props: Props) => {
           explanation={
             "Label and input are programatically associated but visually too far away from each other."
           }
+          id={"3.3.2_2"}
         >
           <form>
             <p className={"too-much-whitespace"}>
@@ -62,6 +64,7 @@ export const LabelsOrInstructions = (props: Props) => {
           successCriterionNumber={"3.3.2"}
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/grouping/"}
+          id={"3.3.2_3"}
         >
           <h4>Do you already have a personal user account?</h4>
           <label className={"block-label"} htmlFor={"radio-inline-1"}>
@@ -97,6 +100,7 @@ export const LabelsOrInstructions = (props: Props) => {
           explanation={
             "Form controls can be grouped by enclosing them within the fieldset element. All controls within a given fieldset are then related. The first element inside the fieldset must be a legend element, which provides a label or description for the group. Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
           }
+          id={"3.3.2_4"}
         >
           <form>
             <fieldset>I am a fieldset without a legend</fieldset>
@@ -112,6 +116,7 @@ export const LabelsOrInstructions = (props: Props) => {
           }
           successCriterionNumber={"3.3.2"}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
+          id={"3.3.2_5"}
         >
           <form>
             <fieldset>
@@ -134,6 +139,7 @@ export const LabelsOrInstructions = (props: Props) => {
             "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
           }
           successCriterionNumber={"3.3.2"}
+          id={"3.3.2_6"}
         >
           <form>
             <fieldset>
@@ -157,6 +163,7 @@ export const LabelsOrInstructions = (props: Props) => {
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
           }
+          id={"3.3.2_7"}
         >
           <h4>Which types of waste do you transport regularly?</h4>
           <label className={"block-label"} htmlFor={"waste-type-1"}>
@@ -199,6 +206,7 @@ export const LabelsOrInstructions = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"3.3.2_8"}
         >
           <form>
             <label htmlFor={"empty"}></label>
@@ -217,6 +225,7 @@ export const LabelsOrInstructions = (props: Props) => {
           linkToExplanation={
             "https://stackoverflow.com/questions/59490259/wcag-2-0-level-aa-input-element-error-no-input-on-code"
           }
+          id={"3.3.2_9"}
         >
           <form>
             <label htmlFor={"two-labels-day"}>Date of issue</label>
@@ -240,6 +249,7 @@ export const LabelsOrInstructions = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"3.3.2_10"}
         >
           <form>
             <fieldset>
@@ -285,6 +295,7 @@ export const LabelsOrInstructions = (props: Props) => {
           explanation={
             "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
           }
+          id={"3.3.2_11"}
         >
           <form>
             <input

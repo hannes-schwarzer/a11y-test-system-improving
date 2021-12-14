@@ -38,6 +38,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F59.html"
           }
           level={Level.A}
+          id={"4.1.2_1"}
         >
           <p>
             <span onClick={() => toggleCheckbox("chkbox")}>
@@ -69,6 +70,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F68.html"
           }
           level={Level.A}
+          id={"4.1.2_2"}
         >
           <form>
             First name: <input type="text" name="firstname" />
@@ -97,6 +99,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F68.html"
           }
           level={Level.A}
+          id={"4.1.2_3"}
         >
           <form action="..." method="post">
             <p>
@@ -124,6 +127,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F68.html"
           }
           level={Level.A}
+          id={"4.1.2_4"}
         >
           <input type="text" value="Type your search here" />
           <input type="submit" value="Search" />
@@ -145,6 +149,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F86.html"
           }
           level={Level.A}
+          id={"4.1.2_5"}
         >
           Phone number: (<input type="text" size={3} />){" "}
           <input type="text" size={3} />-<input type="text" size={4} />
@@ -166,6 +171,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F86.html"
           }
           level={Level.A}
+          id={"4.1.2_6"}
         >
           <label htmlFor="area">Phone number:</label>
           (<input id="area" type="text" size={3} />){" "}
@@ -188,6 +194,7 @@ export const NameRoleValue = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F89.html"
           }
+          id={"4.1.2_7"}
         >
           <a href="scores.html">
             <img src="football.gif" alt="" />
@@ -203,6 +210,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           level={Level.A}
+          id={"4.1.2_8"}
         >
           <button></button>
         </TestCase>
@@ -215,6 +223,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           level={Level.A}
+          id={"4.1.2_9"}
         >
           <h4></h4>
           <p>This paragraph is preceded by an empty h4</p>
@@ -231,6 +240,7 @@ export const NameRoleValue = (props: Props) => {
           linkToExplanation={
             "https://www.eqafy.com/component/content/article/49-blog/185-6-accessibility-fixes-for-university-and-college-websites.html?Itemid=293"
           }
+          id={"4.1.2_10"}
         >
           <a href={"#"}>Do something</a>
         </TestCase>
@@ -246,6 +256,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"4.1.2_11"}
         >
           <form>
             <label htmlFor={"missing-labels-day"}>
@@ -273,6 +284,7 @@ export const NameRoleValue = (props: Props) => {
             "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
           }
           successCriterionNumber={"4.1.2"}
+          id={"4.1.2_12"}
         >
           <form>
             <fieldset>
@@ -296,6 +308,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"4.1.2_13"}
         >
           <form>
             <label htmlFor={"empty"}></label>
@@ -312,6 +325,7 @@ export const NameRoleValue = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#name-role-value"
           }
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/labels/"}
+          id={"4.1.2_14"}
         >
           <form>
             <fieldset>
@@ -357,6 +371,7 @@ export const NameRoleValue = (props: Props) => {
           explanation={
             "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
           }
+          id={"4.1.2_15"}
         >
           <form>
             <input
@@ -380,6 +395,7 @@ export const NameRoleValue = (props: Props) => {
             "https://dequeuniversity.com/rules/axe/4.3/aria-valid-attr"
           }
           successCriterionNumber={"4.1.2"}
+          id={"4.1.2_16"}
         >
           <div className={"header-context"} id={"global-breadcrumb"}>
             <ol className={"group"} role={"breadcrumb"}>
@@ -409,6 +425,7 @@ export const NameRoleValue = (props: Props) => {
           linkToExplanation={
             "https://equalizedigital.com/accessibility-checker/iframe-missing-title/"
           }
+          id={"4.1.2_17"}
         >
           <iframe height={100} src={"/some-page"} width={300}></iframe>
         </TestCase>
@@ -424,6 +441,7 @@ export const NameRoleValue = (props: Props) => {
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F42.html"
           }
+          id={"4.1.2_18"}
         >
           <a className={"button"} href={"next.html"} role={"button"}>
             Continue
