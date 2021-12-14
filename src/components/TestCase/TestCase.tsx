@@ -37,18 +37,18 @@ export const TestCase: FC<TestCaseProps> = ({
   }
   return (
     <article className="testCase">
-      <div className="testCase__description">
-        <div className={"description__title-line"}>
-          <h2 className={"description__title"}>{title}</h2>
-          <p className={"description__level"}>Level: {level}</p>
-          <a
-            className={"testCase__link"}
-            href={linkToSuccessCriterion}
-            target={"_parent"}
-          >
-            Quickref.: {successCriterionNumber} {successCriterionInWords}
-          </a>
-        </div>
+      <header className={"title-line"}>
+        <h2 className={"title-line__title"}>{title}</h2>
+        <p className={"title-line__level"}>Level: {level}</p>
+        <a
+          className={"title-line__link-to-success-criteria"}
+          href={linkToSuccessCriterion}
+          target={"_parent"}
+        >
+          Quickref.: {successCriterionNumber} {successCriterionInWords}
+        </a>
+      </header>
+      <section className="description">
         {explanation && (
           <p className={"description__explanation"}>{explanation}</p>
         )}
@@ -62,8 +62,8 @@ export const TestCase: FC<TestCaseProps> = ({
             </span>
           )}
         </p>
-      </div>
-      <div className="testCase__content">{children}</div>
+      </section>
+      <section className="testCase__content">{children}</section>
     </article>
   );
 };

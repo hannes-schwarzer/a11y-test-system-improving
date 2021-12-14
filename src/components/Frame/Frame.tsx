@@ -30,13 +30,11 @@ export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
           tabIndex={-1}
           role={"main"}
         >
-          <section>
-            <h1 className={"main__heading"}>{pageTitle}</h1>
-            <p className={"main__case-count"}>
-              Number of Test Cases: {numberOfTestCases}
-            </p>
-            {children}
-          </section>
+          <h1 className={"main__heading"}>{pageTitle}</h1>
+          <p className={"main__case-count"}>
+            Number of Test Cases: {numberOfTestCases}
+          </p>
+          {children}
         </main>
       </div>
     </>
