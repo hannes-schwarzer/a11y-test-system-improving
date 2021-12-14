@@ -51,7 +51,7 @@ export const Homepage = (props: Props) => {
           id={"Example test case"}
         >
           <a href={"https://w3.org/"}>
-            <img src={W3C} alt={"W3C"} />
+            <img src={W3C} alt={"W3C logo"} />
           </a>
         </TestCase>
       </Frame>

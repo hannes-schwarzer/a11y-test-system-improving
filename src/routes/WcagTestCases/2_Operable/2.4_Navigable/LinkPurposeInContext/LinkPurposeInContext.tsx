@@ -178,25 +178,6 @@ export const LinkPurposeInContext = (props: Props) => {
         </TestCase>
 
         <TestCase
-          title={"Blank link text"}
-          successCriterionInWords={"Link Purpose (In Context)"}
-          level={Level.A}
-          successCriterionNumber={"2.4.4"}
-          explanation={
-            "The objective of this technique is to describe the purpose of a link in the text of the link. The description lets a user distinguish this link from links in the Web page that lead to other destinations and helps the user determine whether to follow the link. The URI of the destination is generally not sufficiently descriptive."
-          }
-          linkToExplanation={
-            "https://www.w3.org/WAI/WCAG21/Techniques/general/G91.html"
-          }
-          linkToSuccessCriterion={
-            "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
-          }
-          id={"2.4.4_7"}
-        >
-          <a href={"http://www.google.com"}></a>
-        </TestCase>
-
-        <TestCase
           title={"Links with the same text go to different pages"}
           successCriterionInWords={"Link Purpose (In Context)"}
           successCriterionNumber={"2.4.4"}
@@ -266,6 +247,25 @@ export const LinkPurposeInContext = (props: Props) => {
         >
           <a href={"rockies.html"}>Click here</a> for more information on the
           Rocky Mountains.
+        </TestCase>
+
+        <TestCase
+          title={"Blank link text"}
+          successCriterionInWords={"Link Purpose (In Context)"}
+          level={Level.A}
+          successCriterionNumber={"2.4.4"}
+          explanation={
+            "The objective of this technique is to describe the purpose of a link in the text of the link. The description lets a user distinguish this link from links in the Web page that lead to other destinations and helps the user determine whether to follow the link. The URI of the destination is generally not sufficiently descriptive."
+          }
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/general/G91.html"
+          }
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
+          }
+          id={"2.4.4_12"}
+        >
+          <a href={"http://www.google.com"}></a>
         </TestCase>
       </Frame>
     </>
