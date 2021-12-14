@@ -4,30 +4,29 @@
     border-radius: 5px 5px 15px 15px;
 }
 
-.title-line{
+.testCase__title{
+    margin: 0;
+    padding: 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #EEEEEE;
+    color: #255172;
+}
+
+.testCase__overview{
     display: flex;
     justify-content: space-between;
     background-color: #EEEEEE;
     color: #255172;
     padding: 0 15px 15px 15px;
-    background-clip: border-box;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.title-line__title{
-    margin: 15px 15px 0 0;
-    line-height: 1.5;
-}
-.title-line__level{
-    margin: 15px 0 0 0;
-    line-height: 1.5;
-}
-.title-line__link-to-success-criteria {
-    margin: 15px 0 0 15px;
-    line-height: 1.5;
 }
 
-.description {
+
+.overview__link-to-success-criteria {
+    margin: 0;
+}
+
+.testCase__description {
     border-bottom: 1px dashed #303030;
     color: #255172;
     background-color: #EEEEEE;
@@ -41,12 +40,6 @@
 
 .description__explanation-link{
     line-height: 1.5;
-}
-
-.description__bottom-line{
-    margin-bottom: 0;
-    display: flex;
-    justify-content: space-between;
 }
 
 .testCase__content {

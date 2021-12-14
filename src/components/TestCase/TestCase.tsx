@@ -15,7 +15,7 @@ type TestCaseProps = {
   linkToSuccessCriterion: string;
   explanation?: string;
   linkToExplanation?: string;
-  id?: string;
+  id: string;
 };
 export const TestCase: FC<TestCaseProps> = ({
   title,
@@ -37,31 +37,28 @@ export const TestCase: FC<TestCaseProps> = ({
   }
   return (
     <article className="testCase">
-      <header className={"title-line"}>
-        <h2 className={"title-line__title"}>{title}</h2>
-        <p className={"title-line__level"}>Level: {level}</p>
+      <h2 className={"testCase__title"}>{title}</h2>
+      <section className={"testCase__overview"}>
+        <span>ID: {id}</span>
+        <span>Level: {level}</span>
         <a
-          className={"title-line__link-to-success-criteria"}
+          className={"overview__link-to-success-criteria"}
           href={linkToSuccessCriterion}
           target={"_parent"}
         >
           Quickref.: {successCriterionNumber} {successCriterionInWords}
         </a>
-      </header>
-      <section className="description">
+      </section>
+      <section className="testCase__description">
         {explanation && (
           <p className={"description__explanation"}>{explanation}</p>
         )}
-        <p className={"description__bottom-line"}>
-          {id && <span>ID: {id}</span>}
-          {linkToExplanation && (
-            <span className={"description__explanation-link"}>
-              <a href={linkToExplanation}>
-                Further error explanantion: ..{linkToExplanationName}
-              </a>
-            </span>
-          )}
-        </p>
+
+        {linkToExplanation && (
+          <a href={linkToExplanation}>
+            Further error explanantion: ..{linkToExplanationName}
+          </a>
+        )}
       </section>
       <section className="testCase__content">{children}</section>
     </article>

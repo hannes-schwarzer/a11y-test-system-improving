@@ -1,4 +1,3 @@
-import { TestCase, Level } from "../../components/TestCase/TestCase";
 // import { Link } from "react-router-dom";
 // import SPACER from "../../assets/spacer.gif";
 // import classNames from "classnames";
@@ -28,7 +27,7 @@ export const Misc = () => {
 
   return (
     <>
-      <TestCase
+      {/* <TestCase
         title={"First instance of abbreviation not expanded"}
         successCriterionInWords={"3.1.4 Abbreviations"}
         successCriterionNumber={"3.1.4"}
@@ -43,8 +42,8 @@ export const Misc = () => {
         <abbr>GDS</abbr> is part of the Cabinet Office. Our job is digital
         transformation of government.
       </TestCase>
-      {/*2.4.10?*/}
-      {/*    <TestCase
+      2.4.10?
+          <TestCase
         title={"Content is not in correct reading order in source code"}
         
         successCriterion={"content"}
@@ -177,18 +176,18 @@ export const Misc = () => {
           Lines should not exceed 80 characters
         </p>
       </TestCase>
-*/}
-      {/*1.3.1 || 2.4.6 || 2.4.10*/}
-      {/*      <TestCase
+
+      1.3.1 || 2.4.6 || 2.4.10
+            <TestCase
         title={"Missing h1"}
         successCriterion={"headings"}
         
       >
         <Link to={"/headings/missingh1"}>Example page with no H1</Link>
       </TestCase>
-*/}
-      {/*1.3.1 || No Error?*/}
-      {/*      <TestCase
+
+      1.3.1 || No Error?
+            <TestCase
         title={"Table with some empty cells"}
         successCriterion={"tables"}
         
@@ -221,9 +220,9 @@ export const Misc = () => {
           </tbody>
         </table>
       </TestCase>
-*/}
-      {/*This one is still to be implemented*/}
-      {/*      <TestCase
+
+      This one is still to be implemented
+            <TestCase
         title={"Links to a sound file, no transcript"}
         successCriterion={"links"}
         
@@ -305,9 +304,9 @@ export const Misc = () => {
           <param name={"wmode"} value={"transparent"} /> Alternative text
         </object>
       </TestCase>
-*/}
-      {/*Not 1.1.1 Actually this seems to be valid*/}
-      {/*      <TestCase
+
+      Not 1.1.1 Actually this seems to be valid
+            <TestCase
         title={"Spacer image found"}
         successCriterion={"html"}
         
@@ -315,9 +314,9 @@ export const Misc = () => {
         We are here. <img alt={""} height={1} src={SPACER} width={100} /> And
         you are there.
       </TestCase>
-*/}
-      {/*This actuually seems valid so far as the usage of pre is concerned*/}
-      {/*      <TestCase
+
+      This actuually seems valid so far as the usage of pre is concerned
+            <TestCase
         title={"PRE element without CODE element inside it"}
         successCriterion={"html"}
         
@@ -383,9 +382,9 @@ export const Misc = () => {
           width={300}
         ></iframe>
       </TestCase>
-*/}
-      {/*2.2.1*/}
-      {/*      <TestCase
+
+      2.2.1
+            <TestCase
         title={"Alert shows for a short time"}
         successCriterion={"keyboard"}
         
@@ -397,9 +396,9 @@ export const Misc = () => {
           Name <input type={"text"} />
         </label>
       </TestCase>
-*/}
-      {/*2.1.1 && 2.1.3*/}
-      {/*      <TestCase
+
+      2.1.1 && 2.1.3
+            <TestCase
         title={
           "Keyboard focus assigned to a non focusable element using tabindex=0"
         }
@@ -409,10 +408,10 @@ export const Misc = () => {
       >
         <p tabIndex={0}>Some random text</p>
       </TestCase>
-*/}
-      {/*Lightbox with not functioning Escape button -
-      2.1.3 Keyboard (No Exception) Level AAA ??*/}
-      {/*
+
+      Lightbox with not functioning Escape button -
+      2.1.3 Keyboard (No Exception) Level AAA ??
+
       <TestCase
         title={"Lightbox - ESC key doesn't close the lightbox"}
         successCriterion={"keyboard"}
@@ -510,7 +509,7 @@ export const Misc = () => {
           </p>
         </div>
       </TestCase>
-*/}
+
       <TestCase
         title={
           "This page does not have a title element. The title element in the content of the iframe does not function as the title for the entire page."
@@ -585,7 +584,7 @@ export const Misc = () => {
             </tr>
           </tbody>
         </table>
-      </TestCase>
+      </TestCase>*/}
     </>
   );
 };
