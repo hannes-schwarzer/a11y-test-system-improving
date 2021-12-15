@@ -51,7 +51,9 @@ export const TestCase: FC<TestCaseProps> = ({
       </section>
       <section className="testCase__description">
         {explanation && (
-          <p className={"description__explanation"}>{explanation}</p>
+          <p className={"description__explanation"}>
+            Explanation: {explanation}
+          </p>
         )}
 
         {linkToExplanation && (
