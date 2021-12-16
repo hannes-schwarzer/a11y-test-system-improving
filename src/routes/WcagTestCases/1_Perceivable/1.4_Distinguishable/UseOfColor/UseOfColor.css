@@ -1,8 +1,11 @@
 /*Color alone is used to convey content*/
 .use-of-color__poisonous {
+    font-size: 1.5em;
     color: red;
 }
 .use-of-color__safe {
+    font-size: 1.5em;
+
     color: green;
 }
 
