@@ -143,7 +143,7 @@ export const ResizeText = (props: Props) => {
             id="fname"
           />
           <br />
-          <label resize-text__form-label htmlFor="lname">
+          <label className={"resize-text__form-label"} htmlFor="lname">
             Last Name
           </label>{" "}
           <input
@@ -244,6 +244,35 @@ export const ResizeText = (props: Props) => {
             </a>
             .
           </p>
+        </TestCase>
+
+        <TestCase
+          title={
+            "Ensure containing elements allow text resize without loss of functionality"
+          }
+          successCriterionInWords={"Resize Text"}
+          successCriterionNumber={"1.4.4"}
+          linkToSuccessCriterion={
+            "https://www.w3.org/WAI/WCAG21/quickref/#resize-text"
+          }
+          level={Level.AA}
+          id={"1.4.4_8"}
+          explanation={
+            "Developers must use relative sizing to ensure that text including form field text and text containers resize appropriately. When absolute sizing is used to size and position elements on the page, content and other elements do not scale correctly or scale at all when the text size is adjusted."
+          }
+          linkToExplanation={
+            "https://amp.levelaccess.net/public/standards/view_best_practice.php?violation_id=410"
+          }
+        >
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YLmdoiK5p1k"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </TestCase>
       </Frame>
     </>
