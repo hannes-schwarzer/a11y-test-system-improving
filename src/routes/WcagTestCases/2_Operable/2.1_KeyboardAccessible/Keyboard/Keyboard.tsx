@@ -6,6 +6,7 @@ import "./Keyboard.css";
 import classNames from "classnames";
 import { useState } from "react";
 import { Frame } from "../../../../../components/Frame/Frame";
+import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -135,15 +136,15 @@ export const Keyboard = (props: Props) => {
           }
           id={"2.1.1_3"}
         >
-          <a
+          <Link
             id={"keyboard__blur-error-second"}
             onFocus={() => {
               document!.getElementById("keyboard__blur-error-second")!.blur();
             }}
-            href="/some-page"
+            to="/some-page"
           >
-            <img src={LINK} />
-          </a>
+            <img src={LINK} alt={"button without focus when focused"} />
+          </Link>
         </TestCase>
 
         <TestCase
@@ -333,7 +334,7 @@ export const Keyboard = (props: Props) => {
                 href={
                   "http://www.justice.gov.uk/protecting-the-vulnerable/mental-capacity-act"
                 }
-                target={"_blank"}
+                target={"_parent"}
               >
                 information about mental capacity
               </a>
