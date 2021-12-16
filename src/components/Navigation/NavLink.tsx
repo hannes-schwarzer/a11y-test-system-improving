@@ -5,10 +5,9 @@ interface Props {
   className: string;
   path: string;
   name: string;
-  key: number;
 }
 
-export const NavLink = ({ key, className, path, name }: Props) => {
+export const NavLink = ({ className, path, name }: Props) => {
   return (
     <>
       <li
@@ -19,7 +18,7 @@ export const NavLink = ({ key, className, path, name }: Props) => {
           }
         }}
       >
-        <Link className={className} to={path} key={key}>
+        <Link className={className} to={path} key={`${name}_${path}`}>
           {name}
         </Link>
       </li>

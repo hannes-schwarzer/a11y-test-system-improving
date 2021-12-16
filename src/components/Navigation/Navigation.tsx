@@ -5,18 +5,23 @@ import "./Navigation.css";
 import { KeyboardEvent } from "react";
 
 export const Navigation = () => {
-  const pathsToTestCases = routes.map(({ className, path, name }, key) => {
+  const pathsToTestCases = routes.map(({ className, path, name }) => {
     if (
       className === "nav__link" ||
       className === "nav__homepage" ||
       className === "detail-page"
     ) {
       return (
-        <NavLink className={className} path={path} name={name} key={key} />
+        <NavLink
+          className={className}
+          path={path}
+          name={name}
+          key={`${name}_${path}`}
+        />
       );
     } else
       return (
-        <li className={className} key={key}>
+        <li className={className} key={`${name}_${path}`}>
           {name}
         </li>
       );

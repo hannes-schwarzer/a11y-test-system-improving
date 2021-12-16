@@ -1,5 +1,6 @@
 import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../../components/Frame/Frame";
+import React, { useEffect, useState } from "react";
 
 interface Props {
   pageTitle: string;
@@ -13,6 +14,16 @@ export const OnInput = (props: Props) => {
   const changeContext = (event: any) => {
     document.documentElement.lang = event.target.value;
   };
+
+  //for 3.2.2_1
+  const [name, setName] = useState("");
+  const [focused, setFocused] = useState(false);
+  const onFocus = () => setFocused(true);
+  const onBlur = () => setFocused(false);
+  useEffect(() => {
+    if (!focused && name !== "")
+      document.getElementById("formSubmitButton1")!.click();
+  });
 
   return (
     <>
@@ -36,15 +47,16 @@ export const OnInput = (props: Props) => {
           id={"3.2.2_1"}
         >
           <form method="get">
-            <input type="text" name="text1" size={3} maxLength={3} /> -
-            <input type="text" name="text2" size={3} maxLength={3} /> -
             <input
+              onFocus={onFocus}
+              onBlur={onBlur}
               type="text"
-              name="text3"
+              name="name"
               size={4}
               maxLength={4}
-              onChange={() => {
-                document.getElementById("formSubmitButton1")!.click();
+              value={name}
+              onInput={(e: React.FormEvent<HTMLInputElement>) => {
+                setName(e.currentTarget.value);
               }}
             />
             <input type="submit" value="Submit" id={"formSubmitButton1"} />

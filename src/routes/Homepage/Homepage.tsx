@@ -1,6 +1,6 @@
 import { Frame } from "../../components/Frame/Frame";
 import { TestCase, Level } from "../../components/TestCase/TestCase";
-import W3C from "../../assets/w3c.svg";
+import W3C from "../../assets/w3c.png";
 import "./Homepage.css";
 
 interface Props {
@@ -11,13 +11,15 @@ export const Homepage = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        <p className={"homepage__intro"}>
-          This is the current look of all test cases.
-        </p>
-        <p className={"homepage__intro"}>
-          Each test case is surrounded by a solid border. The area inside is
-          devided into two parts:
-          <ul>
+        <section>
+          <p className={"homepage__intro"}>
+            This is the current look of all test cases.
+          </p>
+          <p className={"homepage__intro"}>
+            Each test case is surrounded by a solid border. The area inside is
+            devided into two parts:
+          </p>
+          <ul className={"homepage__intro"}>
             <li>
               Above the dashed line in the top row it shows the title, the
               guideline level and the name of and link to the concerning success
@@ -30,8 +32,7 @@ export const Homepage = (props: Props) => {
               criteria violation.
             </li>
           </ul>
-        </p>
-
+        </section>
         <TestCase
           title={
             "Test case title that hints at the success criteria violation: e.g. 'Missing alt attribute on img element.'"
