@@ -45,14 +45,14 @@ export const FocusOrder = (props: Props) => {
           }
           level={Level.A}
           explanation={
-            "The following example incorrectly uses tabindex to specify an alternative tab order: If this list is navigated by the tab key, the list is navigated in the order Homepage, chapter 3, chapter 2, chapter 1, which does not follow the sequence in the content."
+            "The following example incorrectly uses tabindex to specify an alternative tab order: If this list is navigated by the tab key, the list is navigated in the order Some Page, chapter 3, chapter 2, chapter 1, which does not follow the sequence in the content."
           }
           id={"2.4.3_2"}
         >
           <ol>
             <li>
-              <a href="main.html" tabIndex={1}>
-                Homepage
+              <a href="/some-page" tabIndex={1}>
+                Some Page
               </a>
             </li>
             <li>
