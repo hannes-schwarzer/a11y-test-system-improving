@@ -80,7 +80,7 @@ export const ContrastMinimum = (props: Props) => {
           level={Level.AA}
           id={"1.4.3_3"}
         >
-          <p className={"low-contrast-small-aa"}>
+          <p className={"contrast-minimum__low-contrast-small-aa"}>
             This small text does not have enough contrast with it's background
           </p>
         </TestCase>
@@ -97,7 +97,7 @@ export const ContrastMinimum = (props: Props) => {
           level={Level.AA}
           id={"1.4.3_4"}
         >
-          <p className={"low-contrast-large-aa"}>
+          <p className={"contrast-minimum__low-contrast-large-aa"}>
             This large text does not have enough contrast with it's background
           </p>
         </TestCase>
