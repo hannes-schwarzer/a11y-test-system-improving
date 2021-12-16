@@ -1,5 +1,6 @@
 import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../../components/Frame/Frame";
+import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -27,30 +28,27 @@ export const ConsistentNavigation = (props: Props) => {
           }
           id={"3.2.3_1"}
         >
-          <div>
-            <h4>Page 1 Menu</h4>
-            <nav id="menu">
-              <a href="Brazil.htm">Brazil</a>
-              <br />
-              <a href="Canada.htm">Canada</a>
-              <br />
-              <a href="Germany.htm">Germany</a>
-              <br />
-              <a href="Poland.htm">Poland</a>
-            </nav>
+          <p>Menu on page one</p>
+          <div id="menu">
+            <a href="Brazil.htm">Brazil</a>
+            <br />
+            <a href="Canada.htm">Canada</a>
+            <br />
+            <a href="Germany.htm">Germany</a>
+            <br />
+            <a href="Poland.htm">Poland</a>
           </div>
-          <div>
-            <h4>Page 2 Menu</h4>
-            <nav id="menu">
-              <a href="Canada.htm">Canada</a>
-              <br />
-              <a href="Brazil.htm">Brazil</a>
-              <br />
-              <a href="Germany.htm">Germany</a>
-              <br />
-              <a href="Poland.htm">Poland</a>
-            </nav>
-          </div>
+
+          <p>
+            Link to page two:{" "}
+            <Link
+              to={
+                "/wcag/understandable/predictable/consistent-navigation/page-two"
+              }
+            >
+              page two
+            </Link>{" "}
+          </p>
         </TestCase>
       </Frame>
     </>

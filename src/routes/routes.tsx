@@ -75,6 +75,7 @@ import { Readable } from "./WcagTestCases/3_Understandable/3.1_Readable/Readable
 import { Predictable } from "./WcagTestCases/3_Understandable/3.2_Predictable/Predictable";
 import { InputAssistance } from "./WcagTestCases/3_Understandable/3.3_InputAssistance/InputAssistance";
 import { Compatible } from "./WcagTestCases/4_Robust/Compatible_4.1/Compatible";
+import { PageTwo } from "./WcagTestCases/DetailPages/Predicatble/PageTwo";
 
 export interface Route {
   className: string;
@@ -565,6 +566,12 @@ export const routes: Route[] = [
     path: "/wcag/operable/enough-time/timing-adjustable/refreshing-page",
     name: "Refreshing Page",
     component: <RefreshingPage />,
+  },
+  {
+    className: "detail-page",
+    path: "/wcag/understandable/predictable/consistent-navigation/page-two",
+    name: "Page Two",
+    component: <PageTwo />,
   },
   {
     className: "detail-page",
