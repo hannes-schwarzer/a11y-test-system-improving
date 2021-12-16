@@ -47,13 +47,14 @@ export const OnInput = (props: Props) => {
           id={"3.2.2_1"}
         >
           <form method="get">
+            <label htmlFor={"oi__autoSubmitName"}>Name</label>
             <input
               onFocus={onFocus}
               onBlur={onBlur}
+              id={"oi__autoSubmitName"}
               type="text"
               name="name"
-              size={4}
-              maxLength={4}
+              maxLength={30}
               value={name}
               onInput={(e: React.FormEvent<HTMLInputElement>) => {
                 setName(e.currentTarget.value);
