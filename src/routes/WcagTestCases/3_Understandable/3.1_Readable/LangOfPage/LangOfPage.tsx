@@ -1,15 +1,18 @@
 import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../../components/Frame/Frame";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface Props {
   pageTitle: string;
 }
 
 export const LangOfPage = (props: Props) => {
+  const [lang, setLang] = useState(document.documentElement.lang);
   useEffect(() => {
-    document.documentElement.lang = "";
-  });
+    if (lang !== "") setLang("");
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
