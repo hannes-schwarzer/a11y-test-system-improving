@@ -31,7 +31,7 @@ export const BypassBlocks = (props: Props) => {
           }
           id={"2.4.1_1"}
         >
-          <iframe width="100%" src={"/some-page"} />
+          <iframe width="100%" src={"/some-page"}></iframe>
         </TestCase>
         <TestCase
           title={"Second main role present"}

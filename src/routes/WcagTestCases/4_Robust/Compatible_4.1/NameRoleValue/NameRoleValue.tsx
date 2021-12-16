@@ -427,7 +427,7 @@ export const NameRoleValue = (props: Props) => {
           }
           id={"4.1.2_17"}
         >
-          <iframe height={100} src={"/some-page"} width={300}></iframe>
+          <iframe width="100%" src={"/some-page"}></iframe>
         </TestCase>
 
         <TestCase
