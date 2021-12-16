@@ -1,4 +1,4 @@
-<p align="center" style="margin-bottom: 2.5em; margin-top: 2.5em;  display: flex; flex-direction: column; padding: 0">
+<p align="center" markdown="1" style="margin-bottom: 2.5em; margin-top: 2.5em;  display: flex; flex-direction: column; padding: 0">
     <span style="color:#2e638c; text-transform:uppercase; font-weight:bold; font-size:2.5em; margin-top: -0.15em;
     margin-bottom: -0.1em; margin-left: 0.07em;">a11y</span>
     <span style="text-transform:uppercase; font-weight:bold; font-size:4.5em; color: #255172; margin-top: -0.5em;
