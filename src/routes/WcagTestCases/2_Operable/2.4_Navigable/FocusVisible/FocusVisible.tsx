@@ -2,6 +2,7 @@ import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
 import LINK from "../../../../../assets/link.png";
 import "./FocusVisible.css";
 import { Frame } from "../../../../../components/Frame/Frame";
+import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -64,15 +65,15 @@ export const FocusVisible = (props: Props) => {
           }
           id={"2.4.7_2"}
         >
-          <a
+          <Link
             id={"keyboard__blur-error-second"}
             onFocus={() => {
               document!.getElementById("keyboard__blur-error-second")!.blur();
             }}
-            href="/some-page"
+            to="/some-page"
           >
-            <img src={LINK} />
-          </a>
+            <img src={LINK} alt={"button without focus when focused"} />
+          </Link>
         </TestCase>
 
         <TestCase
