@@ -1,9 +1,9 @@
 {
-  "name": "a11y_testsystem",
+  "name": "a11yup",
   "description": "Test system riddled with a11y errors for a11y tools to pick up.",
   "version": "0.1.0",
   "private": true,
-  "license": "MIT",
+  "license": "GPL-3.0",
   "dependencies": {
     "classnames": "^2.3.1",
     "prettier": "^2.4.1",
