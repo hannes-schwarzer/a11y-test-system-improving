@@ -41,7 +41,7 @@ export const OnInput = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F36.html"
           }
           explanation={
-            "This failure example submits a form when the user leaves the last field of a three-field telephone number form. The form will submit if the user leaves the field after editing it, even navigating backwards in the tab order. Developers should not use this method to submit a form, and should instead use a submit button, or rely on the form's default behavior of submitting when the user hits enter in a text field."
+            "This failure example submits a form when the user leaves the input field of the form after editing it, even navigating backwards in the tab order. Developers should not use this method to submit a form, and should instead use a submit button, or rely on the form's default behavior of submitting when the user hits enter in a text field."
           }
           level={Level.A}
           id={"3.2.2_1"}
@@ -76,13 +76,12 @@ export const OnInput = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F36.html"
           }
           explanation={
-            "This is a example that submits a form when the user selects an option from the menu when there is no warning of this behavior in advance. The form will submit as soon as an item from the menu is selected. A user using a keyboard will not be able to navigate past the first item in the menu. Blind users and users with hand tremors can easily make a mistake on which item on the dropdown menu to choose and they are taken to the wrong destination before they can correct it."
+            "This is an example that submits a form when the user selects an option from the menu. There is no warning of this behavior in advance. The form will submit as soon as an item from the menu is selected. Blind users and users with hand tremors can easily make a mistake on which item on the dropdown menu to choose and they are taken to the wrong destination before they can correct it."
           }
           level={Level.A}
           id={"3.2.2_2"}
         >
           <form method="get">
-            <input type="text" name="text1" />
             <label htmlFor={"oi__select"}>Chose: </label>
             <select
               id={"oi__select"}
