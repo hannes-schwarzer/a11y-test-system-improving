@@ -427,7 +427,11 @@ export const NameRoleValue = (props: Props) => {
           }
           id={"4.1.2_17"}
         >
-          <iframe width="100%" src={"/some-page"}></iframe>
+          <iframe
+            src="https://equalizedigital.com"
+            width="100%"
+            height="400"
+          ></iframe>
         </TestCase>
 
         <TestCase

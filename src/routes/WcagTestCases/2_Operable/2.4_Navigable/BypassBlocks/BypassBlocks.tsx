@@ -31,8 +31,13 @@ export const BypassBlocks = (props: Props) => {
           }
           id={"2.4.1_1"}
         >
-          <iframe width="100%" src={"/some-page"}></iframe>
+          <iframe
+            src="https://equalizedigital.com"
+            width="100%"
+            height="400"
+          ></iframe>
         </TestCase>
+
         <TestCase
           title={"Second main role present"}
           successCriterionNumber={"2.4.1"}
