@@ -71,16 +71,18 @@ export const OnInput = (props: Props) => {
         >
           <form method="get">
             <input type="text" name="text1" />
+            <label htmlFor={"oi__select"}>Chose: </label>
             <select
+              id={"oi__select"}
               name="select1"
               onChange={() => {
                 document.getElementById("formSubmitButton2")!.click();
               }}
             >
-              <option>one</option>
-              <option>two</option>
-              <option>three</option>
-              <option>four</option>
+              <option label={"one"}>one</option>
+              <option label={"two"}>two</option>
+              <option label={"three"}>three</option>
+              <option label={"four"}>four</option>
             </select>
             <input type="submit" value="Submit" id={"formSubmitButton2"} />
           </form>
