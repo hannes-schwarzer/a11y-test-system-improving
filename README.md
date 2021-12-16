@@ -1,5 +1,5 @@
-<p align="center" markdown="1" style="margin-bottom: 2.5em; margin-top: 2.5em;  display: flex; flex-direction: column; padding: 0">
-    <img src="https://github.com/andiKandi/a11y-test-system/tree/main/src/a11yup.png" alt="allyup" style="width: 284px; max-width: 80%; height: auto;"/>
+<p align="center" style="margin-bottom: 2.5em; margin-top: 2.5em;  display: flex; flex-direction: column; padding: 0">
+    <img src="src/assets/allyup.png" alt="allyup" style="width: 284px; max-width: 80%; height: auto;"/>
 </p>
 
 Test system for accessibility error detection and prevention. It is riddled with accessibility issues. For each there is information about the violated [WCAG guideline](https://www.w3.org/WAI/WCAG21/quickref) and in some cases additional information. 
