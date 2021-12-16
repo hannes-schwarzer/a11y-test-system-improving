@@ -40,7 +40,7 @@ import { ContrastEnhanced } from "./WcagTestCases/1_Perceivable/1.4_Distinguisha
 import { Interruptions } from "./WcagTestCases/2_Operable/2.2_EnoughTime/Interruptions/Interruptions";
 import { TextSpacing } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/TextSpacing/TextSpacing";
 import { MediaAlternativePrerecorded } from "./WcagTestCases/1_Perceivable/1.2_TimeBasedMedia/MediaAlternativePrerecorded/MediaAlternativePrerecorded";
-import { Inappropriate } from "./WcagTestCases/DetailPages/Navigable_Detail/Inappropriate";
+import { InappropriatePageTitle } from "./WcagTestCases/DetailPages/Navigable_Detail/InappropriatePageTitle";
 import { ImagesOfText } from "./WcagTestCases/1_Perceivable/1.4_Distinguishable/ImagesOfText/ImagesOfText";
 import { BypassBlocks } from "./WcagTestCases/2_Operable/2.4_Navigable/BypassBlocks/BypassBlocks";
 import { LabelInName } from "./WcagTestCases/2_Operable/2.5_InputModalities/LabelInName/LabelInName";
@@ -516,7 +516,7 @@ export const routes: Route[] = [
     className: "detail-page",
     path: "/wcag/operable/navigable/page-titled/inappropriate-page-title",
     name: "Inappropriate Page Title",
-    component: <Inappropriate />,
+    component: <InappropriatePageTitle />,
   },
   {
     className: "detail-page",

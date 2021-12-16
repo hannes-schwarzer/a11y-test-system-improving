@@ -6,6 +6,7 @@ export const OnlySeparaterInTitle = () => {
       <Helmet>
         <title> </title>
       </Helmet>
+      <h1>Only Separator as Title</h1>
       <p>This page only has a separater as page title</p>
     </>
   );

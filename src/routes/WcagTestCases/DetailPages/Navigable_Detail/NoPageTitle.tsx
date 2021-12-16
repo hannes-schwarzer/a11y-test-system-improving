@@ -6,7 +6,7 @@ export const NoPageTitle = () => {
   }, []);
   return (
     <>
-      <p>This page has no page title.</p>
+      <h1>No Page Title.</h1>
       <p>
         Further information to this problem can be found here:{" "}
         <a
