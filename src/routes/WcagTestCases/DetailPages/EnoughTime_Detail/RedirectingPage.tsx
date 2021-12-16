@@ -13,6 +13,7 @@ export const RedirectingPage = () => {
         />
       </head>
       <body>
+        <h1>Redirecting Page</h1>
         <p>
           If your browser supports Refresh, you'll be transported to our{" "}
           <a href="http://www.example.com/newpage">new site</a> in 5 seconds,
