@@ -16,7 +16,6 @@ import { CharacterKeyShortcuts } from "./WcagTestCases/Operable/KeyboardAccessib
 import { ResizeText } from "./WcagTestCases/Perceivable/Distinguishable/ResizeText/ResizeText";
 import { ChangeOnRequest } from "./WcagTestCases/Understandable/Predictable/ChangeOnRequest/ChangeOnRequest";
 import { StatusMessages } from "./WcagTestCases/Robust/Compatible/StatusMessages/StatusMessages";
-import { Orientation } from "./WcagTestCases/Perceivable/Adaptable/Orientation/Orientation";
 import { FocusOrder } from "./WcagTestCases/Operable/Navigable/FocusOrder/FocusOrder";
 import { Reflow } from "./WcagTestCases/Perceivable/Distinguishable/Reflow/Reflow";
 import { NoPageTitle } from "./WcagTestCases/DetailPages/Navigable/NoPageTitle";
@@ -158,12 +157,6 @@ export const routes: Route[] = [
     component: (
       <SensoryCharacteristics pageTitle="1.3.3 Sensory Characteristics" />
     ),
-  },
-  {
-    className: "nav__link",
-    path: "/wcag/perceivable/adaptable/orientation",
-    name: "1.3.4 Orientation",
-    component: <Orientation pageTitle="1.3.4 Orientation" />,
   },
   {
     className: "nav__link",
