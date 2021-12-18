@@ -1,31 +1,14 @@
 import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
 import TREE from "../../../../../assets/animated-tree.gif";
 import { Frame } from "../../../../../components/Frame/Frame";
+import Blink from "react-blink-text";
 import "./PauseStopHide.css";
-import { useEffect, useState } from "react";
 
 interface Props {
   pageTitle: string;
 }
 
 export const PauseStopHide = (props: Props) => {
-  const [visibility, setVisibility] = useState("visible");
-
-  useEffect(() => {
-    const hide = () => {
-      setVisibility("hidden");
-      setTimeout(show, 450);
-    };
-    const show = () => {
-      setVisibility("visible");
-      if (document.getElementById("blink1")) {
-        document.getElementById("blink1")!.style.visibility = visibility;
-      }
-      setTimeout(() => hide(), 450);
-    };
-    show();
-  });
-
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
@@ -50,12 +33,7 @@ export const PauseStopHide = (props: Props) => {
         >
           <p>
             My Great Product{" "}
-            <span
-              className={"blinking-sale"}
-              style={{ textDecoration: "blink" }}
-            >
-              Sale! $44,95!
-            </span>
+            <span className={"blinking-sale"}>Sale! $44,95!</span>
           </p>
         </TestCase>
 
@@ -77,7 +55,7 @@ export const PauseStopHide = (props: Props) => {
           }
           id={"2.2.2_2"}
         >
-          <span id="blink1">This content will blink</span>
+          <Blink color="red" text="Super Sale!!!" fontSize="20" />
         </TestCase>
 
         <TestCase
