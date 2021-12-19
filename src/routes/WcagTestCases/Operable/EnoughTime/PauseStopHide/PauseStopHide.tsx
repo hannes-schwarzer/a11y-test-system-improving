@@ -55,7 +55,7 @@ export const PauseStopHide = (props: Props) => {
           }
           id={"2.2.2_2"}
         >
-          <Blink color="red" text="Super Sale!!!" fontSize="20" />
+          <Blink color="black" text="Super Sale!!!" fontSize="20" />
         </TestCase>
 
         <TestCase
