@@ -985,17 +985,25 @@ CIRCUIT COURT JUDGE BRANCH 3
           level={Level.A}
           linkToExplanation={"https://www.w3.org/WAI/tutorials/tables/"}
           explanation={
-            "Header cells must be marked up with <th>, and data cells with <td> to make tables accessible. For more complex tables, explicit associations may be needed using scope, id, and headers attributes."
+            "Header cells must be marked up with <th>, and data cells with <td> to make tables accessible. For more complex tables, explicit associations may be needed using scope, id, and headers attributes. Here, id and scope are provided, but no <td> Elements."
           }
           id={"1.3.1_29"}
         >
           <table>
             <thead>
               <tr>
-                <th>Foo</th>
-                <th>Bar</th>
-                <th>Bat</th>
-                <th>Baz</th>
+                <th scope="col" id="1.3.1_29_foo">
+                  Foo
+                </th>
+                <th scope="col" id="1.3.1_29_bar">
+                  Bar
+                </th>
+                <th scope="col" id="1.3.1_29_bat">
+                  Bat
+                </th>
+                <th scope="col" id="1.3.1_29_baz">
+                  Baz
+                </th>
               </tr>
             </thead>
           </table>
