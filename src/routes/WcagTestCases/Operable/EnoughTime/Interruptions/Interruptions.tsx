@@ -35,7 +35,7 @@ export const Interruptions = (props: Props) => {
                 "/wcag/operable/enough-time/timing-adjustable/redirect-to-other-page"
               }
             >
-              Link to page that redirects after 5 seconds
+              Link to page that redirects after 20 seconds
             </Link>
           </p>
         </TestCase>
@@ -64,7 +64,7 @@ export const Interruptions = (props: Props) => {
                 "/wcag/operable/enough-time/timing-adjustable/refreshing-page"
               }
             >
-              Link to page that refreshes after 5 seconds
+              Link to page that refreshes after 20 seconds
             </Link>
           </p>
         </TestCase>
