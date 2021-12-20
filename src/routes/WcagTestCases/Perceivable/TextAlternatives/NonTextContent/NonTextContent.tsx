@@ -78,7 +78,7 @@ export const NonTextContent = (props: Props) => {
           id={"1.1.1_3"}
         >
           <a href={"http://www.bbc.co.uk/"}>
-            <img alt={""} src={BBC} />
+            <img src={BBC} />
           </a>
         </TestCase>
 
