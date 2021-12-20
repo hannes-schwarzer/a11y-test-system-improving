@@ -1,6 +1,5 @@
 import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
 import { Frame } from "../../../../../components/Frame/Frame";
-import { Link } from "react-router-dom";
 
 interface Props {
   pageTitle: string;
@@ -26,9 +25,29 @@ export const NoKeyboardTrap = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/general/G21.html"
           }
         >
-          <Link to={"/wcag/operable/keyboard-accessible/no-keyboard-trap/trap"}>
-            Example page that contains a keyboard trap
-          </Link>
+          <p>
+            There are 2 links on this page. If you are using a keyboard you
+            won't be able to get to the second link. The keydown event has been
+            used to open a new window. When a person using a keyboard attempts
+            to move focus away from the first link, the keydown event will be
+            triggered and the resulting function will be executed.
+          </p>
+          <ul>
+            <li>
+              <a
+                onKeyDown={(event) => {
+                  event.preventDefault();
+                  window.open("https://en.wikipedia.org/wiki/Booby_trap");
+                }}
+                href={"https://en.wikipedia.org/wiki/Booby_trap"}
+              >
+                trap
+              </a>
+            </li>
+            <li>
+              <a href={"https://en.wikipedia.org/wiki/Honey"}>honey</a>
+            </li>
+          </ul>
         </TestCase>
       </Frame>
     </>

@@ -48,7 +48,6 @@ import { Parsing } from "./WcagTestCases/Robust/Compatible/Parsing/Parsing";
 import { Keyboard } from "./WcagTestCases/Operable/KeyboardAccessible/Keyboard/Keyboard";
 import { MeaningfulSequence } from "./WcagTestCases/Perceivable/Adaptable/MeaningfulSequence/MeaningfulSequence";
 import { LabelsOrInstructions } from "./WcagTestCases/Understandable/InputAssistance/LabelsOrInstructions/LabelsOrInstructions";
-import { KeyboardTrap } from "./WcagTestCases/DetailPages/KeyboardAccessible/KeyboardTrap";
 import { InfoAndRelationships } from "./WcagTestCases/Perceivable/Adaptable/InfoAndRelationships/InfoAndRelationships";
 import { OnInput } from "./WcagTestCases/Understandable/Predictable/OnInput/OnInput";
 import { OnlySeparaterInTitle } from "./WcagTestCases/DetailPages/Navigable/OnlySeparaterInTitle";
@@ -486,12 +485,6 @@ export const routes: Route[] = [
     path: "/wcag/operable/navigable/page-titled/only-separater-in-title",
     name: "Only Separater in Title",
     component: <OnlySeparaterInTitle />,
-  },
-  {
-    className: "detail-page",
-    path: "/wcag/operable/keyboard-accessible/no-keyboard-trap/trap",
-    name: "Keyboard Trap",
-    component: KeyboardTrap(),
   },
   {
     className: "detail-page",
