@@ -2,6 +2,7 @@ import { TestCase, Level } from "../../../../../components/TestCase/TestCase";
 import CHECKED from "../../../../../assets/checkbox-checked.svg";
 import UNCHECKED from "../../../../../assets/checkbox-unchecked.svg";
 import { Frame } from "../../../../../components/Frame/Frame";
+import "./NameRoleValue.css";
 
 interface Props {
   pageTitle: string;
@@ -443,7 +444,7 @@ export const NameRoleValue = (props: Props) => {
           }
           id={"4.1.2_18"}
         >
-          <a className={"button"} href={"next.html"} role={"button"}>
+          <a className={"nrv__button"} href={"next.html"} role={"button"}>
             Continue
           </a>
         </TestCase>
