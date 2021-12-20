@@ -96,7 +96,7 @@ export const OnInput = (props: Props) => {
               <option label={"three"}>three</option>
               <option label={"four"}>four</option>
             </select>
-            <input type="submit" value="Submit" id={"formSubmitButton2"} />
+            <input type="submit" value="Submit2" id={"formSubmitButton2"} />
           </form>
         </TestCase>
 
