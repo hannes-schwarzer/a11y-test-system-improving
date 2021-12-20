@@ -58,22 +58,15 @@ import { TimingAdjustable } from "./WcagTestCases/Operable/EnoughTime/TimingAdju
 import { ConsistentNavigation } from "./WcagTestCases/Understandable/Predictable/ConsistentNavigation/ConsistentNavigation";
 import { EmptyPageTitle } from "./WcagTestCases/DetailPages/Navigable/EmptyPageTitle";
 import { Perceivable } from "./WcagTestCases/Perceivable/Perceivable";
-import { Operable } from "./WcagTestCases/Operable/Operable";
 import { Understandable } from "./WcagTestCases/Understandable/Understandable";
-import { Robust } from "./WcagTestCases/Robust/Robust";
 import { TextAlternatives } from "./WcagTestCases/Perceivable/TextAlternatives/TextAlternatives";
 import { TimeBasedMedia } from "./WcagTestCases/Perceivable/TimeBasedMedia/TimeBasedMedia";
 import { Adaptable } from "./WcagTestCases/Perceivable/Adaptable/Adaptable";
 import { Distinguishable } from "./WcagTestCases/Perceivable/Distinguishable/Distinguishable";
-import { KeyboardAccessible } from "./WcagTestCases/Operable/KeyboardAccessible/KeyboardAccessible";
-import { EnoughTime } from "./WcagTestCases/Operable/EnoughTime/EnoughTime";
 import { SeizuresAndPhysicalReactions } from "./WcagTestCases/Operable/SeizuresAndPhysical/SeizuresAndPhysicalReactions";
-import { Navigable } from "./WcagTestCases/Operable/Navigable/Navigable";
-import { InputModalities } from "./WcagTestCases/Operable/InputModalities/InputModalities";
 import { Readable } from "./WcagTestCases/Understandable/Readable/Readable";
 import { Predictable } from "./WcagTestCases/Understandable/Predictable/Predictable";
 import { InputAssistance } from "./WcagTestCases/Understandable/InputAssistance/InputAssistance";
-import { Compatible } from "./WcagTestCases/Robust/Compatible/Compatible";
 import { PageTwo } from "./WcagTestCases/DetailPages/Predicatble/PageTwo";
 
 export interface Route {
@@ -241,18 +234,6 @@ export const routes: Route[] = [
     ),
   },
   {
-    className: "nav__principle",
-    path: "/wcag/operable",
-    name: "2. Operable",
-    component: <Operable pageTitle="2. Operable" />,
-  },
-  {
-    className: "nav__guideline",
-    path: "/wcag/operable/keyboard-accessible",
-    name: "2.1 Keyboard Accessible",
-    component: <KeyboardAccessible pageTitle="2.1 Keyboard Accessible" />,
-  },
-  {
     className: "nav__link",
     path: "/wcag/operable/keyboard-accessible/keyboard",
     name: "2.1.1 Keyboard",
@@ -271,12 +252,6 @@ export const routes: Route[] = [
     component: (
       <CharacterKeyShortcuts pageTitle="2.1.4 Character Key Shortcuts" />
     ),
-  },
-  {
-    className: "nav__guideline",
-    path: "/wcag/operable/enough-time",
-    name: "2.2 Enough Time",
-    component: <EnoughTime pageTitle="2.2 Enough Time" />,
   },
   {
     className: "nav__link",
@@ -311,12 +286,6 @@ export const routes: Route[] = [
     component: (
       <ThreeFlashesOrBelowThreshold pageTitle="2.3.1 Three Flashes or Below Threshold" />
     ),
-  },
-  {
-    className: "nav__guideline",
-    path: "/wcag/operable/navigable",
-    name: "2.4 Navigable",
-    component: <Navigable pageTitle="2.4 Navigable" />,
   },
   {
     className: "nav__link",
@@ -363,12 +332,6 @@ export const routes: Route[] = [
     component: (
       <LinkPurposeLinkOnly pageTitle="2.4.9 Link Purpose (Link Only)" />
     ),
-  },
-  {
-    className: "nav__guideline",
-    path: "/wcag/operable/input-modalities",
-    name: "2.5 Input Modalities",
-    component: <InputModalities pageTitle="2.5 Input Modalities" />,
   },
   {
     className: "nav__link",
@@ -475,18 +438,6 @@ export const routes: Route[] = [
     path: "/wcag/understandable/input-assistance/error-suggestion",
     name: "3.3.3 Error Suggestion",
     component: <ErrorSuggestions pageTitle="3.3.3 Error Suggestion" />,
-  },
-  {
-    className: "nav__principle",
-    path: "/wcag/robust",
-    name: "4. Robust",
-    component: <Robust pageTitle="4. Robust" />,
-  },
-  {
-    className: "nav__guideline",
-    path: "/wcag/robust/compatible",
-    name: "4.1 Compatible",
-    component: <Compatible pageTitle="4.1 Compatible" />,
   },
   {
     className: "nav__link",
