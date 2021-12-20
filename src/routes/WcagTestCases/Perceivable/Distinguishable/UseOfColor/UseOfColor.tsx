@@ -63,7 +63,9 @@ export const UseOfColor = (props: Props) => {
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua <a href={"#"}>A normal Link</a>. <br />
+            erat, sed diam voluptua <a href={"#"}>A normal Link</a>.
+          </p>
+          <p>
             At vero eos et accusam et justo duo dolores et ea rebum.{" "}
             <a className={"use-of-color__color-alone-link"} href={"#"}>
               Link only identifiable by color alone.
