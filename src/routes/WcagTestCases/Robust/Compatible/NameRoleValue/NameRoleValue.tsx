@@ -10,7 +10,7 @@ interface Props {
 export const NameRoleValue = (props: Props) => {
   function toggleCheckbox(imgId: any) {
     const theImg: any = document.getElementById(imgId);
-    if (theImg.src.lastIndexOf(CHECKED) != -1) {
+    if (theImg.src.lastIndexOf(CHECKED) !== -1) {
       theImg.src = UNCHECKED;
       // additional code to implement unchecked action
     } else {
