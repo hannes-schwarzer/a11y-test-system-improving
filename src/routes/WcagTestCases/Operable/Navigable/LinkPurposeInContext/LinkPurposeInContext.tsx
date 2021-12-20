@@ -126,7 +126,7 @@ export const LinkPurposeInContext = (props: Props) => {
           level={Level.A}
           id={"2.4.4_5"}
         >
-          <h4>Polar bear</h4>
+          <h3>Polar bear</h3>
           <p>
             The polar bear is a carnivorous bear whose native range lies largely
             within the Arctic Circle, encompassing the Arctic Ocean, its

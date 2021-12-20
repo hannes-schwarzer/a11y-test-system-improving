@@ -66,7 +66,7 @@ export const LabelsOrInstructions = (props: Props) => {
           linkToExplanation={"https://www.w3.org/WAI/tutorials/forms/grouping/"}
           id={"3.3.2_3"}
         >
-          <h4>Do you already have a personal user account?</h4>
+          <h3>Do you already have a personal user account?</h3>
           <label className={"block-label"} htmlFor={"radio-inline-1"}>
             <input
               id={"radio-inline-1"}
@@ -165,7 +165,7 @@ export const LabelsOrInstructions = (props: Props) => {
           }
           id={"3.3.2_7"}
         >
-          <h4>Which types of waste do you transport regularly?</h4>
+          <h3>Which types of waste do you transport regularly?</h3>
           <label className={"block-label"} htmlFor={"waste-type-1"}>
             <input
               id={"waste-type-1"}

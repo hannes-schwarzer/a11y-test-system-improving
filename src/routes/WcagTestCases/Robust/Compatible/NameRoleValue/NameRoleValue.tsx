@@ -226,8 +226,8 @@ export const NameRoleValue = (props: Props) => {
           level={Level.A}
           id={"4.1.2_9"}
         >
-          <h4></h4>
-          <p>This paragraph is preceded by an empty h4</p>
+          <h3></h3>
+          <p>This paragraph is preceded by an empty h3</p>
         </TestCase>
 
         <TestCase

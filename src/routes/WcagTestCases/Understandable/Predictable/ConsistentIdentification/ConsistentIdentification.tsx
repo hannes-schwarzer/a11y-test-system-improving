@@ -28,7 +28,7 @@ export const ConsistentIdentification = (props: Props) => {
           id={"3.2.4_1"}
         >
           <div>
-            <h4>Form on first page</h4>
+            <h3>Form on first page</h3>
             <form>
               <label>
                 Name:
@@ -38,7 +38,7 @@ export const ConsistentIdentification = (props: Props) => {
             </form>
           </div>
           <div>
-            <h4>Form on second page</h4>
+            <h3>Form on second page</h3>
             <form>
               <label>
                 Name:
