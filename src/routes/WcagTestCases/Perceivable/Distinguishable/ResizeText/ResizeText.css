@@ -50,13 +50,13 @@
 /*Page zoom - boxes that don't expand with the text*/
 .resize-text__wont-expand-box {
     overflow: hidden;
-    height: 10em;
+    height: 7em;
 }
 .resize-text__wont-expand {
     border: 1px solid #BFC1C3;
     padding: 1em;
     position: absolute;
     width: 50%;
-    height: 4.2em;
+    height: 3em;
     overflow: hidden;
 }
