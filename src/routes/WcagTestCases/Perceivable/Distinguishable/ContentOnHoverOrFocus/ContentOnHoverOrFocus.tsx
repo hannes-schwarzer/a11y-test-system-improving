@@ -22,7 +22,8 @@ export const ContentOnHoverOrFocus = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#content-on-hover-or-focus"
           }
           explanation={
-            "Tooltips convey further information. But here they are inaccessible the people who use keyboard control only."
+            "Tooltips convey further information. But here they are inaccessible the people who use keyboard " +
+            "control only."
           }
           id={"1.4.13_1"}
         >

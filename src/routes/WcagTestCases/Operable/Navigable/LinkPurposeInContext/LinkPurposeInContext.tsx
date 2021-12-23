@@ -13,7 +13,8 @@ export const LinkPurposeInContext = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <TestCase
           title={
-            "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
+            "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content " +
+            "that is not related to the link"
           }
           successCriterionInWords={"Link Purpose (In Context)"}
           successCriterionNumber={"2.4.4"}
@@ -23,7 +24,8 @@ export const LinkPurposeInContext = (props: Props) => {
           explanation={
             "A Link in an Adjacent Paragraph: A news service lists the first few sentences of an article in a " +
             'paragraph. The next paragraph contains the link "Read More...". Because the link is not in the same ' +
-            "paragraph as the lead sentence, the user cannot easily discover what the link will let the user read more about."
+            "paragraph as the lead sentence, the user cannot easily discover what the link will let the user read " +
+            "more about."
           }
           level={Level.A}
           linkToExplanation={
@@ -42,7 +44,8 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <TestCase
           title={
-            "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link"
+            "F63: Failure of Success Criterion 2.4.4 due to providing link context only in content " +
+            "that is not related to the link"
           }
           successCriterionInWords={"Link Purpose (In Context)"}
           successCriterionNumber={"2.4.4"}
@@ -51,8 +54,8 @@ export const LinkPurposeInContext = (props: Props) => {
           }
           explanation={
             "A Link in an Adjacent Cell Within a Layout Table: An audio site provides links to where its " +
-            "player can be downloaded. The information about what would be downloaded by the link is in the preceding row " +
-            "of the layout table, which is not programmatically determined context for the link."
+            "player can be downloaded. The information about what would be downloaded by the link is in the " +
+            "preceding row of the layout table, which is not programmatically determined context for the link."
           }
           level={Level.A}
           linkToExplanation={
@@ -81,7 +84,8 @@ export const LinkPurposeInContext = (props: Props) => {
 
         <TestCase
           title={
-            "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible name for an image which is the only content in a link"
+            "F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible " +
+            "name for an image which is the only content in a link"
           }
           successCriterionInWords={"Link Purpose (In Context)"}
           successCriterionNumber={"2.4.4"}
@@ -89,7 +93,11 @@ export const LinkPurposeInContext = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
           }
           explanation={
-            'HTML Search Results: A search site returns search results that include both a text link and an image link to the match site. The image has a null alt attribute, since the result already contains a link with a text description. However, the screen reader does not ignore the image link but uses heuristics to find some text that might describe the purpose of the link. For example, the screen reader might announce, "football dot gif Football Scorecard."'
+            "HTML Search Results: A search site returns search results that include both a text link and " +
+            "an image link to the match site. The image has a null alt attribute, since the result already " +
+            "contains a link with a text description. However, the screen reader does not ignore the image" +
+            " link but uses heuristics to find some text that might describe the purpose of the link. " +
+            'For example, the screen reader might announce, "football dot gif Football Scorecard."'
           }
           level={Level.A}
           linkToExplanation={
@@ -144,7 +152,12 @@ export const LinkPurposeInContext = (props: Props) => {
           level={Level.A}
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H33.html"}
           explanation={
-            "The objective of this technique is to demonstrate how to use a title attribute on an anchor element to provide additional text describing a link. The title attribute is used to provide additional information to help clarify or further describe the purpose of a link. If the supplementary information provided through the title attribute is something the user should know before following the link, such as a warning, then it should be provided in the link text rather than in the title attribute."
+            "The objective of this technique is to demonstrate how to use a title attribute on an anchor " +
+            "element to provide additional text describing a link. The title attribute is used to provide " +
+            "additional information to help clarify or further describe the purpose of a link. " +
+            "If the supplementary information provided through the title attribute is something the user " +
+            "should know before following the link, such as a warning, then it should be provided in the " +
+            "link text rather than in the title attribute."
           }
           id={"2.4.4_6"}
         >

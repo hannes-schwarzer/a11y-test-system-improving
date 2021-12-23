@@ -21,6 +21,9 @@ export const TargetSize = (props: Props) => {
             "https://dequeuniversity.com/resources/wcag2.1/2.5.5-target-size"
           }
           id={"2.5.5_1"}
+          explanation={
+            "All links are small and close together, so it's easy to miss."
+          }
         >
           <a href={"a.html"}>a</a>
           <a href={"b.html"}>b</a>

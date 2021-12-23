@@ -19,7 +19,8 @@ export const ErrorIdentification = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#error-identification"
           }
           explanation={
-            "If an input error is automatically detected, the item that is in error should be identified and the error should be described to the user in text. But this isn't the case here."
+            "If an input error is automatically detected, the item that is in error should be " +
+            "identified and the error should be described to the user in text. But this isn't the case here."
           }
           id={"3.3.1_1"}
         >

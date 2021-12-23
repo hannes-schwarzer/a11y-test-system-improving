@@ -17,7 +17,8 @@ export const StatusMessages = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <TestCase
           title={
-            "F103: Failure of Success Criterion 4.1.3 due to providing status messages that cannot be programmatically determined through role or properties"
+            "F103: Failure of Success Criterion 4.1.3 due to providing status messages that cannot be " +
+            "programmatically determined through role or properties"
           }
           level={Level.AA}
           successCriterionInWords={"Status Message"}
@@ -29,7 +30,12 @@ export const StatusMessages = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/working-examples/failure-status-message/"
           }
           explanation={
-            'This demonstrates a failure of Status Messages, where messages about search results are returned without being surfaced via the aria status role. After a user presses a Search button, the page content does a mock search for words that rhyme with "orange". None are returned, which results in a change to content: the message "0 results returned". This text is not given an appropriate role for a status message, and so a screen reader will not announce "Zero results returned" unless a user manually navigates to it.'
+            "This demonstrates a failure of Status Messages, where messages about search results are " +
+            "returned without being surfaced via the aria status role. After a user presses a Search button, " +
+            'the page content does a mock search for words that rhyme with "orange". None are returned, ' +
+            'which results in a change to content: the message "0 results returned". ' +
+            "This text is not given an appropriate role for a status message, and so a screen reader will not " +
+            'announce "Zero results returned" unless a user manually navigates to it.'
           }
           id={"4.1.3_1"}
         >
@@ -72,7 +78,9 @@ export const StatusMessages = (props: Props) => {
             "https://rocketvalidator.com/html-validation/bad-value-alert-for-attribute-role-on-element-ul"
           }
           explanation={
-            "The alert role can be used to tell the user an element has been dynamically updated. Screen readers will instantly start reading out the updated content when the role is added. The element <ul> doesn’t accept this kind of role"
+            "The alert role can be used to tell the user an element has been dynamically updated. " +
+            "Screen readers will instantly start reading out the updated content when the role is added. " +
+            "The element <ul> doesn’t accept this kind of role"
           }
           id={"4.1.3_2"}
         >

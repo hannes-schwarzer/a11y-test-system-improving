@@ -27,11 +27,18 @@ export const BypassBlocks = (props: Props) => {
           successCriterionNumber={"2.4.1"}
           level={Level.A}
           explanation={
-            "Sighted users can see iFrames and quickly decide if they want to engage with the content inside the frame or not. They don’t click the navigation or submit the form that is contained within the frame – because they can tell at a glance that the iFrame is provided as an example and doesn’t contain content important to understanding this page. A blind or visually impaired user, on the other hand, does not have the ability to quickly glance at an iFrame and decide whether they want to engage with it. iFrame titles are important because they allow screen reader users to learn the purpose of each frame and then choose whether they want to go into the frame to hear the content inside it or whether they want to skip the iFrame and continue down the page."
+            "Sighted users can see iFrames and quickly decide if they want to engage with the content inside " +
+            "the frame or not. They don’t click the navigation or submit the form that is contained within the " +
+            "frame – because they can tell at a glance that the iFrame is provided as an example and doesn’t " +
+            "contain content important to understanding this page. A blind or visually impaired user, on the " +
+            "other hand, does not have the ability to quickly glance at an iFrame and decide whether they want " +
+            "to engage with it. iFrame titles are important because they allow screen reader users to learn the " +
+            "purpose of each frame and then choose whether they want to go into the frame to hear the content " +
+            "inside it or whether they want to skip the iFrame and continue down the page."
           }
           id={"2.4.1_1"}
         >
-          <iframe src="/some-page" width="100%" height="400"></iframe>
+          <iframe src="/some-page" width="100%" height="400" />
         </TestCase>
 
         <TestCase

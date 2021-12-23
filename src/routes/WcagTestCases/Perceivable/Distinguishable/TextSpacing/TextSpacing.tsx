@@ -22,7 +22,9 @@ export const TextSpacing = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/css/C21.html"
           }
           explanation={
-            "Many people with cognitive disabilities have trouble tracking lines of text when a block of text is single spaced. Providing spacing between 1.5 to 2 allows them to start a new line more easily once they have finished the previous one."
+            "Many people with cognitive disabilities have trouble tracking lines of text when a block of text is " +
+            "single spaced. Providing spacing between 1.5 to 2 allows them to start a new line more easily once they " +
+            "have finished the previous one."
           }
           id={"1.4.12_1"}
         >

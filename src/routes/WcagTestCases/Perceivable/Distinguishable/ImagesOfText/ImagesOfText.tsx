@@ -25,7 +25,7 @@ export const ImagesOfText = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html"
           }
           explanation={
-            "The following banners look identical, but one is made by using CSS and the other is an image file. If possible the first type should be used."
+            "The following banners look identical, but one is made by using CSS and Text and the other is an image file. If possible the first type should be used."
           }
           id={"1.4.5_1"}
         >

@@ -12,7 +12,8 @@ export const ConsistentNavigation = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <TestCase
           title={
-            "F66: Failure of Success Criterion 3.2.3 due to presenting navigation links in a different relative order on different pages"
+            "F66: Failure of Success Criterion 3.2.3 due to presenting navigation links " +
+            "in a different relative order on different pages"
           }
           successCriterionInWords={"Consistent Navigation"}
           successCriterionNumber={"3.2.3"}
@@ -21,7 +22,8 @@ export const ConsistentNavigation = (props: Props) => {
           }
           level={Level.AA}
           explanation={
-            "An XHTML menu presenting a series of links that are in a different relative order on two different pages: Examples of a navigation mechanism that presents links in a different order."
+            "An XHTML menu presenting a series of links that are in a different relative order on " +
+            "two different pages: Examples of a navigation mechanism that presents links in a different order."
           }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F66.html"

@@ -22,7 +22,9 @@ export const FocusOrder = (props: Props) => {
           }
           level={Level.A}
           explanation={
-            "Using tabindex with a value greater than 0 can create as many problems as it solves. It creates an unexpected tab order, which makes the page less intuitive and can give the appearance of skipping certain elements entirely."
+            "Using tabindex with a value greater than 0 can create as many problems as it solves. " +
+            "It creates an unexpected tab order, which makes the page less intuitive and can give " +
+            "the appearance of skipping certain elements entirely."
           }
           id={"2.4.3_1"}
         >
@@ -33,7 +35,8 @@ export const FocusOrder = (props: Props) => {
 
         <TestCase
           title={
-            "F44: Failure of Success Criterion 2.4.3 due to using tabindex to create a tab order that does not preserve meaning and operability"
+            "F44: Failure of Success Criterion 2.4.3 due to using tabindex to create a tab order that " +
+            "does not preserve meaning and operability"
           }
           successCriterionInWords={"Focus Order"}
           successCriterionNumber={"2.4.3"}
@@ -45,7 +48,9 @@ export const FocusOrder = (props: Props) => {
           }
           level={Level.A}
           explanation={
-            "The following example incorrectly uses tabindex to specify an alternative tab order: If this list is navigated by the tab key, the list is navigated in the order Some Page, chapter 3, chapter 2, chapter 1, which does not follow the sequence in the content."
+            "The following example incorrectly uses tabindex to specify an alternative " +
+            "tab order: If this list is navigated by the tab key, the list is navigated in the order Some Page, " +
+            "chapter 3, chapter 2, chapter 1, which does not follow the sequence in the content."
           }
           id={"2.4.3_2"}
         >
@@ -82,7 +87,9 @@ export const FocusOrder = (props: Props) => {
           }
           level={Level.A}
           explanation={
-            "Here CSS is used to visually rearrange the order of the links. Because of this it clashes with the element order of the HTML tree. This produces a counter intuitive order when tabbed through."
+            "Here CSS is used to visually rearrange the order of the links. Because of this it " +
+            "clashes with the element order of the HTML tree. This produces a counter intuitive " +
+            "order when tabbed through."
           }
           id={"2.4.3_3"}
         >

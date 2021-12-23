@@ -12,8 +12,8 @@ export const NonTextContrast = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <TestCase
           title={
-            "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way that " +
-            "removes or renders non-visible the visual focus indicator"
+            "F78: Failure of Success Criterion 1.4.11 and 2.4.7 due to styling element outlines and borders in a way " +
+            "that removes or renders non-visible the visual focus indicator"
           }
           successCriterionInWords={"Non-text Contrast"}
           explanation={

@@ -56,7 +56,7 @@ import { AudioOnlyVideoOnlyPrerecorded } from "./WcagTestCases/Perceivable/TimeB
 import { TimingAdjustable } from "./WcagTestCases/Operable/EnoughTime/TimingAdjustable/TimingAdjustable";
 import { ConsistentNavigation } from "./WcagTestCases/Understandable/Predictable/ConsistentNavigation/ConsistentNavigation";
 import { EmptyPageTitle } from "./WcagTestCases/DetailPages/Navigable/EmptyPageTitle";
-import { PageTwo } from "./WcagTestCases/DetailPages/Predicatble/PageTwo";
+import { PageTwo } from "./WcagTestCases/DetailPages/Predictable/PageTwo";
 
 export interface Route {
   className: string;

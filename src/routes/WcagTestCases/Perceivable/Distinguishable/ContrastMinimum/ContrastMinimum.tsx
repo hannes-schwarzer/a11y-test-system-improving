@@ -87,7 +87,7 @@ export const ContrastMinimum = (props: Props) => {
 
         <TestCase
           title={
-            "Large text does not have a contrast ratio of at least 3:1 so does not meet 1.4.3 Contrast (Minimum) (AA)"
+            "Large text does not have a contrast ratio of at least 3:1 so does not meet 1.4.3 Contrast (Minimum) (AA)."
           }
           successCriterionInWords={"Contrast (Minimum)"}
           successCriterionNumber={"1.4.3"}

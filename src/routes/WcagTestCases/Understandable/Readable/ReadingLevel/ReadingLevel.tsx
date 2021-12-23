@@ -21,7 +21,9 @@ export const ReadingLevel = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/quickref/#reading-level"
           }
           explanation={
-            "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available."
+            "When text requires reading ability more advanced than the lower secondary education level " +
+            "after removal of proper names and titles, supplemental content, or a version that does not " +
+            "require reading ability more advanced than the lower secondary education level, is available."
           }
           id={"3.1.5_1"}
         >

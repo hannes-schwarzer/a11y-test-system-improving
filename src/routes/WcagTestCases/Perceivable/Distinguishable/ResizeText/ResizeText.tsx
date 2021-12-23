@@ -101,6 +101,7 @@ export const ResizeText = (props: Props) => {
             Now is the time for all good men to come to the aid of their
             country.
           </div>
+
           <p>
             Now is the time for all good men to come to the aid of their
             country.

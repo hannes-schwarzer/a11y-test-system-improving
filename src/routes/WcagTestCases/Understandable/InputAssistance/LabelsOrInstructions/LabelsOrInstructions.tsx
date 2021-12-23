@@ -98,7 +98,11 @@ export const LabelsOrInstructions = (props: Props) => {
           }
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H71.html"}
           explanation={
-            "Form controls can be grouped by enclosing them within the fieldset element. All controls within a given fieldset are then related. The first element inside the fieldset must be a legend element, which provides a label or description for the group. Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
+            "Form controls can be grouped by enclosing them within the fieldset element. " +
+            "All controls within a given fieldset are then related. " +
+            "The first element inside the fieldset must be a legend element, " +
+            "which provides a label or description for the group. " +
+            "Authors should avoid nesting fieldsets unnecessarily, as this can lead to confusion."
           }
           id={"3.3.2_4"}
         >
@@ -136,7 +140,10 @@ export const LabelsOrInstructions = (props: Props) => {
           }
           linkToExplanation={"https://www.w3.org/TR/WCAG20-TECHS/H44.html"}
           explanation={
-            "The objective of this technique is to use the label element to explicitly associate a form control with a label. A label is attached to a specific form control through the use of the for attribute. The value of the for attribute must be the same as the value of the id attribute of the form control."
+            "The objective of this technique is to use the label element to explicitly associate a " +
+            "form control with a label. A label is attached to a specific form control through " +
+            "the use of the for attribute. The value of the for attribute must be the same as the " +
+            "value of the id attribute of the form control."
           }
           successCriterionNumber={"3.3.2"}
           id={"3.3.2_6"}
@@ -293,7 +300,11 @@ export const LabelsOrInstructions = (props: Props) => {
             "https://www.w3.org/WAI/tutorials/forms/instructions/"
           }
           explanation={
-            "While placeholder text provides valuable guidance for many users, placeholder text is not a replacement for labels. Assistive technologies, such as screen readers, do not treat placeholder text as labels. Moreover, at the time of writing this tutorial, placeholder text is not broadly supported across assistive technologies and not displayed in older web browsers."
+            "While placeholder text provides valuable guidance for many users, " +
+            "placeholder text is not a replacement for labels. Assistive technologies, " +
+            "such as screen readers, do not treat placeholder text as labels. " +
+            "Moreover, at the time of writing this tutorial, placeholder text is not broadly supported " +
+            "across assistive technologies and not displayed in older web browsers."
           }
           id={"3.3.2_11"}
         >

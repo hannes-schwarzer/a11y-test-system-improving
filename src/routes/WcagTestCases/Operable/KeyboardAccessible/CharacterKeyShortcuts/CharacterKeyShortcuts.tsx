@@ -18,7 +18,10 @@ export const CharacterKeyShortcuts = (props: Props) => {
           }
           level={Level.A}
           explanation={
-            "Failure of Success Criteria 2.1.4 due to a webpage or web app that includes single-key shortcuts not including a control that allows users to turn the shortcuts off or a control that allows users to change the shortcuts to key combinations that include keys that are not upper or lower-case letters, punctuation, number, or symbol characters."
+            "Failure of Success Criteria 2.1.4 due to a webpage or web app that includes single-key shortcuts not " +
+            "including a control that allows users to turn the shortcuts off or a control that allows users to " +
+            "change the shortcuts to key combinations that include keys that are not upper or lower-case letters, " +
+            "punctuation, number, or symbol characters."
           }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=214#character-key-shortcuts"

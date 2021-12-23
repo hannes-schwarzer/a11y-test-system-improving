@@ -6,9 +6,9 @@ export const EmptyPageTitle = () => {
     document.title = "";
   }, []);
   return (
-    <>
+    <main>
       <h1>Empty Page Title</h1>
-      <p>This page has an inappropriate page title: i.e. empty page title.</p>
-    </>
+      <p>This page has an inappropriate, i.e. empty, page title.</p>
+    </main>
   );
 };

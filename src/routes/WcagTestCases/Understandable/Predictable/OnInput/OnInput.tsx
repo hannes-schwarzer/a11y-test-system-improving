@@ -41,7 +41,10 @@ export const OnInput = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F36.html"
           }
           explanation={
-            "This failure example submits a form when the user leaves the input field of the form after editing it, even navigating backwards in the tab order. Developers should not use this method to submit a form, and should instead use a submit button, or rely on the form's default behavior of submitting when the user hits enter in a text field."
+            "This failure example submits a form when the user leaves the input field of the " +
+            "form after editing it, even navigating backwards in the tab order. " +
+            "Developers should not use this method to submit a form, and should instead use a submit button, " +
+            "or rely on the form's default behavior of submitting when the user hits enter in a text field."
           }
           level={Level.A}
           id={"3.2.2_1"}

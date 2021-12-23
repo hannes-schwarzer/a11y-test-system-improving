@@ -5,7 +5,7 @@ export const NoPageTitle = () => {
     document.getElementsByTagName("title")[0].remove();
   }, []);
   return (
-    <>
+    <main>
       <h1>No Page Title.</h1>
       <p>
         Further information to this problem can be found here:{" "}
@@ -17,6 +17,6 @@ export const NoPageTitle = () => {
           Link to WAI explanation
         </a>
       </p>
-    </>
+    </main>
   );
 };

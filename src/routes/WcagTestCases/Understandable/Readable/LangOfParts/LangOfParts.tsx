@@ -18,6 +18,7 @@ export const LangOfParts = (props: Props) => {
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
           id={"3.1.2_1"}
+          explanation={'lang="ar" is set, but no change in direction.'}
         >
           <p lang={"ar"}>الإعفاء الإلكتروني من التأشيرة</p>
         </TestCase>
@@ -31,6 +32,9 @@ export const LangOfParts = (props: Props) => {
           successCriterionNumber={"3.1.2"}
           level={Level.AA}
           id={"3.1.2_2"}
+          explanation={
+            "This page's language is set to 'en', but this paragraph is in french."
+          }
         >
           <p>
             Mother, he's asking you to go. He's saying, "Allons, Madame

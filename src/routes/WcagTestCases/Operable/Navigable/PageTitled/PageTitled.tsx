@@ -65,7 +65,11 @@ export const PageTitled = (props: Props) => {
           }
           id={"2.4.2_3"}
           explanation={
-            "This rule assumes that Success Criterion 2.4.2 Page Titled does not require that a document only has one title element, nor that it is a child of the head element of a document. While this is invalid in HTML, the HTML 5.2 specification describes what should happen in case of multiple titles, and titles outside the head element. Because of this, neither of these validation issues causes a conformance problem for WCAG."
+            "This rule assumes that Success Criterion 2.4.2 Page Titled does not require that a " +
+            "document only has one title element, nor that it is a child of the head element of a document. " +
+            "While this is invalid in HTML, the HTML 5.2 specification describes what " +
+            "should happen in case of multiple titles, and titles outside the head element. " +
+            "Because of this, neither of these validation issues causes a conformance problem for WCAG."
           }
         >
           <p>

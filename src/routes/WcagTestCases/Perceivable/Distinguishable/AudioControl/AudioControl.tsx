@@ -30,9 +30,10 @@ export const AudioControl = (props: Props) => {
           id={"1.4.2_1"}
         >
           <p>
-            By visiting this site an audio file is started to play in a loop.
+            By visiting this site an audio file is started to "autoPlay" in a
+            loop.
           </p>
-          <audio src={ROAR} autoPlay loop></audio>
+          <audio src={ROAR} autoPlay loop />
         </TestCase>
       </Frame>
     </>

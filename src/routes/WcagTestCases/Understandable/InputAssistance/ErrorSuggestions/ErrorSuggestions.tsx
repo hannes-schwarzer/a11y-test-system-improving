@@ -21,6 +21,13 @@ export const ErrorSuggestions = (props: Props) => {
           }
           level={Level.AA}
           id={"3.3.3_1"}
+          linkToExplanation={
+            "https://www.w3.org/WAI/WCAG21/Techniques/general/G85"
+          }
+          explanation={
+            "The objective of this technique is to provide assistance in correcting " +
+            "input errors where the information supplied by the user is not accepted."
+          }
         >
           <form>
             <label className={"error-suggestion__required-format-not-given"}>

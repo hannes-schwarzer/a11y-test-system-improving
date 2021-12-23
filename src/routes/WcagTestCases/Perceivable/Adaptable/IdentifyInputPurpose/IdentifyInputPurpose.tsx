@@ -38,7 +38,7 @@ export const IdentifyInputPurpose = (props: Props) => {
             id="birthday1"
           />
         </TestCase>
-      </Frame>{" "}
+      </Frame>
     </>
   );
 };

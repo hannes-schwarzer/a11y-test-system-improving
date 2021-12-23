@@ -35,7 +35,6 @@ export const ContrastEnhanced = (props: Props) => {
             My background is white.
           </p>
         </TestCase>
-
         <TestCase
           level={Level.AAA}
           title={
@@ -78,7 +77,7 @@ export const ContrastEnhanced = (props: Props) => {
           id={"1.4.6_3"}
         >
           <p className={"contrast-enhanced__low-contrast-small-aaa"}>
-            This small text does not have enough contrast with it's background
+            This small text does not have enough contrast with it's background.
           </p>
         </TestCase>
 

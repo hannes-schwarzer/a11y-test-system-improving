@@ -35,7 +35,6 @@ export const VisualPresentation = (props: Props) => {
             My background is white.
           </p>
         </TestCase>
-
         <TestCase
           level={Level.AAA}
           title={
@@ -87,7 +86,7 @@ export const VisualPresentation = (props: Props) => {
             porttitor velit. Sed arcu lorem, cursus sit amet, auctor eu,
             convallis ut, purus. Vivamus imperdiet accumsan nunc. Maecenas
             pellentesque nunc a libero. Vestibulum ante ipsum primis in faucibus
-            orci luctus et ultrices posuere cubilia Curae; Curabitur pharetra
+            orci luctus et ultrices posuere cubilia Curae. Curabitur pharetra
             commodo justo.
           </p>
         </TestCase>

@@ -45,11 +45,11 @@ export const TimingAdjustable = (props: Props) => {
           }
           successCriterionInWords={"Timing Adjustable"}
           explanation={
-            "This is a deprecated example that changes the user's page at regular intervals. Content developers should " +
-            'not use this technique to simulate "push" technology. Developers cannot predict how much time a user will ' +
-            "require to read a page; premature refresh can disorient users. Content developers should avoid periodic " +
-            "refresh and allow users to choose when they want the latest information. (The number in the content " +
-            "attribute is the refresh interval in seconds.)"
+            "This is a deprecated example that changes the user's page at regular intervals. Content developers " +
+            "should not use this technique to simulate 'push' technology. Developers cannot predict how much time a " +
+            "user will require to read a page; premature refresh can disorient users. Content developers should " +
+            "avoid periodic refresh and allow users to choose when they want the latest information. " +
+            "(The number in the content attribute is the refresh interval in seconds.)"
           }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F41.html"
