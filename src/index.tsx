@@ -3,9 +3,26 @@ import ReactDOM from "react-dom";
 import { Router } from "./routes/Router";
 import "./index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Router />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+/**
+ * Use axe on whole system
+ * */
+if (process.env.NODE_ENV !== "production") {
+  //For Development
+  import("@axe-core/react").then((axe) => {
+    axe.default(React, ReactDOM, 1000);
+    ReactDOM.render(
+      <React.StrictMode>
+        <Router />
+      </React.StrictMode>,
+      document.getElementById("root")
+    );
+  });
+} else {
+  //For Production
+  ReactDOM.render(
+    <React.StrictMode>
+      <Router />
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+}
