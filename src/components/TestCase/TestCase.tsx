@@ -57,9 +57,7 @@ export const TestCase: FC<TestCaseProps> = ({
         )}
 
         {linkToExplanation && (
-          <a href={linkToExplanation}>
-            Further error explanantion: ..{linkToExplanationName}
-          </a>
+          <a href={linkToExplanation}>More infos: ..{linkToExplanationName}</a>
         )}
       </section>
       <section className="testCase__content">{children}</section>
