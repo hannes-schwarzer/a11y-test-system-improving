@@ -269,9 +269,9 @@ export const ResizeText = (props: Props) => {
           }
         >
           <iframe
-            width="560"
-            height="315"
-            src="/some-page"
+            width="560px"
+            height="315px"
+            src="https://www.youtube.com/embed/hufMi9LZX2I"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
