@@ -134,53 +134,56 @@ export const ResizeText = (props: Props) => {
             Please provide us with your details and we will contact you as soon
             as we can. Note that all of the form fields are required.
           </p>
-          <label className={"resize-text__form-label"} htmlFor="fname">
-            First Name
-          </label>{" "}
-          <input
-            className={"resize-text__form-input"}
-            type="text"
-            name="fname"
-            id="fname"
-          />
-          <br />
-          <label className={"resize-text__form-label"} htmlFor="lname">
-            Last Name
-          </label>{" "}
-          <input
-            className={"resize-text__form-input"}
-            type="text"
-            name="lname"
-            id="lname"
-          />
-          <br />
-          <label className={"resize-text__form-label"} htmlFor="phone">
-            Telephone
-          </label>{" "}
-          <input
-            className={"resize-text__form-input"}
-            type="text"
-            name="phone"
-            id="phone"
-          />
-          <br />
-          <label className={"resize-text__form-label"} htmlFor="email">
-            Email
-          </label>{" "}
-          <input
-            className={"resize-text__form-input"}
-            type="text"
-            name="email"
-            id="email"
-          />
-          <br />
-          <input
-            className={"resize-text__form-input"}
-            type="submit"
-            name="Submit"
-            value="Submit"
-            id="Submit"
-          />
+          <fieldset>
+            <legend>Contact form</legend>
+            <label className={"resize-text__form-label"} htmlFor="fname">
+              First Name
+            </label>{" "}
+            <input
+              className={"resize-text__form-input"}
+              type="text"
+              name="fname"
+              id="fname"
+            />
+            <br />
+            <label className={"resize-text__form-label"} htmlFor="lname">
+              Last Name
+            </label>{" "}
+            <input
+              className={"resize-text__form-input"}
+              type="text"
+              name="lname"
+              id="lname"
+            />
+            <br />
+            <label className={"resize-text__form-label"} htmlFor="phone">
+              Telephone
+            </label>{" "}
+            <input
+              className={"resize-text__form-input"}
+              type="text"
+              name="phone"
+              id="phone"
+            />
+            <br />
+            <label className={"resize-text__form-label"} htmlFor="email">
+              Email
+            </label>{" "}
+            <input
+              className={"resize-text__form-input"}
+              type="text"
+              name="email"
+              id="email"
+            />
+            <br />
+            <input
+              className={"resize-text__form-input"}
+              type="submit"
+              name="Submit"
+              value="Submit"
+              id="Submit"
+            />
+          </fieldset>
         </TestCase>
 
         <TestCase
