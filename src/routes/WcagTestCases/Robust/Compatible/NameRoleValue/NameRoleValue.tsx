@@ -72,7 +72,7 @@ export const NameRoleValue = (props: Props) => {
           explanation={
             "The following example demonstrates a form that visually presents labels for form controls, " +
             "but does not use the label element to associate them with their controls. " +
-            "The code example below is a failure because assistive technology may not be " +
+            "The code example in this test case is a failure because assistive technology may not be " +
             "able to determine which label goes with which control."
           }
           linkToExplanation={
