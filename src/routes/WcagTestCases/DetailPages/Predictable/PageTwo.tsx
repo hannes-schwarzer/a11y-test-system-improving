@@ -1,6 +1,6 @@
 export const PageTwo = () => {
   return (
-    <>
+    <main>
       <p>Menu on page two</p>
       <div id="menu">
         <a href="Canada.htm">Canada</a>
@@ -11,6 +11,6 @@ export const PageTwo = () => {
         <br />
         <a href="Poland.htm">Poland</a>
       </div>
-    </>
+    </main>
   );
 };
