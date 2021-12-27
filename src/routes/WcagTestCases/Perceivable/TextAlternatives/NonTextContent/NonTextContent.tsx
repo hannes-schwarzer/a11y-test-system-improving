@@ -206,7 +206,7 @@ export const NonTextContent = (props: Props) => {
           successCriterionNumber={"1.1.1"}
           level={Level.A}
           explanation={
-            "Because of the missing text alternative in the code example below, the person using a screen reader would not know the purpose of the image."
+            "Because of the missing text alternative in test case, the person using a screen reader would not know the purpose of the image."
           }
           linkToExplanation={
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F65.html"
@@ -396,7 +396,7 @@ export const NonTextContent = (props: Props) => {
           }
           linkToExplanation={"https://accessibility.psu.edu/images/imageshtml/"}
           explanation={
-            'The image below contains a lot of information, such as which departments the sale is on. The text alternative in the alt attribute does not include this information, only a partial "25% off sale"'
+            'The image in this test case contains a lot of information, such as which departments the sale is on. The text alternative in the alt attribute does not include this information, only a partial "25% off sale"'
           }
           id={"1.1.1_18"}
         >
