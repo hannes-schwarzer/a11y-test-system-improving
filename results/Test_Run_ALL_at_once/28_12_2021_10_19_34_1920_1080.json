@@ -1,0 +1,326 @@
+{
+    "id": "f01c44fb-18a3-49cd-b58f-0172e16bcb87",
+    "name": "Test Run ALL at once",
+    "toolOptions": {
+        "runOnly": {
+            "type": "tag",
+            "values": [
+                "wcag2aa",
+                "wcag2a",
+                "wcag21a",
+                "wcag21aa",
+                "best-practice",
+                "ACT",
+                "experimental"
+            ]
+        },
+        "resultTypes": [
+            "violations",
+            "incomplete"
+        ],
+        "reporter": "v1"
+    },
+    "testEngine": {
+        "name": "axe-core",
+        "version": "4.3.5"
+    },
+    "testRunner": {
+        "name": "axe"
+    },
+    "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/93.0.4577.0 Safari/537.36",
+        "windowWidth": 1920,
+        "windowHeight": 1080,
+        "orientationAngle": 0,
+        "orientationType": "portrait-primary"
+    },
+    "timestamp": "2021-12-28T09:14:38.975Z",
+    "analyzedUrls": [
+        "http://localhost:3000/wcag/perceivable/time-based-media/media-alternative-prerecorded",
+        "http://localhost:3000/wcag/perceivable/time-based-media/audio-only-and-video-only-prerecorded",
+        "http://localhost:3000/wcag/perceivable/text-alternatives/non-text-content",
+        "http://localhost:3000/wcag/perceivable/adaptable/sensory-characteristics",
+        "http://localhost:3000/wcag/perceivable/adaptable/meaningful-sequence",
+        "http://localhost:3000/wcag/perceivable/adaptable/identify-input-purpose",
+        "http://localhost:3000/wcag/perceivable/adaptable/info-and-relationships",
+        "http://localhost:3000/wcag/perceivable/distinguishable/use-of-color",
+        "http://localhost:3000/wcag/perceivable/distinguishable/audio-control",
+        "http://localhost:3000/wcag/perceivable/distinguishable/contrast-minimum",
+        "http://localhost:3000/wcag/perceivable/distinguishable/images-of-text",
+        "http://localhost:3000/wcag/perceivable/distinguishable/contrast-enhanced",
+        "http://localhost:3000/wcag/perceivable/distinguishable/resize-text",
+        "http://localhost:3000/wcag/perceivable/distinguishable/visual-presentation",
+        "http://localhost:3000/wcag/perceivable/distinguishable/reflow",
+        "http://localhost:3000/wcag/perceivable/distinguishable/non-text-contrast",
+        "http://localhost:3000/wcag/perceivable/distinguishable/text-spacing",
+        "http://localhost:3000/wcag/perceivable/distinguishable/content-on-hover-or-focus",
+        "http://localhost:3000/wcag/operable/keyboard-accessible/no-keyboard-trap",
+        "http://localhost:3000/wcag/operable/keyboard-accessible/character-key-shortcuts",
+        "http://localhost:3000/wcag/operable/keyboard-accessible/keyboard",
+        "http://localhost:3000/wcag/operable/enough-time/timing-adjustable",
+        "http://localhost:3000/wcag/operable/enough-time/pause-stop-hide",
+        "http://localhost:3000/wcag/operable/enough-time/interruptions",
+        "http://localhost:3000/wcag/operable/seizures-and-physical-reactions/three-flashes-or-below-threshold",
+        "http://localhost:3000/wcag/operable/navigable/bypass-blocks",
+        "http://localhost:3000/wcag/operable/navigable/page-titled",
+        "http://localhost:3000/wcag/operable/navigable/headings-and-labels",
+        "http://localhost:3000/wcag/operable/navigable/link-purpose-in-context",
+        "http://localhost:3000/wcag/operable/navigable/focus-visible",
+        "http://localhost:3000/wcag/operable/navigable/link-purpose-link-only",
+        "http://localhost:3000/wcag/operable/input-modalities/label-in-name",
+        "http://localhost:3000/wcag/operable/input-modalities/target-size",
+        "http://localhost:3000/wcag/understandable/readable/language-of-page",
+        "http://localhost:3000/wcag/understandable/readable/language-of-parts",
+        "http://localhost:3000/wcag/understandable/readable/reading-level",
+        "http://localhost:3000/wcag/understandable/predictable/on-focus",
+        "http://localhost:3000/wcag/understandable/predictable/on-input",
+        "http://localhost:3000/wcag/understandable/predictable/consistent-navigation",
+        "http://localhost:3000/wcag/understandable/predictable/consistent-identification",
+        "http://localhost:3000/wcag/understandable/predictable/change-on-request",
+        "http://localhost:3000/wcag/understandable/input-assistance/error-identification",
+        "http://localhost:3000/wcag/understandable/input-assistance/error-suggestion",
+        "http://localhost:3000/wcag/robust/compatible/parsing",
+        "http://localhost:3000/wcag/understandable/input-assistance/labels-or-instructions",
+        "http://localhost:3000/wcag/operable/navigable/page-titled/inappropriate-page-title",
+        "http://localhost:3000/wcag/operable/navigable/page-titled/empty-title",
+        "http://localhost:3000/wcag/operable/navigable/page-titled/no-page-title",
+        "http://localhost:3000/wcag/robust/compatible/status-messages",
+        "http://localhost:3000/wcag/operable/navigable/page-titled/two-page-titles",
+        "http://localhost:3000/wcag/operable/navigable/page-titled/only-separater-in-title",
+        "http://localhost:3000/wcag/perceivable/adaptable/meaningful-sequence/changed-meaning-through-formatting",
+        "http://localhost:3000/wcag/operable/enough-time/timing-adjustable/refreshing-page",
+        "http://localhost:3000/wcag/operable/enough-time/timing-adjustable/redirect-to-other-page",
+        "http://localhost:3000/wcag/understandable/predictable/consistent-navigation/page-two",
+        "http://localhost:3000/wcag/robust/compatible/name-role-value"
+    ],
+    "countViolations": 68,
+    "countPasses": 493,
+    "countIncomplete": 84,
+    "countInapplicable": 81,
+    "tabableImages": [
+        {
+            "url": "http://localhost:3000/wcag/perceivable/time-based-media/media-alternative-prerecorded",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/time-based-media/audio-only-and-video-only-prerecorded",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/text-alternatives/non-text-content",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/adaptable/sensory-characteristics",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/adaptable/meaningful-sequence",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/adaptable/identify-input-purpose",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/adaptable/info-and-relationships",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/use-of-color",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/audio-control",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/contrast-minimum",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/images-of-text",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/contrast-enhanced",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/resize-text",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/visual-presentation",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/reflow",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/non-text-contrast",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/text-spacing",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/distinguishable/content-on-hover-or-focus",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/keyboard-accessible/no-keyboard-trap",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/keyboard-accessible/character-key-shortcuts",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/keyboard-accessible/keyboard",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/enough-time/timing-adjustable",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/enough-time/pause-stop-hide",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/enough-time/interruptions",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/seizures-and-physical-reactions/three-flashes-or-below-threshold",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/bypass-blocks",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/page-titled",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/headings-and-labels",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/link-purpose-in-context",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/focus-visible",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/link-purpose-link-only",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/input-modalities/label-in-name",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/input-modalities/target-size",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/readable/language-of-page",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/readable/language-of-parts",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/readable/reading-level",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/predictable/on-focus",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/predictable/on-input",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/predictable/consistent-navigation",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/predictable/consistent-identification",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/predictable/change-on-request",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/input-assistance/error-identification",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/input-assistance/error-suggestion",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/robust/compatible/parsing",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/input-assistance/labels-or-instructions",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/page-titled/inappropriate-page-title",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/page-titled/empty-title",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/page-titled/no-page-title",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/robust/compatible/status-messages",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/page-titled/two-page-titles",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/navigable/page-titled/only-separater-in-title",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/perceivable/adaptable/meaningful-sequence/changed-meaning-through-formatting",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/enough-time/timing-adjustable/refreshing-page",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/operable/enough-time/timing-adjustable/redirect-to-other-page",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/understandable/predictable/consistent-navigation/page-two",
+            "images": []
+        },
+        {
+            "url": "http://localhost:3000/wcag/robust/compatible/name-role-value",
+            "images": []
+        }
+    ]
+}
