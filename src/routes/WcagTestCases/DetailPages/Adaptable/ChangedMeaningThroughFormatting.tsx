@@ -6,7 +6,7 @@ export const ChangedMeaningThroughFormatting = () => {
       <Helmet>
         <title>Changed meaning through formatting</title>
       </Helmet>
-      <div className="cmtf__box">
+      <main className="cmtf__box">
         <span className="cmtf__menu1">Products</span>
         <span className="cmtf__menu2">Locations</span>
         <span className="cmtf__item1">Telephones</span>
@@ -14,7 +14,7 @@ export const ChangedMeaningThroughFormatting = () => {
         <span className="cmtf__item3">Portable MP3 Players</span>
         <span className="cmtf__item5">Wisconsin</span>
         <span className="cmtf__item4">Idaho</span>
-      </div>
+      </main>
     </>
   );
 };
