@@ -7,6 +7,7 @@ export const ChangedMeaningThroughFormatting = () => {
         <title>Changed meaning through formatting</title>
       </Helmet>
       <main className="cmtf__box">
+        <h1>Changed meaning through formatting</h1>
         <span className="cmtf__menu1">Products</span>
         <span className="cmtf__menu2">Locations</span>
         <span className="cmtf__item1">Telephones</span>
