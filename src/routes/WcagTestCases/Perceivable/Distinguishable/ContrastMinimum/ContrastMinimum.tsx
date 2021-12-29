@@ -119,6 +119,7 @@ export const ContrastMinimum = function ({ pageTitle }: Props) {
               type="text"
             />
           </label>
+          <input type="submit" value="Submit" />
         </form>
       </TestCase>
     </Frame>

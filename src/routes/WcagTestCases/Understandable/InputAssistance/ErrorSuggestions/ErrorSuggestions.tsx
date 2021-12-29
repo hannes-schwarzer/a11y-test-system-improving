@@ -42,6 +42,7 @@ export const ErrorSuggestions = (props: Props) => {
                 type={"tel"}
               />
             </label>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
       </Frame>

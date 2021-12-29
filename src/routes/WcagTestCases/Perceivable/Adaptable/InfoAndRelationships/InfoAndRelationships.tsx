@@ -1104,6 +1104,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         >
           <form>
             <input type={"text"} />
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -1124,6 +1125,7 @@ CIRCUIT COURT JUDGE BRANCH 3
           <form>
             <label htmlFor={"empty"}></label>
             <input id={"empty"} type={"text"} />
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -1152,6 +1154,7 @@ CIRCUIT COURT JUDGE BRANCH 3
               <input id={"missing-labels-month"} type={"text"} />
               <input id={"missing-labels-year"} type={"text"} />
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -1253,6 +1256,7 @@ CIRCUIT COURT JUDGE BRANCH 3
         >
           <form>
             <fieldset>I am a fieldset without a legend</fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -1279,6 +1283,7 @@ CIRCUIT COURT JUDGE BRANCH 3
             <fieldset>
               <legend></legend>
             </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -1308,6 +1313,7 @@ CIRCUIT COURT JUDGE BRANCH 3
                 value={"yes"}
               />
             </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -1349,6 +1355,7 @@ CIRCUIT COURT JUDGE BRANCH 3
                 value={"true"}
               />
             </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 

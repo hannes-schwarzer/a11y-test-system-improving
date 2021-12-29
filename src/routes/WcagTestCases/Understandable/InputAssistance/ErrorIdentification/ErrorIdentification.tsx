@@ -43,6 +43,7 @@ export const ErrorIdentification = (props: Props) => {
               Date of birth
               <input name={"date-of-birth"} type={"text"} />
             </label>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
       </Frame>

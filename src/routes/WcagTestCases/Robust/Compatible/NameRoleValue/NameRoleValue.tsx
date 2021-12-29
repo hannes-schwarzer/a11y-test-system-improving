@@ -89,6 +89,8 @@ export const NameRoleValue = (props: Props) => {
             I have a dog <input type="checkbox" name="pet" value="dog" />
             <br />
             I have a cat <input type="checkbox" name="pet" value="cat" />
+            <br />
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -120,6 +122,7 @@ export const NameRoleValue = (props: Props) => {
               <label>Last Name</label>
               <input type="text" name="lastname" />
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -296,6 +299,7 @@ export const NameRoleValue = (props: Props) => {
               <input id={"missing-labels-month"} type={"text"} />
               <input id={"missing-labels-year"} type={"text"} />
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -328,6 +332,7 @@ export const NameRoleValue = (props: Props) => {
                 value={"yes"}
               />
             </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -345,6 +350,7 @@ export const NameRoleValue = (props: Props) => {
           <form>
             <label htmlFor={"empty"}></label>
             <input id={"empty"} type={"text"} />
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -386,6 +392,7 @@ export const NameRoleValue = (props: Props) => {
                 value={"true"}
               />
             </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 

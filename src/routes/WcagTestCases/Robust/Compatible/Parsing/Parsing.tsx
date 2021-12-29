@@ -73,6 +73,7 @@ export const Parsing = (props: Props) => {
               <label htmlFor={"two-labels-year"}>Year</label>
               <input id={"two-labels-year"} type={"text"} />
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
       </Frame>

@@ -99,7 +99,7 @@ export const OnInput = (props: Props) => {
               <option label={"three"}>three</option>
               <option label={"four"}>four</option>
             </select>
-            <input type="submit" value="Submit2" id={"formSubmitButton2"} />
+            <input type="submit" value="Submit" id={"formSubmitButton2"} />
           </form>
         </TestCase>
 
@@ -146,6 +146,7 @@ export const OnInput = (props: Props) => {
                 surfnet (<abbr>NL</abbr>)
               </label>
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -171,6 +172,7 @@ export const OnInput = (props: Props) => {
               <option value={"de"}>Deutsch</option>
               <option value={"fr"}>Français</option>
             </select>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
       </Frame>

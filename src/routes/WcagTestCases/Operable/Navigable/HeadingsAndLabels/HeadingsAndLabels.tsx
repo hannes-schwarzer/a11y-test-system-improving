@@ -9,7 +9,6 @@ export const HeadingsAndLabels = (props: Props) => {
   return (
     <>
       <Frame pageTitle={props.pageTitle}>
-        {/*2.4.6 & 2.4.10*/}
         <TestCase
           title={"Headings not structured in a hierarchical manner"}
           successCriterionInWords={"Headings and Labels"}
@@ -75,6 +74,7 @@ export const HeadingsAndLabels = (props: Props) => {
               <input id={"missing-labels-month"} type={"text"} />
               <input id={"missing-labels-year"} type={"text"} />
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -91,6 +91,7 @@ export const HeadingsAndLabels = (props: Props) => {
         >
           <form>
             <input type={"text"} />
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -108,6 +109,7 @@ export const HeadingsAndLabels = (props: Props) => {
           <form>
             <label htmlFor={"empty"}></label>
             <input id={"empty"} type={"text"} />
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -138,6 +140,7 @@ export const HeadingsAndLabels = (props: Props) => {
               Name
               <input id={"x_4"} name={"x_4"} type={"text"} />
             </label>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 

@@ -31,6 +31,7 @@ export const LabelsOrInstructions = (props: Props) => {
               <input id={"missing-labels-month"} type={"text"} />
               <input id={"missing-labels-year"} type={"text"} />
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -52,6 +53,7 @@ export const LabelsOrInstructions = (props: Props) => {
               <label htmlFor={"input-too-far-away"}>Country</label>
               <input id={"input-too-far-away"} type={"text"} />
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -108,6 +110,7 @@ export const LabelsOrInstructions = (props: Props) => {
         >
           <form>
             <fieldset>I am a fieldset without a legend</fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -126,6 +129,7 @@ export const LabelsOrInstructions = (props: Props) => {
             <fieldset>
               <legend></legend>
             </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -158,6 +162,7 @@ export const LabelsOrInstructions = (props: Props) => {
                 value={"yes"}
               />
             </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -218,6 +223,7 @@ export const LabelsOrInstructions = (props: Props) => {
           <form>
             <label htmlFor={"empty"}></label>
             <input id={"empty"} type={"text"} />
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -244,6 +250,7 @@ export const LabelsOrInstructions = (props: Props) => {
               <label htmlFor={"two-labels-year"}>Year</label>
               <input id={"two-labels-year"} type={"text"} />
             </p>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 
@@ -285,6 +292,7 @@ export const LabelsOrInstructions = (props: Props) => {
                 value={"true"}
               />
             </fieldset>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
 

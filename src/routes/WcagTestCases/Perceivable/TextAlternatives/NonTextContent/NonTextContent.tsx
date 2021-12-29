@@ -486,6 +486,7 @@ export const NonTextContent = (props: Props) => {
                 type={"checkbox"}
                 value={"yes"}
               />
+              <input type="submit" value="Submit" />
             </fieldset>
           </form>
         </TestCase>

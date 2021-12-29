@@ -137,6 +137,7 @@ export const UseOfColor = (props: Props) => {
                 type={"text"}
               />
             </label>
+            <input type="submit" value="Submit" />
           </form>
         </TestCase>
       </Frame>
