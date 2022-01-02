@@ -38,7 +38,11 @@ export const BypassBlocks = (props: Props) => {
           }
           id={"2.4.1_1"}
         >
-          <iframe src="/some-page" width="100%" height="400" />
+          <iframe
+            src="https://www.youtube.com/embed/hufMi9LZX2I"
+            width="100%"
+            height="400"
+          />
         </TestCase>
 
         <TestCase
