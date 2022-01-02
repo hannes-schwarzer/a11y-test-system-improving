@@ -1,5 +1,6 @@
 {
-  "name": "Test Run ALL at once",
+  "name": "Test Run ALL at once with images",
+  "saveImages": true,
   "urlsToAnalyze": [
     "http://localhost:3000/wcag/perceivable/text-alternatives/non-text-content",
     "http://localhost:3000/wcag/perceivable/time-based-media/audio-only-and-video-only-prerecorded",
