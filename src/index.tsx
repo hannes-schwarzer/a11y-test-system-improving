@@ -4,7 +4,7 @@ import { Router } from "./routes/Router";
 import "./index.css";
 
 /**
- * Use axe on whole system
+ * Use @axe-core/react for each navigated path
  * */
 if (process.env.NODE_ENV !== "production") {
   //For Development
