@@ -1,8 +1,35 @@
 import { BrowserRouter, Routes } from "react-router-dom";
 import { Route } from "react-router";
 import { routes } from "./routes";
+import { useEffect } from "react";
+import axe from "axe-core";
 
 export const Router = () => {
+  useEffect(() => {
+    /**
+     * implementation of axe-core API
+     */
+    axe
+      .run()
+      .then((results) => {
+        if (results.violations.length || results.incomplete.length) {
+          results.violations.map((result) => {
+            result.nodes.map((node) => {
+              console.log("violation: ", node.html);
+            });
+          });
+          results.incomplete.map((result) => {
+            result.nodes.map((node) => {
+              console.log("incomplete: ", node.html, node.failureSummary);
+            });
+          });
+        }
+      })
+      .catch((err) => {
+        console.error("axe-core error:", err.message);
+      });
+  });
+
   const routeComponents = routes.map(
     ({ path, name, component, className }, key) => {
       if (
