@@ -13,16 +13,7 @@ export const Router = () => {
       .run()
       .then((results) => {
         if (results.violations.length || results.incomplete.length) {
-          results.violations.map((result) => {
-            result.nodes.map((node) => {
-              console.log("violation: ", node.html);
-            });
-          });
-          results.incomplete.map((result) => {
-            result.nodes.map((node) => {
-              console.log("incomplete: ", node.html, node.failureSummary);
-            });
-          });
+          console.log(results);
         }
       })
       .catch((err) => {
