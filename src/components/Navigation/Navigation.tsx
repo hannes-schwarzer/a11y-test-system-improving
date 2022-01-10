@@ -2,9 +2,9 @@ import { routes } from "../../routes/routes";
 import { NavLink } from "./NavLink";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
-import { KeyboardEvent } from "react";
+import { FC, KeyboardEvent } from "react";
 
-export const Navigation = () => {
+export const Navigation: FC = () => {
   const pathsToTestCases = routes.map(({ className, path, name }) => {
     if (
       className === "nav__link" ||

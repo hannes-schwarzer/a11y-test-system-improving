@@ -1,7 +1,7 @@
 import "./Banner.css";
-import { useEffect } from "react";
+import { useEffect, FC } from "react";
 
-export const Banner = () => {
+export const Banner: FC = () => {
   useEffect(() => {
     document.documentElement.lang = "en";
   });

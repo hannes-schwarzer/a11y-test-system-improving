@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import "./NavLink.css";
+import { FC } from "react";
 
-interface Props {
+interface NavLinkProps {
   className: string;
   path: string;
   name: string;
 }
 
-export const NavLink = ({ className, path, name }: Props) => {
+export const NavLink: FC<NavLinkProps> = ({ className, path, name }) => {
   return (
     <>
       <li
