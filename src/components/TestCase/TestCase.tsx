@@ -56,7 +56,6 @@ export const TestCase: FC<TestCaseProps> = ({
             Explanation: {explanation}
           </p>
         )}
-
         {linkToExplanation && (
           <a href={linkToExplanation}>
             More infos: ..{nameOfLinkToExplanation}
