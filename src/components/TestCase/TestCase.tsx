@@ -17,6 +17,7 @@ type TestCaseProps = {
   linkToExplanation?: string;
   id: string;
 };
+
 export const TestCase: FC<TestCaseProps> = ({
   title,
   successCriterionInWords,
@@ -28,11 +29,11 @@ export const TestCase: FC<TestCaseProps> = ({
   id,
   children,
 }) => {
-  let linkToExplanationName;
+  let nameOfLinkToExplanation: string = "";
   if (linkToExplanation) {
-    linkToExplanationName = linkToExplanation!.substring(
-      linkToExplanation!.length,
-      linkToExplanation!.length - 10
+    nameOfLinkToExplanation = linkToExplanation.substring(
+      linkToExplanation.length,
+      linkToExplanation.length - 10
     );
   }
   return (
@@ -57,7 +58,9 @@ export const TestCase: FC<TestCaseProps> = ({
         )}
 
         {linkToExplanation && (
-          <a href={linkToExplanation}>More infos: ..{linkToExplanationName}</a>
+          <a href={linkToExplanation}>
+            More infos: ..{nameOfLinkToExplanation}
+          </a>
         )}
       </section>
       <section className="testCase__content">{children}</section>
