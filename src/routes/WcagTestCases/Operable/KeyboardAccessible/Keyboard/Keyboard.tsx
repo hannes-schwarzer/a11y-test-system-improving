@@ -236,7 +236,7 @@ export const Keyboard = (props: Props) => {
           }
           id={"2.1.1_7"}
         >
-          <nav className={"keyboard__dropdown-nav"} role={"navigation"}>
+          <nav className={"keyboard__dropdown-nav"}>
             <ul>
               <li>
                 <a href={"https://www.gov.uk/browse/benefits"}>Benefits</a>
