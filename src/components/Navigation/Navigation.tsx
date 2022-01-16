@@ -35,7 +35,7 @@ export const Navigation: FC = () => {
 
   return (
     <>
-      <nav className="nav" role={"navigation"}>
+      <nav className="nav">
         <Link
           to={"#main"}
           id={"skip-to-main"}

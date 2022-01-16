@@ -23,12 +23,7 @@ export const Frame: FC<FrameProps> = ({ pageTitle, children }) => {
       <Banner />
       <div className={"main__wrapper"}>
         <Navigation />
-        <main
-          className={"main__content"}
-          id={"main"}
-          tabIndex={-1}
-          role={"main"}
-        >
+        <main className={"main__content"} id={"main"} tabIndex={-1}>
           <h1 className={"main__heading"}>{pageTitle}</h1>
           <p className={"main__case-count"}>
             Number of Test Cases: {numberOfTestCases}
