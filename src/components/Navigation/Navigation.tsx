@@ -28,7 +28,7 @@ export const Navigation: FC = () => {
   });
 
   const focusOnMain = (event: KeyboardEvent<HTMLAnchorElement>) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && document.getElementById("main")) {
       document.getElementById("main")!.focus();
     }
   };
