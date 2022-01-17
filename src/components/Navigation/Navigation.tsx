@@ -34,17 +34,15 @@ export const Navigation: FC = () => {
   };
 
   return (
-    <>
-      <nav className="nav">
-        <Link
-          to={"#main"}
-          id={"skip-to-main"}
-          onKeyDown={(event) => focusOnMain(event)}
-        >
-          Skip to main content
-        </Link>
-        <ul className="nav__item-wrapper">{pathsToTestCases}</ul>
-      </nav>
-    </>
+    <nav className="nav">
+      <Link
+        to="#main"
+        id="skip-to-main"
+        onKeyDown={(event) => focusOnMain(event)}
+      >
+        Skip to main content
+      </Link>
+      <ul className="nav__item-wrapper">{pathsToTestCases}</ul>
+    </nav>
   );
 };

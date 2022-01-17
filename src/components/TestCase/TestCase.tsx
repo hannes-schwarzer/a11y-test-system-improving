@@ -38,23 +38,21 @@ export const TestCase: FC<TestCaseProps> = ({
   }
   return (
     <article className="testCase">
-      <h2 className={"testCase__title"}>{title}</h2>
-      <section className={"testCase__overview"}>
+      <h2 className="testCase__title">{title}</h2>
+      <section className="testCase__overview">
         <span>ID: {id}</span>
         <span>Level: {level}</span>
         <a
-          className={"overview__link-to-success-criteria"}
+          className="overview__link-to-success-criteria"
           href={linkToSuccessCriterion}
-          target={"_parent"}
+          target="_parent"
         >
           Quickref.: {successCriterionNumber} {successCriterionInWords}
         </a>
       </section>
       <section className="testCase__description">
         {explanation && (
-          <p className={"description__explanation"}>
-            Explanation: {explanation}
-          </p>
+          <p className="description__explanation">Explanation: {explanation}</p>
         )}
         {linkToExplanation && (
           <a href={linkToExplanation}>
