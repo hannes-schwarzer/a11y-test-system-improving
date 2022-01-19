@@ -14,8 +14,8 @@ export const FocusVisible = (props: Props) => {
       <Frame pageTitle={props.pageTitle}>
         <TestCase
           title={
-            "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to " +
-            "remove focus when focus is received"
+            "F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 " +
+            "due to using script to remove focus when focus is received"
           }
           successCriterionInWords={"Focus Visible"}
           linkToSuccessCriterion={
@@ -27,21 +27,29 @@ export const FocusVisible = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html"
           }
           explanation={
-            "Content that normally receives focus when the content is accessed by keyboard may have this " +
-            "focus removed by scripting. This is sometimes done when designer considers the system focus " +
-            "indicator to be unsightly. However, the system focus indicator is an important part of accessibility " +
-            "for keyboard users. In addition, this practice removes focus from the content entirely, " +
-            "which means that the content can only be operated by a pointing device such as a mouse."
+            "Content that normally receives focus when the content is " +
+            "accessed by keyboard may have this focus removed by " +
+            "scripting. This is sometimes done when designer considers " +
+            "the system focus indicator to be unsightly. However, the " +
+            "system focus indicator is an important part of " +
+            "accessibility for keyboard users. In addition, this practice " +
+            "removes focus from the content entirely, which means that " +
+            "the content can only be operated by a pointing device such " +
+            "as a mouse."
           }
           id={"2.4.7_1"}
         >
-          <input
+          <button
             id={"keyboard__blur-error-first"}
             type="submit"
             onFocus={() => {
-              document!.getElementById("keyboard__blur-error-first")!.blur();
+              if (document.getElementById("keyboard__blur-error-first")) {
+                document.getElementById("keyboard__blur-error-first")!.blur();
+              }
             }}
-          />
+          >
+            Submit
+          </button>
         </TestCase>
 
         <TestCase

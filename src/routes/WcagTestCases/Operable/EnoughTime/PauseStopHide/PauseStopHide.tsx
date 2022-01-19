@@ -41,12 +41,13 @@ export const PauseStopHide = (props: Props) => {
 
         <TestCase
           title={
-            "F50: Failure of Success Criterion 2.2.2 due to a script that causes a blink effect without a " +
+            "F50: Failure of Success Criterion 2.2.2 due to a " +
+            "script that causes a blink effect without a " +
             "mechanism to stop the blinking at 5 seconds or less"
           }
-          successCriterionInWords={"Pause, Stop, Hide"}
+          successCriterionInWords="Pause, Stop, Hide"
           level={Level.A}
-          successCriterionNumber={"2.2.2"}
+          successCriterionNumber="2.2.2"
           linkToSuccessCriterion={
             "https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide"
           }
@@ -54,10 +55,11 @@ export const PauseStopHide = (props: Props) => {
             "https://www.w3.org/WAI/WCAG21/Techniques/failures/F50.html"
           }
           explanation={
-            "The following example uses JavaScript to blink content, but the blink continues indefinitely rather " +
+            "The following example uses JavaScript to blink content, " +
+            "but the blink continues indefinitely rather " +
             "than stopping after five seconds."
           }
-          id={"2.2.2_2"}
+          id="2.2.2_2"
         >
           <Blink color="black" text="Super Sale!!!" fontSize="20" />
         </TestCase>
