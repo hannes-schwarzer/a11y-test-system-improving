@@ -14,59 +14,59 @@
         - name: Run pa11y
           run: |
             npm install -g pa11y
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/text-alternatives/non-text-content
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/time-based-media/audio-only-and-video-only-prerecorded
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/time-based-media/media-alternative-prerecorded
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/info-and-relationships
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/meaningful-sequence
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/sensory-characteristics
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/identify-input-purpose
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/use-of-color
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/audio-control
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/contrast-minimum
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/resize-text
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/images-of-text
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/contrast-enhanced
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/visual-presentation
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/reflow
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/non-text-contrast
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/text-spacing
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/content-on-hover-or-focus
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/keyboard-accessible/keyboard
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/keyboard-accessible/no-keyboard-trap
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/keyboard-accessible/character-key-shortcuts
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/enough-time/timing-adjustable
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/enough-time/pause-stop-hide
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/enough-time/interruptions
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/seizures-and-physical-reactions/three-flashes-or-below-threshold
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/bypass-blocks
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/link-purpose-in-context
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/headings-and-labels
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/focus-visible
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/link-purpose-link-only
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/input-modalities/label-in-name
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/input-modalities/target-size
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/readable/language-of-page
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/readable/language-of-parts
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/readable/reading-level
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/predictable/on-focus
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/predictable/on-input
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/predictable/consistent-navigation
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/predictable/consistent-identification
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/predictable/change-on-request
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/input-assistance/error-identification
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/input-assistance/labels-or-instructions
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/input-assistance/error-suggestion
-            pa11y --runner htmlcs http://localhost:3000/wcag/robust/compatible/parsing
-            pa11y --runner htmlcs http://localhost:3000/wcag/robust/compatible/name-role-value
-            pa11y --runner htmlcs http://localhost:3000/wcag/robust/compatible/status-messages
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/inappropriate-page-title
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/empty-title
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/no-page-title
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/two-page-titles
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/only-separater-in-title
-            pa11y --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/meaningful-sequence/changed-meaning-through-formatting
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/enough-time/timing-adjustable/redirect-to-other-page
-            pa11y --runner htmlcs http://localhost:3000/wcag/operable/enough-time/timing-adjustable/refreshing-page
-            pa11y --runner htmlcs http://localhost:3000/wcag/understandable/predictable/consistent-navigation/page-two
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/text-alternatives/non-text-content
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/time-based-media/audio-only-and-video-only-prerecorded
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/time-based-media/media-alternative-prerecorded
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/info-and-relationships
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/meaningful-sequence
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/sensory-characteristics
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/identify-input-purpose
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/use-of-color
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/audio-control
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/contrast-minimum
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/resize-text
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/images-of-text
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/contrast-enhanced
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/visual-presentation
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/reflow
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/non-text-contrast
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/text-spacing
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/distinguishable/content-on-hover-or-focus
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/keyboard-accessible/keyboard
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/keyboard-accessible/no-keyboard-trap
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/keyboard-accessible/character-key-shortcuts
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/enough-time/timing-adjustable
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/enough-time/pause-stop-hide
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/enough-time/interruptions
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/seizures-and-physical-reactions/three-flashes-or-below-threshold
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/bypass-blocks
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/link-purpose-in-context
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/headings-and-labels
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/focus-visible
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/link-purpose-link-only
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/input-modalities/label-in-name
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/input-modalities/target-size
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/readable/language-of-page
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/readable/language-of-parts
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/readable/reading-level
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/predictable/on-focus
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/predictable/on-input
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/predictable/consistent-navigation
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/predictable/consistent-identification
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/predictable/change-on-request
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/input-assistance/error-identification
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/input-assistance/labels-or-instructions
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/input-assistance/error-suggestion
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/robust/compatible/parsing
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/robust/compatible/name-role-value
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/robust/compatible/status-messages
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/inappropriate-page-title
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/empty-title
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/no-page-title
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/two-page-titles
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/navigable/page-titled/only-separater-in-title
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/perceivable/adaptable/meaningful-sequence/changed-meaning-through-formatting
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/enough-time/timing-adjustable/redirect-to-other-page
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/operable/enough-time/timing-adjustable/refreshing-page
+            pa11y --runner axe --runner htmlcs http://localhost:3000/wcag/understandable/predictable/consistent-navigation/page-two
