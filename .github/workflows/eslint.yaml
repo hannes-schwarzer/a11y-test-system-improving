@@ -12,62 +12,62 @@
         - run: npm ci
         - name: Run eslint
           run: |
-            src/routes/Homepage/Homepage.tsx
-            src/routes/WcagTestCases/DetailPages/Adaptable/ChangedMeaningThroughFormatting.tsx
-            src/routes/WcagTestCases/DetailPages/EnoughTime/RedirectingPage.tsx
-            src/routes/WcagTestCases/DetailPages/EnoughTime/RefreshingPage.tsx
-            src/routes/WcagTestCases/DetailPages/Navigable/EmptyPageTitle.tsx
-            src/routes/WcagTestCases/DetailPages/Navigable/InappropriatePageTitle.tsx
-            src/routes/WcagTestCases/DetailPages/Navigable/NoPageTitle.tsx
-            src/routes/WcagTestCases/DetailPages/Navigable/OnlySeparaterInTitle.tsx
-            src/routes/WcagTestCases/DetailPages/Navigable/TwoPageTitles.tsx
-            src/routes/WcagTestCases/DetailPages/Predictable/PageTwo.tsx
-            src/routes/WcagTestCases/DetailPages/SomePage.tsx
-            src/routes/WcagTestCases/Operable/EnoughTime/Interruptions/Interruptions.tsx
-            src/routes/WcagTestCases/Operable/EnoughTime/PauseStopHide/PauseStopHide.tsx
-            src/routes/WcagTestCases/Operable/EnoughTime/TimingAdjustable/TimingAdjustable.tsx
-            src/routes/WcagTestCases/Operable/InputModalities/LabelInName/LabelInName.tsx
-            src/routes/WcagTestCases/Operable/InputModalities/TargetSize/TargetSize.tsx
-            src/routes/WcagTestCases/Operable/KeyboardAccessible/CharacterKeyShortcuts/CharacterKeyShortcuts.tsx
-            src/routes/WcagTestCases/Operable/KeyboardAccessible/Keyboard/Keyboard.tsx
-            src/routes/WcagTestCases/Operable/KeyboardAccessible/NoKeyboardTrap/NoKeyboardTrap.tsx
-            src/routes/WcagTestCases/Operable/Navigable/BypassBlocks/BypassBlocks.tsx
-            src/routes/WcagTestCases/Operable/Navigable/FocusOrder/FocusOrder.tsx
-            src/routes/WcagTestCases/Operable/Navigable/FocusVisible/FocusVisible.tsx
-            src/routes/WcagTestCases/Operable/Navigable/HeadingsAndLabels/HeadingsAndLabels.tsx
-            src/routes/WcagTestCases/Operable/Navigable/LinkPurposeInContext/LinkPurposeInContext.tsx
-            src/routes/WcagTestCases/Operable/Navigable/LinkPurposeLinkOnly/LinkPurposeLinkOnly.tsx
-            src/routes/WcagTestCases/Operable/Navigable/PageTitled/PageTitled.tsx
-            src/routes/WcagTestCases/Operable/SeizuresAndPhysical/ThreeFlashesOrBelowThreshold/ThreeFlashesOrBelowThreshold.tsx
-            src/routes/WcagTestCases/Perceivable/Adaptable/IdentifyInputPurpose/IdentifyInputPurpose.tsx
-            src/routes/WcagTestCases/Perceivable/Adaptable/InfoAndRelationships/InfoAndRelationships.tsx
-            src/routes/WcagTestCases/Perceivable/Adaptable/MeaningfulSequence/MeaningfulSequence.tsx
-            src/routes/WcagTestCases/Perceivable/Adaptable/SensoryCharacteristics/SensoryCharacteristics.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/AudioControl/AudioControl.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/ContentOnHoverOrFocus/ContentOnHoverOrFocus.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/ContrastEnhanced/ContrastEnhanced.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/ContrastMinimum/ContrastMinimum.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/ImagesOfText/ImagesOfText.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/NonTextContrast/NonTextContrast.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/Reflow/Reflow.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/ResizeText/ResizeText.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/TextSpacing/TextSpacing.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/UseOfColor/UseOfColor.tsx
-            src/routes/WcagTestCases/Perceivable/Distinguishable/VisualPresentation/VisualPresentation.tsx
-            src/routes/WcagTestCases/Perceivable/TextAlternatives/NonTextContent/NonTextContent.tsx
-            src/routes/WcagTestCases/Perceivable/TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded/AudioOnlyVideoOnlyPrerecorded.tsx
-            src/routes/WcagTestCases/Perceivable/TimeBasedMedia/MediaAlternativePrerecorded/MediaAlternativePrerecorded.tsx
-            src/routes/WcagTestCases/Robust/Compatible/NameRoleValue/NameRoleValue.tsx
-            src/routes/WcagTestCases/Robust/Compatible/Parsing/Parsing.tsx
-            src/routes/WcagTestCases/Robust/Compatible/StatusMessages/StatusMessages.tsx
-            src/routes/WcagTestCases/Understandable/InputAssistance/ErrorIdentification/ErrorIdentification.tsx
-            src/routes/WcagTestCases/Understandable/InputAssistance/ErrorSuggestions/ErrorSuggestions.tsx
-            src/routes/WcagTestCases/Understandable/InputAssistance/LabelsOrInstructions/LabelsOrInstructions.tsx
-            src/routes/WcagTestCases/Understandable/Predictable/ChangeOnRequest/ChangeOnRequest.tsx
-            src/routes/WcagTestCases/Understandable/Predictable/ConsistentIdentification/ConsistentIdentification.tsx
-            src/routes/WcagTestCases/Understandable/Predictable/ConsistentNavigation/ConsistentNavigation.tsx
-            src/routes/WcagTestCases/Understandable/Predictable/OnFocus/OnFocus.tsx
-            src/routes/WcagTestCases/Understandable/Predictable/OnInput/OnInput.tsx
-            src/routes/WcagTestCases/Understandable/Readable/LangOfPage/LangOfPage.tsx
-            src/routes/WcagTestCases/Understandable/Readable/LangOfParts/LangOfParts.tsx
-            src/routes/WcagTestCases/Understandable/Readable/ReadingLevel/ReadingLevel.tsx
+            npx eslint src/routes/Homepage/Homepage.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/Adaptable/ChangedMeaningThroughFormatting.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/EnoughTime/RedirectingPage.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/EnoughTime/RefreshingPage.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/EmptyPageTitle.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/InappropriatePageTitle.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/NoPageTitle.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/OnlySeparaterInTitle.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/TwoPageTitles.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/Predictable/PageTwo.tsx
+            npx eslint src/routes/WcagTestCases/DetailPages/SomePage.tsx
+            npx eslint src/routes/WcagTestCases/Operable/EnoughTime/Interruptions/Interruptions.tsx
+            npx eslint src/routes/WcagTestCases/Operable/EnoughTime/PauseStopHide/PauseStopHide.tsx
+            npx eslint src/routes/WcagTestCases/Operable/EnoughTime/TimingAdjustable/TimingAdjustable.tsx
+            npx eslint src/routes/WcagTestCases/Operable/InputModalities/LabelInName/LabelInName.tsx
+            npx eslint src/routes/WcagTestCases/Operable/InputModalities/TargetSize/TargetSize.tsx
+            npx eslint src/routes/WcagTestCases/Operable/KeyboardAccessible/CharacterKeyShortcuts/CharacterKeyShortcuts.tsx
+            npx eslint src/routes/WcagTestCases/Operable/KeyboardAccessible/Keyboard/Keyboard.tsx
+            npx eslint src/routes/WcagTestCases/Operable/KeyboardAccessible/NoKeyboardTrap/NoKeyboardTrap.tsx
+            npx eslint src/routes/WcagTestCases/Operable/Navigable/BypassBlocks/BypassBlocks.tsx
+            npx eslint src/routes/WcagTestCases/Operable/Navigable/FocusOrder/FocusOrder.tsx
+            npx eslint src/routes/WcagTestCases/Operable/Navigable/FocusVisible/FocusVisible.tsx
+            npx eslint src/routes/WcagTestCases/Operable/Navigable/HeadingsAndLabels/HeadingsAndLabels.tsx
+            npx eslint src/routes/WcagTestCases/Operable/Navigable/LinkPurposeInContext/LinkPurposeInContext.tsx
+            npx eslint src/routes/WcagTestCases/Operable/Navigable/LinkPurposeLinkOnly/LinkPurposeLinkOnly.tsx
+            npx eslint src/routes/WcagTestCases/Operable/Navigable/PageTitled/PageTitled.tsx
+            npx eslint src/routes/WcagTestCases/Operable/SeizuresAndPhysical/ThreeFlashesOrBelowThreshold/ThreeFlashesOrBelowThreshold.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Adaptable/IdentifyInputPurpose/IdentifyInputPurpose.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Adaptable/InfoAndRelationships/InfoAndRelationships.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Adaptable/MeaningfulSequence/MeaningfulSequence.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Adaptable/SensoryCharacteristics/SensoryCharacteristics.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/AudioControl/AudioControl.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ContentOnHoverOrFocus/ContentOnHoverOrFocus.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ContrastEnhanced/ContrastEnhanced.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ContrastMinimum/ContrastMinimum.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ImagesOfText/ImagesOfText.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/NonTextContrast/NonTextContrast.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/Reflow/Reflow.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ResizeText/ResizeText.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/TextSpacing/TextSpacing.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/UseOfColor/UseOfColor.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/VisualPresentation/VisualPresentation.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/TextAlternatives/NonTextContent/NonTextContent.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded/AudioOnlyVideoOnlyPrerecorded.tsx
+            npx eslint src/routes/WcagTestCases/Perceivable/TimeBasedMedia/MediaAlternativePrerecorded/MediaAlternativePrerecorded.tsx
+            npx eslint src/routes/WcagTestCases/Robust/Compatible/NameRoleValue/NameRoleValue.tsx
+            npx eslint src/routes/WcagTestCases/Robust/Compatible/Parsing/Parsing.tsx
+            npx eslint src/routes/WcagTestCases/Robust/Compatible/StatusMessages/StatusMessages.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/InputAssistance/ErrorIdentification/ErrorIdentification.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/InputAssistance/ErrorSuggestions/ErrorSuggestions.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/InputAssistance/LabelsOrInstructions/LabelsOrInstructions.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/Predictable/ChangeOnRequest/ChangeOnRequest.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/Predictable/ConsistentIdentification/ConsistentIdentification.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/Predictable/ConsistentNavigation/ConsistentNavigation.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/Predictable/OnFocus/OnFocus.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/Predictable/OnInput/OnInput.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/Readable/LangOfPage/LangOfPage.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/Readable/LangOfParts/LangOfParts.tsx
+            npx eslint src/routes/WcagTestCases/Understandable/Readable/ReadingLevel/ReadingLevel.tsx
