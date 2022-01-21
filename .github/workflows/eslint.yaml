@@ -1,4 +1,4 @@
-  name: eslint check
+  name: eslint --max-warnings=0 check
   on: push
   jobs:
     eslint:
@@ -12,62 +12,62 @@
         - run: npm ci
         - name: Run eslint
           run: |
-            npx eslint src/routes/Homepage/Homepage.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/Adaptable/ChangedMeaningThroughFormatting.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/EnoughTime/RedirectingPage.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/EnoughTime/RefreshingPage.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/EmptyPageTitle.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/InappropriatePageTitle.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/NoPageTitle.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/OnlySeparaterInTitle.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/Navigable/TwoPageTitles.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/Predictable/PageTwo.tsx
-            npx eslint src/routes/WcagTestCases/DetailPages/SomePage.tsx
-            npx eslint src/routes/WcagTestCases/Operable/EnoughTime/Interruptions/Interruptions.tsx
-            npx eslint src/routes/WcagTestCases/Operable/EnoughTime/PauseStopHide/PauseStopHide.tsx
-            npx eslint src/routes/WcagTestCases/Operable/EnoughTime/TimingAdjustable/TimingAdjustable.tsx
-            npx eslint src/routes/WcagTestCases/Operable/InputModalities/LabelInName/LabelInName.tsx
-            npx eslint src/routes/WcagTestCases/Operable/InputModalities/TargetSize/TargetSize.tsx
-            npx eslint src/routes/WcagTestCases/Operable/KeyboardAccessible/CharacterKeyShortcuts/CharacterKeyShortcuts.tsx
-            npx eslint src/routes/WcagTestCases/Operable/KeyboardAccessible/Keyboard/Keyboard.tsx
-            npx eslint src/routes/WcagTestCases/Operable/KeyboardAccessible/NoKeyboardTrap/NoKeyboardTrap.tsx
-            npx eslint src/routes/WcagTestCases/Operable/Navigable/BypassBlocks/BypassBlocks.tsx
-            npx eslint src/routes/WcagTestCases/Operable/Navigable/FocusOrder/FocusOrder.tsx
-            npx eslint src/routes/WcagTestCases/Operable/Navigable/FocusVisible/FocusVisible.tsx
-            npx eslint src/routes/WcagTestCases/Operable/Navigable/HeadingsAndLabels/HeadingsAndLabels.tsx
-            npx eslint src/routes/WcagTestCases/Operable/Navigable/LinkPurposeInContext/LinkPurposeInContext.tsx
-            npx eslint src/routes/WcagTestCases/Operable/Navigable/LinkPurposeLinkOnly/LinkPurposeLinkOnly.tsx
-            npx eslint src/routes/WcagTestCases/Operable/Navigable/PageTitled/PageTitled.tsx
-            npx eslint src/routes/WcagTestCases/Operable/SeizuresAndPhysical/ThreeFlashesOrBelowThreshold/ThreeFlashesOrBelowThreshold.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Adaptable/IdentifyInputPurpose/IdentifyInputPurpose.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Adaptable/InfoAndRelationships/InfoAndRelationships.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Adaptable/MeaningfulSequence/MeaningfulSequence.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Adaptable/SensoryCharacteristics/SensoryCharacteristics.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/AudioControl/AudioControl.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ContentOnHoverOrFocus/ContentOnHoverOrFocus.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ContrastEnhanced/ContrastEnhanced.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ContrastMinimum/ContrastMinimum.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ImagesOfText/ImagesOfText.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/NonTextContrast/NonTextContrast.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/Reflow/Reflow.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/ResizeText/ResizeText.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/TextSpacing/TextSpacing.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/UseOfColor/UseOfColor.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/Distinguishable/VisualPresentation/VisualPresentation.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/TextAlternatives/NonTextContent/NonTextContent.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded/AudioOnlyVideoOnlyPrerecorded.tsx
-            npx eslint src/routes/WcagTestCases/Perceivable/TimeBasedMedia/MediaAlternativePrerecorded/MediaAlternativePrerecorded.tsx
-            npx eslint src/routes/WcagTestCases/Robust/Compatible/NameRoleValue/NameRoleValue.tsx
-            npx eslint src/routes/WcagTestCases/Robust/Compatible/Parsing/Parsing.tsx
-            npx eslint src/routes/WcagTestCases/Robust/Compatible/StatusMessages/StatusMessages.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/InputAssistance/ErrorIdentification/ErrorIdentification.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/InputAssistance/ErrorSuggestions/ErrorSuggestions.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/InputAssistance/LabelsOrInstructions/LabelsOrInstructions.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/Predictable/ChangeOnRequest/ChangeOnRequest.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/Predictable/ConsistentIdentification/ConsistentIdentification.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/Predictable/ConsistentNavigation/ConsistentNavigation.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/Predictable/OnFocus/OnFocus.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/Predictable/OnInput/OnInput.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/Readable/LangOfPage/LangOfPage.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/Readable/LangOfParts/LangOfParts.tsx
-            npx eslint src/routes/WcagTestCases/Understandable/Readable/ReadingLevel/ReadingLevel.tsx
+            npx eslint --max-warnings=0 src/routes/Homepage/Homepage.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/Adaptable/ChangedMeaningThroughFormatting.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/EnoughTime/RedirectingPage.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/EnoughTime/RefreshingPage.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/Navigable/EmptyPageTitle.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/Navigable/InappropriatePageTitle.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/Navigable/NoPageTitle.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/Navigable/OnlySeparaterInTitle.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/Navigable/TwoPageTitles.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/Predictable/PageTwo.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/DetailPages/SomePage.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/EnoughTime/Interruptions/Interruptions.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/EnoughTime/PauseStopHide/PauseStopHide.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/EnoughTime/TimingAdjustable/TimingAdjustable.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/InputModalities/LabelInName/LabelInName.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/InputModalities/TargetSize/TargetSize.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/KeyboardAccessible/CharacterKeyShortcuts/CharacterKeyShortcuts.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/KeyboardAccessible/Keyboard/Keyboard.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/KeyboardAccessible/NoKeyboardTrap/NoKeyboardTrap.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/Navigable/BypassBlocks/BypassBlocks.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/Navigable/FocusOrder/FocusOrder.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/Navigable/FocusVisible/FocusVisible.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/Navigable/HeadingsAndLabels/HeadingsAndLabels.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/Navigable/LinkPurposeInContext/LinkPurposeInContext.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/Navigable/LinkPurposeLinkOnly/LinkPurposeLinkOnly.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/Navigable/PageTitled/PageTitled.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Operable/SeizuresAndPhysical/ThreeFlashesOrBelowThreshold/ThreeFlashesOrBelowThreshold.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Adaptable/IdentifyInputPurpose/IdentifyInputPurpose.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Adaptable/InfoAndRelationships/InfoAndRelationships.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Adaptable/MeaningfulSequence/MeaningfulSequence.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Adaptable/SensoryCharacteristics/SensoryCharacteristics.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/AudioControl/AudioControl.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/ContentOnHoverOrFocus/ContentOnHoverOrFocus.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/ContrastEnhanced/ContrastEnhanced.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/ContrastMinimum/ContrastMinimum.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/ImagesOfText/ImagesOfText.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/NonTextContrast/NonTextContrast.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/Reflow/Reflow.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/ResizeText/ResizeText.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/TextSpacing/TextSpacing.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/UseOfColor/UseOfColor.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/Distinguishable/VisualPresentation/VisualPresentation.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/TextAlternatives/NonTextContent/NonTextContent.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/TimeBasedMedia/AudioOnlyVideoOnlyPrerecorded/AudioOnlyVideoOnlyPrerecorded.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Perceivable/TimeBasedMedia/MediaAlternativePrerecorded/MediaAlternativePrerecorded.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Robust/Compatible/NameRoleValue/NameRoleValue.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Robust/Compatible/Parsing/Parsing.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Robust/Compatible/StatusMessages/StatusMessages.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/InputAssistance/ErrorIdentification/ErrorIdentification.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/InputAssistance/ErrorSuggestions/ErrorSuggestions.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/InputAssistance/LabelsOrInstructions/LabelsOrInstructions.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/Predictable/ChangeOnRequest/ChangeOnRequest.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/Predictable/ConsistentIdentification/ConsistentIdentification.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/Predictable/ConsistentNavigation/ConsistentNavigation.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/Predictable/OnFocus/OnFocus.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/Predictable/OnInput/OnInput.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/Readable/LangOfPage/LangOfPage.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/Readable/LangOfParts/LangOfParts.tsx
+            npx eslint --max-warnings=0 src/routes/WcagTestCases/Understandable/Readable/ReadingLevel/ReadingLevel.tsx
