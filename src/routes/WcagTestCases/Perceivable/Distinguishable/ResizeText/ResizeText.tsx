@@ -148,7 +148,7 @@ export const ResizeText = (props: Props) => {
             <br />
             <label className={"resize-text__form-label"} htmlFor="lname">
               Last Name
-            </label>{" "}
+            </label>
             <input
               className={"resize-text__form-input"}
               type="text"
@@ -168,7 +168,7 @@ export const ResizeText = (props: Props) => {
             <br />
             <label className={"resize-text__form-label"} htmlFor="email">
               Email
-            </label>{" "}
+            </label>
             <input
               className={"resize-text__form-input"}
               type="text"
