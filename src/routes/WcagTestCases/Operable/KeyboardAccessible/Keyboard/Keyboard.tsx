@@ -107,7 +107,9 @@ export const Keyboard = (props: Props) => {
             id={"keyboard__blur-error-first"}
             type="submit"
             onFocus={() => {
-              document!.getElementById("keyboard__blur-error-first")!.blur();
+              if (document.getElementById("keyboard__blur-error-first")) {
+                document.getElementById("keyboard__blur-error-first")!.blur();
+              }
             }}
             onClick={() => {
               alert("Clicked");
