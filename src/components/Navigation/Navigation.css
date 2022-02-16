@@ -1,10 +1,10 @@
-.nav {
+.nav{
     background-color: #EEEEEE;
     color: #255172;
     padding-top: 15px;
 }
 
-.nav__item-wrapper {
+.nav__item-wrapper{
     width: 245px;
     margin: 0 15px 15px 15px;
     list-style-type: none;

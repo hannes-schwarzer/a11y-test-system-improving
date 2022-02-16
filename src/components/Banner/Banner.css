@@ -1,22 +1,18 @@
-.global-banner {
+.global-banner{
     display: flex;
     background: #EEEEEE;
     color: #255172;
     padding: 15px;
 }
 
-.main-heading{
-    margin: 0 0 0 130px;
-}
-
-#logo {
+#logo{
     display: flex;
     flex-direction: column;
     width:auto;
     height: auto;
 }
 
-#logo__top {
+#logo__top{
     color: #2e638c;
     margin-top: -0.15em;
     margin-bottom: -0.1em;
@@ -26,7 +22,7 @@
     font-size:2.5em;
 }
 
-#logo__bottom {
+#logo__bottom{
     margin-top: -0.3em;
     margin-bottom: -0.15em;
     text-transform:uppercase;
