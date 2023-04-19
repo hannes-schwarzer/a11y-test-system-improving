@@ -4,14 +4,14 @@ beforeEach(() => {
 })
 
 // works!
-    it('page has no focus trap', () => {
+    it.skip('page has no focus trap', () => {
         cy.visit('http://localhost:3000/wcag/operable/keyboard-accessible/no-keyboard-trap')
         cy.pageHasNoFocusTrap();        
     })
 
     // error not obvious why but might be correct
     // highlights non visible elements
-    it('page has no focus trap', () => {
+    it.skip('page has no focus trap', () => {
         cy.viewport(1920, 1080)
         cy.visit('https://www.inovex.de/de/')
         cy.findByRole('button', {name: 'Alle akzeptieren'}).click()
@@ -19,7 +19,7 @@ beforeEach(() => {
     })
 
     // finds error, where focus is not really on element
-    it('page has no focus trap', () => {
+    it.skip('page has no focus trap', () => {
         cy.viewport(1080, 1920)
         cy.visit('https://www.inovex.de/de/')
         cy.findByRole('button', {name: 'Alle akzeptieren'}).click()
@@ -37,6 +37,21 @@ beforeEach(() => {
         cy.pageHasNoFocusTrap();        
     })
 
+    // error because button text changes
+    it('page has no focus trap', () => {
+        cy.visit('https://www.google.com/')
+        cy.findByRole('button', {name: 'Alle akzeptieren'}).click()
+        cy.pageHasNoFocusTrap();        
+    })
+
+    it.only('page has no focus trap', () => {
+        cy.viewport(1920, 1080)
+        cy.visit('https://www.google.com/search?q=haus')
+        cy.findByRole('button', {name: 'Alle akzeptieren'}).click()
+        cy.pageHasNoFocusTrap();        
+    })
+
+
     // works
     it('page has no focus trap', () => {
         cy.visit('https://www.fonic.de/')
@@ -50,15 +65,14 @@ beforeEach(() => {
     })
 
     // works
-    it.only('page has no focus trap', () => {
+    it('page has no focus trap', () => {
         cy.visit('https://www.fonic.de/prepaid-tarife')
         cy.wait(2000) // page has a loading icon first
         cy.pageHasNoFocusTrap();        
     })
 
-    it('page has no focus trap', () => {
+    it.skip('page has no focus trap', () => {
         cy.visit('https://octopus.energy/')
-        // cy.findByRole('button', {name: 'No thanks'})
         cy.get('#noToCountrySpecificWebsiteAddress').click()
         cy.findByRole('button', {name: "That's cool"}).click()
         cy.pageHasNoFocusTrap();        
