@@ -141,6 +141,7 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
         // working:
     // getFocusableElements2(cy.get('body')).as('focusableElements')
 
+    // working:
     getFocusableElements4(cy.get('body')).as('focusableElements')
 
     // not working:
@@ -214,25 +215,18 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
     })
   })
 
-  // 
+  // working
   function getFocusableElements4(parent: Cypress.Chainable<JQuery<HTMLElement>>): Cypress.Chainable<JQuery<HTMLElement>> {
-    parent.then(($parent) => {
-      const focusableElements = tabbable($parent[0])
-
-      cy.wait(5000)
-      return cy.wrap(focusableElements)
+    return parent.then(($parent) => {
+      cy.wrap(tabbable($parent[0]))
     })
-    return
   }
 
   // TODO: Make working
     Cypress.Commands.add('getFocusableElements3', {prevSubject: true}, (parent: Cypress.Chainable<JQuery<HTMLElement>>) => {
-    parent.and(($parent) => {
-      const focusableElements = tabbable($parent[0])
-
-      cy.wait(1000)
-      return cy.wrap(focusableElements)
-    })
+      return parent.then(($parent) => {
+        cy.wrap(tabbable($parent[0]))
+      })
   })
 
 
