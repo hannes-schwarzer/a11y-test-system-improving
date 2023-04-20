@@ -29,7 +29,7 @@ import { tabbable } from 'tabbable'
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // function needs element which opens the modal, plus an identifier of the modal
-Cypress.Commands.add('modalCanBeClosedByButton', (modalOpenElementSelector) => {
+Cypress.Commands.add('dialogCanBeClosedByButton', (modalOpenElementSelector) => {
     // there should be no open dialogs
     // TODO: Later change to 'dialog' instead of '.lightbox'
     cy.get('.lightbox').should('not.be.visible')
@@ -70,7 +70,7 @@ Cypress.Commands.add('modalCanBeClosedByButton', (modalOpenElementSelector) => {
     // cy.log('Success!')
 })
 
-Cypress.Commands.add('modalCanBeClosedByEsc', (modalOpener) => {
+Cypress.Commands.add('dialogCanBeClosedByEsc', (modalOpener) => {
     // there should be no open dialogs
     // TODO: Later change to 'dialog' instead of '.lightbox'
     // cy.get('.lightbox').should('not.be.visible')
@@ -90,55 +90,36 @@ Cypress.Commands.add('modalCanBeClosedByEsc', (modalOpener) => {
     cy.get('.lightbox').should('not.be.visible')
 })
 
-Cypress.Commands.add('modalHasAFocusTrap', (modalOpener) => {
-    // there should be no open dialogs
-    // TODO: Later change to 'dialog' instead of '.lightbox'
-    cy.get('.lightbox').should('not.be.visible')
+Cypress.Commands.add('dialogHasAFocusTrap', {prevSubject: 'element'}, (dialog) => {
+    cy.wrap(dialog).getFocusableElements().as('focusableElements')
 
-    // open modal
-    modalOpener.click()
-
-    // dialog should now be visible
-    // TODO: Change lightbox to dialog. Only assign alias here as we can not be sure that before the element exists in the DOM.
-    cy.get('.lightbox').as('dialog').should('be.visible')
-
-
-    //cy.getFocusableElements(cy.get('@dialog')).as('focusableElements')
-    cy.get('@dialog').find('a[href], area[href], input:not([type="hidden"]), select, textarea, button, iframe, object, embed, [tabindex="0"], [contenteditable], audio[controls], video[controls], summary, [tabindex^="0"], [tabindex^="1"]')
-    .not('[tabindex=-1], [disabled], :hidden, [aria-hidden]').as('focusableElements')
-
-    // TODO: Tab to next HTMLElement, until we get to the first HTMLElement a second time or we leave the dialog
-    // -> Find out if we are still in the list of elements
-    // -> find out if we are at the first element
-    // TODO: Check that we never visit an element twice
-
-    // cy.focused().tab().as('firstElement');
-    // cy.focused().as('currentElement').tab()
-
-    cy.get('@focusableElements').each(($element) => {
-      // every loop, tab one element further
-      // TODO: Remove first tab when using a real dialog and add a tab afterwards
-      cy.focused().tab().then($focused => {
-        expect($focused).to.deep.equal($element)
+    cy.get('@focusableElements').each(($focusableElement) => {
+      cy.focused().then($focusedElement => {
+        expect($focusedElement[0]).to.deep.equal($focusableElement[0])
       })
+
+      // every loop, tab one element further
+      cy.focused().tab()
     })
 
     // one more tab should result in tabbing to the first tabbable element again
-    cy.focused().tab().then($focused => {
-      expect($focused).to.deep.equal(cy.get('@focusableElements').eq(0))
+    cy.get('@focusableElements').eq(0).then($firstElement => {
+      cy.focused().then($focusedElement => {
+        expect($firstElement[0]).to.deep.equal($focusedElement[0])
+      })
+    })
+
+    // success message
+    cy.get('@focusableElements').then(($focusableElements) => {
+      cy.log(`Successfully looped through ${$focusableElements.length} elements!`)
     })
 })
 
 Cypress.Commands.add('pageHasNoFocusTrap', () => {    
-    // working using own function
-    // cy.get('body').getFocusableElements().as('focusableElements')
-    // getFocusableElements2(cy.get('body')).as('focusableElements')
+    cy.get('body').getFocusableElements().as('focusableElements')
 
-    // working, uses tabbable:
-    getFocusableElements4(cy.get('body')).as('focusableElements')
-
-    // if we visit an element twice there would be an error, too
-    // if we don't loop through the whole document there would be an error, too
+    // if we visit an element twice there would be an error
+    // if we don't loop through the whole document there would be an error
 
     cy.get('body').tab() // move focus to first element on page
 
@@ -159,51 +140,28 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
     })
 })
 
-  Cypress.Commands.add('getFocusableElements', {prevSubject: true}, (prevSubject: Cypress.Chainable<JQuery<HTMLElement>>) => {
-    // only includes tabindex 0 and 1
-    // TODO: Throw error if element has tabindex greater than 1 or give option to include those with boolean?
-    return prevSubject.
-      find('a[href], area[href], input:not([type="hidden"]), select, textarea, button, iframe, object, embed, [tabindex="0"], [contenteditable], audio[controls], video[controls], summary, [tabindex^="0"], [tabindex^="1"]')
-      .not('[tabindex=-1], [disabled], :hidden, [aria-hidden]')
-  })
-
-  // working
-  Cypress.Commands.add('getFocusableElements2', (parent) => {
-    parent.then(($parent) => {
-      const focusableElements = tabbable($parent[0])
-
-      cy.wait(5000)
-      return cy.wrap(focusableElements)
-    })
-  })
-
-  // working
-  function getFocusableElements4(parent: Cypress.Chainable<JQuery<HTMLElement>>): Cypress.Chainable<JQuery<HTMLElement>> {
-    return parent.then(($parent) => {
-      cy.wrap(tabbable($parent[0]))
-    })
-  }
-
-  // TODO: Make working
-    Cypress.Commands.add('getFocusableElements3', {prevSubject: true}, (parent: Cypress.Chainable<JQuery<HTMLElement>>) => {
-      return parent.then(($parent) => {
-        cy.wrap(tabbable($parent[0]))
+    Cypress.Commands.add('getFocusableElements', {prevSubject: 'element'}, (parent /* :JQuery<HTMLElement> */) => {
+      return cy.wrap(parent).then(($parent /* JQuery<HTMLElement */) => {
+        cy.wrap(tabbable($parent[0] /* gets HTMLElement */))
       })
-  })
 
+      // Own implementation. Only includes tabindex 0 and 1
+      // TODO: Throw error if element has tabindex greater than 1 or give option to include those with boolean?
+      // return cy.wrap(parent).
+      // find('a[href], area[href], input:not([type="hidden"]), select, textarea, button, iframe, object, embed, [tabindex="0"], [contenteditable], audio[controls], video[controls], summary, [tabindex^="0"], [tabindex^="1"]')
+      // .not('[tabindex=-1], [disabled], :hidden, [aria-hidden]')
+  })
 
 export {}
 
 declare global {
   namespace Cypress {
     interface Chainable {
-        modalCanBeClosedByButton(modalOpenElementSelector: Chainable<JQuery<HTMLElement>>): Chainable<void>
-        modalCanBeClosedByEsc(modalOpener: Chainable<JQuery<HTMLElement>>): Chainable<void>
-        modalHasAFocusTrap(modalOpener: Chainable<JQuery<HTMLElement>>): Chainable<void>
+        dialogCanBeClosedByButton(modalOpenElementSelector: Chainable<JQuery<HTMLElement>>): Chainable<void>
+        dialogCanBeClosedByEsc(modalOpener: Chainable<JQuery<HTMLElement>>): Chainable<void>
+        dialogHasAFocusTrap(): Chainable<void>
         pageHasNoFocusTrap(): Chainable<void>
         getFocusableElements(): Chainable<JQuery<HTMLElement>>
-        getFocusableElements2(parent: Chainable<JQuery<HTMLElement>>): Chainable<JQuery<HTMLElement>>
-        getFocusableElements3(): Chainable<JQuery<HTMLElement>>
 //       login(email: string, password: string): Chainable<void>
 //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
 //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
