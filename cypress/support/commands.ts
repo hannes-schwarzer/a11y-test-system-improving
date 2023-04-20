@@ -129,67 +129,29 @@ Cypress.Commands.add('modalHasAFocusTrap', (modalOpener) => {
     })
 })
 
-Cypress.Commands.add('pageHasNoFocusTrap', () => {
-    // cy.get('body').find('a[href], area[href], input:not([type="hidden"]), select, textarea, button, iframe, object, embed, [tabindex="0"], [contenteditable], audio[controls], video[controls], summary, [tabindex^="0"], [tabindex^="1"]')
-    // .not('[tabindex=-1], [disabled], :hidden, [aria-hidden]').as('focusableElements')
-
-    // cy.getFocusableElements(cy.get('body')).as('focusableElements')
-    
-    // working
+Cypress.Commands.add('pageHasNoFocusTrap', () => {    
+    // working using own function
     // cy.get('body').getFocusableElements().as('focusableElements')
-
-        // working:
     // getFocusableElements2(cy.get('body')).as('focusableElements')
 
-    // working:
+    // working, uses tabbable:
     getFocusableElements4(cy.get('body')).as('focusableElements')
 
-    // not working:
-    // cy.getFocusableElements2(cy.get('body')).as('focusableElements')
-
-    // not working
-    // cy.get('body').getFocusableElements3().as('focusableElements')
-
-        // cy.get('body').then(() => {
-          // cy.getFocusableElements(cy.get('body')).as('focusableElements')
-    // })
-
-        // cy.get('body').then(() => {
-          // cy.getFocusableElements(cy.get('body')).then((el) => {
-            // cy.wrap(el).as('focusedElements')
-          // })
-    // })
-
-    // working:
-    // cy.getFocusableElements(cy.get('body')).then((elements) => {
-      // cy.wrap(elements).as('focusedElements')
-    // })
-
-
-//  cy.get('#my-parent-element').then(($parent) => {
-    // cy.getFocusableElements(Cypress.$($parent)).each(($el) => {
-      // Do something with each focusable element
-    // })})
-    
     // if we visit an element twice there would be an error, too
-    // if we don't loop through the document there would be an error, too
+    // if we don't loop through the whole document there would be an error, too
 
     cy.get('body').tab() // move focus to first element on page
 
     cy.get('@focusableElements').each(($focusableElement) => {
-      // every loop, tab one element further
       cy.focused().then($focusedElement => {
-        // expect($focused.get(0)).to.deep.equal($element.get(0))
-        // expect($focused[0] === $element[0]).to.be.true;
         expect($focusedElement[0]).to.deep.equal($focusableElement[0])
-        // expect($focused[0]).to.equal($element[0])
-        // expect($focused[0]).to.eql($element[0])
-        // expect($focused[0]).to.eq($element[0])
       })
+
+      // every loop, tab one element further
       cy.focused().tab()
     })
 
-    // one more tab should result in tabbing to the first tabbable element again
+    // one more tab should result in tabbing to the first tabbable element again -> all elements have been reached
     cy.get('@focusableElements').eq(0).then($firstElement => {
       cy.focused().then($focusedElement => {
         expect($firstElement[0]).to.deep.equal($focusedElement[0])
