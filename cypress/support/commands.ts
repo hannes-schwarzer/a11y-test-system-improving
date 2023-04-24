@@ -70,24 +70,12 @@ Cypress.Commands.add('dialogCanBeClosedByButton', (modalOpenElementSelector) => 
     // cy.log('Success!')
 })
 
-Cypress.Commands.add('dialogCanBeClosedByEsc', (modalOpener) => {
-    // there should be no open dialogs
-    // TODO: Later change to 'dialog' instead of '.lightbox'
-    // cy.get('.lightbox').should('not.be.visible')
-    cy.get('dialog').should('not.be.visible')
+Cypress.Commands.add('dialogClosableByEsc', {prevSubject: 'element'}, (dialog) => {
+    cy.wrap(dialog).as('dialog').should('be.visible')
 
-    // open modal
-    modalOpener.click()
+    cy.realType('{esc}')
 
-    // dialog should now be visible
-    // TODO: Change lightbox to dialog. Only assign alias here as we can not be sure that before the element exists in the DOM.
-    // cy.get('.lightbox').as('dialog').should('be.visible')
-    cy.get('dialog').as('dialog').should('be.visible')
-
-    cy.focused().type('{esc}')
-
-    // TODO: Later change to 'dialog' instead of '.lightbox'
-    cy.get('.lightbox').should('not.be.visible')
+    cy.get('@dialog').should('not.be.visible')
 })
 
 Cypress.Commands.add('dialogHasAFocusTrap', {prevSubject: 'element'}, (dialog) => {
@@ -158,7 +146,7 @@ declare global {
   namespace Cypress {
     interface Chainable {
         dialogCanBeClosedByButton(modalOpenElementSelector: Chainable<JQuery<HTMLElement>>): Chainable<void>
-        dialogCanBeClosedByEsc(modalOpener: Chainable<JQuery<HTMLElement>>): Chainable<void>
+        dialogClosableByEsc(): Chainable<void>
         dialogHasAFocusTrap(): Chainable<void>
         pageHasNoFocusTrap(): Chainable<void>
         getFocusableElements(): Chainable<JQuery<HTMLElement>>
