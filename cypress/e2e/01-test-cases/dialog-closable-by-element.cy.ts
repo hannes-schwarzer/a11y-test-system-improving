@@ -1,3 +1,7 @@
+beforeEach(() => {
+    cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
+})
+
 // expect to fail
 it('should close modal with button and keyboard', () => {
     cy.visit('http://localhost:3000/wcag/operable/keyboard-accessible/keyboard')

@@ -4,6 +4,20 @@ beforeEach(() => {
     cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
 })
 
+// expect to fail
+it('dialog has a focus trap', () => {
+    cy.visit('https://alphagov.github.io/accessibility-tool-audit/tests/keyboard-access-lightbox-focus-is-not-retained-within-the-lightbox.html')
+    
+    cy.get('a.open-lightbox-not-focused').click()
+
+    cy.get('div.lightbox.not-focused').as('dialog').should('be.visible')
+
+    cy.focused().tab() // needs to tab to first element in dialog because it is no native dialog element
+
+    cy.get('@dialog').dialogRetainsFocus();
+})
+
+
 it('dialog has a focus trap', () => {
     cy.visit('https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/')
     
@@ -11,7 +25,7 @@ it('dialog has a focus trap', () => {
 
     cy.get('#dialog1').as('dialog').should('be.visible')
 
-    cy.get('@dialog').dialogHasAFocusTrap();
+    cy.get('@dialog').dialogRetainsFocus();
 })
 
 it('dialog has a focus trap', () => {
@@ -24,5 +38,5 @@ it('dialog has a focus trap', () => {
     cy.get('.modal-content').as('dialog').should('be.visible')
     cy.wait(1000)
 
-    cy.get('@dialog').dialogHasAFocusTrap();
+    cy.get('@dialog').dialogRetainsFocus();
 })

@@ -43,6 +43,9 @@ Cypress.Commands.add('dialogClosableByElement', {prevSubject: 'element'}, (dialo
           return false
         }
 
+        // TODO: before check if it is a link which redirects you to a different page?
+        // plus if button opens something it is not working either
+
         cy.wrap($el).click().then(() => {
            if(cy.get('@dialog').should('not.exist') || cy.get('@dialog').should('not.be.visible')) {
           // end loop
@@ -66,7 +69,7 @@ Cypress.Commands.add('dialogClosableByEsc', {prevSubject: 'element'}, (dialog) =
     cy.get('@dialog').should('not.be.visible')
 })
 
-Cypress.Commands.add('dialogHasAFocusTrap', {prevSubject: 'element'}, (dialog) => {
+Cypress.Commands.add('dialogRetainsFocus', {prevSubject: 'element'}, (dialog) => {
     cy.wrap(dialog).getFocusableElements().as('focusableElements')
 
     cy.get('@focusableElements').each(($focusableElement) => {
@@ -135,7 +138,7 @@ declare global {
     interface Chainable {
         dialogClosableByElement(): Chainable<void>
         dialogClosableByEsc(): Chainable<void>
-        dialogHasAFocusTrap(): Chainable<void>
+        dialogRetainsFocus(): Chainable<void>
         pageHasNoFocusTrap(): Chainable<void>
         getFocusableElements(): Chainable<JQuery<HTMLElement>>
 //       login(email: string, password: string): Chainable<void>
