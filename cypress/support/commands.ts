@@ -29,45 +29,33 @@ import { tabbable } from 'tabbable'
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // function needs element which opens the modal, plus an identifier of the modal
-Cypress.Commands.add('dialogCanBeClosedByButton', (modalOpenElementSelector) => {
-    // there should be no open dialogs
-    // TODO: Later change to 'dialog' instead of '.lightbox'
-    cy.get('.lightbox').should('not.be.visible')
+Cypress.Commands.add('dialogClosableByElement', {prevSubject: 'element'}, (dialog) => {
+    cy.wrap(dialog).as('dialog').should('be.visible')
 
-    // open modal
-    // cy.get(`${modalOpenElementSelector}`).click()
-    modalOpenElementSelector.click()
+    cy.get('@dialog').getFocusableElements().as('focusableElements')
 
-    // there should be (only) one open dialog
-    // TODO: Change lightbox to dialog. Only assign alias here as we can not be sure that before the element exists in the DOM.
-    cy.get('.lightbox').as('dialog').should('be.visible')
-    // TODO: What if there is more than one dialog on the DOM?
-    cy.get('@dialog').should('have.length', 1)
+    let dialogClosed = false;
 
-    // get first focusable element
-    cy.focused().tab().as('firstFocusableElement'); // without tab the focus is still on the open link
+    cy.get('@focusableElements').each(($el, index, $list) => {
+      cy.then(() => 
+      {
+        if(dialogClosed) {
+          return false
+        }
 
-    // TODO: tab through all focusable elements, click each one and see if the dialog is gone
-    // TODO: Check if the location still is the same
-    
-    // do {
-        cy.focused().tab().as('currentFocusedElement');
-        cy.get('@currentFocusedElement').click()
-        cy.go('back')
+        cy.wrap($el).click().then(() => {
+           if(cy.get('@dialog').should('not.exist') || cy.get('@dialog').should('not.be.visible')) {
+          // end loop
+          dialogClosed = true
+        }
+      })
 
-        cy.focused().tab().as('currentFocusedElement');
-        cy.get('@currentFocusedElement').click()
+        // every loop, tab one element further
+        cy.focused().tab()
+      })
+    })
 
-    //     debugger;
-    // } while (cy.get('dialog').should('be.visible') && cy.get('@currentFocusedElement').should('not.equal', cy.get('@firstFocusableElement')))
-
-    // TODO: throw error if we get to the first element for the second time (better: any element for the second time)
-    // if(cy.get('@firstFocusableElement') === cy.get('@currentFocusedElement')) {
-    //     cy.log('Looped through all focusable elements in the dialog. \nThe dialog can not be closed with the keyboard. \nMake sure there is a button to close the dialog and it is accessible by keyboard.')
-    //     expect(cy.get('@firstFocusableElement')).not.to.equal(cy.get('@currentFocusedElement'))
-    // }
-
-    // cy.log('Success!')
+    cy.get('@dialog').should('not.exist') || cy.get('@dialog').should('not.be.visible')
 })
 
 Cypress.Commands.add('dialogClosableByEsc', {prevSubject: 'element'}, (dialog) => {
@@ -145,7 +133,7 @@ export {}
 declare global {
   namespace Cypress {
     interface Chainable {
-        dialogCanBeClosedByButton(modalOpenElementSelector: Chainable<JQuery<HTMLElement>>): Chainable<void>
+        dialogClosableByElement(): Chainable<void>
         dialogClosableByEsc(): Chainable<void>
         dialogHasAFocusTrap(): Chainable<void>
         pageHasNoFocusTrap(): Chainable<void>

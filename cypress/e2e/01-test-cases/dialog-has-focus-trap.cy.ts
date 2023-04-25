@@ -12,7 +12,7 @@ it('dialog has a focus trap', () => {
     cy.get('#dialog1').as('dialog').should('be.visible')
 
     cy.get('@dialog').dialogHasAFocusTrap();
-    })
+})
 
 it('dialog has a focus trap', () => {
     cy.visit('https://www.fonic.de/prepaid-tarife')
@@ -25,4 +25,4 @@ it('dialog has a focus trap', () => {
     cy.wait(1000)
 
     cy.get('@dialog').dialogHasAFocusTrap();
-    })
+})
