@@ -94,6 +94,23 @@ Cypress.Commands.add('dialogRetainsFocus', {prevSubject: 'element'}, (dialog) =>
     })
 })
 
+Cypress.Commands.add('dialogGetsFocus', {prevSubject: 'element'}, (dialog) => {
+  // focus should be on an element inside the dialog (not on the dialog itself)
+
+  // get all elements
+  cy.wrap(dialog).getFocusableElements().as('focusableElements')
+
+  let focusableElements: HTMLElement[] = []
+
+    cy.get('@focusableElements', {log: false}).each(($focusableElement) => {
+      focusableElements.push($focusableElement[0])
+  }).then(() => {
+    cy.focused({log: false}).then(($focusedElement) => {
+      cy.wrap(focusableElements, {log: false}).should('include', $focusedElement[0])
+    })
+  })
+})
+
 Cypress.Commands.add('pageHasNoFocusTrap', () => {    
     cy.get('body').getFocusableElements().as('focusableElements')
 
@@ -139,6 +156,7 @@ declare global {
         dialogClosableByElement(): Chainable<void>
         dialogClosableByEsc(): Chainable<void>
         dialogRetainsFocus(): Chainable<void>
+        dialogGetsFocus(): Chainable<void>
         pageHasNoFocusTrap(): Chainable<void>
         getFocusableElements(): Chainable<JQuery<HTMLElement>>
 //       login(email: string, password: string): Chainable<void>
