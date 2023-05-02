@@ -148,6 +148,10 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
       // .not('[tabindex=-1], [disabled], :hidden, [aria-hidden]')
   })
 
+  Cypress.Commands.add('noEmptyParagraphs', () => {
+    cy.get('body').find('p:empty').should('have.length', 0)
+  })
+
 export {}
 
 declare global {
@@ -159,6 +163,7 @@ declare global {
         dialogGetsFocus(): Chainable<void>
         pageHasNoFocusTrap(): Chainable<void>
         getFocusableElements(): Chainable<JQuery<HTMLElement>>
+        noEmptyParagraphs(): Chainable<void>
 //       login(email: string, password: string): Chainable<void>
 //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
 //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
