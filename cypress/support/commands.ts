@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 import '@testing-library/cypress/add-commands'
 import { tabbable } from 'tabbable'
+import {PNG} from 'pngjs'
 
 // ***********************************************
 // This example commands.ts shows you how to
@@ -45,6 +46,8 @@ Cypress.Commands.add('dialogClosableByElement', {prevSubject: 'element'}, (dialo
 
         // TODO: before check if it is a link which redirects you to a different page?
         // plus if button opens something it is not working either
+        // TODO: Maybe: Only click on buttons without submit. But if dialog open and close is used with URL parameters that is a false positive then.
+        // button nicht aria-haspopup
 
         cy.wrap($el).click().then(() => {
            if(cy.get('@dialog').should('not.exist') || cy.get('@dialog').should('not.be.visible')) {
@@ -149,7 +152,48 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
   })
 
   Cypress.Commands.add('noEmptyParagraphs', () => {
+    // TODO: Include paragraphs with whitespace
     cy.get('body').find('p:empty').should('have.length', 0)
+  })
+
+  Cypress.Commands.add('elementHasVisibleFocus', {prevSubject: 'element'}, (element) => {
+    const pixelmatch = require('pixelmatch')
+
+    // get all focusableElements
+    cy.wrap(element).getFocusableElements().as('focusableElements')
+    cy.wrap(element).as('element')
+
+    // screenshot from unfocused element
+    cy.get('@element').screenshot('unfocused', {padding: 10, overwrite: true})
+
+    // screenshot from focused element
+    cy.get('@element').focus()
+    cy.focused().tab({shift: true})
+    cy.focused().tab()
+    cy.get('@element').screenshot('focused', {padding: 10, overwrite: true})
+
+    // inspired from https://gambini.me/en/blog/comparing-website-screenshots-with-cypress-and-pixelmatch
+
+    cy.fixture('../screenshots/focused.png', 'base64').then(focusedScreenshot => {
+        cy.fixture('../screenshots/unfocused.png', 'base64').then(unfocusedScreenshot => {
+            const img1 = PNG.sync.read(Buffer.from(focusedScreenshot, 'base64'))
+            const img2 = PNG.sync.read(Buffer.from(unfocusedScreenshot, 'base64'))
+
+            const {width, height} = img1;
+            const diff = new PNG({width, height})
+
+            console.log(`image 1 dimensions: ${width} x ${height}`)
+            console.log(`image 2 dimensions: ${img2.width} x ${img2.height}`)
+
+            const numDiffPixels = pixelmatch(img1.data, img2.data, diff.data, width, height, {treshold: 0.1})
+
+            const diffPercent = (numDiffPixels / (width * height) * 100)
+
+            cy.log(`Found a ${diffPercent.toFixed(2)}% pixel difference`)
+
+            expect(diffPercent).not.equal(0)
+        })
+    })
   })
 
 export {}
@@ -164,6 +208,7 @@ declare global {
         pageHasNoFocusTrap(): Chainable<void>
         getFocusableElements(): Chainable<JQuery<HTMLElement>>
         noEmptyParagraphs(): Chainable<void>
+        elementHasVisibleFocus(): Chainable<void>
 //       login(email: string, password: string): Chainable<void>
 //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
 //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
