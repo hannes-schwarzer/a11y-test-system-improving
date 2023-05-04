@@ -159,31 +159,28 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
   Cypress.Commands.add('elementHasVisibleFocus', {prevSubject: 'element'}, (element) => {
     const pixelmatch = require('pixelmatch')
 
-    // get all focusableElements
-    cy.wrap(element).getFocusableElements().as('focusableElements')
     cy.wrap(element).as('element')
 
     // screenshot from unfocused element
-    cy.get('@element').screenshot('unfocused', {padding: 10, overwrite: true})
+    // make sure element is not focused
+    cy.get('@element', {log: false}).blur({force: true, log: false})
+    cy.get('@element', {log: false}).screenshot('unfocused', {padding: 5, overwrite: true})
 
-    // screenshot from focused element
-    cy.get('@element').focus()
-    cy.focused().tab({shift: true})
-    cy.focused().tab()
-    cy.get('@element').screenshot('focused', {padding: 10, overwrite: true})
+    // move real focus with visual identification to element and make screenshot
+    cy.get('@element', {log: false}).focus({log: false})
+    cy.realPress(["Shift", "Tab"], {log: false})
+    cy.realPress("Tab", {log: false})
+    cy.get('@element', {log: false}).screenshot('focused', {padding: 5, overwrite: true})
 
     // inspired from https://gambini.me/en/blog/comparing-website-screenshots-with-cypress-and-pixelmatch
 
-    cy.fixture('../screenshots/focused.png', 'base64').then(focusedScreenshot => {
-        cy.fixture('../screenshots/unfocused.png', 'base64').then(unfocusedScreenshot => {
+    cy.readFile('./cypress/screenshots/focused.png', 'base64', {log: false}).then(focusedScreenshot => {
+        cy.readFile('./cypress/screenshots/unfocused.png', 'base64', {log: false}).then(unfocusedScreenshot => {
             const img1 = PNG.sync.read(Buffer.from(focusedScreenshot, 'base64'))
             const img2 = PNG.sync.read(Buffer.from(unfocusedScreenshot, 'base64'))
 
             const {width, height} = img1;
             const diff = new PNG({width, height})
-
-            console.log(`image 1 dimensions: ${width} x ${height}`)
-            console.log(`image 2 dimensions: ${img2.width} x ${img2.height}`)
 
             const numDiffPixels = pixelmatch(img1.data, img2.data, diff.data, width, height, {treshold: 0.1})
 
@@ -191,9 +188,21 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
 
             cy.log(`Found a ${diffPercent.toFixed(2)}% pixel difference`)
 
-            expect(diffPercent).not.equal(0)
+            expect(Math.round(diffPercent)).not.equal(0)
         })
     })
+  })
+
+  Cypress.Commands.add('elementsHaveVisibleFocus', {prevSubject: 'element'}, (element, excludedElements?) => {
+    cy.wrap(element, {log: false}).as('elementRoot')
+
+    // get focusable Elements
+    cy.get('@elementRoot', {log: false}).getFocusableElements().not(excludedElements).as('focusableElements')
+
+    cy.get('@focusableElements').each(($focusableElement) => {
+      cy.wrap($focusableElement, {log: false}).elementHasVisibleFocus()
+    })
+
   })
 
 export {}
@@ -209,6 +218,13 @@ declare global {
         getFocusableElements(): Chainable<JQuery<HTMLElement>>
         noEmptyParagraphs(): Chainable<void>
         elementHasVisibleFocus(): Chainable<void>
+          /**
+           * Check all tabbable elements within the selected element on having a visible focus state which is different than unfocused
+          * @param {string} excludedElements (optional) Selector for elements to exclude
+          * @example
+          * cy.get('body').elementsHaveVisibleFocus('a.skip-link')
+          */
+        elementsHaveVisibleFocus(excludedElements?: string): Chainable<void>
 //       login(email: string, password: string): Chainable<void>
 //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
 //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
