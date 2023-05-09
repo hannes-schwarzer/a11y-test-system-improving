@@ -152,8 +152,10 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
   })
 
   Cypress.Commands.add('noEmptyParagraphs', () => {
-    // TODO: Include paragraphs with whitespace
     cy.get('body').find('p:empty').should('have.length', 0)
+    cy.get('body').find('p').invoke('text').then((text) => {
+      expect(text.trim()).not.equal('')
+    })
   })
 
   Cypress.Commands.add('elementHasVisibleFocus', {prevSubject: 'element'}, (element) => {
