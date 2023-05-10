@@ -151,9 +151,9 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
       // .not('[tabindex=-1], [disabled], :hidden, [aria-hidden]')
   })
 
-  Cypress.Commands.add('noEmptyParagraphs', () => {
-    cy.get('body').find('p:empty').should('have.length', 0)
-    cy.get('body').find('p').invoke('text').then((text) => {
+  Cypress.Commands.add('noEmptyParagraphs', {prevSubject: 'element'}, (subject) => {
+    cy.wrap(subject).find('p:empty').should('have.length', 0)
+    cy.wrap(subject).find('p').invoke('text').then((text) => {
       expect(text.trim()).not.equal('')
     })
   })
@@ -207,6 +207,40 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
 
   })
 
+  Cypress.Commands.add('pageHasSkipLink', () => {
+    //• Check that a link is the first focusable control on the Web page.
+    // get first focusableElement of page and check that it is a link
+    cy.get('body').getFocusableElements().eq(0).as('firstElement')
+    // TODO: Better just tab to first element and then check?
+    cy.get('@firstElement').should('have.attr', 'href').and('match', /#.*/)
+    cy.get('@firstElement').invoke('prop', 'tagName').should('eq', 'A')
+
+    //• Check that the description of the link communicates that it links to the main content.
+    // check name of link?
+
+    //• Check that the link is either always visible or visible when it has keyboard focus. 
+    // element should be visible when in focus -> Set focus and then it should be visible
+    cy.get('body').tab()
+    
+    cy.focused().then(($focusedElement) => {
+      cy.get('@firstElement').then(($firstElement) => {
+        expect($focusedElement.get(0)).to.deep.equal($firstElement.get(0))
+      })
+    })
+
+    cy.get('@firstElement').should('be.visible').and('not.be.hidden')
+
+    //• Check that activating the link moves the focus to the main content. 
+    // click link, then expect parent to be 'main'
+    //• Check that after activating the link, the keyboard focus has moved to the main content.
+    // also check from focused element -> can do in one, as when from focused there is main it's okay
+
+    cy.focused().realType('{enter}')
+    cy.focused().scrollIntoView()
+    cy.realPress('Tab')
+    cy.focused().parentsUntil('main').eq(-1).parent().invoke('prop', 'tagName').should('eq', 'MAIN')
+  })
+
 export {}
 
 declare global {
@@ -227,6 +261,7 @@ declare global {
           * cy.get('body').elementsHaveVisibleFocus('a.skip-link')
           */
         elementsHaveVisibleFocus(excludedElements?: string): Chainable<void>
+        pageHasSkipLink(): Chainable<void>
 //       login(email: string, password: string): Chainable<void>
 //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
 //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
