@@ -208,36 +208,28 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
   })
 
   Cypress.Commands.add('pageHasSkipLink', () => {
-    //• Check that a link is the first focusable control on the Web page.
-    // get first focusableElement of page and check that it is a link
+    // Check that a link is the first focusable control on the page with a local ref
     cy.get('body').getFocusableElements().eq(0).as('firstElement')
     // TODO: Better just tab to first element and then check?
     cy.get('@firstElement').should('have.attr', 'href').and('match', /#.*/)
     cy.get('@firstElement').invoke('prop', 'tagName').should('eq', 'A')
 
-    //• Check that the description of the link communicates that it links to the main content.
-    // check name of link?
-
-    //• Check that the link is either always visible or visible when it has keyboard focus. 
-    // element should be visible when in focus -> Set focus and then it should be visible
     cy.get('body').tab()
     
+    // TODO: Necessary? Check that the actual first tabbed element is the same as the one collected from getFocusableElements
     cy.focused().then(($focusedElement) => {
       cy.get('@firstElement').then(($firstElement) => {
         expect($focusedElement.get(0)).to.deep.equal($firstElement.get(0))
       })
     })
 
+    // link should be visible when in focus
     cy.get('@firstElement').should('be.visible').and('not.be.hidden')
 
-    //• Check that activating the link moves the focus to the main content. 
-    // click link, then expect parent to be 'main'
-    //• Check that after activating the link, the keyboard focus has moved to the main content.
-    // also check from focused element -> can do in one, as when from focused there is main it's okay
-
+    // Check that activating the link moves the focus to the main content
     cy.focused().realType('{enter}')
-    cy.focused().scrollIntoView()
     cy.realPress('Tab')
+    cy.focused().scrollIntoView()
     cy.focused().parentsUntil('main').eq(-1).parent().invoke('prop', 'tagName').should('eq', 'MAIN')
   })
 
