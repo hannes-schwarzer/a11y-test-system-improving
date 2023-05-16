@@ -33,7 +33,7 @@ import {PNG} from 'pngjs'
 Cypress.Commands.add('dialogClosableByElement', {prevSubject: 'element'}, (dialog) => {
     cy.wrap(dialog).as('dialog').should('be.visible')
 
-    cy.get('@dialog').getFocusableElements().as('focusableElements')
+    cy.get('@dialog').getTabbableElements().as('focusableElements')
 
     let dialogClosed = false;
 
@@ -73,7 +73,7 @@ Cypress.Commands.add('dialogClosableByEsc', {prevSubject: 'element'}, (dialog) =
 })
 
 Cypress.Commands.add('dialogRetainsFocus', {prevSubject: 'element'}, (dialog) => {
-    cy.wrap(dialog).getFocusableElements().as('focusableElements')
+    cy.wrap(dialog).getTabbableElements().as('focusableElements')
 
     cy.get('@focusableElements').each(($focusableElement) => {
       cy.focused().then($focusedElement => {
@@ -101,7 +101,7 @@ Cypress.Commands.add('dialogGetsFocus', {prevSubject: 'element'}, (dialog) => {
   // focus should be on an element inside the dialog (not on the dialog itself)
 
   // get all elements
-  cy.wrap(dialog).getFocusableElements().as('focusableElements')
+  cy.wrap(dialog).getTabbableElements().as('focusableElements')
 
   let focusableElements: HTMLElement[] = []
 
@@ -115,7 +115,7 @@ Cypress.Commands.add('dialogGetsFocus', {prevSubject: 'element'}, (dialog) => {
 })
 
 Cypress.Commands.add('pageHasNoFocusTrap', () => {    
-    cy.get('body').getFocusableElements().as('focusableElements')
+    cy.get('body').getTabbableElements().as('focusableElements')
 
     // if we visit an element twice there would be an error
     // if we don't loop through the whole document there would be an error
@@ -139,7 +139,7 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
     })
 })
 
-    Cypress.Commands.add('getFocusableElements', {prevSubject: 'element'}, (parent /* :JQuery<HTMLElement> */) => {
+    Cypress.Commands.add('getTabbableElements', {prevSubject: 'element'}, (parent /* :JQuery<HTMLElement> */) => {
       return cy.wrap(parent).then(($parent /* JQuery<HTMLElement */) => {
         cy.wrap(tabbable($parent[0] /* gets HTMLElement */))
       })
@@ -166,18 +166,18 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
     // screenshot from unfocused element
     // make sure element is not focused
     cy.get('@element', {log: false}).blur({force: true, log: false})
-    cy.get('@element', {log: false}).screenshot('unfocused', {padding: 5, overwrite: true})
+    cy.get('@element', {log: false}).screenshot('focusTest/unfocused', {padding: 5, overwrite: true})
 
     // move real focus with visual identification to element and make screenshot
     cy.get('@element', {log: false}).focus({log: false})
     cy.realPress(["Shift", "Tab"], {log: false})
     cy.realPress("Tab", {log: false})
-    cy.get('@element', {log: false}).screenshot('focused', {padding: 5, overwrite: true})
+    cy.get('@element', {log: false}).screenshot('focusTest/focused', {padding: 5, overwrite: true})
 
     // inspired from https://gambini.me/en/blog/comparing-website-screenshots-with-cypress-and-pixelmatch
 
-    cy.readFile('./cypress/screenshots/focused.png', 'base64', {log: false}).then(focusedScreenshot => {
-        cy.readFile('./cypress/screenshots/unfocused.png', 'base64', {log: false}).then(unfocusedScreenshot => {
+    cy.readFile('./cypress/screenshots/focusTest/focused.png', 'base64', {log: false}).then(focusedScreenshot => {
+        cy.readFile('./cypress/screenshots/focusTest/unfocused.png', 'base64', {log: false}).then(unfocusedScreenshot => {
             const img1 = PNG.sync.read(Buffer.from(focusedScreenshot, 'base64'))
             const img2 = PNG.sync.read(Buffer.from(unfocusedScreenshot, 'base64'))
 
@@ -199,7 +199,7 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
     cy.wrap(element, {log: false}).as('elementRoot')
 
     // get focusable Elements
-    cy.get('@elementRoot', {log: false}).getFocusableElements().not(excludedElements).as('focusableElements')
+    cy.get('@elementRoot', {log: false}).getTabbableElements().not(excludedElements).as('focusableElements')
 
     cy.get('@focusableElements').each(($focusableElement) => {
       cy.wrap($focusableElement, {log: false}).elementHasVisibleFocus()
@@ -207,9 +207,9 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
 
   })
 
-  Cypress.Commands.add('pageHasSkipLink', () => {
+  Cypress.Commands.add('firstLinkIsSkipLink', () => {
     // Check that a link is the first focusable control on the page with a local ref
-    cy.get('body').getFocusableElements().eq(0).as('firstElement')
+    cy.get('body', {log: false}).getTabbableElements().eq(0, {log: false}).as('firstElement')
     // TODO: Better just tab to first element and then check?
     cy.get('@firstElement').should('have.attr', 'href').and('match', /#.*/)
     cy.get('@firstElement').invoke('prop', 'tagName').should('eq', 'A')
@@ -217,19 +217,23 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
     cy.get('body').tab()
     
     // TODO: Necessary? Check that the actual first tabbed element is the same as the one collected from getFocusableElements
-    cy.focused().then(($focusedElement) => {
-      cy.get('@firstElement').then(($firstElement) => {
+    cy.focused({log: false}).then(($focusedElement) => {
+      cy.get('@firstElement', {log: false}).then(($firstElement) => {
         expect($focusedElement.get(0)).to.deep.equal($firstElement.get(0))
       })
     })
 
     // link should be visible when in focus
     cy.get('@firstElement').should('be.visible').and('not.be.hidden')
+  })
 
-    // Check that activating the link moves the focus to the main content
-    cy.focused().realType('{enter}')
+  Cypress.Commands.add('skipLinkMovesFocusToMain', {prevSubject: 'element'}, (subject) => {
+    // link should be visible when in focus
+    cy.wrap(subject).as('skipLink')
+    cy.get('@skipLink').scrollIntoView({log: false}).should('be.visible').and('not.be.hidden')
+
+    cy.get('@skipLink').realType('{enter}')
     cy.realPress('Tab')
-    cy.focused().scrollIntoView()
     cy.focused().parentsUntil('main').eq(-1).parent().invoke('prop', 'tagName').should('eq', 'MAIN')
   })
 
@@ -238,22 +242,96 @@ export {}
 declare global {
   namespace Cypress {
     interface Chainable {
+          /**
+          * Checks that there is an element which can close the dialog by clicking on it.
+          * Dialog must be visible and opened.
+          * EXPERIMENTAL/not reliable! Does not work if another element gets opened or a link moves focus.
+          * @example
+          * cy.get('@dialog').dialogClosableByElement()
+          */        
         dialogClosableByElement(): Chainable<void>
+          /**
+          * Checks that the dialog is closable by pressing Escape.
+          * Dialog must be visible and opened.
+          * @example
+          * cy.get('@dialog').dialogClosableByEsc()
+          */        
         dialogClosableByEsc(): Chainable<void>
+          /**
+          * Checks that the focus stays within the dialog by tabbing through all tabbable elements within the dialog.
+          * Dialog must be visible and opened.
+          * @example
+          * cy.get('@dialog').dialogRetainsFocus()
+          */
         dialogRetainsFocus(): Chainable<void>
+          /**
+          * Checks that the focus moves to the dialog after opening
+          * by checking if the currently focused element is within the tabbable elements of the dialog.
+          * Dialog must be visible and opened.
+          * @example
+          * cy.get('@dialog').dialogGetsFocus()
+          */
         dialogGetsFocus(): Chainable<void>
+          /**
+          * Checks that there are no focus traps by tabbing through all elements on the webpage.
+          * Expects to reach every element on the page once and in order of tabbable elements.
+          * @example
+          * cy.pageHasNoFocusTrap()
+          */
         pageHasNoFocusTrap(): Chainable<void>
-        getFocusableElements(): Chainable<JQuery<HTMLElement>>
+          /**
+          * Returns all tabbable elements within the provided element.
+          * @example
+          * cy.get('body').getTabbableElements().as('tabbableElements')
+          */
+        getTabbableElements(): Chainable<JQuery<HTMLElement>>
+          /**
+          * Checks that there are no empty paragraphs.
+          * Either completely empty or just whitespace.
+          * @example
+          * // code
+          * <p></p>
+          * <p>   </p>
+          * 
+          * // Cypress
+          * cy.noEmptyParagraphs()
+          */
         noEmptyParagraphs(): Chainable<void>
+          /**
+          * Checks a single element on having a visible focus state which is different than unfocused.
+          * Saves a screenshot of the element in unfocused and focused state.
+          * @example
+          * cy.get('button.buy').elementHasVisibleFocus()
+          */
         elementHasVisibleFocus(): Chainable<void>
           /**
-           * Check all tabbable elements within the selected element on having a visible focus state which is different than unfocused
+          * Check all tabbable elements within the selected element on having a visible focus state which is different than unfocused
+          * Saves a screenshot of the element checked last in unfocused and focused state.
           * @param {string} excludedElements (optional) Selector for elements to exclude
           * @example
           * cy.get('body').elementsHaveVisibleFocus('a.skip-link')
           */
         elementsHaveVisibleFocus(excludedElements?: string): Chainable<void>
-        pageHasSkipLink(): Chainable<void>
+          /**
+          * Checks that the first focusable element is a link with a local ref.
+          * Gets the first element by tabbing once inside the body.
+          * The link must be visible after tabbing to it.
+          * @example
+          * // code
+          * <a class="skip-link" href="#main">Skip to main content</a>
+          * 
+          * // Cypress
+          * cy.firstLinkIsSkipLink()
+          */
+        firstLinkIsSkipLink(): Chainable<void>
+          /**
+          * Checks that selecting the skip link moves focus to main (by pressing enter).
+          * A chained command, one needs to select the skip-link first.
+          * The link must be visible.
+          * @example
+          * cy.get('a.skip-link').skipLinkMovesFocusToMain()
+          */
+        skipLinkMovesFocusToMain(): Chainable<void>
 //       login(email: string, password: string): Chainable<void>
 //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
 //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>

@@ -3,38 +3,54 @@ it('has skip link', () => {
     cy.findByRole('button', {name: 'Accept additional cookies'}).click()
     cy.findByRole('button', {name: 'Hide this message'}).click()
 
-    cy.pageHasSkipLink()
+    cy.firstLinkIsSkipLink()
+    cy.get('body').tab()
+    cy.focused().skipLinkMovesFocusToMain()
 })
 
 it('has skip link', () => {
     cy.visit('http://localhost:3000/')
 
-    cy.pageHasSkipLink()
+    cy.firstLinkIsSkipLink()
+    cy.get('body').tab()
+    cy.focused().skipLinkMovesFocusToMain()
 })
 
 it('has skip link', () => {
     cy.visit('https://www.h-ka.de/')
     cy.findByRole('button', {name: 'Speichern und schließen'}).click()
 
-    cy.pageHasSkipLink()
+    cy.firstLinkIsSkipLink()
+    cy.get('body').tab()
+    cy.focused().skipLinkMovesFocusToMain()
 })
 
 it('has no skip link', () => {
     cy.visit('https://www.fonic.de/')
-    cy.wait(1000)
+    cy.wait(1000) // takes time to fully load page w/o fully rendering
 
-    cy.pageHasSkipLink()
+    cy.firstLinkIsSkipLink()
+})
+
+it('has no skip link', () => {
+    cy.visit('http://localhost:3000/wcag/operable/navigable/bypass-blocks')
+
+    cy.firstLinkIsSkipLink()
 })
 
 it('has skip link but not to main', () => {
     cy.visit('https://www.stadtwerke-karlsruhe.de/de/')
     cy.findByRole('button', {name: 'Auswahl bestätigen'}).click()
 
-    cy.pageHasSkipLink()
+    cy.firstLinkIsSkipLink()
+    cy.get('body').tab()
+    cy.focused().skipLinkMovesFocusToMain()
 })
 
-it('has no skip link', () => {
-    cy.visit('http://localhost:3000/wcag/operable/navigable/bypass-blocks')
+it('has second link does not move focus to main either', () => {
+    cy.visit('https://www.stadtwerke-karlsruhe.de/de/')
+    cy.findByRole('button', {name: 'Auswahl bestätigen'}).click()
 
-    cy.pageHasSkipLink()
+    cy.get('body').tab().tab()
+    cy.focused().skipLinkMovesFocusToMain()
 })
