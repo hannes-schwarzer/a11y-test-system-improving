@@ -151,10 +151,10 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
       // .not('[tabindex=-1], [disabled], :hidden, [aria-hidden]')
   })
 
-  Cypress.Commands.add('noEmptyParagraphs', {prevSubject: 'element'}, (subject) => {
-    cy.wrap(subject).find('p:empty').should('have.length', 0)
-    cy.wrap(subject).find('p').invoke('text').then((text) => {
-      expect(text.trim()).not.equal('')
+  Cypress.Commands.add('noEmptyParagraphs', () => {
+    cy.get('body').find('p:empty').should('have.length', 0)
+    cy.get('body').find('p').each($p => {
+      expect($p.text().trim()).not.equal('')
     })
   })
 
@@ -246,6 +246,7 @@ declare global {
           * Checks that there is an element which can close the dialog by clicking on it.
           * Dialog must be visible and opened.
           * EXPERIMENTAL/not reliable! Does not work if another element gets opened or a link moves focus.
+          * Also does not work if dialog still exists in DOM after closing.
           * @example
           * cy.get('@dialog').dialogClosableByElement()
           */        
@@ -286,8 +287,8 @@ declare global {
           */
         getTabbableElements(): Chainable<JQuery<HTMLElement>>
           /**
-          * Checks that there are no empty paragraphs.
-          * Either completely empty or just whitespace.
+          * Checks the whole page for empty paragraphs.
+          * To trigger the paragraphs they must either be completely empty or just whitespace.
           * @example
           * // code
           * <p></p>
@@ -315,7 +316,7 @@ declare global {
           /**
           * Checks that the first focusable element is a link with a local ref.
           * Gets the first element by tabbing once inside the body.
-          * The link must be visible after tabbing to it.
+          * The link must be visible after tabbing to it. Stops after the first element appears with no difference.
           * @example
           * // code
           * <a class="skip-link" href="#main">Skip to main content</a>

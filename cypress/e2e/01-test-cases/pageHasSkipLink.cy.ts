@@ -27,7 +27,8 @@ it('has skip link', () => {
 
 it('has no skip link', () => {
     cy.visit('https://www.fonic.de/')
-    cy.wait(1000) // takes time to fully load page w/o fully rendering
+    // when button is shown, DOM is fully loaded
+    cy.findByRole('button', {name: 'Animationen anhalten'})
 
     cy.firstLinkIsSkipLink()
 })
@@ -41,13 +42,14 @@ it('has no skip link', () => {
 it('has skip link but not to main', () => {
     cy.visit('https://www.stadtwerke-karlsruhe.de/de/')
     cy.findByRole('button', {name: 'Auswahl bestätigen'}).click()
+    cy.wait(1000)
 
     cy.firstLinkIsSkipLink()
     cy.get('body').tab()
     cy.focused().skipLinkMovesFocusToMain()
 })
 
-it('has second link does not move focus to main either', () => {
+it('has skip link that does not move focus to main but should', () => {
     cy.visit('https://www.stadtwerke-karlsruhe.de/de/')
     cy.findByRole('button', {name: 'Auswahl bestätigen'}).click()
 
