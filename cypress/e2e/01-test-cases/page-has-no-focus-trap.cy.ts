@@ -4,6 +4,11 @@ beforeEach(() => {
     cy.intercept({ resourceType: /xhr|fetch/ }, { log: false })
 })
 
+it('page has no focus trap', () => {
+    cy.visit('http://localhost:3000/wcag/perceivable/text-alternatives/non-text-content')
+    cy.pageHasNoFocusTrap();        
+})
+
 it('has no focus trap', () => {
     cy.visit('https://www.gov.uk/')
     cy.findByRole('button', {name: 'Accept additional cookies'}).click()
@@ -20,8 +25,9 @@ it('has no focus trap', () => {
 
 it('has no focus trap', () => {
     cy.visit('https://www.fonic-mobile.de/')
-    // when button is shown, DOM is fully loaded
+    // when button is shown, DOM is almost fully loaded
     cy.findByRole('button', {name: 'Animationen anhalten'})
+    cy.wait(1000)
     cy.pageHasNoFocusTrap();        
 })
 
@@ -44,6 +50,11 @@ it('has no focus trap', () => {
     cy.findByRole('button', {name: 'Alle akzeptieren'}).click()
     // when button is shown, DOM is fully loaded
     cy.findByRole('button', {name: 'Einstellungen'})
+    cy.pageHasNoFocusTrap();        
+})
+
+it('page has a focus trap', () => {
+    cy.visit('http://localhost:3000/wcag/operable/keyboard-accessible/keyboard')
     cy.pageHasNoFocusTrap();        
 })
 

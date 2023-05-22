@@ -37,31 +37,29 @@ Cypress.Commands.add('dialogClosableByElement', {prevSubject: 'element'}, (dialo
 
     let dialogClosed = false;
 
-    cy.get('@focusableElements').each(($el, index, $list) => {
+    cy.get('@focusableElements').each(($el) => {
       cy.then(() => 
       {
         if(dialogClosed) {
           return false
         }
 
-        // TODO: before check if it is a link which redirects you to a different page?
+        // TODO: To work more reliable one would need to check if it is a link which redirects you to a different page before clicking
         // plus if button opens something it is not working either
-        // TODO: Maybe: Only click on buttons without submit. But if dialog open and close is used with URL parameters that is a false positive then.
-        // button nicht aria-haspopup
 
         cy.wrap($el).click().then(() => {
-           if(cy.get('@dialog').should('not.exist') || cy.get('@dialog').should('not.be.visible')) {
-          // end loop
-          dialogClosed = true
-        }
-      })
-
-        // every loop, tab one element further
-        cy.focused().tab()
+           if(cy.get('@dialog').should('not.be.visible')) {
+              // end loop
+              dialogClosed = true
+            } else {
+              // every loop, tab one element further
+              cy.focused().tab()
+            }
+        })
       })
     })
 
-    cy.get('@dialog').should('not.exist') || cy.get('@dialog').should('not.be.visible')
+    cy.get('@dialog').should('not.be.visible')
 })
 
 Cypress.Commands.add('dialogClosableByEsc', {prevSubject: 'element'}, (dialog) => {
@@ -209,28 +207,20 @@ Cypress.Commands.add('pageHasNoFocusTrap', () => {
 
   Cypress.Commands.add('firstLinkIsSkipLink', () => {
     // Check that a link is the first focusable control on the page with a local ref
-    cy.get('body', {log: false}).getTabbableElements().eq(0, {log: false}).as('firstElement')
-    // TODO: Better just tab to first element and then check?
+    cy.get('body').tab()
+    cy.focused().as('firstElement')
+
     cy.get('@firstElement').should('have.attr', 'href').and('match', /#.*/)
     cy.get('@firstElement').invoke('prop', 'tagName').should('eq', 'A')
-
-    cy.get('body').tab()
     
-    // TODO: Necessary? Check that the actual first tabbed element is the same as the one collected from getFocusableElements
-    cy.focused({log: false}).then(($focusedElement) => {
-      cy.get('@firstElement', {log: false}).then(($firstElement) => {
-        expect($focusedElement.get(0)).to.deep.equal($firstElement.get(0))
-      })
-    })
-
     // link should be visible when in focus
-    cy.get('@firstElement').should('be.visible').and('not.be.hidden')
+    cy.get('@firstElement').should('be.visible')
   })
 
   Cypress.Commands.add('skipLinkMovesFocusToMain', {prevSubject: 'element'}, (subject) => {
     // link should be visible when in focus
     cy.wrap(subject).as('skipLink')
-    cy.get('@skipLink').scrollIntoView({log: false}).should('be.visible').and('not.be.hidden')
+    cy.get('@skipLink').scrollIntoView({log: false}).should('be.visible')
 
     cy.get('@skipLink').realType('{enter}')
     cy.realPress('Tab')
@@ -243,10 +233,11 @@ declare global {
   namespace Cypress {
     interface Chainable {
           /**
+          * @deprecated
           * Checks that there is an element which can close the dialog by clicking on it.
           * Dialog must be visible and opened.
           * EXPERIMENTAL/not reliable! Does not work if another element gets opened or a link moves focus.
-          * Also does not work if dialog still exists in DOM after closing.
+          * Only works if the dialog stays in the DOM after closing, but hidden.
           * @example
           * cy.get('@dialog').dialogClosableByElement()
           */        
