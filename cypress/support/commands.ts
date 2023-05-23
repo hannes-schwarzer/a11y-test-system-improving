@@ -289,11 +289,12 @@ Cypress.Commands.add(
     cy.get("@skipLink").realType("{enter}");
     cy.realPress("Tab");
     cy.focused()
-      .parentsUntil("main")
+      .parentsUntil('main, [role="main"]')
       .eq(-1)
       .parent()
       .invoke("prop", "tagName")
-      .should("eq", "MAIN");
+      // element is undefined if no 'main' has been found
+      .should("not.be.an", "undefined");
   }
 );
 
