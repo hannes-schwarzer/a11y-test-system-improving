@@ -68,7 +68,7 @@ Cypress.Commands.add(
 );
 
 Cypress.Commands.add(
-  "dialogClosableByEsc",
+  "hidesDialogByEsc",
   { prevSubject: "element" },
   (dialog) => {
     cy.wrap(dialog).as("dialog").should("be.visible");
@@ -77,6 +77,19 @@ Cypress.Commands.add(
 
     // because checking if neither visible nor existant is not easily possible in Cypress
     cy.get("@dialog").should("not.be.visible");
+  }
+);
+
+Cypress.Commands.add(
+  "removesDialogByEsc",
+  { prevSubject: "element" },
+  (dialog) => {
+    cy.wrap(dialog).as("dialog").should("be.visible");
+
+    cy.realType("{esc}");
+
+    // because checking if neither visible nor existant is not easily possible in Cypress
+    cy.get("@dialog").should("not.exist");
   }
 );
 
@@ -317,11 +330,19 @@ declare global {
       /**
        * Checks that the dialog is closable by pressing Escape.
        * Dialog must be visible and opened.
+       * Dialog must NOT be in DOM after closing.
+       * @example
+       * cy.get('@dialog').dialogClosableByEsc()
+       */
+      removesDialogByEsc(): Chainable<void>;
+      /**
+       * Checks that the dialog is closable by pressing Escape.
+       * Dialog must be visible and opened.
        * Dialog must be existant in DOM after closing.
        * @example
        * cy.get('@dialog').dialogClosableByEsc()
        */
-      dialogClosableByEsc(): Chainable<void>;
+      hidesDialogByEsc(): Chainable<void>;
       /**
        * Checks that the focus stays within the dialog by tabbing through all tabbable elements within the dialog.
        * Dialog must be visible and opened.
