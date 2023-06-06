@@ -75,6 +75,7 @@ Cypress.Commands.add(
 
     cy.realType("{esc}");
 
+    // because checking if neither visible nor existant is not easily possible in Cypress
     cy.get("@dialog").should("not.be.visible");
   }
 );
@@ -242,7 +243,7 @@ Cypress.Commands.add(
 
         cy.log(`Found a ${diffPercent.toFixed(2)}% pixel difference`);
 
-        expect(Math.round(diffPercent)).not.equal(0);
+        expect(Math.round(diffPercent * 100) / 100).to.be.greaterThan(0);
       });
     });
   }
@@ -293,7 +294,7 @@ Cypress.Commands.add(
       .eq(-1)
       .parent()
       .invoke("prop", "tagName")
-      // element is undefined if no 'main' has been found
+      // element is undefined if no main-element has been found
       .should("not.be.an", "undefined");
   }
 );
@@ -316,6 +317,7 @@ declare global {
       /**
        * Checks that the dialog is closable by pressing Escape.
        * Dialog must be visible and opened.
+       * Dialog must be existant in DOM after closing.
        * @example
        * cy.get('@dialog').dialogClosableByEsc()
        */
