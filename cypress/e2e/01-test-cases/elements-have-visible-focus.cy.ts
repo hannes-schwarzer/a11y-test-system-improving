@@ -30,7 +30,7 @@ it("has visible focus: whole site", () => {
   // when button is shown, DOM is fully loaded
   cy.findByRole("button", { name: "Animationen anhalten" });
 
-  cy.get("body").elementsHaveVisibleFocus();
+  cy.get("body").elementsHaveVisibleFocus("#skiplink");
 });
 
 it("has visible focus: section", () => {
